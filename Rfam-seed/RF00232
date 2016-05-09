@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00232
+#=GF ID   Spi-1
+#=GF DE   Spi-1 (PU.1) 5' UTR regulatory element
+#=GF AU   Moxon SJ
+#=GF SE   PMID:9207037
+#=GF SS   Published; PMID:9207037
+#=GF GA   27.00
+#=GF TC   28.34
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   9207037
+#=GF RT   The conserved 5'-untranslated leader of Spi-1 (PU.1) mRNA is highly
+#=GF RT   structured and potently inhibits translation in vitro but not in
+#=GF RT   vivo.
+#=GF RA   Hensold JO, Stratton CA, Barth D;
+#=GF RL   Nucleic Acids Res 1997;25:2869-2876.
+#=GF CC   Spi-1 regulates myeloid gene expression during haemopoietic
+#=GF CC   development. This family represents a regulatory element found in the 5'
+#=GF CC   UTR of Spi-1 mRNA which is able to inhibit the translation Spi-1
+#=GF CC   transcripts by 8-fold. Mutations in this regulatory region of the 5' UTR
+#=GF CC   can lead to overexpression of Spi-1 which has been linked to
+#=GF CC   erythroleukemic transformation [1].
+#=GF WK   http://en.wikipedia.org/wiki/Spi-1_(PU.1)_5'_UTR_regulatory_element
+#=GF SQ   5
+
+M32370.1/1-150                     CU....CAGGGGGC.........AGG.......CCUGAGCCCUGCGUCUG
+X17463.1/689-858                   CUCACCCAGGGCUCCUGUAGCUCAGGGGGCAGGCCUGAGCCCUGCGUCUG
+AC090559.7/2975-2808               CUCACCCAGGGCUCCUGUAGCUCAGGGGGCAGGCCUGAGCCCUGCACCCG
+AC090582.9/66882-66715             CUCACCCAGGGCUCCUGUAGCUCAAGGGGCAGGCCUGAGCCCUGCACCCG
+U34046.1/345-511                   CUCACCCAGGGCUCCUGUAGCUCAGGGGGCAGGCCUGAGCCCUGCACCCG
+#=GC SS_cons                       .......<<<<<<<..<<.<<<<...>>>>..>>..>>>>>>><<<<<<<
+
+M32370.1/1-150                     ACCCACGACCGUCCAGUCCCCCGACGGGGCACCUGGUCCUGAGGGGGAUC
+X17463.1/689-858                   ACCCACGACCGUCCAGUCCCCCGACGGGGCACCUGGUCCUGAGGGGGAUC
+AC090559.7/2975-2808               CCCCACGACCGUCCAGCCCCU.GACGGGGCACCCCAUCCUGA.GGGGCUC
+AC090582.9/66882-66715             CCCCACGACCGUCCAGCCCCU.GACGGGGCACCCCAUCCUGA.GGGGCUC
+U34046.1/345-511                   CCCCACGACCGUCCAGCCCCU.GACGGGC.ACCCCAUCCUGA.GGGGCUC
+#=GC SS_cons                       .........<<<<<<.<<<<<<..<<<<<<.....>>>>>>.>>>>>><<
+
+M32370.1/1-150                     CGCCUUGAUCCCCACCGAAGCAGGGGAUCUGACCAACCUGGAGCUCAGCU
+X17463.1/689-858                   CGCCUUGAUCCCCACCGAAGCAGGGGAUCUGACCAACCUGGAGCUCAGCU
+AC090559.7/2975-2808               UGCAUUGGCCCCCACCGAGGCAGGGGAUCUGACCGACUCGGAGCCCGGCU
+AC090582.9/66882-66715             UGCAUUGGCCCCCACCGAGGCAGGGGAUCUGACCGACUCGGAGCCCGGCU
+U34046.1/345-511                   UGCAUUGGCCCCCACCGAGGCAGGGGAUCUGACCGACUCGGAGCCCGGCU
+#=GC SS_cons                       <<..<<<<<<<<<.........>>>>>>>.>>......>>>><<<.>>>>
+
+M32370.1/1-150                     GGAUGUUACAGGCGUGCAAA
+X17463.1/689-858                   GGAUGUUACAGGCGUGCAAA
+AC090559.7/2975-2808               GGAUGUUACAGGCGUGCAAA
+AC090582.9/66882-66715             GGAUGUUACAGGCGUGCAAA
+U34046.1/345-511                   GGAUGUUACAGGCGUGCAAA
+#=GC SS_cons                       >>>>>...>>>>>>>.....
+//

@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01637
+#=GF ID   ceN47
+#=GF DE   C. elegans snoRNA ceN47
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted;Osuch I;
+#=GF GA   20.00
+#=GF TC   21.00
+#=GF NC   17.02
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+AY948630.1/1-155                         ACGUAAAUGAAGAAAUACCAUCCUUGCUCUGCGA..GUCGUUGAGCAAUC
+ABLE02013088.1/2087-2235                 UCGUAAAUGAUGAGAAAACAUCCUUGCUCUGCGA..GUCGUUUGGCAAAU
+AAGD02001042.1/12284-12133               AUGUGCGUGAAGAAAUACCAUCCUUGCUCUGCGA..GGCGAUGGACACAC
+CAAC02000522.1/191093-190937             CGUUAAAUGAAGAAAUACCAUCCUUGCUCUGCGAUGGCCGUCAAACAUAC
+#=GC SS_cons                             .<<<..............................................
+#=GC RF                                  ACGUAAAUGAAGAAAUACCAUCCUUGCUCUGCGA..GUCGUUGAGCAAUC
+
+AY948630.1/1-155                         ACUUGAGAACUCUGA.UGA.GGUAUUGUAGCAUCGGGUUACGGUAG.CCG
+ABLE02013088.1/2087-2235                 UGUUUUUCUGGAAAU.UGG.AAAUUUUAAACAUCGGGUUUA......UUA
+AAGD02001042.1/12284-12133               ACUCGAGAACCCUGC.GGA.GGUACCGUAGCAACGGGUUACAGUAA.CCG
+CAAC02000522.1/191093-190937             ACUUGAGAAUUCUGUGUGAGGGUACUGUAGCAUCGGGUUACUGUACACCA
+#=GC SS_cons                             ..................................................
+#=GC RF                                  ACUUGAGAACUCUGA.UGA.GGUAUUGUAGCAUCGGGUUACGGUAG.CCG
+
+AY948630.1/1-155                         AGUCAGUUGAUUCUCAUCAUGUGGCACUUCGACGGUGAACAGUUAUGGCC
+ABLE02013088.1/2087-2235                 UUUCACUUGAUUCGGAAACUCAUG.GCUUCGACGGUGAACAGCGUUGGCC
+AAGD02001042.1/12284-12133               AAGCAGUCGAUUCUC...UAGUGGUUCUUCGCCGGUGAACAGUUAUGGCC
+CAAC02000522.1/191093-190937             AUCCAGACGAUUCUC...AGGUGGUUUGACGCCGGUGAACAGCUAUGGCC
+#=GC SS_cons                             ..................................................
+#=GC RF                                  AGUCAGUUGAUUCUCAUCAUGUGGCACUUCGACGGUGAACAGUUAUGGCC
+
+AY948630.1/1-155                         UCUGAUACGU
+ABLE02013088.1/2087-2235                 UCUGAUACGU
+AAGD02001042.1/12284-12133               UCUGACACAU
+CAAC02000522.1/191093-190937             UCUGAUAACG
+#=GC SS_cons                             ......>>>.
+#=GC RF                                  UCUGAUACGU
+//

@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01197
+#=GF ID   snR39
+#=GF DE   Small nucleolar RNA snR39
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   26.00
+#=GF TC   28.99
+#=GF NC   24.84
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://people.biochem.umass.edu/sfournier/fournierlab/snornadb/snrs/snR39b_ta.php
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+AACH01000077.1/3889-3986               UUUAGUGAUGAUACUGCCGAUU....CUGGCA.UUCCAAAAAGUGACUAG
+AACA01000192.1/11990-12087             UUUAGUGAUGAUACUGCCGAUU....CUGGCA.UUCCAAAAAGUGACUAG
+X94605.1/2-96                          UUUAGUGAUGAUACUGCCGAUU....CUGGCA.UUCCAAAAAGUGACUAG
+AAZN01000229.1/74905-74806             UGAAGUGAUGAUAAAUGUCAUUAACAGUGACAUUUUCAACUAGUGACUAG
+#=GC SS_cons                           ..<<..............................................
+#=GC RF                                UUuaGUGAUGAUACUGCCGAUU....CUGGCA.UUCCAAAAAGUGACUAG
+
+AACH01000077.1/3889-3986               C...AUUAUAAAUGCGAUGUUGUCAACUUAAAUUACACCAUCUUUCGGGG
+AACA01000192.1/11990-12087             CGUUAUAAA...CGCAAUGUUGUCAACUUAAAUUACACCAUCUUUCGGGG
+X94605.1/2-96                          C...AAAAU...UGCGAUGUUGUCAACUUAAAUUACACCAUCUUUCGGGG
+AAZN01000229.1/74905-74806             C...UAUUU...AGCAAUGUUGUUUACUAAAAUUACACCAUCUUUCGGGG
+#=GC SS_cons                           ..................................................
+#=GC RF                                C...AAAAU...UGCGAUGUUGUCAACUUAAAUUACACCAUCUUUCGGGG
+
+AACH01000077.1/3889-3986               CUGAAU
+AACA01000192.1/11990-12087             CUGAUU
+X94605.1/2-96                          CUGAUA
+AAZN01000229.1/74905-74806             CUGAUU
+#=GC SS_cons                           ....>>
+#=GC RF                                CUGAua
+//

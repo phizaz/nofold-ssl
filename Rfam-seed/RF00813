@@ -1,0 +1,72 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00813
+#=GF ID   mir-11
+#=GF DE   microRNA mir-11
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   38.15
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000252
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   14
+
+AAJJ01003245.1/4924-4995                   AUGCAUU.CUGGGAUUC.UGACUGUGACCUG..........UGU...GUG
+AAPU01010953.1/16155-16075                 GCACUUAACAAGAACUU.UUUCUGUGACCUG..........CGU...GAA
+AAPT01019388.1/147488-147568               CCACUCGUCAAGAACUC.UCUCUGUGACUUG..........CGU...GAA
+AAFS01000036.1/6151-6079                   CCUCUUGUCAAGAACUU.AUUCUGUGACCUG..........CGU...GAC
+AAPQ01006441.1/419197-419271               GCACUUGCCAAGAACUU.UCUCUGUGACCUG..........CGU...GUA
+AASS01008809.1/103-177                     GCACUUGUCAAGAACUU.UCUCUGUGACCCG..........CGU...GAA
+AAPP01019528.1/447265-447343               GCACUUGCCAAGAACUC.UCUCUGUGACUUG..........UGUCCUUUU
+AAQB01008624.1/142840-142924               CUUCUUGUCAAGAUCUC.UCUCUGUGACCUG..........CGU...GAG
+AAAB01008987.1/3180576-3180487             GCAUCCGGCAAGAACUUGGAACUGUGAUCUGUGUGGUUAUUAGC...CGC
+AAGE02023911.1/46406-46483                 GUGCCGCGCGAGAACUC.CGGCUGUGACCUG..........UGU...ACA
+AAWU01011517.1/5912-5834                   GUGCCGCGCGAGAACUC.CGGCUGUGACCUG..........UGU...GCC
+AADG05003579.1/1945-1866                   GUACCCUGAUGGAGCUC.UGGCUGUGACUUG..........UGU...GUU
+AAZX01002631.1/4523-4598                   ACUCCCUGGUGGGACUC.UGUCUGUGACUUG..........UGU...AGU
+BAAB01121158.1/452-382                     UUUUGUGGCUAGCACUC.GACAUGUGACCUG..........UGU...UCG
+#=GC SS_cons                               .<<<<<<.<<<<<<<<<....<<<<<<..<<...........<<......
+#=GC RF                                    gcacccaaCaaGaaCuc.uauCuGuGacccG..........aGc...gaa
+
+AAJJ01003245.1/4924-4995                   U..C......U........G..........AUU....CACAUCACAGGCA
+AAPU01010953.1/16155-16075                 U..UCCUAUAUG......CA..........AAC....CGCAUCACAGUCU
+AAPT01019388.1/147488-147568               C..U......UUCAUGUGAA..........AAU....CGCAUCACAGUCU
+AAFS01000036.1/6151-6079                   A..U......U........U..........AGC....CACAUCACAGUCU
+AAPQ01006441.1/419197-419271               C..U......GA......AA..........AGC....CGCAUCACAGUCU
+AASS01008809.1/103-177                     C..U......UA......AA..........AGC....CGCAUCACAGUCU
+AAPP01019528.1/447265-447343               U..U......UC......GA..........AAC...UCACAUCACAGUCU
+AAQB01008624.1/142840-142924               A..U......UU......AUCAUAUAUGAAAAC....CGCAUCACAGUCU
+AAAB01008987.1/3180576-3180487             G..U......UC......GA..........AGCUCUUCACAUCACAGUCU
+AAGE02023911.1/46406-46483                 C..U......UU......AUCCA.......AAU....CACAUCACAGUCU
+AAWU01011517.1/5912-5834                   CCGU......GU......UG..........AAC..UUCACAUCACAGUCU
+AADG05003579.1/1945-1866                   A..A......CU......GAAUUAA.....AAU....CACAUCACAGGCA
+AAZX01002631.1/4523-4598                   C..U......UG......AAU.........GGU....CACAUCACAGGCA
+BAAB01121158.1/452-382                     G..U......A....................AU....CACAUCACAGUCA
+#=GC SS_cons                               ...............................>>....>>..>>>>>>...
+#=GC RF                                    a..U......uu......aa..........AgC....CgcAuCaCaGUcU
+
+AAJJ01003245.1/4924-4995                   GAGUUCUAGCUAUGCGU
+AAPU01010953.1/16155-16075                 GAGUUCUUGCUUAGCGC
+AAPT01019388.1/147488-147568               GAGUUCUUGCUGAGCGC
+AAFS01000036.1/6151-6079                   GAGUUCUUGCUGAGCGU
+AAPQ01006441.1/419197-419271               GAGUUCUUGCUGAGCGC
+AASS01008809.1/103-177                     GAGUUCUUGCUGAGUGC
+AAPP01019528.1/447265-447343               GAGUUCUUGCUGAGAGC
+AAQB01008624.1/142840-142924               GAGUUCUUGCUGAGCGG
+AAAB01008987.1/3180576-3180487             GAGUUCUUGCUCGAUGG
+AAGE02023911.1/46406-46483                 GAGUUCUUGCUUGGAGG
+AAWU01011517.1/5912-5834                   GAGUUCUUGCUUGGCGC
+AADG05003579.1/1945-1866                   GAGUUCUAGUUAGGUAA
+AAZX01002631.1/4523-4598                   GAGUUCUAGUUAGGUGG
+BAAB01121158.1/452-382                     GAGUUCUAGCUACACGG
+#=GC SS_cons                               >>>>>>>>>.>>>>>>.
+#=GC RF                                    gaGuuCuuGcuggguga
+//

@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02021
+#=GF ID   mir-3179
+#=GF DE   microRNA mir-3179
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   95.00
+#=GF TC   95.59
+#=GF NC   79.59
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000900
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   20224791
+#=GF RT   Discovery of novel microRNAs in female reproductive tract using
+#=GF RT   next generation sequencing
+#=GF RA   Creighton CJ, Benham AL, Zhu H, Khan MF, Reid JG, Nagaraja AK,
+#=GF RA   Fountain MD, Dziadek O, Han D, Ma L, Kim J, Hawkins SM, Anderson
+#=GF RA   ML, Matzuk MM, Gunaratne PH
+#=GF RL   PLoS One. 2010;5:e9637.
+#=GF RN   [2]
+#=GF RM   20300190
+#=GF RT   Characterization of the Melanoma miRNAome by Deep Sequencing
+#=GF RA   Stark MS, Tyagi S, Nancarrow DJ, Boyle GM, Cook AL, Whiteman
+#=GF RA   DC, Parsons PG, Schmidt C, Sturm RA, Hayward NK
+#=GF RL   PLoS One. 2010;5:e9685.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+AC136427.3/102832-102749             CAGGAUCACAGACGUUUAAAUUACACUCCUUCUGCUGUGCCUUACAGCAG
+AC010488.7/52282-52199               CAGGAUCACAGACGUUUAAAUUACACUCCUUCUGCUGUGCCUUACAGCAG
+AC136618.3/8090-8007                 CAGGAUCACAGACGUUUAAAUUACACUCCUUCUGCUGUGCCUUACAGCAG
+#=GC SS_cons                         <<<<<<<<<<<<<<<<<<<<<<.<<<<<<<<<<<<<<<........>>>>
+
+AC136427.3/102832-102749             UAGAAGGGGUGAAAUUUAAACGUCUGUGAUCCUG
+AC010488.7/52282-52199               UAGAAGGGGUGAAAUUUAAACGUCUGUGAUCCUG
+AC136618.3/8090-8007                 UAGAAGGGGUGAAAUUUAAACGUCUGUGAUCCUG
+#=GC SS_cons                         >>>>>>>>>>>.>>>>>>>>>>>>>>>>>>>>>>
+//

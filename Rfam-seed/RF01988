@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01988
+#=GF ID   SECIS_2
+#=GF DE   Selenocysteine insertion sequence 2
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; ClustalW; Eberhardt R
+#=GF SS   Predicted; RNAalifold;
+#=GF GA   35.00
+#=GF TC   37.77
+#=GF NC   14.83
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:1001274 SO:SECIS_element
+#=GF DR   GO:0001514 GO:selenocysteine incorporation
+#=GF RN   [1]
+#=GF RM   8634916
+#=GF RT   Solution structure of mRNA hairpins promoting selenocysteine
+#=GF RT   incorporation in Escherichia coli and their base-specific interaction
+#=GF RT   with special elongation factor SELB.
+#=GF RA   Huttenhofer A, Westhof E, Bock A;
+#=GF RL   RNA. 1996;2:354-366.
+#=GF WK   http://en.wikipedia.org/wiki/SECIS_element
+#=GF SQ   5
+
+CU928158.2/4397661-4397715             GCGUCUGACACGGCCCAUCGGUUGCAGGUCUGCACCAGUCGGUCGGUAAC
+U00096.2/4296977-4296923               GUGUCUGACACGGCCCAUCGGUUGCAGGUCUGCACCAAUCGGUCGGUAAU
+ABXW01000042.1/36779-36725             GUGUCUGACACGGCCCUUCGGUUGCAGGUCUGCAGCGUUCGGUCGGUAAU
+AAGE02031796.1/9876-9822               GCGUCUGACACGGCCCUUCGGUUGCAGGUCUGCACCAAUCGGUCGGUAAU
+BAAW01013798.1/777-831                 GCGUCUGACACGGGCCAUCGGUUGCCGGUCUGCGCCCAUCGGUCGGUGAC
+#=GC SS_cons                           <<<<<..<<.<<<<<.<<.<<<.<<<....>>>>>>.>>.>>>>>>>...
+#=GC RF                                GYGUCUGACACGGCCCWUCGGUUGCAGGUCUGCACCAAUCGGUCGGUAAY
+
+CU928158.2/4397661-4397715             GGCGC
+U00096.2/4296977-4296923               GGCGC
+ABXW01000042.1/36779-36725             GGCGC
+AAGE02031796.1/9876-9822               GGUGC
+BAAW01013798.1/777-831                 GGCGC
+#=GC SS_cons                           >>>>>
+#=GC RF                                GGCGC
+//

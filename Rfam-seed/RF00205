@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00205
+#=GF ID   snoR41
+#=GF DE   Small nucleolar RNA R41
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; Griffiths-Jones SR
+#=GF GA   28.00
+#=GF TC   32.05
+#=GF NC   25.62
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   snoR41 is a C/D box small nucleolar RNA, which acts as a
+#=GF CC   methylation guide for 18S and 25S ribosomal RNA in plants [1].
+#=GF CC   snoR41 has been alternatively named snoZ154 and snoZ231 in
+#=GF CC   rice.  The 18S methylation site is reported to be homologous
+#=GF CC   to that targeted by U62 in humans (Rfam:RF00153) [1], but the
+#=GF CC   snoRNA sequence similarity is not significant.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_R41
+#=GF SQ   7
+
+AJ490346.1/1-97             UUGGAGGCUGUGAUGACCAAAAAAAUACCUACCUAUUUUCUGAGGGAUU.
+AJ490344.1/1-97             UUGGAGGCUGUGAUGACCAAAAAAAUACCUACCUAUUUUCUGAGGGAUU.
+AJ490348.1/1-93             .....GGCUGUGAUGCGUAUUGAUA.....AGGGAUUUUCUGAGGGAUGG
+AJ494936.1/1-97             UUGGAGGCUGUGAUGACCAAAAAAAUACCUACCUAUUUUCUGAGGGAUU.
+AJ494937.1/1-97             UUGGAGGCUGUGAUGACCAAAAAAAUACCUACCUAUUUUCUGAGGGAUU.
+AY220661.1/1-96             UUGGAGGCUGUGAUGACCAAAAAA.UACCUACCUAUUUUCUGAGGGAUU.
+AF317994.1/2-87             GUGAAGGCAGUGAUGAUUAAAAACU.....ACCUAUUUUAUGAGUAAUU.
+#=GC SS_cons                ..<<<<<<..........................................
+
+AJ490346.1/1-97             ....CCAGU......CCUUCUGAUUGAUAGAA...ACCAAUGGAUCCUUC
+AJ490344.1/1-97             ....CCAGU......CCUUCUGAUUGAUAGAA...ACCAAUGGAUCCUUC
+AJ490348.1/1-93             AGACCUAGUUUUCCUCCUCCUGAUUGAGAGAA...ACCAAUGGAUCCUUC
+AJ494936.1/1-97             ....CCAGU......CCUUCUGAUUGAUAGAA...ACCAAUGGAUCCUUC
+AJ494937.1/1-97             ....CCAGU......CCUUCUGAUUGAUAGAA...ACCAAUGGAUCCUUC
+AY220661.1/1-96             ....CCAGU......CCUUCUGAUUGAUAGAA...ACCAAUGGAUCCUUC
+AF317994.1/2-87             ....C.............UCUGAUU.AGAAAAUUUACCAAUGGAUCCUUC
+#=GC SS_cons                ..................................................
+
+AJ490346.1/1-97             UGAGCCUGCCA
+AJ490344.1/1-97             UGAGCCUGCCA
+AJ490348.1/1-93             UGAGCC.....
+AJ494936.1/1-97             UGAGCCUGCCA
+AJ494937.1/1-97             UGAGCCUGCCA
+AY220661.1/1-96             UGAGCCUGCCA
+AF317994.1/2-87             UGAGCCU.UCA
+#=GC SS_cons                ...>>>>.>>.
+//

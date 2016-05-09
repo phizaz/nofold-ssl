@@ -1,0 +1,41 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01795
+#=GF ID   FourU
+#=GF DE   FourU thermometer RNA element
+#=GF AU   Bateman A, Moore B
+#=GF SE   Published; PMID:17630972
+#=GF SS   Published; PMID:17630972; Bateman A
+#=GF GA   80.00
+#=GF TC   84.51
+#=GF NC   20.47
+#=GF TP   Cis-reg; thermoregulator;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   17630972
+#=GF RT   FourU: a novel type of RNA thermometer in Salmonella.
+#=GF RA   Waldminghaus T, Heidrich N, Brantl S, Narberhaus F;
+#=GF RL   Mol Microbiol. 2007;65:413-424.
+#=GF CC   FourU is a small thermoregulator element found upstream of the
+#=GF CC   agsA gene in Salmonella species. The four Us occlude the
+#=GF CC   Shine-Dalgarno (SD) sequence by base pairing. It has been
+#=GF CC   suggested that this element is related to that found in Yersina
+#=GF CC   pestis LcrF. Two further potential FourU regulators were found in
+#=GF CC   S. aureus groES and B. melitensis dnaJ [1].
+#=GF WK   http://en.wikipedia.org/wiki/FourU_thermometer
+#=GF SQ   3
+
+CP000647.1/1773227-1773291             GGACAAGCAAUGCUUGCCUUUAUGUUGAGCUUUUGAAUGAAUAUUCAGGA
+CP001127.1/1302123-1302187             GGACAAGCAAUGCUUGCCUUAAUGUUGAACUUUUGAAUAGUGAUUCAGGA
+CP001144.1/2031534-2031470             GGACAAGCAAUGCUUGCCUUGAUGUUGAACUUUUGAAUAGUGAUUCAGGA
+#=GC SS_cons                           <<.<<<<<...>>>>>>>.....<<<<<.<<<<<<<<<....>>>>>>>>
+#=GC RF                                GGAcaaGcAAugCuugCCuugAuguugaAcuccuGaauAgugauuCagga
+
+CP000647.1/1773227-1773291             GGUUAAUUAUGGCAC
+CP001127.1/1302123-1302187             GGUUAAUGAUGGCAC
+CP001144.1/2031534-2031470             GGUUAAUGAUGGCAC
+#=GC SS_cons                           >.>>>>>........
+#=GC RF                                ggucaacgAuggcAc
+//

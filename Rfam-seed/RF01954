@@ -1,0 +1,78 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01954
+#=GF ID   SOX2OT_exon4
+#=GF DE   SOX2 overlapping transcript exon 4
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; CMfinder; Eberhardt R
+#=GF SS   Predicted; CMfinder;
+#=GF GA   29.00
+#=GF TC   29.21
+#=GF NC   16.54
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001463 SO:lincRNA
+#=GF DR   GO:0007275 GO:multicellular organismal development
+#=GF RN   [1]
+#=GF RM   12612584
+#=GF RT   Mutations in SOX2 cause anophthalmia.
+#=GF RA   Fantes J, Ragge NK, Lynch SA, McGill NI, Collin JR, Howard-Peebles
+#=GF RA   PN, Hayward C, Vivian AJ, Williamson K, van Heyningen V, FitzPatrick
+#=GF RA   DR;
+#=GF RL   Nat Genet. 2003;33:461-463.
+#=GF RN   [2]
+#=GF RM   19767420
+#=GF RT   Complex architecture and regulated expression of the Sox2ot locus
+#=GF RT   during vertebrate development.
+#=GF RA   Amaral PP, Neyt C, Wilkins SJ, Askarian-Amiri ME, Sunkin SM, Perkins
+#=GF RA   AC, Mattick JS;
+#=GF RL   RNA. 2009;15:2013-2027.
+#=GF CC   SOX2 overlapping transcript (SOX2OT) is a long non-coding RNA,
+#=GF CC   containing at least 5 exons. The SOX2 gene, an important
+#=GF CC   regulator of neurogenesis, lies within one of the introns of
+#=GF CC   SOX2OT [1]. SOX2OT and SOX2DOT (an isoform of SOXOT transcribed
+#=GF CC   from a distal highly conserved element) are expressed in zones of
+#=GF CC   neurogenesis within the brain. It is associated with central
+#=GF CC   nervous system structures in zebrafish and chicken embryonic
+#=GF CC   brains, and is dynamically regulated during embryogenesis
+#=GF CC   [2]. SOX2OT may play a role in vertebrate development [2].
+#=GF WK   http://en.wikipedia.org/wiki/SOX2OT
+#=GF SQ   9
+
+ABRQ01082590.1/2614-2722               CGCGGGUCCAAG.CCUGUAGCCCCAAGUCGG.AUAAUCUCUGCAGCU.GG
+AAIY01797440.1/794-680                 CGCGGGUCCAAGGCCUGUAGCCCCAAAUCGGGAUAAUCUCUGCAGCUUGA
+AAYZ01043859.1/320-428                 CGCGGGUUCAAG.CCUAUAGCCCCCAAUCGG.AUAAUCUGUGCAGCU.GA
+AABR04137155.1/3429-3321               CGCGGGUCCAAG.CCUGUAGUCCCAAAUCGG.AUAAUCUCUGCAGCU.GG
+AC117415.7/93637-93529                 CGCGGGUCCAAG.CCUGUAGCCCCAAAUCGG.AUAAUCUCUGCAGCU.GA
+AAFC03045141.1/26492-26601             CGUGGGUCCAAG.CCUGUAGCCCCAAAUCGG.AUAAUCUCUGCAGCU.GA
+AAPE01419747.1/2153-2259               CGCGGGUCCAAG.CCUGUAGCCCCAAAUCGG.AUAAGCUCUGCAGCU.GA
+AALT01268037.1/157-49                  CGCGGGUCCUAG.CCUGUAGCCCCCAAUCGG.AUAAUCUCUGCAGCU.GA
+AAPN01427697.1/6192-6084               CGCGGGUGCAAG.CGUGUAGCCCAAAUUCGG.AUAAUCUUUCCAGCU.GA
+#=GC SS_cons                           .<<<<<<....>.>>>>>....<<.....>>.....<<<<<...<<<...
+#=GC RF                                CGCGGGUCCAAGgCCUGUAGCCCCAAAUCGGgAUAAUCUCUGCAGCUuGA
+
+ABRQ01082590.1/2614-2722               UAACAAG..GCAGCCAGAAGCCAGGCGGCAGCC.CUAGUCGAGAAGGAAG
+AAIY01797440.1/794-680                 UAACGAGCAAAAG.GAGAAGCCAGGCAACAGCCCAUAUUAAAGAAGAAAA
+AAYZ01043859.1/320-428                 UAACAAGCCAAAG..AGAAGCCAGGCAAGAACC.AUAUUAAAGAAGAAAA
+AABR04137155.1/3429-3321               UUACACGCAAAAG..AGAAGCCAGGCAACAGAC.AUAUUACAGAAGAAAG
+AC117415.7/93637-93529                 UAACAAGCAAAAG..AGAAGCCAGGCAACAGCC.AUAUUAAAGAAGAAAA
+AAFC03045141.1/26492-26601             UAACAAGCAAAAG..AGAAGCCAGGCAACAGCC.AUAUUCAGCCCCAGAG
+AAPE01419747.1/2153-2259               UAACAAGCAAAAGAGAGAAGCCAGGCAACAGAC.AUAAUAAAGAAGAAAA
+AALT01268037.1/157-49                  UAACAAGCAGAAG..CGAAGCCAGGCAACAGCC.AUAUUAGAAAAGAAUA
+AAPN01427697.1/6192-6084               UAACAAGCGAAAG..AGAAGCCAGGCGUCAGCC.AAAUUAAAGAAGAAAA
+#=GC SS_cons                           .....>>>...>>..>>>.....<<<....>>>.................
+#=GC RF                                UAACAAGCAAAAGmsAGAAGCCAGGCAACAGCCcAUAUUAAAGAAGAAAR
+
+ABRQ01082590.1/2614-2722               .CCACCAGCGCCGAGG
+AAIY01797440.1/794-680                 GCAAUCGACUCUGAGG
+AAYZ01043859.1/320-428                 .CAAUCAACUCUGAGG
+AABR04137155.1/3429-3321               .CUCUCGACUCCGAGG
+AC117415.7/93637-93529                 .CAAUCAACUCUGAGG
+AAFC03045141.1/26492-26601             AUCUAACCUUCUCGGG
+AAPE01419747.1/2153-2259               .....CAACUCUGAGG
+AALT01268037.1/157-49                  .CUGUCAACUCUGAGG
+AAPN01427697.1/6192-6084               .CUGCCAACUCUGAGG
+#=GC SS_cons                           ................
+#=GC RF                                rCWRUCAACUCUGAGG
+//

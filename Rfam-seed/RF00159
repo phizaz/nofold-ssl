@@ -1,0 +1,53 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00159
+#=GF ID   snoZ168
+#=GF DE   Small nucleolar RNA Z168/Z174
+#=GF AU   Moxon SJ
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   33.19
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   This family consists of several snoRNA Z168 and Z174 sequences which
+#=GF CC   are members of the C/D class of snoRNA which contain the C (UGAUGA) and D
+#=GF CC   (CUGA) box motifs. This family seems to be found exclusively in
+#=GF CC   rice. C/D box small nucleolar RNAs are known to act as a methylation guides
+#=GF CC   for 18S ribosomal RNA in plants [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z168/Z174
+#=GF SQ   6
+
+AJ490394.1/1-82             .GGCCGAUGAUGCUAAUCAUGCUCCUAUGGUCUUG.ACCAAGAAGCUGAG
+AJ490385.1/4-84             GGGCCGAUGAUGCAAACCUUGCUCCUACGGUCUA..A.CCUGU.GGGGAG
+AJ490397.1/1-82             .GGCCGAUGAUGCUAACAAUGCUCCUAUGGUCUUUGACUAAGA.GCUGAG
+AJ490400.1/1-82             GGGCCGAUGAUGCGAACCAUGCUCCUAUGGUCUA..GACCUGU.GAGGAG
+AJ490388.1/4-85             GGGCCGAUGAUGUGAACCAUGCUCCUACGGUCUA..AACCUGU.GGGGAG
+AJ490395.1/1-83             GGGCCGAUGAUGCGAACCAUGCUCCUAUGGUAGA..CCCCUGU.GCGGAG
+#=GC SS_cons                .<<<<.............................................
+
+AJ490394.1/1-82             GAUUCUCUAAGAAUG.UUUCCCAAGAGCUGAGGCC.
+AJ490385.1/4-84             GAUUUGUAAAGUAUA.UUUCCCAAGAGCUGAGGCCC
+AJ490397.1/1-82             GAUUCUCUAAGAAUG.UUUCCCAAGAGCUGAGGCC.
+AJ490400.1/1-82             GAUUUCCUAAACAUA.UUUCCCAAGAGCUGAGGCCC
+AJ490388.1/4-85             GAUUUCCAAACCAUA.UUUCCCAAGAGCUGAGGCCU
+AJ490395.1/1-83             GAUUUCCUAAACAUAAUUUCCCAAGAGCUGAGGCCC
+#=GC SS_cons                ...............................>>>>.
+//

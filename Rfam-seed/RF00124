@@ -1,0 +1,67 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00124
+#=GF ID   IS102
+#=GF DE   IS102 RNA
+#=GF AU   Moxon SJ
+#=GF SE   Hershberg R
+#=GF SS   Predicted; PFOLD
+#=GF GA   29.00
+#=GF TC   38.23
+#=GF NC   27.71
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   12202758
+#=GF RT   Transcriptome analysis of Escherichia coli using high-density
+#=GF RT   oligonucleotide probe arrays.
+#=GF RA   Tjaden B, Saxena RM, Stolyar S, Haynor DR, Kolker E, Rosenow C;
+#=GF RL   Nucleic Acids Res 2002;30:3732-3738.
+#=GF CC   This family consists of a group of Shigella flexneri and Escherichia coli
+#=GF CC   RNA genes which are 208 bases in length and are found between the yeeP and
+#=GF CC   flu genes. The function of this RNA is unknown.
+#=GF WK   http://en.wikipedia.org/wiki/IS102_RNA
+#=GF SQ   5
+
+X16664.4/58046-58251                   ACGAUCGAUACCUAUUUCACCGAUCGUUAAUAUCGAUCGUUAUGCUAAUA
+AF233272.1/74-277                      ACGAUCGAUAUCUAUUUUAUCGAUCGUUUAUAUCGAUCGAUAAGCUAAUA
+AE014075.1/1225384-1225586             ACGAUCGAUAACUAUUUAAUCGAUCGUUUAUAUCGAUCGUUAUGCUAAUA
+U24429.1/2410-2615                     ACGAUCAAUAUCGAUUUAAUCGAUCGUUUAUAUCGAUCGAUUAGCUAAUA
+AF200692.2/35693-35898                 ACGAUCGAUACCUAUUUUACCGAUCGUUAAUAUCGAUCGUUAUGCUAAUA
+#=GC SS_cons                           .................<<<<<<<<<.......>>>>>>>>>........
+#=GC RF                                ACGAUCgAUAuCuAUUUuauCGauCGUUaAUAUCGauCGauaaGCUAAUA
+
+X16664.4/58046-58251                   AUAACUCAUGUUAGCAACGUGCGCAGAUACACA..CAGUCAUGAGAUUCA
+AF233272.1/74-277                      AUAACCUUUGUCAGUAACAUGCACAGAUACGUA..CAGA.AAGACAUUCA
+AE014075.1/1225384-1225586             AUAACACCCGUUAGCAAUGUAUGCAGACAC..A..CAGACAUGAGAUUCA
+U24429.1/2410-2615                     AUAACCUUUGUCAGUAACAUGCACAGAUAUGUUACCAGA.AAGACAUUCC
+AF200692.2/35693-35898                 AUAACUCCUGUUAGCAACGUGCGCAGAUACACA..CAGACAUGAGAUUCA
+#=GC SS_cons                           .........<<<.<<.......>>.>>>......................
+#=GC RF                                AUAACuuuUgucAGcAACaUGCgCAgauAcauA..CAGAcAaGAgAUUCA
+
+X16664.4/58046-58251                   GGGAACAACAGAGCCACACGUCAGAAACUUCCGUCAGCCGGACCUCCGGC
+AF233272.1/74-277                      GGGAACAACAGAACCACAAUUCAGAAACUCCCA.CAGCCGGACCUCCGGC
+AE014075.1/1225384-1225586             GGGAACAACAGAGCCACACGUCAGAAACUUCCAUCAGCCGGAUCUGCGGC
+U24429.1/2410-2615                     GGGAACAACAGAACCACAAUUCAGAAAUUCCCA.CAGCCGGACCUCCGGC
+AF200692.2/35693-35898                 GGGAACAACAGAGCCACACGUCAGAAACUUCCGUCAGCCGGACCUCCGGC
+#=GC SS_cons                           <<<.................................<<<<<....>>>>>
+#=GC RF                                GGGAACAACAGAaCCACAauUCAGAAAcUuCCauCAGCCGGACCUCCGGC
+
+X16664.4/58046-58251                   ACUGUAACCCUUUACCUGCCGGUAUCCACAUCUGUGGAUACCGGCUUUUU
+AF233272.1/74-277                      ACUGUAACCCUUUACCUGCCGGUAUCCACGUUUGUGGGUACCGGCUUUUU
+AE014075.1/1225384-1225586             ACUGUAACCCUUCACCUGCAGGUAUCCACAUUUGUGGAUACCGGC.UUUU
+U24429.1/2410-2615                     ACUGUAACCCUUUACCUGCCGGUAUCCACGUUUGUGGGUACCGGCUUUUU
+AF200692.2/35693-35898                 ACUGUAACCCUUUACCUGCCGGUAUCCACAUCUGUGGAUACCGGCUUUUU
+#=GC SS_cons                           .......>>>.......<<<<<<<<<<<<<..>>>>>>>>>>>>>.....
+#=GC RF                                ACUGUAACCCUUUACCUGCCGGuauCCaCaUuuGuGGauaCCGGCUUUUU
+
+X16664.4/58046-58251                   UAUUCACC
+AF233272.1/74-277                      UAUUCACC
+AE014075.1/1225384-1225586             UAUUCACC
+U24429.1/2410-2615                     UAUUCACC
+AF200692.2/35693-35898                 UAUUCACC
+#=GC SS_cons                           ........
+#=GC RF                                UAUUCACC
+//

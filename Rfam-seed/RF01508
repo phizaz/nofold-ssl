@@ -1,0 +1,52 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01508
+#=GF ID   BYDV_5_UTR
+#=GF DE   Barley yellow dwarf virus 5'UTR
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:11389856
+#=GF GA   75.00
+#=GF TC   96.34
+#=GF NC   15.68
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   11389856
+#=GF RT   Base-pairing between untranslated regions facilitates translation of
+#=GF RT   uncapped, nonpolyadenylated viral RNA.
+#=GF RA   Guo L, Allen EM, Miller WA;
+#=GF RL   Mol Cell. 2001;7:1103-1109.
+#=GF WK   http://en.wikipedia.org/wiki/Barley_yellow_dwarf_virus_5%27UTR
+#=GF SQ   4
+
+EF521838.1/1-149             .AGUGAAGAUUGACCAUCU.CACAAAAGCUGUUACGUGCUUGUAACACAC
+AF235167.1/1-149             .NNUGAAGAUUGACCAUCU.CACAAAAGCUGUUACGCGCUUGUAACACAC
+EF521828.1/1-150             .AGUGAAGGUUGACCACCUACACAAAAA.GACUUUGUGCUUGAAGUCUAC
+AY220739.1/1-150             UAGUGAAGAUUGACCAUCU.CACAAAAGCUGUUACGUGCUUGUAACACAC
+#=GC SS_cons                 ..<<<<.<<<.....>>>>.>>>......<<<<<<......>>>>>>.<<
+#=GC RF                      .AGuGaAGguUGACCacCu.CaCAAAAacggcuacGUGCUUguagccuaC
+
+EF521838.1/1-149             UACACACUCGUUUUGUAUUCGAGAAGUAGU.UGCAACAACGGUCCCCUUA
+AF235167.1/1-149             UACACACUCGUUUUGUAUUCGAGAAGUAGU.UGCAACAACGGUCCCCUUA
+EF521828.1/1-150             AGCUCACCUGUUUUGUAUUCAGGACGUUGUCUGCAACAACGGUCAACAGU
+AY220739.1/1-150             UACACACUCGUUUUGUAAUCGAGAAGUAGU.UGCAAGAACGGUCCUCUCA
+#=GC SS_cons                 <<<...<<<<.........>>>>..>>>>>..........<<<.<<<<<<
+#=GC RF                      uaCaCACccGUUUUGUAuUCggGAaGuaGu.UGCAAcAACGGuCccCuga
+
+EF521838.1/1-149             UUGCCUGACAA.GCUGAGGGCCACCCUUCUAUCCC.CACCGCCAUCAUGU
+AF235167.1/1-149             UUGCCUGACAA.GCUGAGGGCCACCCUUCUAUCCC.CACCGCCACCAUGU
+EF521828.1/1-150             ACGCCCGACACCGUACUG..CCACCUCCCUAUCCCCCCCCGCCAACAUGC
+AY220739.1/1-150             UUGCCUGACUA.GCUGAGAGCCAUCCUUCUAUCCC.CACCGCCACCAUGU
+#=GC SS_cons                 ..<<........>>>>>>>>..>>>.........................
+#=GC RF                      augCCuGACAa.GcucaGggCCaCCuuuCUAUCCC.CaCCGCCAaCAUGu
+
+EF521838.1/1-149             UUUU
+AF235167.1/1-149             UCUU
+EF521828.1/1-150             UUCU
+AY220739.1/1-150             UCUU
+#=GC SS_cons                 ....
+#=GC RF                      UuuU
+//

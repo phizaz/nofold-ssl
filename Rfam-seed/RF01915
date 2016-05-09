@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01915
+#=GF ID   mir-2238
+#=GF DE   microRNA mir-2238
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   50.00
+#=GF TC   50.20
+#=GF NC   38.93
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000822
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   19755563
+#=GF RT   Repertoire and evolution of miRNA genes in four divergent nematode
+#=GF RT   species
+#=GF RA   de Wit E, Linsen SE, Cuppen E, Berezikov E
+#=GF RL   Genome Res. 2009;19:2064-2074.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+ABKE01002728.1/14129-14010             AAUUUUAUUCUGGUAUCUAGUCGAUCCUCUU.UCCCAUUCACUCUUCUCG
+ABKE01009364.1/1-103                   ............GGAACUAGUCUGCCGA..CUUCCCGUCUACUCCUUUCG
+ABKE01003698.1/3164-3283               UCCUUUUUUCUGGUACCUAGUCUUUUCUCUU.UCCCGUUCACUCUUCUCG
+ABKE01000098.1/36649-36530             GAUCUUUUUCUGGUAACUAGUCGAUCCUCUU.UCCCGUUCACUCUUCUCG
+#=GC SS_cons                           ...........<<...<<<<<<..<<.<<<<........<<<<..<<<.<
+
+ABKE01002728.1/14129-14010             UCAGUCGAUGAUUGAAUAUCGAAUGACAGAUCAGUGCGCGAGAAGGAAGA
+ABKE01009364.1/1-103                   UCA.UUGAU..ACGAAU.UCGAAUGACAAUCGAGUGGGUGAGAAGGAAGA
+ABKE01003698.1/3164-3283               UCAGUCGAUGAUCGAAUAUAGAAUGACAGAACAGUGCGCGAGAAGGAAGA
+ABKE01000098.1/36649-36530             UCAGUCGAUGAUUGAAUAUCGAAUGACAGAUCAGUGCGCGAGAAGGAAGA
+#=GC SS_cons                           <<<.<<<<<<......>>>>>>.>>>>>>>..>>>>...>>>>.>>..>>
+
+ABKE01002728.1/14129-14010             CUAGCUUCCGUGAUGGUGUUU
+ABKE01009364.1/1-103                   CUUGCUUCCUUGGUUGGUCAU
+ABKE01003698.1/3164-3283               CUAGCUUCCGUGUGAUAGUGU
+ABKE01000098.1/36649-36530             CUAGCUUCCGUGAUAGUGUUC
+#=GC SS_cons                           >>>>...>>............
+//

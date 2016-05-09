@@ -1,0 +1,83 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00055
+#=GF ID   SNORD96
+#=GF DE   Small nucleolar RNA SNORD96 family
+#=GF PI   snoZ37
+#=GF AU   Griffiths-Jones SR, Daub J
+#=GF SE   Griffiths-Jones SR, Daub J
+#=GF SS   Predicted; PFOLD
+#=GF GA   26.00
+#=GF TC   26.67
+#=GF NC   25.85
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   snoRNABase; U96a
+#=GF DR   snoRNABase; U96b
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300073
+#=GF DR   snoopy; Homo_sapiens300641
+#=GF RN   [1]
+#=GF RM   12523999
+#=GF RT   Plant snoRNAs: functional evolution and new modes of gene expression.
+#=GF RA   Brown JW, Echeverria M, Qu LH;
+#=GF RL   Trends Plant Sci 2003;8:42-49.
+#=GF RN   [2]
+#=GF RM   11266566
+#=GF RT   Identification of 10 novel snoRNA gene clusters from Arabidopsis
+#=GF RT   thaliana.
+#=GF RA   Qu LH, Meng Q, Zhou H, Chen YQ, Liang-Hu Q, Qing M, Hui Z, Yue-Qin C;
+#=GF RL   Nucleic Acids Res 2001;29:1623-1630.
+#=GF RN   [3]
+#=GF RM   16381836
+#=GF RT   snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box
+#=GF RT   snoRNAs.
+#=GF RA   Lestrade L, Weber MJ;
+#=GF RL   Nucleic Acids Res. 2006;34:D158-D162.
+#=GF CC   snoRNA Z37 is a member of the C/D class of snoRNA which contain
+#=GF CC   the C (UGAUGA) and D (CUGA) box motifs.  Z37 acts as a
+#=GF CC   methylation guide for 5.8S ribosomal RNA.  This family contains a
+#=GF CC   putative snoRNA found in the intron of the receptor for activated
+#=GF CC   C kinase (RACK1) gene in mammals (S. Griffiths-Jones,
+#=GF CC   pers. obs.). This family also includes human snoRNAs U96a
+#=GF CC   (SNORD96A) and U96b (SNORD96B) and the apicomplexan snoRNA
+#=GF CC   snr39b.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z37
+#=GF SQ   9
+
+AJ010681.1/2-84                  CUAUU.UAUGAUGAUUU.CCC....UUAAUUU.UACCAUCUUUCGGGUCU
+AF295529.1/5361-5441             GAUCCUAGUGAUGACAAGACGAC.AUUGUCAA.C.CAAUCCCCCACAAGG
+AJ132685.1/1-77                  .AUCCUAGUGAUGACAAGACGAC.AUUGUCAA.C.CAAUCCCCCACAAGG
+AF146043.1/3911-3989             GAUCCUGGUGAUGACCA.AUGAC.AUUGUCAG.C.CAAUCC.CCACAUGG
+AC096691.6/4322-4224             CGACG..GUGAUGAAAAACCGCA.AGAAAAACACACCAUCUUUCGGGGCU
+AC096691.6/4089-3994             UGGCC.GGUGAAGAAAA.CCUCG.AUUAAAAA.CACCAUCUUUCGGGGCU
+AC096691.6/3905-3812             GGACC.UGUGAUGAAAU.CUGGA.ACCAAAAA.UACCAUCUUUCGGGACU
+AJ242537.1/1-95                  .AGCC.GAUGUGGAUAU.CAGAUUAUAAAAGAACACCAUCUUUCGGGACU
+AJ240068.1/1-85                  UAGCC.AAUGAGGACAU.CAGAUUAUAAAAGAACACCAUCUUUCGGGACU
+#=GC SS_cons                     <<<<<.............................................
+
+AJ010681.1/2-84                  GAAUUAA.............GAUGUGUUGAUAUUAUGGGAUAUACUGA..
+AF295529.1/5361-5441             GAAUGAG.............GACAUG.......UCCUGCA.AUUCUGAAU
+AJ132685.1/1-77                  GAAUGAG.............GACAUG.......UCCUGCA.AUUCUGAAU
+AF146043.1/3911-3989             GAAUGUG.............GACAUG.......UCCUGCA.AUUCUGAAG
+AC096691.6/4322-4224             GAUUUGGCGCCGCCGCGCGUGCAAUGAUGCUAAUUCUGCA.AUUCUGA..
+AC096691.6/4089-3994             GAUCGGCCGCCGCUCGGCG.GCCAUGCUGCCA.UUCUGCA.AUUCUGA..
+AC096691.6/3905-3812             GAUUUGGCUU...UCAGCA.GCCAUGUUGUCACUUCCAAG.AUCCUGA..
+AJ242537.1/1-95                  GAUUGACUUCU..UUUGAA.GUUUUGCUGAUACUUCUGCA.AUUCUGA..
+AJ240068.1/1-85                  GAUUAA...............CAUUGAUGAUACUUCUGCA.AUUCUGA..
+#=GC SS_cons                     ..................................................
+
+AJ010681.1/2-84                  AAUAG
+AF295529.1/5361-5441             GGGUU
+AJ132685.1/1-77                  GG...
+AF146043.1/3911-3989             GGAUU
+AC096691.6/4322-4224             UGUCC
+AC096691.6/4089-3994             GGCCA
+AC096691.6/3905-3812             GGUCU
+AJ242537.1/1-95                  GGCU.
+AJ240068.1/1-85                  GGCUA
+#=GC SS_cons                     >>>>>
+//

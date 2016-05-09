@@ -1,0 +1,68 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00622
+#=GF ID   CPEB3_ribozyme
+#=GF DE   Mammalian CPEB3 ribozyme
+#=GF AU   Daub J
+#=GF SE   Published; PMID:16990549; INFERNAL
+#=GF SS   Published; PMID:16990549
+#=GF GA   20.00
+#=GF TC   21.89
+#=GF NC   undefined
+#=GF TP   Gene; ribozyme;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000374 SO:ribozyme
+#=GF RN   [1]
+#=GF RM   16990549
+#=GF RT   A genomewide search for ribozymes reveals an HDV-like sequence in the
+#=GF RT   human CPEB3 gene.
+#=GF RA   Salehi-Ashtiani K, Luptak A, Litovchick A, Szostak JW;
+#=GF RL   Science. 2006;313:1788-1792.
+#=GF RN   [2]
+#=GF RM   15565159
+#=GF RT   Autocatalytic RNA cleavage in the human beta-globin pre-mRNA promotes
+#=GF RT   transcription termination.
+#=GF RA   Teixeira A, Tahiri-Alaoui A, West S, Thomas B, Ramadass A, Martianov
+#=GF RA   I, Dye M, James W, Proudfoot NJ, Akoulitchev A;
+#=GF RL   Nature. 2004;432:526-530.
+#=GF CC   The mammalian CPEB3 ribozyme is a self cleaving RNA located in the
+#=GF CC   second intron of the CPEB3 gene which belongs to a family of
+#=GF CC   genes regulating messenger RNA polyadenylation [1]. This ribozyme
+#=GF CC   is highly conserved and found only in mammals [1].  The CPEB3
+#=GF CC   ribozyme is structurally and biochemically related to the human
+#=GF CC   hepatitis delta virus (HDV) ribozyme (Rfam:RF00094) and the HDV
+#=GF CC   ribozyme is proposed to have arisen from the human transcriptome
+#=GF CC   [1]. There is currently only one other known self cleaving
+#=GF CC   ribozyme in mammals, the CoTC motif (Rfam:RF00621)[2].
+#=GF WK   http://en.wikipedia.org/wiki/Mammalian_CPEB3_ribozyme
+#=GF SQ   11
+
+AAIY01234049.1/2-76                      UGAGCAUAAC..AGGGCCACCCCA.AAGCGUUCACAUUGUGGCCCCUGUC
+AC113124.9/161461-161384                 AGAGGAUAACAGGGGGCCACAGCAGAAGCGUUCACGUCGCGGCCCCUGUC
+AC096310.9/197397-197321                 AGAGGAUAACAGGGG.CCACAGCAGAAGCGUUCACGUCGCGGCCCCUGUC
+AL158040.14/122218-122141                AGGGGAUAACAGGGGGCCACAGCAGAAGCGUUCACGUCGCAGCCCCUGUC
+AAPY01211722.1/3878-3801                 CGAGGAUAAUAGGGGGCCACAGCAGAAGCGUUCACGUCGCGGCCCCUGUC
+AAEX02015657.1/14700-14775               AGAGGAUAAC..GGGGCCACAGCAAAAGUGUUCACGUCAUGGCCCCUGUC
+AAFC03085012.1/105656-105579             AAAGGAUAACAAGGGGCCAGAGCAGAAGCAUUCACGUCGCGGCCCCUGUC
+AAGV020425402.1/596-519                  AUAGAAGAUAAUGGGGCCACAGCAGAAGCAUUCAUGUUGCAGCCCUUGUG
+AAFR03024585.1/20274-20351               AGUGGAUAACAGGGGGCCAUAGCAGAAGCGUUCACGUCGCGGCCCCUGUC
+AAGJ02140070.1/974-1047                  AGGGGGGUCCCGGGGGCCAUUGAAGGAGCGUUCACGUCGCGGCCCCUGUC
+AAGJ02028263.1/1614-1541                 AGAGGUACGCGGGGGGCCAUUGAAGGAGCGUUCACGUCGCGGUCCCUGUC
+#=GC SS_cons                             ............<<<<<...AAAAAAA<<<..B....>>>.>>>>>.b.<
+#=GC RF                                  AgAGgAuAacAgGGGGCCAuAGcAGAAGCGUUCAcGUCGCgGCCCCUGUC
+
+AAIY01234049.1/2-76                      AGAUUCUGGUAAAUCUGCGAGUUCUGCU
+AC113124.9/161461-161384                 AGAUUCUGGCGAAUCUGCGAAUUCUGCU
+AC096310.9/197397-197321                 AGAUUCUGGUGAAUCUGCGAAUUCUGCU
+AL158040.14/122218-122141                AGAUUCUGGUGAAUCUGCGAAUUCUGCU
+AAPY01211722.1/3878-3801                 AGAUUCUGGUGAAUCUGCGAAUUCUGCG
+AAEX02015657.1/14700-14775               AGAUUCUGGUGAAUCUGCAAAUUCUGCU
+AAFC03085012.1/105656-105579             AGAUUCUGGUGAAUCUGCGAAUUCUGCU
+AAGV020425402.1/596-519                  AGAUUCAAGUGAAUCUGUGAAUUCUGCU
+AAFR03024585.1/20274-20351               AGAUUCAUAGGAAUCUGCGAAUUCUGCU
+AAGJ02140070.1/974-1047                  AGAU....GAAAAUCUGCGAAUCCUUCA
+AAGJ02028263.1/1614-1541                 AGAU....GAAAAUCUGCGAAUCCUUCA
+#=GC SS_cons                             <<<<<<....>>>>>>>....aaaaaaa
+#=GC RF                                  aGauuCagGuGaauCuGcGAAUuCUgCu
+//

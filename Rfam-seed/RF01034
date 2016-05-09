@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01034
+#=GF ID   mir-618
+#=GF DE   microRNA mir-618
+#=GF AU   Wilkinson A, Daub J
+#=GF SE   miRBase; Daub J
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   23.00
+#=GF TC   25.16
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000553
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+AANU01112357.1/15114-15214               UUCUUGUUCACAACCAAACUCUACUUGUCCUUCUGAGUGUGAUUACGCCC
+CABD01213477.2/1885-1785                 CUCUUGUUCACAGCCAAACUCUACUUGUCCUUCUGAGUGUAAUUAUGUAC
+AADB02015318.1/237377-237477             CUCUUGUUCACAGCCAAACUCUACUUGUCCUUCUGAGUGUAAUUACGUAC
+AACZ02136156.1/40969-41069               CUCUUGUUCACAGCCAAACUCUACUUGUCCUUCUGAGUGUAAUUACGUAC
+ABGA01129596.1/1254-1354                 CUCUUGUUCACAGCCAAACUCUACUUGUCCUUCUGAGUGUAAUUAUGUAC
+#=GC SS_cons                             ..<<<<<<<<<<<...<<<<<<.<<<<<<.<<<<<<<<...<<<.<<...
+#=GC RF                                  uUCccguuCaCagccAaacuCuAcuuGcCcuuCuGaGuGUaauuACguac
+
+AANU01112357.1/15114-15214               AUGGAGUAGCUCAGGAGGCAAACAGGGUUACCCUGUGGAUAGGUCUGAAA
+CABD01213477.2/1885-1785                 AUGCAGUAGCUCAGGAGACAAGCAGGGUUACCCUGUGGAUGAGUCUGAAA
+AADB02015318.1/237377-237477             AUGCAGUAGCUCAGGAGACAAGCAGGUUUACCCUGUGGAUGAGUCUGAAA
+AACZ02136156.1/40969-41069               AUGCAGUAGCUCAGGAGACAAGCAGGGUUACCCUGUGGAUGAGUCUGAAA
+ABGA01129596.1/1254-1354                 AUGCAGUAGCUCAGGAGACAAGCAGGGUUACCCUGUGGACGAGUCUGAAA
+#=GC SS_cons                             .>>.>>>.>>>>>>>>>>>>>>.>>>>>>...>>>>>>>>>>>.......
+#=GC RF                                  AuGgaguAgCuCaGgaGgCaagcaGgguuAcccuGuGgauggGUcUGAAA
+
+AANU01112357.1/15114-15214               A
+CABD01213477.2/1885-1785                 A
+AADB02015318.1/237377-237477             A
+AACZ02136156.1/40969-41069               A
+ABGA01129596.1/1254-1354                 A
+#=GC SS_cons                             .
+#=GC RF                                  A
+//

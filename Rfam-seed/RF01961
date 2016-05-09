@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01961
+#=GF ID   KCNQ1DN
+#=GF DE   KCNQ1 downstream neighbour
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; CMfinder; Eberhardt R
+#=GF SS   Predicted; CMfinder;
+#=GF GA   35.00
+#=GF TC   35.32
+#=GF NC   34.57
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001463 SO:lincRNA
+#=GF RN   [1]
+#=GF RM   11056398
+#=GF RT   A novel imprinted gene, KCNQ1DN, within the WT2 critical region of
+#=GF RT   human chromosome 11p15.5 and its reduced expression in Wilms' tumors.
+#=GF RA   Xin Z, Soejima H, Higashimoto K, Yatsuki H, Zhu X, Satoh Y, Masaki Z,
+#=GF RA   Kaneko Y, Jinno Y, Fukuzawa R, Hata J, Mukai T;
+#=GF RL   J Biochem. 2000;128:847-853.
+#=GF CC   KCNQ1 downstream neighbour (KCNQ1DN) is a long non-coding RNA
+#=GF CC   gene. In humans, it is located on chromosome 11p15.5 between the
+#=GF CC   CDKN1C and KCNQ1 genes. It is an imprinted gene, expressed from
+#=GF CC   the maternal allele. Reduced expression of KCNQ1DN is observed in
+#=GF CC   Wilms' tumours [1].
+#=GF WK   http://en.wikipedia.org/wiki/KCNQ1DN
+#=GF SQ   4
+
+CAAA01026177.1/869-809               AUAUUAGAAGAAU.UUGUUCCAUUUCCUUUGAUGUCUUUUAUAAGUUGCA
+AC005950.1/74966-75027               AUAUUAGAAGAAUGUUUUUCCAUUUCCUUUGAUGUCUGUUACAAGUUGCA
+ABRN01337471.1/980-1041              AUAUUAGAAGAAUGUUCUUCCACUUCCUUUGAUGUCCUUUACAAGCUGCA
+AAPN01429180.1/3726-3787             AUCUUUAAAGAAUGCUUUUCCCUUUCCUUUUAUGCCUUUUUCAAGUUGCA
+#=GC SS_cons                         ..............................<<<<<............>>>
+#=GC RF                              AUMUUARAAGAAUGYUBUUCCMYUUCCUUUGAUGYCYKUUACAAGYUGCA
+
+CAAA01026177.1/869-809               UCUCAUUUCCUG
+AC005950.1/74966-75027               UCUCAUUUCCUG
+ABRN01337471.1/980-1041              UCUCAUUUCCUG
+AAPN01429180.1/3726-3787             UUUCAUGUCCUA
+#=GC SS_cons                         >>..........
+#=GC RF                              UCUCAUKUCCUR
+//

@@ -1,0 +1,74 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00225
+#=GF ID   IRES_Tobamo
+#=GF DE   Tobamovirus internal ribosome entry site (IRES)
+#=GF PI   Tobamo_IRES
+#=GF AU   Moxon SJ
+#=GF SE   http://ifr31w3.toulouse.inserm.fr/IRESdatabase/
+#=GF SS   Published; PMID:9185586
+#=GF GA   21.00
+#=GF TC   49.98
+#=GF NC   undefined
+#=GF TP   Cis-reg; IRES;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000243 SO:internal_ribosome_entry_site
+#=GF DR   GO:0043022 GO:ribosome binding
+#=GF RN   [1]
+#=GF RM   9185586
+#=GF RT   A tobamovirus genome that contains an internal ribosome entry site
+#=GF RT   functional in vitro.
+#=GF RA   Ivanov PA, Karpova OV, Skulachev MV, Tomashevskaya OL, Rodionova NP,
+#=GF RA   Dorokhov YuL, Atabekov JG;
+#=GF RL   Virology 1997;232:32-43.
+#=GF RN   [2]
+#=GF RM   11142379
+#=GF RT   Ribosomal binding to the internal ribosomal entry site of classical
+#=GF RT   swine fever virus.
+#=GF RA   Kolupaeva VG, Pestova TV, Hellen CU;
+#=GF RL   RNA 2000;6:1791-1807.
+#=GF CC   This family represents the Tobamovirus internal ribosome entry site (IRES).
+#=GF CC   IRES elements allow cap and end-independent translation of mRNA in the host
+#=GF CC   cell. The IRES achieves this by mediating the internal initiation of
+#=GF CC   translation by recruiting a ribosomal 43S pre-initiation complex directly
+#=GF CC   to the initiation codon and eliminates the requirement for eIF4F [2].
+#=GF WK   http://en.wikipedia.org/wiki/Tobamovirus_internal_ribosome_entry_site_(IRES)
+#=GF SQ   7
+
+S68164.1/682-832                 GAAUUCGUCGAUUCGGUUGCAGCAUUUAAAGCGGUUGACAACUUUAAAAG
+Z29370.1/5456-5606               GAAUUCGUCGAUUCGGUUGCAGCAUUUAAAGCGGUUGACAACUUUAAAAG
+U03387.1/5455-5605               GAAUUCGUCGAUUCGGUUGCAGCAUUUAAAGCGGUUGACAAUUUCAGGAA
+D38444.1/5444-5597               GAUUUCGUCGAUUCGGUCGCAGCAUUCAAGGCGGUUGACACUUUCAGAAA
+AB003936.1/1522-1672             GAAUUCAUCGAUUCGGUUGCAGCAUUUAAAGCGGUUGACAAUUUCAGGAA
+AB017504.1/5441-5591             GAAUUCAUCGAUUCGGUUGCAGCAUUUAAAGCGGUUGACAAUUUCAGGAA
+AB017503.1/5442-5592             GAAUUCAUCGAUUCGGUUGCAGCAUUUAAAGCGGUUGACAAUUUCAGGAA
+#=GC SS_cons                     ........................<<<..<<..<<<...>>>>>..>>>.
+
+S68164.1/682-832                 AAGGAAAAAGAAGGUUGAAGAAAAGGGUGUAGUAAGUAA...GUAUAAGU
+Z29370.1/5456-5606               AAGGAAAAAGAAGGUUGAAGAAAAGGGUGUAGUAAGUAA...GUAUAAGU
+U03387.1/5455-5605               GAGGAAAAAGAAGGUUGAAGAAAGGGAUGUAGUAAGUAA...GUAUAAAU
+D38444.1/5444-5597               GAAAAAGAAAAGGAUUGGAGGAAAGGAUGUAAAUAAUAAUAAGUUUAGAU
+AB003936.1/1522-1672             AAAGAAAAAGAAGAUUGGAGGAAGGGAUGUGAUUAGUAA...GUAUAAGU
+AB017504.1/5441-5591             AAAGAAAAAGAAGAUUGGAGGAAGGGAUGUGAUUAGUAA...GUAUAAGU
+AB017503.1/5442-5592             AAAGAAAAGGAAGAUUGGAGGAAGGGAUGUGAUUAGUAA...GUAUAAGU
+#=GC SS_cons                     ................................<<<<<.<...<<<<..>>
+
+S68164.1/682-832                 ACAGACCGGAGAAGUACGCCGGUCCUGAUUCGUUUAAUUUGAAAGAAGAA
+Z29370.1/5456-5606               ACAGACCGGAGAAGUACGCCGGUCCUGAUUCGUUUAAUUUGAAAGAAGAA
+U03387.1/5455-5605               AUAGACCGGAGAAAUACGCCGGUCCUGAUUCGUUUAAUUUAAAAGAAGAA
+D38444.1/5444-5597               AUAGACCGGAGAGAUACGCCGGUCAGGAUUCGUUAAAUUAUAAAGAAGAA
+AB003936.1/1522-1672             AUAGACCAGAGAAGUACGCCGGUCCUGAUUCGUUACUUAAUAAAGAAGAA
+AB017504.1/5441-5591             AUAGACCAGAGAAGUACGCCGGUCCUGAUUCGUUACUUAAUAAAGAAGAA
+AB017503.1/5442-5592             AUAGACCAGAGAAGUACGCCGGUCCUGAUUCGUUACUUAAUAAAGAAGAA
+#=GC SS_cons                     ><<<<<<<<.........>>>>>>.>>.>>.>>>>>..............
+
+S68164.1/682-832                 AAUG
+Z29370.1/5456-5606               AAUG
+U03387.1/5455-5605               AAUG
+D38444.1/5444-5597               AAUG
+AB003936.1/1522-1672             AAUG
+AB017504.1/5441-5591             AAUG
+AB017503.1/5442-5592             AAUG
+#=GC SS_cons                     ....
+//

@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01619
+#=GF ID   ceN115
+#=GF DE   C. elegans sRNA ceN115
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; Clustal_alifold;
+#=GF GA   35.00
+#=GF TC   42.21
+#=GF NC   27.80
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/C._elegans_small_RNAs
+#=GF SQ   2
+
+AY948611.1/1-159               CAGUUCUCCAAGACGGACGGAGCUUUCGAGUUUCGUGCUACGGCACGUCU
+Z80218.1/3076-3234             CAGUUCUCCAAGACGGACGGAGCUUUCGAGUUUCGUGCUACGGCACGUCU
+#=GC SS_cons                   ......<<<<<<<<<<..<<<<<<<<<<<<...<<<<<....>>>>>...
+#=GC RF                        CAGUUCUCCAAGACGGACGGAGCUUUCGAGUUUCGUGCUACGGCACGUCU
+
+AY948611.1/1-159               CUCGGAGAGCCAAGACAAAUCCAAGUCAAAAACCAACAAACCAAAUAAAU
+Z80218.1/3076-3234             CUCGGAGAGCCAAGACAAAUCCAAGUCAAAAACCAACAAACCAAAUAAAU
+#=GC SS_cons                   >>>>>>>...............<<<<<<.....................>
+#=GC RF                        CUCGGAGAGCCAAGACAAAUCCAAGUCAAAAACCAACAAACCAAAUAAAU
+
+AY948611.1/1-159               GACUUAACAAAAUGCUCCCCGUCUUUAAAUUUUGGAAAAGGGUCCCAAUA
+Z80218.1/3076-3234             GACUUAACAAAAUGCUCCCCGUCUUUAAAUUUUGGAAAAGGGUCCCAAUA
+#=GC SS_cons                   >>>>>........>>>>>>>>>>>........>>>>...<<<<<<<....
+#=GC RF                        GACUUAACAAAAUGCUCCCCGUCUUUAAAUUUUGGAAAAGGGUCCCAAUA
+
+AY948611.1/1-159               GGGACCCGG
+Z80218.1/3076-3234             GGGACCCGG
+#=GC SS_cons                   >>>>>>>..
+#=GC RF                        GGGACCCGG
+//

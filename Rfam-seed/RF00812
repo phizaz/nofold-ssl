@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00812
+#=GF ID   mir-83
+#=GF DE   microRNA mir-83
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   50.00
+#=GF TC   83.80
+#=GF NC   22.74
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000251
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+CAAC02000544.1/241286-241176             GCAGAAGGCACCACUCGAAAAAACUGAGUUUAUGUGUGUACUU.GACGGC
+ABEG01004581.1/14903-14793               AUCGAAGGCACCACUCGGAAAAACUGAGUUUAUUUGAGUACUUAGACGGC
+U41012.1/15999-16108                     UUUAAAAGCACCACUCGGAACCACUGAAUUUAUGUGUGUACUU.GACGGC
+AAGD02003239.1/24857-24749               CCAGUAGGCACCACUCGGAAAAACUGAGUUUAUGUGUGUACUU.GACGGC
+#=GC SS_cons                             ......<<<....<.<<<<<<<<<<<<<<<<<<<<<.<<.<<..<<<<..
+#=GC RF                                  uuaaaAgGCAccACuCGgaacuaCuGaauuuauguGuGuACuu.GaCGGc
+
+CAAC02000544.1/241286-241176             .GAUCAGAGCAACGAUCUAGCACCAUAUAAAUUCAGUGUUUUCGUGGACA
+ABEG01004581.1/14903-14793               .CAUUAGAGCAACGAUCUAGCACCAUAUAAAUUCAGUAUUUUCGUG..GA
+U41012.1/15999-16108                     CAACAAGAGCAUCGAUCUAGCACCAUAUAAAUUCAGUAAUUUCGCG..UC
+AAGD02003239.1/24857-24749               .CACUCGAGCAACGAUCUAGCACCAUAUAAAUUCAGUAUUUUCGUG..GA
+#=GC SS_cons                             ............>>.>>.>>.>>>>>>>>>>>>>>>>>>>>>>>.>....
+#=GC RF                                  caAcaaGAGcAaCGAuCuaGcaCCauauaaauuCaGuaguuuCGuG..ua
+
+CAAC02000544.1/241286-241176             .GAGAGCCAAGUUU
+ABEG01004581.1/14903-14793               UGAGAGCCUAUUUU
+U41012.1/15999-16108                     .GAGAGCUAUUCUG
+AAGD02003239.1/24857-24749               .GAGAGCCAAUUUU
+#=GC SS_cons                             .....>>>......
+#=GC RF                                  .GAGAGCcAauuuu
+//

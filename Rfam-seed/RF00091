@@ -1,0 +1,112 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00091
+#=GF ID   SNORA62
+#=GF DE   Small nucleolar RNA SNORA62/SNORA6 family
+#=GF PI   E2
+#=GF AU   Griffiths-Jones SR, Moxon SJ, Daub J
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   22.00
+#=GF TC   22.66
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   snoRNABase; E2
+#=GF DR   snoRNABase; ACA6
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300694
+#=GF DR   snoopy; Homo_sapiens300658
+#=GF RN   [1]
+#=GF RM   8586453
+#=GF RT   The gene for human E2 small nucleolar RNA resides in an intron of a
+#=GF RT   laminin-binding protein gene.
+#=GF RA   Selvamurugan N, Eliceiri GL;
+#=GF RL   Genomics 1995;30:400-401.
+#=GF RN   [2]
+#=GF RM   9144174
+#=GF RT   Three small nucleolar RNAs that are involved in ribosomal RNA
+#=GF RT   precursor processing.
+#=GF RA   Mishra RK, Eliceiri GL;
+#=GF RL   Proc Natl Acad Sci U S A 1997;94:4972-4977.
+#=GF RN   [3]
+#=GF RM   15199136
+#=GF RT   Human box H/ACA pseudouridylation guide RNA machinery.
+#=GF RA   Kiss AM, Jady BE, Bertrand E, Kiss T;
+#=GF RL   Mol Cell Biol 2004;24:5797-5807.
+#=GF RN   [4]
+#=GF RM   11387227
+#=GF RT   RNomics: an experimental approach that identifies 201 candidates for
+#=GF RT   novel, small, non-messenger RNAs in mouse.
+#=GF RA   Huttenhofer A, Kiefmann M, Meier-Ewert S, O'Brien J, Lehrach H,
+#=GF RA   Bachellerie JP, Brosius J;
+#=GF RL   EMBO J 2001;20:2943-2953.
+#=GF RN   [5]
+#=GF RM   16381836
+#=GF RT   snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box
+#=GF RT   snoRNAs.
+#=GF RA   Lestrade L, Weber MJ;
+#=GF RL   Nucleic Acids Res. 2006;34:D158-D162.
+#=GF CC   The members of this family belong to the H/ACA class of snoRNAs
+#=GF CC   which are predicted to guide the sites of modification of
+#=GF CC   uridines to pseudouridines [3].  This family includes human
+#=GF CC   snoRNAs E2 (SNORA62), ACA6 (SNORA6) and M2 and mouse MBI-136. In
+#=GF CC   humans both E2 and ACA6 are encoded in the introns on the same
+#=GF CC   host gene (LAMR1)[1,3]. E2 is involved in the processing of
+#=GF CC   eukaryotic pre-rRNA and has regions of complementarity to 28S
+#=GF CC   rRNA [2].  ACA6 is predicted to guide the pseudouridylation of
+#=GF CC   residue U3616 of 28S rRNA [5].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORA62
+#=GF SQ   10
+
+U64700.1/1-155                     .UUGCACACAGUUAGAACUUGG.AGCUGAG.GCCUU.UUCA.GCCAAUGA
+AF375473.1/1-156                   CACGCACACAGUUGGAACUUGGGAGCUGAGAGCCAACCUGUGGCCAAGGA
+L07383.1/1-153                     UGUGCACAUUGUUAGAGCUUGG.AGUUGAG.GCUACUGACUGGCCGAUGA
+L22739.1/569-721                   UGUGCACAUUGUUAGAGCUUGG.AGUUGAG.GCUACUGACUGGCCGAUGA
+AC099332.2/52634-52482             UGUGCACAUUGUUAGAGCUUGG.AGUUGAG.GCUACUGACUGGCCGAUGA
+AJ609429.1/1-149                   ..UGCACACUAUUAAAGCUCAG.GGUGGAG.GCCAGUCU.UGGCUCAUGA
+AF375472.1/1-148                   ..UGCACACUAUUAAAGCUCAG.GGUGGAG.GCCAGUCU.UGGCUCAUGA
+U43901.2/6709-6861                 UGUGCACAUUGUUAGAGCUUGG.AGUUGAG.GCUACUGACUGGCCGAUGA
+AK055991.1/796-948                 UGUGCACAUUGUUAGAGCUUGG.AGUUGAG.GCUACUGACUGGCCGAUGA
+U36484.1/569-721                   UGUGCACAUUGUUAGAGCUUGG.AGUUGAG.GCUACUGACUGGCCGAUGA
+#=GC SS_cons                       ...<<<<<<<.....................<<<<.....>>>>......
+
+U64700.1/1-155                     ACU.CUGAGUGUAGGAUGUGUGCUACAUUAACAUGGCAGACUUUUCGCUA
+AF375473.1/1-156                   ACU.CUCAGUGUAGGAUGUGUGCUACAGUAACAUGGCAGGACUUAC.UGA
+L07383.1/1-153                     ACUCGCAAGUGUAGGUAGUGUGCUACAUGAG..GGGCAAG.UUUUCGCUA
+L22739.1/569-721                   ACUCGCAAGUGUAGGUAGUGUGCUACAUGAG..GGGCAAG.UUUUCGCUA
+AC099332.2/52634-52482             ACUCGCAAGUGUAGGUAGUGUGCUACAUGAG..GGGCAAG.UUUUCGCUA
+AJ609429.1/1-149                   ACUUCUGAGUGUCGGAAGUGUGCUAUAUCAA..UGGCAGGAUUUUCGCUA
+AF375472.1/1-148                   ACUUCUGAGUGUCGGAAGUGUGCUAUAUCAA..UGGCAGGAUUUUCGCUA
+U43901.2/6709-6861                 ACUCGCAAGUGUAGGUAGUGUGCUACAUGAG..GGGCAAG.UUUUCGCUA
+AK055991.1/796-948                 ACUCGCAAGUGUAGGUAGUGUGCUACAUGAG..GGGCAAG.UUUUCGCUA
+U36484.1/569-721                   ACUCGCAAGUGUAGGUAGUGUGCUACAUGAG..GGGCAAG.UUUUCGCUA
+#=GC SS_cons                       ................>>>>>>>...........<<<<<...........
+
+U64700.1/1-155                     ACGCCACAAGGAGCUUUAGAGCUCCAGUGACUGGAGUUUGAUAGUAAUUC
+AF375473.1/1-156                   CAGCCU.GAGGGCCUUU.GUGGCCCAAUGAAAGGAGUUUGGUAGUCAAUC
+L07383.1/1-153                     ACACCACAAGGGUCUC...UGGCCCAAUGAGUGGAGUUUGAUAGUAAUUC
+L22739.1/569-721                   ACACCACAAGGGUCUC...UGGCCCAAUGAGUGGAGUUUGAUAGUAAUUC
+AC099332.2/52634-52482             ACACCACAAGGGUCUC...UGGCCCAAUGAGUGGAGUUUGAUAGUAAUUC
+AJ609429.1/1-149                   ACACCAGUAGAG.CU....UGCCUCUAUGACUGGAGUUUGGUAGUACUCG
+AF375472.1/1-148                   ACACCAGUAGAG.CU....UGCCUCUAUGACUGGAGUUUGGUAGUACUCG
+U43901.2/6709-6861                 ACACCACAAGGGUCUC...UGGCCCAAUGAGUGGAGUUUGAUAGUAAUUC
+AK055991.1/796-948                 ACACCACAAGGGUCUC...UGGCCCAAUGAGUGGAGUUUGAUAGUAAUUC
+U36484.1/569-721                   ACACCACAAGGGUCUC...UGGCCCAAUGAGUGGAGUUUGAUAGUAAUUC
+#=GC SS_cons                       ...<<<<..<<<<<......>>>>>.....>>>>................
+
+U64700.1/1-155                     UUGCCACAGCU
+AF375473.1/1-156                   UUGCCACAGU.
+L07383.1/1-153                     UUGCUACAAGU
+L22739.1/569-721                   UUGCUACAAGU
+AC099332.2/52634-52482             UUGCUACAAGU
+AJ609429.1/1-149                   CUGCCACAUAG
+AF375472.1/1-148                   CUGCCACAUA.
+U43901.2/6709-6861                 UUGCUACAAGU
+AK055991.1/796-948                 UUGCUACAAGU
+U36484.1/569-721                   UUGCUACAAGU
+#=GC SS_cons                       >>>>>......
+//

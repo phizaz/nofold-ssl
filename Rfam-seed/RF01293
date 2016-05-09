@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01293
+#=GF ID   ACA59
+#=GF DE   Small nucleolar RNA ACA59
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   26.00
+#=GF TC   26.15
+#=GF NC   25.51
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   snorna; ACA59
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+AANU01225121.1/438-603                 GCCCAGGGUAUGUUUAUGGGGUGAUGCUGCCCGGGGUGAUGCUGCCCUCC
+AL031296.1/85969-86120                 GCCCAGGGUAUGUU...............CACGGGGCGAUGCUGCCCUCC
+AAWR02037329.1/29294-29150             GCUCAGUGUGGGUU...............AACCGGGUGAUGCUGCCCUCC
+#=GC SS_cons                           .<<<<<<<<........................<<<<......>>>>...
+#=GC RF                                GCCCaggGuAUGUUuAuggggugAugcugCaCGGGGcGAUGCUgCCCUCC
+
+AANU01225121.1/438-603                 AAGCUGGCCCAUGGGUGACUGUGGGAAUGUUA.CUGCCUCACAACAUUUG
+AL031296.1/85969-86120                 CAGCUGGCCCAUGGGUGACCCUGGGAACAUUAACUGCCUCACAACGUUUG
+AAWR02037329.1/29294-29150             UGGCUCUACCACUAAUGACCCUGGGCAGGGUC....CUCGACACCACU..
+#=GC SS_cons                           .................>>>>>>>>.............<<<<.<<<<<<<
+#=GC RF                                aAGCUGGCCCAUGGGUGaCccuGGGAAuaUUAACUGCCuCaCAaCauuug
+
+AANU01225121.1/438-603                 UGCCUCAGUUACUCAUAGAUGUAGUGAGGGUGACAAUACUUACUCUCGUU
+AL031296.1/85969-86120                 UGCCUCAGUUACCCGUAGAUGUAGUGAGGGUAACAAUACUUACUCUCGUU
+AAWR02037329.1/29294-29150             .GCCUCGGUUACCCAUCGGUGCAGUGCGGGUAGUAGUACCAAUGCUAAUU
+#=GC SS_cons                           <<...........>>>>>>>>>....<<<<<<<......>>>>>>>....
+#=GC RF                                uGCCUCAGUUACuCauagauGuAGUGaGgGuaaCAAUACuuaCuCuCGUU
+
+AANU01225121.1/438-603                 GGUGAUAAGGAACAGCU
+AL031296.1/85969-86120                 GGUGAUAAGGAACAGCU
+AAWR02037329.1/29294-29150             AGUUGUGAGGACCAACU
+#=GC SS_cons                           .>>>>............
+#=GC RF                                GGuGaUAAGGAACAGCU
+//

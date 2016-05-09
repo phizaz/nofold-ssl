@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00794
+#=GF ID   mir-42
+#=GF DE   microRNA mir-42
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   50.00
+#=GF TC   73.58
+#=GF NC   23.41
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000233
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+AAGD02000348.1/78552-78654                 AAACCCUUGUCGGACCUUUGUGGAUGUUUCCUUUUUCGGUGAAGUUGUUC
+CAAC02000450.1/2292468-2292373             UAACCCUUGUCGGACCUUUGUGGGUGUUCGCCUUUUCGGUGAAGUUAC..
+ABEG01018919.1/6102-6006                   CAACCCUUGUCGGACCUUUGUGGAUGUUUGCCUUUUCGGUGAAGUUUC..
+Z70213.1/12424-12524                       AACCC.UUCGCGGACCUUUGUGGGUGUUUGCUUUUUCGGUGAAGUUGUCU
+#=GC SS_cons                               ..<<<<<<...<<<<<<<<<<<<<<<<<.<<<....<<<<<<<<......
+#=GC RF                                    uAacccuugucGGaCCuuuGugGguGuuugCcuuuuCGGuGaaGuuaucu
+
+AAGD02000348.1/78552-78654                 CGUUGAAUUAUCUUCUUCACCGGGUUAACAUCUACAGAGGUCCUCGAGGG
+CAAC02000450.1/2292468-2292373             ....UGAAU.GCUUCUUCACCGGGUUAACAUCUACAGAGGUCCUAAAGGG
+ABEG01018919.1/6102-6006                   ...AAAAGA.UAUUCUUCACCGGGUUAACAUCUACAGAGGUCCUGAAGGG
+Z70213.1/12424-12524                       UCCGUAGCU.UCUUCUUCACCGGGUUAACAUCUACAGAGGUCCAAAAAGG
+#=GC SS_cons                               ..............>>>>>>>>>>>.>>>>>>>>>>>>>>>>>..>>>>>
+#=GC RF                                    uccguaaau.ucuuCuuCaCCGgGuuaaCauCuaCagaGGuCCaAaaggg
+
+AAGD02000348.1/78552-78654                 UUU
+CAAC02000450.1/2292468-2292373             UUC
+ABEG01018919.1/6102-6006                   UUU
+Z70213.1/12424-12524                       GGU
+#=GC SS_cons                               >..
+#=GC RF                                    uug
+//

@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01513
+#=GF ID   Afu_335
+#=GF DE   A. fumigatus snoRNA Afu_335
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   28.00
+#=GF TC   30.03
+#=GF NC   24.84
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   18346967
+#=GF RT   Small ncRNA transcriptome analysis from Aspergillus fumigatus
+#=GF RT   suggests a novel mechanism for regulation of protein synthesis.
+#=GF RA   Jochl C, Rederstorff M, Hertel J, Stadler PF, Hofacker IL, Schrettl
+#=GF RA   M, Haas H, Huttenhofer A;
+#=GF RL   Nucleic Acids Res. 2008;36:2677-2689.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   5
+
+AM921933.1/1-97                          UCGAGUGAUGAUCUUCCUGAUAGGGACAUCUGAUGCAAAAAGCACAUGAU
+AM920431.1/2305920-2305824               UCGUAUGAUGACUUUCCCGAUAGGGACAUCUGAUGCAAAUUGCAUAUGAU
+ABBS02000011.1/58644-58737               CCCAAUGAUGAUCAUCCAGAUAGGGACAGCUUAUGCUAU..GCAUGUGAU
+ABHV01000074.1/132700-132607             UCCAAUGAUGAUUUUCCAGAUAGGGACAGCUUAUGCUAU..GCAAAUGAU
+EU780959.1/1-95                          CUUUAUGAUGAAC.CCCUGAUAGGGACAUCUUAUGCCAAACGCAAAUGAU
+#=GC SS_cons                             ..................................................
+#=GC RF                                  UCGAGUGAUGAUCUUCCUGAUAGGGACAUCUGAUGCAAAAAGCACAUGAU
+
+AM921933.1/1-97                          GCGAAC.AGGACAAGAGAUUUUAGUAGAUGCUUCUUGGAUAUCUGAAG
+AM920431.1/2305920-2305824               GUUACC.AGGACAAGAGAUUUUAGUAGAUGCUUCUUGACUAUCUGAAA
+ABBS02000011.1/58644-58737               GUUACC.UGGAAAGAGAAUUUUAGUAGAUGCCUCUUGU.UAUCUGAGC
+ABHV01000074.1/132700-132607             GUCACC.UGGAAAGAGAAUUUUAGUAGAUGCCUCUUUU.GAUCUGAGG
+EU780959.1/1-95                          GUGAAUUUGGGCUCGGUAUUUUAGUAGAUGCUUCGAG..UUUCUGAUC
+#=GC SS_cons                             ................................................
+#=GC RF                                  GCGAAC.AGGACAAGAGAUUUUAGUAGAUGCUUCUUGGAUAUCUGAAG
+//

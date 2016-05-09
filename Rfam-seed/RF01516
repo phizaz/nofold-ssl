@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01516
+#=GF ID   v-snoRNA-1
+#=GF DE   Human herpesvirus 1 small nucleolar RNA
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   75.00
+#=GF TC   90.75
+#=GF NC   18.78
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   19680535
+#=GF RT   Expression and processing of a small nucleolar RNA from the
+#=GF RT   Epstein-Barr virus genome.
+#=GF RA   Hutzinger R, Feederle R, Mrazek J, Schiefermeier N, Balwierz PJ,
+#=GF RA   Zavolan M, Polacek N, Delecluse HJ, Hüttenhofer A
+#=GF RL   PLoS Pathog. 2009;5:e1000547.
+#=GF WK   http://en.wikipedia.org/wiki/Epstein-Barr_virus_snoRNA1
+#=GF SQ   2
+
+L06837.1/376-312                     UCCCGAUGAUGAUGACAACCGCGGCUGUCUGAAGCGGCUGACGAAAUCGG
+AY037858.1/148954-149018             UCCCGAUGAUGACACCCGCCGCGGCUGUCUGAGGCAGCUGAGGAAAUUGG
+#=GC SS_cons                         ..................................................
+#=GC RF                              uCCCGAUGAUGAUGACAACCGCGGCUGUCUGAAGCGGCUGACGAAAUCGG
+
+L06837.1/376-312                     UUGAGAUUCUGAUGA
+AY037858.1/148954-149018             UUGAGAUUCUGACGU
+#=GC SS_cons                         ...............
+#=GC RF                              UUGAGAUUCUGAUGa
+//

@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00054
+#=GF ID   SNORD25
+#=GF DE   Small nucleolar RNA SNORD25
+#=GF PI   U25
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   21.00
+#=GF TC   23.11
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300709
+#=GF DR   snoopy; Homo_sapiens300169
+#=GF RN   [1]
+#=GF RM   11266566
+#=GF RT   Identification of 10 novel snoRNA gene clusters from Arabidopsis
+#=GF RT   thaliana.
+#=GF RA   Qu LH, Meng Q, Zhou H, Chen YQ, Liang-Hu Q, Qing M, Hui Z, Yue-Qin C;
+#=GF RL   Nucleic Acids Res 2001;29:1623-1630.
+#=GF RN   [2]
+#=GF RM   8559254
+#=GF RT   A mammalian gene with introns instead of exons generating stable RNA
+#=GF RT   products.
+#=GF RA   Tycowski KT, Shu MD, Steitz JA;
+#=GF RL   Nature 1996;379:464-466.
+#=GF CC   U25 is a member of the C/D class of snoRNA which contain the
+#=GF CC   C (UGAUGA) and D (CUGA) box motifs.  U25 is found in gene clusters
+#=GF CC   in plants [1], and within the U22 snoRNA host gene (UHG) in mammals
+#=GF CC   [2].  U25 is thought to as a 2'-O-ribose methylation guide for
+#=GF CC   ribosomal RNA.  This RNA has also been named snoRNA R73 in some
+#=GF CC   plants.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD25
+#=GF SQ   8
+
+U40654.1/666-735                   ..CCCCUAUGAUGAGGACC.UUUUCACAGACCUGUA........CUGAUA
+U40580.1/750-817                   ..UUCCUAUGAUGAGGACC.UUUUCACAGACCUGUA........CUGAGC
+L36587.1/100-167                   ..UUCCUAUGAUGAGGACC.UUUUCACAGACCUGUA........CUGAGC
+AL662969.3/86448-86535             UGUGGCAGUGAUGAGC.CC..UAACAGACCUGUAAUGAUUCUUGUGUAUA
+AL662969.3/87631-87717             UUUGACGGUGAUUAGC.CC..UAACAGACCUGUAAUGAUUCUUGCGGAUA
+AL662969.3/86874-86961             CAUGGCGGUCUUGAGC.CC..UAACAGACCUGAAAUAAUUAUUGCGGAUA
+AL662969.3/87797-87884             GGCAACAGUGAUGAGU.CC..UUACAGACCUGUAAUGAUUCUUGCGGGAA
+AJ276573.1/1-85                    AAGAACAGUGAUGAGU.CAGUUUACAGACCUGUAAUGA...UUGCGGUAA
+#=GC SS_cons                       .<<<<<............................................
+
+U40654.1/666-735                   UAU..........CUGUGAGGAUAAGUAACUCUGAGGAGGC
+U40580.1/750-817                   U............CCGUGAGGAUAAAUAACUCUGAGGAGAU
+L36587.1/100-167                   U............CCGUGAGGAUAAGUAACUCUGAGGAGAU
+AL662969.3/86448-86535             UGAUCGCUUGAUUCAAAGAACAUCUAAGGGACUGAGUUGUC
+AL662969.3/87631-87717             CGAUCGCUUGAU.CAAAGAACAUCUAAGGGACUGAGUAAUA
+AL662969.3/86874-86961             UGAUUGCUUAAUUCAGAGCACAUCUAAGGGACUGAGUUGCC
+AL662969.3/87797-87884             UGAUCGCUUGAUUCAAAGAACAUCUAAGGGACUGAGUUAUC
+AJ276573.1/1-85                    UGAUCGCAUUA..UUAUGAACAUCUAAGGGACUGAGUUCUU
+#=GC SS_cons                       ...................................>>>>>.
+//

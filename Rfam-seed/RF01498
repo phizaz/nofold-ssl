@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01498
+#=GF ID   Afu_190
+#=GF DE   A. fumigatus snoRNA Afu_190
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   25.00
+#=GF TC   35.50
+#=GF NC   17.89
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   18346967
+#=GF RT   Small ncRNA transcriptome analysis from Aspergillus fumigatus
+#=GF RT   suggests a novel mechanism for regulation of protein synthesis.
+#=GF RA   Jochl C, Rederstorff M, Hertel J, Stadler PF, Hofacker IL, Schrettl
+#=GF RA   M, Haas H, Huttenhofer A;
+#=GF RL   Nucleic Acids Res. 2008;36:2677-2689.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+ABDB01000050.1/749589-749691             AUAUGAUGAGAUAUCAUAGCUGGCACCAGUCAGACGGGGUGGUUAUAAAC
+ABFO01000069.1/3951-4046                 ACAUGAUGAAAAUCUUUCGCUGGCACCAGUC...CUAGAAAGACUUGUAC
+ABKH01000207.1/44184-44282               CUAUGAUGAGACUUCUUAGCUGGCACCAGUC...CUAGAAAGAUUUGUUC
+#=GC SS_cons                             ..................................................
+#=GC RF                                  auAUGAUGAGAuuucAUAGCUGGCACCAGUCAGAcaGGaaGGuuuUGAAc
+
+ABDB01000050.1/749589-749691             CAUAUCCACUGUUGAUUAGCUCUGGUCCGGGAACGCUACCCGAGAUCCCU
+ABFO01000069.1/3951-4046                 UCUGUUUGCUGCGGACAACCCUUUGGCU....UCUAAAUGCCUCCUAUCU
+ABKH01000207.1/44184-44282               UCUGUUUGUUGCGGAUUAGCUUU.GCAAUGGCUUAUAUAGCCUUGUUUCU
+#=GC SS_cons                             ..................................................
+#=GC RF                                  uaUaUuuauUGuuGAUUAGCUcUgGucagGGAAcGcuAccCaugAUcaCU
+
+ABDB01000050.1/749589-749691             GAC
+ABFO01000069.1/3951-4046                 GAU
+ABKH01000207.1/44184-44282               GAU
+#=GC SS_cons                             ...
+#=GC RF                                  GAu
+//

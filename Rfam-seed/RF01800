@@ -1,0 +1,104 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01800
+#=GF ID   gadd7
+#=GF DE   growth arrested DNA-damage inducible gene 7
+#=GF AU   Moore B
+#=GF SE   Published; PMID:2658040
+#=GF SS   Predicted;
+#=GF GA   70.00
+#=GF TC   134.37
+#=GF NC   37.10
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   2658040
+#=GF RT   Early clinical experience with a simple method for autotransfusion in
+#=GF RT   cardiac surgery.
+#=GF RA   Szecsi J, Batonyi E, Liptay P, Orosi P, Medgyessy I, Peterffy A;
+#=GF RL   Scand J Thorac Cardiovasc Surg. 1989;23:51-56.
+#=GF WK   http://en.wikipedia.org/wiki/gadd7
+#=GF SQ   2
+
+U26834.1/1-753             G..GAAGCUGAGGUUUUUCCUAUGUCUGAACAAUGACGCCAUCGUUUUCU
+L40430.1/1-754             CGGGAAGCUGAGGUUUUUCCUAUGUCUGAACAAUGACGCCAUCGUUUUCU
+#=GC SS_cons               .<<<<.<<<<<<<.....<<<<.<...<<<<.<<<....>>>.>>>>.>>
+#=GC RF                    cGGGaAGCuGagGuuuuuCCuauGucugaaCAauGAcGcCaucGuuuuCu
+
+U26834.1/1-753             GGGUCUUCGAAGCAGUUGCAAAGAAAUGCCCAGAUGGAGGACAGAGGGCC
+L40430.1/1-754             GGGUCUUCGAAGCAGUUGCAAAGAAAUGCCCAGAUGGAGGACAGAGGGCC
+#=GC SS_cons               >>>.>>>>..>>>.<<..<<<<<...<<<<<<<<....<<<<<<<<<<<.
+#=GC RF                    gGGuCuuCGAaGCAGuuGCaaagAAAugCCCaGauGGAGgaCaGaGGGCc
+
+U26834.1/1-753             AAACCACCCCAGUGAAUUCAUAACAGGAGAUAACUUGCUUAAGACCUGAC
+L40430.1/1-754             AAACCACCCCAGUGAAUUCAUAACAGGAGAUAACUUGCUUAAGACCUGAC
+#=GC SS_cons               <<<<<<<.<<<<<...<<<<<.<<.<<.......<<<<<<<<<<<.....
+#=GC RF                    aaaCCaCcCCaGuGAAuuCauAaCAGGAGAuAAcuuGCuuaagaCcuGAc
+
+U26834.1/1-753             UGUUUUUAAAAGCGAAUGCCAGUGAGUGAAAUGCCAGCUCCCUGUACAGU
+L40430.1/1-754             UGUUUUUAAAAGCGAAUGCCAGUGAGUGAAAUGCCAGCUCCCUGUACAGU
+#=GC SS_cons               .>>>>>...>>>>>>...>>.>>..>>>>>....<<<<<<<<......<<
+#=GC RF                    uGuuuuuAAaaGCgaAuGCCAGuGAguGaaAuGcCagCuCCCuGuAcAGu
+
+U26834.1/1-753             UACUAGAGCUCCUGGGAAUGCAUGGCCAGUGACACAAGUGAGAAUUGGAU
+L40430.1/1-754             UACUAGAGCUCCUGGGAAUGCAUGGCCAGUGACACAAGUGAGAAUUGGAU
+#=GC SS_cons               ..<<<<.....>>>>....>>..<<<<....<<<<..<<<...<<<<<<<
+#=GC RF                    uACuaGAGcucCugGGAAugCAuGGCCAGuGaCaCAAGugAGAauugGau
+
+U26834.1/1-753             GUUAUGACCGUCCAGAAAAGACAAGAUGAGAAAGUGCAGUAUUGACUGUC
+L40430.1/1-754             GUUAUGACCGUCCAGAAAAGACAAGAUGAGAAAGUGCAGUAUUGACUGUC
+#=GC SS_cons               <<<....<<<<<<<.<..<<<<<..<.<<<<..<<<<..<<<<.<.<<<<
+#=GC RF                    guuAuGACCguCCaGaAAagaCaAGaugaGaAAGuGCAGuauuGacuguC
+
+U26834.1/1-753             UUCAAACGCACCUGUCCUUGCUCAAGUGCUGGGAUUGUGUGCCAACGGCU
+L40430.1/1-754             UUCAAACGCACCUGUCCUUGCUCAAGUGCUGGGAUUGUGUGCCAACGGCU
+#=GC SS_cons               <<<<...<<<<..<<<<<.<<......>>.>>>>>.>>>><<<...>>>.
+#=GC RF                    uuCaAAcgCaCcuguCCuuGCucAAGuGCugGGauuGuGuGCCAAcGGCu
+
+U26834.1/1-753             AUGAUAGAUAUGAAUAGAGCACGAGAUAAUGUGCUUACAGAAAGUUGGUU
+L40430.1/1-754             AUGAUAGAUAUGAAUAGAGCACGAGAUAAUGUGCUUACAGAAAGUUGGUU
+#=GC SS_cons               .>>>.>>>>>>.>>>>..>>>>........<<<<<<.<<<<..<<<<<<<
+#=GC RF                    AuGauaGauauGaauaGAGCaCGAGAuAAuGuGCuuACagaAAguugguu
+
+U26834.1/1-753             GAAUUGAAUGCAAUUAAUGUUUGGAGGCACUUAGUCUUCUAGUGUUUGAA
+L40430.1/1-754             GAAUUGAAUGCAAUUAAUGUUUGGAGGCACUUAGUCUUCUAGUGUUUGAA
+#=GC SS_cons               <.........>>>>>>>>.>>>>.>>>>>>....>>>>.>..>>>>>...
+#=GC RF                    GAAuuGAAuGCaauuaauGuuuGGagGCaCuuAGuCuucuAGuGuuuGAA
+
+U26834.1/1-753             UGUGGAUGGAAUUAAAGCUGGGUUUGUAGUGAGCCAUUAGGAUUAUGGCA
+L40430.1/1-754             UGUGGAUGGAAUUAAAGCUGGGUUUGUAGUGAGCCAUUAGGAUUAUGGCA
+#=GC SS_cons               >.>>>>>>>.......<<<<......>>>>..<<<<<.......>>>>>.
+#=GC RF                    uGuGGauGGAAuuAAAgCugGGuuuGuaGuGAGCCauuAGGAuuauGGCA
+
+U26834.1/1-753             AAUGUCUAGUGUACAGAAUUCAGUGUAGGCCGGGAGUUGAGACUGGUGUG
+L40430.1/1-754             AAUGUCUAGUGUACAGAAUUCAGUGUAGGCCGGGAGUUGAGACUGGUGUG
+#=GC SS_cons               >>>>>>>>>>.>>>.<....>.>>>>.>>>>>>>>>>>>..>>>>>.>>>
+#=GC RF                    aauguCuaguGuaCAGAAuuCAGuGuAGGCCGGGaGuuGAGaCuGGuGuG
+
+U26834.1/1-753             UGUUUAGUGGAUUAUCUGAUCAGCACAUGUGUGACAGUGUUGAUCACAAG
+L40430.1/1-754             UGUUUAGUGGAUUAUCUGAUCAGCACAUGUGUGACAGUGUUGAUCACAAG
+#=GC SS_cons               .>>>>....<<<<...<<<<<<<<<<.<<.....>>>>>>>>>>>>..>>
+#=GC RF                    uGuuuAGuGGauuAucuGauCagCaCAuGuGuGACaGuGuuGauCacAag
+
+U26834.1/1-753             UCAUUGCCAGCUCUGUUCAUUUUCUUCCCUGGUCUAACUCAAUAAUUGCC
+L40430.1/1-754             UCAUUGCCAGCUCUGUUCAUUUUCUUCCCUGGUCUAACUCAAUAAUUGCC
+#=GC SS_cons               >>...>>>..>>>>>>>>.<<<<<.....<<<<..............>>>
+#=GC RF                    uCAuuGCCAGCuCuGuuCAuuuuCuucccuGGucuAAcucAAuAAuugCC
+
+U26834.1/1-753             AUCAUGAAAAUUCUGGGUGACUUUUUGUGACUAAAGUCCCAUUGUAAGCC
+L40430.1/1-754             AUCAUGAAAAUUCUGGGUGAC.UUUUGUGACUAAAGUCCCAUUGUAAGCC
+#=GC SS_cons               >....>>>>>.>>>>>>>>...>>>>>..>>.....>>>>.<<<<<<<..
+#=GC RF                    aucAuGaaaauuCuGGGugAc.uuuuGuGaCuAAAGuCCCAuuGuaagcc
+
+U26834.1/1-753             ACAUUCUUUGUCCAGCAGUGCUCACUGACUGCUGAAAUAAAUGUUCAUUU
+L40430.1/1-754             ACAUUCUUUGUCCAGCAGUGCUCACUGACUGCUGAAAUAAAUGUUCAUUU
+#=GC SS_cons               <<<<<..<<...<<<<<<<........>>>>>>>.>>..>>>>>...>>>
+#=GC RF                    aCauucuuuGucCaGCaGuGcucAcuGaCuGCuGAaauAaauGuucAuuu
+
+U26834.1/1-753             GCAAC
+L40430.1/1-754             GCAAC
+#=GC SS_cons               >>>>.
+#=GC RF                    gCaac
+//

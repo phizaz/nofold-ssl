@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01163
+#=GF ID   snoR64a
+#=GF DE   Small nucleolar RNA snoR64a
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   22.45
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300090
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+AM450475.1/13027-12949                 UGAAUAUCGAGAGUUGUUGAAUACUCAGA...UUUCGAUC....UGAGUA
+AASG02000099.1/88757-88676             AUUAUUUGCCGAAUCAUUGAAUGCUCAGU...UUCU..UUGUAUUGAGUA
+AARH01001054.1/12320-12396             AUCUUUUG...AAUUGUUGAAUGCUCAGACACUUAU..UU....GGGUUC
+AJ505626.1/1-73                        AUACUUUGCCAAGUUGUUGAAUGCUCAGA...UUUU..UC....UGGGUU
+#=GC SS_cons                           ..................................................
+#=GC RF                                AUACUUUGCCAAGUUGUUGAAUGCUCAGA...UUUU..UC....UGGGUU
+
+AM450475.1/13027-12949                 GCAUGAUUCUUUUC.UUUGAAUAGGAAGAUCUGAUGC
+AASG02000099.1/88757-88676             UUAUGAUUCUUUCUCUUUGUAUAGGAAGAUCUGAUGC
+AARH01001054.1/12320-12396             UUAUGAUUUAGAUU.CUUGAAUAGGAAGAUCUGAUGC
+AJ505626.1/1-73                        UUAUGAUUCA.....CUUGUAUAGGAAGAUCUGAUGA
+#=GC SS_cons                           .....................................
+#=GC RF                                UUAUGAUUCA.....CUUGUAUAGGAAGAUCUGAUGA
+//

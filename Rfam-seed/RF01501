@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01501
+#=GF ID   Afu_199
+#=GF DE   A. fimigatus snoRNA Afu_199
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   30.00
+#=GF TC   37.31
+#=GF NC   21.80
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   18346967
+#=GF RT   Small ncRNA transcriptome analysis from Aspergillus fumigatus
+#=GF RT   suggests a novel mechanism for regulation of protein synthesis.
+#=GF RA   Jochl C, Rederstorff M, Hertel J, Stadler PF, Hofacker IL, Schrettl
+#=GF RA   M, Haas H, Huttenhofer A;
+#=GF RL   Nucleic Acids Res. 2008;36:2677-2689.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+AM921939.1/1-79                        UCAAAUGACGAGAAAAUUAGCUCUAGAUCAGGAGUCGCUUCUGCGGCGGU
+AM920436.1/2795267-2795192             UCGCAUGACGAGGAAA.UAGCUCUAGAUCAGGAGUCACUUUUGUGACAAU
+ABFN01002286.1/18465-18539             UGAGAAAAAUAUUUCAUUAGCUCUAGAUCAGGAGCUGCUCUCGCAGCGGU
+#=GC SS_cons                           ..................................................
+#=GC RF                                UCAAAUGACGAGAAAAUUAGCUCUAGAUCAGGAGUCGCUUCUGCGGCGGU
+
+AM921939.1/1-79                        GACGGAUAAAGUCAUGUAUUAUCUGAUGA
+AM920436.1/2795267-2795192             GACGGAUUAA..CAUGUAUUAUCUGAUUG
+ABFN01002286.1/18465-18539             GAUAGACA....UGUAUAUUAUCUGAUUA
+#=GC SS_cons                           .............................
+#=GC RF                                GACGGAUAAAGUCAUGUAUUAUCUGAUGA
+//

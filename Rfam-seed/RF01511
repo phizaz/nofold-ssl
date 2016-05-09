@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01511
+#=GF ID   Afu_304
+#=GF DE   A. fumigatus snoRNA Afu_304
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   30.00
+#=GF TC   31.92
+#=GF NC   25.40
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   18346967
+#=GF RT   Small ncRNA transcriptome analysis from Aspergillus fumigatus
+#=GF RT   suggests a novel mechanism for regulation of protein synthesis.
+#=GF RA   Jochl C, Rederstorff M, Hertel J, Stadler PF, Hofacker IL, Schrettl
+#=GF RA   M, Haas H, Huttenhofer A;
+#=GF RL   Nucleic Acids Res. 2008;36:2677-2689.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   5
+
+ABAS01000006.1/78826-78932               CUAUAUGAUGAAUAAGAGCAU..UU.GCUCGAACAUAACCCAGCUCGUCG
+AM921929.1/1-106                         UCAUAUGAUGAAUAAGAGCUU..U..GCUCGAUAUAA.CCCAGCUCGUCG
+ACBU01000934.1/39509-39619               UACCAUGAUGAACAAGAGCACAAC..GCUCGAUAUAAUCCCAGCUCUUCG
+AASO01002524.1/351-456                   UAUUAUGAUGAAUAAGAGCUA..UAAGCUCGAUAUAAUCCCAGCUCGUCG
+ABHV01000193.1/263095-263203             UUCUAUGAUGAACAAGAGCAAAAU..GCUCGAUAUAAUCCCAGCUCGUUG
+#=GC SS_cons                             ..................................................
+#=GC RF                                  UaaUAUGAUGAAuAAGAGCuA..U..GCUCGAUAUAAUCCCAGCUCGUcG
+
+ABAS01000006.1/78826-78932               AACA.CCUCGUUUUUUUUUCUCACG.UUGAGGUUGUCUUGAGAUAA.AAA
+AM921929.1/1-106                         AACAGCCUCAUCUUUAAUUACAACG.CAGAGGCUGUCAUGAGAUCA.UGU
+ACBU01000934.1/39509-39619               AAUGGCCUCGUUUUUAUAUCUCACGUUUGAGGCCAUAUUGAGAUUUGAAU
+AASO01002524.1/351-456                   AAUGUUCUCGUUU...AUUCUCACG.UUGAGGACAUCCUGAGAUGA.AGU
+ABHV01000193.1/263095-263203             AAUGGUCUCAAUUUUAUAUCUCACG.UAGAGGCCAUGUUGAGAUGA.UAU
+#=GC SS_cons                             ..................................................
+#=GC RF                                  AAugguCUCAuuUUUAAuUcucACG.uAGAGGccAUcaUGAGAUgA.ugU
+
+ABAS01000006.1/78826-78932               CUCGUCUGAAACA
+AM921929.1/1-106                         CCUAUCUGAUUCA
+ACBU01000934.1/39509-39619               CCAACCCUGAUAA
+AASO01002524.1/351-456                   CCAACCCUGAUAA
+ABHV01000193.1/263095-263203             UCUAUCCUGAUCC
+#=GC SS_cons                             .............
+#=GC RF                                  cCuAuCcugAUcA
+//

@@ -1,0 +1,48 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01170
+#=GF ID   snoU61
+#=GF DE   Small nucleolar RNA U61
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   23.69
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   6
+
+AJ532487.1/8-90                          GGGCUGUGAGGAAAGAAAACCUUGUGCCGGAGGC................
+AP006141.1/89421-89503                   AAUCUGUGAUGAA..AAUUUACUGUGCCGAAGACGAGUCUU.........
+AC146791.12/25263-25194                  GAGCUAUGACGAA..AAAA.ACUGUGCUGGAG..................
+AASG02003152.1/15705-15613               CAGCCGUGAUGAA..AAAAACUUGUGUCCUUGAGACGGUUUUCUUAUAGA
+AARH01009456.1/204753-204840             AUGCUGUGAUGAA..AUUC.UGUGUUCCAGAGACGGUCUCAGAUGA....
+AC005314.3/53885-53968                   GAGCUGUGAGGAA..AAAAUCGUGUGCCAGAGAU................
+#=GC SS_cons                             <<<<..............................................
+#=GC RF                                  gaGCUGUGAuGAA..AAAAuauUGUGccggAGAu................
+
+AJ532487.1/8-90                          GGA...UGCGCCGGUGUCGGUAACACAAAAUCCUCUAAGAAGUUCUGAGC
+AP006141.1/89421-89503                   U.....CUCGUCGGUGAUGGU.U..CACAACCCUCUAAGAAGUUCUGAGC
+AC146791.12/25263-25194                  ......CUCGUCGAUGAUGG.....CGCAAUCCUCUAAGAAGUUCUGAGC
+AASG02003152.1/15705-15613               A.....AUCGUCUUUGACGGC..AACACAACCCUCUAAGAAGUUCUGAGC
+AARH01009456.1/204753-204840             G.....GUCGUCUUUGACGGU..UACACAACCCUCUAAGAAGUUCUGAGC
+AC005314.3/53885-53968                   GGUUAAUCCAUCGCUGACGGUAAUACACAACCCUCUAAGAAGUUCUGAGC
+#=GC SS_cons                             ................................................>>
+#=GC RF                                  a.....uuCGUCGaUGAcGGu.AaACAcAAcCCUCUAAGAAGUUCUGAGC
+
+AJ532487.1/8-90                          UC
+AP006141.1/89421-89503                   UC
+AC146791.12/25263-25194                  UU
+AASG02003152.1/15705-15613               UG
+AARH01009456.1/204753-204840             UU
+AC005314.3/53885-53968                   UU
+#=GC SS_cons                             >>
+#=GC RF                                  uc
+//

@@ -1,0 +1,60 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00293
+#=GF ID   snoM1
+#=GF DE   Small nucleolar RNA snoM1
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; ILM: Moxon SJ
+#=GF GA   20.00
+#=GF TC   29.75
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Drosophila_melanogaster300117
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   M1 is a member of the H/ACA class of snoRNAs which are thought to
+#=GF CC   guide the sites of modification of uridines to pseudouridines. snoM1 seems
+#=GF CC   to be found exclusively in Drosophila species.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snoM1
+#=GF SQ   7
+
+AAKO01002130.1/31671-31576             AAUUCAAUGAUUUCAACUUCACUGCUGACCAGCCACGCCUCAACGCCUCG
+AB032437.1/932-1035                    AAUUCAAUGAUUUCAACUUCACUGCUGACCAGCCACGCCUCACUGCCUCG
+DQ185017.1/645-748                     AAUUCAAUGAUUUCAACUUCACUGCUGACCAGCCACGCCUCACCGCCUCG
+AB032439.1/767-865                     AAUUCAAUGAUUUCAACUUCACUGCUGACCUGCCACGCCUCACCGCCUCG
+AF375471.1/1-99                        AAUUCAAUGAUUUCAACUUCACUGCUGACCAGCCACGCCUCAACGCCUCG
+AAGH01015529.1/6334-6429               AAUUCAAUGAUUUCAACUUCACUGCUGACCAGCCACGCCUCAACGCCUCG
+AB032438.1/918-1016                    AAUUCAAUGAUUUCAACUUCACUGCUGACAAGCCACGCCUCACCGCCUCG
+#=GC SS_cons                           <<<..<<<<<<<<...<<<<.............................>
+#=GC RF                                aAuUCAAugAuuuCAACuuCACUGCUGACcAGCCACGCCUCAaCGCCUCG
+
+AAKO01002130.1/31671-31576             GAGUGAUUGU....CC.CAGUCUCUGAUAG..ACAGCAUAUUCUAAUA.C
+AB032437.1/932-1035                    GAGGGAUUGCCUUUCCCCAUCCCCUGACAAAUCGAGCAUAUUCUAAUUCA
+DQ185017.1/645-748                     GAGGGAUUGCCUUUCCCCAUUUCCUGACAAAUCGAGCAUAUUCUAAUUCA
+AB032439.1/767-865                     AAGGGAUUGG....CCCUAUUCCCUAACAAAUAGAGCAUAUUCUAAUU.A
+AF375471.1/1-99                        GAGUGUUUGC....CCCCAGUCUCUGAUAGAUACACCAUAUUCUAAUA.C
+AAGH01015529.1/6334-6429               GAGUGAUUGU....CC.CAGUCUCUGAUAG..ACAGCAUAUUCUAAUA.C
+AB032438.1/918-1016                    GAGGGAUUGC....CCCUAUUCCCUAACAAAUAGAGCAUAUUCUAAUU.A
+#=GC SS_cons                           >>>>>>>..........<<<...>>>............>>>>...>>>..
+#=GC RF                                gaGagaUUGc....CCccAgUcucUgAuAaAUAgAgCAuaUUCUAaUu.a
+
+AAKO01002130.1/31671-31576             ACUU
+AB032437.1/932-1035                    ACAC
+DQ185017.1/645-748                     ACAC
+AB032439.1/767-865                     ACAC
+AF375471.1/1-99                        ACAC
+AAGH01015529.1/6334-6429               ACGA
+AB032438.1/918-1016                    ACAC
+#=GC SS_cons                           ....
+#=GC RF                                ACAc
+//

@@ -1,0 +1,48 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01595
+#=GF ID   snoR19
+#=GF DE   small nucleolar RNA snoR19
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   60.00
+#=GF TC   85.79
+#=GF NC   30.75
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+ABGV01006154.1/1319-1218             UAAAAUGAUGAUAUUAUAUAUGG..GCGCACAUUUAAAUUUCAUACUACU
+ABGU01007392.1/389-288               UAAAAUGAUGAUAUUAUAUAUGG..GCGCACAUUUAAAUUUCAUACUACU
+AM910994.1/759659-759754             AAAAAUGAUGAUUCUAUGCGCAG..AAAUAAAAAUCAAAGUCGUACUACU
+CAAJ01003293.1/4693-4790             AAAAAUGAUGAUAAUAAAUUAAGCGCAACUAAAUUUUUUGUCAUACUACU
+#=GC SS_cons                         .<<<<.............................................
+#=GC RF                              aAAAAUGAUGAUauUAUauauaG..aaauAaAaaUaAAauUCaUACUACU
+
+ABGV01006154.1/1319-1218             AAAUGUAGAAUGAUGAAAAUUAUAGGUUGUCAUCCUUGAUCUGAUUAUUU
+ABGU01007392.1/389-288               AAAUGUAGAAUGAUGAAAAUUAUAGGAUGUCAUCCUUGAUCUGAUUAUUU
+AM910994.1/759659-759754             ..AUGUAGAAUGAUGAUACUU....GAUGUCAUCCUUGAACUGAUUUUUU
+CAAJ01003293.1/4693-4790             ..AUGUAGAAUGCUGAUAAAG....GAUGUCAUCCUUGAACUGAUUUUUU
+#=GC SS_cons                         ...............................................>>>
+#=GC RF                              AAAUGUAGAAUGAUGAaAaUUAUAGGAUGUCAUCCUUGAaCUGAUUaUUU
+
+ABGV01006154.1/1319-1218             UUUA
+ABGU01007392.1/389-288               UUUA
+AM910994.1/759659-759754             UUUU
+CAAJ01003293.1/4693-4790             UUAU
+#=GC SS_cons                         >...
+#=GC RF                              UUUa
+//

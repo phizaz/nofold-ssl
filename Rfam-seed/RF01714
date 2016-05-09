@@ -1,0 +1,35 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01714
+#=GF ID   Ocean-V
+#=GF DE   Ocean-V RNA
+#=GF AU   Weinberg Z
+#=GF SE   Published; PMID:20230605;
+#=GF SS   Published; PMID:20230605;
+#=GF GA   75.00
+#=GF TC   80.03
+#=GF NC   35.31
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   20230605
+#=GF RT   Comparative genomics reveals 104 candidate structured RNAs from
+#=GF RT   bacteria, archaea and their metagenomes.
+#=GF RA   Weinberg Z, Wang JX, Bogue J, Yang J, Corbino K, Moy RH, Breaker
+#=GF RA   RR;
+#=GF RL   Genome Biol. 2010;11:R31.
+#=GF WK   http://en.wikipedia.org/wiki/Ocean-V_RNA_motif
+#=GF SQ   3
+
+ABEF01002040.1/258-187             ACUCUUUUUGGUUUCAUUCAGUUGAAACCCUCA.AGCGAGUACGCCGUAA
+ABEF01025170.1/751-680             ACUCUUUUUGAUUUCAUUCAGUUGAAAUCCUCA.CGCAAGUACGCCGUAA
+ABEF01002814.1/681-753             AUAUUUUAUGACUUCAUUCAAUUGAAGUCCUCAAAGUGAGUACGUCGUAA
+#=GC SS_cons                       .........<<<<<<<......>>>>>>>.............<<<<....
+
+ABEF01002040.1/258-187             GACGCAAGCGCAGGCGGAAAACU
+ABEF01025170.1/751-680             GACGCAAGCACAGGCGGAAAGCU
+ABEF01002814.1/681-753             GAUCGAAGCGCUGACGGAAAACU
+#=GC SS_cons                       ............>>>>.......
+//

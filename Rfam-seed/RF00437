@@ -1,0 +1,53 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00437
+#=GF ID   HLE
+#=GF DE   Hairy RNA localisation element (HLE)
+#=GF AU   Moxon SJ
+#=GF SE   PMID:12743042
+#=GF SS   Published; PMID:12743042
+#=GF GA   20.00
+#=GF TC   26.27
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   12743042
+#=GF RT   The Drosophila hairy RNA localization signal modulates the kinetics
+#=GF RT   of cytoplasmic mRNA transport.
+#=GF RA   Bullock SL, Zicha D, Ish-Horowicz D;
+#=GF RL   EMBO J 2003;22:2484-2494.
+#=GF CC   This family represents the hairy localisation element (HLE) found in
+#=GF CC   Drosophila species. HLE is located in the 3'-UTR of the hairy gene and
+#=GF CC   contains two stem-loops. HLE is essential for the mediation of
+#=GF CC   apical localisation and the two stem-loop structures act to allow the
+#=GF CC   recognition of hairy mRNA by the localisation machinery [1].
+#=GF WK   http://en.wikipedia.org/wiki/Hairy_RNA_localisation_element_(HLE)
+#=GF SQ   5
+
+AAPQ01006549.1/31239-31110             GUUGACAUUUCACAUCAUU.CGCCGGGAUUGCGCAAAUGUUGCCUUGAAG
+AY262008.1/1-124                       AGAGACAUUUCACAUCAUUUCGCCAGGAUAACGCAAAUGUUGCUUUGAAG
+AY055843.1/7514-7643                   GUAGACAUUUCACAUCAUU.CGCCGGGAUUGCGCAAAUGUUGCUUUGAAG
+AY055833.1/7586-7717                   GUAGACAUUUCACAUCAUU.CGCCGGGAUUGCGCAAAUGUUGCUUUGAAG
+AY055841.1/7634-7765                   GUAGACAUUUCACAUCAUU.CGCCGGGAUUGCGCAAAUGUUGCUUUGAAG
+#=GC SS_cons                           .....<<<<<<....<<<<.<<<.......>>>..>>>>.......>>>>
+#=GC RF                                GUAGACauuuCAcAUCauu.CGCcGGGAUUGCGcAaauGUUGcUUUGaag
+
+AAPQ01006549.1/31239-31110             UG.UUGCAAACAUGCGAGUCCUAAC..UCGGUCCACGGCUUCGUCGGCUU
+AY262008.1/1-124                       UGCUUUAAAACAUGCGAAUUCCUUC..AUGGUCCAAAACACUUCGCUGUG
+AY055843.1/7514-7643                   UG.UUGCAAACAUGCGAAUCCUAAA..UCGGUUCACGGCUUCGUUGGCUU
+AY055833.1/7586-7717                   UG.UUGCAAACAUGCGAAUCCUAAAACUCGGUUCACGGCUUCGUUGGCUU
+AY055841.1/7634-7765                   UG.UUGCAAACAUGCGAAUCCUAAAACUCGGUUCACGGCUUCGUUGGCUU
+#=GC SS_cons                           >>........................................<<<<<<..
+#=GC RF                                uG.UUGcAAAcAUGcGAAUccUAAAAcUcGGUUcAcGGcUUcGcuGgCUU
+
+AAPQ01006549.1/31239-31110             AGUUUCCUGGCUUACAUCCGGGAAACCCGCCGGC
+AY262008.1/1-124                       AGUUU...ACCUCAACC.....AACUUUCAGUGA
+AY055843.1/7514-7643                   AGUUUCCUCGCUUAUAUCCUGGAAACCCGCCGGC
+AY055833.1/7586-7717                   AGUUUCCUGGCUUAUAUCCUGGAAACCCGUCGAC
+AY055841.1/7634-7765                   AGUUUCCUGGCUUAUAUCCUGGAAACCCGUCGGC
+#=GC SS_cons                           .<<<<<<.<<.......>>.>>>>>>..>>>>>>
+#=GC RF                                AGuuuCCUGGcUUAUAUCCUGGaaaCccGcCggC
+//

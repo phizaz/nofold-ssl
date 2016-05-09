@@ -1,0 +1,63 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01788
+#=GF ID   drz-agam-2-2
+#=GF DE   drz-agam-2-2 riboswitch
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19965505
+#=GF SS   Published; PMID:19965505
+#=GF GA   29.00
+#=GF TC   29.09
+#=GF NC   28.35
+#=GF TP   Cis-reg; riboswitch;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000035 SO:riboswitch
+#=GF RN   [1]
+#=GF RM   19965505
+#=GF RT   Widespread occurrence of self-cleaving ribozymes.
+#=GF RA   Webb CH, Riccitelli NJ, Ruminski DJ, Luptak A;
+#=GF RL   Science. 2009;326:953.
+#=GF WK   http://en.wikipedia.org/wiki/Riboswitch
+#=GF SQ   5
+
+ABKQ02003975.1/826-637                     AGCAA..UACCUCGCUGAUACGGGGGUGGAUCCGAAGCCUCU.AGAAGGU
+AY291392.1/684-497                         CCCAGUUCCGGGGCCGUUCACUGG.....AUCCGAAGCCUCU.AGAAGGA
+AAAB01008846.1/3701932-3701742             AUCAGCCUUCGUUCUGUAAACGGGGUUGGAUCCGAC..............
+ABKP02019106.1/17123-17317                 UUUAGUUUUAGCUCUGUA.AUGGGAUGGGAUCCGAAGCCCCAUUGAGGGA
+AB212871.1/896-707                         ACCAUCUCUCAUAUUGUAUAU.AGUAUGGAUCCGAAGCCUCU.UGAAGAU
+#=GC SS_cons                               ..........BBBBBBB.....<<<<<<<<.<<.................
+#=GC RF                                    AucAgcuUucguucUGuAuAuGGGguuGGAUCCGAAGCCuCu.uGAAGgu
+
+ABKQ02003975.1/826-637                     UAACAUAAGCUCUCCAC.CUCCUACUCCUACU.UAAUAUGUCCCCGUCGU
+AY291392.1/684-497                         UAAUAUAGGCACUCCAU.ACCCUACUCCGACU.CAAUACGUCCCCGUCGU
+AAAB01008846.1/3701932-3701742             UCUCAUAGGCUCUCCAA.C.CCAACUCCUACU.CAAUACGUCCUCGUCGU
+ABKP02019106.1/17123-17317                 UAAUACAGGCUCUCCCA.U.CCAACUCCUAUUCCAACACGUCCUCGUCGU
+AB212871.1/896-707                         UAACAUAGACUCUCCA.C..CUCACUUCAAUU.CAAUACGUUCCCGGCGU
+#=GC SS_cons                               .......>>...>>>>>.>.>>...CCCC.CC.CCCCAAA.<<....aaa
+#=GC RF                                    UAAcAuAGGCUCUCCaa.c.CCaACUcCuAuU.cAAuAcGUCCuCGuCGU
+
+ABKQ02003975.1/826-637                     ACAGAACGGUAACAUGUC.UC.UCAAUUAUCCAAGCUUGGGU......AU
+AY291392.1/684-497                         ACAGAAUGGUAACAUAUC.UCUCCAAAUAUCUGAGCUUGGGU......AU
+AAAB01008846.1/3701932-3701742             ACAGAACGGUAACAUGUU.UU.CCGAACAUCCGCGCUUGGGUAUACGAGU
+ABKP02019106.1/17123-17317                 ACAGAGUGGUAACAUGUGUCA.CCACAUAUCCAAGCUUGGGU......AC
+AB212871.1/896-707                         AUAGAAUGGUAACAUGUC.UCUCCAAAUAUCUGAGCUUGGGU......AA
+#=GC SS_cons                               bbbbbbb>>..<<<<<<<.<<.<<....<<<<....<<<<<<........
+#=GC RF                                    AcAGAAuGGUAaCAUGuc.cc.CCAAAuAUCCaAGCuUGGGU......Au
+
+ABKQ02003975.1/826-637                     ACGGGGAA.ACCCAUCCCC......UUGGGCGGAUGGGU.UGCAUGGCUA
+AY291392.1/684-497                         ACGGGGAA.ACCCAACCCC......UUGGGAAGAUUGGG.UAUAUGGCUA
+AAAB01008846.1/3701932-3701742             AUACACCUUACCCAACCCUCGCCAACGGGGAGGAUGGAA.AACAUGGCUA
+ABKP02019106.1/17123-17317                 ACGGGCUUGACCCAACCCC......UUGGGCGGAUGGUGGCACAUGGCGA
+AB212871.1/896-707                         ACGUGAAA.ACCCAAUCCC......UUGGGAAGAUGGGU.GAUAUGGCUA
+#=GC SS_cons                               .........>>>>>>.<<<........>>>.>>>>>>>>.>>>>>>>...
+#=GC RF                                    AcGgGaaauACCCAacCCC......uuGGGaGGAUGGgg.gaCAUGgCuA
+
+ABKQ02003975.1/826-637                     AAUUGAGAGGG
+AY291392.1/684-497                         AAUUGAGCGGA
+AAAB01008846.1/3701932-3701742             AAUUGAGAGGG
+ABKP02019106.1/17123-17317                 ACCAGGAGGGG
+AB212871.1/896-707                         AAUUGAGUGGA
+#=GC SS_cons                               .cccccccccc
+#=GC RF                                    AAuuGAGaGGG
+//

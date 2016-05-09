@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01822
+#=GF ID   RsaJ
+#=GF DE   RNA Staph. aureus A
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19786493
+#=GF SS   Published; PMID:19786493
+#=GF GA   100.00
+#=GF TC   318.82
+#=GF NC   63.41
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19786493
+#=GF RT   A search for small noncoding RNAs in Staphylococcus aureus reveals a
+#=GF RT   conserved sequence motif for regulation.
+#=GF RA   Geissmann T, Chevalier C, Cros MJ, Boisset S, Fechter P, Noirot C,
+#=GF RA   Schrenzel J, Francois P, Vandenesch F, Gaspin C, Romby P;
+#=GF RL   Nucleic Acids Res. 2009;37:7239-7257.
+#=GF WK   http://en.wikipedia.org/wiki/Rsa_RNA
+#=GF SQ   3
+
+AJ938182.1/2439575-2439861             AUAACUAUAAAUUUUGGCAAAAUUUUGACCUUGCUAUUGAAAUGACUAAG
+CP000736.1/2588121-2588407             AUAACUAUAAUUUUUGGCAAAAUUUUGACCUUGCUAUUGAAAUGACUAAG
+BA000033.2/2500286-2500572             AUAACUAUAAAUUUUGGCAAAAUUUUGACCUUGCUAUUGAAAUGACUAAG
+#=GC SS_cons                           .<<<<<<........<<<<<....>>>.>>..<<.<<<<<..<<<.<<<<
+#=GC RF                                AuaaCuaUAAaUUUUGGCaaAAUUuuGACCUUGCUauuGaAAuGacuaaG
+
+AJ938182.1/2439575-2439861             GCUUCUUACGGAAUUCGGGCAGAUAUAAACAGCGAUUCGAUAAAAUAUGU
+CP000736.1/2588121-2588407             GCUUCUUACGAAAUUUGGGCAGAUAUAAACAGCGAUUCGUUAAAAUAUGU
+BA000033.2/2500286-2500572             ACUUCUUAAGGAAUUCGGGCAGAUAUAAACAGCGAUUCGAUAAAAUAUGU
+#=GC SS_cons                           <<.......<<<<<....<<<<<<<<<...<<<<...>>>>....>>>>>
+#=GC RF                                GCUUcUUAcGaaauUuGGGCaGauauaAAcagCGAUUCGcuAAAAuaugu
+
+AJ938182.1/2439575-2439861             CAGUUGAAAUUAAUAAUUGCAUUAUUUCUUAAUAAAAAGACAUCCUAGCU
+CP000736.1/2588121-2588407             CAGUUAAAAUUAAUAAUUGCAUUAUUUCUUAACAAAAAGACAUCCUAGCU
+BA000033.2/2500286-2500572             CAGUUAAAAUUAAUAAUUGCAUUAUUUCUUAACAAAAAGACAUCCUAGCU
+#=GC SS_cons                           >.<<<<....>>>>...>>>...>>>>>...................<<<
+#=GC RF                                CAguuaAAAUuaauAAUuGCAUUauuuCUUAAuAAAAAGAcAUccUAGCu
+
+AJ938182.1/2439575-2439861             UUACCAUGUUGUGAAACAAUCCAUUAAUUGUAAUAUUACGUUGAGCGCCU
+CP000736.1/2588121-2588407             UUACCAUGUUGUGAAACAAUCCAUUAAUUGUAAUAUUACGUUGAGCGCCU
+BA000033.2/2500286-2500572             UUACCAUCUUGUGAAACAAUCCAUUAAUUGUAAUAUUACGUUGAGCGCCU
+#=GC SS_cons                           <....<<<<.<<<..<<<<<......>>>>>..>>>.>>>>.>>>>>>>>
+#=GC RF                                uUAccauGuUgugAAaCaauccAUUAauuGuAAuauUaCguUgaGCGCCu
+
+AJ938182.1/2439575-2439861             UGUUCAUCAAUGCUAUAAUUAGUUACAUAAUAAAUUGAACAUCUAAAUAC
+CP000736.1/2588121-2588407             UGUUCAUCAAUGCUAUAAUUAGUUACAUAAUAAAUUGAACAUCUAAAUAU
+BA000033.2/2500286-2500572             UGUUCAUCAAUGCUAUAAUUAGUUACAUAAUAAAUUGAACAUCUAAAUAC
+#=GC SS_cons                           >>.>>>>>>>>>>......>>>>>>.........................
+#=GC RF                                ugUuCauCaauGCUAUAAUuaGuuacAUAAUAAAUUGAAcAUcUAAAUAu
+
+AJ938182.1/2439575-2439861             ACCAAAUCCCCUCACUAUUGCAGUAGUGAGGGGAUUU
+CP000736.1/2588121-2588407             ACCAAAUCCCCUCACUAUUGCCCUAGUGAGGGGAUUU
+BA000033.2/2500286-2500572             ACCAAAUCCCCUCACUAUUGCCCUAGUGAGGGGAUUU
+#=GC SS_cons                           ...<<<<<<<<<<<<<<......>>>>>>>>>>>>>>
+#=GC RF                                AccaaauCCCCuCaCuaUUGcaguaGuGaGGGGauuu
+//

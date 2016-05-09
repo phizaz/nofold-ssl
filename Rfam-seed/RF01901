@@ -1,0 +1,139 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01901
+#=GF ID   mir-284
+#=GF DE   microRNA mir-284
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   96.00
+#=GF TC   96.02
+#=GF NC   57.55
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000228
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   17994087
+#=GF RT   Evolution of genes and genomes on the Drosophila phylogeny
+#=GF RA   Clark AG, Eisen MB, Smith DR, Bergman CM, Oliver B, Markow TA,
+#=GF RA   Kaufman TC, Kellis M, Gelbart W, Iyer VN, Pollard DA, Sackton
+#=GF RA   TB, Larracuente AM, Singh ND, Abad JP, Abt DN, Adryan B, Aguade
+#=GF RA   M, Akashi H, Anderson WW, Aquadro CF, Ardell DH, Arguello R,
+#=GF RA   Artieri CG, Barbash DA, Barker D, Barsanti P, Batterham P, Batzoglou
+#=GF RA   S, Begun D, Bhutkar A, Blanco E, Bosak SA, Bradley RK, Brand
+#=GF RA   AD, Brent MR, Brooks AN, Brown RH, Butlin RK, Caggese C, Calvi
+#=GF RA   BR, Bernardo de Carvalho A, Caspi A, Castrezana S, Celniker SE,
+#=GF RA   Chang JL, Chapple C, Chatterji S, Chinwalla A, Civetta A, Clifton
+#=GF RA   SW, Comeron JM, Costello JC, Coyne JA, Daub J, David RG, Delcher
+#=GF RA   AL, Delehaunty K, Do CB, Ebling H, Edwards K, Eickbush T, Evans
+#=GF RA   JD, Filipski A, Findeiss S, Freyhult E, Fulton L, Fulton R, Garcia
+#=GF RA   AC, Gardiner A, Garfield DA, Garvin BE, Gibson G, Gilbert D,
+#=GF RA   Gnerre S, Godfrey J, Good R, Gotea V, Gravely B, Greenberg AJ,
+#=GF RA   Griffiths-Jones S, Gross S, Guigo R, Gustafson EA, Haerty W,
+#=GF RA   Hahn MW, Halligan DL, Halpern AL, Halter GM, Han MV, Heger A,
+#=GF RA   Hillier L, Hinrichs AS, Holmes I, Hoskins RA, Hubisz MJ, Hultmark
+#=GF RA   D, Huntley MA, Jaffe DB, Jagadeeshan S, Jeck WR, Johnson J, Jones
+#=GF RA   CD, Jordan WC, Karpen GH, Kataoka E, Keightley PD, Kheradpour
+#=GF RA   P, Kirkness EF, Koerich LB, Kristiansen K, Kudrna D, Kulathinal
+#=GF RA   RJ, Kumar S, Kwok R, Lander E, Langley CH, Lapoint R, Lazzaro
+#=GF RA   BP, Lee SJ, Levesque L, Li R, Lin CF, Lin MF, Lindblad-Toh K,
+#=GF RA   Llopart A, Long M, Low L, Lozovsky E, Lu J, Luo M, Machado CA,
+#=GF RA   Makalowski W, Marzo M, Matsuda M, Matzkin L, McAllister B, McBride
+#=GF RA   CS, McKernan B, McKernan K, Mendez-Lago M, Minx P, Mollenhauer
+#=GF RA   MU, Montooth K, Mount SM, Mu X, Myers E, Negre B, Newfeld S,
+#=GF RA   Nielsen R, Noor MA, O'Grady P, Pachter L, Papaceit M, Parisi
+#=GF RA   MJ, Parisi M, Parts L, Pedersen JS, Pesole G, Phillippy AM, Ponting
+#=GF RA   CP, Pop M, Porcelli D, Powell JR, Prohaska S, Pruitt K, Puig
+#=GF RA   M, Quesneville H, Ram KR, Rand D, Rasmussen MD, Reed LK, Reenan
+#=GF RA   R, Reily A, Remington KA, Rieger TT, Ritchie MG, Robin C, Rogers
+#=GF RA   YH, Rohde C, Rozas J, Rubenfield MJ, Ruiz A, Russo S, Salzberg
+#=GF RA   SL, Sanchez-Gracia A, Saranga DJ, Sato H, Schaeffer SW, Schatz
+#=GF RA   MC, Schlenke T, Schwartz R, Segarra C, Singh RS, Sirot L, Sirota
+#=GF RA   M, Sisneros NB, Smith CD, Smith TF, Spieth J, Stage DE, Stark
+#=GF RA   A, Stephan W, Strausberg RL, Strempel S, Sturgill D, Sutton G,
+#=GF RA   Sutton GG, Tao W, Teichmann S, Tobari YN, Tomimura Y, Tsolas
+#=GF RA   JM, Valente VL, Venter E, Venter JC, Vicario S, Vieira FG, Vilella
+#=GF RA   AJ, Villasante A, Walenz B, Wang J, Wasserman M, Watts T, Wilson
+#=GF RA   D, Wilson RK, Wing RA, Wolfner MF, Wong A, Wong GK, Wu CI, Wu
+#=GF RA   G, Yamamoto D, Yang HP, Yang SP, Yorke JA, Yoshida K, Zdobnov
+#=GF RA   E, Zhang P, Zhang Y, Zimin AV, Baldwin J, Abdouelleil A, Abdulkadir
+#=GF RA   J, Abebe A, Abera B, Abreu J, Acer SC, Aftuck L, Alexander A,
+#=GF RA   An P, Anderson E, Anderson S, Arachi H, Azer M, Bachantsang P,
+#=GF RA   Barry A, Bayul T, Berlin A, Bessette D, Bloom T, Blye J, Boguslavskiy
+#=GF RA   L, Bonnet C, Boukhgalter B, Bourzgui I, Brown A, Cahill P, Channer
+#=GF RA   S, Cheshatsang Y, Chuda L, Citroen M, Collymore A, Cooke P, Costello
+#=GF RA   M, D'Aco K, Daza R, De Haan G, DeGray S, DeMaso C, Dhargay N,
+#=GF RA   Dooley K, Dooley E, Doricent M, Dorje P, Dorjee K, Dupes A, Elong
+#=GF RA   R, Falk J, Farina A, Faro S, Ferguson D, Fisher S, Foley CD,
+#=GF RA   Franke A, Friedrich D, Gadbois L, Gearin G, Gearin CR, Giannoukos
+#=GF RA   G, Goode T, Graham J, Grandbois E, Grewal S, Gyaltsen K, Hafez
+#=GF RA   N, Hagos B, Hall J, Henson C, Hollinger A, Honan T, Huard MD,
+#=GF RA   Hughes L, Hurhula B, Husby ME, Kamat A, Kanga B, Kashin S, Khazanovich
+#=GF RA   D, Kisner P, Lance K, Lara M, Lee W, Lennon N, Letendre F, LeVine
+#=GF RA   R, Lipovsky A, Liu X, Liu J, Liu S, Lokyitsang T, Lokyitsang
+#=GF RA   Y, Lubonja R, Lui A, MacDonald P, Magnisalis V, Maru K, Matthews
+#=GF RA   C, McCusker W, McDonough S, Mehta T, Meldrim J, Meneus L, Mihai
+#=GF RA   O, Mihalev A, Mihova T, Mittelman R, Mlenga V, Montmayeur A,
+#=GF RA   Mulrain L, Navidi A, Naylor J, Negash T, Nguyen T, Nguyen N,
+#=GF RA   Nicol R, Norbu C, Norbu N, Novod N, O'Neill B, Osman S, Markiewicz
+#=GF RA   E, Oyono OL, Patti C, Phunkhang P, Pierre F, Priest M, Raghuraman
+#=GF RA   S, Rege F, Reyes R, Rise C, Rogov P, Ross K, Ryan E, Settipalli
+#=GF RA   S, Shea T, Sherpa N, Shi L, Shih D, Sparrow T, Spaulding J, Stalker
+#=GF RA   J, Stange-Thomann N, Stavropoulos S, Stone C, Strader C, Tesfaye
+#=GF RA   S, Thomson T, Thoulutsang Y, Thoulutsang D, Topham K, Topping
+#=GF RA   I, Tsamla T, Vassiliev H, Vo A, Wangchuk T, Wangdi T, Weiand
+#=GF RA   M, Wilkinson J, Wilson A, Yadav S, Young G, Yu Q, Zembek L, Zhong
+#=GF RA   D, Zimmer A, Zwirko Z, Jaffe DB, Alvarez P, Brockman W, Butler
+#=GF RA   J, Chin C, Gnerre S, Grabherr M, Kleber M, Mauceli E, MacCallum
+#=GF RA   I
+#=GF RL   Nature. 2007;450:203-218.
+#=GF RN   [2]
+#=GF RM   17989255
+#=GF RT   Systematic discovery and characterization of fly microRNAs using
+#=GF RT   12 Drosophila genomes
+#=GF RA   Stark A, Kheradpour P, Parts L, Brennecke J, Hodges E, Hannon
+#=GF RA   GJ, Kellis M
+#=GF RL   Genome Res. 2007;17:1865-1879.
+#=GF RN   [3]
+#=GF RM   17989254
+#=GF RT   Evolution, biogenesis, expression, and target predictions of
+#=GF RT   a substantially expanded set of Drosophila microRNAs
+#=GF RA   Ruby JG, Stark A, Johnston WK, Kellis M, Bartel DP, Lai EC
+#=GF RL   Genome Res. 2007;17:1850-1864.
+#=GF RN   [4]
+#=GF RM   12844358
+#=GF RT   Computational identification of Drosophila microRNA genes
+#=GF RA   Lai EC, Tomancak P, Williams RW, Rubin GM
+#=GF RL   Genome Biol. 2003;4:R42.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   10
+
+AAPU01011034.1/21117-21020               GUUGCAGUUCCUGGAAUAAAGUUGACUGUGUCGCCUGUAAGGGGA.AGGC
+AANI01014593.1/63537-63634               GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUAAAGGGA.AGGC
+AAPT01019305.1/181359-181456             GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUAAGAGGA.AGGC
+AASR01017048.1/711-808                   GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGG.GCAAGGC
+AE014297.2/8377336-8377239               GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGG.GCAAGGC
+AAQB01009392.1/110679-110581             GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUUAGGGGAAAGGC
+AAKO01000258.1/87086-87183               GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGG.GCAAGGC
+AAEU02000033.1/42587-42490               GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGG.GCAAGGC
+AAPQ01006464.1/198522-198619             GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGG.GCAAGGC
+AAPP01015631.1/94293-94196               GUUGCAGUUCCUGGAAUUAAGUUGACUGUGUAGCCUGUGAGG.GCAAGGC
+#=GC SS_cons                             <<<<<<<<<.<<<<<<<<<<<<<<.<<<...<<<<<..........>>>>
+
+AAPU01011034.1/21117-21020               UUUUGCAUUGCUUACAAAGUCAGCAACUUGAUUCCAGCAACUGCGGCCC
+AANI01014593.1/63537-63634               UUGUGCACUGCUUACAAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AAPT01019305.1/181359-181456             UUGUGCACUGCUUACAAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCUC
+AASR01017048.1/711-808                   UUGAAUACUGCUCCUGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AE014297.2/8377336-8377239               UUGAAUAAUGCUCCUGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AAQB01009392.1/110679-110581             UUGAGCAUUGCAUACUAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AAKO01000258.1/87086-87183               UUGAAUACUGCUCCUGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AAEU02000033.1/42587-42490               UUGAGUACUGCUUCUGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AAPQ01006464.1/198522-198619             UUGAGUACUGCUUCUGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+AAPP01015631.1/94293-94196               UUGAGAACUGCUUCAGAAGUCAGCAACUUGAUUCCAGCAAUUGCGGCCC
+#=GC SS_cons                             >.....<<<........>>>>>>>>>>>>>>>>>>>>.>>>>>>>>>..
+//

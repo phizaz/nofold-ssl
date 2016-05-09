@@ -1,0 +1,41 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01453
+#=GF ID   RCNMV_TE_DR1
+#=GF DE   3'TE-DR1 translation enhancer element
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:19577782
+#=GF GA   100.00
+#=GF TC   155.38
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   17704138
+#=GF RT   Hairpin structure within the 3'UTR of DNA polymerase beta mRNA acts
+#=GF RT   as a post-transcriptional regulatory element and interacts with
+#=GF RT   Hax-1.
+#=GF RA   Sarnowska E, Grzybowska EA, Sobczak K, Konopinski R, Wilczynska A,
+#=GF RA   Szwarc M, Sarnowski TJ, Krzyzosiak WJ, Siedlecki JA;
+#=GF RL   Nucleic Acids Res. 2007;35:5499-5510.
+#=GF WK   http://en.wikipedia.org/wiki/RCNMV_translation_enhancer_elements
+#=GF SQ   3
+
+AB034916.1/3596-3733             GAACUGGCAUCGGACCCUGGGAAACAGGCAUCUAGCGUAUUAAUAGGUCG
+J04357.1/3596-3733               GAACCGGCAUCGGACCCUGGGAAACAGGUACCUAGCGUAUUAAUAGGUCG
+L07884.1/3580-3717               GAACCGGUCUCGGACCCUGGUAAACAGGUACCUAGCGUAAUAGAAGGUCG
+#=GC SS_cons                     ...<<<<<<.<<<..<<<<.....>>>>...<<<<<<.<<<....>>>>>
+
+AB034916.1/3596-3733             CUAGAAGACGGGCAGGCUUCACCACUAGGUAACCUGCCGCCGAGAGGGAA
+J04357.1/3596-3733               CUAGAAAUCGGGCGGGCUUCACCUUCGGGUAACCCGCCGUCGAGAGGGAA
+L07884.1/3580-3717               CUAGAAAUCGGGUGGGCUUCACCUACGGGUAACCCACCGUCGAGAGGGAA
+#=GC SS_cons                     >>>>......<<<<<<.<<.<<<....>>>>>>>>>>>....<<<<<...
+
+AB034916.1/3596-3733             AACCUCUGUGUGGUUGUGCGCACGUCGUUGUCGGAAGA
+J04357.1/3596-3733               AACCUCUGUGUGGUUGUGCGCACGUCGUUGUCGGAAGA
+L07884.1/3580-3717               AACCUCUGUGUGGUUGUGCGCACGUCGUUUCCUGAAGA
+#=GC SS_cons                     ..>>>>><<<<<......>>>>>.>>>.>>>>>>....
+//

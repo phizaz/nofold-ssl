@@ -1,0 +1,30 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01785
+#=GF ID   blv_FSE
+#=GF DE   ribosomal frameshift site
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:15629717
+#=GF SS   Published; PMID:15629717
+#=GF GA   32.00
+#=GF TC   32.46
+#=GF NC   30.47
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r200528
+#=GF RN   [1]
+#=GF RM   15629717
+#=GF RT   An extended signal involved in eukaryotic -1 frameshifting operates
+#=GF RT   through modification of the E site tRNA.
+#=GF RA   Bekaert M, Rousset JP;
+#=GF RL   Mol Cell. 2005;17:61-68.
+#=GF WK   http://en.wikipedia.org/wiki/Bovine_leukemia_virus
+#=GF SQ   2
+
+D00647.1/1812-1838             GGGGGGACCUAGCGCCCCCCAAAUCAU
+M10987.1/1604-1630             GGGGGGACUUAGCGCCCCCCAAACCGU
+#=GC SS_cons                   <<<<<<.....AAA>>>>>>....aaa
+#=GC RF                        GGGGGGACUUAGCGCCCCCCAAACCGU
+//

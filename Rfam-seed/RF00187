@@ -1,0 +1,68 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00187
+#=GF ID   SNORD102
+#=GF DE   Small nucleolar RNA SNORD102
+#=GF PI   U102
+#=GF AU   Moxon SJ, Daub J
+#=GF SE   PMID:14602913, INFERNAL
+#=GF SS   Predicted; PFOLD
+#=GF GA   35.00
+#=GF TC   42.05
+#=GF NC   29.90
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Loxodonta_africana300437
+#=GF DR   snoopy; Erinaceus_europaeus300410
+#=GF RN   [1]
+#=GF RM   16381836
+#=GF RT   snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box
+#=GF RT   snoRNAs.
+#=GF RA   Lestrade L, Weber MJ;
+#=GF RL   Nucleic Acids Res. 2006;34:D158-D162.
+#=GF RN   [2]
+#=GF RM   14602913
+#=GF RT   Identification of 13 novel human modification guide RNAs.
+#=GF RA   Vitali P, Royo H, Seitz H, Bachellerie JP, Huttenhofer A, Cavaille J;
+#=GF RL   Nucleic Acids Res. 2003;31:6543-6551.
+#=GF CC   snoRNA U102 is a member of the C/D class of snoRNA which contain
+#=GF CC   the C (UGAUGA) and D (CUGA) box motifs.  It is found within
+#=GF CC   intron 3 of the L21 ribosomal protein gene.  The H/ACA box snoRNA
+#=GF CC   ACA27 is found in the same host gene within a different intron
+#=GF CC   [1]. This family is predicted to direct a highly conserved
+#=GF CC   2'-O-methylation in 28S rRNA [2].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD102
+#=GF SQ   11
+
+AAGU02206076.1/3235-3306               AGCUUGAUGAUGAUUGUCUUUUUGAUUGCU..UUGAAGCAAUGUG.AAAA
+AAIY01376848.1/805-872                 AGCUUGAUGAUGAUUGU.....UUGAUUGCU.UUGAAGCAACAUG.AAAA
+AAGW01562120.1/2369-2299               AGCUUAAUGAUGAUUGUC.UUUUUGAUUGC..UUGAAGCAAUAUG.AAAA
+AAHX01071090.1/26625-26555             AACUUAAUGAUGAUUGUC.UAUUUGAUUGC..UUGAUGCAAUGUG.AAAA
+AL159977.10/81830-81901                AGCUUAAUGAUGACUGUUUUUUUUGAUUGC..UUGAAGCAAUGUG.AAAA
+AB061826.1/4476-4547                   AGCUUAAUGAUGACUGUUUUUUUUGAUUGC..UUGAAGCAAUGUG.AAAA
+ABDC01168401.1/597-667                 AGCUUAAUGAUGAUU.AUCUUUUUGAUUGC..UCGAAGCAAAGUG.AAAA
+AAFC03084615.1/7250-7320               AGCUUAAUGAUGAUUGUC.UUUUUGAUUGC..UUAAAGCAACGUG.AAAA
+AAPE01066724.1/1426-1356               AGCUUAAUGAUGAUUGUC.UUUUUGAUUGC..UCAAAGCAACGUG.AAAA
+AANN01418434.1/2417-2487               AGCUUAAUGAUGA..GUAUCUUGUUGAUGC..UUAAAGCAAUGUGAAAAA
+AALT01314185.1/738-810                 AGUUUAAUGAUGAUU.AUCUUUUUGAUUGCUUUUGAAGCAAUAUG.AAAA
+#=GC SS_cons                           <<<<<.............................................
+#=GC RF                                aGCuuAAUGAUGACUGUUUUUUUUGAUUGC..UUGAAGCAAUGUG.AAAA
+
+AAGU02206076.1/3235-3306               ACACAUUUCACCGGCUCUGAAAGCU
+AAIY01376848.1/805-872                 AUCCAUUUCACCGGCUCUGAGAGCU
+AAGW01562120.1/2369-2299               ACACAUUUCACCGGCUCUGAAAGCU
+AAHX01071090.1/26625-26555             CCACAUUUCACCGGCUCUGAGAGUU
+AL159977.10/81830-81901                ACACAUUUCACCGGCUCUGAAAGCU
+AB061826.1/4476-4547                   ACACAUUUCACCGGCUCUGAAAGCU
+ABDC01168401.1/597-667                 ACACAUUUCACCGGCUCUGAAAGCU
+AAFC03084615.1/7250-7320               UGACAUUUCACCGGCUCUGAGAGCU
+AAPE01066724.1/1426-1356               AUGCAUUUCACCGGCUCUGAAAGCU
+AANN01418434.1/2417-2487               AGACAUUUCACCGGCUCUGAAAGCU
+AALT01314185.1/738-810                 ACACAUUUCACCGGCUCUGAAAGCU
+#=GC SS_cons                           ....................>>>>>
+#=GC RF                                ACACAUUUCACCGGCUCUGAaaGCu
+//

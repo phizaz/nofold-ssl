@@ -1,0 +1,82 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01832
+#=GF ID   ROSE_2
+#=GF DE   Repression of heat shock gene expression (ROSE) element
+#=GF AU   Bateman A, Moore B
+#=GF SE   Published; PMID:11726689
+#=GF SS   Published; PMID:16438677; Bateman A
+#=GF GA   40.00
+#=GF TC   69.48
+#=GF NC   38.10
+#=GF TP   Cis-reg; thermoregulator;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   11726689
+#=GF RT   A mRNA-based thermosensor controls expression of rhizobial heat shock
+#=GF RT   genes.
+#=GF RA   Nocker A, Hausherr T, Balsiger S, Krstulovic NP, Hennecke H,
+#=GF RA   Narberhaus F;
+#=GF RL   Nucleic Acids Res 2001;29:4800-4807.
+#=GF RN   [2]
+#=GF RM   15466035
+#=GF RT   Replicon-specific regulation of small heat shock genes in
+#=GF RT   Agrobacterium tumefaciens.
+#=GF RA   Balsiger S, Ragaz C, Baron C, Narberhaus F;
+#=GF RL   J Bacteriol 2004;186:6824-6829.
+#=GF RN   [3]
+#=GF RM   16438677
+#=GF RT   RNA thermometers.
+#=GF RA   Narberhaus F, Waldminghaus T, Chowdhury S;
+#=GF RL   FEMS Microbiol Rev. 2006;30:3-16.
+#=GF CC   This family represents a 5' UTR cis-regulatory element found in
+#=GF CC   heat shock mRNAs and is known as the ROSE (repression of heat
+#=GF CC   shock gene expression) element. The ROSE element is a negative
+#=GF CC   regulator of heat shock gene expression. The secondary structure
+#=GF CC   is thought to be regulated by temperature. This regulation blocks
+#=GF CC   access to the ribosome binding site under normal
+#=GF CC   conditions. During heat shock however, the structure changes
+#=GF CC   freeing the ribosome binding site and allowing expression to
+#=GF CC   occur [1,2]. This family includes predicted members of the family
+#=GF CC   from gamma-proteobacteria.
+#=GF WK   http://en.wikipedia.org/wiki/Repression_of_heat_shock_gene_expression_(ROSE)_element
+#=GF SQ   15
+
+ACDJ01000026.1/381061-380989             CCUGGCUA.CC.UGACCUGUCCAUGAUGGAAGGUC.AAUUAUUCUCGCUG
+ABWL01000003.1/20799-20871               CCUGGCUA.CC.UGACCUGUCCAUGAUGGAAGGUC.UCACAUUCUCGCUG
+ABWM01000060.1/83813-83741               CGGGGGCA.CAGAAGCCUGUCCAUGGUGGAAGGCU.ACAU.CUCUCGCUG
+CP000653.1/14627-14699                   GUUGGCUC.AG.UGGUCUGUCCAUCGUGGAAGGCC.AAAAUGACUUGCUG
+CP000247.1/4051984-4051912               UCUGGCUA.CC.UGACCUGUCCAUUGUGGAAGGUC.UUAGAUUCUCGCUG
+CP000647.1/4480191-4480116               CCGGGUUA.CCGCGGCCUGUCCACGAUGGAAGGUCAUUUGAUUCUCGCUG
+CP000026.1/3798554-3798481               UCUGGUAAUCC.UGGCCUGUCCAUGAUGGAAGGUC.UGACAUUCUCGCUG
+CP000880.1/3768228-3768301               CCUGGCAA.UCCUGACCUGUCCAUGAUGGAAGGUC.GGACAUUCUCGCUG
+ABAO01000013.1/76283-76210               UCUGGCAAUCC.UGGCCUGUCCAUGAUGGAAGGUC.UGACAUUCUCGCUG
+AE017220.1/3951363-3951290               UCUGGCAA.UCUUGGCCUGUCCAUGAUGGAAGGUC.UGACAUUCUCGCUG
+CP000036.1/3699544-3699616               UCUGGCUA.CC.UGACCUGUCCAUUGUGGAAGGUA.UUACAUUCUCGCUG
+AE014073.1/3889302-3889230               UCUGGCUA.CC.UGACCUGUCCAUUGUGGAAGGUC.UUACAUUCUCGCUG
+AAMJ02000001.1/206930-206858             UCUGGCUA.CC.UGACCUGUCCAUUGUGGAAGGUU.UUACAUUCUCGCUG
+AAAA02041156.1/4286-4358                 CGGGGGCA.CAAAGGCCUGUCCAUGGUGGAAGGCU.AUAAUUUCUCGCUG
+BAAW01000185.1/6674-6747                 CCGGGUAA.UAACGACCUGUCCAUGAUGGAAGGUC.AUAAAUUCUCGCUG
+#=GC SS_cons                             .............<<<<<.<<<.....>>>>>>>>....<<..<<<.<<<
+#=GC RF                                  ccuGGcuA.cc.uGgCCUGUCCAUgaUGGAAGGcC.aaAcauUCUCGCUG
+
+ACDJ01000026.1/381061-380989             AUU.UCAGGAGCUAUUGAUUAUGCGUA
+ABWL01000003.1/20799-20871               AUU.UCAGGAGCUAUUGAUUAUGCGUA
+ABWM01000060.1/83813-83741               AUU.UCAGGAGUUUUAAUUUAUGCGUA
+CP000653.1/14627-14699                   AUU.UCAGGAGCUUUGAUUUAUGCGUA
+CP000247.1/4051984-4051912               AUU.UCAGGAGCUAUUGAUUAUGCGUA
+CP000647.1/4480191-4480116               AUUUUCAGGAGCUAUUUACUAUGCGUA
+CP000026.1/3798554-3798481               AUU.UCAGGAGUUUAUGAUUAUGCGUA
+CP000880.1/3768228-3768301               AUU.UCAGGAGCUAAUGAUUAUGCGUA
+ABAO01000013.1/76283-76210               AUU.UCAGGAGUUUAUGAUUAUGCGUA
+AE017220.1/3951363-3951290               AUU.UCAGGAGUUUAUGAUUAUGCGUA
+CP000036.1/3699544-3699616               AUU.UCAGGAGCUAUUGAUUAUGCGUA
+AE014073.1/3889302-3889230               AUU.UCAGGAGCUAUUGAUUAUGCGUA
+AAMJ02000001.1/206930-206858             AUU.UCAGGAGUUAUUGAUUAUGCGUA
+AAAA02041156.1/4286-4358                 AUU.UCAGGAGUUUUAU.UUAUGCGUA
+BAAW01000185.1/6674-6747                 AUU.UCAGGAGCUUUUUAUUAUGCGUA
+#=GC SS_cons                             .....>>>>>>....>>..........
+#=GC RF                                  AUU.UCAGGAGcUaUugAUUAUGCGUA
+//

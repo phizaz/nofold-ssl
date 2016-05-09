@@ -1,0 +1,53 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00539
+#=GF ID   snoMe28S-Cm788
+#=GF DE   Small nucleolar RNA Me28S-Cm788
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15987805
+#=GF SS   Predicted; ILM; Daub J
+#=GF GA   34.00
+#=GF TC   35.63
+#=GF NC   33.25
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Drosophila_melanogaster300078
+#=GF RN   [1]
+#=GF RM   15987805
+#=GF RT   Genome-wide analyses of two families of snoRNA genes from Drosophila
+#=GF RT   melanogaster, demonstrating the extensive utilization of introns for
+#=GF RT   coding of snoRNAs.
+#=GF RA   Huang ZP, Zhou H, He HL, Chen CL, Liang D, Qu LH;
+#=GF RL   RNA. 2005;11:1303-1316.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   Me28S-Cm788 is a member of the C/D class of snoRNA which contain the C
+#=GF CC   (UGAUGA) and  D (CUGA) box motifs. This family directs 2'-O-methylation of
+#=GF CC   28S C-788 [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Me28S-Cm788
+#=GF SQ   5
+
+AC010057.7/173837-173765                 UUAAA..CAAUGAUGUUAUUUUACAUAUGUUAGACUAAUGAAAUGAUUUG
+AAPQ01006530.1/556557-556485             AUUAA.ACAAUGAUGUUA.UUUACAUAUGUUAGACUAAUGAAAUGAUUUG
+AC010057.7/173600-173526                 AUAAGCUCUAUGAUGUUAUUUUACAUAUGUUAGACUAAUGAAAUGAUUUG
+AJ784353.1/4-72                          ACAAU......GAUGUUAUUUUACAUAUGUUAGACUAAUGAAAUGAUUUG
+AAQB01006228.1/174760-174688             ACAAU.ACUAUGAUGUU.UUUUACAUAUGUUAGACUAAUGAAAUAAUUUG
+#=GC SS_cons                             <<<...............................................
+#=GC RF                                  auAAacuCaAUGAUGUUAUUUUACAUAUGUUAGACUAAUGAAAUGAUUUG
+
+AC010057.7/173837-173765                 AUUGUAAAUUAGUAACUGAGAAUGU
+AAPQ01006530.1/556557-556485             AUUGUAAAUUAGUAACUGAGAAAGU
+AC010057.7/173600-173526                 AUUGUAAUUUAGUAACUGAGCUUAU
+AJ784353.1/4-72                          AUUGUAAAUUAGUAACUGAGAAUGU
+AAQB01006228.1/174760-174688             AUUGUAAAUUACGUACUGAGUUUGU
+#=GC SS_cons                             ......................>>>
+#=GC RF                                  AUUGUAAaUUAGUAACUGAGaaUau
+//

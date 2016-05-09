@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00824
+#=GF ID   mir-50
+#=GF DE   microRNA mir-50
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   30.00
+#=GF TC   50.77
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000266
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+AAGD02001051.1/27617-27516               ACCCACCCCCUGGCCGCUGAUAUGUCUGGUAUUCUUGGGU..UCGAUACU
+ABEG01020864.1/20176-20077               UCUCACCCACCGGCCGCUGAUAUGUCUGGUAUUCUUGGGU...UCA.UUC
+CAAC02000589.1/893157-893260             UUCCACCCACCGGCCGCUGAUAUGUCUGAUAUUCUUGGGUUAUCUG.AUA
+AC025726.2/98206-98306                   UCCUGCCCGCCGGCCGCUGAUAUGUCUGGUAUUCUUGGGU..UUGA.ACU
+AAQA01001434.1/1796-1718                 AUGCAGUG........UUGAUAUGUCUGAUAUUCUUGGGUUGU.......
+#=GC SS_cons                             ..<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<...<<<<<..<<......
+#=GC RF                                  uuccgcccgccGGccGccGauacGucugguacucucGgGuuAucua.Aua
+
+AAGD02001051.1/27617-27516               CUGAAAAACG.AACCAAAGUAGCAGACGUAUCGACGGCCGG.GAGGGUGG
+ABEG01020864.1/20176-20077               CUUACUCUGA..ACCAGUUUAUUAGACGUAUCGACGGCCGGAUCGGGUGA
+CAAC02000589.1/893157-893260             AUGAUUGUUGUAACUCAAGUAUUAGACGUAUCGACGGCCGG.CUGGGUUG
+AC025726.2/98206-98306                   UCCAGCGUUG.AACCCGCAUAUUAGACGUAUCGACGGCCGG.CGGGGCAG
+AAQA01001434.1/1796-1718                 .GCAAAGUC..AACCAGCAUCUCAGACGUAUCGG.........CCACUGU
+#=GC SS_cons                             .........>.>>>>>>.>>>>>>>>>>>>>>>>>>>>>>>.>.>>>>>>
+#=GC RF                                  auaAuuguuguaaCcCgaguaccagaCguauCggCggCCgg.cugggcgg
+
+AAGD02001051.1/27617-27516               GAAUUU
+ABEG01020864.1/20176-20077               GAAUUU
+CAAC02000589.1/893157-893260             GAAUCA
+AC025726.2/98206-98306                   GUAAUG
+AAQA01001434.1/1796-1718                 GUAUUG
+#=GC SS_cons                             ......
+#=GC RF                                  gaAAug
+//

@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01426
+#=GF ID   snoR126
+#=GF DE   small nucleolar RNA snoR126
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold; Osuch I
+#=GF GA   40.00
+#=GF TC   40.33
+#=GF NC   31.43
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   19357091
+#=GF RT   Mining small RNA sequencing data: a new approach to identify small
+#=GF RT   nucleolar RNAs in Arabidopsis.
+#=GF RA   Chen HM, Wu SH;
+#=GF RL   Nucleic Acids Res. 2009;37:e69.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+AP008209.1/26482676-26482579             UGGCUGUGAGGACUAACUA....CUUUGUUUCUCGAUGCUG......ACU
+AAAA02010687.1/1542-1640                 UGGCUGUGAUGACAAACAAACCUCG...UUUCUCGAUGCUGAGACUUGAU
+CU179904.1/61661-61756                   AGGCUGUGAUGAACAACAA....CA...UUUCUCGAAUCUGAUAAUUACA
+AB018108.1/5630-5526                     AGGCGGUGAUGACAAAAAA....CA...UUUCUCGAUGCUGAAACUUACU
+#=GC SS_cons                             <<<<..............................................
+#=GC RF                                  aGGCaGUGAUGAcAAAAAA....CA...UUUCUCGAuuCUGAuAAuuAcu
+
+AP008209.1/26482676-26482579             UGA.U....UCAAUCAAUCAAGGACCAAAAAAAUUUGAUGACC.UUUGUG
+AAAA02010687.1/1542-1640                 UUGUU....CAAGG...ACCAG.....AACUGUGCUGACCUUAAUUUGUG
+CU179904.1/61661-61756                   AAA.G....CAAAUUAUAUUUG.....CUUUUUGAUGACCGUG.UUUGUG
+AB018108.1/5630-5526                     CGA.GAGACCAAAUCACUCUUGUAAUCUUUCGUGAUGCUUGUU.UUUAUG
+#=GC SS_cons                             ..................................................
+#=GC RF                                  aaA.GAGACCAAAuuAuacuuGUaaaCuUUcGUgAugcuaguG.UuUAuG
+
+AP008209.1/26482676-26482579             CGUGUCUGAGCCAC
+AAAA02010687.1/1542-1640                 CGUGUCUGAGCCAC
+CU179904.1/61661-61756                   CGUGUCUGAGCCUC
+AB018108.1/5630-5526                     CGUGUCUGAGCCUA
+#=GC SS_cons                             .........>>>>.
+#=GC RF                                  cgUgUCUGAGCCua
+//

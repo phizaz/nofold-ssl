@@ -1,0 +1,68 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01389
+#=GF ID   isrF
+#=GF DE   isrF Hfq binding RNA
+#=GF AU   Daub J, Gardner PP
+#=GF SE   Predicted; WAR; Infernal
+#=GF SS   Predicted; WAR
+#=GF GA   150.00
+#=GF TC   297.78
+#=GF NC   22.92
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   18725932
+#=GF RT   Deep sequencing analysis of small noncoding RNA and mRNA targets
+#=GF RT   of the global post-transcriptional regulator, Hfq.
+#=GF RA   Sittka A, Lucchini S, Papenfort K, Sharma CM, Rolle K, Binnewies
+#=GF RA   TT, Hinton JC, Vogel J;
+#=GF RL   PLoS Genet. 2008;4:e1000163.
+#=GF RN   [2]
+#=GF RM   18267966
+#=GF RT   Small RNAs encoded within genetic islands of Salmonella
+#=GF RT   typhimurium show host-induced expression and role in virulence.
+#=GF RA   Padalon-Brauch G, Hershberg R, Elgrably-Weiss M, Baruch K,
+#=GF RA   Rosenshine I, Margalit H, Altuvia S
+#=GF RL   Nucleic Acids Res. 2008;36:1913-1927.
+#=GF WK   http://en.wikipedia.org/wiki/Hfq_binding_sRNA
+#=GF SQ   3
+
+CP000026.1/1399939-1400207             ACAAUAGCCUCACUACCAUCAAGCGA.UA.CUGCUGCUUACGAGAAAC..
+CP001144.1/1736669-1736962             AGAUUAUCCAGGAGAUACACGAAUUAAUUCUGGCGGGUGAAAUGGAAGUC
+CP000857.1/2246703-2246992             AUAACGACCUGGACGCCGGCGAAUUA....UGGCGGGUGAAAUGGAAGUG
+#=GC SS_cons                           ..................................<<<<............
+#=GC RF                                ABAWYRDCCWSRMBRYMVDCRARYKAaUWcYKGCKGSUKAMRWGRAASUS
+
+CP000026.1/1399939-1400207             ....AAGGGAUGCUGCGCACGCUGAUUAAAGUCACGUUCGGUUAUCCUGC
+CP001144.1/1736669-1736962             GCCAAAAGGAUGCUGCGCACGCUGAUUAAAGUCACGUUCGCUUAUCCUGC
+CP000857.1/2246703-2246992             GCCAAAGGGAUGCUGCGCACGCUGAUUAAAGUCACGUUCGGUUAUCCUGC
+#=GC SS_cons                           ......<<...<<<<<..................................
+#=GC RF                                GCCAAARGGAUGCUGCGCACGCUGAUUAAAGUCACGUUCGSUUAUCCUGC
+
+CP000026.1/1399939-1400207             GAUUUUUGACGAGGUUCGGCAGGAAUGCCAAAUCAACAAUGCGCAUGUUG
+CP001144.1/1736669-1736962             GAUUUUUGACGAGGUUCGGCAGGAAUGCCAAAUCAACAAUGCGCAUGUUG
+CP000857.1/2246703-2246992             GAUUUUUGACGAGGUUCGGCAGGAAUGCCAAAUCAACAAUGCGCAUGUUG
+#=GC SS_cons                           .................<<<......>>>...........<<<<...<<<
+#=GC RF                                GAUUUUUGACGAGGUUCGGCAGGAAUGCCAAAUCAACAAUGCGCAUGUUG
+
+CP000026.1/1399939-1400207             UCGCCGGAUGUGGAUCCGGGUAUCAAAGCGUUUAUAGCCGUUGUCAGAGC
+CP001144.1/1736669-1736962             UCGCCGGAUGUGGAUCCGGGUAUCAAAGCGUUUAUAGCCGUUGUCAGAGC
+CP000857.1/2246703-2246992             UCGCCGGAUGUGGAUCCGGGUAUCAAAGCGUUUAUAGCCGUUGUCAGAGC
+#=GC SS_cons                           ...<<<<<<....>>>>>>....>>>.>>>>...................
+#=GC RF                                UCGCCGGAUGUGGAUCCGGGUAUCAAAGCGUUUAUAGCCGUUGUCAGAGC
+
+CP000026.1/1399939-1400207             UGCAGAACAUCAGUCAGAAAAAGCAGCGGACCAGGGUUCG......UGUG
+CP001144.1/1736669-1736962             UGCAGAACAUCAGUCAGAAAAAGCAGCGGACCAGGGUAAAACCCACUGAG
+CP000857.1/2246703-2246992             UGCAGAACAUCAGUCAGAAAAAGCAGCGGACCAGGGUAAAACCCACUGAG
+#=GC SS_cons                           ......................>>>>>...>>.<<<.....>>>......
+#=GC RF                                UGCAGAACAUCAGUCAGAAAAAGCAGCGGACCAGGGUWMRACCCACUGWG
+
+CP000026.1/1399939-1400207             CAGGAUAAGCGGGUG.CAAAUCAACA..........GAAUUCGC
+CP001144.1/1736669-1736962             CCAAAAACCUGCGCGACGAACCGGUCACAGUGGCCGGUUUUUUU
+CP000857.1/2246703-2246992             CCAAAAACCUGCGCGACGAACCGGUCACAGUGGCCGGUUUUUUU
+#=GC SS_cons                           ......>>>>.......<<<<<<<<<.....>>>>>>>>>....
+#=GC RF                                CMRRAWAMSYGSGYGACRAAYCRRYMACAGUGGCCGGWWUUYKY
+//

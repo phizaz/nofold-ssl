@@ -1,0 +1,75 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00350
+#=GF ID   snoZ152
+#=GF DE   Small nucleolar RNA Z152/R70/R12/
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   20.00
+#=GF TC   25.82
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300044
+#=GF RN   [1]
+#=GF RM   11469857
+#=GF RT   Identification of 66 box C/D snoRNAs in Arabidopsis thaliana:
+#=GF RT   extensive gene duplications generated multiple isoforms predicting
+#=GF RT   new ribosomal RNA 2'-O-methylation sites.
+#=GF RA   Barneche F, Gaspin C, Guyot R, Echeverria M;
+#=GF RL   J Mol Biol 2001;311:57-73.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   Z152 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1,2]. This family also contains snos R70 and R12 from Arabidopsis
+#=GF CC   thaliana.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z152/R70/R12
+#=GF SQ   9
+
+AJ490338.1/1-98                      GCAAUGCAAUGAUGAUUUUA.........AUGGGUUUUAGCAGUGGCGGC
+AACV01003559.1/6732-6639             ..AAUGCAAUGAUGAUUUUA.........AUGGGUUUUAGCAGUGGCGGC
+AM467034.1/3213-3321                 ..UGUGCUGUGAUGAGACGA..GACAC..AUUGGUGUUCAUAGGGCAGUG
+AP006087.1/71580-71475               ..GGUGCAAUGAUGAGAUAA...AACA..CUCUAUGUGUAUUGGGCAGUG
+AASG02005717.1/6918-6795             ..GAAGCAAUGAUGAGGUGA.AGCACUGAAACAGUGUUGAAAGGGUAGUG
+AF317995.1/1-111                     ....UGCGAUGAUGAUAAAAUAGCACG..AAG.GUGCGUGAAGGGCAGUG
+AF317941.1/1-96                      ..GAUGCAAUGAUGAGAUAAAAGCACG..AAGAGUGUGAGAAGAGCAGUG
+AF317942.1/1-96                      ..GAUGCAAUGAUGAGAUGAAAGCACG..AAGAGUGUGAGAAGAGCAGUG
+AC189511.1/15393-15269               ..GAUGCUAUGAUGUGAUAAAAGCACG..AAGAGUGUAAGAAGAGCAGUG
+#=GC SS_cons                         ..<<<<<...........................................
+#=GC RF                              ..aaUGCAAUGAUGAuauaAaAGCACG..AaGaGUgugAGAAGaGcAGug
+
+AJ490338.1/1-98                      GUCA..........................GUCGCCGUGAGCUUUCAAUC
+AACV01003559.1/6732-6639             GUCA..........................GUCGCCGUGAGCUUUCAAUC
+AM467034.1/3213-3321                 GACGGGCCCAAUGG...............GUCUGCCGUGAGCCUAUUGAA
+AP006087.1/71580-71475               GACGUUACCAUCAGG..............UUUCGCCGUGAGCCUAAUAU.
+AASG02005717.1/6918-6795             GACAGGUACCCAGUUGAUAACUGAGG...GCUUGCCGUGAACUCUAUCUA
+AF317995.1/1-111                     GACAAAGCAAUGAAAAUUUG.........UUUUGCCGUGAGCUCUCUUU.
+AF317941.1/1-96                      GG...........................UU.UACCGUGAGCUCUCCUU.
+AF317942.1/1-96                      GG............................UUUACCGUGAGCUCUCCUU.
+AC189511.1/15393-15269               GACAAUUACAAAUUCUGAAAAGGGUUUGUUCUUGCCGUGAGCUUUCCUA.
+#=GC SS_cons                         ..................................................
+#=GC RF                              GaCA.........................uuUugCCGUGAGCUcUCauU.
+
+AJ490338.1/1-98                      CAAAAAACGACUUCUCUUUCCACUGAGCAUUGC
+AACV01003559.1/6732-6639             CAAAAAACGACUUCUCUUUCCACUGAGCAUU..
+AM467034.1/3213-3321                 .UUCAAACGACUUCUCCUUCCACUGAGCACA..
+AP006087.1/71580-71475               .UA..AACGACUUCUCCUUCCACUGAGCACU..
+AASG02005717.1/6918-6795             .AUUAAACGACUUCUCCUUCCACUGAGCUCC..
+AF317995.1/1-111                     .AAUAAACGACUUCUCCUUCCACUGAGCA....
+AF317941.1/1-96                      .UA.AAACGACUUCUCCUUCCACUGAGCAUU..
+AF317942.1/1-96                      .UA.AAACGACUUCUCCUUCCACUGAGCAUU..
+AC189511.1/15393-15269               .AUUAAACGACUUCUCCUUCCACUGAGCAUA..
+#=GC SS_cons                         ..........................>>>>>..
+#=GC RF                              .AAaAAACGACUUCUCcUUCCACUGAGCAuu..
+//

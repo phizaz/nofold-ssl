@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00810
+#=GF ID   mir-85
+#=GF DE   microRNA mir-85
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   50.00
+#=GF TC   70.71
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000249
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+Z66520.1/16076-16181                     UAUAGAAUUUUGGCGUCGGAGCCCGAUUUUUCAAUAGUUUGAAACCAGUG
+AAGD02000337.1/3974-4079                 GAAGACGUUCUGAAGUCGGAGCCCGUCUUUCCAAUAUUUUGAAACCAGUA
+ABEG01005683.1/20918-20813               CGAGGUUCGGUCACCACGGUGCCCGACUUUUCAAUAUUUUGAAACCAGUU
+CAAC02000442.1/497969-497866             UCAAAAAACAGUACCCCGGUGCCCGCUUUUUCAGUAGUUUGAAACCAGAG
+#=GC SS_cons                             ..............<<<<<<<<<<<<<<<<<<<<<<.<<<<.<<<<<...
+#=GC RF                                  uAuAgAAuuuuggcccCgGaGCcCGcuuuuuCaauaGuuuGAaaCCaGaG
+
+Z66520.1/16076-16181                     UACACAUAAAUGGUUACAAAGUAUUUGAAAAGUCGUGCUCUGAAAAUGAA
+AAGD02000337.1/3974-4079                 CUCAUGCAAAUGGUUACAAAGUAUUCGAAAAGGCGUGCUCUGAGAAGAGC
+ABEG01005683.1/20918-20813               AUUCUGAGAAUGGUUACAAAGUAUUUGAAAAGCCGUGCACUGUAAGAAUC
+CAAC02000442.1/497969-497866             .AU.GAUAGUUGGUUACAAAGUAUUUGAAAAGGCGUGCACUGGGUAAAUU
+#=GC SS_cons                             ..........>>>>>.>>>>.>>.>>>>>>>>>>>>>>>>>>>>......
+#=GC RF                                  uAuAgAUAaauGGuuACaaaGuaUuuGaaaaggCGuGCuCuGggaAugAA
+
+Z66520.1/16076-16181                     UUCUUA
+AAGD02000337.1/3974-4079                 UCUUCG
+ABEG01005683.1/20918-20813               UCUCUU
+CAAC02000442.1/497969-497866             UUGAAU
+#=GC SS_cons                             ......
+#=GC RF                                  uucuuA
+//

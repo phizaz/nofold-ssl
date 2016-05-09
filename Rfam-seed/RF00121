@@ -1,0 +1,69 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00121
+#=GF ID   MicC
+#=GF DE   MicC RNA
+#=GF PI   IS063
+#=GF AU   Moxon SJ
+#=GF SE   Hershberg R
+#=GF SS   Predicted; PFOLD
+#=GF GA   35.00
+#=GF TC   36.83
+#=GF NC   33.10
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   12069726
+#=GF RT   A bioinformatics based approach to discover small RNA genes in the
+#=GF RT   Escherichia coli genome.
+#=GF RA   Chen S, Lesnik EA, Hall TA, Sampath R, Griffey RH, Ecker DJ, Blyn LB;
+#=GF RL   Biosystems 2002;65:157-177.
+#=GF RN   [2]
+#=GF RM   15466019
+#=GF RT   MicC, a second small-RNA regulator of Omp protein expression in
+#=GF RT   Escherichia coli.
+#=GF RA   Chen S, Zhang A, Blyn LB, Storz G;
+#=GF RL   J Bacteriol 2004;186:6689-6697.
+#=GF CC   MicC (previously known as IS063 [1]) is located between the ompN and ydbK
+#=GF CC   genes in E. coli. This family is thought to be a regulator of OmpC
+#=GF CC   expression. Along with Rfam:RF00033 this family may act in conjunction with
+#=GF CC   EnvZ-OmpR two-component system to control the OmpF/OmpC protein ratio in
+#=GF CC   response to a variety of environmental stimuli [2].
+#=GF WK   http://en.wikipedia.org/wiki/MicC_RNA
+#=GF SQ   8
+
+AJ277528.1/288-168                     CGUGUUAUAUGCCUUUAUUGUCAC....GUUUAUUUUUC..GUUGACGUA
+EF682131.1/218-344                     UGGGUUAUAUGCCUUUAUUGUCAUUUAAAAUUUAUAUUGUUGCCGUCUCA
+CP000647.1/1603837-1603960             CGCGUUAUAUGCCUUUAUUGUCAUGCCAAUAAUUUAUUGUUGCCGUCUCA
+AL627270.1/60166-60286                 CCUGUUAUAUGCCUUUAUUGUCAC...AUAUUCAUUUUGUCGUUGGGCCA
+AE006468.1/1745789-1745671             CCUGUUAUAUGCCUUUAUUGUCAC...AUAUUCAUUUUGUCGCUGGGCCA
+AE005674.1/1861077-1860956             CGGGUUAUAUGCCUUUAUUGUCAC...AGAUUUUAUUUUCUGUUGGGCCA
+CP000034.1/1341223-1341344             CGGGUUAUAUGCCUUUAUUGUCAC...AGAUUUUAUUUUCUGUUGGGCCA
+AACY022965012.1/342-461                CGUGUUAUAUGCCUUUAUUGUCAC...GUUUUAUUUUUC..GUUGGUAUA
+#=GC SS_cons                           ......<<<<<....>>.>>>....................<<<<<<...
+#=GC RF                                cguGUUAuAuGCCUUUaUUgUCAc...AaAUUuauuUUguuGcuGgcacA
+
+AJ277528.1/288-168                     UUGAUA.GCUAUUAU.UAAUUAGCCAGCGAAUAAAUUGACAAGCCCGAAC
+EF682131.1/218-344                     UUCAUAUCGAAUGAU.UAAUUCGUCGGAAAAU.....GACAAGCCCGAAU
+CP000647.1/1603837-1603960             UUCUGC.GGAAUGAUGUUGUUUAUCGGUAAAA....CGACAAGCCCGAAC
+AL627270.1/60166-60286                 UUGC...GUUAACCU.UUGCUUUCCAGCGUAUAAAUUGACAAGCCCGAAC
+AE006468.1/1745789-1745671             UUGC...GUUAACCU.UUGCUUUCCAGCGUAUAAAUUGACAAGCCCGAAC
+AE005674.1/1861077-1860956             UUGC...AUUGCCAC.UGAUUUUCCAACAUAUAAAAAGACAAGCCCGAAC
+CP000034.1/1341223-1341344             UUGC...AUUGCUAC.UGAUUUUCCAACAUAUAAAAAGACAAGCCCGAAC
+AACY022965012.1/342-461                UUGAUG.GUAAUUAU.UAAUUAGCCAGCGAAUAAAUUGACAAGCCCGAAC
+#=GC SS_cons                           ......................>>>>>>.........<<.<<<<<<<<<<
+#=GC RF                                UUgaUA.guuAuuAU.UaAUUugcCagCaaAUAAAuuGACAAGCCCGaAC
+
+AJ277528.1/288-168                     AACCC....GUUCGGGCUUUUUUUUGGGU.UCCA
+EF682131.1/218-344                     AGUUUUACUAUUCGGGCUUUUUUUAUUGC.GCCA
+CP000647.1/1603837-1603960             GUUGU....GUUCGGGCUUUUUUUAUGGA.CAAA
+AL627270.1/60166-60286                 .GGAU....GUUCGGGCUUUUUUUGUCUA.UGGA
+AE006468.1/1745789-1745671             .GGAU....GUUCGGGCUUUUUUUGU...UUCCA
+AE005674.1/1861077-1860956             .AGUC....GUCCGGGCUUUUUUUUUAGAAUUGG
+CP000034.1/1341223-1341344             .AGUC....GUCCGGGCUUUUUUUUAGAAUUGGA
+AACY022965012.1/342-461                .AACU....GUUCGGGCUUUUUUUUGG..UUCCA
+#=GC SS_cons                           .........>>>>>>>>>>>>.............
+#=GC RF                                .aguu....GUuCGGGCUUUUUUUuuggauuccA
+//

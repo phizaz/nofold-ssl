@@ -1,0 +1,111 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00069
+#=GF ID   SNORD24
+#=GF DE   Small nucleolar RNA SNORD24
+#=GF PI   U24
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD; Griffiths-Jones SR, Daub J
+#=GF GA   31.00
+#=GF TC   31.18
+#=GF NC   30.90
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300797
+#=GF DR   snoopy; Oryzias_latipes300056
+#=GF RN   [1]
+#=GF RM   7651828
+#=GF RT   U24, a novel intron-encoded small nucleolar RNA with two 12 nt long,
+#=GF RT   phylogenetically conserved complementarities to 28S rRNA.
+#=GF RA   Qu LH, Henry Y, Nicoloso M, Michot B, Azum MC, Renalier MH,
+#=GF RA   Caizergues-Ferrer M, Bachellerie JP;
+#=GF RL   Nucleic Acids Res 1995;23:2669-2676.
+#=GF RN   [2]
+#=GF RM   8764399
+#=GF RT   Intron-encoded, antisense small nucleolar RNAs: the characterization
+#=GF RT   of nine novel species points to their direct role as guides for the
+#=GF RT   2'-O-ribose methylation of rRNAs.
+#=GF RA   Nicoloso M, Qu LH, Michot B, Bachellerie JP;
+#=GF RL   J Mol Biol 1996;260:178-195.
+#=GF RN   [3]
+#=GF RM   8674114
+#=GF RT   Site-specific ribose methylation of preribosomal RNA: a novel
+#=GF RT   function for small nucleolar RNAs.
+#=GF RA   Kiss-Laszlo Z, Henry Y, Bachellerie JP, Caizergues-Ferrer M, Kiss T;
+#=GF RL   Cell 1996;85:1077-1088.
+#=GF RN   [4]
+#=GF RM   9703018
+#=GF RT   Evolution of U24 and U36 snoRNAs encoded within introns of vertebrate
+#=GF RT   rpL7a gene homologs: unique features of mammalian U36 variants.
+#=GF RA   Gilley J, Fried M;
+#=GF RL   DNA Cell Biol 1998;17:591-602.
+#=GF RN   [5]
+#=GF RM   11606788
+#=GF RT   Position within the host intron is critical for efficient processing
+#=GF RT   of box C/D snoRNAs in mammalian cells.
+#=GF RA   Hirose T, Steitz JA;
+#=GF RL   Proc Natl Acad Sci U S A 2001;98:12914-12919.
+#=GF CC   U24 is a member of the C/D class of snoRNA which contain the
+#=GF CC   C (UGAUGA) and D (CUGA) box motifs [1].  C/D box snoRNAs have
+#=GF CC   been shown to act as methylation guides for a number of RNA
+#=GF CC   targets [2,3].  U24 is encoded within an intron of
+#=GF CC   the gene for ribosomal protein L7a in mammals, chicken and Fugu [4].
+#=GF CC   The U76 snoRNA is found in an intron of the uRNA host gene (UHG)
+#=GF CC   growth arrest specific 5 (GAS5) transcript gene [5].  snoRNAs Z20
+#=GF CC   and U76 snoRNAs show clear similarity to U24.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD24
+#=GF SQ   14
+
+Z48760.1/109-198                 UUCAA..AUG.AUGUAAU.AACAUAUUUGCUACUUCAGA.UGGAACUUUG
+AJ222770.1/4-73                  UGCAA..UUG.AUGAAA......UAUUUGCUUAUGAUCA.AUAA......
+Y15171.1/2155-2227               UGCAU..AUG.AUGUAAA.CGAAUAUUUGCU.AUCUUAA.UGACGAU...
+AJ003046.1/33-102                UGCAU..AUG.AUGUAA..CGA.UAUU.GCU.AUCUUAA.UGACGAU...
+D14522.1/1637-1711               UGCAG..AUG.AUGUGAA.AAAAUACUUGCU.AUCUGAA.UGGUAGU...
+Z48763.1/1-75                    UGCAG..AUG.AUGUAAA.AAAAUACUUGCU.AUCUGAA.UGGUAGU...
+AJ003042.1/135-208               UGCAG..AUG.AUGUGAC.AGAAUAUUUGCU.AUCAGAU.GAGUGGU...
+AJ224032.1/2-84                  UGCCACAAUG.AUGACAU.CA..UAUUUGCUACUCUUGACAGCUGGGGU.
+Z48765.1/1-75                    UGCAG..AUG.AUGUAAA.AGAAUAUUUGCU.AUCUGAG.AGAUGGU...
+AF141346.1/1275-1356             UGCCACAAUG.AUGACA...GUUUAUUUGCUACUCUUGAGUGCUAGAAU.
+X61923.1/1387-1462               UGCAG..AUGAAUGUAAA.AGCCUAUUUGCU.AUCUGAG.AGAUGUG...
+AF270677.1/360-430               UGCAA..GUG.AUGCAA......AAGUAUGUUACCUGGA.AGAUGGU...
+AJ240063.1/2-93                  GGCCA..GUG.AUGUAAUAAAAAUAUUUGCUACUCUUGA.UGAAGAACUU
+AJ224036.1/1-85                  GGCCG..GUG.AUGUAAUCAAAAUAUUUGCUACUCUUGA.UGAAGAAUUU
+#=GC SS_cons                     <<<<..............................................
+
+Z48760.1/109-198                 AGUUCCGAA.UGAGACA.UACCAAUUAUCACCAAGAUC...UCUGA.UGA
+AJ222770.1/4-73                  ...........AUGAUU.CUUUUAUUAUCACCAAGAUC...GCUGAGUGC
+Y15171.1/2155-2227               ..........GAUGACA.AUAU....CCCACCAAGAUC...GCUGA.UGC
+AJ003046.1/33-102                ..........GAUGACA.AUAU....CCCACCAAGAUC...GCUGA.UGC
+D14522.1/1637-1711               ..........GCUGACA.UACAUA..ACCACCAAGAUC...GCUGA.UGC
+Z48763.1/1-75                    ..........GCUGACA.UACAUU..AUCACCAAGAUC...UCUGA.UGA
+AJ003042.1/135-208               ..........GAUGACA.CUAGA...ACCACCAAGAUC...GCUGA.UGC
+AJ224032.1/2-84                  ..........GACGAUAGCUUUAA..ACCACCAUGAUUAUAACUGA.GGC
+Z48765.1/1-75                    ..........GAUGACA.UUUUAA..ACCACCAAGAUC...GCUGA.UGC
+AF141346.1/1275-1356             ..........GAUGAGG.AUCUUA..ACCACCAUUAUCUUAACUGA.GGC
+X61923.1/1387-1462               ..........GAUGACA.UUUUAA..ACCACCAAGAUC...GCUGA.UGC
+AF270677.1/360-430               ..........GAUGACA.CUUUAA..ACCACCAAGAUC...GCUGA.UGC
+AJ240063.1/2-93                  UGUUCUUUCAGUUGAUG.AUUGGUUUACCACCAAGAUC...UCUGA.GGC
+AJ224036.1/1-85                  CUUCA.....GUUGAUG.AUAUUU..ACCACCAAGAUC...UCUGA.GGC
+#=GC SS_cons                     ...............................................>>>
+
+Z48760.1/109-198                 A
+AJ222770.1/4-73                  U
+Y15171.1/2155-2227               A
+AJ003046.1/33-102                A
+D14522.1/1637-1711               A
+Z48763.1/1-75                    A
+AJ003042.1/135-208               A
+AJ224032.1/2-84                  A
+Z48765.1/1-75                    A
+AF141346.1/1275-1356             A
+X61923.1/1387-1462               A
+AF270677.1/360-430               A
+AJ240063.1/2-93                  C
+AJ224036.1/1-85                  C
+#=GC SS_cons                     >
+//

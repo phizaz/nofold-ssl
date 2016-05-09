@@ -1,0 +1,65 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00052
+#=GF ID   lin-4
+#=GF DE   lin-4 microRNA precursor
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   33.00
+#=GF TC   36.48
+#=GF NC   31.64
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000303
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   11533718
+#=GF RT   Control of developmental timing in animals.
+#=GF RA   Rougvie AE;
+#=GF RL   Nat Rev Genet 2001;2:690-701.
+#=GF RN   [2]
+#=GF RM   11779458
+#=GF RT   microRNAs: tiny regulators with great potential.
+#=GF RA   Ambros V;
+#=GF RL   Cell 2001;107:823-826.
+#=GF CC   This family represents the microRNA (miRNA) lin-4
+#=GF CC   (MIPF:MIPF0000303). lin-4 was identified from a study of
+#=GF CC   developmental timing in C. elegans [1], and was later shown to be
+#=GF CC   part of a much larger class of non-coding RNAs termed miRNAs [2].
+#=GF CC   miRNAs are transcribed as ~70nt precursors (modelled here) and
+#=GF CC   subsequently processed by the Dicer enzyme to give a ~22nt
+#=GF CC   product.  The extents of the hairpin precursors are not generally
+#=GF CC   known and are estimated based on hairpin prediction.  The
+#=GF CC   products are thought to have regulatory roles through
+#=GF CC   complementarity to mRNA.  The involvement of Dicer in miRNA
+#=GF CC   processing suggests a relationship with the phenomenon of RNA
+#=GF CC   interference.
+#=GF WK   http://en.wikipedia.org/wiki/lin-4_microRNA_precursor
+#=GF SQ   9
+
+AC006590.11/38290-38358              GCUGAUUCCCUGAGACCCU..AACUUGUGACUUUU.AAUACCAGUUUCAC
+AC122451.3/2004-1935                 GCCUAGUCCCUGAGACCCU..AACUUGUGAGGUAU.UUUAGUAACAUCAC
+AP001359.4/67794-67724               UCUCAGUCCCUGAGACCCU..AACUUGUGAUGUUUACCGUUUAAAUCCAC
+AC018755.3/120411-120479             UCUAGGUCCCUGAGACCCUUUAACCUGUGAGG....ACAUCCAGGGUCAC
+AP000962.2/168508-168577             UCCUAGUCCCUGAGACCCU..AACUUGUGAGGUAU.UUUAGUAACAUCAC
+U01837.1/538-607                     GCCUGCUCCCUGAGACCUC..AAG.UGUGAGCGCACUGUUGAUGCUUCAC
+U01838.1/544-613                     GCCUGCUCCCUGAGACCUC..AAG.UGUGAGCGUACUGUAGAUGCUUCAC
+U01829.1/524-593                     GCCUGUUCCCUGAGACCUC..AAG.UGUGAGCGUUCUGAACAUGCUUCAC
+U01830.1/508-577                     GCCUGUUCCCUGAGACCUC..AAG.UGUGAGUGUACUAUUGAUGCUUCAC
+#=GC SS_cons                         .<<<<..<<<.<<<<.<<<...<<<<<<<<................>>>>
+
+AC006590.11/38290-38358              AAGUUUUGAUCUCC.GGUA.UUGG
+AC122451.3/2004-1935                 AAGUCAGGUUCUU.GGGACCUAGG
+AP001359.4/67794-67724               GGGUUAGGCUCUU.GGGAGCUGCG
+AC018755.3/120411-120479             AGGUGAGGUUCUU.GGGAGCCUGG
+AP000962.2/168508-168577             AAGUCAGGCUCUU.GGGACCUAGG
+U01837.1/538-607                     GCCU.GGGCUCUCUGGGUACCAGG
+U01838.1/544-613                     ACCU.GGGCUCUCUGGGUACCAGG
+U01829.1/524-593                     GCCU.GGGCUCUCCGGGUACCAGG
+U01830.1/508-577                     ACCU.GGGCUCUCCGGGUACCAGG
+#=GC SS_cons                         >>>>.>>>.>>>>.>>>...>>>>
+//

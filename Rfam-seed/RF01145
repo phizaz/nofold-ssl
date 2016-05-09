@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01145
+#=GF ID   sR14
+#=GF DE   Small nucleolar RNA sR14
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   22.00
+#=GF TC   24.66
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://lowelab.ucsc.edu/snoRNAdb/
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   8
+
+CP000682.1/1693002-1693054             UGCUGUGAAGA..GG.AAUCUG..GUCUGAUCC.AUGAUGAAG.GGCCAA
+BA000023.2/1296396-1296450             UGCUGUGAAGAGGCUAGAUAUA....CUGAAUUUGUGAUGAAG.GGCCAA
+AE006641.1/829583-829636               UGCUGUGAAGA..CC.UAGCUA.GGUCUGAAGA.GUGAUGAGG.GGCCAA
+AF195108.1/1-55                        .GCUGUGAAGACGCUAGACUUA..GACUGACUC.AUGAUGAAG.GGCCAA
+AE009950.1/1889591-1889645             CCCAAUGAUGA..UG.GAUCAACCGGCUGAA.GUAUGAUGAGGUCCGCAU
+BA000001.2/56243-56188                 ACCAAUGAUGA..CG.GAUCAACCGGCUGAUCGAAUGAUGACGUCCGCAU
+AJ248283.1/65278-65224                 UCCGAUGAUGA..UG.GAUCAACCGGCUGAGUG.GUGAUGAAGUCCGCAU
+AP006878.1/316188-316134               UCCGAUGAUGA..CG.GAUCAACCGGCCGAACG.GUGACGACAUCGGUCU
+#=GC SS_cons                           ..................................................
+#=GC RF                                UgCuaUGAaGA..cG.GAUcaACCGgCUGAaug.aUGAUGAAGUgggCAa
+
+CP000682.1/1693002-1693054             AGCUCAGAGC
+BA000023.2/1296396-1296450             AGCUCGGAGC
+AE006641.1/829583-829636               AGCUCGGAGC
+AF195108.1/1-55                        AGCUCAGAGC
+AE009950.1/1889591-1889645             CAC.CUGAGG
+BA000001.2/56243-56188                 CAC.CUGAGG
+AJ248283.1/65278-65224                 CAC.CUGAGG
+AP006878.1/316188-316134               UGU.CUGAGG
+#=GC SS_cons                           ..........
+#=GC RF                                aGC.CuGAGg
+//

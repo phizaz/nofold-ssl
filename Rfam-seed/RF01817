@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01817
+#=GF ID   RsaB
+#=GF DE   RNA Staph. aureus A
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19786493
+#=GF SS   Published; PMID:19786493
+#=GF GA   30.00
+#=GF TC   64.92
+#=GF NC   21.33
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19786493
+#=GF RT   A search for small noncoding RNAs in Staphylococcus aureus reveals a
+#=GF RT   conserved sequence motif for regulation.
+#=GF RA   Geissmann T, Chevalier C, Cros MJ, Boisset S, Fechter P, Noirot C,
+#=GF RA   Schrenzel J, Francois P, Vandenesch F, Gaspin C, Romby P;
+#=GF RL   Nucleic Acids Res. 2009;37:7239-7257.
+#=GF WK   http://en.wikipedia.org/wiki/Rsa_RNA
+#=GF SQ   3
+
+CP000255.1/1846919-1846975             UAUUAUUAGUGUUAAUUGUAGCGCAUCCCAAUUAAAUAUUGCAACCUAUU
+ACJA01000049.1/31131-31190             AAUUAUUAGUGUUAAUUGUAGCGCAUCCCAAUUAAAUAUUGCAACCUAUU
+BA000018.3/1778009-1778068             AAUUAUUAGUGUUAAUUGUAGCGCAUCCCAAUUAAAUAUUGCAACCUAUU
+#=GC SS_cons                           ........<<<<<<....>>>>>>....<<<<.....>>>>......<<<
+#=GC RF                                AAUUAUUAGuGuuaAUUGuagCgCAUCCCaauUAAAUauuGCAACCUauu
+
+CP000255.1/1846919-1846975             UUAUU...AU
+ACJA01000049.1/31131-31190             UUAUUAAAAU
+BA000018.3/1778009-1778068             UUAUUAAAAU
+#=GC SS_cons                           <<...>>>>>
+#=GC RF                                uuAUUaaaau
+//

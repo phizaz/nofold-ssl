@@ -1,0 +1,265 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01896
+#=GF ID   mir-142
+#=GF DE   microRNA mir-142
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   73.00
+#=GF TC   82.08
+#=GF NC   62.48
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000084
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF RN   [1]
+#=GF RM   20403161
+#=GF RT   Small RNA expression and strain specificity in the rat
+#=GF RA   Linsen SE, de Wit E, de Bruijn E, Cuppen E
+#=GF RL   BMC Genomics. 2010;11:249.
+#=GF RN   [2]
+#=GF RM   14573789
+#=GF RT   Reduced accumulation of specific microRNAs in colorectal neoplasia
+#=GF RA   Michael MZ, O' Connor SM, van Holst Pellekaan NG, Young GP, James
+#=GF RA   RJ
+#=GF RL   Mol Cancer Res. 2003;1:882-891.
+#=GF RN   [3]
+#=GF RM   19917043
+#=GF RT   MicroRNA identity and abundance in porcine skeletal muscles determined
+#=GF RT   by deep sequencing
+#=GF RA   Nielsen M, Hansen JH, Hedegaard J, Nielsen RO, Panitz F, Bendixen
+#=GF RA   C, Thomsen B
+#=GF RL   Anim Genet. 2010;41:159-168.
+#=GF RN   [4]
+#=GF RM   18463306
+#=GF RT   Conservation of small RNA pathways in platypus
+#=GF RA   Murchison EP, Kheradpour P, Sachidanandam R, Smith C, Hodges
+#=GF RA   E, Xuan Z, Kellis M, Grutzner F, Stark A, Hannon GJ
+#=GF RL   Genome Res. 2008;18:995-1004.
+#=GF RN   [5]
+#=GF RM   19406225
+#=GF RT   In silico detection and characteristics of novel microRNA genes
+#=GF RT   in the Equus caballus genome using an integrated ab initio and
+#=GF RT   comparative genomic approach
+#=GF RA   Zhou M, Wang Q, Sun J, Li X, Xu L, Yang H, Shi H, Ning S, Chen
+#=GF RA   L, Li Y, He T, Zheng Y
+#=GF RL   Genomics. 2009;94:125-131.
+#=GF RN   [6]
+#=GF RM   15325244
+#=GF RT   Altered expression profiles of microRNAs during TPA-induced differentiation
+#=GF RT   of HL-60 cells
+#=GF RA   Kasashima K, Nakamura Y, Kozu T
+#=GF RL   Biochem Biophys Res Commun. 2004;322:403-410.
+#=GF RN   [7]
+#=GF RM   18392026
+#=GF RT   Discovering microRNAs from deep sequencing data using miRDeep
+#=GF RA   Friedlander MR, Chen W, Adamidi C, Maaskola J, Einspanier R,
+#=GF RA   Knespel S, Rajewsky N
+#=GF RL   Nat Biotechnol. 2008;26:407-415.
+#=GF RN   [8]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF RN   [9]
+#=GF RM   20215419
+#=GF RT   MicroRNA transcriptome in the newborn mouse ovaries determined
+#=GF RT   by massive parallel sequencing
+#=GF RA   Ahn HW, Morin RD, Zhao H, Harris RA, Coarfa C, Chen ZJ, Milosavljevic
+#=GF RA   A, Marra MA, Rajkovic A
+#=GF RL   Mol Hum Reprod. 2010;16:463-471.
+#=GF RN   [10]
+#=GF RM   17306260
+#=GF RT   Identification and characterization of microRNAs from the bovine
+#=GF RT   adipose tissue and mammary gland
+#=GF RA   Gu Z, Eleswarapu S, Jiang H
+#=GF RL   FEBS Lett. 2007;581:981-988.
+#=GF RN   [11]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [12]
+#=GF RM   15345052
+#=GF RT   Microarray analysis of microRNA expression in the developing
+#=GF RT   mammalian brain
+#=GF RA   Miska EA, Alvarez-Saavedra E, Townsend M, Yoshii A, Sestan N,
+#=GF RA   Rakic P, Constantine-Paton M, Horvitz HR
+#=GF RL   Genome Biol. 2004;5:R68.
+#=GF RN   [13]
+#=GF RM   17604727
+#=GF RT   A mammalian microRNA expression atlas based on small RNA library
+#=GF RT   sequencing
+#=GF RA   Landgraf P, Rusu M, Sheridan R, Sewer A, Iovino N, Aravin A,
+#=GF RA   Pfeffer S, Rice A, Kamphorst AO, Landthaler M, Lin C, Socci ND,
+#=GF RA   Hermida L, Fulci V, Chiaretti S, Foa R, Schliwka J, Fuchs U,
+#=GF RA   Novosel A, Muller RU, Schermer B, Bissels U, Inman J, Phan Q,
+#=GF RA   Chien M, Weir DB, Choksi R, De Vita G, Frezzetti D, Trompeter
+#=GF RA   HI, Hornung V, Teng G, Hartmann G, Palkovits M, Di Lauro R, Wernet
+#=GF RA   P, Macino G, Rogler CE, Nagle JW, Ju J, Papavasiliou FN, Benzing
+#=GF RA   T, Lichter P, Tam W, Brownstein MJ, Bosio A, Borkhardt A, Russo
+#=GF RA   JJ, Sander C, Zavolan M, Tuschl T
+#=GF RL   Cell. 2007;129:1401-1414.
+#=GF RN   [14]
+#=GF RM   12919684
+#=GF RT   Embryonic stem cell-specific MicroRNAs
+#=GF RA   Houbaviy HB, Murray MF, Sharp PA
+#=GF RL   Dev Cell. 2003;5:351-358.
+#=GF RN   [15]
+#=GF RM   16750530
+#=GF RT   Identification of microRNAs from different tissues of chicken
+#=GF RT   embryo and adult chicken
+#=GF RA   Xu H, Wang X, Du Z, Li N
+#=GF RL   FEBS Lett. 2006;580:3610-3616.
+#=GF RN   [16]
+#=GF RM   20360741
+#=GF RT   The genome of a songbird
+#=GF RA   Warren WC, Clayton DF, Ellegren H, Arnold AP, Hillier LW, Kunstner
+#=GF RA   A, Searle S, White S, Vilella AJ, Fairley S, Heger A, Kong L,
+#=GF RA   Ponting CP, Jarvis ED, Mello CV, Minx P, Lovell P, Velho TA,
+#=GF RA   Ferris M, Balakrishnan CN, Sinha S, Blatti C, London SE, Li Y,
+#=GF RA   Lin YC, George J, Sweedler J, Southey B, Gunaratne P, Watson
+#=GF RA   M, Nam K, Backstrom N, Smeds L, Nabholz B, Itoh Y, Whitney O,
+#=GF RA   Pfenning AR, Howard J, Volker M, Skinner BM, Griffin DK, Ye L,
+#=GF RA   McLaren WM, Flicek P, Quesada V, Velasco G, Lopez-Otin C, Puente
+#=GF RA   XS, Olender T, Lancet D, Smit AF, Hubley R, Konkel MK, Walker
+#=GF RA   JA, Batzer MA, Gu W, Pollock DD, Chen L, Cheng Z, Eichler EE,
+#=GF RA   Stapley J, Slate J, Ekblom R, Birkhead T, Burke T, Burt D, Scharff
+#=GF RA   C, Adam I, Richard H, Sultan M, Soldatov A, Lehrach H, Edwards
+#=GF RA   SV, Yang SP, Li X, Graves T, Fulton L, Nelson J, Chinwalla A,
+#=GF RA   Hou S, Mardis ER, Wilson RK
+#=GF RL   Nature. 2010;464:757-762.
+#=GF RN   [17]
+#=GF RM   12007417
+#=GF RT   Identification of tissue-specific microRNAs from mouse
+#=GF RA   Lagos-Quintana M, Rauhut R, Yalcin A, Meyer J, Lendeckel W, Tuschl
+#=GF RA   T
+#=GF RL   Curr Biol. 2002;12:735-739.
+#=GF RN   [18]
+#=GF RM   18256158
+#=GF RT   MicroRNA profile of Marek's disease virus-transformed T-cell
+#=GF RT   line MSB-1: predominance of virus-encoded microRNAs
+#=GF RA   Yao Y, Zhao Y, Xu H, Smith LP, Lawrie CH, Watson M, Nair V
+#=GF RL   J Virol. 2008;82:4007-4015.
+#=GF RN   [19]
+#=GF RM   18032731
+#=GF RT   Xenopus microRNA genes are predominantly located within introns
+#=GF RT   and are differentially expressed in adult frog tissues via post-transcriptional
+#=GF RT   regulation
+#=GF RA   Tang GQ, Maxwell ES
+#=GF RL   Genome Res. 2008;18:104-112.
+#=GF RN   [20]
+#=GF RM   20413612
+#=GF RT   Mammalian microRNAs: experimental evaluation of novel and previously
+#=GF RT   annotated genes
+#=GF RA   Chiang HR, Schoenfeld LW, Ruby JG, Auyeung VC, Spies N, Baek
+#=GF RA   D, Johnston WK, Russ C, Luo S, Babiarz JE, Blelloch R, Schroth
+#=GF RA   GP, Nusbaum C, Bartel DP
+#=GF RL   Genes Dev. 2010;24:992-1009.
+#=GF RN   [21]
+#=GF RM   17105755
+#=GF RT   Discovery and profiling of bovine microRNAs from immune-related
+#=GF RT   and embryonic tissues
+#=GF RA   Coutinho LL, Matukumalli LK, Sonstegard TS, Van Tassell CP, Gasbarre
+#=GF RA   LC, Capuco AV, Smith TP
+#=GF RL   Physiol Genomics. 2007;29:35-43.
+#=GF RN   [22]
+#=GF RM   17965199
+#=GF RT   In vitro and in silico annotation of conserved and nonconserved
+#=GF RT   microRNAs in the genome of the marsupial Monodelphis domestica
+#=GF RA   Devor EJ, Samollow PB
+#=GF RL   J Hered. 2008;99:66-72.
+#=GF RN   [23]
+#=GF RM   15919954
+#=GF RT   MicroRNA expression in zebrafish embryonic development
+#=GF RA   Wienholds E, Kloosterman WP, Miska E, Alvarez-Saavedra E, Berezikov
+#=GF RA   E, de Bruijn E, Horvitz HR, Kauppinen S, Plasterk RH
+#=GF RL   Science. 2005;309:310-311.
+#=GF RN   [24]
+#=GF RM   15592404
+#=GF RT   Sequence and comparative analysis of the chicken genome provide
+#=GF RT   unique perspectives on vertebrate evolution
+#=GF RA   International Chicken Genome Sequencing Consortium
+#=GF RL   Nature. 2004;432:695-716.
+#=GF RN   [25]
+#=GF RM   18186931
+#=GF RT   Identification of novel homologous microRNA genes in the rhesus
+#=GF RT   macaque genome
+#=GF RA   Yue J, Sheng Y, Orwig KE
+#=GF RL   BMC Genomics. 2008;9:8.
+#=GF RN   [26]
+#=GF RM   16766679
+#=GF RT   Identification and characterization of two novel classes of small
+#=GF RT   RNAs in the mouse germline: retrotransposon-derived siRNAs in
+#=GF RT   oocytes and germline small RNAs in testes
+#=GF RA   Watanabe T, Takeda A, Tsukiyama T, Mise K, Okuno T, Sasaki H,
+#=GF RA   Minami N, Imai H
+#=GF RL   Genes Dev. 2006;20:1732-1743.
+#=GF RN   [27]
+#=GF RM   15937218
+#=GF RT   The developmental miRNA profiles of zebrafish as determined by
+#=GF RT   small RNA cloning
+#=GF RA   Chen PY, Manninga H, Slanchev K, Chien M, Russo JJ, Ju J, Sheridan
+#=GF RA   R, John B, Marks DS, Gaidatzis D, Sander C, Zavolan M, Tuschl
+#=GF RA   T
+#=GF RL   Genes Dev. 2005;19:1288-1293.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   15
+
+CAAB01006315.1/8480-8374               GUGUGCUUGUACAGUGCAGUCAUCCAUAAAGUAGAAAGCACUACUAAACU
+CAAK05054211.1/4292-4186               AAAAGGACGUACAGUGCAGUCAUCCAUAAAGUAGAAAGCACUACUAAACC
+AADN02026096.1/1575-1681               CGACUGAGAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAAACA
+ABQF01025744.1/6552-6446               CGACUGAGAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAAACA
+AL604022.21/36673-36778                GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+CU393486.7/169334-169439               GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AAQQ01354427.1/3593-3488               GAACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AC197930.3/5013-5118                   GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AANU01173044.1/25471-25366             GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AC023992.8/2092-1987                   GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AC004687.2/82254-82359                 GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+ACBE01421816.1/6085-6190               GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+ABRP01047127.1/2527-2422               GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AAWR02012934.1/8078-7973               GGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+AAFR03045441.1/27253-27358             AGACAGACAGACAGUGCAGUCACCCAUAAAGUAGAAAGCACUACUAA.CA
+#=GC SS_cons                           ..........<<<<<<<<.<<<.<<<<<<<<<<<.<<<<<<<<<......
+
+CAAB01006315.1/8480-8374               CUUUGCCACAGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUUGUC
+CAAK05054211.1/4292-4186               CCUCGCCACAGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUUGGC
+AADN02026096.1/1575-1681               GCACUGCAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+ABQF01025744.1/6552-6446               GCACUGCAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AL604022.21/36673-36778                GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGCACUGUGGGC
+CU393486.7/169334-169439               GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGCACUGUGGGC
+AAQQ01354427.1/3593-3488               GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AC197930.3/5013-5118                   GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AANU01173044.1/25471-25366             GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AC023992.8/2092-1987                   GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AC004687.2/82254-82359                 GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+ACBE01421816.1/6085-6190               GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+ABRP01047127.1/2527-2422               GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AAWR02012934.1/8078-7973               GCACUGGAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+AAFR03045441.1/27253-27358             GCAAUGUAGGGUGUAGUGUUUCCUACUUUAUGGAUGAGUGUACUGUGGGC
+#=GC SS_cons                           ............>>>>>>>>>.>>>>>>>>>>>.>>>.>>>>>>>>....
+
+CAAB01006315.1/8480-8374               UUCAGGG
+CAAK05054211.1/4292-4186               UGCUGGG
+AADN02026096.1/1575-1681               UACGGAG
+ABQF01025744.1/6552-6446               UACGGAG
+AL604022.21/36673-36778                UUCGGAG
+CU393486.7/169334-169439               UUCGGAG
+AAQQ01354427.1/3593-3488               UUCGGAG
+AC197930.3/5013-5118                   UUCGGAG
+AANU01173044.1/25471-25366             UUCGGAG
+AC023992.8/2092-1987                   UUCGGAG
+AC004687.2/82254-82359                 UUCGGAG
+ACBE01421816.1/6085-6190               UUCGGAG
+ABRP01047127.1/2527-2422               UUCGGAG
+AAWR02012934.1/8078-7973               UUCGGAG
+AAFR03045441.1/27253-27358             UUCGGAG
+#=GC SS_cons                           .......
+//

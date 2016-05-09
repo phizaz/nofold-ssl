@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00846
+#=GF ID   mir-64
+#=GF DE   microRNA mir-64
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   35.00
+#=GF TC   45.58
+#=GF NC   22.39
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000295
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+AC024798.1/92980-93089                 CUCC....CCGCUGACCUCGCCGAAUAUGACACUGAAGCGUU.ACCGAAC
+AC024798.1/93130-93233                 ....AGCCAUGGAGCCUUCGCCGAUUAUGACACUGAAGCGUA.ACCGAAC
+ABEG01005099.1/16243-16350             ....AACUCCUUGGGCCUCGCCGGUUAUGACACUUAAGCUAA.UCUGAAC
+AAGD02000398.1/736-840                 UUAA....CCAGAGGCCUCGCCGAAUAUGACACUGACGCUUAAUAUGGAC
+#=GC SS_cons                           ..................<<<<<<.<<<<<<<<<<..<<<<<.<<<<...
+#=GC RF                                cuccAgccauGgaGaCuUcGCCGAauAuGaCACuGAAgCGua.AccgAAC
+
+AC024798.1/92980-93089                 CGUUUUCCCACACCUGGAUUCGGUGCAACGAUCAGUGGCAUGCUCGGCUA
+AC024798.1/93130-93233                 A......CCAUAUUUUGAGAUUCUGCUACGCGCAGUGCCAUGCUCGGCGC
+ABEG01005099.1/16243-16350             CAAUUUAGAACUAUAGGAUUCAGU..UUAGAUAAGUGGAAUAGUCGGCGA
+AAGD02000398.1/736-840                 CGAUCUCCC....CCGGAUCCAUA..AAAGCUCAGUGUCAAACUCGGCGA
+#=GC SS_cons                           ....................>>>>..>>>>>.>>>>>>>>>>.>>>>>>.
+#=GC RF                                aguuuucCCAuAuuUuGAuacggUGCuaCGcuCaGUGuCaUgCUCGGCga
+
+AC024798.1/92980-93089                 GCGCCAGUUAAGUAU
+AC024798.1/93130-93233                 GUUGGCUCCAUUAAA
+ABEG01005099.1/16243-16350             GAGUCCGGAGACGUU
+AAGD02000398.1/736-840                 GUGCCCCGCCCCCUA
+#=GC SS_cons                           ...............
+#=GC RF                                GuuggauuuAauaAa
+//

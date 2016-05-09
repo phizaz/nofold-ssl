@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01579
+#=GF ID   RUF2
+#=GF DE   Plasmodium RNA of unknown function RUF2
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; Clustal_alifold;
+#=GF GA   90.00
+#=GF TC   98.44
+#=GF NC   20.02
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/Plasmodium_RUF2_RNA
+#=GF SQ   3
+
+AM910986.1/47547-47704               ACCAUUGAACGAUUCGAAGAGUUAUUAUUGUGAAUAUUUUUUUC.....C
+CAAJ01001233.1/1534-1687             UUCAUUGAACAUUUCGAAGGGCUAUUAUG.AAAAUAUUUAUUUAAAUAUU
+AABL01001458.1/5179-5331             UUAUUUAAAUAUUUAUUUAAGUAUUUAUU.UAAAUGUUUAUUUAAAUAUU
+#=GC SS_cons                         .....<<<<<<.........<<<<<<<<<.....<<<<<<..........
+#=GC RF                              aacAaugAacAaauauAAAaGcuauUAUa.uAAAUgUuUAUaUAAAUAUu
+
+AM910986.1/47547-47704               AAAAAAUAUGUCCAAAAAUAUUAGCUUCAAAUCUGUUCAUAUAACAAAUG
+CAAJ01001233.1/1534-1687             UUUAAACA........AAUAAUAGCAUCAAAUUUGUUCAUAAAACAAAUG
+AABL01001458.1/5179-5331             UUUAAACA........AAUAAUAACGUCAAACUUGUUCAUACAACAAAUG
+#=GC SS_cons                         ..>>>>>>........>>>>>>>>>........>>>>>>..........<
+#=GC RF                              UaUAaAcA........uAUAauagCAaCAAauuUguUcaUAuAauaaaua
+
+AM910986.1/47547-47704               UAUAUACGGUGGCUUUUUAAAUUUUUAAUUUUAGAAAUGUCAAUCCAUAU
+CAAJ01001233.1/1534-1687             UAUAUACGGUGGCUUUUUAAAUUUUUAAUUUUAAAAGUGUCAAUCCAUAU
+AABL01001458.1/5179-5331             UAUAUACGGUGGCUUUUUAAAUU.UUGAUUUUAAAAGUGUCAAUCCAUAU
+#=GC SS_cons                         <<<<<<.<<<<<<<<<<<<<<........>>>>>>>>.>>>>..>>.>>>
+#=GC RF                              UAUAuaagguGgCaUUUuaAAaUaaUaAUUUuaAAAuUGuCaAUccAuaU
+
+AM910986.1/47547-47704               AUAUCACAGAGAA
+CAAJ01001233.1/1534-1687             AUAUCACAGCACC
+AABL01001458.1/5179-5331             AUAUCACAGACCU
+#=GC SS_cons                         >>>>.........
+#=GC RF                              AUAuuaaAGuuau
+//

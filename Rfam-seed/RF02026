@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02026
+#=GF ID   mir-2833
+#=GF DE   microRNA mir-2833
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   65.00
+#=GF TC   65.27
+#=GF NC   19.55
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000886
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   20199675
+#=GF RT   MicroRNAs of Bombyx mori identified by Solexa sequencing
+#=GF RA   Liu S, Li D, Li Q, Zhao P, Xiang Z, Xia Q
+#=GF RL   BMC Genomics. 2010;11:148.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   5
+
+BABH01058117.1/633-707               AAGAA..UUCGCGGUAAACAGUGGAAACUGGUCCUCAUAUGUUGAGAGAU
+AADK01040104.1/1718-1790             .AGAA..UUCGCGGUAAACAGUGGAAACUGGUCCUCAUAUGUUGAGAGAU
+BABH01039435.1/1413-1337             AAGUAGCUUCGCGGUAAACCAUGGAAGCUGGUCUUCAUAUGUUGAGAGAU
+BABH01082483.1/16-86                 AAGAA..UUCGCGGUAAACAG.GGAAACG.GUCCUCAUAUG.UGAGAGAU
+BAAB01167795.1/319-245               AAGAA..UUCGCGGUAAACAGUGGAAACUGGUCCUCAUAUGUUGAGAGAU
+#=GC SS_cons                         ....<..<<<<<..<<<<.<<<<.<..<..<<<<<<<.....>>>>.>>>
+#=GC RF                              AAGAa..uuCgCGGcaaaCaGugGaAACUGguCCuCaUAUGUuGaGAGau
+
+BABH01058117.1/633-707               UGGAAAUGUACUUUUUGGUGAAUAAAU
+AADK01040104.1/1718-1790             UGGAAAUGUACUUUUUAGUGAAUAAA.
+BABH01039435.1/1413-1337             UGGAAAUGUACUUUUUGGUGAAUAAAG
+BABH01082483.1/16-86                 G.GAAAUGUACUUUUUAGUGAAUAAAG
+BAAB01167795.1/319-245               UGGAAAUGUACUUUUUGGUGAAUAAAG
+#=GC SS_cons                         ..>...>.>>>>.>>>>>>>>>>....
+#=GC RF                              UGGAAAuGuaCuUuuugGuGaauAAAu
+//

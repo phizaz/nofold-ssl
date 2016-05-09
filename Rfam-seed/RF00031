@@ -1,0 +1,168 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00031
+#=GF ID   SECIS_1
+#=GF DE   Selenocysteine insertion sequence 1
+#=GF PI   SECIS
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Gautheret D, PMID:12458087
+#=GF SS   Published; PMID:12458087
+#=GF GA   20.00
+#=GF TC   22.58
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:1001274 SO:SECIS_element
+#=GF DR   GO:0001514 GO:selenocysteine incorporation
+#=GF RN   [1]
+#=GF RM   8634917
+#=GF RT   A novel RNA structural motif in the selenocysteine insertion element
+#=GF RT   of eukaryotic selenoprotein mRNAs.
+#=GF RA   Walczak R, Westhof E, Carbon P, Krol A;
+#=GF RL   RNA 1996;2:367-379.
+#=GF RN   [2]
+#=GF RM   12458087
+#=GF RT   A survey of metazoan selenocysteine insertion sequences.
+#=GF RA   Lambert A, Lescure A, Gautheret D;
+#=GF RL   Biochimie 2002;84:953-959.
+#=GF CC   The incorporation of selenocysteine into a protein sequence
+#=GF CC   is directed by an in-frame UGA codon (usually a stop codon)
+#=GF CC   within the coding region of the mRNA.  Selenoprotein mRNAs
+#=GF CC   contain a conserved secondary structure in the 3' UTR that
+#=GF CC   is required for the distinction of UGA stop from UGA
+#=GF CC   selenocysteine.  The selenocysteine insertion sequence
+#=GF CC   (SECIS) is around 60 nt in length and adopts a hairpin
+#=GF CC   structure which is sufficiently well-defined and conserved
+#=GF CC   to act as a computational screen for selenoprotein genes [2].
+#=GF WK   http://en.wikipedia.org/wiki/SECIS_element
+#=GF SQ   61
+
+AY119185.1/838-902                    G.AGCC.CU...AUGAUCGAUGAUUGG.CAAA.UCCUCUC..GAGG..A.
+AC092237.1/57223-57161                C.AUUCAACU.UAUGAGGAUUAUUUCU.UAAA.GGCCUCU...GGC..U.
+AY060611.1/560-627                    G.UGGCGCU..UAUGACGCAGUUGUCU.UAAA.CUCGAAC..UCGA.GC.
+Y11109.1/1272-1330                    G.UUUCUCA...GUGAAGGCUACAGAU.UAAA..CCUCU....GGC....
+Y11109.1/927-987                      U.GUUUAUU..AAUGACGGCUACAGAU.UAAA..CCUUU....AGC....
+Y11111.1/1260-1324                    G.UGUCUCU...GUGAAGUUCGGUUUU.UAAA.AGGGUCA...UCC..A.
+AF322071.1/1577-1642                  A.UGUGGUCUUUAUGAAGGCAGGUGCA.GAAA.CUAUGCA...CUA.GU.
+L28111.1/1299-1365                    G.UGUUUGCA.AAUGACGACCGAUUUU.GAAA.UGGUCUCACGGCC..A.
+AF125575.1/5781-5843                  G.UGUGUUU...AUGAAGAGCACUAAC.AAAA.GAGUAAU.UGACU..C.
+Y11110.1/1218-1277                    U.AUUUGUC...AUGACAGUCACAGCA.UAAA..GCGCA....GAC....
+Y11273.1/1139-1211                    U.AUUUCUU..UGUGAUGACCGAUUUU.GAAA.UGGGUUU...CUC..UA
+AF195142.1/461-524                    G.UCACCGA...AUGAUCUGCUCUGGU.CAAA.UCCUUCU...AUG..C.
+AF021345.1/10097-10160                G.UUACAUU..AAUGAGAACAGAAACA.UAAA..CUAUGA.CCUAG.G..
+X03920.1/1172-1235                    G.GUUCUUC..CAUGAUGGUGUUUCCUCUAAA..UUUGC....ACG....
+AF096875.1/5504-5568                  G.UGUGCGA...AUGAUAACUACUGAC.GAAA.GAGCUGU.CUGCU..C.
+AF241527.2/359-424                    G.CCGCUUC...AUGACAGGAAGGACU.GAAA.UGUCUUA...GAC..C.
+AF136399.1/1808-1868                  G.UCAGAUG...AUGAUGGCCUGGGCA.GAAA.CCCCAUG..UGGG..C.
+X84742.1/5239-5302                    G.UGUCUCU...AUGAAGGAGGGGCCC.GAAG.CCCUUGU...GGG..C.
+AF288740.1/1291-1357                  U.UUGCAUU..AAUGAGGAUUACACAG.AAAA.CCUUUGU..UAAG.GA.
+AF274027.1/835-900                    C.CGGCACU..CAUGAAGGUCUGCUUG.AAAA.CCAGCCU..GCUG.GU.
+AB030643.1/4176-4241                  C.CGGCACU..CAUGAAGGUCUGCCUG.AAAA.CCAGCCU..GCUG.GU.
+AL645723.11/192421-192359             U.AUUUGUG..UAUGAUGGUCACAGUG.UAAA..GUUCC....CAC....
+AC002327.1/156204-156268              C.UCAGCAG..GAUGAUGAGAAGGGCU.GAAA.UGCUGCC..AAAC..C.
+AF333036.1/2190-2249                  C.AUGCGUC..CAUGAAGUCACUGGCC.UCAA.GCCCAA....GUG.GU.
+U43285.1/2009-2075                    C.UCUGAUA...AUGAUGUCUCUCCCU.CUAA.CUCCCAGUAAGGA..C.
+X57999.1/1526-1586                    A.UAUUUGUU.UAUGAUGGUCACAGUG.UAAA..GUUCA....CAC....
+M63574.1/1465-1528                    G.UUACAUU..GAUGAGAACAGAAACA.UAAA..CUAUGA.CCUAG.G..
+AF390544.1/1076-1142                  U.UUGCAUU..AAUGAGGAUUACACAG.AAAA.CCUUUGU..UAAGGGU.
+AF072865.1/1887-1947                  G.UCAGAUG...AUGACGGCCUGUGCA.GAAA.CCCCCAC.GUGGG..C.
+X12367.1/703-764                      G.UUUUUCC...AUGACGGUGUUUCCUCUAAA..UUUAC....AUG....
+U25264.1/366-432                      G.CCGCUUC...AUGACAGGAAGGACU.GAAA.UGUCUCA.AAGAC..C.
+L24896.1/600-665                      C.CGGCACU..CAUGACGGUCUGCCUG.AAAA.CCAGCCC..GCUG.GU.
+AF201385.1/3055-3117                  G.CCAGAUG...AUGACGACCUGGGUG.GAAA.CCUACCC.UGUGG..G.
+AL049837.4/130674-130738              G.UGUGCGG...AUGAUAACUACUGAC.GAAA.GAGUCAU.CGACU..C.
+U67171.1/375-442                      G.ACGCUUC...AUGAUAGGAAGGACU.GAAA.AGUCUUG.UGGAC..A.
+AF195141.1/689-759                    G.ACUGACAU.UAUGAAGGCCUGUACU.GAAG.ACAGCAA..GCUG..U.
+X53463.1/847-903                      U.UCACAGA...AUGAUGGCACCUUCC.UAA...ACCCU....CAU....
+AF093774.1/5851-5916                  G.UGUGCGG...AUGAUAACUACUGAC.GAAAGAGUCAUC...GAC..C.
+X58295.1/1384-1453                    U.GGCGUCUU.CAUGAGGGAGGGGCCC..AAA.GCCCUUG..UGGG..C.
+AL833145.1/1479-1545                  U.UUGCUUU..AAUGAGAAUAGAAACG.UAAA..CUAUGA.CCUAG.G..
+S48220.1/1731-1788                    U.AUUUGUU..UAUGAUGGCCACAGCC.UAAA..GUACA....CAC....
+X71973.1/730-791                      C.CGGCACU..CAUGACGGCCUGCCUG.CAAA..CCUGC....UGG..U.
+AF166127.1/1919-1981                  G.CCGGAUG...AUGACGACCUGGGUG.GAAA.CCUACCC.UGUGG..G.
+U43286.1/2054-2120                    C.UCUGUUA...AUGACGUCUCUCCCUCUAAA.CCCCAUU.AAGGA..C.
+BC003127.1/865-928                    G.UCACUGC...AUGAUCCGCUCUGGU.CAAA.CCCUUCC...AGG..C.
+S79854.1/1605-1666                    C.ACUGCUG...AUGACGAACUAUCUC.UAAC.UGGUCUU..GACC..A.
+X13710.1/946-1008                     U.UUUCAUC..UAUGAGGGUGUUUCCUCUAAA..CCUACG...AGG....
+D88033.3/5711-5774                    C.UUGCGUU..AAUGAGAACAGAAACG.UAAA..CUAUAA.CCUAG.G..
+D25220.1/1493-1556                    C.UUGCGUU..AAUGAGAACAGAAACG.AAAA..CUAUAA.CCUAG.G..
+AB017534.1/661-726                    C.CCGGUGCC.UAUGACGGUCUGUCUG.AAAA.CCAGCCC...CUG.GU.
+AB032826.1/1401-1464                  ACUUGCGUU..AAUGAGAACAGAAACG.UAAA..CUAUAA.CCUAG.G..
+AB022283.1/1669-1729                  G.CCAGAUG...AUGAGGACCUGUGCG.GAAA.CCCCCCG..CGGG..C.
+AF053984.1/1951-2017                  G.AUGCGUC..CAUGAAGUCACCAGCC.CCAA.GCCCCUC...GUG.GU.
+X13684.1/700-760                      U.UUUGCCC...AUGAAGGUGUUCCCUCUAAA..CCUAC....GUG....
+U67853.1/375-442                      G.ACGCUUC...AUGACAGGAAGGACU.GAAA.UGUCUCU.UGGAC.GC.
+AF380118.1/366-433                    G.ACGCUUC...AUGACAGGAAGGACU.GAAA.UGUCUUG.UGGAC.GC.
+L12743.1/694-758                      C.UGGCACC..CAUGACAGUCUGCCUA.AAAA.CCAGCCC...CUG.GU.
+AF532927.1/678-740                    A.UUUUAUC..CAUGAAAGUGUUUCCUCUAAA..CCUAU....GUG....
+X76008.1/2709-2772                    C.UGGCACC..CAUGACAGUCUGCCUA.AAAA.CCAGCC....CUG.GU.
+U61947.2/4246-4309                    G.AGGCAGCUUUGUGACGACCUUUGGC.UAAA.CUCCAUC..GUGA.GC.
+L37762.1/2940-3006                    C.UCGCUAU...AUGACGAUGGCAAUC.UCAA..AUGUU....CAU..U.
+#=GC SS_cons                          <.<<<<...........<<<<<<<<<<.......<<<......>>>....
+#=GC RF                               g.ucucauu..uAUGAuGgccucuccc.uAAA.ucccuuu...ggg..c.
+
+AY119185.1/838-902                    ......ACCGAUC.G.U.UGAGAA..CCCCU.....UUGCCUU
+AC092237.1/57223-57161                ......CGGAAAU.A.G.UCUGAA...CCU........UAUUG
+AY060611.1/560-627                    .......GGGCAA.U.U.GCUGAU...UACG...AUUAACCAC
+Y11109.1/1272-1330                    .......CUCUGG.A.G.CCAGAU..GCAUU.......GAAAC
+Y11109.1/927-987                      .......CUCUGG.A.G.CCAGAU..GCAUU......CAAACA
+Y11111.1/1260-1324                    ......GAAAACC.G.ACACUGAU..GUUUC......CGACAC
+AF322071.1/1577-1642                  .......GGUGUC.U.G.UCUGAU..GUUUG.......GCCAU
+L28111.1/1299-1365                    ......AAAACUC.GUG.UCCGAC...AUC........AACCC
+AF125575.1/5781-5843                  ......AGUUGGU.G.U.UCAGAU..GCU.........CUCAC
+Y11110.1/1218-1277                    .......GGCUGU.G.A.CCUGAU..UUUAG......AAAAUA
+Y11273.1/1139-1211                    AUGCCAGGAAAUC.GUG.UCUGAU...GUUG.....UCAAGUA
+AF195142.1/461-524                    .....CAGCCAGG.G.U.GGUGAU..GACCC.......GUGAC
+AF021345.1/10097-10160                .......GGUUUC.U.G.UUGGAU..AGCUU.......GUAAU
+X03920.1/1172-1235                    .......GAGAAA.C.A.CCUGAU.UUCCAG.....GAAAAUC
+AF096875.1/5504-5568                  ......AGUCUGU.G.G.UUGGAU...GUAG......UCACAC
+AF241527.2/359-424                    ....UGUGGUCUU.U.C.CUCGAU..GUUCC......UGCGGC
+AF136399.1/1808-1868                  .......CGCCCA.G.G.UUUGAA...CCC........CUGGC
+X84742.1/5239-5302                    .......GGGCCU.C.C.CCUGAG...CCCG....UCUGUGGU
+AF288740.1/1291-1357                  ......CUUGUGU.AGA.UCUGAU..AAUUG.......GCAAA
+AF274027.1/835-900                    .......GGGGCA.G.U.CCUGAG.GACCUG.......GCGUG
+AB030643.1/4176-4241                  .......GGGGCA.G.U.CCUGAG.GACCUG.......GCGUG
+AL645723.11/192421-192359             .......AGCUGU.G.A.CUUGAU..UUUUA....AAAAUGUC
+AC002327.1/156204-156268              ......AGGUCCU.U.U.UCUGAU..GGUGG.......CUGGG
+AF333036.1/2190-2249                  .......GGGCAG.U.G.ACAGAA...GA.........GCUGC
+U43285.1/2009-2075                    .......UGGGAG.A.G.GCUGAACAAACCU.......CAGAG
+X57999.1/1526-1586                    .......AGCUGU.G.A.CUUGAU..UUUUA.......AAAAU
+M63574.1/1465-1528                    .......GGUUUC.U.G.UUGGAU..AGCUC.......GUAAU
+AF390544.1/1076-1142                  .......UUGUGUCG.A.UCUGCU..AAUUG.......GCAAA
+AF072865.1/1887-1947                  .......UGC.CA.G.G.UUUGAA...CCC........CUGGC
+X12367.1/703-764                      .......GAGAAA.C.A.CCUGAU.UUCCAG......AAAAAU
+U25264.1/366-432                      ....UGUGGUCUU.U.C.UUCGAU..GUUCU.......GCGGC
+L24896.1/600-665                      .......GGGGCA.G.U.CCCGAG.GACCUG.......GCGUG
+AF201385.1/3055-3117                  .......CACCCA.U.G.UCCGAG...CCCC.......CUGGC
+AL049837.4/130674-130738              ......AGUUAGU.G.G.UUGGAU...GUAG......UCACAU
+U67171.1/375-442                      ....CCUGGUCUU.U.C.CCUGAU..GUUCU......CGUGGC
+AF195141.1/689-759                    ......UAGUACA.G.A.CCAGAU..GCUUU..CUUGGCAGGC
+X53463.1/847-903                      .......GGGUGG.U.G.UCUGAG..AGGC........GUGAA
+AF093774.1/5851-5916                  ....UCAGUUAGU.G.G.UUGGAU...GUAG......UCACAU
+X58295.1/1384-1453                    .......GGACCU.C.C.CCUGAG...CCUGUCUGAGGGGCCA
+AL833145.1/1479-1545                  .......GGUUUC.U.G.UUGGAU.AAUUAG.....CAGUUUA
+S48220.1/1731-1788                    .......GGCUGU.G.A.CUUGAU...UCA........AAAGA
+X71973.1/730-791                      .......GGGGCA.G.A.CCCGAA.AAUCCA.......GCGUG
+AF166127.1/1919-1981                  .......CACCCA.U.G.UCCGAG...CCCC.......CUGGC
+U43286.1/2054-2120                    .......UGGGAG.A.G.GCAGAGCAAGCCU.......CAGAG
+BC003127.1/865-928                    .....CAGCCAGA.G.U.GGGGAU..GGUCU.......GUGAC
+S79854.1/1605-1666                    ......CGAGCUA.G.U.UCUGAA...UU.G.......CAGGG
+X13710.1/946-1008                     .......GAGGAA.C.A.CCUGAU...CUUA.....CAGAAAA
+D88033.3/5711-5774                    .......GGUUUC.U.G.UUGGAU..GGUUG.......GCAAC
+D25220.1/1493-1556                    .......GGUUUC.U.G.UUGGAU..GGUUG.......GCAAC
+AB017534.1/661-726                    .......GGGGCA.G.A.CCUGAG.AACCUG.......GCGUG
+AB032826.1/1401-1464                  .......GGUUUC.U.G.UUGGAU..GGUUG.......GCAA.
+AB022283.1/1669-1729                  .......UGCCCA.U.G.UCUGAG...CCC........CUGGC
+AF053984.1/1951-2017                  .......GGGUGG.U.G.AUGGAA.CCGUCA.....AAGCAGU
+X13684.1/700-760                      .......GAGGAA.U.G.CCUGAU.GUCCAG.......GAAAA
+U67853.1/375-442                      .....CUGGUCCU.U.C.CUUGAU..GUUCU......CACGGC
+AF380118.1/366-433                    .....CUGGUCCU.U.C.CCUGAU..GUUCU......CAUGGC
+L12743.1/694-758                      .......GGGGCA.G.A.CUCGAG.AACCUG.......GCGUG
+AF532927.1/678-740                    .......GAGGAA.C.A.CCUGAU.GUCCAG......GAAAAU
+X76008.1/2709-2772                    .......GGGGCA.G.A.CUCGAG.AACCUG.......GCGUG
+U61947.2/4246-4309                    .......GCCUCU.G.G.UCUGAU...GC.........GCCUC
+L37762.1/2940-3006                    .......GGUUGC.C.A.UUUGAU..GAAAUCAGUUUUGUGUG
+#=GC SS_cons                          .......>>>>>>.>.>.>>..................>>>>>
+#=GC RF                               .......gggaga.g.g.cCuGAU..gcuug.......gagac
+//

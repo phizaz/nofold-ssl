@@ -1,0 +1,86 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01408
+#=GF ID   sraL
+#=GF DE   sraL Hfq binding RNA
+#=GF PI   ryjA
+#=GF AU   Daub J, Gardner PP
+#=GF SE   Predicted; ClustalW; Infernal
+#=GF SS   Predicted; RNAalifold
+#=GF GA   26.00
+#=GF TC   28.44
+#=GF NC   24.06
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   18725932
+#=GF RT   Deep sequencing analysis of small noncoding RNA and mRNA targets
+#=GF RT   of the global post-transcriptional regulator, Hfq.
+#=GF RA   Sittka A, Lucchini S, Papenfort K, Sharma CM, Rolle K, Binnewies
+#=GF RA   TT, Hinton JC, Vogel J;
+#=GF RL   PLoS Genet. 2008;4:e1000163.
+#=GF RN   [2]
+#=GF RM   11448770
+#=GF RT   Novel small RNA-encoding genes in the intergenic regions of
+#=GF RT   Escherichia coli.
+#=GF RA   Argaman L, Hershberg R, Vogel J, Bejerano G, Wagner EG, Margalit
+#=GF RA   H, Altuvia S
+#=GF RL   Curr Biol. 2001;11:941-950.
+#=GF RN   [3]
+#=GF RM   11445539
+#=GF RT   Identification of novel small RNAs using comparative genomics and
+#=GF RT   microarrays.
+#=GF RA   Wassarman KM, Repoila F, Rosenow C, Storz G, Gottesman S
+#=GF RL   Genes Dev. 2001;15:1637-1651.
+#=GF RN   [4]
+#=GF RM   12762038
+#=GF RT   Small RNA regulators of translation: mechanisms of action and
+#=GF RT   approaches for identifying new small RNAs.
+#=GF RA   Gottesman S, Storz G, Rosenow C, Majdalani N, Repoila F,
+#=GF RA   Wassarman KM
+#=GF RL   Cold Spring Harb Symp Quant Biol. 2001;66:353-362.
+#=GF WK   http://en.wikipedia.org/wiki/Hfq_binding_sRNA
+#=GF SQ   7
+
+CP000653.1/314792-314651                 GUCAGCACAAACCGGAACCUCC.CCAAC....UGCUCGACA.UGAGGGGU
+AE014075.1/4830625-4830485               AUCAACACCAACCGGAACCUCCACCACG....UGCUCGA.A.UGAGGUGU
+CP000647.1/4886125-4885978               GUCGACGCAAACCGGAACCUCCAUCAACAGAUUGCGCAAUACUGAGGGAC
+X63534.1/2664-2530                       GUUAGCACAAACCGGAA...CCUUGAAA....GA......G.....GGGU
+ABAO01000007.1/105121-104981             AUCAACACAAACCGGAACCUCCACCACG....UGCUCGAUA.UGAGGGGU
+AE017220.1/4439627-4439487               AUCAACACAAACCGGAACCUCCACCACG....UGCUCGAUA.UGAGGGGU
+AACY022247151.1/190-331                  AUCAACACAGGCCGGAACCUCCCCUAAUG...UGCUCGA.C.UGAGGGGU
+#=GC SS_cons                             .<<<<<<<.....<<.....>>............<<<<....>>>>..>>
+#=GC RF                                  auCgaCgcAAAccGGAAccuCCAccAAa....uGCuCgAuA.cGaGGggc
+
+CP000653.1/314792-314651                 GUUGAUGUCGGGGGAAA.CCCUCCC.GUGAACCAGCGGGAUAGAGAGAAA
+AE014075.1/4830625-4830485               GUUGACGUCGGGGGAAA.CCCUCCU.GUGUACCAGCGGGAUAGAGAGAAA
+CP000647.1/4886125-4885978               GUCGACGUCGGGGGAAA.CCCUCUC.GCGAACCAGCGAGAUAAUGCGAAA
+X63534.1/2664-2530                       GCUGAUGCCGGGGGAAAACCCUCCUAGCCAGUGAGCAGGAUAA..CUAAA
+ABAO01000007.1/105121-104981             GUUGACGUCGGGGGAAA.CCCUCCU.GUA.AUCAGCGGGAUAGAGCGAAA
+AE017220.1/4439627-4439487               GUUGACGUCGGGGGAAA.CCCUCCU.GUA.AUCAGCGGGAUAGAGCGAAA
+AACY022247151.1/190-331                  GUUGAUGUCGGGGGAAA.CCCUCCC.GUGAACCAGCGGGAUAGAGUGAAA
+#=GC SS_cons                             >>>>>.<<<.<<<.....>>><<<<.<<......>>>>>>..........
+#=GC RF                                  GucGauGuCGGGGGAAA.CCCuCcc.GcgAAccAgCggGauAgAGaGAAA
+
+CP000653.1/314792-314651                 GACAAAGAC........CGGGAA.UAAACUAAAGCGCCUUAGUCUGGCGC
+AE014075.1/4830625-4830485               GACAAAGAC........CGGAAAACAAACUAAAGCGCCCUU..GUGGCGC
+CP000647.1/4886125-4885978               GACCAAGAC........CGGAAAACAA.CUAAAGCGCCCAGUUGUGGCGC
+X63534.1/2664-2530                       GGCCAGACCGAAAUUUUUGCAGU.AAAACAAAGGCGCCUAG....GGCGC
+ABAO01000007.1/105121-104981             GACAAAGAC........CGGAAA.CAAACUAAAGCGCCCUUA.GCGGCGC
+AE017220.1/4439627-4439487               GACAAAGAC........CGGAAA.CAAACUAAAGCGCCCUUA.GCGGCGC
+AACY022247151.1/190-331                  GACAAAGAC........CGGAAC.CAAACUAAAGCGCCCUCU.GUGGCGC
+#=GC SS_cons                             >>>......................<<<<<<<<<<<<<.......>>>>>
+#=GC RF                                  GaCAAAGAc........cGGAAA.caaaCuaaaGCGCCcuaa.guGGCGC
+
+CP000653.1/314792-314651                 UUUA.GUUUU
+AE014075.1/4830625-4830485               UUUA.GUUUU
+CP000647.1/4886125-4885978               UUUA.GUUUU
+X63534.1/2664-2530                       UUUUUGUUUU
+ABAO01000007.1/105121-104981             UUUA.GUUUU
+AE017220.1/4439627-4439487               UUUA.GUUUU
+AACY022247151.1/190-331                  UUUA.GUUUU
+#=GC SS_cons                             >>>>.>>>>.
+#=GC RF                                  uuua.Guuuu
+//

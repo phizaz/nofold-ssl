@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01928
+#=GF ID   Mico1
+#=GF DE   Maternal intergenic circadian oscillating RNA 1
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; ClustalW; Eberhardt R
+#=GF SS   Predicted; Pfold;
+#=GF GA   35.00
+#=GF TC   40.78
+#=GF NC   21.71
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001463 SO:lincRNA
+#=GF RN   [1]
+#=GF RM   19029831
+#=GF RT   Novel imprinted transcripts from the Dlk1-Gtl2 intergenic region,
+#=GF RT   Mico1 and Mico1os, show circadian oscillations.
+#=GF RA   Labialle S, Croteau S, Belanger V, McMurray EN, Ruan X, Moussette S,
+#=GF RA   Jonnaert M, Schmidt JV, Cermakian N, Naumova AK;
+#=GF RL   Epigenetics. 2008;3:322-329.
+#=GF CC   Maternal intergenic circadian oscillating 1 (Mico1) and Mico1
+#=GF CC   opposite strand (Mico1os) are lon non-coding RNAs. Their
+#=GF CC   expression shows circadian oscillations [1].
+#=GF WK   http://en.wikipedia.org/wiki/Long_non-coding_RNA
+#=GF SQ   3
+
+EF648170.1/1551-1755                   GGAAGGCAGAGGGUUUUGCUUGGAUCUCUUGGCUGACCACGUGGCCAUAC
+AAHX01046576.1/10295-10495             GGAAGGCAGAGGGUUUUGCUUGGAUCUCUGGGCUGGCCACGUGGCCAUAC
+ABDC01285622.1/9496-9699               GGCAGCCAGACAGUUUUGCUUGGAUCUCUGGGGCGGCCACGUGGCCAUGC
+#=GC SS_cons                           ..................................<<<<....>>>>....
+#=GC RF                                GGMAGSCAGASRGUUUUGCUUGGAUCUCUKGGSYGRCCACGUGGCCAURC
+
+EF648170.1/1551-1755                   GUUCAACACUCCAGGAUGCCUGUUCCUGGAGCCAGACAGAAAAUGAGUUA
+AAHX01046576.1/10295-10495             GUUCAACAGUCCACGCUGCCUGUUCCUGGAG....ACAGAGAGUAAGUUA
+ABDC01285622.1/9496-9699               GUUCCGUGCUCGGAGAGGACUGUGCCCAGAGCCAGCCAGAAAGUGACUUA
+#=GC SS_cons                           ........<<<<<<<.........>>>>>>>...................
+#=GC RF                                GUUCMRYRSUCSRVGMKGMCUGUKCCYRGAGCCAGMCAGARARURASUUA
+
+EF648170.1/1551-1755                   GGGCUGCAAACAGGAUCUGAGUGGCCCCCUGCUCUGGAGAGGCCCCUCCA
+AAHX01046576.1/10295-10495             GGGCUGCAAACAGGAUCUGAGUGGCCCCCUGCUCUGGAGAGGCCCCUCCA
+ABDC01285622.1/9496-9699               CAGCUGAAAACAGGAUUUGAAUGACUUC.UGCUCUGGGGAGGCCCCUCAG
+#=GC SS_cons                           ..................................................
+#=GC RF                                SRGCUGMAAACAGGAUYUGARUGRCYYCCUGCUCUGGRGAGGCCCCUCMR
+
+EF648170.1/1551-1755                   UGUAAACAGAACGAGUUUCUGGGAAACGUACAGAAGGCCAGGCUGUCGGG
+AAHX01046576.1/10295-10495             UGUAAACAGAACAAGUUUCUGGGAAACAUACAGAAGGCCAGACUGUCGGG
+ABDC01285622.1/9496-9699               GAUAAACAGUGAGCAUUUCUGGGAAAUGUACACAAGGCCAGACUGUCGGG
+#=GC SS_cons                           ..............<<<<<...>>>>>.......................
+#=GC RF                                KRUAAACAGWRMRMRUUUCUGGGAAAYRUACASAAGGCCAGRCUGUCGGG
+
+EF648170.1/1551-1755                   AAAGG
+AAHX01046576.1/10295-10495             AAAGG
+ABDC01285622.1/9496-9699               AAAGG
+#=GC SS_cons                           .....
+#=GC RF                                AAAGG
+//

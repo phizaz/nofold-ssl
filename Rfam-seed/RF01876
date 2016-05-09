@@ -1,0 +1,72 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01876
+#=GF ID   MIAT_exon5_2
+#=GF DE   Myocardial infarction associated transcript exon 5 conserved region 2
+#=GF PI   RNCR2; Gomafu
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; WAR; Eberhardt R
+#=GF SS   Predicted; WAR;
+#=GF GA   60.00
+#=GF TC   77.74
+#=GF NC   36.19
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001463 SO:lincRNA
+#=GF DR   GO:0005634 GO:nucleus
+#=GF DR   GO:0001708 GO:cell fate specification
+#=GF RN   [1]
+#=GF RM   17066261
+#=GF RT   Identification of a novel non-coding RNA, MIAT, that confers risk of
+#=GF RT   myocardial infarction.
+#=GF RA   Ishii N, Ozaki K, Sato H, Mizuno H, Saito S, Takahashi A, Miyamoto Y,
+#=GF RA   Ikegawa S, Kamatani N, Hori M, Saito S, Nakamura Y, Tanaka T;
+#=GF RL   J Hum Genet. 2006;51:1087-1099.
+#=GF RN   [2]
+#=GF RM   17623775
+#=GF RT   The mRNA-like noncoding RNA Gomafu constitutes a novel nuclear domain
+#=GF RT   in a subset of neurons.
+#=GF RA   Sone M, Hayashi T, Tarui H, Agata K, Takeichi M, Nakagawa S;
+#=GF RL   J Cell Sci. 2007;120:2498-2506.
+#=GF RN   [3]
+#=GF RM   20459797
+#=GF RT   The long noncoding RNA RNCR2 directs mouse retinal cell
+#=GF RT   specification.
+#=GF RA   Rapicavoli NA, Poth EM, Blackshaw S;
+#=GF RL   BMC Dev Biol. 2010;10:49.
+#=GF CC   MIAT (myocardial infarction associated transcript), also known as
+#=GF CC   RNCR2 (retinal non-coding RNA 2) or Gomafu, is a noncoding
+#=GF CC   RNA. Single nucleotide polymorphisms (SNPs) in MIAT are
+#=GF CC   associated with a risk of myocardial infarction [1]. It is
+#=GF CC   expressed in neurons, and located in the nucleus [2]. It plays a
+#=GF CC   role in the regulation of retinal cell fate specification [3].
+#=GF WK   http://en.wikipedia.org/wiki/MIAT_(gene)
+#=GF SQ   10
+
+AAIY01390116.1/4426-4507               UGGUGCACUGCUCUGA.CCUACUAACCCAGCCUCUACUAACCCUGGUU..
+AAGW01674095.1/678-757                 UGGCGCUGCGCUCUGA.CAUACUAACCCAGCCCCUACUAACCCUGUUU..
+AAKN02007326.1/69107-69027             UGGUGCUGUGCUG..A.UUUACUAACCCGGCC.CUACUAACCUGGUUU.C
+CAAA01027373.1/4860-4787               UGAUGCUGUGCU........ACUAACCCGGCC.CUACUAAC.UGGUUU.C
+AAHX01073119.1/8055-8135               UGGUGCUGUGCUCUGA.CCUACUAACCUGGCC.CUACUAACUGG.UUU.C
+Z99774.1/38335-38419                   UGGUGCUGUGCUCUGA.CUUACUAACCCAGCCCCUACUAACCCUGUUUUC
+AAEX02034195.1/43424-43340             UGGUGCUGUGCUCUCA.CUUACUAACCCCGCCCCUACUAACCUCGUUUUC
+AANN01774047.1/2391-2313               UGGCGCUGUGCUCUGAACCUACUAACCCGGCC.CUACUAACCCGG.....
+AALT01065999.1/975-1052                UGGUGCUGUGCUC.....UUACUAACCCAGACCCUACUAACCCUGGUU..
+AAGV020563742.1/271-349                UGGUGCUGUGCUCUGA.CCUACUAACUUGGCC.UUACUAACCCCAUUU..
+#=GC SS_cons                           ..................................................
+#=GC RF                                UGGUGCUGUGCUCUGAaCYUACUAACCCRGCCCCUACUAACCYKGKUUuC
+
+AAIY01390116.1/4426-4507               .UUUCUUACUAACCCCGGCCCUGCCGAGCUCUGGGU
+AAGW01674095.1/678-757                 ...UCUUACUAACCCCAGCCCUGCCGAGCUCUGGGC
+AAKN02007326.1/69107-69027             UCUUCUUACUAACCCCAGCCCUGCCGAGCUCUGGGU
+CAAA01027373.1/4860-4787               UCUUCUUACUAACCC.AGCCCUGCCGAGCUCUGGGC
+AAHX01073119.1/8055-8135               UCUUCUUACUAACCC.AGCCCUGCCGAGCUCUGGGC
+Z99774.1/38335-38419                   UCUUCUUACUAACCCCAGCCCUGCCGAGCUCUGGGC
+AAEX02034195.1/43424-43340             UCUUCCCACUAACCCCAGCCCUGCCGAGCUCUGGGC
+AANN01774047.1/2391-2313               UCUUCUUACUAACCC.AGCCCUGCCGAGCUCUGGGU
+AALT01065999.1/975-1052                .UCUCUUACUAACCCCAGCCCUGCCGAGCUCUGGGC
+AAGV020563742.1/271-349                ...UCUUACUAACCCCAGCCCUGCCGAGCUCUGGGC
+#=GC SS_cons                           .............<<<<<.....<...>..>>>>>.
+#=GC RF                                UCUUCUUACUAACCCCAGCCCUGCCGAGCUCUGGGY
+//

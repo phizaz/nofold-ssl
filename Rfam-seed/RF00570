@@ -1,0 +1,90 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00570
+#=GF ID   SNORD64
+#=GF DE   Small Nucleolar RNA SNORD64
+#=GF PI   snoHBII-13
+#=GF AU   Marantidis E.
+#=GF SE   Marantidis E, INFERNAL
+#=GF SS   Predicted; RNAalifold
+#=GF GA   22.70
+#=GF TC   22.92
+#=GF NC   22.68
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Loxodonta_africana300359
+#=GF DR   snoopy; Oryctolagus_cuniculus300041
+#=GF RN   [1]
+#=GF RM   11726556
+#=GF RT   The IC-SNURF-SNRPN transcript serves as a host for multiple small
+#=GF RT   nucleolar RNA species and as an antisense RNA for UBE3A.
+#=GF RA   Runte M, Huttenhofer A, Gross S, Kiefmann M, Horsthemke B, Buiting K;
+#=GF RL   Hum Mol Genet. 2001;10:2687-2700.
+#=GF RN   [2]
+#=GF RM   11106375
+#=GF RT   Identification of brain-specific and imprinted small nucleolar RNA
+#=GF RT   genes exhibiting an unusual genomic organization.
+#=GF RA   Cavaille J, Buiting K, Kiefmann M, Lalande M, Brannan CI, Horsthemke
+#=GF RA   B, Bachellerie JP, Brosius J, Huttenhofer A;
+#=GF RL   Proc Natl Acad Sci U S A. 2000;97:14311-14316.
+#=GF RN   [3]
+#=GF RM   16381836
+#=GF RT   snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box
+#=GF RT   snoRNAs.
+#=GF RA   Lestrade L, Weber MJ;
+#=GF RL   Nucleic Acids Res. 2006;34:D158-D162.
+#=GF CC   The human snoRNA HBII-13 belongs to the C/D family of snoRNAs. It
+#=GF CC   is expressed mainly in the brain, but is also in the lungs, the
+#=GF CC   kidneys and muscle.  HBII-13 snoRNA has no identified RNA target
+#=GF CC   and is encoded together with HBII-436, HBII-437, HBII-438A/B and
+#=GF CC   the clusters of HBII-85, HBII-52 snoRNA in a 460 kb intron of the
+#=GF CC   large, paternally expressed, transcription unit
+#=GF CC   (SNURF-SNRNP-UBE3A AS). This is antisense to maternally expressed
+#=GF CC   UBE3A gene (Runt et al., 2001).
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD64
+#=GF SQ   17
+
+AAWZ01009383.1/112736-112679             GGCACACUG..GAGCUCAGUU.....UGAGCAUGAUG..AAAUGAA.GCU
+AAGU02348609.1/3847-3915                 GGACUUAUGAUGAGAUAUGCUGACUAUGAGCAUGAUG..AAGUGAA.GCU
+AAGW01709802.1/627-561                   GGAUUUAUGAUGAGCUGUAUUUAC..UGAGCAUAAUG..AAGGGAG.GCU
+AAKN02054627.1/21298-21366               GGACUGAUGAUGAGCUUUGUGUAC..UGAGUGUGAAUGAACAUGAG.GUU
+AF357424.1/1-46                          ..................GUUUAC..UGAGCAUGAUG..AAAUGAU.GCU
+AAHX01005649.1/32396-32462               GGAUUAAUGAUGAGCUGUGUUUAC..UGAGCAUAAUG..AAAUGAC.GCU
+AAQQ01222593.1/1115-1049                 GGAUUUAUGAUGAGCUAUGUUUAC..UGAGCAUGAUG..AAGUGAA.GCU
+AANU01239566.1/309-375                   GGAUUUAUAAUGAUCUGUGUUUAC..UGAGCAUGAUG..AAGCAAA.GUU
+AF019618.1/48-114                        GGAUUUGUGAUGAGCUGUGUUUAC..UGAGCAUGAUG..AAGUAAA.GCU
+AL590560.9/76944-76878                   GGAUUUAUAAUGAGCUGUGUUUAC..UGAGCAUUAUG..AAGUAAA.GUU
+ABDC01422018.1/1541-1475                 GGAUUUAUGGUGAGCUGUGUUUAC..UGAGCAUAAUG..AAGUGAA.GCU
+AAQR01267584.1/448-384                   GGAUUCAUGAUGAGCU..GUUUAG..UAAGGAUAAAU..AAGUGAA.GUU
+AAEX02009246.1/21960-21900               UGAU..AUGAUGAG....GUGUAC..UGAGCAUGAUG..AAGUGUA.GCU
+AANG01133930.1/627-693                   GGAUUUAUGAUGAGUUAUGUUUAC..UGAGUAUGAUG..AAGUGAA.ACU
+AANN01394342.1/692-758                   GGAUUUAUGAUGAGCUAUGUUUAC..UGAGCAUGAUG..AAAUGAA.GCU
+AALT01596450.1/8655-8723                 GAAUUCAUGAUGAGCUAUGUCUAC..UGAGCAUGAUG..AAGUAAA.GCU
+AAGV020498068.1/2598-2665                GGAUUUAUGAUGAGAUAUGUUUAC..UGAGCCUGAUG..AAAAGAAAGCU
+#=GC SS_cons                             <<<<<......<<<.....<<.....<<<<<................>>>
+#=GC RF                                  GGacuuAUGAUGaGcUauGuuUAc..uGAGCAUgAuG..AAgUGAA.GCU
+
+AAWZ01009383.1/112736-112679             CAAA....UAGAACUUU..CUGCC
+AAGU02348609.1/3847-3915                 CAAUAU..GAUUUCUCUGAAUUCC
+AAGW01709802.1/627-561                   CCAUGU..GAUUACUCUGAAGUCC
+AAKN02054627.1/21298-21366               CACUGU..GAUUACUCUGAAGUUC
+AF357424.1/1-46                          CAAAAU..GAUUACUCUGAAG...
+AAHX01005649.1/32396-32462               CAAAAU..AAUUACUCUGAAGUCU
+AAQQ01222593.1/1115-1049                 CAAUAU..GAUUACUCUGAGGUCC
+AANU01239566.1/309-375                   CAAUAU..UAUUACUCUGAAGUCU
+AF019618.1/48-114                        CAACGU..GAUUACUCUGAAGUCC
+AL590560.9/76944-76878                   CAAUAU..GAUUACUCUGAAGUCU
+ABDC01422018.1/1541-1475                 CAAAAU..GAUUAAUCUGAAGUCC
+AAQR01267584.1/448-384                   CAAAAU..GAUUAUUCUGAAGUUC
+AAEX02009246.1/21960-21900               CAAUGU..AAGUACUCUAAAGUCC
+AANG01133930.1/627-693                   CAGUGU..GAGUACUCUGAAGUCC
+AANN01394342.1/692-758                   UGAUAU..GAGAACUCUGAGGUCC
+AALT01596450.1/8655-8723                 CGGUGUUUGAGUGCUCUGAAGUCC
+AAGV020498068.1/2598-2665                CACUGU..GAUUACUCUGAAGUCC
+#=GC SS_cons                             >>......>>...>>>...>>>>>
+#=GC RF                                  CaAuaU..aauuACuCUGAaguCC
+//

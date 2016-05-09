@@ -1,0 +1,48 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01485
+#=GF ID   rli61
+#=GF DE   Listeria sRNA rli61
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold
+#=GF GA   40.00
+#=GF TC   41.16
+#=GF NC   37.49
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   4
+
+AL591982.1/175363-175258               CGUGAAAUAAAUCACAAACAAAUACCCCC.UUUAUUUGAUUGUGUGAAUU
+AL596171.1/217918-217813               CGUGAAAUAAAUCACAAACAAAUACCCCC.UUUAUUUGAUUGUGUGAAUU
+CP001175.1/359548-359653               CGUGAAAUAAAUCACAAACAAAUA.CCCCCUUUAUUUGAUUGUGUGAAUU
+AE017262.2/2270477-2270372             CGUGAAAUAAAUCACAAACAAAUACCCCC.UUUAUUUGAUUGUGUGAAUU
+#=GC SS_cons                           .<.<<<<<....<<<<<.<<<<<<........>>>>>>.>>>>>...>>>
+#=GC RF                                cGuGaaauAAAucacaaAcaaauaccccc.uuuauuugAuugugugAauu
+
+AL591982.1/175363-175258               UCUCCUUUUGAUUGCGCUGUAAGAAGCCGUGGCAUUUUGCUACGGCUUUU
+AL596171.1/217918-217813               UCUCCUUUUGAUUGCGCUGUAAGAAGCCGUGGCAUUUAGCUACGGCUUUU
+CP001175.1/359548-359653               UCUCCUUUUGAUUGCGCUGUAAGAAGCCGUGGCAUUUUGCUACGGCUUUU
+AE017262.2/2270477-2270372             UCUCCUUUUGAUUGCGCUGUAAGAAGCCGUGGCAUUUUGCUACGGCUUUU
+#=GC SS_cons                           >>.>..............<<<<<<<<<<<<<<<.....>>>>>>>>>>>>
+#=GC RF                                uCuCcuuuugAuugcgcuGuaagaaGccGugGcAuuaagCuaCggCuuuu
+
+AL591982.1/175363-175258               UACGUUA
+AL596171.1/217918-217813               UACGUUA
+CP001175.1/359548-359653               UACGUUA
+AE017262.2/2270477-2270372             UACGUUA
+#=GC SS_cons                           >>>....
+#=GC RF                                uaCguuA
+//

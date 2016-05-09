@@ -1,0 +1,50 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01427
+#=GF ID   snoR127
+#=GF DE   small nucleolar RNA snoR127
+#=GF AU   Osuch I
+#=GF SE   INFFERNAL
+#=GF SS   Predicted; RNAalifold; Osuch I
+#=GF GA   21.00
+#=GF TC   27.40
+#=GF NC   20.66
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  -g  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   19357091
+#=GF RT   Mining small RNA sequencing data: a new approach to identify small
+#=GF RT   nucleolar RNAs in Arabidopsis.
+#=GF RA   Chen HM, Wu SH;
+#=GF RL   Nucleic Acids Res. 2009;37:e69.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+AC144541.12/54772-54621             CUGGAAUGAUGUGAAUUAGCCAAAUCAGACAUUAAUGUGCUCCAUAAGGC
+AC069556.4/36784-36921              CUGGAAUGAUGAUGCUUAGCCAAAUCAGAUAU....GUGCUCCAAGAGGC
+AC189657.2/25905-25797              CUGGAGUGAUGAUGCUUAGCCAAAUCAGAUAU....GUGCUCCAAAAGGU
+#=GC SS_cons                        <<<<..............................................
+#=GC RF                             CuGGAaUGAUGAUGCUUAGCCAAAUCAGAUAU....GUGCUCCAAaAGGu
+
+AC144541.12/54772-54621             AACCGGCAUGAUCGAUCUGCUUGGAUCAUGUUGAUGACCCUCAUGUUGAA
+AC069556.4/36784-36921              AUUUUUCUGUGGAACCUUGUUCAGC...AGAUGGUGUGCCUCUUGUUGUA
+AC189657.2/25905-25797              ACAU.................................GCCUCUUGUUGAA
+#=GC SS_cons                        ..................................................
+#=GC RF                             AuaUuucuGuGGAAccuuGuucAGc...AGAuGGuGuGCCUCUUGUUGaA
+
+AC144541.12/54772-54621             GCGCAUUUCUCUGAUGAUCAACAAAGAGAUUGGUUUCUUUUUCCUGACCA
+AC069556.4/36784-36921              GUGC..GUCUUAGACGAU.AUCACAGGGAAUGGU...UAUUGC.UGACCA
+AC189657.2/25905-25797              GCGC..GUCUUGGACGAU.AUCACAGAGAAUGGU...UUUUGCCUGACCA
+#=GC SS_cons                        ...............................................>>>
+#=GC RF                             GuGC..GUCUUaGACGAU.AUCACAGaGAAUGGU...UaUUGCcUGACCa
+
+AC144541.12/54772-54621             GA
+AC069556.4/36784-36921              GA
+AC189657.2/25905-25797              GA
+#=GC SS_cons                        >.
+#=GC RF                             GA
+//

@@ -1,0 +1,68 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00473
+#=GF ID   snosnR54
+#=GF DE   Small nucleolar RNA snR54
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; Griffiths-Jones S
+#=GF GA   30.00
+#=GF TC   33.86
+#=GF NC   27.64
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   10024243
+#=GF RT   A computational screen for methylation guide snoRNAs in yeast.
+#=GF RA   Lowe TM, Eddy SR;
+#=GF RL   Science 1999;283:1168-1171.
+#=GF CC   snR54 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snR54
+#=GF SQ   9
+
+CR382138.2/158404-158487               UACCAUGAUGAUCAACU....CAAAUUAAUAACUUUCGUUCUACCGAUUU
+AE016818.1/862034-862113               UGGGAUGAUGAUCA.......UAAAUCAAUAACUUUCGUUCUACUGACUG
+CR382122.1/491586-491502               UA.UAUGAUGAUUAACUUUACUAUUAUAAUAACUUUCGUUCUACUGA.UU
+CR380957.2/1050569-1050656             UGAAAUGAUGAUUAAACUUU.UAAUAUUAUAACUUUCGUUCUACUGACUG
+Z46729.1/12595-12510                   UAAGAUGAUGAUCAACUUUU.UAUAUCAAUAACUUUCGUUCUACUGACUG
+AF064266.1/1-86                        UAAGAUGAUGAUCAACUUUU.UAUAUCAAUAACUUUCGUUCUACUGACUG
+U85049.2/1114-1200                     UACUCUGAUGAUU..CUUUA.AAAUUUAUUAACUUUCGUUCUACCGA.UA
+AY864855.1/568-672                     UACUCUGAUGAUUAUUCUUUAAAAUUUAUUAACUUUCGUUCUACCGAAUA
+AJ784841.1/1428-1499                   UUAAAUGAUGAAUACCUUUA....UCUAUUAACUUUCGUUCUACUGAGUG
+#=GC SS_cons                           ..................................................
+
+CR382138.2/158404-158487               ................ACAUCAAACGAUGUUGUGGAGAA..AUUG.AUUC
+AE016818.1/862034-862113               ................CGAUCAAACGAUCGUGUAGACAC..CUUU..UAC
+CR382122.1/491586-491502               ................UGAUCAAACGAUCGGGUAGAAGA..CAAU..AUA
+CR380957.2/1050569-1050656             ................CGAUCAAACGAUCUUGUAGAAAA..CUUUUAUUU
+Z46729.1/12595-12510                   ................UGAUCAAACGAUCUUGUAGAGAA..CUUU..UAC
+AF064266.1/1-86                        ................UGAUCAAACGAUCUUGUAGAGAA..CUUU..UAC
+U85049.2/1114-1200                     ................CCAUCAAACGAUGUUGGGGAAAAAACUUUAUUAA
+AY864855.1/568-672                     AAAACUAUGUUUUUUUACAUCAAACGAUGUUGGGGAAAA..CUUUAUUAA
+AJ784841.1/1428-1499                   ....................GUAAA.....UGCGGAUA....UAU..UUU
+#=GC SS_cons                           ..................................................
+
+CR382138.2/158404-158487               ACUGACC
+AE016818.1/862034-862113               UCUGACC
+CR382122.1/491586-491502               UCUGACU
+CR380957.2/1050569-1050656             GCUGAUU
+Z46729.1/12595-12510                   UCUGAAU
+AF064266.1/1-86                        UCUGAAU
+U85049.2/1114-1200                     UCUGAUU
+AY864855.1/568-672                     UCUGAUU
+AJ784841.1/1428-1499                   UCUGAUU
+#=GC SS_cons                           .......
+//

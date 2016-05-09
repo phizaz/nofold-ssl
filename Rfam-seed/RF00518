@@ -1,0 +1,109 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00518
+#=GF ID   speF
+#=GF DE   speF leader
+#=GF AU   Barrick JE
+#=GF SE   Barrick JE
+#=GF SS   Predicted; Barrick JE
+#=GF GA   27.00
+#=GF TC   27.35
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  -g  --fil-no-hmm  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   16086852
+#=GF RT   Evidence for a second class of S-adenosylmethionine riboswitches and
+#=GF RT   other regulatory RNA motifs in alpha-proteobacteria.
+#=GF RA   Corbino KA, Barrick JE, Lim J, Welz R, Tucker BJ, Puskarz I, Mandal
+#=GF RA   M, Rudnick ND, Breaker RR;
+#=GF RL   Genome Biol. 2005;6:R70.
+#=GF CC   This family is a putative regulatory RNA structure that is found
+#=GF CC   upstream of the speF gene encoding ornithine decarboxylase in
+#=GF CC   Agrobacterium tumefaciens and other alpha-proteobacteria.
+#=GF WK   http://en.wikipedia.org/wiki/speF_leader
+#=GF SQ   6
+
+BX897700.1/1185322-1185013             CUUGCCCAAAGUCGCACGUGCCUGUGGGUGUCCGCUGGU...UCUCAAA.
+BX897699.1/1422017-1421707             UUUGCCCAAAGUCGCACGUGCCUGUGGGUGUCCGCUGGU...UCUCAAA.
+BX572595.1/268384-267970               CUUGCCCAAUUUCGCACGUGCCCGUGGUCGUGUGUCAGUCGGUAGGUAU.
+AM040265.1/96947-97255                 CUUGCCCAAAGUCGCACGUGCCUGUGGGUGUCCGCCGAU...CCUCGAA.
+AE007870.2/205785-205477               GCUGCCCAAAGUCGCACGUGCCCAUGUGUGUCCGCCGAG..UCCUCGAUG
+AL591688.1/3105448-3105137             CUUGCCCAAAGUCGCACGUGCCUGUGGGUGUCCGCCGAC...CCUCGAUU
+#=GC SS_cons                           .........................<<<<<<<<.................
+#=GC RF                                cUUGCCCAAAgUCGCACGUGCCuGUGGgcGucCGccGgu...ucucaAu.
+
+BX897700.1/1185322-1185013             UGGUGAGAUUAACCGGU.................................
+BX897699.1/1422017-1421707             UGGUGAGAUUAACCGGU.................................
+BX572595.1/268384-267970               CCGGACAAGAGGCCGGACAGCCGCCAAGGGAUGAAGAGCCGAGGGUCUCC
+AM040265.1/96947-97255                 UGGUGAGGAAU.UCGGU.................................
+AE007870.2/205785-205477               UGGUGAGGAUU.UAGGU.................................
+AL591688.1/3105448-3105137             AGGUGAGGUUA.UCGGU.................................
+#=GC SS_cons                           ..................................................
+#=GC RF                                ugGuGAGAuuaacCGGu.................................
+
+BX897700.1/1185322-1185013             ..................................................
+BX897699.1/1422017-1421707             ..................................................
+BX572595.1/268384-267970               AAGCGUUCGCGCAGCGAGGCCAGCAUCUCUCUCAAGAGAUGCCGUUGAAG
+AM040265.1/96947-97255                 ..................................................
+AE007870.2/205785-205477               ..................................................
+AL591688.1/3105448-3105137             ..................................................
+#=GC SS_cons                           ..................................................
+#=GC RF                                ..................................................
+
+BX897700.1/1185322-1185013             .............ACGGUACAUGGAAUUAACCACUCCAGUCAU.UCUUAC
+BX897699.1/1422017-1421707             .............ACGGUACCUGGAACUAACCGCUCCAGUCAU.UCUUAC
+BX572595.1/268384-267970               GUGGCUUCCUCUCUUGCAACCGUGACUGACAGCCGGAGGCGAACCGGCGC
+AM040265.1/96947-97255                 .............ACGGUACCUGGACCUAACCGCUCCAGUCGA.UCUGAU
+AE007870.2/205785-205477               .............AAGGUACCUGGAACUAACCCCUCCAGUCGC.UAUUCC
+AL591688.1/3105448-3105137             .............AAGGUACCUGGAACUAACCCCUCCAGUCGC.UAUUCC
+#=GC SS_cons                           ..................................................
+#=GC RF                                .............AaGguACCugGAAuuAAcccCUccAGUcaa.UaUuaC
+
+BX897700.1/1185322-1185013             GGCCAACCGAAAGA.GUGAGGACAUCUUGAAGCAACGACGGUGCGGGCCU
+BX897699.1/1422017-1421707             GGCCAACCGAAAGA.AUGAGGACAUCUUGAAGCAACGACGGUGCGGGCCU
+BX572595.1/268384-267970               ACCUCGUUCUCAACGAGGGACGCGACUUAAAGCAACGACGGAGCGGGCUU
+AM040265.1/96947-97255                 GGCCAACCGCCAGA.UCGAGGACAUCUUGAAGCAACGACGGUGCGGGCCU
+AE007870.2/205785-205477               GGCCAACCGGGAAAUGCGAGGACAUAU.GAAGCAACGACGGUGCGGGCCU
+AL591688.1/3105448-3105137             GGCCAACCGGGAAAUGCGAGGACAUCUUGAAGCAACGACGGUGCGGGCCU
+#=GC SS_cons                           ...................>>>>>>>>....<<<<.<<.<<<<...<<<<
+#=GC RF                                GGCCAACCGaaAaAuacGAGgaCguCUUGAAGCAACGACGGuGCGGGCCU
+
+BX897700.1/1185322-1185013             UUCUGGU.GUCUUCCAGCUGUCAAAAUGCUGGGGUA...ACUAUAGAGGC
+BX897699.1/1422017-1421707             UUCUGGU.GUCUUCCAGCUGUCCAAAUGCUGGGAUA...ACUAUAGAGGC
+BX572595.1/268384-267970               UUUUGGU.CUCUGCCGGCUUUCCAUCAGCCGGCGCGAAUACCGAAGAGGC
+AM040265.1/96947-97255                 UUCUAGU.GUCUUUCGGCUGUCCAAAAGUCGAAAUU...ACUGAAGAGGC
+AE007870.2/205785-205477               UUCUGGUUCUCUGCCGGCUUUCCAUCAGCCGGGGU....ACUGAAGAGGC
+AL591688.1/3105448-3105137             UUCUGGU.GUCUGCCGGCUCUCCAACAGCCGGGGUU...ACUGAAGAGGC
+#=GC SS_cons                           <<.<<<<......<<<<<<.......>>>>>>.......>>>>.>>>>>>
+#=GC RF                                UUCugGU.gUCUgCCGGCuuUCCAaaaGCCGGgGUu...ACcgAAGAGGC
+
+BX897700.1/1185322-1185013             A.CACC.UCAUUGCCUUCAGUGCGGAAGU.GGU.UUUCUCAACUCCAAUC
+BX897699.1/1422017-1421707             A.CACC.UCAUUGCCUUCAGUGCGGAAGU.GGU.UUUCUCAACUCCAAUC
+BX572595.1/268384-267970               UUGUCCUUCAUUGCC.AGUGAGCGGGC.GGGAUCCUUCCCAA..CCAAUC
+AM040265.1/96947-97255                 A.CACCUUCAUUGCCAGAAGUGCGGAUGC.GGU.UCUCC.AAUUCCAAGC
+AE007870.2/205785-205477               A.CACCAUCAUUGCCUGAAGUGCGGUC.G.GGUCAUUCCC...UCCAAUC
+AL591688.1/3105448-3105137             A.CACCUUCAUUGCCGGAAGUGCGGUU.GGGUU.AUUCCC...UCCAAUC
+#=GC SS_cons                           ..>>>>.>>.>>>>....................................
+#=GC RF                                A.CaCCUUCAUUGCCugaAGUGCGGauGg.GgU.uUUCCCAAuUCCAAUC
+
+BX897700.1/1185322-1185013             AAAAAGGCAGAAAAAGUAGAGCAACGUGGUUUU...CACGCUGUUUU...
+BX897699.1/1422017-1421707             AAAAAGGCAGAAAAAGUAAAGCAACGCGAUUUU...CGCGCUGUUUU..U
+BX572595.1/268384-267970               CAAG..GCAGCACUGCUCGUCCGAGCUGA.UCGCUCGUCGCGCCUCC..A
+AM040265.1/96947-97255                 CAAG..GCAGACAAAGCGGAGUAACGCU..UAGUUUAGCGUUGUUCC..A
+AE007870.2/205785-205477               GAUG..GCAGACAAAGCCGAAUGAUGCUC.UGGCAGGGCAU.CGUUC..A
+AL591688.1/3105448-3105137             CAUG..GCAGACAAAGCCGAAUCCUAGCCUUUGCG.GGCUUUGAUUCAAA
+#=GC SS_cons                           ..................................................
+#=GC RF                                cAAG..GCAGAaAAAGucGAauaAugugaUUuGcuuggCGuuguUuC..A
+
+BX897700.1/1185322-1185013             UCGCUGCAUGCAAUGUUGCUUUCUUC
+BX897699.1/1422017-1421707             UCGCUGCAUGCAAUGCUGCUUUCUUC
+BX572595.1/268384-267970               UCGCGCGACGGCGCUGAAGCCGUCGG
+AM040265.1/96947-97255                 UCGCCGCAUAAAGUUUUCGCGUGACA
+AE007870.2/205785-205477               CAUUCGCGCCUUGAGCGUAUGCUAUC
+AL591688.1/3105448-3105137             UUCGCGCAUCGAGCGCAUGCAUGGUU
+#=GC SS_cons                           ..........................
+#=GC RF                                UcGccGcAuggaGuguaagcauuaua
+//

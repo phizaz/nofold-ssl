@@ -1,0 +1,55 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00243
+#=GF ID   traJ_5
+#=GF DE   traJ 5' UTR
+#=GF AU   Bateman A
+#=GF SE   PMID:14633993
+#=GF SS   Predicted; ILM
+#=GF GA   30.00
+#=GF TC   34.01
+#=GF NC   22.82
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   14633993
+#=GF RT   FinO is an RNA chaperone that facilitates sense-antisense RNA
+#=GF RT   interactions.
+#=GF RA   Arthur DC, Ghetu AF, Gubbins MJ, Edwards RA, Frost LS, Glover JN;
+#=GF RL   EMBO J 2003;22:6346-6355.
+#=GF CC   The FinOP system regulates the transfer of F-like plasmids.
+#=GF CC   FinP Rfam:RF00107 encodes an antisense RNA product that is
+#=GF CC   complementary to part of the 5' UTR of the traJ mRNA. The
+#=GF CC   traJ gene encodes a protein required for transcription from
+#=GF CC   the major transfer promoter, pY. The FinO protein is essential
+#=GF CC   for effective repression, acting by binding to FinP and
+#=GF CC   protecting it from RNase E degradation.
+#=GF WK   http://en.wikipedia.org/wiki/traJ_5'_UTR
+#=GF SQ   6
+
+X55896.1/933-1040                  ACGUGGUUAAUGCCACGUUAAAAUGUGAACUUGAAAAUCGCCGAUGCAGG
+AF550679.1/2929-3039               ACGUGGUUAAUGCCACGUUAAAAUUUGAAAUUGAAAAUCGCCGAUGCAGG
+M20941.1/109-216                   AUGUGGU.AAUGCCACGUUAAAACA.GAUAUUAAAAAUCGCCGAUGCAGG
+AF237697.1/390-500                 ACGUGGUUAAUGCCACGUUAAAAUUUGAAUUUGAAAAUCGCCGAUGCAGG
+AF389529.1/1005-1112               UUGUAGUUAACACUACGUUAAAAAAUGAACGUUAAA.UCGCCGAUGCAGG
+AE006471.1/61487-61592             UUGUAGUUAACGCUACGUUAAAAAAACAA.GUUAAA.UCGCCGAUACAGG
+#=GC SS_cons                       .<<<<<<....>>>>>>........................<<<<<<<<<
+
+X55896.1/933-1040                  GAGCUUGUCCCUCCCUGCAUCGACUGUC.AUAGAAUCCUUUG..AGGAGG
+AF550679.1/2929-3039               GAGACGUGAACUCCCUGCAUCGACUGUCCAUAGAAUCCUUUGUGAGGAGG
+M20941.1/109-216                   GAGA.GCGACCUCCCCGCAUCGACUGUCCAUAGAAUCCUUUGAGAGGAGG
+AF237697.1/390-500                 GAGUUCUCUCCUCCCUGCAUCGACUGUCCAUAGAAUCCUUUGUGAGGAGG
+AF389529.1/1005-1112               GAGUUGGUCCCUCCCUGCAUCGACUACCCAUAGAAUCCUUUG..AGGAGG
+AE006471.1/61487-61592             GAGCUG.UCACUCCCUGCAUCGACUGUCCAUAGAAUCCUUUG..AGGAGG
+#=GC SS_cons                       <<<<<...>>>>>>>>>>>>>>..<<<.<<<<<<....>>>>>>......
+
+X55896.1/933-1040                  UUCCUAUGUGU
+AF550679.1/2929-3039               UUCCUAUGUAU
+M20941.1/109-216                   UUCCUAUGUAU
+AF237697.1/390-500                 UUCCUAUGUAU
+AF389529.1/1005-1112               CUCCUGUGUAU
+AE006471.1/61487-61592             UUCCUAUGUGU
+#=GC SS_cons                       .....>>>...
+//

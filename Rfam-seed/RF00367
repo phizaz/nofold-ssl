@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00367
+#=GF ID   mir-BHRF1-3
+#=GF DE   mir-BHRF1-3 microRNA precursor family
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15118162
+#=GF SS   Published; PMID:15118162
+#=GF GA   20.00
+#=GF TC   94.14
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   15118162
+#=GF RT   Identification of Virus-Encoded MicroRNAs.
+#=GF RA   Pfeffer S, Zavolan M, Grasser FA, Chien M, Russo JJ, Ju J, John B,
+#=GF RA   Enright AJ, Marks D, Sander C, Tuschl T;
+#=GF RL   Science 2004;304:734-736.
+#=GF CC   This family represents the mir-BHRF1-3 microRNA precursor found in Human
+#=GF CC   herpesvirus 4 (Epstein-Barr virus). In Epstein-Barr virus mir-BHRF1-3 is
+#=GF CC   found in the 3' UTR of the BHRF1 (Bam HI fragment H rightward open reading
+#=GF CC   frame 1) gene which is known to encode a distant Bcl-2 homologue. The
+#=GF CC   mature sequence is excised from the 5' arm of the hairpin [1].
+#=GF WK   http://en.wikipedia.org/wiki/mir-BHRF1-3_microRNA_precursor_family
+#=GF SQ   5
+
+AADB02183321.1/1826-1890             UCUAACGGGAAGUGUGUAAGCACACACGUAAUUUGCAAGCGGUGCUUCAC
+M80517.1/55254-55318                 UCUAACGGGAAGUGUGUAAGCACACACGUAAUUUGCAAGCGGUGCUUCAC
+V01555.2/55254-55318                 UCUAACGGGAAGUGUGUAAGCACACACGUAAUUUGCAAGCGGUGCUUCAC
+M11923.1/401-465                     UCUAACGGGAAGUGUGUAAGCACACACGUAAUUUGCAAGCGGUGCUUCAC
+M17416.1/1451-1515                   UCUAACGGGAAGUGUGUAAGCACACACGUAAUUUGCAAGCGGUGCUUCAC
+#=GC SS_cons                         ..<<<<<<<.<<<<<<.<<<<<<...<<<.........>>>>>>>>>>>>
+#=GC RF                              ucuaacgggAagcguguaagcacAcAcgcAAuuugcAAgcggugcuucac
+
+AADB02183321.1/1826-1890             GCUCUUCGUUAAAAU
+M80517.1/55254-55318                 GCUCUUCGUUAAAAU
+V01555.2/55254-55318                 GCUCUUCGUUAAAAU
+M11923.1/401-465                     GCUCUUCGUUAAAAU
+M17416.1/1451-1515                   GCUCUUCGUUAAAAU
+#=GC SS_cons                         >>>.>>>>>>>....
+#=GC RF                              gcuccccguuaAAAu
+//

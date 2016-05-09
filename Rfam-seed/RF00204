@@ -1,0 +1,52 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00204
+#=GF ID   snoR12
+#=GF DE   Small nucleolar RNA R12
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD, Griffiths-Jones SR
+#=GF GA   22.00
+#=GF TC   24.89
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   snoR12 is a C/D box small nucleolar RNA, which acts as a
+#=GF CC   methylation guide for 25S ribosomal RNA in plants [1].
+#=GF CC   snoR12 has been alternatively named snoZ44 in Arabidopsis
+#=GF CC   and snoZ131 in rice.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_R12
+#=GF SQ   9
+
+AJ532490.1/1-82             UUGAGGAUGAAGAAGAAAAUCAGACGGAUUCCCAUUGAUUUCAAA.....
+AJ532489.1/1-82             UUGGGGGUGAUGAAGAAAAUCGUUCGGAUUCCCCU.GAUUUCUAA.....
+AJ489975.1/4-83             AUCUGGGUGAUGAAGAAAAUCAGACGGAUUCCCAUUGAAUU.........
+AY220637.1/6-85             AUCUGGGUGAUGAAGAAAAUCAGACGGAUUCCCAUUGAAUU.........
+AJ489976.1/4-82             AUCUGGGUGAUGAAGAAAAUCAGACGGAUUCCCAUUGGUUU.........
+AY112810.1/4-86             UUGGGGGUGAUGAAGAAAAUCGUUCGGAUUCCCAUUGAUUUCUAA.....
+AJ240077.1/6-90             GUGAGGAUGACGAA.AAAAUCAUUCGGAUUCCCUUUGAAUUCCUCC....
+AJ240079.1/4-94             GUGAGGGUGAUGAAAAAAAUCAUUCGGAUUCCCAAUGAUUCCCUUACGUA
+AJ240078.1/7-91             UAAAAGAUGACGAAAAAAAUCGUUCGGAUUCCCUUUGAAUUCCCUC....
+#=GC SS_cons                <<<<<.............................................
+
+AJ532490.1/1-82             .UCGAAA...UGUGAUCUUUA.A.CCAGCUACUUCCGACUCAA
+AJ532489.1/1-82             .UCGAAA...UGUGGUCUUUA.AACCAGCUACUUCUGACUCAA
+AJ489975.1/4-83             .UCCAAA...UAUGAUUUUAACAACCAGCUACUUCUGACAGAU
+AY220637.1/6-85             .UCCAAA...UAUGAUUUUAACAACCAGCUACUUCUGACAGAU
+AJ489976.1/4-82             .UCCAA....UAUGAUUUUAACAACCAGCUACUUCUGACAGAU
+AY112810.1/4-86             .UCGAAA...UGUGGUCUUUA.AACCAGCUACUUCUGACUCAA
+AJ240077.1/6-90             .GGGAAACA.UGUGAUUAUAU.AAUCAGCUACUUCUGACUCAU
+AJ240079.1/4-94             CGGGAAAUUAUGUGAUUAUUU.A.CCAGCUACUUUUGACUCAU
+AJ240078.1/7-91             .GGGAAAGA.UGUGAUCACAA.A.CCAGCUACUUCUGAUUUUA
+#=GC SS_cons                ......................................>>>>>
+//

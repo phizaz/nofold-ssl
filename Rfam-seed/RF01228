@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01228
+#=GF ID   snoR111
+#=GF DE   Small nucleolar RNA snoR111
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   35.00
+#=GF TC   48.97
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300017
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   6
+
+AM485814.2/5099-4974                     ..AA...AAUGAGAGACGAAUGUGAAUGUCUCGUCAUUGAUAACAAG...
+AP008240.1/7403-7525                     GUGUUAAUGGU.GAGACUGUUGAAAGUGUCUU..ACCGUUGUGAAUA...
+AC162440.26/27224-27101                  CAGAAUGAUGAAGAGACCAUUAA.UUUGUCUCCGCCGUCGUUUUAACA..
+AASG02008398.1/9109-8983                 ...AUGAAGGGACAGG.AAUUAGGAAUGUCUCUUUGUCUGGAACAGA...
+AARH01010739.1/167276-167404             UCAAUGGGAUGAGAGACGGAUAC.AGUGUCUCUUUCGCUCGAAAGAA...
+AJ505682.1/1-130                         AAAAUGGGGCAAGAGA.GAGUAACGGUGUCUCUGAGUCCUUGAUGAACCG
+#=GC SS_cons                             .....<<<<<<.<<<<<<........>>>>>>..>>>>>>..........
+#=GC RF                                  aaAAUgggacgaGaGacaAaUAagAauguCuCuucgucccuAAaaAA...
+
+AM485814.2/5099-4974                     AGGAGGUAGAGAGAACGGAA.AGGC.GAGAUAUCGUUUCAGUCGUCAUUU
+AP008240.1/7403-7525                     UUGAGGCAUAUCGAAUC.....GGC.GAGUCAUCGUUUCGGUCGUCCUUU
+AC162440.26/27224-27101                  UUGAGGUAUAACAA........CGCCGAGUCAUCGUUUCGAUCGUCAUUU
+AASG02008398.1/9109-8983                 GGGAGGUAUAUCAAUUUCGGUAGGCCGAGAUAUCGUUUCAGUCGUCAUU.
+AARH01010739.1/167276-167404             CAGAGGUAGAACAAAUGUAA.UGGCCGAGAUAUCGUUUCAGUCGUCAUUC
+AJ505682.1/1-130                         GCGAGGGAAAUCAAUCU.....GGCCGAGAUAUCGUUUCAGUCGUUCUUU
+#=GC SS_cons                             ......................<<.<<<<..<<<<.....<<<<<<<.<<
+#=GC RF                                  aaGAGGuAaAucAAauuuAA.aGGCCGaGAUauCGUUUCaguCGucaUuc
+
+AM485814.2/5099-4974                     CUCUGGAUUGGCGAUUCGAUUGUUGCUCGUCUACAU
+AP008240.1/7403-7525                     GUUU.GGUUGGCGAUACGAUUGUUACUCUUCUACAU
+AC162440.26/27224-27101                  GUUUCG.UUGGCGAUACGAUUGUUUCUCGUCUACAA
+AASG02008398.1/9109-8983                 .CUUCCAUUGACGAUUCGAUUGUUGCUCGUCCACAU
+AARH01010739.1/167276-167404             UUU..GAUUGACGAUUCGAUUGUUGCUCGUCCACAU
+AJ505682.1/1-130                         GUUUUGGUUUACGAUCUGAUUGUUGCUCGUCCACAU
+#=GC SS_cons                             .....>>.>>>>>>>.>>>>.....>>>>.>>....
+#=GC RF                                  uuuUugaUugaCGauuCGauUGUUGCuCGUCCACAU
+//

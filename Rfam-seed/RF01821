@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01821
+#=GF ID   RsaH
+#=GF DE   RNA Staph. aureus H
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19786493
+#=GF SS   Published; PMID:19786493
+#=GF GA   50.00
+#=GF TC   91.55
+#=GF NC   17.07
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19786493
+#=GF RT   A search for small noncoding RNAs in Staphylococcus aureus reveals a
+#=GF RT   conserved sequence motif for regulation.
+#=GF RA   Geissmann T, Chevalier C, Cros MJ, Boisset S, Fechter P, Noirot C,
+#=GF RA   Schrenzel J, Francois P, Vandenesch F, Gaspin C, Romby P;
+#=GF RL   Nucleic Acids Res. 2009;37:7239-7257.
+#=GF WK   http://en.wikipedia.org/wiki/Rsa_RNA
+#=GF SQ   5
+
+AM295250.1/435451-435575               GUACCUUCGAAAAUUAA.UUA.AACAUCUCU...UAAUUAA.AAACA.GU
+ACJB01000052.1/52570-52693             GUACCUUCGAUAAUUAAUU.A.AA...CAUC...UCUUAAUUAGUAU.GA
+AP006716.1/2148633-2148502             GUACCUUCGCUAUAGUA.G.AUUU...CAAUAUCUCUGACU.AAAUU.GA
+AASB02000221.1/5610-5733               GUACCUUCGAUAACGAA.U.A.AA...CAUC...UCUUAAA.AGUAU.GU
+AP008934.1/1987118-1986996             AUACCUUCGAUAUUAAU.U.A.AU...CAUC...UCUUAAU.UAUUUCGA
+#=GC SS_cons                           .<<<<<<<<..............<...<<<<...<.......>>.>>.>>
+#=GC RF                                GuaCCuuCGAUAAcGAA.U.A.Aa...CauC...ucUUAAA.aGUau.Gu
+
+AM295250.1/435451-435575               AU.........ACCCCAUAAUAUACGUGCGAAGGUGAAAUUUUGACUCCC
+ACJB01000052.1/52570-52693             GU.AU......ACCCCAUAAUAUACUAACGAAGGUAAA.UUUUGACUCCC
+AP006716.1/2148633-2148502             GUAUACCCCAUAGACUACACAAAAUAAACGAAGGU.CAAUUUUGACUCCC
+AASB02000221.1/5610-5733               GUAAA......ACGCUGCAUGAUACAAACGAAGGUAAAAAUUUGACUCCC
+AP008934.1/1987118-1986996             GU.AU......ACCCCAUAAUAUACUAACGAAGGUGAAAUUUUGACUCCC
+#=GC SS_cons                           <<<............>>>..........>>>>>>>>............<<
+#=GC RF                                GuaAA......AcGcugCAUGAUAcAAACGaaGGuaAAAAUUUGAcUcCC
+
+AM295250.1/435451-435575               UUUAGUAUUGGGCCUAUGCGAGAAGCGUAUAGGUCCAUUAU
+ACJB01000052.1/52570-52693             UUUAGUAGUGGAUCCAUGCGAGCAACGUAUGGAUCCUUUUU
+AP006716.1/2148633-2148502             UUUAGUAGAA.GCCCAUGCGAGAAUCGUGUGGGCUCUUUGU
+AASB02000221.1/5610-5733               UUUAGUAGUGGACCCGUACGUUAAUCGUGCGGGUCGUUUUU
+AP008934.1/1987118-1986996             UUUAGUAGUGG.CCUGUACGCAUUGCGUAUAGGCCUAUAUU
+#=GC SS_cons                           <<....>>.>><<<<<<<<<.....>>>>>>>>>.......
+#=GC RF                                uuUAGUagUGGaCCCGuaCGUUAAUCGugCGGGucGUUUUU
+//

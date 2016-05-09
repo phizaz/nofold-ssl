@@ -1,0 +1,76 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01945
+#=GF ID   mir-1388
+#=GF DE   microRNA mir-1388
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   45.00
+#=GF TC   47.73
+#=GF NC   41.70
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000805
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   19397817
+#=GF RT   Parallel DNA pyrosequencing unveils new zebrafish microRNAs
+#=GF RA   Soares AR, Pereira PM, Santos B, Egas C, Gomes AC, Arrais J,
+#=GF RA   Oliveira JL, Moura GR, Santos MA
+#=GF RL   BMC Genomics. 2009;10:195.
+#=GF RN   [2]
+#=GF RM   18463306
+#=GF RT   Conservation of small RNA pathways in platypus
+#=GF RA   Murchison EP, Kheradpour P, Sachidanandam R, Smith C, Hodges
+#=GF RA   E, Xuan Z, Kellis M, Grutzner F, Stark A, Hannon GJ
+#=GF RL   Genome Res. 2008;18:995-1004.
+#=GF RN   [3]
+#=GF RM   19758457
+#=GF RT   Characterization of bovine miRNAs by sequencing and bioinformatics
+#=GF RT   analysis
+#=GF RA   Jin W, Grant JR, Stothard P, Moore SS, Guan LL
+#=GF RL   BMC Mol Biol. 2009;10:90.
+#=GF RN   [4]
+#=GF RM   20360741
+#=GF RT   The genome of a songbird
+#=GF RA   Warren WC, Clayton DF, Ellegren H, Arnold AP, Hillier LW, Kunstner
+#=GF RA   A, Searle S, White S, Vilella AJ, Fairley S, Heger A, Kong L,
+#=GF RA   Ponting CP, Jarvis ED, Mello CV, Minx P, Lovell P, Velho TA,
+#=GF RA   Ferris M, Balakrishnan CN, Sinha S, Blatti C, London SE, Li Y,
+#=GF RA   Lin YC, George J, Sweedler J, Southey B, Gunaratne P, Watson
+#=GF RA   M, Nam K, Backstrom N, Smeds L, Nabholz B, Itoh Y, Whitney O,
+#=GF RA   Pfenning AR, Howard J, Volker M, Skinner BM, Griffin DK, Ye L,
+#=GF RA   McLaren WM, Flicek P, Quesada V, Velasco G, Lopez-Otin C, Puente
+#=GF RA   XS, Olender T, Lancet D, Smit AF, Hubley R, Konkel MK, Walker
+#=GF RA   JA, Batzer MA, Gu W, Pollock DD, Chen L, Cheng Z, Eichler EE,
+#=GF RA   Stapley J, Slate J, Ekblom R, Birkhead T, Burke T, Burt D, Scharff
+#=GF RA   C, Adam I, Richard H, Sultan M, Soldatov A, Lehrach H, Edwards
+#=GF RA   SV, Yang SP, Li X, Graves T, Fulton L, Nelson J, Chinwalla A,
+#=GF RA   Hou S, Mardis ER, Wilson RK
+#=GF RL   Nature. 2010;464:757-762.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+CR391935.9/148582-148684               UGAUGGAUGAGCAGUGCUUUCCAGGACUGUCCAACCUGAGAAUGCUUGAG
+ABQF01028257.1/27499-27599             GCCCCAGUGAGGGGCACC.UCGAGGACUGUCUAACCUGAGAAUGGUGAAA
+AAFC03042420.1/16151-16252             CCGCC..UGGGCGGUGCCU.UCAGGACUGUCCAACCUGAGAAUGGUGAGC
+AAPN01132708.1/7352-7452               UGUUCAGUGGGGGGCGUGU.CUAGGACUGUCUAACCUGAGAAUGGUGAUG
+#=GC SS_cons                           ........<<<<<<<<.<<<<..<<.<<<.<.<<<<<<<<<.<<......
+
+CR391935.9/148582-148684               UUUU..GGUCAAUCUCAGGUUCGUCAGCCCAUGAAAAACUGUCUCGCUCA
+ABQF01028257.1/27499-27599             CAUCAAGGUCAAUCUCAGGUUCGUCAGCCCAUGAGA...UGCCUUCUCCA
+AAFC03042420.1/16151-16252             AUCCAGGGACAAUCUCAGGUUUGUCAGCCCGCAAGGUGCCGUCCCCUCCC
+AAPN01132708.1/7352-7452               UGUGAGGGUCAAUCUCAGGUUCGUCAGCCCAUGAAA...CGCCUUCUCCA
+#=GC SS_cons                           .........>>.>>>>>>>>>.>.>>>.>>..>>>>...>>>>>>>>...
+
+CR391935.9/148582-148684               AAGCC
+ABQF01028257.1/27499-27599             GAGCG
+AAFC03042420.1/16151-16252             CAGCA
+AAPN01132708.1/7352-7452               GAUCC
+#=GC SS_cons                           .....
+//

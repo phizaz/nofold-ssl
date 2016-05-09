@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00282
+#=GF ID   SNORD48
+#=GF DE   Small nucleolar RNA SNORD48
+#=GF PI   U48
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   36.00
+#=GF TC   43.52
+#=GF NC   26.43
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300616
+#=GF DR   snoopy; Loxodonta_africana300453
+#=GF RN   [1]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol 2002;22:6663-6668.
+#=GF RN   [2]
+#=GF RM   8674114
+#=GF RT   Site-specific ribose methylation of preribosomal RNA: a novel
+#=GF RT   function for small nucleolar RNAs.
+#=GF RA   Kiss-Laszlo Z, Henry Y, Bachellerie JP, Caizergues-Ferrer M, Kiss T;
+#=GF RL   Cell 1996;85:1077-1088.
+#=GF CC   U48 belongs to the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and D (CUGA) box motifs. Most of the members of the box C/D family function
+#=GF CC   in directing site-specific 2'-O-methylation of substrate RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD48
+#=GF SQ   7
+
+AAGU02762399.1/399-460               UG.AUUGAUGACCCCAGGUGAUUCUGAGUGUC.UCGCUGACGCCAUCACC
+AAGW01366054.1/3259-3320             GUUGAUGAUGACCCCAGGUGACUCUGAGUGUC.UCGCUGACGCCAGCACC
+AAYZ01082793.1/1567-1630             GGUAAUGAUGACCUUAGGUGAUUCUGAGUGCCAUCGCUGACGCCAUCACC
+AF109906.1/101404-101342             AGUAAUGAUGAUUUCUGGUGAUUCUGAGUGUC.UCGCUGACGCCAUCACC
+X96648.1/1-63                        AGUGAUGAUGACCCCAGGUAACUCUGAGUGUG.UCGCUGAUGCCAUCACC
+AL773527.8/127279-127217             GGUAAUGAUGACCCCAGGUGAUUCUGAGUGUC.UCGCUGACGCCAUCACC
+AALT01488983.1/1433-1494             GGUGAUGAUGACC.CAGGUGACUCUGAGUGUC.UCGCUGACGCCAUCACC
+#=GC SS_cons                         <<................................................
+#=GC RF                              gGUAAUGAUGAcccCAGGUgAuUCUGAGUGUc.UCGCUGAcGCCAUCACC
+
+AAGU02762399.1/399-460               GCAGCGCGCUGACA
+AAGW01366054.1/3259-3320             GCAGCGCGCUG.AC
+AAYZ01082793.1/1567-1630             GCAGCGCGCUGACC
+AF109906.1/101404-101342             GCAGCGCGCUGACC
+X96648.1/1-63                        GCAGCGCUCUGACC
+AL773527.8/127279-127217             GCAGCGCGCUGAUC
+AALT01488983.1/1433-1494             GCAGCGCGCUGACC
+#=GC SS_cons                         ............>>
+#=GC RF                              GCAGCGCgCUGACc
+//

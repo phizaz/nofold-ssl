@@ -1,0 +1,33 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01783
+#=GF ID   b55
+#=GF DE   M. tuberculosis B11
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19555452
+#=GF SS   Published; PMID:19555452
+#=GF GA   50.00
+#=GF TC   86.19
+#=GF NC   16.98
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19555452
+#=GF RT   Identification of small RNAs in Mycobacterium tuberculosis.
+#=GF RA   Arnvig KB, Young DB;
+#=GF RL   Mol Microbiol. 2009;73:397-408.
+#=GF WK   http://en.wikipedia.org/wiki/Mycobacterium_tuberculosis_sRNA
+#=GF SQ   2
+
+ABOW01000034.1/21447-21507             CGGGACUCCUGAGAAGGAUCCUGUAGGCCGCAGCCCCACCCACGGGUGGG
+CP000717.1/707415-707475               CGGGACUCCUGAGAAGGAUCCUGUAGGCCGCAGCCCCACCCACGGGUGGG
+#=GC SS_cons                           .<<<<.<<<<....>>>>>>>>....<<<<<<<<<<<<<<....>>>>>>
+#=GC RF                                CgGGaCuCCuGAGAaGGauCCuCUAGGCCGCaGCCCCaCCCACGGGuGGG
+
+ABOW01000034.1/21447-21507             GCUGACGUGCG
+CP000717.1/707415-707475               GCUGACGUGCG
+#=GC SS_cons                           >>>>.>>.>>.
+#=GC RF                                GCuGACGUGCG
+//

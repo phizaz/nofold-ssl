@@ -1,0 +1,119 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00534
+#=GF ID   SgrS
+#=GF DE   SgrS RNA
+#=GF AU   Moxon SJ, Daub J
+#=GF SE   Published;PMID:17383224
+#=GF SS   Predicted; RNAalifold
+#=GF GA   29.00
+#=GF TC   29.33
+#=GF NC   26.00
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF DR   GO:0032057 GO:negative regulation of translation initiation in response to stress
+#=GF DR   GO:0043488 GO:regulation of mRNA stability
+#=GF DR   GO:0030371 GO:translation repressor activity
+#=GF RN   [1]
+#=GF RM   17209026
+#=GF RT   The novel transcription factor SgrR coordinates the response to
+#=GF RT   glucose-phosphate stress.
+#=GF RA   Vanderpool CK, Gottesman S;
+#=GF RL   J Bacteriol. 2007;189:2238-2248.
+#=GF RN   [2]
+#=GF RM   17383224
+#=GF RT   Physiological consequences of small RNA-mediated regulation of
+#=GF RT   glucose-phosphate stress.
+#=GF RA   Vanderpool CK;
+#=GF RL   Curr Opin Microbiol. 2007;10:146-151.
+#=GF RN   [3]
+#=GF RM   17383928
+#=GF RT   Mechanism of RNA silencing by Hfq-binding small RNAs.
+#=GF RA   Aiba H;
+#=GF RL   Curr Opin Microbiol. 2007;10:134-139.
+#=GF CC   In sugar transport-related sRNA (SgrS) is induced under
+#=GF CC   conditions of glucose phosphate stress in E.coli. This
+#=GF CC   small RNA acts to negatively regulate the translation and
+#=GF CC   stability of the ptsG mRNA, which encodes the major glucose
+#=GF CC   transporter in E. coli [2].  SgrS forms a specific
+#=GF CC   ribonucleoprotein complex with RNAse E and the chaperone Hfq and
+#=GF CC   acts by base pairing with the ptsG mRNA. The crucial base-pairs
+#=GF CC   for action of SgrS are confined to the 6 nt region overlapping the
+#=GF CC   Shine-Dalgarno sequence of the ptsG mRNA [3].
+#=GF WK   http://en.wikipedia.org/wiki/SgrS_RNA
+#=GF SQ   9
+
+CP000462.1/540605-540390               CAUGAGCCAUGCCAAC..........CCCAUCAAAC.CGAACCGGAUCCA
+CP000644.1/4002404-4002190             CAUGAAC....CAGCA..........AAGCGCCCCCA.....AACCGAAC
+CP000653.1/698137-698383               GAUGAAGCAAGGGAGUGAACGAUGAAGAGGUCAACCGCACGUCAGUUUUA
+AY653237.1/1-227                       GAUGAAGCAAG...............GGGGUGCCCCAUGCGUCAGUUUUA
+AE014075.1/81708-81934                 GAUGAAGCAAG...............GAGGUGCCCCAUGCGUCAGUUUUA
+CP000647.1/81039-81262                 GAUGAAGCGAGGAGGUGAAUAUGAU.GAGGUCUACCGCAAAAUCGUUCUA
+BX950851.1/4292548-4292300             GGAG..GUGGCUCAUG..........ACAAUUUCCCGUUUGUC.CCAGUU
+AL627265.1/129989-130226               GAUGAAGCAAGAGGAA..........GAGGU.CACUAUGCGCCAGUUCUG
+AACY022984628.1/11-235                 GAUGAAGCGAUGAGACAACGAA....GGGGUCAUCUAUGCGUCAGUUCUG
+#=GC SS_cons                           <<<<..<<<<<......................<<<<<<<<<<<<<<<<.
+#=GC RF                                gAUGAAgCaagcagaa..........gaGgUcacCCaugCguCaGuucua
+
+CP000462.1/540605-540390               GCA..GAUCCUGCGC......CGUUACUUCAAGCG.......GAUCCUGC
+CP000644.1/4002404-4002190             CGGAUCCAGCAAACCCUGCGUCGUUACUUCAAGCGGAUCCUGCCUCGC..
+CP000653.1/698137-698383               UCAGCAGUACUUUUUAGCGACAAAAGGAGUGUCCUGGCUGGCCCGCCAGU
+AY653237.1/1-227                       UCAGCACUAUUUUACCGCGACAGCGAAGUUGUGCUGGUUGCGUUGGUUAA
+AE014075.1/81708-81934                 UCAGCACUAUUUUACCGCGACAGCGAAGUUGUGCUGGUUGCGUUGGUUAA
+CP000647.1/81039-81262                 CCAACGCUACUUUUCUGCGACGCAGGAAGCGUCCUGGCUGGCCCGCCUGA
+BX950851.1/4292548-4292300             CUAUCGAACCUACUUAUCGACCUGUAAAGCGAAGUGGUUGCGAUGGAUAU
+AL627265.1/129989-130226               GUUGAGAUAUUUUGCCGCGACGGAAAAAACGUCCUGGCUGGCUUGCCUGA
+AACY022984628.1/11-235                 GUUGGAGUACUUUACCACGACGGAAAAAUCGUCCUGGUUGGCUUGCCUGA
+#=GC SS_cons                           <<<<<<...........<<<<<<<<......>>>>.>>>>...<<<<<<<
+#=GC RF                                ucagcaaUaCUuuuCcgCgaCcGuuAAauCGagCgGGuuGgguugcuuga
+
+CP000462.1/540605-540390               CCAGGCCG..CUGACCCUGAUC....GA.GGAUCCCAU........GAGC
+CP000644.1/4002404-4002190             .CCGCUGACCCUGA..UCGAGGAUCCCA..............UGAGCCAG
+CP000653.1/698137-698383               GCGCCGAGCAGCGGCUGAAAAUGCUGGA.AGAAUUGAUGCAGUGGGAGGU
+AY653237.1/1-227                       GCGUCCCACAACGAUUAACCAUGCUUGA.AGGACUGAUGCAGUGGGAUGA
+AE014075.1/81708-81934                 GCGUCCCACAACGAUUAACCAUGCUUGA.AGAGCUGAUGCAGUGGGAGGG
+CP000647.1/81039-81262                 UGGCAGGAC.GACAGCAGGAAAUUCUGGGGGAACUGAUGCAGUGGGGAGU
+BX950851.1/4292548-4292300             CUACCCAACAGCGCGU.UGCAUUAUUGCAGCAGGCGACGCAGUGGCACCU
+AL627265.1/129989-130226               GCGCGCCGCAGCGCUUAAAAAUGCUCGC.GGAACUGAUGCAGUGGGAGGC
+AACY022984628.1/11-235                 GCGCACCGCAGCGCUUAAAGAUGCUCGA.AGAACUGAUGCAGUGGGAGAU
+#=GC SS_cons                           .<<<......>>>.>>>>>>>>>>.>>>.>>>>>>>>>>>>.>>>>....
+#=GC RF                                gCgccccaCAgcGAucaagcaugcUuga.agaaCuGacGcaGuGGgAagu
+
+CP000462.1/540605-540390               CAGC.........UCAACCGCCUGAUGC.AGUGG.GAUAUGAACCAG...
+CP000644.1/4002404-4002190             CUCA.........ACCGCCUGAUGCAGU.....GGGACAUGCACCAG...
+CP000653.1/698137-698383               UACGCAAACG...ACUUCUGAACGCUGA.CUUGCCUCGAUCAUGUGU...
+AY653237.1/1-227                       CCGC.........AAUUCUGAAAGUUGA.CUUGCCUGCAUCAUGUGU...
+AE014075.1/81708-81934                 GAGU.........CAUUCUGACUACUGA.UUUGCGGACAUCAUGUGU...
+CP000647.1/81039-81262                 GACGUCAACG...ACCUCUGAUCAUUGA.CUUGCAGACAUCAUGUGU...
+BX950851.1/4292548-4292300             GAACGAAAUGUCCGACGACGAAUACC...GUCAUUGGCUCUAGGUGGUGC
+AL627265.1/129989-130226               GACC.........GAUU...GAAGCC.A.AUUGCAGACAUCAUGUGU...
+AACY022984628.1/11-235                 GACAUCU......GACUCCUGAAUUGGAAAUUGCAGACAUCAUGUGU...
+#=GC SS_cons                           ................<<........>>.>>>>>...>>>>.........
+#=GC RF                                gAcc.........aacuCcGAAugcuGa.cuuGcaGACAUcAuGUGu...
+
+CP000462.1/540605-540390               ...........AUCGACGAUCGGGAGUAUCGCCGCCGCCUC....UGAGC
+CP000644.1/4002404-4002190             ...........AUCGAUGACAAGGAGUAUCGUCGCCGCCUCUGAGUGCAG
+CP000653.1/698137-698383               ...........GACUGAGUAUUGGUGCU..................UAUC
+AY653237.1/1-227                       ...........GACUGAGUAUUGGUGUA.................AAAUC
+AE014075.1/81708-81934                 ...........GACUGAGUAUUGGUGUU.................AAUCG
+CP000647.1/81039-81262                 ...........GACUGAGUAUUGGUGUU.................AUACU
+BX950851.1/4292548-4292300             GAGGAAAAGUAUUCUGAGUAAUGGUGAU.................AUUUC
+AL627265.1/129989-130226               ...........GACUGAGUAUUGGUGUAGGCGAUAGCCUA.....AAAUC
+AACY022984628.1/11-235                 ...........GACUGAGUAUUGGUGCAGGCUGU...........AUCCU
+#=GC SS_cons                           ..................................................
+#=GC RF                                ...........gaCUGAGUAuuGGUGUA.................Auauc
+
+CP000462.1/540605-540390               CCCUCUCGCCCGGAUCGCGCAAGGGAGAACGCAGUU
+CP000644.1/4002404-4002190             CCCCGGUUGCUCAAAG...G..CGAGGCCCAUCGCC
+CP000653.1/698137-698383               ACCCGCCAGCAAAAUGUUUU..UGCUGGCUUUUUUC
+AY653237.1/1-227                       ACCCGCCAGCAGAUUAUACC..UGCUGGUUUUUUUU
+AE014075.1/81708-81934                 CCACGCCAGCAGUGAUUAUC..UGCUGGCUUUUUUG
+CP000647.1/81039-81262                 CGUC.........................GUUUUUC
+BX950851.1/4292548-4292300             ACCAACCAGCGAGUUUUC.U..CGCUGGUUUUUUUU
+AL627265.1/129989-130226               ACCCGCCAGCAGAUAAUAUC..UGCUGGCUUUUUU.
+AACY022984628.1/11-235                 GCCA.........................UUAUAUC
+#=GC SS_cons                           ....<<<<<<<<.......>..>>>>>>>.......
+#=GC RF                                aCCcgcCagCagaauuUauc..uGcuGgcuuUUuUu
+//

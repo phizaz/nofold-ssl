@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00207
+#=GF ID   K10_TLS
+#=GF DE   K10 transport/localisation element (TLS)
+#=GF AU   Holmes I, Moxon SJ
+#=GF SE   PMID:8582290
+#=GF SS   Published; PMID:8582290
+#=GF GA   20.00
+#=GF TC   62.20
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   8582290
+#=GF RT   A small predicted stem-loop structure mediates oocyte localization of
+#=GF RT   Drosophila K10 mRNA.
+#=GF RA   Serano TL, Cohen RS;
+#=GF RL   Development 1995;121:3809-3818.
+#=GF RN   [2]
+#=GF RM   11533666
+#=GF RT   A nuclear lamin is required for cytoplasmic organization and egg
+#=GF RT   polarity in Drosophila.
+#=GF RA   Guillemin K, Williams T, Krasnow MA;
+#=GF RL   Nat Cell Biol 2001;3:848-851.
+#=GF CC   This family represents the 44 nucleotide K10 transport/localisation element
+#=GF CC   (TLS) from Drosophila melanogaster. K10 TLS is responsible for the
+#=GF CC   transport and anterior localisation of K10 mRNA and acts to establish
+#=GF CC   dorsoventral polarity in the oocyte [1].
+#=GF WK   http://en.wikipedia.org/wiki/K10_transport/localisation_element_(TLS)
+#=GF SQ   5
+
+AC104149.6/78129-78172                     CUUGAUUGUAUUUUUAAAUUAAUUCUUAAAAACUACAAAUUAAG
+AABU01002762.1/8483055-8483012             CUUGAUUGUAUUUUUAAAUUAAUUCUUAAAAACUACAAAUUAAG
+U36587.1/52-95                             CUUGAUUGUAUUUUUAAAUUAAUUCUUAAAAACUACAAAUUAAG
+AC104142.6/1963-2006                       CUUGAUUGUAUUUUUAAAUUAAUUCUUAAAAACUACAAAUUAAG
+AY060415.1/2224-2267                       CUUGAUUGUAUUUUUAAAUUAAUUCUUAAAAACUACAAAUUAAG
+#=GC SS_cons                               <<<<<<<<<<<<<<<<<........>>>>>>>.>>>>.>>>>>>
+#=GC RF                                    cuugauuguauuuuuaaAuuAAuucuuaaaaacuacaAaucaag
+//

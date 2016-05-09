@@ -1,0 +1,41 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01543
+#=GF ID   TB11Cs5H2
+#=GF DE   Trypanosomatid snoRNA TB11Cs5H2
+#=GF AU   Doniger T, Michaeli S, Unger R, Osuch I
+#=GF SE   Predicted; WAR;
+#=GF SS   Predicted; WAR;
+#=GF GA   42.00
+#=GF TC   42.51
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   18986541
+#=GF RT   Psiscan: a computational approach to identify H/ACA-like and AGA-like
+#=GF RT   non-coding RNA in trypanosomatid genomes.
+#=GF RA   Myslyuk I, Doniger T, Horesh Y, Hury A, Hoffer R, Ziporen Y, Michaeli
+#=GF RA   S, Unger R;
+#=GF RL   BMC Bioinformatics. 2008;9:471.
+#=GF WK   http://en.wikipedia.org/wiki/Trypanosome_H/ACA_box_snoRNAs
+#=GF SQ   4
+
+AM502248.1/506590-506654                 ACGCUGCAUCAGUACAGCGACAUCAUCUA.....GCCGAGUGGUGAUGCC
+AM494967.1/397257-397321                 CCGCUGCAUCAGUACAGCGACAUCAUCUU.....UUCGAGUGGUGAUGCC
+AAHB01000009.1/736682-736615             AAGCAGCAUCAGUACAGCGGUGGUAUCGCUAAG.GCACCAUGAUACUUUC
+AAHK01000645.1/3393-3461                 AAGCAGCAUCAGUACAGCGGUGGCUCCACUAAAUACGCUAUGGUGCCAUU
+#=GC SS_cons                             ..<<.<<<<.....<<<<<..<<<<<<..............>>>>>>...
+#=GC RF                                  AMGCWGCAUCAGUACAGCGRYRKYAYCWHWAWRuKCMSMRUGRUGMUKYY
+
+AM502248.1/506590-506654                 UGCUGGCGAUGCCAGCAAGA
+AM494967.1/397257-397321                 UGCUGGCGAUGUCAGCAAGA
+AAHB01000009.1/736682-736615             CGCUGGCGAUGU.GGCGAGA
+AAHK01000645.1/3393-3461                 CGCUGGCGAUGU.GGCGAGA
+#=GC SS_cons                             >>>>>...>>>>..>>....
+#=GC RF                                  YGCUGGCGAUGYcRGCRAGA
+//

@@ -1,0 +1,60 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00475
+#=GF ID   snosnR69
+#=GF DE   Small nucleolar RNA snR69
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD
+#=GF GA   33.00
+#=GF TC   33.38
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Saccharomyces_cerevisiae300036
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   10024243
+#=GF RT   A computational screen for methylation guide snoRNAs in yeast.
+#=GF RA   Lowe TM, Eddy SR;
+#=GF RL   Science 1999;283:1168-1171.
+#=GF CC   snR69 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snR69
+#=GF SQ   6
+
+BX842623.1/49237-49145                 UUGAAUGAUGAUAAAAGGCCCAAGG..CCUGAAU.......UAUAAACCC
+CR382128.1/364100-364187               UGGAGUGAUGAUAACGAGCCAGAAG..GCUCUAU......UUAUAAACCC
+CR382126.1/2373959-2374052             UUUAAUGAUGAGAAAAUGUCCUUAG..UGACAAU.....GCUAUAAACCC
+CR380958.2/218391-218508               GUUUAUGAUGAUAACGUCAUCAAAAGAUGACAAUUUAUUGCUAUAAACCC
+AF064281.1/1-101                       GUUUAUGAUGAGACCACGUCCUUAG..UGACAAU.....GCUAUAAACCC
+AJ617339.1/1-89                        UACCAUGAUGAACACGAGCCAGAAG..GCUCAAU..AUUCUAUUAAACCC
+#=GC SS_cons                           ..................................................
+
+BX842623.1/49237-49145                 AGCUCUUCGAU.UCCUCUAUGAGGAUCCAUGAGACAAAAACUUUAUC...
+CR382128.1/364100-364187               AGCUCGUCGAUAUUAUUUGAAAUGA.......GAAAAAAAGUUUAUG...
+CR382126.1/2373959-2374052             AGCUCUUCGA..UCAUUAGAAAUGA.......GAAGAGAUACCUGUCAAA
+CR380958.2/218391-218508               AGCUCUUCGAU.UCGUUUCAUCUCU.UCAGGAGAAGUAACAGACAUGAGA
+AF064281.1/1-101                       AGCUCUUCGAU.UCGUUUUUAAUGA.AAGGGAGAAGAUUUUUUUGUCAAA
+AJ617339.1/1-89                        AGCUCUUUGAA.CCAAUAGUUGUGA.......AACGAGAAACAAGUU...
+#=GC SS_cons                           ............<<<<.....>>>>.........................
+
+BX842623.1/49237-49145                 ..............CUGACA
+CR382128.1/364100-364187               ..............CUGAUU
+CR382126.1/2373959-2374052             ..........CGCUCUGAUA
+CR380958.2/218391-218508               CCAAUAGUUUAUAUCUGAUA
+AF064281.1/1-101                       ..........CGCUCUGAGU
+AJ617339.1/1-89                        ..............CUGA..
+#=GC SS_cons                           ....................
+//

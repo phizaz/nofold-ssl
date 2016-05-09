@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01792
+#=GF ID   eiav_FSE
+#=GF DE   ribosomal frameshift site
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:3003905
+#=GF SS   Published; PMID:3003905
+#=GF GA   37.00
+#=GF TC   37.31
+#=GF NC   25.92
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r200197
+#=GF RN   [1]
+#=GF RM   3003905
+#=GF RT   Equine infectious anemia virus gag and pol genes: relatedness to
+#=GF RT   visna and AIDS virus.
+#=GF RA   Stephens RM, Casey JW, Rice NR;
+#=GF RL   Science. 1986;231:589-594.
+#=GF RN   [2]
+#=GF RM   3035786
+#=GF RT   Nucleotide sequence analysis of equine infectious anemia virus
+#=GF RT   proviral DNA.
+#=GF RA   Kawakami T, Sherman L, Dahlberg J, Gazit A, Yaniv A, Tronick SR,
+#=GF RA   Aaronson SA;
+#=GF RL   Virology. 1987;158:300-312.
+#=GF RN   [3]
+#=GF RM   12970412
+#=GF RT   Characterization of RNA elements that regulate gag-pol ribosomal
+#=GF RT   frameshifting in equine infectious anemia virus.
+#=GF RA   Chen C, Montelaro RC;
+#=GF RL   J Virol. 2003;77:10280-10287.
+#=GF RN   [4]
+#=GF RM   1575083
+#=GF RT   Translational suppression in retroviral gene expression.
+#=GF RA   Hatfield DL, Levin JG, Rein A, Oroszlan S;
+#=GF RL   Adv Virus Res. 1992;41:193-239.
+#=GF WK   http://en.wikipedia.org/wiki/Equine_infectious_anemia
+#=GF SQ   5
+
+EU375544.1/1273-1307             GGGGCUCAGGGGAGGCCCCAAAAGCAAACCUUCCC
+AF033820.1/1797-1831             GGGGCUCAAGGGAGGCCCCAGAAACAAACUUUCCC
+M87574.1/258-292                 GGGGCUCAAGGGAGGCCCCAGAAGCAAACUUUCCC
+AF327877.1/1733-1767             GGGGCUCAGGGGAGGCCCCAAAAACAAACUUUCCC
+EF418583.1/1273-1307             GGGGUUCAGGGGAGGCCCCAGAAACAAACUUUCCC
+#=GC SS_cons                     <<<<<.........>>>>>................
+#=GC RF                          GGGGCUCAAGGGAGGCCCCAGAAACAAACUUUCCC
+//

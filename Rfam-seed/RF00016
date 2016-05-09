@@ -1,0 +1,116 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00016
+#=GF ID   SNORD14
+#=GF DE   Small nucleolar RNA SNORD14
+#=GF PI   U14
+#=GF AU   Griffiths-Jones SR, Mifsud W
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   23.00
+#=GF TC   23.34
+#=GF NC   22.96
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300888
+#=GF DR   snoopy; Homo_sapiens300754
+#=GF DR   snoopy; Saccharomyces_cerevisiae300053
+#=GF RN   [1]
+#=GF RM   8668536
+#=GF RT   An essential domain in Saccharomyces cerevisiae U14 snoRNA is absent
+#=GF RT   in vertebrates, but conserved in other yeasts.
+#=GF RA   Samarsky DA, Schneider GS, Fournier MJ;
+#=GF RL   Nucleic Acids Res 1996;24:2059-2066.
+#=GF CC   U14 small nucleolar RNA (U14 snoRNA) is required for early
+#=GF CC   cleavages of eukaryotic precursor rRNAs. In yeasts, this molecule
+#=GF CC   possess a stem-loop region (known as the Y-domain) which is
+#=GF CC   essential for function. A similar structure, but with a different
+#=GF CC   consensus sequence, is found in plants, but is absent in
+#=GF CC   vertebrates [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD14
+#=GF SQ   18
+
+X96815.1/716-841                   .....UCACGGUGAUGAAAGA........CUGGUUCCUUA..ACAUUCGC
+U29583.1/543-654                   ...UCAACAGGUGAUG...AAAU..........UUCCAUUGAACAUUCGC
+Z49896.1/2359-2452                 .....UUGCUAAGAUGAAUACGA..........UUCCAAAG.CCAUUCGU
+Z49896.1/3386-3480                 .....UCGCUGUGAUGAACUU...........GUUCCAAAG.CCAUUCGU
+Z49896.1/1591-1686                 .....UCGCUGUGAUGAAUGUGA..........UUCCAAAG.CCAUUCGU
+Z49897.1/1656-1746                 .....UCACAGUGAUGA.CUGGU..........UUCCAAU...CAUUCGC
+Z49897.1/2330-2421                 .....UCACAGUGAUGA.CUGGU..........UUCCAAU...CAUUCGC
+D88010.1/2919-3009                 .....UCACUAUGAUGA.UUGGU..........UGCCAGA...CAUUCGC
+AC006597.2/8154-8065               .....UCACUGUGAUGA.UGGUU..........UUCCAA....CAUUCGC
+AF332622.1/717-819                 ........UAAUGAUGCUAAAA...........UUUCUCAUAGCAUCUGC
+AJ310377.1/341-211                 UGCAUGGCAAAUGAUGCUAAAAGC.AAGGCUUGUUUCUCAUAACAUUCGC
+AP002485.2/15585-15700             ........CAAUGAUGAUAAAUUU.AAGGCUUGUUUCUCAUAACAUUCGC
+Z35302.1/1-124                     ...UAUGGCAAUGAUGAUGAAAGAUAAGGCUUGUUUCUCA..ACAUUCGC
+Z35299.1/1-129                     UGCAUUGCAAGUGAUGAUGAAGUC.AAGGCUUGUUUCUCU..ACAUUCGC
+Y11048.1/1797-1925                 UGCAUUGCAAGUGAUGACAAAAUC.AAGGCUUGUUUCUCG..ACAUUCGC
+Z35301.1/1-128                     CGGU.GCCCUAUGAUGACAAAAUC.AAGGCUUGUUUCUCU..ACAUUCGC
+Y11048.1/1341-1463                 ....AUGGCAAUGAUGUUGAAGUUAAAGGCUUGUUUCUCA..ACAUUCGC
+Z35303.1/11-130                    ........CUCUGAUGAUACAAUUGAAGGCUUGUUUCUCUAAACAUUCGC
+#=GC SS_cons                       <<<<<<<<<.........................................
+
+X96815.1/716-841                   AGUUUCCACGGUA.GGAGUAC.........GCUUACGAAC.CCAUCGUUA
+U29583.1/543-654                   AGUUUCC.CCGGA..GCGGCA............UACGAAC.CCA.AUUU.
+Z49896.1/2359-2452                 AGUUUCCACCAGAU.........GUCGUAAGACU................
+Z49896.1/3386-3480                 AGUUUCCACCAGAU.........GCCGAAAGGCU................
+Z49896.1/1591-1686                 AGUUUCCACCAGAU........GUCU.CACGACU................
+Z49897.1/1656-1746                 AGUUUCUACCAGAA........AGCUUU..G.CU................
+Z49897.1/2330-2421                 AGUUUCUACCAGAA........AGCUUU..GCCU................
+D88010.1/2919-3009                 AGUUUCCACCAGAA........AUGUUUUU.CCU................
+AC006597.2/8154-8065               AGUUUCCACCAGAA........AGGUUUU..CCU................
+AF332622.1/717-819                 AGUUACUGCCUAAUAGCUUUCGCCCUGCCAGGCU................
+AJ310377.1/341-211                 AGUUGCCGCCUAAGAGCUUUCGCCUUGCCAGGUU................
+AP002485.2/15585-15700             AGUUGCCGCCUAAGAGCUUUCGCCCUGCCAGGCU................
+Z35302.1/1-124                     AGUAGCCGCCUAAGAGCUUUCGCCACGCCAGGCU................
+Z35299.1/1-129                     AGUUGCCGCCUAAGAGCUUUCGCCCUGCCAGGCU................
+Y11048.1/1797-1925                 AGUUGCCGCCUAAGAGCUUUCGCCCUGCCAGGCU................
+Z35301.1/1-128                     AGUUGCCGCCUAAGAGCUUUCGCCCUGCCAGGCU................
+Y11048.1/1341-1463                 AGUAGCCGCCUAAGAGCUUUCGCCCUGCCAGGCU................
+Z35303.1/11-130                    AGUGGCCGCCUAAG........AUCUUUC.GCCU....UCGCCA....GG
+#=GC SS_cons                       ..............<<<<<<<<............<<<<......>>>>..
+
+X96815.1/716-841                   .GUACUCUCGGUGACCGCUCUUCUUUAGAGACCUUCCUA.GGAUGUCUGA
+U29583.1/543-654                   .UGCCGC........AGAUGUCGUGCAUAGUCCUUCCUUUGGAUGUCUGA
+Z49896.1/2359-2452                 ..............CAUGAUGGCUC....UACCUUCCUU.GGAUGUCUGA
+Z49896.1/3386-3480                 ..............GAUGAUGGCC..UAGCACCUUCCUU.GGAUGUCUGA
+Z49896.1/1591-1686                 ..............UAUGAUGGUU..UAUUACCUUCCUU.GGAUGUCUGA
+Z49897.1/1656-1746                 ..............GGUGUUGGCC..UGUAACCUUCCUU.GGAUGUCUGA
+Z49897.1/2330-2421                 ..............GGUGUUGGCU..AGUAACCUUCCUU.GGAUGUCUGA
+D88010.1/2919-3009                 ..............UAUGUUGGCC....AGUUCUUCCUU.GGAUGUCUGA
+AC006597.2/8154-8065               .............UAGUGUUGGGU....AAACCUUCCUU.GGAUGUCUGA
+AF332622.1/717-819                 UGAGAGCU..........AGUGCUGUUAAAUCCUUCGUU.GAAUG.C..A
+AJ310377.1/341-211                 UGAGAGCU..........AAUGCUGCUAAUUCCUUCCUU.GGAUGUCUGA
+AP002485.2/15585-15700             UGAGAGCU..........AAUGCUGUUAAUUCCUUCCUU.GGAUGUCUGA
+Z35302.1/1-124                     CGAGAGCU..........UGUGCUGUUGAAUCCUUCCUU.GGAUGUCUGA
+Z35299.1/1-129                     UGAGAGCU..........AGUGCUGCCAAAUCCUUCCUU.GGAUGUCUGA
+Y11048.1/1797-1925                 UGAGAGGU..........AGUGCUGCCAAAUCCUUCCUU.GGAUGUCUGA
+Z35301.1/1-128                     UGAGAGCU..........AAUGCUGCAGAAUCCUUCCUU.GGAUGUCUGA
+Y11048.1/1341-1463                 UGAGAGCU..........UGUGCUGUUUAAUCCUUCCUU.GGAUGUCUGA
+Z35303.1/11-130                    ........CUUGAGAGAUAAUGCUGCUUUAUCCUUCCUU.GGAUGUCUGA
+#=GC SS_cons                       >>>>>>>>..........................................
+
+X96815.1/716-841                   GUGA.....
+U29583.1/543-654                   UGUUG....
+Z49896.1/2359-2452                 GCGA.....
+Z49896.1/3386-3480                 GCGA.....
+Z49896.1/1591-1686                 GCGA.....
+Z49897.1/1656-1746                 GUGA.....
+Z49897.1/2330-2421                 GUGA.....
+D88010.1/2919-3009                 GUGA.....
+AC006597.2/8154-8065               GUGA.....
+AF332622.1/717-819                 UA.......
+AJ310377.1/341-211                 UGCAAUGCA
+AP002485.2/15585-15700             GC.......
+Z35302.1/1-124                     GCCAUA...
+Z35299.1/1-129                     UGCAAUGCA
+Y11048.1/1797-1925                 CGCAAUGCA
+Z35301.1/1-128                     GGGCCGCCG
+Y11048.1/1341-1463                 GCCAUA...
+Z35303.1/11-130                    GAUC.....
+#=GC SS_cons                       >>>>>>>>>
+//

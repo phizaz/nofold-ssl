@@ -1,0 +1,101 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01921
+#=GF ID   mir-1296
+#=GF DE   microRNA mir-1296
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   91.00
+#=GF TC   106.88
+#=GF NC   42.85
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000649
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [2]
+#=GF RM   18285502
+#=GF RT   Application of massively parallel sequencing to microRNA profiling
+#=GF RT   and discovery in human embryonic stem cells
+#=GF RA   Morin RD, O'Connor MD, Griffith M, Kuchenbauer F, Delaney A,
+#=GF RA   Prabhu AL, Zhao Y, McDonald H, Zeng T, Hirst M, Eaves CJ, Marra
+#=GF RA   MA
+#=GF RL   Genome Res. 2008;18:610-621.
+#=GF RN   [3]
+#=GF RM   16954537
+#=GF RT   Many novel mammalian microRNA candidates identified by extensive
+#=GF RT   cloning and RAKE analysis
+#=GF RA   Berezikov E, van Tetering G, Verheul M, van de Belt J, van Laake
+#=GF RA   L, Vos J, Verloop R, van de Wetering M, Guryev V, Takada S, van
+#=GF RA   Zonneveld AJ, Mano H, Plasterk R, Cuppen E
+#=GF RL   Genome Res. 2006;16:1289-1298.
+#=GF RN   [4]
+#=GF RM   19406225
+#=GF RT   In silico detection and characteristics of novel microRNA genes
+#=GF RT   in the Equus caballus genome using an integrated ab initio and
+#=GF RT   comparative genomic approach
+#=GF RA   Zhou M, Wang Q, Sun J, Li X, Xu L, Yang H, Shi H, Ning S, Chen
+#=GF RA   L, Li Y, He T, Zheng Y
+#=GF RL   Genomics. 2009;94:125-131.
+#=GF RN   [5]
+#=GF RM   20433717
+#=GF RT   Deciphering the porcine intestinal microRNA transcriptome
+#=GF RA   Sharbati S, Friedlander MR, Sharbati J, Hoeke L, Chen W, Keller
+#=GF RA   A, Stahler PF, Rajewsky N, Einspanier R
+#=GF RL   BMC Genomics. 2010;11:275.
+#=GF RN   [6]
+#=GF RM   18945293
+#=GF RT   Annotation of 390 bovine miRNA genes by sequence similarity with
+#=GF RT   other species
+#=GF RA   Strozzi F, Mazza R, Malinverni R, Williams JL
+#=GF RL   Anim Genet. 2009;40:125.
+#=GF RN   [7]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF RN   [8]
+#=GF RM   19508715
+#=GF RT   Identification and analysis of miRNAs in human breast cancer
+#=GF RT   and teratoma samples using deep sequencing
+#=GF RA   Nygaard S, Jacobsen A, Lindow M, Eriksen J, Balslev E, Flyger
+#=GF RA   H, Tolstrup N, Moller S, Krogh A, Litman T
+#=GF RL   BMC Med Genomics. 2009;2:35.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   6
+
+AAQQ01285376.1/1141-1030                 UCAACGAAUUACCUACCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUU
+AC022022.10/21212-21101                  UCAACGAAUCACCUACCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUU
+AADB02013109.1/161463-161352             UCAACGAAUCACCUACCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUU
+AADC01091081.1/15063-14952               UCAACGAAUCACCUACCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUU
+AAFC03009900.1/4503-4614                 UCAACGAGUUGCCUACCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUU
+AAWR02008041.1/39709-39598               UCAACGAAUCACCUACCUAACUGGGUUAGGGCCCUGGCUCCAUCUCCUUU
+#=GC SS_cons                             ...............<<<<.<<<<<<<<<<<.<..<<<<<<<<..<<<.<
+
+AAQQ01285376.1/1141-1030                 AGGAAAACCUUCUGUGGGGAGUGGGGCUUUGACCCUAACCCAGCUGGGCU
+AC022022.10/21212-21101                  AGGAAAACCUUCUGUGGGGAGUGGGGCUUCGACCCUAACCCAGGUGGGCU
+AADB02013109.1/161463-161352             AGGAAAACCUUCUGUGGGGAGUGGGGCUUCGACCCUAACCCAGGUGGGCU
+AADC01091081.1/15063-14952               AGGAAAACCUUCUGUGGGGAGUGGGGCUUCGACCCUAACCCAGGUGGGCU
+AAFC03009900.1/4503-4614                 AGGAAAACCUUCUGUGGGGAGUGGGGCUUUGACCCUAACCUAGCUGGGCU
+AAWR02008041.1/39709-39598               AGGAAAACCUUCUUUGGGGAGUGGGGCUUCGACCCUAACCCAGCUGGGCU
+#=GC SS_cons                             <<<<.....>>>>>.>>>..>>>>>>>>..>.>>>>>>>>>>>.>>>>..
+
+AAQQ01285376.1/1141-1030                 GUAAUACUACUG
+AC022022.10/21212-21101                  GUAACACUGCUG
+AADB02013109.1/161463-161352             GUAACACUGCUG
+AADC01091081.1/15063-14952               GUAACACUGCUG
+AAFC03009900.1/4503-4614                 GUAACACUGCUG
+AAWR02008041.1/39709-39598               GUAACACUGCUG
+#=GC SS_cons                             ............
+//

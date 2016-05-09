@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01466
+#=GF ID   rli34
+#=GF DE   Listeria sRNA rli34
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted;RNAalifold
+#=GF GA   28.00
+#=GF TC   31.05
+#=GF NC   24.86
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   5
+
+AARQ02000011.1/46979-46896               UAGAUUUAUUCUUACACAGUAUGAGUAACAUCUCCAUUUCAAUAAUAAAA
+AL591976.1/163031-162948                 UAGAUUUAUUCUUACACAGUAUGAGUAAUAUCUCCAUUUCAAUAAUAAAA
+AARP03000041.1/7000-6917                 UGCAUUUAUUCUUACACAAUACGAGUAAUAUUAUGGUUUUCAUCACAAAA
+AARU02000001.1/302730-302647             UAGAUUUAUUCUUACACAGUAUGAGUAAUAUCUCCAUUUCAAUAAUAAAA
+FM242711.1/802853-802770                 UAGAUUUAUUCUUACACAGUAUGGGUAAUAUCUCCAUUUCAAUAAUAAAA
+#=GC SS_cons                             .....<<<<<<...........>>>>>>......................
+#=GC RF                                  UagAUuuAcuCuUACACAAuAuGagUaaUAUuaucaUUUuaAUaAuAAAA
+
+AARQ02000011.1/46979-46896               UCUUACACAAUAUGAAGCAGUAUUCACUUUUUAU
+AL591976.1/163031-162948                 UCUUACACAAUAUGAAGCAGUAUUCACUUUUUAU
+AARP03000041.1/7000-6917                 CACCACACAUUUUGCGUCAUUAUUCACUAUUUAU
+AARU02000001.1/302730-302647             UCUUACACAAUAUGAAGCAAUAUUCACUUUUUAU
+FM242711.1/802853-802770                 UCUUACACAAUAUGAAGCACUAUUCACUUUUUAU
+#=GC SS_cons                             ............<<<<......>>>>........
+#=GC RF                                  uauuACACAaUuuGaagCAuUAuuCaCUAUUUAU
+//

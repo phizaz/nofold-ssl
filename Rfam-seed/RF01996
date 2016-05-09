@@ -1,0 +1,84 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01996
+#=GF ID   mir-995
+#=GF DE   microRNA mir-995
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   54.00
+#=GF TC   68.57
+#=GF NC   19.35
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000895
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   17989255
+#=GF RT   Systematic discovery and characterization of fly microRNAs using
+#=GF RT   12 Drosophila genomes
+#=GF RA   Stark A, Kheradpour P, Parts L, Brennecke J, Hodges E, Hannon
+#=GF RA   GJ, Kellis M
+#=GF RL   Genome Res. 2007;17:1865-1879.
+#=GF RN   [2]
+#=GF RM   20037610
+#=GF RT   Evolutionary flux of canonical microRNAs and mirtrons in Drosophila
+#=GF RA   Berezikov E, Liu N, Flynt AS, Hodges E, Rooks M, Hannon GJ, Lai
+#=GF RA   EC
+#=GF RL   Nat Genet. 2010;42:6-9.
+#=GF RN   [3]
+#=GF RM   18463636
+#=GF RT   Drosophila endogenous small RNAs bind to Argonaute 2 in somatic
+#=GF RT   cells
+#=GF RA   Kawamura Y, Saito K, Kin T, Ono Y, Asai K, Sunohara T, Okada
+#=GF RA   TN, Siomi MC, Siomi H
+#=GF RL   Nature. 2008;453:793-797.
+#=GF RN   [4]
+#=GF RM   17989254
+#=GF RT   Evolution, biogenesis, expression, and target predictions of
+#=GF RT   a substantially expanded set of Drosophila microRNAs
+#=GF RA   Ruby JG, Stark A, Johnston WK, Kellis M, Bartel DP, Lai EC
+#=GF RL   Genome Res. 2007;17:1850-1864.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   9
+
+DQ378292.1/2068-1979                       CAGCUGCACAACGAAGCCCGGAUACUGUGUGUGUUGCG....CUGU...U
+AAPU01011147.1/810709-810796               UAGCUGAACUACGAAGCCCGGGUUUUGUGUGUGCCGCG....CUGUUU..
+AAPT01018750.1/3883-3988                   AUGCUGUACAGUGAAGCCCGGAUUCUGUGUGUGCUGCGUUUGCUGAUUUG
+AAPP01019564.1/136354-136265               CGCCUGUCCUACGCAGCCCGGAUUCUGUGGGAGCUGCG....CCGU..UC
+AE014297.2/16561645-16561734               CACCUGCACCCCGCAGCCCGAAUUAUGUGGGAGCUGCG....CCGU..UU
+AASS01029797.1/1529-1618                   CACCUGUACCCCGCAGCCCGAAUUAUGUGGGAGCUGCG....CCGU..UU
+AAIZ01006001.1/48785-48869                 ..GCUGCACAACGCAGCCCGGAUUCUGUGUGUGCUGCG....CUGUGUUC
+AAQB01008976.1/639591-639498               AGGCUUCACCAAGCAGCCCGGAUUCUGCGAGUGCUGCG....CUACAACA
+AAPQ01006441.1/1304016-1303927             CACCUGCACCCCGCAGCCCGAAUUAUGUGGGAGCUGCG....CUGU..UU
+#=GC SS_cons                               ..<<<<.<<<.<<.<<<<.<<<<<<<<<<<..<<<<<<............
+#=GC RF                                    cAgCuGcaCcaCGcaGCCcGaauuauGuGgGaGCugCG....cuGUguUu
+
+DQ378292.1/2068-1979                       ..UAGAGGUA.........CGUAGCACCACAUGAUUCGGCUUCGUGGUGC
+AAPU01011147.1/810709-810796               ....UGAGUA.........CGUAGCACCACAUGAUUCGGCUUGGUAGUAC
+AAPT01018750.1/3883-3988                   ..CCAUACACAUAAAUAUACGUAGCACCACAUGAUUCGGCUUCGUGGUGC
+AAPP01019564.1/136354-136265               ..UUUCUAUC.........CGUAGCACCACAUGAUUCGGCUUCGUGGUGC
+AE014297.2/16561645-16561734               ..CCGUAAUC.........CGUAGCACCACAUGAUUCGGCUUCGUGGUAC
+AASS01029797.1/1529-1618                   ..CCAAAGUC.........CGUAGCACCACAUGAUUCGGCUUCGUGGUGC
+AAIZ01006001.1/48785-48869                 ..UUAAAAGC.........CGUAGCACCACAUGAUUCGGCUGCGUGGU.C
+AAQB01008976.1/639591-639498               AGAACUAAGA.........CGUAGCACCACAUGAUUCGGCUUCAUGGUGA
+AAPQ01006441.1/1304016-1303927             ..UCAGGAUC.........CGUAGCACCACAUGAUUCGGCUUCGUGGUGC
+#=GC SS_cons                               ...................>>>>>>.>>>>>>>>>>>>>>>.>>.>>>.>
+#=GC RF                                    ..uuaaAAuc.........CGuaGCAcCaCaugauuCGGCuuCGUgGuAC
+
+DQ378292.1/2068-1979                       .ACGCAACU
+AAPU01011147.1/810709-810796               .A.GGCUCA
+AAPT01018750.1/3883-3988                   UA.GCAACU
+AAPP01019564.1/136354-136265               .A.GGGCAU
+AE014297.2/16561645-16561734               .A.GGAUAU
+AASS01029797.1/1529-1618                   .A.GGACAU
+AAIZ01006001.1/48785-48869                 .A.GC....
+AAQB01008976.1/639591-639498               .A.GUACAU
+AAPQ01006441.1/1304016-1303927             .A.GGACAU
+#=GC SS_cons                               .>.>>....
+#=GC RF                                    .a.GcAuAu
+//

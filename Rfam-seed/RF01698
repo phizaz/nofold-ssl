@@ -1,0 +1,35 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01698
+#=GF ID   Chloroflexi-1
+#=GF DE   Chloroflexi-1 RNA
+#=GF AU   Weinberg Z
+#=GF SE   Published; PMID:20230605;
+#=GF SS   Published; PMID:20230605;
+#=GF GA   80.00
+#=GF TC   90.32
+#=GF NC   14.94
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   20230605
+#=GF RT   Comparative genomics reveals 104 candidate structured RNAs from
+#=GF RT   bacteria, archaea and their metagenomes.
+#=GF RA   Weinberg Z, Wang JX, Bogue J, Yang J, Corbino K, Moy RH, Breaker
+#=GF RA   RR;
+#=GF RL   Genome Biol. 2010;11:R31.
+#=GF WK   http://en.wikipedia.org/wiki/Chloroflexi-1_RNA_motif
+#=GF SQ   3
+
+CP001337.1/880748-880664             CGUCCGGUGGAUUGCGACGGGCAGGAAGGCAGGCAUUGGCCGGCCUUCCU
+CP001337.1/830453-830536             CGUCCCGUGGGAUGCGGCGGGCAGCACGGCCGACAUUGGCCGGCCG.GUU
+CP001337.1/822346-822429             CGUCCCGUCGGCUGCGGCGGGCAGCACGGCCGACAUUGGCCGGCCG.GUU
+#=GC SS_cons                         ...............<<<<<<<<<<.<<<<<<........>>>>>>.>>>
+
+CP001337.1/880748-880664             GCCCGCUUUCGGUUGCCGCUGACGGGAACACGUCA
+CP001337.1/830453-830536             GCCCGCCUUCGUUUGUUGAUGACCGAAACGCAACA
+CP001337.1/822346-822429             GCCCGCCUUCGUUUGUUGAUGACCGAAACGCAACA
+#=GC SS_cons                         >>>>>>>.<<<<<....>>>>>.............
+//

@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00077
+#=GF ID   SraB
+#=GF DE   SraB RNA
+#=GF PI   sraB
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Predicted; PFOLD
+#=GF GA   32.00
+#=GF TC   34.87
+#=GF NC   29.67
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   11448770
+#=GF RT   Novel small RNA-encoding genes in the intergenic regions of
+#=GF RT   Escherichia coli.
+#=GF RA   Argaman L, Hershberg R, Vogel J, Bejerano G, Wagner EG, Margalit H,
+#=GF RA   Altuvia S;
+#=GF RL   Curr Biol 2001;11:941-950.
+#=GF CC   This RNA was discovered in E. coli during a large scale screen [1].
+#=GF CC   This ncRNA was found to be expressed only in stationary phase [1].
+#=GF CC   The function of this RNA is unknown.
+#=GF WK   http://en.wikipedia.org/wiki/SraB_RNA
+#=GF SQ   5
+
+AE014075.1/1290089-1290256               UAGGCAUAUUUUUUUCCAUCAGAUAUAGCGUAUUGAUGAUAGCCAAUUUA
+M29698.1/90-258                          UAGGCAUAUUUUUUUCCAUCAGAUAUAGCGUAUUGAUGAUAGCCAUUUUA
+ABEJ01000009.1/157589-157755             GGGGCAUAUUUUUU.CCCUCAGAUAUAGCGUAAUGAUGAGAGCCAUCUUA
+CP001144.1/2091931-2091764               GGGGCAUAUUUUUU.CCCUCAGAUAUAGCGUAAUGAUGAGAGCCAUCUUA
+CP000034.1/1873400-1873232               UAGGCAUAUUUUUUUCCAUCAGAUAUAGCGUAUUGGUGAUAGCCAUUUUA
+#=GC SS_cons                             .................<<<<...............>>>>..........
+#=GC RF                                  uaGGCAUAUUUUUUuCCcuCaGAUAUAGCGUAaUGAuGagAGCCAUuUUA
+
+AE014075.1/1290089-1290256               AACUAUGCGCUUCGUUUUGCUGACUGGCAACUU.UGCCAGCACUGAACGA
+M29698.1/90-258                          AACUAUGCGCUUCGUUUUGCAGGUUGAUGUUUGUUAUCAGCACUGAACGA
+ABEJ01000009.1/157589-157755             AACUAUGCUCUUCGGUCUUCAAGCCUGUCAUACUGACUCGUCUUGAGCGA
+CP001144.1/2091931-2091764               AACUAUGCUCUUCGGUCUUCAAGCCUGUCAUACUGACUCGUCUUGAGCGA
+CP000034.1/1873400-1873232               AACUAUGCGCUUCGUUUUGCAGGUUGAUGUUCGUUAUCAGCACUGAACGA
+#=GC SS_cons                             ..........<<<<<<...<<<.<<<<<<.....>>>>>>..>>>>>>>>
+#=GC RF                                  AACUAUGCuCuuCGcuuUuCagGccggucaUagUgaccgguacuGagCGa
+
+AE014075.1/1290089-1290256               AAAUAAGGCUGUAACCCGCAAUGUGUGCGAAUUAUUGGCAAAAGGCAACC
+M29698.1/90-258                          AAAUAAAGCAGUAACCCGCAAUGUGUGCGAAUUAUUGGCAAAAGGCAACC
+ABEJ01000009.1/157589-157755             AAAUAAGUCUGUAACCCGCAAUGUGUGCGAAUUAU.GGCAAAAGGCAACC
+CP001144.1/2091931-2091764               AAAUAAGUCUGUAACCCGCAAUGUGUGCGAAUUAUUGGCAAAAGGCAACC
+CP000034.1/1873400-1873232               AAAUAAAGCAGUAACCCGCAAUGUGUGCGAAUUAUUGGCAAAAGGCAACC
+#=GC SS_cons                             >.........<<<<..<<<<.....>>>>..>>>>....<<<<<<<<.<<
+#=GC RF                                  aAAUAAauCaguaaCCCGCaAUGUGuGCGAAuuauUGGCaaaaGGCaACC
+
+AE014075.1/1290089-1290256               GCAGGCUGCCUUUUUCUUU
+M29698.1/90-258                          ACAGGCUGCCUUUUUCUUU
+ABEJ01000009.1/157589-157755             GCAGGCUGCUUUUCUUUGA
+CP001144.1/2091931-2091764               GCAGGCUGCCUUUUUCUUU
+CP000034.1/1873400-1873232               ACAGGCUGCCUUUUUCUUU
+#=GC SS_cons                             ...>>.>>>>>>>>.....
+#=GC RF                                  aCAGGCuGCCuuuuUCUUU
+//

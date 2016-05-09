@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00351
+#=GF ID   snoR20
+#=GF DE   Small nucleolar RNA R20
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD; Moxon SJ, Daub J
+#=GF GA   35.00
+#=GF TC   40.91
+#=GF NC   27.85
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   11469857
+#=GF RT   Identification of 66 box C/D snoRNAs in Arabidopsis thaliana:
+#=GF RT   extensive gene duplications generated multiple isoforms predicting
+#=GF RT   new ribosomal RNA 2'-O-methylation sites.
+#=GF RA   Barneche F, Gaspin C, Guyot R, Echeverria M;
+#=GF RL   J Mol Biol 2001;311:57-73.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   snoR20 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_R20
+#=GF SQ   4
+
+AC006413.4/30276-30369             AAGGAUGAAUAUGGAAUACAAUUG....GAACAUAAAAUUUGUCUUGA..
+AF317945.1/1-90                    AAGGAUGAU....GAAUACAAUUG....GUACAUAAAUUUAGUUGUGA..
+AL161547.2/22249-22338             AAGGAUGAU....GAAUACAAUUG....GUACAUAAAUUUAGUUGUGA..
+AC183492.1/43523-43620             GAGGAAGAU....GAAGAUAACUGAGAAGUAGAAAAUAUUAGUUUUGUUU
+#=GC SS_cons                       <<<...............................................
+#=GC RF                            AAgGAUGAa....GAAUACAAUUG....GaACAUAAAaUUaGUuuUGA..
+
+AC006413.4/30276-30369             AACUCACACGUUGAAAGUAGUAGAACAC..CAAUGAAUAUCUUAGCUGAU
+AF317945.1/1-90                    AACUCACAUGUUGAAAAAAGUAGAAUAC..CGAUGAAUAUCAAAGCUGAC
+AL161547.2/22249-22338             AACUCACAUGUUGAAAAAAGUAGAAUAC..CGAUGAAUAUCAAAGCUGAC
+AC183492.1/43523-43620             AACUCACAUGUUGAAACAAGUAGAAUAUAGCUAUGACUAUCAAAGUUGGU
+#=GC SS_cons                       .................................................>
+#=GC RF                            AACUCACAuGUUGAAAaaAGUAGAAuAC..CaAUGAAUAUCaaAGCUGAc
+
+AC006413.4/30276-30369             UU
+AF317945.1/1-90                    UU
+AL161547.2/22249-22338             UU
+AC183492.1/43523-43620             UU
+#=GC SS_cons                       >>
+#=GC RF                            UU
+//

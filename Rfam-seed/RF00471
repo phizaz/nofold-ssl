@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00471
+#=GF ID   snosnR48
+#=GF DE   Small nucleolar RNA snR48
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; ILM
+#=GF GA   45.00
+#=GF TC   50.65
+#=GF NC   39.23
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   10024243
+#=GF RT   A computational screen for methylation guide snoRNAs in yeast.
+#=GF RA   Lowe TM, Eddy SR;
+#=GF RL   Science 1999;283:1168-1171.
+#=GF CC   snR48 is a member of the C/D class of snoRNA which contain the C
+#=GF CC   (UGAUGA) and D (CUGA) box motifs. Most of the members of the box
+#=GF CC   C/D family function in directing site-specific 2'-O-methylation
+#=GF CC   of substrate RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snR48
+#=GF SQ   6
+
+CR382128.1/1675383-1675296             UUACA.AUGAUGAU.CCAAAUU........GCAUUU.UUUCUGGCAUCUC
+AE016819.4/1466124-1466229             UUUCACAUGAUGAU.CUAUUCU........AGCUUU.UUUCUGGCAUCUC
+CR382122.1/717566-717458               UUUCA.AUGAUGAC.UACAUCU........AGGUACAUUUCUGGCAUCUC
+CR380957.2/423517-423635               CUACA.AUGAUGACACUCAUAUUUUGUUACCUAUUU.UUUCUGGCAUCUC
+AF064261.1/1-113                       UCAUA.AUGAUGAU.UUCACUUAUACCUAUAUGUUU.UUUCUGGCAUCUC
+DQ115391.1/34856-34969                 UCAUA.AUGAUGAU.UUCACUUAUACCUAUAUGUUUUUUUCUGGCAUCUC
+#=GC SS_cons                           ..................................................
+
+CR382128.1/1675383-1675296             UAAUGUUAGCGUC.CUCCG...........G..GACCCGAUGAAUAUAA.
+AE016819.4/1466124-1466229             UAAUGUUAGGAUG.AGAAGUUUAAGUACUCUC.CAUUCGAUGAAUACAA.
+CR382122.1/717566-717458               UAAUGUUAGGGUG.G.GCGUUUAAGUACUUCU.CACUCGAUGAAUAGAAA
+CR380957.2/423517-423635               UAAUGCUAGAGCAGCGACGUUUAAGUACUUUCCUGCUCGAUGAAUAUAAA
+AF064261.1/1-113                       UAAUGUUAGGAUG.UGAAGUUUAAGUACUCUC.CAUUCAAUGAAUACAA.
+DQ115391.1/34856-34969                 UAAUGUUAGGAUG.CGAAGUUUAAGUACUCUC.CAUUCAAUGAAUACAA.
+#=GC SS_cons                           .........<<<<....................>>>>.............
+
+CR382128.1/1675383-1675296             UUUUU.AC.......UCUGAAA
+AE016819.4/1466124-1466229             CCUAUGAC...UAUAUCUGAAC
+CR382122.1/717566-717458               CCUUUAACCAUAAUAACUGAAA
+CR380957.2/423517-423635               CAAAUGAC.UACAAGACUGACA
+AF064261.1/1-113                       UUUUUGAC...AAUAUCUGAUU
+DQ115391.1/34856-34969                 UUUUUGAC...AAUAUCUGAUU
+#=GC SS_cons                           ......................
+//

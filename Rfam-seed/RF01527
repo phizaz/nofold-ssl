@@ -1,0 +1,35 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01527
+#=GF ID   CC3510
+#=GF DE   caulobacter sRNA CC3510
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Clustal_alifold;
+#=GF GA   18.00
+#=GF TC   18.45
+#=GF NC   11.97
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   18373523
+#=GF RT   Small non-coding RNAs in Caulobacter crescentus.
+#=GF RA   Landt SG, Abeliuk E, McGrath PT, Lesley JA, McAdams HH, Shapiro L;
+#=GF RL   Mol Microbiol. 2008;68:600-614.
+#=GF WK   http://en.wikipedia.org/wiki/Caulobacter_crescentus
+#=GF SQ   2
+
+CP000927.1/5059023-5058889             GCAAGGAAGAAACGAGCCCA.AAGAGAGCUCCCUUCCUUCGGCGUUUCGG
+CP001340.1/3781500-3781365             GCAAGGACGAAACGAGCCCACCAGAGAGCUCCCGUUCUUCGGCGUUUCGG
+#=GC SS_cons                           <.<<<<<<<....<<<<.<......>.>>>>.>>>>>>>><<<<<<<<..
+
+CP000927.1/5059023-5058889             GGAGGAAACGCCCACCUAGAUCGAAUGAUCGAGAAAUAGCCGGACCCGUC
+CP001340.1/3781500-3781365             GGAGGAAACGCCCGCCUAGAUCGAAUGAUCGAGAAAAUAGCCAGCCCGUC
+#=GC SS_cons                           ....>>>>>>>>...<<<<<<<<<....>>>>......<<<<<<<<<<<<
+
+CP000927.1/5059023-5058889             GCGAUUAUCCCCCGCGGCGGGUUUGGUGUAUCUGGC
+CP001340.1/3781500-3781365             GCGAUUAUCCCCCGCGGCGGGUUUGGUGUAUCUGGG
+#=GC SS_cons                           <<<.........>>>>>>>>>>>>>>>...>>>>>.
+//

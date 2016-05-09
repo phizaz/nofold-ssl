@@ -1,0 +1,62 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00387
+#=GF ID   IRES_FGF1
+#=GF DE   FGF-1 internal ribosome entry site (IRES)
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15314170
+#=GF SS   Published; PMID:15314170
+#=GF GA   20.00
+#=GF TC   23.34
+#=GF NC   19.17
+#=GF TP   Cis-reg; IRES;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000243 SO:internal_ribosome_entry_site
+#=GF DR   GO:0043022 GO:ribosome binding
+#=GF RN   [1]
+#=GF RM   15314170
+#=GF RT   Internal Ribosome Entry Site Structural Motifs Conserved among
+#=GF RT   Mammalian Fibroblast Growth Factor 1 Alternatively Spliced mRNAs.
+#=GF RA   Martineau Y, Le Bec C, Monbrun L, Allo V, Chiu IM, Danos O, Moine H,
+#=GF RA   Prats H, Prats AC;
+#=GF RL   Mol Cell Biol 2004;24:7622-7635.
+#=GF CC   This family represents the FGF-1 internal ribosome entry site (IRES). The
+#=GF CC   FGF-1 IRES is present in the 5' UTR of the mRNA and allows cap-independent
+#=GF CC   translation. It is thought that FGF-1 IRES activity is strictly controlled
+#=GF CC   and highly tissue specific [1].
+#=GF WK   http://en.wikipedia.org/wiki/FGF-1_internal_ribosome_entry_site_(IRES)
+#=GF SQ   6
+
+AC110730.10/34981-34820             GGCUCUAGGGG..UAAGGGCAUUGCCUGACGACUUUUCUGGAUGGACACU
+AF067191.1/1071-1232                GGCUCUAGGGGG.UAAGGGCAUUGC.UGACGACUUUUCUGGAUGGACACU
+AC120558.12/85564-85725             GGCUCUAGGGG..UAAGGGCAUUGCCUGACGACUUUUCUGGAUGGACACU
+Z14149.1/354-521                    CGCUCCAGGGGAAUCAGGGCAUCGC....CUCCUUUUCUGGGAGGACACU
+M60515.1/145-312                    CGCUCCAGGGGAAUCAGGGCAUCGC....CUCCUUUUCUGGGAGGACACU
+X59612.1/146-313                    CGCUCCAGGGGAAUCAGGGCAUCGC....CUCCUUUUCUGGGAGGACACU
+#=GC SS_cons                        .<<<<..<<<<..<<<<<<.....<....<<<<<.....>>>>>>.....
+
+AC110730.10/34981-34820             CCCUCCUAAUGGUGAAUGGAAACUCCCUUUCUC....AGUAGCCUCCUUG
+AF067191.1/1071-1232                CCCUCCUAAUGGUGAAUGGAAACUCCCUUUCUC....AGUAGCCUCCUUG
+AC120558.12/85564-85725             CCCUCCUAAUGGUGAAUGGAAACUCCCUUUCUC....AGUAGCCUCCUUG
+Z14149.1/354-521                    CCCUUCUGAUGGUGAAUGGGAACUCCCUUCCUCCUGCAGCAGCCUGCCUG
+M60515.1/145-312                    CCCUUCUGAUGGUGAAUGGGAACUCCCUUCCUCCUGCAGCAGCCUGCCUG
+X59612.1/146-313                    CCCUUCUGAUGGUGAAUGGGAACUCCCUUCCUCCUGCAGCAGCCUGCCUG
+#=GC SS_cons                        >>>><<<<..<<.<<<.<<<....>>>>>>..>>.<<<<<<<<....<<<
+
+AC110730.10/34981-34820             UAGUUCAUCCCGGUAGCCCAGUGUG...AUUGCAGCCGCUGCCACCACCC
+AF067191.1/1071-1232                UAGUUCAUCCCGGUAGCCCAGUGUG...AUUGCAGCCGCUGCCACCACCC
+AC120558.12/85564-85725             UAGUUCAUCCCGGUAGCCCAGUGUG...AUUGCAGCCGCUGCCACCACCC
+Z14149.1/354-521                    CAGCUG.UCCUGGUAGAACAGUGUGGACAUUGCAGAAGCUGUCACUGCCC
+M60515.1/145-312                    CAGCUG.UCCUGGUAGAACAGUGUGGACAUUGCAGAAGCUGUCACUGCCC
+X59612.1/146-313                    CAGCUG.UCCUGGUAGAACAGUGUGGACAUUGCAGAAGCUGUCACUGCCC
+#=GC SS_cons                        <<<.<<.<<<..............>>>>>>>>>>>..>>>>...>>>>..
+
+AC110730.10/34981-34820             .AGACAGGAAGCCUCCCAGAGC.
+AF067191.1/1071-1232                .AGACAGGAAGCCUCCCAGAGC.
+AC120558.12/85564-85725             .AGACAGGAAGCCUCCCAGAGC.
+Z14149.1/354-521                    CAGAAAGAAAGCACCCCAGAGCC
+M60515.1/145-312                    CAGAAAGAAAGCACCCCAGAGCC
+X59612.1/146-313                    CAGAAAGAAAGCACCCCAGAGCC
+#=GC SS_cons                        >>>>..>>.....>>>>.>>>>.
+//

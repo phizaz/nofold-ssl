@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02018
+#=GF ID   mir-1207
+#=GF DE   microRNA mir-1207
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   34.00
+#=GF TC   34.45
+#=GF NC   27.27
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000596
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [2]
+#=GF RM   18314482
+#=GF RT   The identification of microRNAs in a genomically unstable region
+#=GF RT   of human chromosome 8q24
+#=GF RA   Huppi K, Volfovsky N, Runfola T, Jones TL, Mackiewicz M, Martin
+#=GF RA   SE, Mushinski JF, Stephens R, Caplen NJ
+#=GF RL   Mol Cancer Res. 2008;6:212-221.
+#=GF RN   [3]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+AC026248.7/31021-31107                 GCAGGGCUGGCAGGGAGGCUGGGAGGGGCUGGCUGGGUCUGGUAGUGGGC
+AACZ02098681.1/10439-10354             .CAGGGCUGGCAGGGAGGCUGGGAGGGGCUGGCUGGGCCUGGUAGUGGGC
+ABGA01186596.1/3317-3403               GCAGGGCUGGCAGGGAGGCAGGGAGGGGCUGGCUGGGCCUGGUAGUGGGC
+#=GC SS_cons                           <<<<<<<<<.....<<<<....<<<<<.<..<<<<<<<<<......>>>>
+
+AC026248.7/31021-31107                 AUCAGCUGGCCCUCAUUUCUUAAGACAGCACUUCUGU
+AACZ02098681.1/10439-10354             AUCAGCUGGCCCUCAUUUCUUAAGACAGCACUUCUGU
+ABGA01186596.1/3317-3403               AUCAGCUGGCCCUCAUUUCUUAAGACAGCACUCCUGU
+#=GC SS_cons                           .>>>>>..>>>>>>...>>>>....>>>>...>>>>>
+//

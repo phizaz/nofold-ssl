@@ -1,0 +1,90 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01577
+#=GF ID   RNase_P
+#=GF DE   Plasmodium RNase_P
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:17901154
+#=GF GA   55.00
+#=GF TC   66.21
+#=GF NC   8.16
+#=GF TP   Gene; ribozyme;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000374 SO:ribozyme
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/Rnase_P
+#=GF SQ   2
+
+AE001362.1/767014-766389             UAUGCAAUGAGUUUAAGCUCAAAACAUCCUGCAAAUAUACAUACACAAAA
+ABGV01007094.1/642-28                UAUGCAAUGAGUUUAAGCUCAAAACAUCCUGCAAAUAUACAUACACAAAA
+#=GC SS_cons                         ...<<<<<<<<<<<<..<<<<<<<..<<<<<..........<<<<<<<..
+#=GC RF                              UAUGCaauGaguuuaAGCuCaaaaCAuCCuGCAAAUAUACAuaCaCaaAA
+
+AE001362.1/767014-766389             UGAAAGAAAGAAAUAAAAAAGAAAAAAGAAAAAAUGGAAAAAUAGGUCAC
+ABGV01007094.1/642-28                UGAAAGAAAGAAAUAAAAAAGAAAAAAGAAAAAAUGGAAAAAUAGGUCAC
+#=GC SS_cons                         ..................................................
+#=GC RF                              UGAAAGAAAGAAAUAAAAAAGAAAAAAGAAAAAAUGGAAAAAUAGGUCAC
+
+AE001362.1/767014-766389             AUAUUUGUAUGUUUCUUGUUUUUCCAUUUUUUUUUUUUUUUUUUUUUUUC
+ABGV01007094.1/642-28                AUAUUUGUAUGUUUCUUGUUUUUCCAUUUUUUUUUUUUUUUUUUUUUUUC
+#=GC SS_cons                         ..................................................
+#=GC RF                              AUAUUUGUAUGUUUCUUGUUUUUCCAUUUUUUUUUUUUUUUUUUUUUUUC
+
+AE001362.1/767014-766389             CUUUUUCUUUCUCCUAAUUUGUGUAAUUUUUAUAAAAACAGGAAGGAAGG
+ABGV01007094.1/642-28                CUUUUUCUUUCUCCUAAUUUGUGUAAUUUUUAUAAAAACAGGAAGGAAGG
+#=GC SS_cons                         ..................>>>>>>>.............>>>>>....AAA
+#=GC RF                              CUUUUUCUUUCUCCUAAUuuGuGuaAUUUUUAUAAAAACaGGaAGGAAGG
+
+AE001362.1/767014-766389             UCUGAGAUGCUGCAUUUAAAGAAUAGAAAAGAAAAGUCAAUGAAUUUUAA
+ABGV01007094.1/642-28                UCUGAGAUGCUGCAUUUAAAGAAUAGAAAAGAAAAGUCAAUGAAUUUUAA
+#=GC SS_cons                         .AAAAA<<<<<<<.....................................
+#=GC RF                              UCUGAGaugCuGCAUUUAAAGAAUAGAAAAGAAAAGUCAAUGAAUUUUAA
+
+AE001362.1/767014-766389             UUUUUUUUUUUUUUUUUUUUAUAAUUCUUAUGAAUUAAAAAGAAAGAAAA
+ABGV01007094.1/642-28                UUUUUU.........UUUUUAUAAUUCUUAUGAAUUAAAAAGAAAGAAAA
+#=GC SS_cons                         ..................................................
+#=GC RF                              UUUUUUUUUUUUUUUUUUUUAUAAUUCUUAUGAAUUAAAAAGAAAGAAAA
+
+AE001362.1/767014-766389             AAAAAGUUAUAACAUUCGUUGUUACUUUUUAUUUCACAUAUAUAUAUAUA
+ABGV01007094.1/642-28                AAAAAGUUAUAACAUUCGUUGUUACUUUUUAUUUCACAUAUAUAUA..UA
+#=GC SS_cons                         .....................................<<<<<<<<....>
+#=GC RF                              AAAAAGUUAUAACAUUCGUUGUUACUUUUUAUUUCACauauauauAUAUa
+
+AE001362.1/767014-766389             UAUAUAUUCUUUAAUAAAAUUUUUGAGAGAAAAUGUAUUGAACAAAUAUU
+ABGV01007094.1/642-28                UAUAUAUUCUUUAAUAAAAUUUUUGAGAGAAAAAGUAUUGAACAAAUAUU
+#=GC SS_cons                         >>>>>>>...........<<<<<<....>>>>>>..............<<
+#=GC RF                              uauauauUCUUUAAUAAAauuuuuGAGAgaaaauGUAUUGAACAAAUAuu
+
+AE001362.1/767014-766389             AAUUAGUUACCAGAAAUAUCAAUCAUAUAUUUAAAAUUUCGUAAGAAGUU
+ABGV01007094.1/642-28                AAUUAGUUACCAGAAAUAUCAAUCAUAUAUUUAAAAUUUCGUAAGAAGUU
+#=GC SS_cons                         <.<<<<<<...............<<<<<<<..<<<<<<<<....>>>>>>
+#=GC RF                              aAuuaGuuACCAGAAAUAUCAAUCauauauUUaaaauuuCGUAAGaaguu
+
+AE001362.1/767014-766389             UUGUGUAUGGUUUUGAAAAAGCUAAUAAGCAAGUAUACAUUGGUGAGUUC
+ABGV01007094.1/642-28                UUGUGUAUGGUUUUGAAAAAGCUAAUAAGCAAGUAUACAUUGGUGAGUUC
+#=GC SS_cons                         >>>>>>>>>..........>>>>>>>>>>>.>>>>>..............
+#=GC RF                              uuguguauGGUUUUGAAAAagCuaauaaGCAaGuauACAUUGGUGAGUUC
+
+AE001362.1/767014-766389             GAUUUUUGAGGUUUUUCUUUAUUCCUACAUCUCAUAUAUCAAUAUUUUUU
+ABGV01007094.1/642-28                GAUUUUUGAGGUUUUUCUUUAUUCCUACAUCUCAUAUAUCAAUAUUUUUU
+#=GC SS_cons                         ...>>>>>>><<<<<<<.................................
+#=GC RF                              GAUuuuuGaGguuuuuCUUUAUUCCUACAUCUCAUAUAUCAAUAUUUUUU
+
+AE001362.1/767014-766389             UUAUAAUUAUAUAUUAUACGAGGUGAUAAUAAGAAAAAUAACUUAAUUCA
+ABGV01007094.1/642-28                UUAUAAUUAUAUAUUAUACGAGGUGAUAAUAAGAAAAAUAACUUAAUUCA
+#=GC SS_cons                         ................................>>>>>>>.......aaaa
+#=GC RF                              UUAUAAUUAUAUAUUAUACGAGGUGAUAAUAAGaaaaauAACUUAAUUCA
+
+AE001362.1/767014-766389             GACUACUCCUAAAUUCAUUGCUGCAA
+ABGV01007094.1/642-28                GACUACUCCUAACUUCAUUGCUGCAA
+#=GC SS_cons                         aaaa.....>>>>>>>>>>>>.....
+#=GC RF                              GACUACUCCuaaauuCauuGCUGCAA
+//

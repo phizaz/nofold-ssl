@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01812
+#=GF ID   Pxr
+#=GF DE   Pxr regulatory sRNA
+#=GF AU   Moore B
+#=GF SE   Published; PMID:20489016
+#=GF SS   Published; PMID:20489016
+#=GF GA   100.00
+#=GF TC   119.88
+#=GF NC   10.35
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   20489016
+#=GF RT   Adaptive evolution of an sRNA that controls Myxococcus
+#=GF RT   development.
+#=GF RA   Yu YT, Yuan X, Velicer GJ;
+#=GF RL   Science. 2010;328:993.
+#=GF WK   http://en.wikipedia.org/wiki/Pxr_sRNA
+#=GF SQ   2
+
+AAMD01000048.1/41147-41039             AAGCGAGGCUGAAGGUGGUUCCCCCCCACCCCUUCAGCACUUCCGGUGAG
+CP000113.1/1258215-1258322             AAGCGAGGCUGAAGGCGGUUCCCCCCCACCCCUUCAGCACUUCCGGUGAG
+#=GC SS_cons                           ....<<<<<<<<<<<.<<<........>>>>>>>>>>>.>>>..<<<<..
+#=GC RF                                AAGcGAgGCuGaaGGcGGuUcccccccaCCCCuuCaGCccUUccGGuGAG
+
+AAMD01000048.1/41147-41039             UCACCUUUAGAAGAACCCGCGGCCCGGUACCCUCUUGGGGUAUCGGGCCG
+CP000113.1/1258215-1258322             UCACCUUGAGAAGA.CCCGCGGCCCGGCACCUCUUUGGGGUGUCGGGCCG
+#=GC SS_cons                           .>>>>...<<<<<.....<<<<<<<<<<<<<<.....>>>>>>>>>>>>>
+#=GC RF                                UCaCCUUgaGaaGA.ccgGCGGCCcGgCaCCucUUUGgGGuGuCGGGCCG
+
+AAMD01000048.1/41147-41039             CCUUCUUUU
+CP000113.1/1258215-1258322             CCUUCUUUU
+#=GC SS_cons                           >>>>>>...
+#=GC RF                                CcuuCuuUU
+//

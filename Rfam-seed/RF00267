@@ -1,0 +1,90 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00267
+#=GF ID   snoR64
+#=GF DE   Small nucleolar RNA R64/Z200 family
+#=GF AU   Moxon SJ, Daub J
+#=GF SE   INFERNAL
+#=GF SS   Predicted; PFOLD; Daub J
+#=GF GA   30.00
+#=GF TC   30.80
+#=GF NC   29.72
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol 2002;22:6663-6668.
+#=GF RN   [2]
+#=GF RM   12477388
+#=GF RT   Experimental RNomics: identification of 140 candidates for small
+#=GF RT   non-messenger RNAs in the plant Arabidopsis thaliana.
+#=GF RA   Marker C, Zemann A, Terhorst T, Kiefmann M, Kastenmayer JP, Green P,
+#=GF RA   Bachellerie JP, Brosius J, Huttenhofer A;
+#=GF RL   Curr Biol 2002;12:2002-2013.
+#=GF CC   This family of plant small nucleolar RNAs belong to the C/D class
+#=GF CC   of snoRNA which contain the C (UGAUGA) and D (CUGA) box
+#=GF CC   motifs. This family includes Arabidopsis thaliana snoRNA R64 and
+#=GF CC   Oryza sativa snoRNAs Z200 and J16. Most of the members of the box
+#=GF CC   C/D family function in directing site-specific 2'-O-methylation
+#=GF CC   of substrate RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_R64/Z200_family
+#=GF SQ   14
+
+AP004591.3/13337-13431                 AAAAAUGCUAUGAGGAAUCAUGAAA..ACUUUCGCAUGUCAGACUUCAGA
+AJ490459.1/2-95                        AAAAAGCAAUGAGGAAUCAUGAAA...ACUUUCGCAUGUCAGACUUCAGA
+AP004752.3/112622-112715               AAAAAGCAAUUAGGAAUCAUGAAA...ACGUUCGCAUGUCAGACUUCAGA
+AJ490465.1/2-92                        AAAAUGCUAUGAGGAAUCAUGAAA...ACUUUCGCAUGUCAGACUUCAGA
+AJ457082.1/314-407                     UUGUUGCGAGGAUGAAUUAUGAACA..AACUUCGCAUGUCAGACUUCGGA
+AM479394.1/455-360                     CUUCUGCGAUGAUGAAGUAUGAAAA..CAAUUCACAUGUCAGACUUCAGA
+AC138464.19/31802-31707                UUUUUGUGGUGAUAAUUAUAGAAGA..AAAUUCACAUCUCAGACUUUAGA
+AC138464.19/49742-49649                UUUCUGCAGUGAAGAAUGAAGAAGA..AAAUUCACAUGUUAGACUCUAGA
+AC147499.5/74642-74736                 GUAUUGCUGUGAUGAAUUAAGAAA...AAUUUCACAUGUCAGACUUCAGA
+AASG02003290.1/4244-4338               CUUCUGCGGUGAUGAAUUUAUGAAAACCAAUUCACAUGUCAGACUUCAGA
+AARH01002391.1/42426-42331             CUUCUGCAGUGAUGAAGUCAUGGAGUAAGAUCCACAUGUCAGACUUCAGA
+AF317987.1/2-93                        CUUCUGCGGUGAUGAUUUUAUGAG...AAAUUCACAUGUCAGACUUCAGA
+AF317988.1/2-96                        CUUCUGCUGUGAUGAUCUUUUGAAUA.AAAUUCACAUGUCAGACUUCAGA
+AC189232.1/54652-54754                 CUUGUGCUAUGAUGAUCUUUUGAAUA.AAAUUCACAUGUCAGACUUCAGA
+#=GC SS_cons                           <<<<<<<...........................................
+#=GC RF                                uuucuGCaguGAuGAAUuaagAAaA..AAaUUCaCAUGUCAGACUUcAGA
+
+AP004591.3/13337-13431                 GAUGCCAUGG.......CAUCAAUGAGAAGAU.GUUUUCAUUUU.CUGAG
+AJ490459.1/2-95                        GAUGCCAUGG.......CAUUAAUGAGAAGAU.GUUUUCAUUUU.CUGAG
+AP004752.3/112622-112715               GAUGCCAUGG.......CAUUAAUGAGAAGAU.GUUUUCAUUUU.CUGAG
+AJ490465.1/2-92                        GAUGCCAUGG.......CAUCAAUGAGAAGAU.GUUUUCAUUUU.CUGAG
+AJ457082.1/314-407                     GAUG.CUUCA....AAGCAUCCAUGAGAAGAC.AUGUCAUACGA.CUGAG
+AM479394.1/455-360                     GAUU.UUUAA......AAAUCUAUGAGAAGAA.AAUUCAUAUUUUCUGAG
+AC138464.19/31802-31707                GAUU.UUCAU.......GAUCAAUGAGAAUGUCAAUUCUUAUUCGCAAAG
+AC138464.19/49742-49649                GAUU.UUUAU.......GAUCAAUGAGAAUGG.CAACUUAUUCA.CUAAG
+AC147499.5/74642-74736                 GAUU.UUUAU.......AAUCAAUGAGAAUGACAAUUCUUAAUUUCUGAG
+AASG02003290.1/4244-4338               GAUU.CUU.C.......AAUCAAUGAGAAGAA.AUUUCAUACUU.CUGAG
+AARH01002391.1/42426-42331             GAUU.UUU.........AAUCGAUGAGAAGAGACUUCCAUAACUUCUGAG
+AF317987.1/2-93                        GAUU.CUUGU.......AAUCUAUGAGAAUAA..AUUCAUAUAU.CUGAG
+AF317988.1/2-96                        GAUC.UUU.U.......GAUCUAUGAGAAAAAACAUUCAUAAUU.CUGAG
+AC189232.1/54652-54754                 GAUU.CUUCUAAUUAAGAAUCCAUGAGAAUAAAUAUUCAUAAUU.CUGAG
+#=GC SS_cons                           <<<<.............>>>>............................>
+#=GC RF                                GAUg.uuUau.......cAUCAAUGAGAAuAa.aauUcauauuu.CUGAG
+
+AP004591.3/13337-13431                 CUUAUA
+AJ490459.1/2-95                        CUUAUA
+AP004752.3/112622-112715               CUUAUA
+AJ490465.1/2-92                        C...UU
+AJ457082.1/314-407                     CAA...
+AM479394.1/455-360                     CAGAAG
+AC138464.19/31802-31707                CAAAAA
+AC138464.19/49742-49649                CAGAAA
+AC147499.5/74642-74736                 CUGGAU
+AASG02003290.1/4244-4338               CAGAAG
+AARH01002391.1/42426-42331             CAGAAU
+AF317987.1/2-93                        CAGAAG
+AF317988.1/2-96                        CAGAAG
+AC189232.1/54652-54754                 CACAAG
+#=GC SS_cons                           >>>>>>
+#=GC RF                                Cagaaa
+//

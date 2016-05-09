@@ -1,0 +1,73 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00064
+#=GF ID   HgcG
+#=GF DE   HgcG RNA
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Predicted; PFOLD
+#=GF GA   52.00
+#=GF TC   63.08
+#=GF NC   44.32
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   12032319
+#=GF RT   Noncoding RNA genes identified in AT-rich hyperthermophiles.
+#=GF RA   Klein RJ, Misulovin Z, Eddy SR;
+#=GF RL   Proc Natl Acad Sci U S A 2002;99:7542-7547.
+#=GF CC   The HgcG ncRNA gene was identified computationally in AT-rich
+#=GF CC   hyperthermophiles. The genes were named hgcA through hgcG ("high GC") [1].
+#=GF CC   HgcG is of unknown function.
+#=GF CC   hgcG is significantly similar to a region of the Archaeoglobus fulgidus
+#=GF CC   genome. In a recent experimental screen for ncRNAs in A. fulgidus, this
+#=GF CC   locus was identified as the second-most abundant transcript (Afu-4)
+#=GF CC   (T.-H. Tang, J.-P. Bachellerie, H. Huber, M. Drungowski, T. Elge, J.
+#=GF CC   Brosius, and A. Hüttenhofer, personal communication in [1]).
+#=GF WK   http://en.wikipedia.org/wiki/HgcG_RNA
+#=GF SQ   4
+
+BA000001.2/1597364-1597639             UUCAAGUGAUAAUUACCUGAGGUCAACAUUAUAAAUGCUUAAGAUGUAAU
+AJ248284.1/75232-75504                 UUCAUUUUUGCUUCUUCCAUAGUCACUAUUAUAAAACUUCGGGUCUUAUU
+AF468963.1/1-277                       CUCAUAAUCUCUUUUUUUGAAGUCAACAUUAUAAACGUCUUA.AUGUAAA
+AP006878.1/462004-462277               CUGAUGGAAGCGAUUGCAGACCAUCAAUUUAUAAACCUGUCA.GUGGAGA
+#=GC SS_cons                           ..................................................
+#=GC RF                                uUcAUaaUuucUUuUUuuaaAGUcAauAUUAUAAAagUuuuagauuUAaa
+
+BA000001.2/1597364-1597639             UUUAC.AAUGCCCCCGCAAGCGAGGGCUUGGCCGAGCUUAAUGAGGCCAG
+AJ248284.1/75232-75504                 CUCAU..AUGCCCCCGCAAGCGAGGGCCUGGUCGA..UUAGUGAGACCAG
+AF468963.1/1-277                       AUAAUUAACGCCCCCGCAAGCGAGGGCUUGGCUGAUCUUAAUGAGGCCAG
+AP006878.1/462004-462277               AUAAA..AUGCCCCUGC..GCGAGGACCCCGGGGA...GAAUGAACCGGG
+#=GC SS_cons                           .........<<<<<<<<.........<<<<<<<...........>>>>>>
+#=GC RF                                aUaAUuAAuGCCCCCGCAAGcGAGGGCcuGGccGAucUUAaUGAggCCag
+
+BA000001.2/1597364-1597639             GUGCGACGCGGGGGCGACAGCCCGGCCUUAGCGAGGUCCCCUCGGGAGGC
+AJ248284.1/75232-75504                 GUGCGACGCGGGGGCUACAGCCCGGCCUCAGCGAGGUCCCCUCGGUAGGU
+AF468963.1/1-277                       GUGCGACGCGGGGGCAACAGCCCGGCCUCAGCGAGGUCCCCUCGGGAGGU
+AP006878.1/462004-462277               GGGCGAUGCGGGGGCAACAGCCCGGCCUCAGCGAGGUCCCCGCGGGAGG.
+#=GC SS_cons                           >......>>>>>>>>....<<<<<<<<....<<<<<...>>>>>......
+#=GC RF                                GUGcGAcGCGGGGGCaAcAGCCCGGCCUcAGCGaGGUccCCuCGGuAGGU
+
+BA000001.2/1597364-1597639             GCCUUCCGCGUCACGGAGUGCCGUGACCGGGGGUAACCCUGGCCGGGCA.
+AJ248284.1/75232-75504                 GCCUUCCGCGUCACGGAGCGCCGUGACCGGGGGUAACCCUGGCCGGGCA.
+AF468963.1/1-277                       GCCUUCCGCGUCACGGAGUGCCGUGACCGGGGGUAACCCUGGCCGGGCA.
+AP006878.1/462004-462277               GCCUUCCGCGUCCCGGAGCACGAUGACCGCGGGAAACCCAGGCCGGGCAC
+#=GC SS_cons                           .....<<..<<<<<<<....>>>>>>>.>>..........>>>>>>>>..
+#=GC RF                                GccUUCCGcGuCaCGGAGuGCCGuGaCcGGGGGUAAcccUGGCCGGGCA.
+
+BA000001.2/1597364-1597639             ....CAGGCCCGUCUGGGUUAGCCCGCCCAAUUUUGCCGAGG.GCUUAGA
+AJ248284.1/75232-75504                 ....CAGGCCCGUCUGGGUUAGCCCGCCUGAUCAUGCCGUUG.GCUUAGA
+AF468963.1/1-277                       ....CAGGCCCACCUGGGUUAGCCCGCCUGAGAAUGCAUACAUGCUACGA
+AP006878.1/462004-462277               AGUUCUGGCCCGCCAGGGUUAGCCCGCCCAAGGGUGGCGUACGCCUUCGA
+#=GC SS_cons                           ......<<<<<<<<<<......<<<<<<<......<<<...>.>>.....
+#=GC RF                                ....cAgGCCCgcCuGGGUUAGCCCGCCuGAuaAUGCcuauguGCUaaGA
+
+BA000001.2/1597364-1597639             UGAGGGCGGGUGUUACGGGCGGGCCACAGAUAA
+AJ248284.1/75232-75504                 UGAAGGCGGGUGUUACGGGCGGGCUACAGAUUC
+AF468963.1/1-277                       UGAGGGCGGGUGUUACGGGUGGGCCACAUAUAA
+AP006878.1/462004-462277               UGAGGGCGGGAGUUACCGGCGGGCCAUAUUCUC
+#=GC SS_cons                           ...>>>>>>>.....>>>>>>>>>>........
+#=GC RF                                UGAaGGCGGGUGUUACgGgcGGGCcAcAuAUaa
+//

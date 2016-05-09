@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01865
+#=GF ID   Vg1_ribozyme
+#=GF DE   Manganese dependent ribozyme in Vg1 mRNA
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:18753150
+#=GF GA   50.00
+#=GF TC   95.77
+#=GF NC   18.39
+#=GF TP   Gene; ribozyme;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000374 SO:ribozyme
+#=GF RN   [1]
+#=GF RM   18753150
+#=GF RT   A manganese-dependent ribozyme in the 3'-untranslated region of
+#=GF RT   Xenopus Vg1 mRNA.
+#=GF RA   Kolev NG, Hartland EI, Huber PW;
+#=GF RL   Nucleic Acids Res. 2008;36:5530-5539.
+#=GF WK   http://en.wikipedia.org/wiki/Vg1_ribozyme
+#=GF SQ   4
+
+CR855548.2/1536-1653             AAUGAUGAUGAUAAUGUAAUGU..GGU..........GAUU.........
+BC161554.1/1544-1661             AAUGAUGAUGAUAAUGUAAUGU..GGU..........GAUU.........
+BC090232.1/1587-1727             GAUGUUGUUAAUAAUAAUAUCUUAGAAGAACAUGGUAUAUAACCUGAUGA
+AF041844.1/1541-1679             AAUAAUAAUAAUAAUAAUAUCUUGGAAAAACAGGGUAUAUAAACCAUUGA
+#=GC SS_cons                     <<<<<<<<<...>>>>>>>>>.<<<<<<<.<<<<<<.....>>>..>>>.
+#=GC RF                          gauauuauuAAUaauaauaucUuagaagaACauGguAUAUAacCuaauGA
+
+CR855548.2/1536-1653             ...GCUCUGUUUCACUAAAAUGGGGUAGGGUACUGGCACUAUUCACUGCA
+BC161554.1/1544-1661             ...GCUCUGUUUCACUAAAAUGGGGUAGGGUACUGGCACUAUACACUGCA
+BC090232.1/1587-1727             CUUUU.CUAUUUCACUAAAAUUAGAUGAGGUGCUUGCACUAUUCACUGCA
+AF041844.1/1541-1679             CUCUUAUUAUUUCACUAAAAUUAGAUUAGGUACUUGCACAAUUCACUGCA
+#=GC SS_cons                     .>>>>.>>><<<<<.......<<<.<<<<<<<....>>>>..>>>>>>..
+#=GC RF                          cucuuAcuauuuCacUAAAAUuaGAugagGugcUUGcaCcAUucaCugcA
+
+CR855548.2/1536-1653             AAGAGGUAUACUCCUCAUAAAUGGAUAAAAUUGUCCUUAUGA
+BC161554.1/1544-1661             AAGAGGUAUACUCCUCAUAAAUGGAUAAAAUUGUCCUUAUGA
+BC090232.1/1587-1727             CAGAGGCGUAAUCCUCCAAUAUGAAAAUAAAAAAAUAUAUAA
+AF041844.1/1541-1679             CAGAG...UAAUCCUCCAAUAUGAAAAGAACAUUAAAAAAUA
+#=GC SS_cons                     ..<<<<......>>>>.....>>>>>................
+#=GC RF                          cAGaGgcgUAAUcCuCcAAUAuGaaaAuAAaAaaAaAaAaaA
+//

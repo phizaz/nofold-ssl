@@ -1,0 +1,78 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01084
+#=GF ID   TLS-PK3
+#=GF DE   Pseudoknot of tRNA-like structure
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   45.00
+#=GF TC   52.40
+#=GF NC   34.32
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00134
+#=GF DR   PKBASE; PKB00136
+#=GF DR   PKBASE; PKB00137
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   7214524
+#=GF RT   Near identity of 3- RNA secondary structure in bromoviruses and
+#=GF RT   cucumber mosaic virus.
+#=GF RA   Ahlquist P, Dasgupta R, Kaesberg P;
+#=GF RL   Cell. 1981;23:183-189.
+#=GF RN   [2]
+#=GF RM   6628363
+#=GF RT   Three-dimensional models of the tRNA-like 3' termini of some plant
+#=GF RT   viral RNAs.
+#=GF RA   Rietveld K, Pleij CW, Bosch L;
+#=GF RL   EMBO J. 1983;2:1079-1085.
+#=GF RN   [3]
+#=GF RM   1935928
+#=GF RT   tRNA-like structures. Structure, function and evolutionary
+#=GF RT   significance.
+#=GF RA   Mans RM, Pleij CW, Bosch L;
+#=GF RL   Eur J Biochem. 1991;201:303-324.
+#=GF RN   [4]
+#=GF RM   8289279
+#=GF RT   Solution structure of the 3'-end of brome mosaic virus genomic RNAs.
+#=GF RT   Conformational mimicry with canonical tRNAs.
+#=GF RA   Felden B, Florentz C, Giege R, Westhof E;
+#=GF RL   J Mol Biol. 1994;235:508-531.
+#=GF WK   http://en.wikipedia.org/wiki/Transfer_RNA-like_structures
+#=GF SQ   8
+
+AB194808.1/1958-2087             GUUGCCUUUGAGAGU.UACUCCUUGCUCUCUUCAGAAGUUCUC.......
+AB183261.1/1984-2112             GGUGCCUUUGAGAGU.UACUCUUUGCUCUCUUCGGAAGAACCC.......
+AF325738.1/2039-2167             GCUGCCCUUGGGUUU.UACUCCUUGAACCCUUCGGAAGAACUC.......
+AM183117.1/3235-3356             GGCACCUUUGAAACC.AUCUCCUAGGUUUCUUCGGAAGGAC.........
+D10044.1/3265-3405               GGUGCCUUUGAACCCUUUAUCCCGGGGUUCUUCGGAAGGUGAGACUUGUC
+AF127976.1/2067-2194             GGUACCCUUGAAAUC.ACCUCCUAGAUUUCUUCGGAAGGGCUUCG.....
+AM183114.1/3233-3357             GGUGCCUUUGAAACC.AUCUCCUAGGUUUCUUCGGAAGGAC.........
+AJ276479.1/3234-3353             GGCGCCUUUGAAACC.AUCUCCUAGGUUUCUUCGGAAGGAC.........
+#=GC SS_cons                     <<<<<<<..<<<<<<...AAAAAA>>>>>>.......<<<<<<.......
+#=GC RF                          GguGCCcUUGagacc.uacUCcUaggucuCUUCGGAAGgaCcc.......
+
+AB194808.1/1958-2087             ...UACC...GAGAACGUGCAG.UGGCUGUCA..UAGACAGCCU.UCAGA
+AB183261.1/1984-2112             ...UUAG...GGGUUCGUGCAU.GGGCUUGCA..UAGCAAGUCU..UAGA
+AF325738.1/2039-2167             ...UUUG...GAGUUCGUACCA.GUACCUCACAUAGUGAGGUAAUAAGAC
+AM183117.1/3235-3356             ...UUCG.....GUCCGUGUACUUCUAGCACA..ACGUGCUAGUUUCAGG
+D10044.1/3265-3405               CAUGUAGAGUCUCGCCGUGCAC.GGUAUCACAC.UGAUGAUACCUUCAGA
+AF127976.1/2067-2194             ...UGAG...AAGCUCGUGCAC.GGUAAUACAC.UGAUAUUACC..AAGA
+AM183114.1/3233-3357             ...UUCG.....GUCCGUGUACUUCUAGCACA..AGAUGCUAGUUUCAGG
+AJ276479.1/3234-3353             ...UUCG.....GUCCGUGUACUUCUAGCACA..AGGUGCUAGU.UUAGA
+#=GC SS_cons                     ..........>>>>>>..<<<<..<<<<<<.......>>>>>>.......
+#=GC RF                          ...uuaG...ggGucCGUGCac.gggcccacAa.ugaugggccu.uaAGA
+
+AB194808.1/1958-2087             CUGCGGGCAAC.GUCAGUUCCAUAAGGAACUGAUAAUCUCCAAAAGGAG
+AB183261.1/1984-2112             AUGCGGGUACCGUACAGUGUUGAAAAACACUGUAAAUCU.CUAAAAGAG
+AF325738.1/2039-2167             UGGUGGGCAG..CGCCUAGUCGAAAGACUAGGUG..AUC.UCUAAGGAG
+AM183117.1/3235-3356             GUACGGGUGCC.CCCCCAUU....UUCGUGGGGGCCUCC.AA.AAGGAG
+D10044.1/3265-3405               GUGCAGGCAUC.GCCUACGG..UUUUCCGUAGGU..UCC.CCCUAGGGG
+AF127976.1/2067-2194             GUGCGGGUAUC.GCCUGUGG..UUUUCCACAGGUUCUCC.AU.AAGGAG
+AM183114.1/3233-3357             GUACGGGCACC.CCCCCC.UCAUUUAAUGGGGGGCCUCC.UC.AAGGAG
+AJ276479.1/3234-3353             GUACGGGCAUC.CCCCCGUU.....UUGCGGGGGUCUCU.AA.AAGGAG
+#=GC SS_cons                     >>>>>>>>>>>.<<<<<<<<......>>>>>>>>.........aaaaaa
+#=GC RF                          guGCgGGCacC.ccCcgcgguaaaauccgcgGggaaucu.aaaAAGGAG
+//

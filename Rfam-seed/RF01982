@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01982
+#=GF ID   PYLIS_1
+#=GF DE   Pyrrolysine insertion sequence 1
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; CMfinder; Eberhardt R
+#=GF SS   Predicted; CMfinder;
+#=GF GA   50.00
+#=GF TC   61.51
+#=GF NC   16.29
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:1001268 SO:recoding_stimulatory_region
+#=GF DR   GO:0030631 GO:pyrrolysine incorporation
+#=GF RN   [1]
+#=GF RM   16164991
+#=GF RT   Evidence for the existence in mRNAs of a hairpin element responsible
+#=GF RT   for ribosome dependent pyrrolysine insertion into proteins.
+#=GF RA   Theobald-Dietrich A, Giege R, Rudinger-Thirion J;
+#=GF RL   Biochimie. 2005;87:813-817.
+#=GF WK   http://en.wikipedia.org/wiki/PYLIS_downstream_sequence
+#=GF SQ   4
+
+CP000300.1/884464-884379               GGACCAGAGACUUCCCUGUCAUCUCAGGGUAACAUCGCUUCCGACUGUGU
+AE010299.1/171964-171879               GGCCCGGAGACUUCCCUGUCUGCUCAGGGAAAUAUAUCCUCUGACUGCGU
+CP000099.1/1021652-1021737             GGCCCAGAGACCUCCCUGUCCGCUCAGGGAAAUAUUUCCGCUGACUGCGC
+AE008384.1/4063993-4064078             GGACCAGAGACUUCCCUGUCAGCUCAGGGAAAUAUAUCCUCUGACUGCAU
+#=GC SS_cons                           ......<<.<<<<<.<<<<<<<...<<<.........<<.<<<.......
+#=GC RF                                GGMCCAGAGACUUCCCUGUCWKCUCAGGGWAAUAUWUCYUCUGACUGYRU
+
+CP000300.1/884464-884379               CGGUGGCCAGAUGACAAGUGACAGCCACGAAGUAUC
+AE010299.1/171964-171879               UGGCGGCCAGAUCUCUUCGGAUAGCCACGAAGUCUC
+CP000099.1/1021652-1021737             CGGCGGAAUGACCUGCACGGACAGCCACGAGGUCUC
+AE008384.1/4063993-4064078             GGGAGGCCAGAUCUCAUCAGACAGCCACGAAGUGUC
+#=GC SS_cons                           >>>.>>.....>>>...>>>>>>>....>>>>>.>>
+#=GC RF                                YGGHGGMMWGAUCWCWWCDGAYAGCCACGAAGUMUC
+//

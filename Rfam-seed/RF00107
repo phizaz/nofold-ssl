@@ -1,0 +1,53 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00107
+#=GF ID   FinP
+#=GF DE   FinP
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Published; PMID:9917389
+#=GF GA   20.00
+#=GF TC   59.31
+#=GF NC   undefined
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000644 SO:antisense_RNA
+#=GF RN   [1]
+#=GF RM   9917389
+#=GF RT   Degradation of FinP antisense RNA from F-like plasmids: the
+#=GF RT   RNA-binding protein, FinO, protects FinP from ribonuclease E.
+#=GF RA   Jerome LJ, van Biesen T, Frost LS;
+#=GF RL   J Mol Biol 1999;285:1457-1473.
+#=GF RN   [2]
+#=GF RM   14633993
+#=GF RT   FinO is an RNA chaperone that facilitates sense-antisense RNA
+#=GF RT   interactions.
+#=GF RA   Arthur DC, Ghetu AF, Gubbins MJ, Edwards RA, Frost LS, Glover JN;
+#=GF RL   EMBO J 2003;22:6346-6355.
+#=GF CC   The FinOP system regulates the transfer of F-like plasmids.
+#=GF CC   FinP encodes an antisense RNA product that is complementary
+#=GF CC   to part of the 5' UTR of the traJ mRNA.  The traJ gene encodes
+#=GF CC   a protein required for transcription from the major transfer
+#=GF CC   promoter, pY.  The FinO protein is essential for effective
+#=GF CC   repression, acting by binding to FinP and protecting it from
+#=GF CC   RNase E degradation.
+#=GF WK   http://en.wikipedia.org/wiki/FinP
+#=GF SQ   6
+
+X55894.1/1036-958                  GAUACAUAGGAACCUCCUCACAAAGGAUUCUAUGGACAGUCGAUGCAGGG
+M20941.1/217-140                   GAUACAUAGGAACCUCCUCUCAAAGGAUUCUAUGGACAGUCGAUGCGGGG
+X55896.1/1041-966                  CACACAUAGGAACCUCCUCA..AAGGAUUCUAUG.ACAGUCGAUGCAGGG
+U01159.2/1039-961                  GAUACAUAGGAACCUCCUCACAAAGGAUUCUAUGGACAGUCGAUGCAGGG
+AF389529.1/1113-1037               GAUACACAGGAGCCUCCUCA..AAGGAUUCUAUGGGUAGUCGAUGCAGGG
+AE006471.1/61593-61518             GACACAUAGGAACCUCCUCA..AAGGAUUCUAUGGACAGUCGAUGCAGGG
+#=GC SS_cons                       ....<<<<<<<.<<<........>>>.>>>>>>>....<<<<<<<<<<<<
+
+X55894.1/1036-958                  AGGAGAGAA.CUCCCUGCAUCGGCGAUUUU
+M20941.1/217-140                   AGGUCGCU..CUCCCUGCAUCGGCGAUUUU
+X55896.1/1041-966                  AGG.GACAAGCUCCCUGCAUCGGCGAUUUU
+U01159.2/1039-961                  AGUUCACGU.CUCCCUGCAUCGGCGAUUUU
+AF389529.1/1113-1037               AGG.GACCAACUCCCUGCAUCGGCGAUUUA
+AE006471.1/61593-61518             AGU.GACAG.CUCCCUGUAUCGGCGAUUUA
+#=GC SS_cons                       <<........>>>>>>>>>>>>>>......
+//

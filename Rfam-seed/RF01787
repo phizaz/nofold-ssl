@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01787
+#=GF ID   drz-agam-1
+#=GF DE   drz-agam-1 riboswitch
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19965505
+#=GF SS   Published; PMID:19965505
+#=GF GA   50.00
+#=GF TC   80.32
+#=GF NC   34.90
+#=GF TP   Cis-reg; riboswitch;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000035 SO:riboswitch
+#=GF RN   [1]
+#=GF RM   19965505
+#=GF RT   Widespread occurrence of self-cleaving ribozymes.
+#=GF RA   Webb CH, Riccitelli NJ, Ruminski DJ, Luptak A;
+#=GF RL   Science. 2009;326:953.
+#=GF WK   http://en.wikipedia.org/wiki/Riboswitch
+#=GF SQ   5
+
+AAAB01008948.1/518160-518081             .GCUGGUAAAAUCCUUUCCCAACCUCCACGCGGUACCGGCUGGA.AUAUG
+AAAB01008963.1/187589-187670             GGCUGACAAAAUCCUAUCUCUACCUCCUCGUGGUGUCAGCCGGAA.UGU.
+AAAB01008963.1/177333-177414             GGCUGACAAAAUCCUAUCUCUACCUCCUCGUGGUGUCAGCCGGAA.UGUG
+ABKQ02020491.1/358-277                   GGCUGACAAAAUCCUUUCCCAACCUCCACGUGGUGUCGGCUGGAU.AAUG
+ABKQ02024829.1/1362-1282                 GGCUGACAAAACCCUGUCCCAACCUCCACGUGGUGUCGGCUGGAU.AAUG
+#=GC SS_cons                             <<..<<<<......>>>>>>..<<<<<...<<<<<...<<.<.<<.<<<<
+
+AAAB01008948.1/518160-518081             .CU.CAUAG.U.U.GAUGCAUAUACUGACAGGGAAGG
+AAAB01008963.1/187589-187670             GCAGUAUC.AG.U.ACUGCAUAUACCAACAGAGAGGG
+AAAB01008963.1/177333-177414             .CAGUAUC.AG.U.ACUGCAUAUACCAACAGAGAGGG
+ABKQ02020491.1/358-277                   .CAUUAGA.A.AUGU.UGCAUUUACCAACUGGGAAGG
+ABKQ02024829.1/1362-1282                 .CUGCAUU.A..UGU.UGCAUUUACCAACUGGGAAGG
+#=GC SS_cons                             ....>>>>.>..>.>..>>...>>>>>....>>.>>>
+//

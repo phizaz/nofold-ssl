@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00074
+#=GF ID   mir-29
+#=GF DE   mir-29  microRNA precursor
+#=GF AU   Griffiths-Jones SR, Daub J
+#=GF SE   INFERNAL
+#=GF SS   Predicted; PFOLD
+#=GF GA   36.00
+#=GF TC   39.00
+#=GF NC   34.36
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000009
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   11779458
+#=GF RT   microRNAs: tiny regulators with great potential.
+#=GF RA   Ambros V;
+#=GF RL   Cell 2001;107:823-826.
+#=GF CC   This family represents the microRNA (miRNA) precursors mir-29.
+#=GF CC   This miRNA has been predicted or confirmed in a wide range of
+#=GF CC   species (MIPF:MIPF0000009). Animal miRNAs are transcribed as
+#=GF CC   ~70nt precursors and subsequently processed by the Dicer enzyme
+#=GF CC   to give a ~22nt product.  In this case the mature sequence comes
+#=GF CC   from the 3' arm of the precursor.  The extents of the hairpin
+#=GF CC   precursors are not generally known and are estimated based on
+#=GF CC   hairpin prediction.  The products are thought to have regulatory
+#=GF CC   roles through complementarity to mRNA.
+#=GF WK   http://en.wikipedia.org/wiki/mir-29_microRNA_precursor
+#=GF SQ   10
+
+BX323868.6/63999-64062               AUGA..CUGAUUUCCUUUGGUG.CUUAGAGU...CCCAUCUGUCAUCUAG
+BX001041.6/158851-158788             UUGA..CCGAUUUCUUUUGGUG.UUCAGAGU...CUUUUGGGGUUUCUAG
+CR749762.6/80332-80264               GCGUGACUGAUUUCCUCUGGUG.UUCAGAGUGGACUGGGUUU..UUCUAG
+BX465862.7/161280-161350             CAGAUGCUGGUUUCACAUGGUGGUUUAGAUGUGUUCUACCAA.AGUCUAG
+BX001041.6/159008-158937             UGGAAGCUGGUUUCAAGUGGUGUUUUAGAGUGCUGAUCAAAUGAAUCUAG
+BC058715.1/4089-4150                 CUGA..CCGAUUUCUCCUGGUG.UUCAGAGU.....CUGUUUUUGUCUAG
+AC024913.33/28763-28700              AUGA..CUGAUUUCUUUUGGUG.UUCAGAGU...CAAUAGAAUUUUCUAG
+AF480542.1/5-75                      AGGAAGCUGGUUUCAUAUGGUGGUUUAGAUUUAAAUAGUGAU.UGUCUAG
+AF480543.1/5-76                      UGGAAGCUGGUUUCACAUGGUGGCUUAGAUUUUUCCAUCUUUGUAUCUAG
+AY865998.1/352-415                   AUGA..CUGAUUUCUUUUGGUG.UUCAGAGU...CAAUAUAAUUUUCUAG
+#=GC SS_cons                         <<<<..<<<<<<<<...<<<<<....<<<<..............>>>>..
+
+BX323868.6/63999-64062               CACCAUUUGAAAUCGG..UUAU
+BX001041.6/158851-158788             CACCAUUUGAAAUCGG..UUAC
+CR749762.6/80332-80264               CACCAUUUGAAAUCGGUCGUGC
+BX465862.7/161280-161350             CACCAUUUGAAAUCAGUGUUCU
+BX001041.6/159008-158937             CACCAUUUGAAAUCAGUGUUCU
+BC058715.1/4089-4150                 CACCAUUUGAAAUCGG..UUAU
+AC024913.33/28763-28700              CACCAUCUGAAAUCGG..UUAU
+AF480542.1/5-75                      CACCAUUUGAAAUCAGUGUUCU
+AF480543.1/5-76                      CACCAUUUGAAAUCAGUGUUUU
+AY865998.1/352-415                   CACCAUCUGAAAUCGG..UUAU
+#=GC SS_cons                         >>>>>...>>>>>>>>..>>>>
+//

@@ -1,0 +1,23 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01103
+#=GF ID   UPD-PKc
+#=GF DE   Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   35.00
+#=GF TC   42.77
+#=GF NC   30.21
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://wwwbio.leidenuniv.nl/~Batenburg/pkbget.html
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF WK   http://en.wikipedia.org/wiki/UPSK_RNA
+#=GF SQ   2
+
+AJ298069.1/3470-3498             UCUGUUUUUCGAACAGAUGUAAAUCGGAG
+AF146278.1/6828-6856             UCUGUUUUUCGAACAGAUGUAAAUCGAAG
+#=GC SS_cons                     <<<<<.AAAAAA>>>>>......aaaaaa
+//

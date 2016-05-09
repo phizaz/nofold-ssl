@@ -1,0 +1,69 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00172
+#=GF ID   CAESAR
+#=GF DE   ctgf/hcs24 CAESAR
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Published; PMID:11032028
+#=GF GA   20.00
+#=GF TC   24.39
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   10350062
+#=GF RT   Involvement of cis-acting repressive element(s) in the
+#=GF RT   3'-untranslated region of human connective tissue growth factor gene.
+#=GF RA   Kubota S, Hattori T, Nakanishi T, Takigawa M;
+#=GF RL   FEBS Lett 1999;450:84-88.
+#=GF RN   [2]
+#=GF RM   11032028
+#=GF RT   Identification of an RNA element that confers post-transcriptional
+#=GF RT   repression of connective tissue growth factor/hypertrophic
+#=GF RT   chondrocyte specific 24 (ctgf/hcs24) gene: similarities to retroviral
+#=GF RT   RNA-protein interactions.
+#=GF RA   Kubota S, Kondo S, Eguchi T, Hattori T, Nakanishi T, Pomerantz RJ,
+#=GF RA   Takigawa M;
+#=GF RL   Oncogene 2000;19:4773-4786.
+#=GF RN   [3]
+#=GF RM   12674494
+#=GF RT   Conserved repressive regulation of connective tissue growth
+#=GF RT   factor/hypertrophic chondrocyte-specific gene 24 (ctgf/hcs24) enabled
+#=GF RT   by different elements and factors among vertebrate species.
+#=GF RA   Mukudai Y, Kubota S, Takigawa M;
+#=GF RL   Biol Chem 2003;384:1-9.
+#=GF CC   The 3' UTR of human connective tissue growth factor/hypertrophic
+#=GF CC   chondrocyte specific 24 (ctgf/hcs24) mRNA has been shown to
+#=GF CC   repress ctgf gene expression [1].  Reference [2] identified a
+#=GF CC   minimal RNA element, predicted to form a stable secondary
+#=GF CC   structure, which acts as a post-transcriptional cis-acting
+#=GF CC   element of structure-anchored repression (CAESAR), probably
+#=GF CC   through direct interactions with as yet unknown nuclear factors.
+#=GF WK   http://en.wikipedia.org/wiki/ctgf/hcs24_CAESAR
+#=GF SQ   9
+
+U43523.1/3405-3479               AUGGAGACAUGGCAU...AGAGGCAGA....GAAACACACUUCAA.....
+AF463517.1/1097-1169             AUGGAGACAUGGCAU...AAAGGCA......GAAGGAGACGCUAACU...
+AJ298335.1/1190-1262             AUGGAGACAUGGCAU...AAAGCCA......GAAGGAGACGCUAACU...
+M70641.1/2922-3001               ACGGAGACAUGGCGU...AAAGCCAGGAA..GUAAGGGACACGAACUCAU
+AB023068.1/1240-1320             AUGGAGACAUGGCGU...AAAGCCAGGGA..GUAAGGGACACGAACUCAU
+X78947.1/1179-1258               ACGGAGACAUGGCAU...GAAGCCAGAGA..GUGAGAGACAUUAACUCAU
+AF309555.1/3099-3180             AUGGAGACAUGGCCU...AAAGCCAGAGACAGUGAGACACGUGAACAUUU
+U70060.1/1239-1321               AUGGAGACAUGGCCU...AAAGCCAGAGAGAGUGAGAC.CAUGAACACUU
+U70060.1/1339-1423               CAGUAGCACAGGUUAUUUAAAGCCAGAGAGAGUGAGACCCAUGAACACUU
+#=GC SS_cons                     ...<<<<..<<<<........>>>>......<<<<...............
+
+U43523.1/3405-3479               ..AGACUUUUUCACUU.GAAAUAACUUUGCAUCUCAUUGC
+AF463517.1/1097-1169             ..AGAUUCUC.AACUU.GAACU.GAUUUGCAUCUCAUUUU
+AJ298335.1/1190-1262             ..AGAUUCUC.AACUU.GAACU.GAUUUGCAUCUCAUUUU
+M70641.1/2922-3001               U.AGACUAU..AACUU.GAACU.GAGUUGCAUCUCAUUUU
+AB023068.1/1240-1320             UUAGACUAU..AACUU.GAACU.GAGUUACAUCUCAUUUU
+X78947.1/1179-1258               U.AGACUGG..AACUU.GAACU.GAUUCACAUCUCAUUUU
+AF309555.1/3099-3180             U.AGGCUGU..CACUU.GAAUC.GAUUCACAUCUCAUUUU
+U70060.1/1239-1321               G.AGACUGU..CACUUUGAACUUGAUUCACAUCUCAUUUU
+U70060.1/1339-1423               G.AGACUGU..CACUU.GAACU.GAUUCACAUCUCAUUUU
+#=GC SS_cons                     ..........................>>>>.>>>>.....
+//

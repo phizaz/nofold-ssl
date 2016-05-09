@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01591
+#=GF ID   snoR15
+#=GF DE   small nucleolar RNA snoR15
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:17901154
+#=GF GA   32.00
+#=GF TC   32.29
+#=GF NC   28.38
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+AASM01000120.1/2889-2759             UUUAUAUGAUGAGAAAAUUAAAUGGCGAUAUUGUAAUUU.AUUAUACUUA
+ABGY01002306.1/259-129               UUUAUAUGAUGAGAAAAUUAAAUGGCGAUAUUGUAAUUU.AUUAUACUUA
+ABGZ01005962.1/1153-1020             CUCAUAUGAUGAGGAAAUUAAACGGCGAUAUUGUACUUUCAUUAUCCCUA
+#=GC SS_cons                         ...<......<.............<<..<<<<...<<<<...<<<<<.<<
+#=GC RF                              UUUaUAUGAUGAGAAAAUUAAAUGGCGAuauuGUAauuu.AUuauaCUua
+
+AASM01000120.1/2889-2759             CUUUUAAUUCUUUGAAAGUAUGUAUAUA.AAAUAAUGA.AGUGAAUGAGC
+ABGY01002306.1/259-129               CUUUUAAUUCUUUGAAAGUAUGUAUAUA.AAAUAAUGA.AGUGAAUGAGC
+ABGZ01005962.1/1153-1020             CUUCUUAAUCUCUGAAAGUAUGUAUAUAAAAAUAAUGAAAGUGAAUGAGG
+#=GC SS_cons                         <<<<<<<....>>>>>>>>>.>>>>>...>>>>......>>>>.....>>
+#=GC RF                              CuuuuaaUUCUuugaaaGuaUGuauaUA.aaauAAUGA.agugAAUGAGC
+
+AASM01000120.1/2889-2759             GUCAAAAAAAUGAGUAGUUUUCAAUCUGAUAAAA
+ABGY01002306.1/259-129               GUCAAAAAAAUGAGUAGUUUUCAAUCUGAUAAAA
+ABGZ01005962.1/1153-1020             GCCAAAAAAAUGAGUAGUUCUCAAUCUGAUAAAA
+#=GC SS_cons                         .........................>...>....
+#=GC RF                              GUCAAAAAAAUGAGUAGUUUUCAAUCUGAuAAAA
+//

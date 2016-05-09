@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00795
+#=GF ID   mir-43
+#=GF DE   microRNA mir-43
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   30.00
+#=GF TC   54.94
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000234
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+AAGD02000348.1/78685-78788                 AAAGAGGCGAUUCUGCCCGUGACAACAAGAAACUUGUGAUU.AUGCCUAG
+Z70213.1/12528-12626                       UAUUGGCACUAGUCGCCCGUGACAUCAAGAAACUAGUGAUU.AUGCCAAA
+ABEG01018919.1/5966-5860                   AAAGUGGUGUCACUGCCCGUGAUAUCAAGGAACUUGUGAUUUAUGCCAUA
+CAAC02000450.1/2292316-2292219             AAGAGGCGAUU.CUGCCCGUGACAUCAAGAUGCUUGUGAUU.AUGCGAAA
+#=GC SS_cons                               ....<<<<<<..<<<<<<<<<<<<.<<<<<<<<<.<<<<<..<<<<....
+#=GC RF                                    uAuaggcacuagccgcccgcgacaucaagaagcuagugauu.augcaAAA
+
+AAGD02000348.1/78685-78788                 AGAAUGAA.GAAGGGACAUAUCACAGUUUACUUGCUGUCGCAGGCGGUG.
+Z70213.1/12528-12626                       CC.......ACAGGGACAUAUCACAGUUUACUUGCUGUCGCGGGCGGUGC
+ABEG01018919.1/5966-5860                   ACUAACAUAACCUCGACAUAUCACAGUUUACUUGCUGUCGCAGGCAGGUG
+CAAC02000450.1/2292316-2292219             AU.......GUUGGGACAUAUCACAGUUUACUUGCUGUCGCAGGCGGAUU
+#=GC SS_cons                               ..............>.>>>>>>>>>>>>>.>>>>.>>>>>>>>>>>>...
+#=GC RF                                    au.......auagggAcauaucacagcuuAcuugcugucgcgggcggaau
+
+AAGD02000348.1/78685-78788                 UCAUCUG
+Z70213.1/12528-12626                       UGAGUUU
+ABEG01018919.1/5966-5860                   UUACUGA
+CAAC02000450.1/2292316-2292219             AUUGCUA
+#=GC SS_cons                               >>>>>>.
+#=GC RF                                    agugccA
+//

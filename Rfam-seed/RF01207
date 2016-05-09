@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01207
+#=GF ID   snR73
+#=GF DE   Small nucleolar RNA snR73
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   25.00
+#=GF TC   28.17
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   snornadb; snR73
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   5
+
+CR382124.1/957592-957696                 GUUUAUGAUGAUUAUCCACUU...UUCACGACGGUCAGCUGUUAUCCCCG
+CR380959.2/770154-770049                 GUUUAUGAUGAUU.ACCACUUAUUAUCACGACGGUCAACUGCGUUCUUCG
+AACF01000013.1/100163-100061             GUUUAUGAUGAUU.UAAUUUU...AUCACGACGGUCAACUGUGUUCUUCU
+AJ010796.1/1-103                         GUUUAUGAUGAUU.UCCACAU...UUCACGACGGUCAACUGCGUUUUUCG
+AAZN01000292.1/2511-2408                 GUUUAUGAUGAAUUUACUUUU...AUCACGACGGUCAACUGCGUUUCUUU
+#=GC SS_cons                             ..................................................
+#=GC RF                                  guUUAUGAUGAUU.uccAcuU...aUCACGACGGUCAACUGuguUcuuCG
+
+CR382124.1/957592-957696                 A.AAUGUUUAUUUGGG.GAUGUUGAUGAUAUUUUGCCUGUGACAGGGCGU
+CR380959.2/770154-770049                 A.U.UGUUUAUCUUAG.AACUUUGAUGAUAUUCUGCCUGUGACAGGGCGU
+AACF01000013.1/100163-100061             ACU.UGUUUAUUGAAG.AACGUUGAUGAUAUUU.GCCUGUGACAGGGCAU
+AJ010796.1/1-103                         A.A.UGUUUAUCGAUU.AACUUUGAUGAUAUUUCGCCUGUGACAGGGCGU
+AAZN01000292.1/2511-2408                 ACC.UGUUUAAUUAAGAAACUUUGAUGAUAACU.GCCUGUGACAAGGCAU
+#=GC SS_cons                             ..................................................
+#=GC RF                                  A.a.UGUUUAUuuaaG.AAcgUUGAUGAUAUUUuGCCUGUGACAGGGCGU
+
+CR382124.1/957592-957696                 GGUACUGAUU
+CR380959.2/770154-770049                 GGAACUGAUU
+AACF01000013.1/100163-100061             UGAUCUGAUC
+AJ010796.1/1-103                         GGUACUGAGC
+AAZN01000292.1/2511-2408                 GAUACUGA.C
+#=GC SS_cons                             ..........
+#=GC RF                                  GGaACUGAuc
+//

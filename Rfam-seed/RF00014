@@ -1,0 +1,65 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00014
+#=GF ID   DsrA
+#=GF DE   DsrA RNA
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Published; PMID:9770508
+#=GF GA   35.00
+#=GF TC   52.49
+#=GF NC   24.74
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000378 SO:DsrA_RNA
+#=GF RN   [1]
+#=GF RM   7534408
+#=GF RT   A small RNA acts as an antisilencer of the H-NS-silenced
+#=GF RT   rcsA gene of Escherichia coli.
+#=GF RA   Sledjeski D, Gottesman S;
+#=GF RL   Proc Natl Acad Sci USA 1995;92:2003-2007.
+#=GF RN   [2]
+#=GF RM   9770508
+#=GF RT   DsrA RNA regulates translation of RpoS message by an
+#=GF RT   anti-antisense mechanism, independent of its action as
+#=GF RT   an antisilencer of transcription.
+#=GF RA   Majdalani N, Cunning C, Sledjeski D, Elliott T, Gottesman S;
+#=GF RL   Proc Natl Acad Sci USA 1998;95:12462-12467.
+#=GF RN   [3]
+#=GF RM   15913835
+#=GF RT   Micros for microbes: non-coding regulatory RNAs in bacteria.
+#=GF RA   Gottesman S;
+#=GF RL   Trends Genet 2005;21:399-404.
+#=GF CC   DsrA RNA regulates both transcription, by overcoming transcriptional
+#=GF CC   silencing by the nucleoid-associated H-NS protein, and translation,
+#=GF CC   by promoting efficient translation of the stress sigma factor, RpoS.
+#=GF CC   These two activities of DsrA can be separated by mutation: the first
+#=GF CC   of three stem-loops of the 85 nucleotide RNA is necessary for RpoS
+#=GF CC   translation but not for anti-H-NS action, while the second stem-loop
+#=GF CC   is essential for antisilencing and less critical for RpoS translation.
+#=GF CC   The third stem-loop, which behaves as a transcription terminator, can
+#=GF CC   be substituted by the trp transcription terminator without loss of
+#=GF CC   either DsrA function. The sequence of the first stem-loop of DsrA is
+#=GF CC   complementary with the upstream leader portion of RpoS messenger RNA,
+#=GF CC   suggesting that pairing of DsrA with the RpoS message might be important
+#=GF CC   for translational regulation.
+#=GF WK   http://en.wikipedia.org/wiki/DsrA_RNA
+#=GF SQ   5
+
+CP000653.1/2739273-2739189             CCCACAUCAGAUUUCCUGGUGUAACGAAUU.UACAAGUGCUUCUUGCAUA
+CP000468.1/2032638-2032552             AACACAUCAGAUUUCCUGGUGUAACGAAUUUUUUAAGUGCUUCUUGCUUA
+M15749.1/155-239                       AACGCAUCGGAUUUCCCGGUGUAACGAAUU.UUCAAGUGCUUCUUGCAUU
+CP000857.1/1802194-1802277             CUCACAUCAGAUUUCCUGGUGUAACGAAUU.UUCAAGUGCUUCUUGCAUA
+AE005674.1/2025180-2025094             AACACAUCAGAUUUCCUGGUGUAACGAAUUUUUUAAGUGCUUCUUGCUUA
+#=GC SS_cons                           ...<<<<<<<.....>>>>>>>...<<<<<.<<<<<<<<.....>>>>>>
+#=GC RF                                aacaCauCgGAuuucCcGguGuAAcgaauu.uucauGugcuucuugCaug
+
+CP000653.1/2739273-2739189             AGCAAGUUCAUCCCGGU.CAUCCCC.AUGGCCGGGAUU
+CP000468.1/2032638-2032552             AGCAAGUUUCAUCCCGA.CCCCCUCAGGGUCGGGAUUU
+M15749.1/155-239                       AGCAAGUUUGAUCCCGA.CUCCUGC.GAGUCGGGAUUU
+CP000857.1/1802194-1802277             AGCAAGUUUGAUCCCG..ACCCGUA.GGGCCGGGAUUU
+AE005674.1/2025180-2025094             AGCAAGUUUCAUCCCGACACCCUCA.GGGUCGGGAUUU
+#=GC SS_cons                           >>.>>.>>>.<<<<<<<..<<.....>>.>>>>>>>..
+#=GC RF                                agcaaGuuuGauCCCGa.acCcuua.GgGuCGGGauuu
+//

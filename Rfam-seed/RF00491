@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00491
+#=GF ID   SVLPA
+#=GF DE   Simian virus 40 late polyadenylation signal (SVLPA)
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15024068
+#=GF SS   Published; PMID:15024068
+#=GF GA   21.00
+#=GF TC   27.27
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   15024068
+#=GF RT   Secondary structure as a functional feature in the downstream region
+#=GF RT   of mammalian polyadenylation signals.
+#=GF RA   Wu C, Alwine JC;
+#=GF RL   Mol Cell Biol 2004;24:2789-2796.
+#=GF CC   This family represents the simian virus 40 late polyadenylation signal
+#=GF CC   (SVLPA). SVLPA is a structured element which promotes efficient
+#=GF CC   polyadenylation [1].
+#=GF WK   http://en.wikipedia.org/wiki/Simian_virus_40_late_polyadenylation_signal_(SVLPA)
+#=GF SQ   6
+
+AB058960.1/142-196               CAACAAUUGCAUUCAUUUUAUGUUUCAGGUUCAGGGGGAGGUGUGGGAGG
+Z96177.1/274-328                 CAACAAUUGCAUUCAUUUUAUGUUUCAGGUUCANGGGGAGGUGUGGGANG
+X89399.1/2743-2797               CAACAAUUGCAUUCAUUUUAUGUUUCAGGUUCAAGGGGAGAUGUGGGAGG
+AF180737.1/2602-2650             CAACAAUUGCAUUCAUUUUAUGUUUCAGGUUCAGGGGGAGGUG......G
+AF180739.1/102-150               CANCAAUUGCAUUCAUUUUAUGUUUCAGGUUCAGGGGGAGGUG......G
+AF180738.1/102-156               CAACAANNGCAUUCAUUUUAUGUUUCAGGUUCAGGGGGAGGUGUGGGAGG
+#=GC SS_cons                     ......<<<<<<<..<<<<...............>>>>.>>>>>>>....
+
+AB058960.1/142-196               UUUUU
+Z96177.1/274-328                 UUUUU
+X89399.1/2743-2797               UUUUU
+AF180737.1/2602-2650             UUUUU
+AF180739.1/102-150               UUUUU
+AF180738.1/102-156               UUUUU
+#=GC SS_cons                     .....
+//

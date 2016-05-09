@@ -1,0 +1,52 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00315
+#=GF ID   snoJ33
+#=GF DE   Small nucleolar RNA J33
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; Moxon SJ
+#=GF GA   20.00
+#=GF TC   25.13
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   J33 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_J33
+#=GF SQ   5
+
+AY220665.1/1-80                    CUGUGAGGGGAAUGAUGUACUACUAUGAAGCUCUCAAGAUGCUGACAUUU
+AK120402.1/2723-2803               CUGUGAGGGGAAUGAUGUACUACUACAGGGCUCUCAAGAUGCUUGCUUUU
+AM450233.2/10563-10483             CUGUAAGGGGAAUGAUGUAUUAUUAUCGAGCUCUCAAGAUGCUGGCCUAU
+AARH01010162.1/358-438             CUGUGAGGGGAAUGAUGUAUUAUUACCGUGCUCUUAAGAUGCUGGCUUUU
+AF071527.1/15699-15624             UCGU....GGGAUGAUGUACUACUACCGGGCUCUUAAGAUGCUCGCUUUU
+#=GC SS_cons                       <<<<<<............................................
+#=GC RF                            CcGugaGGGGAAUGAUGUACUACUAcaggGCUCUcAAGAUGCUugCuUUU
+
+AY220665.1/1-80                    CUUGAUUCUGCAUCUGAACAUGAC.UUACGG
+AK120402.1/2723-2803               CUUGAUAAUGCAUCUGAAGUAGAAAUUACAG
+AM450233.2/10563-10483             CUCGAUUCUGCAUCAGAAAAGGACAUUGAAG
+AARH01010162.1/358-438             CUUGAUUCUGCCUCGGAGAUGGACAUUAAAG
+AF071527.1/15699-15624             CUUGACUCUGCGUCUGAAAUGGAC.AUUCGG
+#=GC SS_cons                       .........................>>>>>>
+#=GC RF                            CUUGAuucUGCAUCUGAAauaGAc.uuaCgG
+//

@@ -1,0 +1,85 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00606
+#=GF ID   SNORD93
+#=GF DE   Small Nucleolar RNA SNORD93
+#=GF AU   Daub J
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold; Daub J
+#=GF GA   30.00
+#=GF TC   31.47
+#=GF NC   26.39
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   snoRNABase; HBII-336
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Loxodonta_africana300350
+#=GF DR   snoopy; Cavia_porcellus300509
+#=GF RN   [1]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol. 2002;22:6663-6668.
+#=GF RN   [2]
+#=GF RM   11387227
+#=GF RT   RNomics: an experimental approach that identifies 201 candidates for
+#=GF RT   novel, small, non-messenger RNAs in mouse.
+#=GF RA   Huttenhofer A, Kiefmann M, Meier-Ewert S, O'Brien J, Lehrach H,
+#=GF RA   Bachellerie JP, Brosius J;
+#=GF RL   EMBO J. 2001;20:2943-2953.
+#=GF RN   [3]
+#=GF RM   16381836
+#=GF RT   snoRNA-LBME-db, a comprehensive database of human H/ACA and C/D box
+#=GF RT   snoRNAs.
+#=GF RA   Lestrade L, Weber MJ;
+#=GF RL   Nucleic Acids Res. 2006;34:D158-D162.
+#=GF CC   The members of this family belong to the C/D class of snoRNAs
+#=GF CC   which contain the C (UGAUGA) and D (CUGA) box motifs. Most of the
+#=GF CC   members of the box C/D family function in directing site-specific
+#=GF CC   2'-O-methylation of substrate RNAs [1]. This family includes
+#=GF CC   mouse MBII-336 identified in [2]. The human orthologue HBII-336
+#=GF CC   (SNORD93) is predicted to guide the 2'O-ribose methylation of 18S
+#=GF CC   rRNA A576 [3].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD93
+#=GF SQ   15
+
+AAGU02122115.1/4064-4138                 UGGCCAAGGAUGAGAACUCUUAAUCUGAUUGGGCAUGCUUG...UGCUCU
+AAYZ01658959.1/746-819                   UGGCCAAGGAUGAGAACCC.UUUGCUGAUUCAGUUUGCUCC...UGCGCU
+AAKN02039012.1/62316-62388               UGGCCAAAGAUGAGAACUC.UAACCUGAAUGGCUGUGUU.C...UGCUCU
+AC117663.13/64140-64070                  UGGCCAAGGAUGAGAACUC.UAACCUGACUGGAUACGCU......GCUGU
+AC005682.2/110683-110610                 UGGCCAAGGAUGAGAACUC.UAAUCUGAUUUUAUGUGCUUC...UGCUGU
+AC146127.4/44893-44966                   UGGCCAAGGAUGAGAACUC.UAAUCUGAUUUUAUGUGCUUC...UGCUGU
+AAQR01509031.1/980-1048                  UGGCCAAGGAUGAGAACUC.UAAUCUGAUUGGAU.....UC...UGCUCU
+AAPY01584255.1/1738-1811                 UGGCCAAGGAUGAAAAUUC.UAAUCUGAUUUGCUAUGCUUC...UGCUCU
+AAEX02025002.1/349113-349184             UGGCCGAGGAUGAGAAAUC.UAAUCUGAUUGGAUAUGCU......UCUCU
+AANG01382327.1/4280-4351                 UGGCCAAGGAUGAGAACUCUUAAUCUGAUUGGAUAUGCU......UCUCU
+AAFC03129730.1/970-1042                  UGGCCAAGGAUGAGAACCC.UAAUCUGAUUGGAUACCCU.C...UGCUCU
+AANN01508855.1/934-1001                  UGGCCAAGGAUGAGAACUC.UAAUCUGAUUGGAUUUACU.........CU
+AALT01401044.1/674-745                   UGGCCAAGGAUGAGAACUC..AAUCUGA.UGGAUGUACUUC...CACUCU
+AAWR02014040.1/1918-1991                 UGGCCAAGGAUGAGAACUC.UAAUCUGAUUGGAUAUGCUUC...UGCUCU
+AAFR03047799.1/14502-14426               UGGCCAAGGAUGAAAACCA.CAGUCUGAUUGGGCAUGCUUUCCAUGCUCU
+#=GC SS_cons                             .<<<<.............................................
+#=GC RF                                  UGGCCAAGGAUGAGAACUC.UAAuCUGAuUuuAUauGCUuc...uGCUGU
+
+AAGU02122115.1/4064-4138                 GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AAYZ01658959.1/746-819                   GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AAKN02039012.1/62316-62388               GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AC117663.13/64140-64070                  GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AC005682.2/110683-110610                 GAUGG.AUUAAAGGAUUUACCUGAGGCCA
+AC146127.4/44893-44966                   GAUGG.AUUAAAGGAUUUACCUGAGGCCA
+AAQR01509031.1/980-1048                  GAUGG.AUUAAAGGAUUUACCUGAGGCCA
+AAPY01584255.1/1738-1811                 GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AAEX02025002.1/349113-349184             GAUGGCGUUGAAGGAUUUACCUGAGGCCA
+AANG01382327.1/4280-4351                 GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AAFC03129730.1/970-1042                  GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AANN01508855.1/934-1001                  GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AALT01401044.1/674-745                   GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AAWR02014040.1/1918-1991                 GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+AAFR03047799.1/14502-14426               GAUGG.GUUAAAGGAUUUACCUGAGGCCA
+#=GC SS_cons                             ........................>>>>.
+#=GC RF                                  GAUGG.aUUAAAGGAUUUACCUGAGGCCA
+//

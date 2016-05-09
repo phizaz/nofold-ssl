@@ -1,0 +1,40 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01236
+#=GF ID   snoU19
+#=GF DE   Small nucleolar RNA U19
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   30.00
+#=GF TC   32.95
+#=GF NC   24.23
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300151
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+AM466283.1/77958-77813                   AUUUGGCUUAGUUAGGAGGCACAAAUCAAAACAUAUGGAUCAAAAGUAUC
+AARH01005662.1/240390-240253             AGCUGGCUUAGUUAGGAGGCAGAAAUCAAAU....UAGAUCGAAAGAUGU
+AJ505662.1/1-144                         AUCUGGCUUAGUUAGGAGGCAUAAAUCAAUC....UUGAUCAUCAAUACU
+#=GC SS_cons                             ...<<.<<<......>>>.>>................<<<<<...<<<<<
+#=GC RF                                  AKCUGGCUUAGUUAGGAGGCASAAAUCAAAMcauaURGAUCRAMARWASY
+
+AM466283.1/77958-77813                   UUAGAUUGAUGCCUUGAUC.UUAAAAACUAAGGUCUUUUUGAGUGGACUC
+AARH01005662.1/240390-240253             UU....UGUCU..UCGGUCGUUUCAAUCUAAGGCCCGUUUGAGGGGACAA
+AJ505662.1/1-144                         UUACUGUAUUGUAUUGAUCUAUUUGACUUGAGGUCUUUUUGAGGAGGAGC
+#=GC SS_cons                             .......>>>>>..>>>>>........<<<<<<<...<<<<.<<<<<<<<
+#=GC RF                                  UUASWKURWYGYMUYGRUCKWUWMRAMCURAGGYCYKUUUGAGGRGRMRM
+
+AM466283.1/77958-77813                   UCUUGUUACUUUC.CCAUCAAUUGUCCUUCAAGCAGCCUUAGACAUUC
+AARH01005662.1/240390-240253             UUUUGCUCUUUUCAUUACCAGUUGUCCUCCAAGCAGCCUUUGACAUUC
+AJ505662.1/1-144                         UUUGCUUCUGCUAAGUAUCAAGCUUCUCCCAAGCAGCCUCAGACAUAU
+#=GC SS_cons                             <...................>>>>>>>>>>>>>..>>>>>>>......
+#=GC RF                                  UYUKSYUMYKYUMASYAYCARKYGUCCYCCAAGCAGCCUYAGACAUWC
+//

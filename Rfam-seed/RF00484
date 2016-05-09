@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00484
+#=GF ID   IRES_Cx32
+#=GF DE   Connexin-32 internal ribosome entry site (IRES)
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Published; PMID:10931843
+#=GF GA   22.00
+#=GF TC   44.47
+#=GF NC   20.39
+#=GF TP   Cis-reg; IRES;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000243 SO:internal_ribosome_entry_site
+#=GF DR   GO:0043022 GO:ribosome binding
+#=GF RN   [1]
+#=GF RM   10931843
+#=GF RT   Analysis of a Charcot-Marie-Tooth disease mutation reveals an
+#=GF RT   essential internal ribosome entry site element in the connexin-32
+#=GF RT   gene.
+#=GF RA   Hudder A, Werner R;
+#=GF RL   J Biol Chem 2000;275:34586-34591.
+#=GF CC   This family represents the connexin-32 internal ribosome entry site (IRES)
+#=GF CC   which allows cap independent translation during conditions such as heat
+#=GF CC   shock and stress [1].
+#=GF WK   http://en.wikipedia.org/wiki/Connexin-32_internal_ribosome_entry_site_(IRES)
+#=GF SQ   6
+
+AL683892.12/123280-123428             AUAUGACUCUCUAGCACCGGGAGGCGAUGAAUUGGGACGCAGGCGCG.A.
+M23565.1/710-859                      AUAUGACUCUCCAGCACCGGGAGGCGAUGAAUUGGGACGCAGGCGCG.A.
+BC022426.1/1-118                      ....................GCGGUGAUGAAUUGGGACGCAGGCGCGGAG
+L47127.1/400-550                      AUAUGACUCCCCAGCACCGGGCGGUGAUGAAUUGGGACGCAGGCGCGGAG
+S83323.1/50-200                       AUAUGACUCCCCAGCACCGGGCGGUGAUGAAUUGGGACGCAGGUGCGGAG
+AY303808.1/346-495                    AUAUGACUCCCCAGCACCGGGCGGCGAUGAAUUGGGACGCAGGCGCGGA.
+#=GC SS_cons                          ........<<<....<<<<<<..<<<.....<<<<<.<<<....>>>...
+
+AL683892.12/123280-123428             CCACAGGGACCACUCCCCCUACACAGACAUGAGACCAUAGGGGAGCUGUC
+M23565.1/710-859                      CCACAGGGACCACUCCCCCUACACAGACAUGAGACCAUAGGGGAGCUGUC
+BC022426.1/1-118                      CC.CAGGGACCACUCCCCCUGCACAGACAUGAGACCAUAGGGGACCUGUC
+L47127.1/400-550                      CC.CAGGGACCACUCCCCCUGCACAGACAUGAGACCAUAGGGGACCUGUC
+S83323.1/50-200                       CC.CAGGGACCACUCCCCCUGCACAGACAUGAGACCAUAGGGGACCUGUC
+AY303808.1/346-495                    CC.CAGGGACCACUCCCCCUGCACAGACAUGAGACCAUAGGGGACCUGUC
+#=GC SS_cons                          <<<<..<<<<...<<<<<.....................>>>>>...>>>
+
+AL683892.12/123280-123428             UGGGUGGCCUCAAGGAUAGGCGCUCCCCG.AGGUAACCGGGCUAUCU.GG
+M23565.1/710-859                      UGGGUGGCCUCAAGGAUAGGCGCUCCCCCGAGGUAACCGGGCUAUCU.GG
+BC022426.1/1-118                      UGGGUGGCCUCAGGGAUAGGCGCUCC......CCAAGG......UGU.GA
+L47127.1/400-550                      UGGGUGGCCUCAGGGAUAGGCGCUCCCCA.AGGUAAGAGGGCUUUGUUGA
+S83323.1/50-200                       UGGGUGGCCUCAGGGAUAGGCGCUCCCCA.AGGUAAGAGGGCUUUGUUGA
+AY303808.1/346-495                    UGGGUGGCCUCAGGGAUAGGCGCUCCCCA.AGGUAAUGGGGCUUUGUUGG
+#=GC SS_cons                          >..>>>>.>>>>>.......>>>..>>>...>>>....>>>.........
+
+AL683892.12/123280-123428             GUU
+M23565.1/710-859                      GUU
+BC022426.1/1-118                      AU.
+L47127.1/400-550                      GUU
+S83323.1/50-200                       GUU
+AY303808.1/346-495                    GUU
+#=GC SS_cons                          ...
+//

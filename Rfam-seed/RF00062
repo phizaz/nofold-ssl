@@ -1,0 +1,62 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00062
+#=GF ID   HgcC
+#=GF DE   HgcC family RNA
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Predicted; RNAalifold
+#=GF GA   20.40
+#=GF TC   20.45
+#=GF NC   20.21
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   12032319
+#=GF RT   Noncoding RNA genes identified in AT-rich hyperthermophiles.
+#=GF RA   Klein RJ, Misulovin Z, Eddy SR;
+#=GF RL   Proc Natl Acad Sci U S A 2002;99:7542-7547.
+#=GF CC   The HgcC ncRNA gene was identified computationally in AT-rich
+#=GF CC   hyperthermophiles. The genes were named hgcA through hgcG ("high GC").
+#=GF CC   HgcC is of unknown function. Two other homologues were detected called
+#=GF CC   HhcA and HhcB after "homologue of hgcC" [1].
+#=GF CC   This family contains a large number of putative archaeal matches to
+#=GF CC   the 3' end of the known ncRNAs.  Many of these partly overlap coding
+#=GF CC   regions.
+#=GF WK   http://en.wikipedia.org/wiki/HgcC_family_RNA
+#=GF SQ   5
+
+L77117.1/951852-951980               GAGGGCUG.UCUGACCCAGCCCG.....AUGAG...CUGAACCUGCCCUG
+AF447577.1/1-129                     GAGGGCUG.UCUGACCCAGCCCG.....AUGAG...CUGAACCUGCCCUG
+AF468965.1/1-126                     GAGGGUAGCUCUGACUCUGCCCG.....AUGAC...ACCAACCUGCCCUG
+AF468966.1/1-127                     GAGGGUGCCUCUGACCGUGCCCG.....AUGAC...ACCAACCUGCCCAA
+AE009950.1/754818-754978             GUGGUCUUUAC.GCCCAAGGGAGGGGUAAUGGGCCUGAGACCGGGCCC.U
+#=GC SS_cons                         ..........<<<<<<............................<<<<<.
+#=GC RF                              GAGGguuuuuCuGaCCaaGcCCG.....AUGAg...aagAACcuGCCCua
+
+L77117.1/951852-951980               UGACCUACCGGCGACGGUAGGGAGAAGGGUGUU.................
+AF447577.1/1-129                     UGACCUACCGGCGACGGUAGGGAGAAGGGUGUU.................
+AF468965.1/1-126                     UGACCUAUCGGCGACGAUAAGUAGCAGGGUGUU.................
+AF468966.1/1-127                     UGAAGCACGGGCGACCGUGGGGA...GGGUGUU.................
+AE009950.1/754818-754978             CGGGC......CGAAC...CGAAACC.GGUG..ACGGGAGUAGGUGGAUG
+#=GC SS_cons                         .....<<<<<....>>>>>......>>>>>....................
+#=GC RF                              uGAaccaccGgCGACggugaGaAacaGGGUGUU.................
+
+L77117.1/951852-951980               ......................CCCCGUGGGAACCUCCGAGCUUUAGCUC
+AF447577.1/1-129                     ......................CCCCGUGGGAACCUCCGAGCUUUAGCUC
+AF468965.1/1-126                     ......................CCGUGUUGGAACCUCCACCCUUUAGGU.
+AF468966.1/1-127                     ......................CCCUGUGGGAACCCUCGCCAUUCACGGC
+AE009950.1/754818-754978             AGAGCCCGCAAACCUCUCCCCGCCC.GUUGAAAGCCUCGCCCUUCAAGGC
+#=GC SS_cons                         ......................<<<...>>>...<<<<<<<<....>>>>
+#=GC RF                              ......................CCcuGUuGgAAcCccCGcCcUUuAgGgC
+
+L77117.1/951852-951980               GGAGAGGAGGUCAGCUUUUAACAUUUC
+AF447577.1/1-129                     GGAGAGGAGGUCAGCUUUUAACAUUUC
+AF468965.1/1-126                     GGAGAGAAGAUCAG...UUAAAAUUCC
+AF468966.1/1-127                     GAGGAGGAGGUCAGCUCCUCCACGUUC
+AE009950.1/754818-754978             GGGGAGGAGGUCAGGAGG.AGAUAACC
+#=GC SS_cons                         >>>>....>>>>>>.............
+#=GC RF                              GggGAGGAGGuCaGcauuUAaAaauuC
+//

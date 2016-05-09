@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00516
+#=GF ID   ylbH
+#=GF DE   ylbH leader
+#=GF AU   Barrick JE, Breaker RR
+#=GF SE   Barrick JE
+#=GF SS   Predicted; Barrick JE
+#=GF GA   28.00
+#=GF TC   38.63
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF CC   This family is a putative regulatory RNA structure that is found
+#=GF CC   upstream of the ylbH gene in B. subtilis and related low GC
+#=GF CC   Gram-positive bacteria.
+#=GF WK   http://en.wikipedia.org/wiki/ylbH_leader
+#=GF SQ   3
+
+AL009126.3/1569199-1569319             AUAAAAAAAUCCCCGCAGGCA..UCUGCGGGG...............UCC
+AE017355.1/3773586-3773470             AGAAAAAAAACCCUGC...AAA....GCAGGG...............CUC
+AE008691.1/1456779-1456662             AUAA......GGGAGGCCUAAAAAGGCUUCCCUUUUUAAAUUUUUAAUCC
+#=GC SS_cons                           ..........<<<<<<<<<....>>>>>>>>>...............<<<
+
+AL009126.3/1569199-1569319             UUCUAUUCCUUAAUAUGUUAAGGA.GAAGGCAAAGGGAGAGGAGAAACCG
+AE017355.1/3773586-3773470             UUCUUAUACUAGCAUGUACUAGUAAGAAGGCAAAGGGAGAGGAGAAACCG
+AE008691.1/1456779-1456662             AG....GCAGG.AGUUCG.CCUGC..CUGGA.CUGGGAGAGGAGAAAUUG
+#=GC SS_cons                           <<....<<<<<<......>>>>>>........>>>>>...........<<
+
+AL009126.3/1569199-1569319             GAGGAAGAACUUAUGGGGAAACGUAAGUCUUCUCCGCGG
+AE017355.1/3773586-3773470             GAGGAAGAACUUAUGGGGAAACGUAAGUCUUCUCCGCGG
+AE008691.1/1456779-1456662             AAGGAAGAA.UU..GGGGAAAU..UUCUAUUC.CCGUUA
+#=GC SS_cons                           <<.<<<<.<<<<<..........>>>>>>>>>>>>>...
+//

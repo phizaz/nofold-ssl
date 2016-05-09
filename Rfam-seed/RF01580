@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01580
+#=GF ID   RUF3
+#=GF DE   Plasmodium RNA of unkown function RU6-F3
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; Clustal_alifold;
+#=GF GA   80.00
+#=GF TC   92.80
+#=GF NC   40.64
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/Plasmodium_RUF6_RNA
+#=GF SQ   3
+
+ABGY01007749.1/135-323               CAUAUUUAUGUUCUACACCUCACACUUAUGUUUAUAUUUAUGUUUAUGUU
+ABGT01001025.1/1494-1680             AAUAUUUAUGUUUAU..AUUUAUAUUUAUGUUUAUAUUUAUGUUUAUGUU
+ABHA01000372.1/1354-1542             AAUAUUUAUGUUUAU..AUUUAUAUUUAUGUUUAUAUUUAUGUUUAUGUU
+#=GC SS_cons                         ........<<<<<<............<<<<..<<<<..<<<....>>>..
+#=GC RF                              AAUAUUUAUGUUUAU..AUUUAUAUUUAUGUUUAUAUUUAUGUUUAUGUU
+
+ABGY01007749.1/135-323               UAUGUCCAUAUGUUUGCAAUCUA.UUCACUUACUAUUAAACCAUAUUAUU
+ABGT01001025.1/1494-1680             UAUGUCCAUAUGUUUGCAAUCUA.UUCACUUACUAUUAAACCAUAUUAUU
+ABHA01000372.1/1354-1542             UAUGUCCAUAUGUUUGCAAUCUAUUUCACUUACUAUUAAACCAUAUUAUU
+#=GC SS_cons                         >>>>..>>>><<<<.<<<<..........<<<<<<.....<<.<<....>
+#=GC RF                              UAUGUCCAUAUGUUUGCAAUCUA.UUCACUUACUAUUAAACCAUAUUAUU
+
+ABGY01007749.1/135-323               AAGG.AAUUAGUAAACUAAACGA.UUGCUAUAAUAAUUAUGACAAUUUUG
+ABGT01001025.1/1494-1680             AAGG.AAUUAGUAAACUAAACGA.UUGCUAUAAUAAUUAUGACAAUUUUG
+ABHA01000372.1/1354-1542             AAGGGAAUUAGUAAACUAAACGAAUUGCUAUAAUAAUUAUGACAAUUUUG
+#=GC SS_cons                         >.>>....>>>>>>..........>>>>...>>>>..>>.>>>>......
+#=GC RF                              AAGG.AAUUAGUAAACUAAACGA.UUGCUAUAAUAAUUAUGACAAUUUUG
+
+ABGY01007749.1/135-323               .UUUAAUUAUUAAAAUUAUUAUUCUUUUUUUUGAUUAAUUUUA
+ABGT01001025.1/1494-1680             .UUUAAUUAUUAAAAUUAUUAUUCUUUUUUUUGAUUAAUUUUA
+ABHA01000372.1/1354-1542             GUUUAAUUAUUAAAAUUAUUUAUUCCUUUUUUUUUGA..UUAA
+#=GC SS_cons                         ..<<<<<<<..<<<<..........>>>>..>>>>>>>.....
+#=GC RF                              .UUUAAUUAUUAAAAUUAUUAUUCUUUUUUUUGAUUAAUUUUA
+//

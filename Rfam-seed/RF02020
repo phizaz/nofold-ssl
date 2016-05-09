@@ -1,0 +1,72 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02020
+#=GF ID   mir-25
+#=GF DE   microRNA mir-25
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   81.00
+#=GF TC   81.03
+#=GF NC   70.35
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000013
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   20403161
+#=GF RT   Small RNA expression and strain specificity in the rat
+#=GF RA   Linsen SE, de Wit E, de Bruijn E, Cuppen E
+#=GF RL   BMC Genomics. 2010;11:249.
+#=GF RN   [2]
+#=GF RM   17604727
+#=GF RT   A mammalian microRNA expression atlas based on small RNA library
+#=GF RT   sequencing
+#=GF RA   Landgraf P, Rusu M, Sheridan R, Sewer A, Iovino N, Aravin A,
+#=GF RA   Pfeffer S, Rice A, Kamphorst AO, Landthaler M, Lin C, Socci ND,
+#=GF RA   Hermida L, Fulci V, Chiaretti S, Foa R, Schliwka J, Fuchs U,
+#=GF RA   Novosel A, Muller RU, Schermer B, Bissels U, Inman J, Phan Q,
+#=GF RA   Chien M, Weir DB, Choksi R, De Vita G, Frezzetti D, Trompeter
+#=GF RA   HI, Hornung V, Teng G, Hartmann G, Palkovits M, Di Lauro R, Wernet
+#=GF RA   P, Macino G, Rogler CE, Nagle JW, Ju J, Papavasiliou FN, Benzing
+#=GF RA   T, Lichter P, Tam W, Brownstein MJ, Bosio A, Borkhardt A, Russo
+#=GF RA   JJ, Sander C, Zavolan M, Tuschl T
+#=GF RL   Cell. 2007;129:1401-1414.
+#=GF RN   [3]
+#=GF RM   18392026
+#=GF RT   Discovering microRNAs from deep sequencing data using miRDeep
+#=GF RA   Friedlander MR, Chen W, Adamidi C, Maaskola J, Einspanier R,
+#=GF RA   Knespel S, Rajewsky N
+#=GF RL   Nat Biotechnol. 2008;26:407-415.
+#=GF RN   [4]
+#=GF RM   15652478
+#=GF RT   Phylogenetic shadowing and computational identification of human
+#=GF RT   microRNA genes
+#=GF RA   Berezikov E, Guryev V, van de Belt J, Wienholds E, Plasterk RH,
+#=GF RA   Cuppen E
+#=GF RL   Cell. 2005;120:21-24.
+#=GF RN   [5]
+#=GF RM   16766679
+#=GF RT   Identification and characterization of two novel classes of small
+#=GF RT   RNAs in the mouse germline: retrotransposon-derived siRNAs in
+#=GF RT   oocytes and germline small RNAs in testes
+#=GF RA   Watanabe T, Takeda A, Tsukiyama T, Mise K, Okuno T, Sasaki H,
+#=GF RA   Minami N, Imai H
+#=GF RL   Genes Dev. 2006;20:1732-1743.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+AABR04041665.1/13120-13037             GGCCAGUGUUGAGAGGCGGAGACACGGGCAAUUGCUGGACGCUGCCCUGG
+AADA01162939.1/2400-2483               GGCCAGUGUUGAGAGGCGGAGACUUGGGCAAUUGCUGGACGCUGCCCUGG
+AACN010157980.1/2049-1991              .............AGGCGGAGACUUGGGCAAUUGCUGGACGCUGCC.CGC
+#=GC SS_cons                           <<<<.<<<<....<<<<.<<<<<....<<<<<.<<<<<......>>...>
+
+AABR04041665.1/13120-13037             GCAUUGCACUUGUCUCGGUCUGACA.GUGCCGGCC
+AADA01162939.1/2400-2483               GCAUUGCACUUGUCUCGG.CUGAGACGCGCCCGCC
+AACN010157980.1/2049-1991              GCAUUGCACUUGUCUCGGUCUGA............
+#=GC SS_cons                           >>>>>>>....>>>>>.>>>>.....>>>>.>>>>
+//

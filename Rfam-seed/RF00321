@@ -1,0 +1,66 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00321
+#=GF ID   snoZ247
+#=GF DE   Small nucleolar RNA Z247
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   18.34
+#=GF TC   23.40
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   Z247 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z247
+#=GF SQ   8
+
+AJ494956.1/1-139                         GCCCUUGA..UGAUGAUGAUCUGAUCUCCCAUAUCCUUGCUGGUUUGGAU
+AJ494957.1/1-139                         GCCCUUGA..UGAUGAUGAUCUGAUCUCCCAUAUCCUUGCUGGUUUGGAU
+AJ494958.1/1-139                         GCCCUUGA..UGAUGAUGAUCUGAUCUCCCAUAUCCUUGCUGGUUUGGAU
+AC136222.2/290-162                       CCCAUUGA..UGAUGAUGAUCUGAUCAGCUAUAUCAUUGCUGGUCUUGAU
+AP004158.3/94593-94731                   GCCCUUGA..UGAUGAUGAUCUGAUCUCCCAUAUCCUUGCUGAUUUGGAU
+AJ494955.1/1-137                         ...CUGGAAAUGAUGAUGAUCUGAUCUCCCAUAUCCUUGCUGGUUUGGAU
+AJ494959.1/1-139                         GCCCUUGA..UGAUGAUGAUCUGAUCUCCCAUAUCCUUGCUGGUUUGGAU
+AP008207.1/16378710-16378584             CAUCUUGA..CGAUGACGAUCUGAUCUCAUACAUCCUCACAGGCCUUGAC
+#=GC SS_cons                             ...<<<<<..........................................
+
+AJ494956.1/1-139                         UUUGAUUAUAAUC.CUGUUGUGUCCUCGAUUAC.GGGACGCACUGAGUCU
+AJ494957.1/1-139                         UUUGAUUAUAAUC.CUGUUGUGUCCUCGAUUAC.GGGACGCACUGAGUUU
+AJ494958.1/1-139                         UUUGAUUAUAAUC.CUGUUGUGUCCUCGAUUAC.GGGACGCACCGAGUUU
+AC136222.2/290-162                       GAAGAAUAUGUGC.CGGUAAUCUCGUCCAUUGUUGGGCGAC.CAGAUCAG
+AP004158.3/94593-94731                   UUUGAUUAUAAUC.CUGUUGUGUCCUCGAUUAC.GGGACGCACUGAGUCU
+AJ494955.1/1-137                         UUUGAUUAUAAUC.CUGUUGUGUCCUCGAUUAC.GGGACGCACUGAGUCU
+AJ494959.1/1-139                         UUUGAUUAUAAUC.CUGUUGUGUCCUCGAUUAC.GGGAUGCACCGAGUCU
+AP008207.1/16378710-16378584             UUCG.UGGUGUCCUCUGUUGCUGCAC........GUGUAGAGCCCAU...
+#=GC SS_cons                             .........................................<<<<<<...
+
+AJ494956.1/1-139                         GUUUCCUUUGGUGAAGUCUAUGCGCAACUGCUGAGUUUCGAGC
+AJ494957.1/1-139                         GUUUCCUUUGGUGAAGUCUAUGCGCAGCUGCUGAGUUUCGAGC
+AJ494958.1/1-139                         GUUUCCUUUGGUGAAGUCUAUGCGCAGCUGCUGAGUUUCGAGC
+AC136222.2/290-162                       GUGACCGUCAGUGAG........GCCUUUGCUUAG..UUGAUA
+AP004158.3/94593-94731                   GUUUCCUUUGGUGAAGUCUAUGCGCAACUGCUGAGUUUCGAGC
+AJ494955.1/1-137                         GUUUCCUUUGGUGAAGUCUAUGCGCAACUGCUGAGUUUCGAG.
+AJ494959.1/1-139                         GUUUCCUUUGGUGAAGUCUAUGCGCAGCUGCUGAGUUUCGAGC
+AP008207.1/16378710-16378584             ..GACAGUGGGUGAUCUGUAUGCGCAACUGCUGAGCUUUGAGC
+#=GC SS_cons                             ......>>>>>>.........................>>>>>.
+//

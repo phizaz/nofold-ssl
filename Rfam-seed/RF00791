@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00791
+#=GF ID   mir-357
+#=GF DE   microRNA mir-357
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   50.00
+#=GF TC   77.53
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000227
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+AF016431.1/1453-1344                   ACGCUGUACUACUCACCAGCGGAUCCCUACAAC.GCUGCGCAUAUGCAUG
+ABEG01002539.1/24698-24590             AUGUGUCUGUACUAACAUGCGAAUCCCUGUAAU.ACUGUGCAUAUACAUG
+CAAC02000548.1/42047-42159             CUACAUCAGAAGAGA.CAGCGAAUCCCGGCAAUCACCGUGCAUUUUCAUC
+ABEG01006163.1/1657-1549               UAUUCUCUGCCUGAACGUGCGAAUCCCUGUAAU.ACUGUGCAUAUACAUG
+AAGD02001646.1/15527-15437             CUGCCU.......AA.CAGCGGAUUCCAGUAAC.UCUGAGCAUAUACAUG
+#=GC SS_cons                           .<<<..<<<<<<<...<<<<<<<<.<<<.<<<<.<<<<.<<<<<<<<<<.
+#=GC RF                                acgCauuaccagagAccagCGaaccCCgaCaaccaCuGuGCauuuuCaug
+
+AF016431.1/1453-1344                   AACACAAUGAA..AAUGUAAAUGCCAGUCGUUGCAGGAGUUCGCAUACAG
+ABEG01002539.1/24698-24590             UCAUACAACUA...AUGUAAAUGCCAGUCGUUGCAGGAAUUCGCUAAAAG
+CAAC02000548.1/42047-42159             UACCAGAGGCACUAAUGAAAAUGCCAGUCAUUGACGGAAUUCGUUGAAUC
+ABEG01006163.1/1657-1549               U...CAUGUAACUAAUGUAAAUGCCAGUCGUUGCAGGAAUUCGCUAAA.A
+AAGD02001646.1/15527-15437             AAGUUUCAAAA.CAAUGUAAAUGCCAGUCGUUGCUGGAAUUCG.......
+#=GC SS_cons                           ..............>>>>>>>>>>>>>>.>>>>.>>>.>>>>>>>>..>>
+#=GC RF                                aAcaaaAuGaAcuAauGaaaauGCCaGucguuGacGGAguuCGcugAauc
+
+AF016431.1/1453-1344                   UAGUA.AAAUGCGC
+ABEG01002539.1/24698-24590             U.CAGCUAAAAAUC
+CAAC02000548.1/42047-42159             UGGAAUUAAAGCAU
+ABEG01006163.1/1657-1549               GUCAGCUAAAAAUC
+AAGD02001646.1/15527-15437             ......AUAAGCAC
+#=GC SS_cons                           >>>>>.....>>>.
+#=GC RF                                ugguauaAAaGcgu
+//

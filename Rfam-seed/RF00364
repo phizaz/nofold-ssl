@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00364
+#=GF ID   mir-BART2
+#=GF DE   mir-BART2 microRNA precursor family
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15118162
+#=GF SS   Published; PMID:15118162
+#=GF GA   20.00
+#=GF TC   51.55
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   15118162
+#=GF RT   Identification of Virus-Encoded MicroRNAs.
+#=GF RA   Pfeffer S, Zavolan M, Grasser FA, Chien M, Russo JJ, Ju J, John B,
+#=GF RA   Enright AJ, Marks D, Sander C, Tuschl T;
+#=GF RL   Science 2004;304:734-736.
+#=GF CC   This family represents the mir-BART2 microRNA precursor found in Human
+#=GF CC   herpesvirus 4 (Epstein-Barr virus) and Cercopithicine herpesvirus 15.
+#=GF CC   mir-BART2 is expressed in all stages of infection but expression is
+#=GF CC   significantly elevated in the lytic stage. In Epstein-Barr virus mir-BART2
+#=GF CC   is found in the intronic regions of the BART (Bam HI-A region rightward
+#=GF CC   transcript) gene whose function is unknown. mir-BART2 is thought to target
+#=GF CC   the virally encoded polymerase BALF5 for degradation. The mature sequence
+#=GF CC   is excised from the 5' arm of the hairpin [1].
+#=GF WK   http://en.wikipedia.org/wiki/mir-BART2_microRNA_precursor_family
+#=GF SQ   8
+
+L06830.1/499-438                     UUUAAAAAAUUUAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+L06836.1/496-438                     ..AAAUUUUU.UAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+L06834.1/497-438                     ..AAAUAUUUUUAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+L06828.1/499-438                     AAUUAAAUUUUUAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+L06835.1/497-438                     ..AUAUUUUUUUAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+L06829.1/499-438                     ACUUUUUUUUUUAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+AJ507799.2/152745-152806             ACUAUUUUCUGCAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+L06831.1/499-438                     UUUUAAAUUUUUAUUCGCCCUUGCGUGUCCAUUGUUGCAAGGAGCGAUUU
+#=GC SS_cons                         ..<<<<<<<<.<<.<<<<<<<<<<<..........>>>>>>>.>>>>..>
+
+L06830.1/499-438                     GGAGAAAAUAAA
+L06836.1/496-438                     GGAGAAAAUAAA
+L06834.1/497-438                     GGAGAAAAUAAA
+L06828.1/499-438                     GGAGAAAAUAAA
+L06835.1/497-438                     GGAGAAAAUAAA
+L06829.1/499-438                     GGAGAAAAUAAA
+AJ507799.2/152745-152806             GGAGAAAAUAAA
+L06831.1/499-438                     GGAGAAAAUAAA
+#=GC SS_cons                         >.>>>>>>>>..
+//

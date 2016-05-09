@@ -1,0 +1,107 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00213
+#=GF ID   snoR38
+#=GF DE   Small nucleolar RNA R38
+#=GF AU   Griffiths-Jones SR
+#=GF SE   INFERNAL
+#=GF SS   Predicted; PFOLD, Griffiths-Jones SR
+#=GF GA   28.00
+#=GF TC   28.01
+#=GF NC   27.56
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300946
+#=GF DR   snoopy; Oryzias_latipes300090
+#=GF RN   [1]
+#=GF RM   7667877
+#=GF RT   Antisense snoRNAs: a family of nucleolar RNAs with long
+#=GF RT   complementarities to rRNA.
+#=GF RA   Bachellerie JP, Michot B, Nicoloso M, Balakin A, Ni J, Fournier MJ;
+#=GF RL   Trends Biochem Sci 1995;20:261-264.
+#=GF RN   [2]
+#=GF RM   11266566
+#=GF RT   Identification of 10 novel snoRNA gene clusters from Arabidopsis
+#=GF RT   thaliana.
+#=GF RA   Qu LH, Meng Q, Zhou H, Chen YQ, Liang-Hu Q, Qing M, Hui Z, Yue-Qin C;
+#=GF RL   Nucleic Acids Res 2001;29:1623-1630.
+#=GF RN   [3]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   snoR38 is a C/D box small nucleolar RNA conserved across yeast [1],
+#=GF CC   human, Arabidopsis [2] and rice [3].  It is encoded in the intron of
+#=GF CC   elongation factor-1 gamma in both pombe and cerevisiae.  snoR38 guides
+#=GF CC   the methylation of 2'-O-ribose sites in 28S rRNA.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_R38
+#=GF SQ   19
+
+CR382136.2/1336952-1336867             UUGUUUA.CGUGAUGAGAGAUUUUUUCAUAU.UUAUACAGUUAUCCCUGU
+AE016817.4/964446-964344               CCCUAGU..GUGAUGAGAAAACCUUUCGA...AAAAACAGUUAUCCCUGU
+CR380952.1/649867-649758               UUCUAAU..AUGAUGAGAACCUUUUUACAGUAUUUUACAGUUAUCCCUGU
+Z28081.1/853-955                       AAACAUA..AUGAUGAAAAAAAAUUUUA....UCAAACAGUUAUCCCUGU
+AC004288.1/10223-10308                 AUAUGGGCAAUGAUGAACACUUUAUUUAAG..CCAAACAGUUAUCCCUGU
+AC004288.1/11652-11734                 UAUGAUG...UGAUGAACACCUUAUUUAAG..CCAAACAGUUAUCCCUGU
+BX629359.1/12582-12513                 UGUAGCC.AAUGAUGAUACA..................AGUUAUCCCUGU
+AL606506.11/153543-153468              GACAGCU.GAGGAUGAUUUA..................AGUUAUCCCUGU
+AJ543400.1/2-75                        AUAAGCC.UAUGAUGGAUUG...................GUUAUCCCUGU
+AJ543402.1/2-77                        UUGAGCU.GAGGAUGAUUUA..................AGUUAUCCCUGU
+AJ543401.1/2-76                        UUGAGCU.GAGGAUGAUUUA..................AGUUAUCCCUGU
+AJ543325.1/2-85                        CUGAGUC.CAUGAUGAUUUCAA.................GUUAUCCCUGU
+AK123993.1/1023-1100                   CUGAGCU.GAGGAUGAUUUAAA.................GUUAUCCCUGU
+AJ543324.1/2-73                        ACAAGCC.UAUGAUGGUUA....................GUUAUCCCUGU
+AJ543326.1/2-79                        AUGAGCU.GAGGAUGAUUUAAA.................GUUAUCCCUGU
+AJ490371.1/1-92                        AGAUGUG.GAUGAUGAAAUCACAAGUGA....AAAUACAGUUAUCCCUGU
+AJ490356.1/2-91                        CAAGGUG.AAUGAUGAAAUCACAAGU......AAAUACAGUUAUCCCUGU
+AJ276575.1/7-100                       UGUUUUG.GAUGAUGAGAAACAAAAAUCA...AAAUACAGUUAUCCCUGG
+AB020755.1/17565-17473                 GAUUGUG.GAUGAUGAGAACAAAUAUGA....AAAAACAGUUAUCCCUGU
+#=GC SS_cons                           <<<<<<<...........................................
+
+CR382136.2/1336952-1336867             CUUAA......................UACAUUAUGUCGAGAAUA...UU
+AE016817.4/964446-964344               CUGAAUGGGCAUAAUAUCUGG....UUGCACAUGUGUCGAGAGAC..CAU
+CR380952.1/649867-649758               CUGAAUGGGUUAACAAAAUGGUAAUAAACUCAUAUGUCGAUGAAU..UAU
+Z28081.1/853-955                       CUGAAUGGGUAAUAAUAGGUAA...CCUCUCAUAUGUUGAUAUUU..GUA
+AC004288.1/10223-10308                 CAUAA......................GAAUAAUUGAUGAUAAAA....G
+AC004288.1/11652-11734                 CAUAA......................GAAUAAUUGAUGAUAUAU....U
+BX629359.1/12582-12513                 CUGAA.......................CUGAAGUGUGGAGUUGU..GGU
+AL606506.11/153543-153468              CUGAA.AUG................ACACUUUUGUGAAGAGUCAU..GGU
+AJ543400.1/2-75                        CUGAA....................GAUUUCAGCUGAGGGAAAAUACUCU
+AJ543402.1/2-77                        CUGAA.AUG................ACACUUUUGUGAAGAGUCAU..GGU
+AJ543401.1/2-76                        CUGAA..AU................GACACUUUCUGAAGAGUCAU..GGU
+AJ543325.1/2-85                        CUGAAGGCAAAGAA...........AGGCCUUUCUGUGUGGAAUUU.GAA
+AK123993.1/1023-1100                   CUGAAAUGG................UAUCUUUUGUGAGGAGGUCU..GAC
+AJ543324.1/2-73                        CUGAA....................AAUCUGGACUGAGGGAAAUAA.UCU
+AJ543326.1/2-79                        CUGAAAUGG................UAUCUUUUGUGAGGAGGUCU..GAC
+AJ490371.1/1-92                        CUGAUUCCU................UCAUAAGGGUGCUGAGAAUAC.UUU
+AJ490356.1/2-91                        CUGAUUCCU................UUCUAAGGGUGCUGAGAAUAC.UUA
+AJ276575.1/7-100                       CUUAGGGUUUA..............AAGCCCGU.UGCUGAGUCUUU.UGU
+AB020755.1/17565-17473                 CUGAGGAUUUU..............AAUCCCUU.UGAUGAUUCAUU.UGU
+#=GC SS_cons                           ..................................................
+
+CR382136.2/1336952-1336867             AUUCUGA.AAAUAA
+AE016817.4/964446-964344               ACUCUGAUUUAGAG
+CR380952.1/649867-649758               ACUCUGAAUUUAGA
+Z28081.1/853-955                       UUUCUGAUAUGUUU
+AC004288.1/10223-10308                 UUGCUGAUUCAUAU
+AC004288.1/11652-11734                 CAGCUGACAACAUA
+BX629359.1/12582-12513                 AACCUGAGGCUCAG
+AL606506.11/153543-153468              UUACUGAGGCUCGA
+AJ543400.1/2-75                        AUUCUGAGGCUUAG
+AJ543402.1/2-77                        UUACUGAGGCUCGA
+AJ543401.1/2-76                        UUACUGAGGCUCGA
+AJ543325.1/2-85                        UAUCUGAAACUCAG
+AK123993.1/1023-1100                   UUGCUGAGGCUCAG
+AJ543324.1/2-73                        AUUCUGAGGCUUAA
+AJ543326.1/2-79                        UUGCUGAGGCUCAG
+AJ490371.1/1-92                        AAUCUGACACAGUU
+AJ490356.1/2-91                        AAUCUGACACAUUA
+AJ276575.1/7-100                       AAUCUGACACACAU
+AB020755.1/17565-17473                 AAUCUGACACAACC
+#=GC SS_cons                           .......>>>>>>>
+//

@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01005
+#=GF ID   MIR530
+#=GF DE   microRNA MIR530
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   23.00
+#=GF TC   23.14
+#=GF NC   22.18
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000521
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   3
+
+AASG02002502.1/29848-29672             GCCAAUAUGUUGCCUUUAUCUGCAUUUGCACCUGCACCUUAAGUUUCUUU
+AARH01003925.1/6653-6796               GCCAACAUGUUGCCUUUAUCUGCAUUUGCACCUGCACCUUACUUGUUUCU
+AARH01010693.1/61395-61566             GCCAAUAUGUUGCCUUUAUCUGCAUUUGCACCUGCAUCUUUUGCGUUUG.
+#=GC SS_cons                           <<<<<<<<<..<<.<<<<<<<<<<<<<<<<<<<<<<<<<...........
+#=GC RF                                gCCaacauGUUGCCuuuauCuGCauuuGCaCCuGCacCuUauuuGUUUgu
+
+AASG02002502.1/29848-29672             GUUUCUUCUUCUUCUUUUUUCUUUUUUAAGAAGUCUACUUCUUCUAAAUU
+AARH01003925.1/6653-6796               UUCUUUUGUUUUUGA.....CUCCAAAACCAAAAGUAAGUU.........
+AARH01010693.1/61395-61566             ...UUUUGUUUUUGA.....CUCCACAAACAAAAUCAAGUUCUGUCGAUA
+#=GC SS_cons                           ...<<<<<<<<<<<.........>>>>>>>>>>>................
+#=GC RF                                uucuuuuGuuuuuGA.....CUCCaaaaaCaaaauuAAGUUcugucgAuA
+
+AASG02002502.1/29848-29672             AUGGGUUUUCAAUAUAUAGAGGAUUGAAACAAGCAAAUA....UAGGUGC
+AARH01003925.1/6653-6796               .......UGAAACAU........UAAAAC....AAGCUU....GAGGUGC
+AARH01010693.1/61395-61566             CAGUAUGUGGGACAAUUAGAUAUGGAAACUAAUAAGCUUAGUUGAGGUGC
+#=GC SS_cons                           ............................................>>>>>>
+#=GC RF                                cAguAugUGaaACAauuAgAuAuuaAAACuAAuAAGCUUAguuGaGguGC
+
+AASG02002502.1/29848-29672             AGGUGUGAGUGCAGGUGAAUGCCAUUUUGGU
+AARH01003925.1/6653-6796               AGGUGCAGGUGCAGGUGAAUGCCAUGUUGGU
+AARH01010693.1/61395-61566             AGGUGCAAGUGCAGGUGAAUGCCAUUUUGGU
+#=GC SS_cons                           >>>>>>>>>>>>>>>>>>>.>>>>>>>>>>>
+#=GC RF                                aGGuGCaaguGCaGgugaaUGCCauguuGGu
+//

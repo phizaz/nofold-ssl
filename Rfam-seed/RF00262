@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00262
+#=GF ID   sar
+#=GF DE   sar RNA
+#=GF AU   Bateman A
+#=GF SE   Pubmed:9042942, INFERNAL
+#=GF SS   Predicted; RNAalifold; Daub J
+#=GF GA   25.00
+#=GF TC   36.80
+#=GF NC   undefined
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000644 SO:antisense_RNA
+#=GF DR   GO:0003729 GO:mRNA binding
+#=GF RN   [1]
+#=GF RM   9042942
+#=GF RT   Antisense RNA control of gene expression in bacteriophage P22. I.
+#=GF RT   Structures of sar RNA and its target, ant mRNA.
+#=GF RA   Schaefer KL, McClure WR;
+#=GF RL   RNA 1997;3:141-156.
+#=GF CC   Sar RNA is an antisense RNA that is partly responsible for the
+#=GF CC   negative regulation of antirepressor synthesis during development
+#=GF CC   of bacteriophage P22 [1].
+#=GF WK   http://en.wikipedia.org/wiki/sar_RNA
+#=GF SQ   6
+
+CP000468.1/2576646-2576713             GUUGGUUUUUCUCCACG..GAUUUACCGACAACCGAAGCCCUGACUGUUC
+AE005174.2/1661163-1661096             GUCAAUAUUUC.CUAAGCCGAUUUGUUGAUAA.CGAAGCCCUGACUGUUA
+CP000711.1/6497-6564                   UCGUUAAUUCCUAUGCG..UGGUUUUACGAUACCGAAGCCCUGACUGUUC
+X01916.1/599-532                       GUUGGUUUUUCUCCAAG..GAUUUACUGACAACCGAAGCCCUGACUGUUA
+AF527608.1/15090-15023                 GUUGGUUUUUCUCCAAG..GAUUUACUGACAACCGAAGCCCUGACUGUUA
+AY121861.1/1816-1749                   GUUGGUUUUUCUCCAAG..GAUUUACUGACAACCGAAGCCCUGACUGUUA
+#=GC SS_cons                           <<<<<<..................>>>>>>....<<<<<<<<<<<<<<..
+#=GC RF                                gucggcccuucucuaag..gAuuugccgacAAacGaaGccccgaccGcuA
+
+CP000468.1/2576646-2576713             CAGCAGUUGGGGCUUCACUG
+AE005174.2/1661163-1661096             CAGCAGUUGGGGCUUCAACU
+CP000711.1/6497-6564                   CCGCAGUUGGGGCUUCAACU
+X01916.1/599-532                       CCGCAGUUGGGGCUUCAACU
+AF527608.1/15090-15023                 CCGCGGUUGGGGCUUCAACU
+AY121861.1/1816-1749                   CCGCAGUUGGGGCUUCAACU
+#=GC SS_cons                           ..>>>>>>>>>>>>>>....
+#=GC RF                                cagCggucggggCuuCAAcu
+//

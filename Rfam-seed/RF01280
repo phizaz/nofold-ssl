@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01280
+#=GF ID   snoR14
+#=GF DE   Small nucleolar RNA snoR14
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; Wilkinson A
+#=GF SS   Predicted; Wilkinson A
+#=GF GA   20.00
+#=GF TC   25.49
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://lowelab.ucsc.edu/snoRNAdb/
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   7
+
+AJ532488.1/8-96                          GCGAGGUGAUGAUGAAUGUAUGAAUGUCUGUCAAUCCCCUGA.......U
+AM480118.2/5459-5549                     GCGAGGUGACGAUAGAA.UUCAUUGGUCUGUCAAUCCACUGA.......U
+AP004489.1/54837-54753                   GCGAGGUGACGAUAUCACUUCAAUGGUAUGUCAAUUCACUGA.......U
+AC146791.12/24606-24523                  GCGAGGUGAUGAUA.AAAUUCAUUUGUCUGUCAAUCCUCUGA.......U
+AASG02003152.1/15450-15361               GCGAGGUGACGAUAGAAAUUCAUUGGUCUGUCAAUCCACUGAAUAAACAU
+AARH01008371.1/237066-236979             GCGAGGUGAAGAUAGAAAUUCAU..GUCUGUCAAUCCACUGA.......C
+AC005314.3/54045-54126                   UCGAGGUGACGAUAGAAAUUCACAGGUCUGUCAAUCCACUGA.......U
+#=GC SS_cons                             <<<<..............................................
+
+AJ532488.1/8-96                          GUCAC....AA......AGUGAUGACUCCUCAUACAUCCCGACAGGCUCU
+AM480118.2/5459-5549                     AUCAACAUCA.......GAUGAUGUUAAACAAUGAAUCCCGACAGGUUCU
+AP004489.1/54837-54753                   AC.......UAU.....CGUGAUGUAUUCAUGAA..UCCCGACAGGUUCU
+AC146791.12/24606-24523                  AU.......UC......UUUGAUGUUAUUUAUGAA.UCCCGACAGGUUCU
+AASG02003152.1/15450-15361               AA.......C.......UUUGAUGUUACUAUGAA..UCCCGACAGGUUCU
+AARH01008371.1/237066-236979             UU.......AGUAACUGUGUGAUGUUAUCUUGAA..UCCCGACAGGUUCU
+AC005314.3/54045-54126                   AU.......A.......UGUGAUGUAAUUGUGU...UCUCGACAGGUUCU
+#=GC SS_cons                             ..................................................
+
+AJ532488.1/8-96                          GAUCGC
+AM480118.2/5459-5549                     GAUCGC
+AP004489.1/54837-54753                   GAUCGC
+AC146791.12/24606-24523                  GAUCGC
+AASG02003152.1/15450-15361               GAUCGC
+AARH01008371.1/237066-236979             GAUCGC
+AC005314.3/54045-54126                   GAUCGA
+#=GC SS_cons                             ..>>>>
+//

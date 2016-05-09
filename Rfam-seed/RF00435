@@ -1,0 +1,85 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00435
+#=GF ID   ROSE
+#=GF DE   Repression of heat shock gene expression (ROSE) element
+#=GF AU   Moxon SJ, Bateman A
+#=GF SE   PMID:11726689
+#=GF SS   Published; PMID:11726689; Griffiths-Jones S
+#=GF GA   22.00
+#=GF TC   24.45
+#=GF NC   undefined
+#=GF TP   Cis-reg; thermoregulator;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   11726689
+#=GF RT   A mRNA-based thermosensor controls expression of rhizobial heat shock
+#=GF RT   genes.
+#=GF RA   Nocker A, Hausherr T, Balsiger S, Krstulovic NP, Hennecke H,
+#=GF RA   Narberhaus F;
+#=GF RL   Nucleic Acids Res 2001;29:4800-4807.
+#=GF RN   [2]
+#=GF RM   15466035
+#=GF RT   Replicon-specific regulation of small heat shock genes in
+#=GF RT   Agrobacterium tumefaciens.
+#=GF RA   Balsiger S, Ragaz C, Baron C, Narberhaus F;
+#=GF RL   J Bacteriol 2004;186:6824-6829.
+#=GF CC   This family represents a 5' UTR cis-regulatory element found in
+#=GF CC   heat shock mRNAs and is known as the ROSE (repression of heat
+#=GF CC   shock gene expression) element. The ROSE element is a negative
+#=GF CC   regulator of heat shock gene expression. The secondary structure
+#=GF CC   is thought to be regulated by temperature. This regulation blocks
+#=GF CC   access to the ribosome binding site under normal
+#=GF CC   conditions. During heat shock however, the structure changes
+#=GF CC   freeing the ribosome binding site and allowing expression to
+#=GF CC   occur [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Repression_of_heat_shock_gene_expression_(ROSE)_element
+#=GF SQ   13
+
+AJ010144.1/622-738                     GCCGCC.GA.GAGGUGGCGUCCCCGACGCC..UCAU.GGGUCGGGAACGA
+U55047.1/5180-5291                     UGCCGC.GACAAGCGGU....CCGGGCGCCC.UUCGGGGGCCCGGCG...
+U55047.1/3106-3215                     CGCCGC.GACAAGCGGU....CCGGGCGCC..CUAG.GGGCCCGGCG...
+AJ003064.1/2697-2806                   GCCACGCGGGAGCGUGGCG..CCGGAUGCC..UCUC.GGGUCCGG.....
+AJ003064.1/2430-2312                   CGCCGCCGCAGGGCGGCUCU.CCGGGCGCC..UGAC.GGGCUCGGCGAAU
+BA000012.4/1943819-1943723             .....................UCGGUCGCC.GCAUAAGGGGCCGAUGU..
+AP003017.1/94542-94451                 .....................UCGGG.GC...UUCG..G.CCCGACA...
+AE007872.2/441983-442075               .....................CCAGCCGCUGAGGUCAGGGGCUGGCC...
+AE007872.2/51225-51317                 .....................CCAGCCGCUG.ACGACGGGGCUGGACU..
+AY316747.1/197909-198003               .....................GCCGAUGCC..AAUU.GGGUCGGCAUG..
+AY316747.1/256783-256687               .....................CCGACCGCCA.AAA.UGGCGUCAGCCUG.
+AL591985.1/872145-872052               .....................AGAGCCGCCU.GUA.AGGGGCUCGCA...
+CP000009.1/1450710-1450627             .....................CCGGCCGCC..AAA..GGGGUCGGCA...
+#=GC SS_cons                           <<<<<<......>>>>>>...<<<<<<.<<<.....>>>>>>>>>.....
+
+AJ010144.1/622-738                     C.UGAGACGGGCACCGG..UCGUGU.CCGGUGCC.G....CUCGUA.UCC
+U55047.1/5180-5291                     ...GAGACGGGCGCCGGA..GGUG.UCCGACGCCUG....CUCGUA.CCC
+U55047.1/3106-3215                     ...GAGACGGGCGCCGGA..GGUG.UCCGACGCCUG....CUCGUA.CCC
+AJ003064.1/2697-2806                   ...CAGACG.CCAUCGGG.CAGAA.UCCGAUGU.UG....CUCCUA.UCC
+AJ003064.1/2430-2312                   CCAGAGACGGGCACCGG..UCGUGU.CCGGUGCC.G....CUCGUA.ACC
+BA000012.4/1943819-1943723             ..GUCAGGGAGCGCCAUG..CUU..CUUGGCGUUCC....CUCGUA.UCU
+AP003017.1/94542-94451                 ...GAUUGGGCGUCGCAG.AGACG.CUGCGACGCUG....CUUGUAACCC
+AE007872.2/441983-442075               .......UUGUUGGACG...CGC...CGUCUUUCAGCGCU.CCGUA.CCC
+AE007872.2/51225-51317                 ..UGCUGGGAGCGCCG...CCUUU...CGGCGCUUC......CGUA.CCC
+AY316747.1/197909-198003               ..GUCAGGGAGCGCCACG..CUU..CUUGGCGCUUC....CUCGUA.UCU
+AY316747.1/256783-256687               ..GUCAGGGAGCGCCGAG..CUU..CUUGGCGCUCC....CUCAUA.UCU
+AL591985.1/872145-872052               .......GUCGAGGAG..CUCCGUU..CUCUUCGGCGCUCCUCAUCGUCC
+CP000009.1/1450710-1450627             .......AACAGAACU....AUC....AGUUUUGAU....CUUGUG.UCC
+#=GC SS_cons                           .......<<<<<<<<<<<.......>>>>>>>>>>>....<<<<<<..<<
+
+AJ010144.1/622-738                     AUUUUGCUCCUUGGAGGAUUUGGCUAUGCGCA
+U55047.1/5180-5291                     AUCUUGCUCAGUGGAGGAUUUGGCUAUGAGGA
+U55047.1/3106-3215                     AUCUUGCUCCUUGGAGGAUUUGGCUAUGAGGA
+AJ003064.1/2697-2806                   AUAUUGCUCAGAGGAGGAUGUGGUUAUGAGAA
+AJ003064.1/2430-2312                   AUUUUGCUCCGUGGAGGAUCUGGCUAUGCGCA
+BA000012.4/1943819-1943723             AUGUUGCUCCAAGGAGGAUGUAGUUAUGAGAA
+AP003017.1/94542-94451                 AUGUUGCUUUACGGAGGAUAUGGCUAUGAGAA
+AE007872.2/441983-442075               AUGUUGCUUCAAGGAGGAUAUGGCUAUGGCAA
+AE007872.2/51225-51317                 AUGUUGCUUCAAGGAGGAUAUGGCUAUGGCAA
+AY316747.1/197909-198003               AUGUUGCUCUACGGAGGAUGUAGCUAUGAGAA
+AY316747.1/256783-256687               AUGUUGCUCUACGGACGAUGUAGCUAUGAGAA
+AL591985.1/872145-872052               AUGUUGCUC.AAGGAGGAUAUGGCUAUGAGAA
+CP000009.1/1450710-1450627             AUGUUGCUCAAAGGAGGAUAUGGCUAUGAGAG
+#=GC SS_cons                           <<<<<.<<<....>>>>>>>>>>.>>>>>>..
+//

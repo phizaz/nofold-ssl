@@ -1,0 +1,68 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00287
+#=GF ID   SNORD44
+#=GF DE   Small nucleolar RNA SNORD44
+#=GF PI   U44
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; Moxon SJ, Daub J
+#=GF GA   25.00
+#=GF TC   27.41
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Rattus_norvegicus300167
+#=GF DR   snoopy; Macaca_mulatta300477
+#=GF RN   [1]
+#=GF RM   8674114
+#=GF RT   Site-specific ribose methylation of preribosomal RNA: a novel
+#=GF RT   function for small nucleolar RNAs.
+#=GF RA   Kiss-Laszlo Z, Henry Y, Bachellerie JP, Caizergues-Ferrer M, Kiss T;
+#=GF RL   Cell 1996;85:1077-1088.
+#=GF RN   [2]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol 2002;22:6663-6668.
+#=GF CC   U44 belongs to the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and D (CUGA) box motifs. Most of the members of the box C/D family function
+#=GF CC   in directing site-specific 2'-O-methylation of substrate RNAs [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD44
+#=GF SQ   12
+
+AAIY01534871.1/1638-1579               CCUGUGUGAUGAUAA.GCAAAUG.CGGACUAAAG.AUGAAGGUCUUAAUU
+AAKN02017778.1/47429-47490             CCUGGAUGAUGAUAA.GCAAAUA.CUGACUGAACUAUGAAGGUCUCAAUU
+AAHX01076292.1/14842-14782             CCUACAUGAUGACAA.ACAAAUG.CUGACU.AAU.GUGAAGAUCUUAAUU
+AAQQ01328837.1/491-552                 CCUGGAUGAUGAUAA.GAAGAUAACUGAUUGAAC.GUGAAGUUUUUAAUU
+AANU01094999.1/4541-4481               CCUGGGUGAUGACAA.GCAAAUG.GUGCCUGAAU.GUGAAGGUCAUAUUU
+X96643.1/1-60                          CCUGGAUGAUGAUA..GCAAAUG.CUGACUGAAC.AUGAAGGUCUUAAUU
+AL138691.15/31428-31368                CCUGGGUGAUGAUAA.GCAAAUG.AUGCCUGAAU.GUGAAGGUCAUACUC
+AF141346.1/1960-2019                   CCUGGAUGAUGAUA..GCAAAUG.CUGACUGAAC.AUGAAGGUCUUAAUU
+AAQR01312740.1/3626-3686               CCUGGAUGAUGAUAAAGCAAGUA.CAGACUGAAA.GUGAA.GUCUUAAUU
+AAPY01728088.1/7700-7760               CCUGGAUGAUGAUAA.GCAAAUA.CUGACUGAAU.AUGAAGGUCUUAAUU
+AAEX02026111.1/34587-34648             CCUGUAUGAUGAUAA.GCAAAUA.CUGACUGAAC.AUGAAGGUCUUAAUU
+AALT01136474.1/317-257                 CCUGCAUGAUGAUAA.GCAAAGA.CUGACUCAAA.GUGAAGGUCUUA.UU
+#=GC SS_cons                           ...<<.............................................
+#=GC RF                                CCUGgaUGAUGAUA..GCAAAUG.aUGaCUGAAu.aUGAAGGUCaUAaUu
+
+AAIY01534871.1/1638-1579               AGCUCUAGCUG..AU
+AAKN02017778.1/47429-47490             AGCUCUAACUGA.UC
+AAHX01076292.1/14842-14782             AGCUCUAUCUGAUGU
+AAQQ01328837.1/491-552                 AGCUCUAACUGA.UU
+AANU01094999.1/4541-4481               GGCUUUAACUGA.UU
+X96643.1/1-60                          AGCUCUAACUGA.CU
+AL138691.15/31428-31368                GGCUUUAGCUGA.UU
+AF141346.1/1960-2019                   AGCUCUAACUGA.CU
+AAQR01312740.1/3626-3686               AGCUCUAACUGA.UU
+AAPY01728088.1/7700-7760               AGCUCUAACUGA.UU
+AAEX02026111.1/34587-34648             AGCUCUACCUGACAU
+AALT01136474.1/317-257                 AGCUCUACCUGACGC
+#=GC SS_cons                           .............>>
+#=GC RF                                aGCUuUAaCUGA.cU
+//

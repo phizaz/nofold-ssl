@@ -1,0 +1,62 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00247
+#=GF ID   mir-160
+#=GF DE   mir-160 microRNA precursor family
+#=GF AU   Griffiths-Jones SR, Daub J
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   35.30
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000032
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   12202040
+#=GF RT   Prediction of plant microRNA targets.
+#=GF RA   Rhoades MW, Reinhart BJ, Lim LP, Burge CB, Bartel B, Bartel DP;
+#=GF RL   Cell 2002;110:513-520.
+#=GF CC   miR-160 has been predicted or experimentally confirmed in a range
+#=GF CC   of plant species including Arabidopsis and rice
+#=GF CC   (MIPF:MIPF0000032). miR-160 is predicted to bind complementary
+#=GF CC   sites in the untranslated regions of auxin response factor genes
+#=GF CC   to regulate their expression [1].The hairpin precursors
+#=GF CC   (represented here) are predicted based on base pairing and
+#=GF CC   cross-species conservation -- their extents are not known.  In
+#=GF CC   this case the mature sequence is excised from the 5' arm of the
+#=GF CC   hairpin.
+#=GF WK   http://en.wikipedia.org/wiki/mir-160_microRNA_precursor_family
+#=GF SQ   7
+
+AK071620.1/251-338                    GCGUGCCUGGCUCCCUGUAUGCCACUCAUGUAGCCCAAUCCAUGGUGUGU
+AK101881.1/424-511                    GUGUGCCUGGCUCCCUGUAUGCCACACAUGUAGACCAACCCAUGGUGUCU
+AC084320.10/152194-152329             AUAUGCCUGGCUCCCUGUAUGCCACUCGCGUAGCUGCCAAACUCAGUUGA
+AP004591.3/100727-100819              AUGUGCCUGGCUCCCUGUAUGCCACUCAUCUAGAGCAACAAACUUCUGCG
+AB022221.1/11161-11075                UUAUGCCUGGCUCCCUGUAUGCCACGAGUGGAUACCGAUUUUGGUUUU..
+AC004697.3/97809-97725                GUAUGCCUGGCUCCCUGUAUGCCAUAUGCUGAGCCCAUCGAGUAUCGAUG
+AL161547.2/49332-49418                UCGUGCCUGGCUCCCUGUAUGCCACAAGAAAACAUCGAUUUAGUUUC...
+#=GC SS_cons                          <<<<<<.<<<<<<<.<<<<<<<<<..<<<.....................
+
+AK071620.1/251-338                    U................................................U
+AK101881.1/424-511                    G..............................................GUU
+AC084320.10/152194-152329             AACAACUGCCUUCUCCCGGCGAGAUUCAGGCAUUGUGUUCGUACGUUUGG
+AP004591.3/100727-100819              AGAG...........................................GUU
+AB022221.1/11161-11075                ...............................................AAA
+AC004697.3/97809-97725                A.................................................
+AL161547.2/49332-49418                ...............................................AAA
+#=GC SS_cons                          ..................................................
+
+AK071620.1/251-338                    GGAUGCUGUGGGUGGCGUGCA.AGGAGCCAAGCAUGC
+AK101881.1/424-511                    GCCUACUG..GGUGGCGUGCA.AGGAGCCAAGCAUGC
+AC084320.10/152194-152329             CUCUACUGCGGAUGGCGUGCG.AGGAGCCAAGCAUGA
+AP004591.3/100727-100819              GCCUAUGAUGGAUGGCGUGCA.CGGAGCCAAGCAUAU
+AB022221.1/11161-11075                AUCGGCUGCCGGUGGCGUACA.AGGAGUCAAGCAUGA
+AC004697.3/97809-97725                ..CCUCCGUGGAUGGCGUAUG.AGGAGCCAUGCAUAU
+AL161547.2/49332-49418                AUCGAUCACUAGUGGCGUACAGAGUAGUCAAGCAUGA
+#=GC SS_cons                          .......>>>..>>>>>>>>>..>>>>>>>.>>>>>>
+//

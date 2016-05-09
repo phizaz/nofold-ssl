@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01178
+#=GF ID   snoR77Y
+#=GF DE   Small nucleolar RNA snoR77Y
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   37.00
+#=GF TC   40.76
+#=GF NC   33.43
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   6
+
+AAAA02011059.1/20497-20416               GAGCCUGUGAUGAUUAGCAUAUU..GUUGGAAUUACCGUCGGAUU...AU
+AP008208.1/26282630-26282711             AAGCCUAUGAUGAUUAGCAUAUU..GUUGGAAUUACCGUCAGAUU...AU
+AM483106.2/1366-1281                     AAGCCAAUGAUGAUUUUGUCUGA..UCUGGAAUUACCGGCUGAAU...UU
+CU062477.6/15802-15711                   AAGCCGAUGAUGAUGAAACUUGA..ACUGGAAUUACCGUCUGAAUAGAUU
+AASG02011273.1/5793-5709                 AGGCCAAUGAUGAUUUCUUUUUA..GUUGGAAUUACCGGCUGAAU...UU
+AARH01006125.1/83661-83576               GAGCCGAUGAUGAUUGUUUAUUUAUGUUGGAAUUACCGGCUGAAU...UU
+#=GC SS_cons                             <<<<<.............................................
+#=GC RF                                  aaGCCaAUGAUGAUUauuuuuua..GUUGGAAUUACCGgCuGAAU...uU
+
+AAAA02011059.1/20497-20416               CA...AAUGACGAC.A....UUUGUCUGGCUUCCUGAGGCUUAAU
+AP008208.1/26282630-26282711             CA...AAUGACGAC.A....UUUGUCUGGCAUCCUGAGGCUUUAU
+AM483106.2/1366-1281                     UGC..UUUGAUGUC.AAAU.UUUGACUGGCUUUCUGAGGCUUCAA
+CU062477.6/15802-15711                   UAUUCUUUGAUGUA.AAUUUCUUGGCUGUGGUACUGAGGCUUUGC
+AASG02011273.1/5793-5709                 CA...UUUGAUGUC.AAUU.UUAGACUGGCUUUCUGAGGCUUCAU
+AARH01006125.1/83661-83576               CAC..AUUGAUGUCAA....UCUUACUGGCUGUCUGAGGCUUCAU
+#=GC SS_cons                             .....................................>>>>>...
+#=GC RF                                  cA...auUGAuGuC.A....UUuGACUGGCUuuCUGAGGCuucAu
+//

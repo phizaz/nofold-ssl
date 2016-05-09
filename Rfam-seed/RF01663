@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01663
+#=GF ID   ceN93
+#=GF DE   C. elegans sRNA ceN93
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR;
+#=GF GA   20.00
+#=GF TC   24.84
+#=GF NC   14.30
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/C._elegans_small_RNAs
+#=GF SQ   3
+
+AAGD02000325.1/17694-17561             UUUCCAUUCAGUAGUCCCGGACGAAU.UUAAAACAUAACGUACGGUUUGG
+AY948715.1/1-131                       UUUCCAUUAAGUAGUCCCGUACG..U.UGAAAUUUUCACGUACGGUUUGG
+ABEG01017910.1/6749-6617               AUUCCAUUCAGUAGUCCCGGACG..AAUUAGAAUUUAACGUACGGUUUGG
+#=GC SS_cons                           <<<<<<<<..<<.<..<<<.<<<....<<<.....>>>>>>.>>>..>..
+#=GC RF                                UUUCCAUUAAGUAGUCCCGUACG..U.UGAAAUUUUCACGUACGGUUUGG
+
+AAGD02000325.1/17694-17561             ACAUAAUGGAGAAAUAGA.ACAUUACUCUUUUUGCAGCGAAGCUGAAAAC
+AY948715.1/1-131                       ACAAUAUGGAGAAAU.GA.AUGUUACUCUUUUUGCAAUGACGCUGAAACA
+ABEG01017910.1/6749-6617               ACAUAAUGGAGAAAU.AAAAUAUUGCUCUUUUUGCAGCGGAGCUGAACUU
+#=GC SS_cons                           >>..>>>>>>>>..........<<<<.<<<...<<<<<<<<<<.<<<<..
+#=GC RF                                ACAAUAUGGAGAAAU.GA.AUGUUACUCUUUUUGCAAUGACGCUGAAACA
+
+AAGD02000325.1/17694-17561             UAUUUUCGUUUUGCUAGCCAUAAGUGUAAAACAAUU
+AY948715.1/1-131                       UAUUUUCGCUUUGUUAGCCAUAAGUUUAAAACAAUU
+ABEG01017910.1/6749-6617               UAUGUUCUCUUUGCUAGCCAUAAGUGUAAAACAAUA
+#=GC SS_cons                           ...>>>>>>>>>>>>.>>...>>>.>>>>.......
+#=GC RF                                UAUUUUCGCUUUGUUAGCCAUAAGUUUAAAACAAUU
+//

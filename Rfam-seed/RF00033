@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00033
+#=GF ID   MicF
+#=GF DE   MicF RNA
+#=GF AU   Bateman A
+#=GF SE   Noncoding RNAs Database
+#=GF SS   Predicted; Bateman A
+#=GF GA   20.00
+#=GF TC   25.11
+#=GF NC   undefined
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://biobases.ibch.poznan.pl/ncRNA
+#=GF DR   SO:0000383 SO:MicF_RNA
+#=GF DR   GO:0006950 GO:response to stress
+#=GF DR   GO:0003729 GO:mRNA binding
+#=GF RN   [1]
+#=GF RM   11601842
+#=GF RT   MicF: an antisense RNA gene involved in response of Escherichia coli
+#=GF RT   to global stress factors.
+#=GF RA   Delihas N, Forst S;
+#=GF RL   J Mol Biol 2001;313:1-12.
+#=GF CC   The micF gene is a stress response gene found in Escherichia coli
+#=GF CC   and related bacteria that post-transcriptionally controls expression
+#=GF CC   of the outer membrane porin gene ompF. The micF gene encodes a
+#=GF CC   non-translated 93 nt antisense RNA that binds its target ompF mRNA
+#=GF CC   and regulates ompF expression by inhibiting translation and inducing
+#=GF CC   degradation of the message. In addition, other factors, such as the
+#=GF CC   RNA chaperone protein StpA also play a role in this regulatory system.
+#=GF CC   Expression of micF is controlled by both environmental and internal
+#=GF CC   stress factors. Four transcriptional regulators are known to bind
+#=GF CC   the micF promoter region and activate micF expression.
+#=GF WK   http://en.wikipedia.org/wiki/MicF_RNA
+#=GF SQ   4
+
+Z33506.1/97-4                CGCUAUCAUCAUUAACUUUAUUUAUUACCGUCAUUCAGU..UCUGAAUGU
+Y15844.1/543-450             CGCUAUCAUCAUUAACUUUAUUUAUUACCGUCAUUCACU..UCUGAAUGU
+AF039309.1/94-1              CGCUAUCAUCAUUAACUUUAUUUAUUACCGUCAUUCACU..UCUGAAUGU
+L24960.1/158-73              CGCUAUCAUCAUUAUUUUCAUU.AUUACCUUCAUUAUCCGAAGAUAAUUU
+#=GC SS_cons                 ................................<<<<<<....>>>>>>..
+
+Z33506.1/97-4                CUGUUUACCCCUAUUUCGACCGGAUGCUUCGCAUCCGGUUUUUUUU
+Y15844.1/543-450             CUGUUUACCCCUAUUUCAACCGAAUGCUUCGCAUUCGUUUUUUUUA
+AF039309.1/94-1              CUGUUUACCCCUAUUUCAACCGGAUGCUUCGCAUUCGGUUUUUUUU
+L24960.1/158-73              CUGCAUACC.....UUUAACCGGCUUC....UGGCCGGUUUUUUAU
+#=GC SS_cons                 .................<<<<<<<<<<...>>>>>>>>>>......
+//

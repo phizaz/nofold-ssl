@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00361
+#=GF ID   snoZ119
+#=GF DE   Small nucleolar RNA Z119
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   22.00
+#=GF TC   104.59
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   Z119 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z119
+#=GF SQ   6
+
+AP003537.3/57284-57187             UUUUGGAGAUGAUGAUUUAUAUCAGAGGCUGUUUCUGAGGAUGAGCCUUG
+AJ458935.1/1-97                    UUUUGGAGAUGAUGAUUUGUAUCAGAGGCUGUUUCUGAGGACGGGCCAAU
+AK065940.1/211-307                 UUUUGGAGAUGAUGAUUUGUAUCAGAGGCUGUUUCUGAGGACGGGCCAAU
+AK065940.1/429-526                 UUUUGGAGAUGAUGAUUUAUAUCAGAGGCUGUUUCUGAGGAUGAGCCUUG
+AJ490487.1/1-97                    UUUUGGAGAUGAUGAUUUGUAUCAGAGGCUGUUUCUGAGGACGGGCCAAU
+AJ490488.1/1-94                    ..UUGGAGAUGAUGAUUUAUAUCAGAGGCUGUUUCUGAGGAUGAGCCUUG
+#=GC SS_cons                       ..<<<<<..................................<<<<<....
+#=GC RF                            UUuuGGaGAUGAUGAUUUaUAUCAGAGGCUGUUUCUGAGGAuGaGCCaau
+
+AP003537.3/57284-57187             AGCUCACCCAGUGCUGCAAAAGAACUGAUUUGCCGUUCUGAUCCAAUU
+AJ458935.1/1-97                    GGCUCUCCCAGUGCUGCAAA.GAACUGAUUUGCCGUUCUGAUCCAAAA
+AK065940.1/211-307                 GGCUCUCCCAGUGCUGCAAA.GAACUGAUUUGCCGUUCUGAUCCAAAA
+AK065940.1/429-526                 AGCUCACCCAGUGCUGCAAAAGAACUGAUUUGCCGUUCUGAUCCAAUU
+AJ490487.1/1-97                    GGCUCUCCCAGUGCUGCAAA.GAACUGAUUUGCCGUUCUGAUCCAAAA
+AJ490488.1/1-94                    AGCUCACCCAGUGCUGCAAAAGAACUGAUUUGCCGUUCUGAUCCAA..
+#=GC SS_cons                       .>>>>>.........<<<<<........>>>>>........>>>>>..
+#=GC RF                            aGCuCaCCCAGUGCUGCaaaAGAACUGAuuuGCCGUUCUGAuCCaaaa
+//

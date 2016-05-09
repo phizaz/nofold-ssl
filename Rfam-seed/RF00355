@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00355
+#=GF ID   snoR28
+#=GF DE   Small nucleolar RNA snoR28
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD; Moxon SJ, Daub J
+#=GF GA   40.00
+#=GF TC   51.37
+#=GF NC   26.16
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   11469857
+#=GF RT   Identification of 66 box C/D snoRNAs in Arabidopsis thaliana:
+#=GF RT   extensive gene duplications generated multiple isoforms predicting
+#=GF RT   new ribosomal RNA 2'-O-methylation sites.
+#=GF RA   Barneche F, Gaspin C, Guyot R, Echeverria M;
+#=GF RL   J Mol Biol 2001;311:57-73.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   R28 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snoR28
+#=GF SQ   9
+
+AP008212.1/4405784-4405861               GAUCAAGGAGAUGACGUAUUCUACUGUGAAUAUGAAUAUGACAUACACUG
+AAAA02018380.1/82969-82892               GAUCAAGGAGAUGACGUAUUCUACUGUGAAUAUGAAUAUGAUAUACACUG
+AF417481.1/986-1063                      GAUGGAGGAGAUGAUGUAUUUUACUGUGAAUAUGAGUAUGAUAUUCAUUG
+AASG02003017.1/11736-11659               AAUGAAGGAGAUGAUAUUUUCUUAUGCGAGUAUGAGUAUGACAUCAUCUG
+AARH01003843.1/468937-468860             GAUGAAGGAGAUGACAUUUUCAUGUGCGAAUAUGAAUAUGACAUACAUUG
+AF317949.1/1-74                          GAU...GGUGAUGAUGUGUUCUUGUGUGAGUAUGAGUAUGAUGUUCAUUG
+AF317950.1/1-74                          GAU...GGUGAUGAUGUGUUUUUGUGUGAGUAUGAGUAUGAUGUUCAUUG
+AJ421410.1/955-1028                      GAU...GGUGAUGAUGUGUUUUUGUGUGAGUAUGAGUAUGAUGUUCAUUG
+BT004309.1/805-878                       GAU...GGUGAUGAUGUGUUCUUGUGUGAGUAUGAGUAUGAUGUUCAUUG
+#=GC SS_cons                             <<<...............................................
+#=GC RF                                  gAu...GGaGAUGAuGUaUUcUagUGUGAaUAUGAaUAUGAUaUaCAuUG
+
+AP008212.1/4405784-4405861               GCAUAAUUUUAAGCGUCUGGCAGACAUC
+AAAA02018380.1/82969-82892               GCAUAAUUUUAAGCGUCUGGCAGACAUC
+AF417481.1/986-1063                      GCAUAAUUUUAAGCGUUUGGCAGAUAUU
+AASG02003017.1/11736-11659               GCAUUCUUUCAAGCGUCUAGCUGAGAUU
+AARH01003843.1/468937-468860             GCACAGUUUCAAGCGUUUAGCUGAUAUU
+AF317949.1/1-74                          GCGUAGCUUUAAGCGUUUGGCUGA.AUU
+AF317950.1/1-74                          GGGUAGCUUUAAGCGUGUGGCUGA.AUU
+AJ421410.1/955-1028                      GGGUAGCUUUAAGCGUGUGGCUGA.AUU
+BT004309.1/805-878                       GCGUAGCUUUAAGCGUUUGGCUGA.AUU
+#=GC SS_cons                             .........................>>>
+#=GC RF                                  GcaUAauUUUAAGCGUuUGGCaGA.aUc
+//

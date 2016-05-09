@@ -1,0 +1,77 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00511
+#=GF ID   IRES_KSHV
+#=GF DE   Kaposi's sarcoma-associated herpesvirus internal ribosome entry site (IRES)
+#=GF AU   Moxon SJ
+#=GF SE   Published; 11160685, INFERNAL
+#=GF SS   Published; PMID:11160685
+#=GF GA   45.00
+#=GF TC   311.34
+#=GF NC   20.74
+#=GF TP   Cis-reg; IRES;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000243 SO:internal_ribosome_entry_site
+#=GF DR   GO:0043022 GO:ribosome binding
+#=GF RN   [1]
+#=GF RM   11160685
+#=GF RT   Kaposi's sarcoma-associated herpesvirus vCyclin open reading frame
+#=GF RT   contains an internal ribosome entry site.
+#=GF RA   Bieleski L, Talbot SJ;
+#=GF RL   J Virol 2001;75:1864-1869.
+#=GF RN   [2]
+#=GF RM   14993645
+#=GF RT   A polypyrimidine tract facilitates the expression of Kaposi's
+#=GF RT   sarcoma-associated herpesvirus vFLIP through an internal ribosome
+#=GF RT   entry site.
+#=GF RA   Bieleski L, Hindley C, Talbot SJ;
+#=GF RL   J Gen Virol 2004;85:615-620.
+#=GF CC   This family represents the Kaposi's sarcoma-associated herpesvirus (KSHV)
+#=GF CC   internal ribosome entry site (IRES) present in the vCyclin gene. The
+#=GF CC   vCyclin and vFLIP coding sequences are present on a bicistronic transcript
+#=GF CC   and it is thought the IRES may initiate translation of vFLIP from this
+#=GF CC   bicistronic transcript [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Kaposi's_sarcoma-associated_herpesvirus_internal_ribosome_entry_site_(IRES)
+#=GF SQ   5
+
+U93872.2/123729-123482               UUGCUAUGCCGCGGCAGACUCCUUUUCCCGCCAAGAACUUAUAGACCAGG
+U79416.1/354-601                     UUGCUAUGCCGCGGCAGACUCCUUUUCCCGCCAAGAACUUAUAGACCAGG
+U75698.1/123214-122967               UUGCUAUGCCGCGGCAGACUCCUUUUCCCGCCAAGAACUUAUAGACCAGG
+U40667.1/2005-2252                   UUGCUAUGCCGCGGCAGACUCCUUUUCCCGCCAAGAACUUAUAGACCAGG
+AF148805.2/123462-123215             UUGCUAUGCCGCGGCAGACUCCUUUUCCCGCCAAGAACUUAUAGACCAGG
+#=GC SS_cons                         .........<<<...<<<<<<<<<<...<<<<<..<<<<<.......<<<
+#=GC RF                              uuGcuAuGcCGCGGcaGaCuCCuuuuccCGCCaAGaaCuuAuAGAccaGG
+
+U93872.2/123729-123482               AGAAAGAACUCCUUGAGAAGUUGGCGUGGCGAACAGAGGCAGUCUUAGCG
+U79416.1/354-601                     AGAAAGAACUCCUUGAGAAGUUGGCGUGGCGAACAGAGGCAGUCUUAGCG
+U75698.1/123214-122967               AGAAAGAACUCCUUGAGAAGUUGGCGUGGCGAACAGAGGCAGUCUUAGCG
+U40667.1/2005-2252                   AGAAAGAACUCCUUGAGAAGUUGGCGUGGCGAACAGAGGCAGUCUUAGCG
+AF148805.2/123462-123215             AGAAAGAACUCCUUGAGAAGUUGGCGUGGCGAACAGAGGCAGUCUUAGCG
+#=GC SS_cons                         <<......>>>>>....>>>>>....>>>>>...>>>>>.>>>>>..>>>
+#=GC RF                              aGAAAGAACuCCuuGAGaaGuuGGcGuGGCGAAcagaGGcaGuCuuAGCG
+
+U93872.2/123729-123482               ACGGACGUAACUUCCUUCUUGUUACUUAAAUUGCUGGGGGGCUCCCAACA
+U79416.1/354-601                     ACGGACGUAACUUCCUUCUUGUUACUUAAAUUGCUGGGGGGCUCCCAACA
+U75698.1/123214-122967               ACGGACGUCACUUCCUUCUUGUUACUUAAAUUGCUGGGGGGCUCCCAACA
+U40667.1/2005-2252                   ACGGACGUCACUUCCUUCUUGUUACUUAAAUUGGUGGGGGGCUCCCAACA
+AF148805.2/123462-123215             ACGGACGUCACUUCCUUCUUGUUACUUAAAUUGCUGGGGGGCUCCCAACA
+#=GC SS_cons                         ..<<<.......>>>.................<<<<<<<<<<...<<<<.
+#=GC RF                              AcGGacGuaAcuuCCuucuuGuuAcuuAAAuuGcuGgGgGGCuccCaaCA
+
+U93872.2/123729-123482               CCUGGACUUUUGGCACCACGAGGUCAACACCCUGAUUACAAAAGCCUUAG
+U79416.1/354-601                     CCUGGACUUUUGGCACCACGAGGUCGACACCCUGAUUACAAAAGCCUUAG
+U75698.1/123214-122967               CCUGGACUUUUGGCACCACGAGGUCAACACCCUGAUUACAAAAGCCUUAG
+U40667.1/2005-2252                   CCUGGACUUUUGGCACCACGAGGUCAACACCCUGAUUACAAAAGCCUUAG
+AF148805.2/123462-123215             CCUGGACUUUUGGCACCACGAGGUCAACACCCUGAUUACAAAAGCCUUAG
+#=GC SS_cons                         ...<<.<<<<<<......<<.<<<....>>>.>>....>>>>>>>>...>
+#=GC RF                              ccuGGACuuuuGGcAccACgAGGucAAcaCCcuGAuuACaaaaGCCuuAG
+
+U93872.2/123729-123482               UUGACCCAAAGACUGGCUCAUUGCCCGCCUCUAUUAUCAGCGCUGCAG
+U79416.1/354-601                     UUGACCCAAAGACUGGCUCAUUGCCCGCCUCUAUUAUCAGCGCUGCAG
+U75698.1/123214-122967               UUGACCCAAAGACUGGCUCAUUGCCCGCCUCUAUUAUCAGCGCUGCAG
+U40667.1/2005-2252                   UUGACCCAAAGACUGGGUCAUUGCCCGCCUCUAUUAUCAGCGCUGCAG
+AF148805.2/123462-123215             UUGACCCAAAGACUGGCUCAUUGCCCGCCUCUAUUAUCAGCGCUGCAG
+#=GC SS_cons                         >>>...........<<<.....>>>.>>>>>>.....>>>>.......
+#=GC RF                              uuGAcccAAAGAcuGGcucAuugCCcGCCuCuAuuAuCagCGcuGcAG
+//

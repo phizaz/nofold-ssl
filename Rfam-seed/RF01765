@@ -1,0 +1,85 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01765
+#=GF ID   srg1
+#=GF DE   srg1
+#=GF AU   Gardner PP, Moore B
+#=GF SE   Gardner PP
+#=GF SS   Predicted; Gardner PP
+#=GF GA   30.00
+#=GF TC   33.99
+#=GF NC   20.03
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene;
+#=GF DR   GO:0045892 GO:Biological_process;
+#=GF RN   [1]
+#=GF RM   15175754
+#=GF RT   Intergenic transcription is required to repress the Saccharomyces
+#=GF RT   cerevisiae SER3 gene.
+#=GF RA   Martens JA, Laprade L, Winston F;
+#=GF RL   Nature. 2004;429:571-574.
+#=GF WK   http://en.wikipedia.org/wiki/SRG1_RNA
+#=GF SQ   2
+
+AAEG01000006.1/258554-259104             UAAUGCCUUUGUUUGGCCAAGCUAUGUGCAAAUAUCACAAAUUAAAAA.U
+AABY01000111.1/26714-26159               CAAUGCCUUUGUUUGACCAUGUUGUGUGCUAAUAUGACAAAUUAAAAAUU
+#=GC SS_cons                             <<<<<<...<<<<<<<<<<<<...<<<<.......>>>>..........>
+#=GC RF                                  uaauGCcUUuGuuuggCCaagcUAuGuGcAAAUAUCaCaAAUUAAAAA.u
+
+AAEG01000006.1/258554-259104             UUGGUUAAGCAGUUAGGCUGGACCUAAUAUUUUAGAAAAACCUAAUUUUU
+AABY01000111.1/26714-26159               UUAGUUAAGCAUUUGGGCUGGCCUUAAUAUUUAACAAAAAGCUAAUUUUU
+#=GC SS_cons                             >>>>>>>>>>><<<<.<<<<...<<<<....>>>>...........<<<<
+#=GC RF                                  uuGGuuaagCaGuuaGGCuGGAcCuaaUAUUuuaGAAAAAccUAAUuuuu
+
+AAEG01000006.1/258554-259104             UUUGUGGACCCAUUUUCGAUAUUUACUCACAAAUGGAAU.UCAAGGGGAA
+AABY01000111.1/26714-26159               UUUGUGGGCCCACUUUCGAUAGUUAGUCACUAGCGGAAGCUCAGGAAGAG
+#=GC SS_cons                             <<<<<<<.<<<.<<<<<<<<<.<<<<<<<.<<.<<<<.......<<<<..
+#=GC RF                                  uuuGuGGACCCAuuuuCgauaUuuaCuCacaaAuGGaAU.UcAAGggGAA
+
+AAEG01000006.1/258554-259104             CAACUUCGGUCU..CAGCACUUUAAUUAUUCUUCUCGUUCCCACCUAAUU
+AABY01000111.1/26714-26159               CAGCUUUGGUCUCUCAGCACUUUAAUCCUGCUUCUCGUUCCCACUUAAUU
+#=GC SS_cons                             ...>>>>.<<<<....<<<.<<<<<<<.<<.<<<<<<<............
+#=GC RF                                  cAACuuCGGuCu..cAGCacuuuaauuAuucuuCuCGuUcccAccUAAUU
+
+AAEG01000006.1/258554-259104             UCGCAAUUUAUUGUCCUUGACUUCUACCACGAGAAA.AAAAUUAAGAAAA
+AABY01000111.1/26714-26159               UCGCAGUUUAUUGUCCUUGACUUCUACCACGAGAAAAAAAAUUAGGAAAA
+#=GC SS_cons                             ..<<<<....>>>>..............>>>>>>>..>>>>>>>>>....
+#=GC RF                                  UcgCaaUUUAuuGuccUUGAcUUcUAccaCGaGaaA.aaaauuaagAAAA
+
+AAEG01000006.1/258554-259104             UGCAACGCUGCCCGUGCAGGGUUUUCUGAGCGGGAUGAAAAAAUCAGACA
+AABY01000111.1/26714-26159               UACAACACUGCCCGUGCAGAGUUUUCUGAGCGGAAUGAAAAAAUUAAAUU
+#=GC SS_cons                             >>>.......<<<<<.<<<<....>>>>.>>>>>...........>>>>.
+#=GC RF                                  uGCAAcGcUGCCCGuGCaGgGUUUuCuGAgCGGGAUGAAAAAAUcaGaCA
+
+AAEG01000006.1/258554-259104             AAUAUCCAAGUUAUGAGUAAUUACUUUGUUGGAAGGAGGGAGCAGAGCAU
+AABY01000111.1/26714-26159               AAUGUCCAAGUUAUGAGUAAUUACUUCGUUGUAGGGAGGGAGCAGAGCCA
+#=GC SS_cons                             ....>>>>..>>.>>>>>>>......>>>>>>>>>..>>>...<<<<..<
+#=GC RF                                  AAUAuCCaAGuuAuGaGuaaUUAcUUuguuGgaagGAGGGAGcaGaGcAu
+
+AAEG01000006.1/258554-259104             AAGGAAAUUCUUAAAACUGUUAUGUAUAUAAAGGAAGAACCAUUUCUAGU
+AABY01000111.1/26714-26159               AAGGAAAUUUUUAAAAUUGUUAAAUAUAUAAAGGAAGAACCAUUCCUGAU
+#=GC SS_cons                             <<<<....>>>>>...<<<<...<<<<..<<<<<<<<<<<........>>
+#=GC RF                                  aaGgAAAUuCuuaAAACuGuUAUGuauAUaaaGGaagaaCcAUUUcUAGu
+
+AAEG01000006.1/258554-259104             UAUUUCACUUUUU.GAUACUUGUCAACUAUCUUAGUAAAAAUACAGAACU
+AABY01000111.1/26714-26159               UACUUUACUUUUUCGAUUCUUGUCAGUUAUCUUAGUA.AAAUACAAAACU
+#=GC SS_cons                             >.>>>>.>>>>....>>>>......<<<<...>>>>......>>>>..>>
+#=GC RF                                  uAuuuCACuuuUU.GauaCUUGUcAaCuaUcUuaGuAAAAAUaCaGAACu
+
+AAEG01000006.1/258554-259104             CUAUAAAGAACCACAGAAAAAUCGACAGCAAUGACAAGCAUUGACAUUAA
+AABY01000111.1/26714-26159               CUAUAAAGAACCACAGGAAAAUCAGCAGCAAUGACAAGCAUUGACAUUAA
+#=GC SS_cons                             >>........>>>>>>>>>>>....>>>>..>>>>..>>>>>>.......
+#=GC RF                                  CuAUAAAGAACCaCagaaaaaUcGACaGCAAugaCAAGCauugAcAUUAA
+
+AAEG01000006.1/258554-259104             CAACUUACAAAAUACCUUUCAACAAGCUAUGAAUAUGAGCGGCUCCCCAG
+AABY01000111.1/26714-26159               CAACUUACAAAAUACCUUUCAACAAGCUAUGAAUAUGAGCGGCUCUGCAG
+#=GC SS_cons                             .................<<<<........>>>>....<<<<.<<....>>
+#=GC RF                                  cAAcUUAcAAAAUAccUuuCaAcAAGcUAuGaaUAUGaGCGGCuccccaG
+
+AAEG01000006.1/258554-259104             GCGCUGU
+AABY01000111.1/26714-26159               GCGCUGU
+#=GC SS_cons                             .>>>>..
+#=GC RF                                  GCGCuGU
+//

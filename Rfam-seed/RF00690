@@ -1,0 +1,57 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00690
+#=GF ID   MIR408
+#=GF DE   microRNA MIR408
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   38.00
+#=GF TC   38.78
+#=GF NC   37.06
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000102
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   6
+
+AP008207.1/12284551-12284732             GAUUGGAGAGGAGAG.GAGACAGGGAUGAGGCAGAGCAUGGGAUGGGGCU
+AM434998.2/53932-53808                   AAAUGGAGACAAGAGGAAGACGGGGACGAGGUAG................
+AC136840.24/84429-84307                  AGUUAAUGACAGGACAAAGACAGGGAACAUGCAG................
+AASG02001473.1/22877-22996               AGAAACAGACA.GACAAAGACUGGGAACAGGCAG................
+AARH01001232.1/22607-22493               AGA....GACA.GAUGAAGACGGGGAACAGGCAG................
+AK228004.1/1596-1471                     AAGCGGUAAUGAGAGAGAGACAGGGAACAAGCAG................
+#=GC SS_cons                             ................<<<.<<<<<<<.<<<<<<................
+#=GC RF                                  ARWURGWGACRAGASRRAGACRGGGAASAGGCAGagcaugggauggggcu
+
+AP008207.1/12284551-12284732             AUCAACAGAUGUAGAUUAUUCCUUGCACAAGAGAUGAUGAUGAGCUGUGA
+AM434998.2/53932-53808                   .......................UGCAUG...GAUG.....GAACUAUUA
+AC136840.24/84429-84307                  .......................AGCAUG...GAUG.....AAACUAUCG
+AASG02001473.1/22877-22996               .......................UGCAUG...GAUG.....GGGCUACUA
+AARH01001232.1/22607-22493               .......................AGCAUG...GAUG.....GAGCUACUA
+AK228004.1/1596-1471                     .......................AGCAUG...GAUU.....GAGUUUACU
+#=GC SS_cons                             ........................<<<<<...<........<<.......
+#=GC RF                                  aucaacagauguagauuauuccuWGCAUGagaGAUGaugauGARCUAYYA
+
+AP008207.1/12284551-12284732             AUGAGUUCUGAGAGAUGGCUGGUGUUGUUGUUGCUCCCUCCCCUGCACUG
+AM434998.2/53932-53808                   AC........AGAAGAAUGUUAAGCUGUUUUUGCUCU.ACCCAUGCACUG
+AC136840.24/84429-84307                  AC........AGUGAAGG...AAACUGUUGUGGCUCC.ACUCAUGCACUG
+AASG02001473.1/22877-22996               AC........AGAAAA.....CAUCUGUUUUGGCUCU.ACCCCUGCACUG
+AARH01001232.1/22607-22493               AC........AGAAG......UACUUGUUUUGGCUCU.ACCCAUGCACUG
+AK228004.1/1596-1471                     AA........AACAUUAAACGACUCUGUUUUGUCUCU.ACCCAUGCACUG
+#=GC SS_cons                             ..................................>>....>>>>>>.>>>
+#=GC RF                                  ACgaguucugAGARRWRGVYKAAKYUGUUKUKGCUCYcACCCMUGCACUG
+
+AP008207.1/12284551-12284732             CCUCUUCCCUGGCUCCCCUGCACACCUCUCUCU
+AM434998.2/53932-53808                   CCUCUUCCCUGGCU.C.UGUCUCUCCUUUACUC
+AC136840.24/84429-84307                  CCUCUUCCCUGGCUUA.UAAUCUGUUUUUAUUA
+AASG02001473.1/22877-22996               CCUCUUCCCUGGCUUC.CGGUUCUUCUUUUUGU
+AARH01001232.1/22607-22493               CCUCUUCCCUGGCUUG.UGGCUCUUCCUUUUCU
+AK228004.1/1596-1471                     CCUCUUCCCUGGCUCC.CUCUUUUUUUCUCUAU
+#=GC SS_cons                             >>>.>>>>>>>.>>>..................
+#=GC RF                                  CCUCUUCCCUGGCUYCcYKGYUYUYYUYUHUYU
+//

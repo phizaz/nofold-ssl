@@ -1,0 +1,48 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01917
+#=GF ID   MIR2587
+#=GF DE   microRNA MIR2587
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   60.00
+#=GF TC   60.14
+#=GF NC   55.43
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000835
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   19767456
+#=GF RT   Genome-wide Medicago truncatula small RNA analysis revealed novel
+#=GF RT   microRNAs and isoforms differentially regulated in roots and
+#=GF RT   nodules
+#=GF RA   Lelandais-Briere C, Naya L, Sallet E, Calenge F, Frugier F, Hartmann
+#=GF RA   C, Gouzy J, Crespi M
+#=GF RL   Plant Cell. 2009;21:2780-2796.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+AC174327.15/38435-38539             CGGUGGUGUCAUGGUCAUUGUUGACCGUUCAUAUGAACCCUGCAAUAGC.
+AC148719.51/27834-27725             CGAUGGUGUCAUGGUCAUUGUUGACCGUUCAUAGGAACCCUGCAAUUGCA
+CR954186.2/74768-74865              ...AGGUGUCAUGGUCAUUGUUGACCGUUCAUAUGAACCCUGCAAUAAC.
+AC126778.9/57788-57892              CGGUGGUGUCAUGGUCAUUGUUGACCGUUCAUAUGAACCCUGCAAUAGC.
+#=GC SS_cons                        .....<<<<<<.<<<<.<<<<<<<<<<<<.<<<<<<<<<<..<<...<..
+
+AC174327.15/38435-38539             ....AUUGCAGCUUGUGUGGGGUUCAUAUAACGGUCAACAGAGACUCUUG
+AC148719.51/27834-27725             AUGCAUUGUAGCUUGUGUGGGGUUCAUAUAACGGUCAACAGAGACCCUUG
+CR954186.2/74768-74865              ....AUUGCAACUUGUGUGGGGUUCAUAUAACGGUCAACUGAGACCUUUG
+AC126778.9/57788-57892              ....AUUGCAGCUUGUGUGGGGUUCAUAUAACGGUCAACAGAGACCAUUG
+#=GC SS_cons                        ...........>...>>..>>>>>>>>>>>>>>>>>>>>>>.>>>>..>>
+
+AC174327.15/38435-38539             ACAUCAAAGA
+AC148719.51/27834-27725             ACAUAAAAAA
+CR954186.2/74768-74865              ACAUCA....
+AC126778.9/57788-57892              ACAUCAAAGA
+#=GC SS_cons                        >>>>......
+//

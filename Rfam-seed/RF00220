@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00220
+#=GF ID   Rhino_CRE
+#=GF DE   Human rhinovirus internal cis-acting regulatory element (CRE)
+#=GF AU   Moxon SJ
+#=GF SE   PMID:9848654
+#=GF SS   Published; PMID:9848654
+#=GF GA   40.00
+#=GF TC   43.93
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   9848654
+#=GF RT   The rhinovirus type 14 genome contains an internally located RNA
+#=GF RT   structure that is required for viral replication.
+#=GF RA   McKnight KL, Lemon SM;
+#=GF RL   RNA 1998;4:1569-1584.
+#=GF CC   This family represents a cis-acting regulatory element (CRE) from the human
+#=GF CC   rhinoviruses. The CRE is located within the genome segment encoding the
+#=GF CC   capsid proteins so is found in a protein coding region. The family has
+#=GF CC   been found to be essential for efficient viral replication and it has been
+#=GF CC   suggested that the CRE is required for initiation of minus-strand RNA
+#=GF CC   synthesis [1].
+#=GF WK   http://en.wikipedia.org/wiki/Human_rhinovirus_internal_cis-acting_regulatory_element_(CRE)
+#=GF SQ   12
+
+AY355195.1/1-86                GGCUUAGGUGAUGAAUUAGAAGAAGUCAUCGUUGAGAAAACGAAACAGAC
+AY355187.1/1-86                GGAUUGGGUGAUGAAUUAGAAGAAGUUAUUGUCGAGAAAACGAAACAGAC
+AY355253.1/1-86                GGUUUGAAUGACGAGUUAGAGGAAGUCAUCGUCGAGAAAACGAAACAGAC
+L05355.1/2330-2415             GGCUUAGGUGAUGAAUUAGAAGAAGUCAUCGUUGAGAAAACGAAACAGAC
+AY355264.1/1-86                GGCCUCAAUGAUGAAUUAGAGGAAGUUAUUGUCGAGAAAACGAGACAGAC
+AY355260.1/1-86                GGUCUUAAUGAUGAAUUAGAAGAGGUCAUUGUCGAGAAAACGAGACAGAC
+AY355216.1/1-86                GGCUUGGGAGAAGAGCUUGAGGAAGUCAUUGUCGAGAAAACGAAACAGAC
+AY355273.1/1-86                GGUCUUAAUGAUGAAUUGGAGGAAGUCAUUGUUGAGAAAACGAAACAGAC
+K02121.1/2330-2415             GGCUUAGGUGAUGAAUUAGAAGAAGUCAUCGUUGAGAAAACGAAACAGAC
+AY355267.1/1-86                GGGUUGGGAGAUGAACUAGAGGAAGUCAUAGUCGAAAAAACGAAACAGAC
+AY355218.1/1-86                GGUCUGGGUGAUGAACUGGAAGAAGUUAUUGUUGAGAAAACGAAACAGAC
+X01087.1/2326-2411             GGCUUAGGUGAUGAAUUAGAAGAAGUCAUCGUUGAGAAAACGAAACAGAC
+#=GC SS_cons                   <<.<<<<<<<<..........<<.<<<<<<<<<..............>>>
+
+AY355195.1/1-86                GGUGGCCUCAAUCUCAUCUGGUCCAAAACACACACA
+AY355187.1/1-86                ACUAGCUUCAGUAUCAUCAGGACCAAAACACACCCA
+AY355253.1/1-86                GUUGGCUUCAAUUUCAUCCGGGCCAAAAUACACUCA
+L05355.1/2330-2415             GGUGGCCUCAAUCUCAUCUGGUCCAAAACACACACA
+AY355264.1/1-86                UUUAGCUUCCGUUGCAUCAGGACCAAAACACACCCA
+AY355260.1/1-86                AUUGGCCUCUGUUUCUUCUGGACCUAAACAUACACA
+AY355216.1/1-86                AGUGGCUUCAAUUGCUUCUGGAUCUAAACACACCCA
+AY355273.1/1-86                AUUGGCUUCUAUCACUUCUGGACCCAAACAUACUCA
+K02121.1/2330-2415             GGUGGCCUCAAUCUCAUCUGGUCCAAAACACACACA
+AY355267.1/1-86                GUUGGCUUCAGUUGCAACAGGUUCAAAAUAUACCCA
+AY355218.1/1-86                ACUAGCUUCAAUAUCAUCAGGACCUAAGCAUACCCA
+X01087.1/2326-2411             GGUGGCCUCAAUCUCAUCUGGUCCAAAACACACACA
+#=GC SS_cons                   >>>>>>.>>....>>>>>>>>.>>............
+//

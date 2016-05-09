@@ -1,0 +1,41 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01531
+#=GF ID   TB10Cs3H1
+#=GF DE   Trypanosomatid snoRNA TB10Cs3H1
+#=GF AU   Doniger T, Michaeli S, Unger R, Osuch I
+#=GF SE   Predicted; WAR;
+#=GF SS   Predicted; WAR;
+#=GF GA   40.00
+#=GF TC   69.19
+#=GF NC   20.04
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   15840815
+#=GF RT   A genome-wide analysis of C/D and H/ACA-like small nucleolar RNAs in
+#=GF RT   Trypanosoma brucei reveals a trypanosome-specific pattern of rRNA
+#=GF RT   modification.
+#=GF RA   Liang XH, Uliel S, Hury A, Barth S, Doniger T, Unger R, Michaeli S;
+#=GF RL   RNA. 2005;11:619-645.
+#=GF WK   http://en.wikipedia.org/wiki/Trypanosome_H/ACA_box_snoRNAs
+#=GF SQ   4
+
+AM502254.1/1780018-1780083                 AGCAGUGUCGCUAUGCGU.CUCCGUCUCACCUCGGUGCGGAGCAACGGUA
+AM494972.1/957542-957607                   AGCAGUGUCGCUAUGCGU.CUCCACCUCACCCCGAUGCGGAGCAACGGUA
+AAHA01000001.1/3814741-3814802             AGCAGUGUCGCUAUGCGUU.CCCGU....CAGUAAUACGGGCUAACGGUA
+AAHK01023897.1/136-197                     AGCGGUGUCGCUAUGCGUC.CCCGC....AGACAGUGCGGUGCGACGGUA
+#=GC SS_cons                               .<<<<<<....<<<.<<<<<<<<<<...........>>>>>>.>>>>>>>
+#=GC RF                                    AGCAGUGUCGCUAUGCGUyCYCCGUCUCACMKYRRURCGGRGYAACGGUA
+
+AM502254.1/1780018-1780083                 CGAAACACGUGCGAGAC
+AM494972.1/957542-957607                   CGAAACACGUGCGAGAC
+AAHA01000001.1/3814741-3814802             CGAAGCACGUGCGAGAG
+AAHK01023897.1/136-197                     CGAAGCACGCGCGAGAG
+#=GC SS_cons                               .....>>>.>>>.....
+#=GC RF                                    CGAARCACGUGCGAGAK
+//

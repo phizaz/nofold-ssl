@@ -1,0 +1,69 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01925
+#=GF ID   MIR1428
+#=GF DE   microRNA MIR1428
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   85.00
+#=GF TC   87.64
+#=GF NC   48.09
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000575
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   18312648
+#=GF RT   Identification of novel and candidate miRNAs in rice by high
+#=GF RT   throughput sequencing
+#=GF RA   Sunkar R, Zhou X, Zheng Y, Zhang W, Zhu JK
+#=GF RL   BMC Plant Biol. 2008;8:25.
+#=GF RN   [2]
+#=GF RM   19103661
+#=GF RT   Characterization and expression profiles of miRNAs in rice seeds
+#=GF RA   Xue LJ, Zhang JJ, Xue HW
+#=GF RL   Nucleic Acids Res. 2009;37:916-930.
+#=GF RN   [3]
+#=GF RM   18353984
+#=GF RT   Genome-wide analysis for discovery of rice microRNAs reveals
+#=GF RT   natural antisense microRNAs (nat-miRNAs)
+#=GF RA   Lu C, Jeong DH, Kulkarni K, Pillay M, Nobuta K, German R, Thatcher
+#=GF RA   SR, Maher C, Zhang L, Ware D, Liu B, Cao X, Meyers BC, Green
+#=GF RA   PJ
+#=GF RL   Proc Natl Acad Sci U S A. 2008;105:4951-4956.
+#=GF RN   [4]
+#=GF RM   18687877
+#=GF RT   A diverse set of microRNAs and microRNA-like small RNAs in developing
+#=GF RT   rice grains
+#=GF RA   Zhu QH, Spriggs A, Matthew L, Fan L, Kennedy G, Gubler F, Helliwell
+#=GF RA   C
+#=GF RL   Genome Res. 2008;18:1456-1465.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   5
+
+AP008216.1/3940370-3940493             AGUUAGUGCGCUUUGCGAAUUCACAGGCCCUAUCUUGUGGUAUGAACUGA
+AP004317.1/76457-76580                 GGUUAGUGCGCUUUGCGAAUUCACGGGUCUUAUCUUGUGGUAUGAACUGA
+EU563913.1/488-611                     GGUUAGUGUACUUUGCGAAUUCACAGGCCCUAUAUUGUGGUAUGAACUGA
+AP003793.1/15957-16080                 GGUUAGUGCGUUUUGCAAAUUCGCAGGCCCUAUCUUGUGGUAUGAACUGA
+AP008213.1/5483597-5483474             GGUUAGUGUGCUUUGCGAAUUCACAGGCCCUAUCUUGUGGUAUGAACUAA
+#=GC SS_cons                           ........<<<<<<<<<<<<<<...<<<..<<<<<<<<<<<<.<..<<.<
+
+AP008216.1/3940370-3940493             GUACGCGAUGAUUUAUGGCGCAUAUUGGGGGCUUACCAAAAGAUAAUGCU
+AP004317.1/76457-76580                 GUACGUAAUGAUUUAUGGUGCAUAUUGGGGGCUUACCAUAAGAUAAUGCC
+EU563913.1/488-611                     GUACGCGAUGAUUUAUGGUGCAUAUUGGGGGCUUACCAUAAGAUAAUGCC
+AP003793.1/15957-16080                 GUACGCGAUGAUUUAUCCUGCGUAUUGGGGGCUUACCAUAAGAUAAAGCC
+AP008213.1/5483597-5483474             GUACGCGAUGAUUUCUGGUACGUAUUGGGGGCUUACCAUAAGAUAAUGCC
+#=GC SS_cons                           <<<.<<<...........>>>.>>>>.>>..>.>>>>>>>>>>>>..>>>
+
+AP008216.1/3940370-3940493             GUGAAUUUGCAAAGCGCUCAAACC
+AP004317.1/76457-76580                 AUGAAUUCGCAAAGCGUUCAAACC
+EU563913.1/488-611                     AUGAAUUCGCAAAGUGUUCAAACC
+AP003793.1/15957-16080                 GUGAAUUUGCAAAACGUUCAAACC
+AP008213.1/5483597-5483474             GUGAAUUCGUAAAGCGUUCAAACC
+#=GC SS_cons                           ..>>>>>>>>>>>>>>........
+//

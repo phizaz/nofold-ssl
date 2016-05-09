@@ -1,0 +1,38 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01842
+#=GF ID   mycoplasma_FSE
+#=GF DE   mycoplasma ribosomal frameshift element
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:7476162
+#=GF SS   Published; PMID:7476162
+#=GF GA   75.00
+#=GF TC   79.35
+#=GF NC   17.25
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r200011
+#=GF RN   [1]
+#=GF RM   7476162
+#=GF RT   Characterization of IS1221 from Mycoplasma hyorhinis: expression of
+#=GF RT   its putative transposase in Escherichia coli incorporates a ribosomal
+#=GF RT   frameshift mechanism.
+#=GF RA   Zheng J, McIntosh MA;
+#=GF RL   Mol Microbiol. 1995;16:669-685.
+#=GF WK   http://en.wikipedia.org/wiki/Mycoplasma
+#=GF SQ   3
+
+U01217.1/534-620             AAAUGAAGUUCUAAA.AAAGUGAAAAGCCUUGGUAGAGAUCUUUGACUCA
+X17372.1/577-663             AAUCGAAGCACUAAA.AAAGUGAAAAGCCUUGGUAGAGAUCUUUGACUCA
+L33926.1/533-620             AAAUGAAGUACUAAAAAAAGUGAGAAGCCUUGGUAGAGAUCUUUGACUCA
+#=GC SS_cons                 ..........................<<<<<<<<<<<.............
+#=GC RF                      AAAUGAAGUUCUAAA.AAAGUGAAAAGCCuuGGuaGaGAUCUUUGACUCA
+
+U01217.1/534-620             AGUCAACCAAGGCAAGAGAAAAUAAAAAAAAUUUAUAA
+X17372.1/577-663             AAUCAACCAAGGCAAGAAAAAAUAAAAAAAAUUUAUAA
+L33926.1/533-620             AAUCAACCAAGGCAAGAAAAAAUAAAAAAAAUUUAUAA
+#=GC SS_cons                 ..>>>>>>>>>>>.........................
+#=GC RF                      AGuCaaCCaaGGCAAGAGAAAAUAAAAAAAAUUUAUAA
+//

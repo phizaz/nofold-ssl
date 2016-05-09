@@ -1,0 +1,41 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00192
+#=GF ID   BLV_package
+#=GF DE   Bovine leukaemia virus RNA packaging signal
+#=GF AU   Moxon SJ
+#=GF SE   PMID:12359429
+#=GF SS   Published; PMID:12359429
+#=GF GA   20.00
+#=GF TC   23.51
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   12359429
+#=GF RT   The primary nucleotide sequence of the bovine leukemia virus RNA
+#=GF RT   packaging signal can influence efficient RNA packaging and virus
+#=GF RT   replication.
+#=GF RA   Mansky LM, Gajary LC;
+#=GF RL   Virology 2002;301:272-280.
+#=GF CC   This family represents the bovine leukaemia virus RNA encapsidation
+#=GF CC   (packaging) signal which is essential for efficient viral replication [1].
+#=GF WK   http://en.wikipedia.org/wiki/Bovine_leukaemia_virus_RNA_packaging_signal
+#=GF SQ   5
+
+AF257515.1/629-683             AUGGGAAAUUCCCCUUCUUAUAACCCUCCCGCUGGUAUCUCCCCCUCAGA
+D00647.1/629-683               AUGGGAAACUCCCCCUCCUAUAACCCCCCCGCUGGCAUCUCCCCCUCAGA
+K02120.1/628-682               AUGGGAAAUUCCCCCUCCUAUAACCCCCCCGCUGGUAUCUCCCCCUCAGA
+AF033818.1/418-472             AUGGGAAAUUCCCCCUCCUAUAACCCCCCCGCUGGUAUCUCCCCCUCAGA
+M10987.1/418-472               AUGGGAAAUUCCCCCUCCUAUAACCCCCCCGCUGGUAUCUCCCCCUCAGA
+#=GC SS_cons                   <<<<<<.........>>>>>>.........<<<<<<.............>
+
+AF257515.1/629-683             CUGGC
+D00647.1/629-683               CUGGC
+K02120.1/628-682               CUGGC
+AF033818.1/418-472             CUGGC
+M10987.1/418-472               CUGGC
+#=GC SS_cons                   >>>>>
+//

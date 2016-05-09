@@ -1,0 +1,85 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00072
+#=GF ID   SNORA75
+#=GF DE   Small nucleolar RNA SNORA75
+#=GF PI   U23
+#=GF AU   Bachellerie JP, Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD; Griffiths-Jones SR
+#=GF GA   33.00
+#=GF TC   34.12
+#=GF NC   32.18
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300788
+#=GF DR   snoopy; Homo_sapiens300068
+#=GF RN   [1]
+#=GF RM   9106664
+#=GF RT   The family of box ACA small nucleolar RNAs is defined by an
+#=GF RT   evolutionarily conserved secondary structure and ubiquitous sequence
+#=GF RT   elements essential for RNA accumulation.
+#=GF RA   Ganot P, Caizergues-Ferrer M, Kiss T;
+#=GF RL   Genes Dev 1997;11:941-956.
+#=GF RN   [2]
+#=GF RM   12457565
+#=GF RT   The expanding snoRNA world.
+#=GF RA   Bachellerie JP, Cavaille J, Huttenhofer A;
+#=GF RL   Biochimie 2002;84:775-790.
+#=GF RN   [3]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   U23 belongs to the H/ACA class of snoRNAs.  snoRNAs bind a number
+#=GF CC   of proteins (including dyskerin, Gar1p and Nop10p in the case
+#=GF CC   of the H/ACA class) to form snoRNP complexes.  This class are
+#=GF CC   thought to guide the sites of modification of uridines to
+#=GF CC   pseudouridines by forming direct base pairing interactions with
+#=GF CC   substrate RNAs [3].  Targets include ribosomal and spliceosomal
+#=GF CC   RNAs as well as the Trypanosoma spliced leader RNA (SL RNA)
+#=GF CC   as possibly other, still unknown cellular RNAs [3].  U23 can
+#=GF CC   direct the pseudouridylation of U97 in human 18S rRNA
+#=GF CC   (Bachellerie JP, Ganot, P unpublished data).  U23 is encoded
+#=GF CC   within intron 12 of the nucleolin gene in human, mouse, rat
+#=GF CC   chicken, and Xenopus laevis.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORA75
+#=GF SQ   6
+
+AJ009730.1/1-133                GCUUUCUCA.UGAGCUCCUCUCUGCCGAU....CAGUGGCGUUGUAUGGA
+AJ009731.1/1-129                UUCUUCUCA.UGAGCUCCUCUCUGUCAAUC...CAGUGGCAGUGUAUGGA
+AJ009728.1/1-142                CACUUCUCAAUGAGCUCCUUCCUGCCGACAUAUCCAUGGCAGCCUAUGGA
+X07699.1/9946-10078             AUCUUCUCAUUGAGCUCCUUUCUGUCCAU....CAGUGAUAGAUUAUGGA
+M55022.1/344-480                AUCUUCUCAUUGAGCUCCUUUCUGUCAAC....CAGUGACAGAUUAUGGA
+AJ007015.1/1-137                GUCUUCUCAUUGAGCUCCUUUCUGUCUAU....CAGUGGCAGUUUAUGGA
+#=GC SS_cons                    ..<<<<<<.....<<<<<...<<<<<...........>>>>>.....>>>
+
+AJ009730.1/1-133                UUCGCACGAGAAGAAGAGACUAA..UCAC.AAAUUGAACAGGCACC....
+AJ009731.1/1-129                UUCGCACGAGAAGUAGAGUGA.U..UCAC.AGUUU.AACAGGUGUUU...
+AJ009728.1/1-142                UUCGCACGAGAAGGACAUAAACAGCUCAGUAGU...GGCACGC..UCA..
+X07699.1/9946-10078             UUCGCACGAGAAGAAGAGAGAAU..UCAC.AGAACUGGCAC....UUAU.
+M55022.1/344-480                UUCGCACGAGAAGAAGAGAAAGU..UCAC.AGAACUAGCAC....UUAAU
+AJ007015.1/1-137                UUCGCACGAGAAGAAGAGAGAAU..UCAC.AGAACUAGCAUUAUUUUAC.
+#=GC SS_cons                    ...>>..>>>>>>............<<<<.<<..................
+
+AJ009730.1/1-133                CCCC.UAAUCUCAACAGGUG.......UUGCCCAUGUCUG....CUGUGA
+AJ009731.1/1-129                CCAC.UG.......CAUUGG....GACAUGCCCAUGUCUG....AUGUGA
+AJ009728.1/1-142                CAACCUGGU.UAUACAUCAGUUGUGAUUAACCACUUACUGU....UCU..
+X07699.1/9946-10078             CUUC.UG.UUUUUGCAGAAG........UAUAUUUGGCUGU..UGUGUGA
+M55022.1/344-480                CUUC.UG.UUUUUGCAGGAG.......AUCUAUUUGGCUGUUAUGUGUGA
+AJ007015.1/1-137                CUUC.UG.UCUUUACAGAGG........UAUAUUUAGCUGU..AUUGUGA
+#=GC SS_cons                    <<<<.<<.......>>>>>>........................>>>>>>
+
+AJ009730.1/1-133                AACAAUU
+AJ009731.1/1-129                GACAUUC
+AJ009728.1/1-142                .ACAAGU
+X07699.1/9946-10078             GACAUUA
+M55022.1/344-480                GACAUUC
+AJ007015.1/1-137                GACAUUC
+#=GC SS_cons                    .......
+//

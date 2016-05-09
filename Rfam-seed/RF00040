@@ -1,0 +1,111 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00040
+#=GF ID   rne5
+#=GF DE   RNase E 5' UTR element
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR, Moxon SJ
+#=GF SS   Published; PMID:10817759
+#=GF GA   23.00
+#=GF TC   23.67
+#=GF NC   19.26
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   10817759
+#=GF RT   An evolutionarily conserved RNA stem-loop functions as a sensor that
+#=GF RT   directs feedback regulation of RNase E gene expression.
+#=GF RA   Diwa A, Bricker AL, Jain C, Belasco JG;
+#=GF RL   Genes Dev 2000;14:1249-1260.
+#=GF CC   This family represents a conserved element found in the 5' UTR
+#=GF CC   of RNase E mRNA.  RNase E is a key regulatory enzyme in the pathway
+#=GF CC   of mRNA degradation in E. coli that is able to auto-regulate the
+#=GF CC   degradation of its own mRNA in response to changes in RNase E
+#=GF CC   activity.  This rne 5' UTR element acts as a sensor of cellular
+#=GF CC   RNase E concentration enabling tight regulation of RNase E
+#=GF CC   concentration and synthesis.
+#=GF WK   http://en.wikipedia.org/wiki/RNase_E_5'_UTR_element
+#=GF SQ   6
+
+BX950851.1/2038367-2038030             UUUCCCACGCGGA..UUUCCGAUAAACAAGGGGAAAUU...GCGAAGUUA
+BX571868.1/245396-245719               CAGUUUU..UUAA..UCCU...GAAU....GGCGAAGU....UAAACGUU
+AF259268.1/36-432                      CUGCCAA....GA..UGUU...UAAA....AACGAAAA....UUGGCUUU
+AL627269.1/129907-129570               GUUUCCGCACCGAAACUUGU..UAAA...ACAAAAAGUUUAGCGGAAUAA
+AF259269.1/38-376                      CUUUCCGCGUUGA..UUCUCGUUAAACA.GGGAAAACG...GUGGAAUUA
+AF259267.1/37-374                      AAUUCUACGUUGA..UUCUCGUUAGACC.AAGAGACUU...GUGGAAUAA
+#=GC SS_cons                           ..<<<<<<.......<<<<<.........>>>>>.......>>>>>>...
+
+BX950851.1/2038367-2038030             C.................................................
+BX571868.1/245396-245719               U.................................................
+AF259268.1/36-432                      GCUAUGUUAGCUUUAGGUGUUUUUGCACUUUCAGCUAUAAUUAUUUUUAG
+AL627269.1/129907-129570               C.................................................
+AF259269.1/38-376                      U.................................................
+AF259267.1/37-374                      U.................................................
+#=GC SS_cons                           ..................................................
+
+BX950851.1/2038367-2038030             .................................UAAAU..UUGCCUGAUA
+BX571868.1/245396-245719               .................................GUUCU..UCAUUUGAUU
+AF259268.1/36-432                      CUAGUAGAAUACAAGUUAGACGUAAUACUGUAGGAAUUUAUUAUUUGAUG
+AL627269.1/129907-129570               .................................CCAUU..UUGUCUGA.C
+AF259269.1/38-376                      .................................AAAAU..UUGUCUGAUC
+AF259267.1/37-374                      .................................AAACU..UUGCCUGAUC
+#=GC SS_cons                           ........................................<<<<<<<<..
+
+BX950851.1/2038367-2038030             ACGCACAC.ACGCAGCAAUGGCGUAAGACGU.AAUGCGAA.AUCAAGCAG
+BX571868.1/245396-245719               GCACAAAA.ACGCAGCAAUGGCGUAAGACGU.ACUGGGAA.AUCAAAUAA
+AF259268.1/36-432                      GCGU.AACGAUGCUGCAAUGGCGUAAGACAUCUA.AC.AAGAUCAAGUAA
+AL627269.1/129907-129570               CGAUCAUCAACGCAGCAAUGGCGUAAGACGUAUUGAUUUU..UCAGACAG
+AF259269.1/38-376                      GCGCAAAA.ACGCAGCAAUGGCGUAAGACGU.AAUGCGAA.AUCAAACAA
+AF259267.1/37-374                      ACACAAAA.ACGCGGCAAUGGCGUAAGACGU.AAUGUGAA.AUCAAGCAA
+#=GC SS_cons                           .<<<<....<<<..<<....>>......>>>...>>>>....>>>>>>>>
+
+BX950851.1/2038367-2038030             .UUAGCGGGCUGUGGAUUGCAGC.UUGGCCGGCAAAU...GGAAUCAGAU
+BX571868.1/245396-245719               .UUAGCGGGCUACGGGUAGCAGA.U.UACUGGAAU.....CGGAUCAAAU
+AF259268.1/36-432                      AUUAGCGAGCAACGAA.UUUU.....AGCU.UAUUGGGUUGGG.AGUCUC
+AL627269.1/129907-129570               .UUAGCGGGCUGCGGGUUGCAGUCCUUACCGGUAGAU...AGGAUCUUCU
+AF259269.1/38-376                      .UUAGCGGGCUGCGGGUUGCAGC.UUGGCCGGCAAAU...GGAAUCAGAU
+AF259267.1/37-374                      .UUAGCGGGCUGCGGGUUGCAGC.UUGGCCGGCAAGU...GGGUAAAGCU
+#=GC SS_cons                           ......<<<<<<<<<<<........<<<<<<<........<<<<<....<
+
+BX950851.1/2038367-2038030             CUGG.CGACAU.UAU..UCAGAAGCUGUUCCCUCAGUA.AAUGCGCUGU.
+BX571868.1/245396-245719               CAGCUUCAUUUAUAUUUGCAGA..UUAUUCCUAGAAA..AGGGUACUGU.
+AF259268.1/36-432                      CGUUUUCUAAGAAAU.UUACGGCA..UCCUGAUUA....AGAACGCUGAA
+AL627269.1/129907-129570               CUGG.AGAGUAAUGC..CCAGG.CUGCUUCCCUGAUA..AUUGCGCUGUG
+AF259269.1/38-376                      CUG.UCGACGUAAAU...CAGAGGCUAUUCCCCUAGUA.AAAGUGCUGUC
+AF259267.1/37-374                      CUGU.UGUCUUAAAU..UCAGAAGC.UACCCUUUAUAUAAAAGCGCUGUU
+#=GC SS_cons                           <<<<.............>>>>>....>>>>>..........<<<.<<<<.
+
+BX950851.1/2038367-2038030             UUUC.CAUCAGGAAA.UACAGGCU.ACCGA.AACA.UGCGUCUCUAUGCA
+BX571868.1/245396-245719               UUUC.UAAGU.GAAAAUUCAGACCUGCCGA.AAAUAUGCGUCUCUAUACA
+AF259268.1/36-432                      UUUUUAAUCUAAAAA..UCAGGUUCACCGAAUACUGCGCGUCUCUAUACG
+AL627269.1/129907-129570               UUUC.CGUAU.GAAA.UACAGGCA.ACCGA.CACUCUGCGCCUCUUUGAG
+AF259269.1/38-376                      UUUC.ACAAA.GAAA.AGCAGGCUUACCGA.GAUAAUGCGCCCCUAUGCA
+AF259267.1/37-374                      UUUC.AGAAC.GAAA.CACAGGCUUACCGA.AAUAAUGCGCCCCUAUGCA
+#=GC SS_cons                           <<<<.......>>>>..>>>>>>>.<<<<<.........<<<<<......
+
+BX950851.1/2038367-2038030             ..GGCGACAACCGGGAGGUUGACGUCCCUGCGAUAAGCCACGAGGCCAUC
+BX571868.1/245396-245719               ..AACGACAACCGGGAGGUUGGCGGAUUUG.UAAAAGACACGAGACCAUC
+AF259268.1/36-432                      ..AACGACUGCCGAGAGGUAGACGGCUUUG.UAAAAAUCAUGAGGCCAUC
+AL627269.1/129907-129570               CUGACGAUAACCGUGAGGUUGGCGACGCGA..AAUAGUCACGAGGCCAUC
+AF259269.1/38-376                      ..GGCGACAACCGUGAGGUUGACGACUUUGCGAGAAGACACGGGGCUUUC
+AF259267.1/37-374                      ..GGCGACAACCGUGAGGUUGACGGCUUAGCUAGAAGACUCGGGGCCAUC
+#=GC SS_cons                           ....<<.<<<<<....>>>>>.>>.................>>>>>..>>
+
+BX950851.1/2038367-2038030             GGUUC..ACUCCGGUCAUGCGGUUCU.....UUUUGUCCGCAGCUCUAUC
+BX571868.1/245396-245719               GGU.U..A..CCAGUC....GCUCAUCUAUAUUU.GCCCGUAGCUCUAUA
+AF259268.1/36-432                      GGUUUACAGU..AGCU.....CUUUC.....U....UUCGCUGCUCUUU.
+AL627269.1/129907-129570               GGUUCAUGC.CCGGUAA.GGCGUCAC.....CAU.GCCCGCAGCUUAGUC
+AF259269.1/38-376                      GGUUUA.ACUCCGGCCAUGAGGUUAU.....UUU.GCCCGCAGCUUUGUC
+AF259267.1/37-374                      GGUUU..AC.CCGGUCAUGAGGUUAU.....UUU.GCCCGCAGUUCUAAC
+#=GC SS_cons                           >>>.......>>>>>>>..................>>>>>>>>>>>....
+
+BX950851.1/2038367-2038030             AAUAA
+BX571868.1/245396-245719               ACUAA
+AF259268.1/36-432                      .AUUA
+AL627269.1/129907-129570               GUCAA
+AF259269.1/38-376                      GAUAA
+AF259267.1/37-374                      GCCAA
+#=GC SS_cons                           .....
+//

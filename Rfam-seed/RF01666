@@ -1,0 +1,38 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01666
+#=GF ID   rox2
+#=GF DE   Drosophila rox2 ncRNA
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:18039876
+#=GF GA   19.00
+#=GF TC   19.05
+#=GF NC   17.74
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   18039876
+#=GF RT   An evolutionarily conserved domain of roX2 RNA is sufficient for
+#=GF RT   induction of H4-Lys16 acetylation on the Drosophila X chromosome.
+#=GF RA   Park SW, Kang YIe, Sypula JG, Choi J, Oh H, Park Y;
+#=GF RL   Genetics. 2007;177:1429-1437.
+#=GF WK   http://en.wikipedia.org/wiki/Drosophila_roX_RNA
+#=GF SQ   4
+
+AAQB01006867.1/48644-48573               AAAAGGCAUGUAAAAUGUUGCAAAAAAAAAAAAAAAAAAAAAAAAAAAAU
+AE014298.4/11474057-11474127             AAAAGACGUGUAAAAUGUUGC.AAAUUAAGCAAAUAUAUAUGCAUAUAUG
+AASV01031043.1/115-45                    AAAAGACGUGUAAAAUGUUGC.AAAUUAAGCAAAUAUAUAUGCAUAUAUG
+AAKO01003448.1/902-972                   AAAAGACGUGUAAAAUGUUGC.AAAUUGAGCAAAUAUAUAUGCAUAUAUG
+#=GC SS_cons                             ..<<<.<<<<<<<<<<<<<<<.............................
+#=GC RF                                  AAAAGaCguGuAaAAuGuuGCAAAAaaAAaaAAAaAaAaAaaaAaAaAau
+
+AAQB01006867.1/48644-48573               GGUAACGUUAUACGCGCCUUAA
+AE014298.4/11474057-11474127             GGUAACGUUUUACGCGCCUUAA
+AASV01031043.1/115-45                    GGUAAUGUUUUACGCGCCUUAA
+AAKO01003448.1/902-972                   GGUAAUGUUUUACGCGCCUUAA
+#=GC SS_cons                             .>>>>>>>>>>>>>>>.>>>..
+#=GC RF                                  GGUaaCgUUuUaCgcGCCUUAA
+//

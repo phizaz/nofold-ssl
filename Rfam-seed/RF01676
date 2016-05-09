@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01676
+#=GF ID   P31
+#=GF DE   Pseudomonas sRNA P31
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; cmfinder;
+#=GF GA   25.00
+#=GF TC   26.90
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   16870723
+#=GF RT   Identification of 17 Pseudomonas aeruginosa sRNAs and prediction of
+#=GF RT   sRNA-encoding genes in 10 diverse pathogens using the bioinformatic
+#=GF RT   tool sRNAPredict2.
+#=GF RA   Livny J, Brencic A, Lory S, Waldor MK;
+#=GF RL   Nucleic Acids Res. 2006;34:3484-3493.
+#=GF WK   http://en.wikipedia.org/wiki/Pseudomonas_sRNA
+#=GF SQ   4
+
+AE004091.2/5344903-5344981             AGAAGACCUCCCGUAAAUCAAGCCUGACUGGUCG..CGCAGG.UGUAAAA
+CP000926.1/5281621-5281702             AGAAGACCUCCCGUAAAUCAAGCAUGAAAGGGCGAUCGCAGGUUGCAAAA
+CT573326.1/810183-810102               AGAAGACCUCCCGUAAAUCAAGCCUGAAAGGGCGAUCGCAGGUUGCAAAA
+CP000075.1/4988190-4988269             AGAAGACCUCCCGUAAAUAAAACCUGAAAGGGCGAUCGCAGGCUGCAAAA
+#=GC SS_cons                           ....<.<<<............<<<<....>>>>......>>>.>......
+#=GC RF                                AGAAGACCUCCCGUAAAUCAAGCCUGACUGGUCG..CGCAGG.UGUAAAA
+
+AE004091.2/5344903-5344981             AAGCGGGAUGACACCGUGAAGAGUCAUCCCGC
+CP000926.1/5281621-5281702             AAGCGGAGUGACGUAUGGACACGUCACCCCGC
+CT573326.1/810183-810102               AAGCGGAAUGACGUAUGGACACGUCACCCCGC
+CP000075.1/4988190-4988269             AAGCGGAAUGACGUAGUUAC..GUCACCCCGC
+#=GC SS_cons                           ..<<<<..<<<<<<......>>>>>>..>>>>
+#=GC RF                                AAGCGGGAUGACACCGUGAAGAGUCAUCCCGC
+//

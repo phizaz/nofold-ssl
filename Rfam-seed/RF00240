@@ -1,0 +1,73 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00240
+#=GF ID   RNA-OUT
+#=GF DE   RNA-OUT
+#=GF AU   Bateman A
+#=GF SE   PMID:2482367, INFERNAL
+#=GF SS   Predicted; Pfold
+#=GF GA   35.00
+#=GF TC   35.03
+#=GF NC   31.55
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000644 SO:antisense_RNA
+#=GF RN   [1]
+#=GF RM   2482367
+#=GF RT   Insertion sequence IS10 anti-sense pairing initiates by an
+#=GF RT   interaction between the 5' end of the target RNA and a loop in the
+#=GF RT   anti-sense RNA.
+#=GF RA   Kittle JD, Simons RW, Lee J, Kleckner N;
+#=GF RL   J Mol Biol 1989;210:561-572.
+#=GF CC   Transposition of insertion sequence IS10 is regulated by an
+#=GF CC   anti-sense RNA which inhibits transposase expression when IS10 is
+#=GF CC   present in multiple copies per cell. The anti-sense RNA (RNA-OUT)
+#=GF CC   consists of a stem domain topped by a flexibly paired loop; the 5'
+#=GF CC   end of the target molecule, RNA-IN, is complementary to the top
+#=GF CC   of the loop, and complementarity extends for 35 base-pairs down
+#=GF CC   one side of RNA-OUT [1].
+#=GF CC   This bacterial RNA is also found in the genomic sequence of
+#=GF CC   eukaryotic organisms.  This is probably due to vector
+#=GF CC   contamination.
+#=GF WK   http://en.wikipedia.org/wiki/RNA-OUT
+#=GF SQ   16
+
+EF158106.1/10782-10851                   UCGCACAUCUUGUUGUMUGAUUAU.......UGAUUUUUCGCGAAACCAU
+AAWY01000043.1/31726-31658               UCGCGCAUCUUGUUGUCCAAGUGU.......AGUUUUU.GGCGAAACCAU
+ABJT01000108.1/2744-2813                 UCGCACAUCUUGUUGUCUGAUUAU.......UGAUUUUUCGCGAAACCAU
+AY236073.2/2048-2116                     UCGCGCAUCUUGUUGUCCAAGUGU.......AGUUUUU.AGCGAAACCAU
+AE017220.1/3200649-3200718               UCGCACAUCUUGUUGUCUGAUUAU.......UGAUUUUUCGCGAAACCAU
+AF162223.1/9033-9102                     UCGCACAUCUUGUUGUCUGAUUAU.......UGAUUUUUCGCGAAACCAU
+AJ627386.1/14727-14658                   UCGCACAUUUUGUUGUCUGAUUAU.......UGAUUUUUGGCGAAACCAU
+AASA01000102.1/10006-9937                UCGCACAUUUUGUUGUCUGAUUAU.......UGAUUUUUGGCGAAACCAU
+AF078527.1/2546-2614                     UCGCGCAUCUUGUUGUCCAAGUGU.......AGUUUUU.GGCGAAACCAU
+AF133699.1/3533-3601                     UCGCGCAUCUUGUUGUCCAAGUGU.......AGUUUUU.GGAGAAACCAU
+AB262965.1/7478-7547                     UCGCACAUCUUGUUGUCUGGUUAU.......UGAUUUUUCGCAGAACCAU
+BA000032.2/1400255-1400186               UCGUACAUCUUGUUGUUUGGUUGU.......UGUUUUUUGGCGAAAUCAU
+AAWQ01000001.1/205744-205675             UCGCACAUCUUGUUGUUUGGUUGU.......UGUUUUUUGGCGAAAUCAU
+AAZW01000016.1/47862-47938               UCACACAUCUUGUUGUUUGAUUAUUGAUUAUUGAUUUUUGGCGAAACCAU
+AF248639.1/3345-3414                     UCGCACAUCUUGUUGUCUGAUUAU.......UCAUUUUUCGCGAAACCAU
+AY691910.1/4002-4071                     UCGCACAUUUUGUUGUCUGAUUAU.......UGAUUUUUGGCGAAACCAU
+#=GC SS_cons                             ..<<<<<<<<<<<<<<.<<......................<<<<....>
+#=GC RF                                  UcgCgCauCuuGuugucugAuUaU.......agaUUUUugGCgaaAccAu
+
+EF158106.1/10782-10851                   UUGAUCAUAUGACAAGAUGUGUAUCCA
+AAWY01000043.1/31726-31658               UUGAUCAUGCAACAAGAUGCGCUUCCA
+ABJT01000108.1/2744-2813                 UUGAUCAUAUGACAAGAUGUGUAUCUA
+AY236073.2/2048-2116                     UUGAUCAUGCAACAAGAUGCGCUUCCA
+AE017220.1/3200649-3200718               UUGAUCAUAUGACAAGAUGUGUAUCCA
+AF162223.1/9033-9102                     UUGAUCAUAUGACAAGAUGUGUAUCCA
+AJ627386.1/14727-14658                   UUGAUCAUAUGACAAGAUGUGUAUCCA
+AASA01000102.1/10006-9937                UUGAUCAUAUGACAAGAUGUGUAUCUC
+AF078527.1/2546-2614                     UUGAUCAUGCAACAAGAUGCGCUUCCA
+AF133699.1/3533-3601                     UUGAUCAUGCAACAAGAUGCGCUUCCA
+AB262965.1/7478-7547                     UUGAUCACAUGACAAGAUGUGCAUCUA
+BA000032.2/1400255-1400186               UUGAUCACAUGACAAGAUGUGCAUCUA
+AAWQ01000001.1/205744-205675             UUGAUCACAUGACAAGAUGUGCAUCUA
+AAZW01000016.1/47862-47938               UUGAUCACAUGACAAGAUGUGUUUCUA
+AF248639.1/3345-3414                     UUGAUCAUAUGACAAGAUGUGUAUCCA
+AY691910.1/4002-4071                     UUGAUCAUAUGACAAGAUGUGUAUCUA
+#=GC SS_cons                             >>>..>>.>>>>>>>>>>>>>>.....
+#=GC RF                                  uuGAUcauacaaCaaGauGcGcaUccA
+//

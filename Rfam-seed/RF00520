@@ -1,0 +1,50 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00520
+#=GF ID   ybhL
+#=GF DE   ybhL leader
+#=GF AU   Barrick JE
+#=GF SE   Barrick JE
+#=GF SS   Predicted; Barrick JE
+#=GF GA   22.00
+#=GF TC   22.60
+#=GF NC   19.06
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   16086852
+#=GF RT   Evidence for a second class of S-adenosylmethionine riboswitches and
+#=GF RT   other regulatory RNA motifs in alpha-proteobacteria.
+#=GF RA   Corbino KA, Barrick JE, Lim J, Welz R, Tucker BJ, Puskarz I, Mandal
+#=GF RA   M, Rudnick ND, Breaker RR;
+#=GF RL   Genome Biol. 2005;6:R70.
+#=GF CC   This family is a putative regulatory RNA structure that is found
+#=GF CC   upstream of an uncharacterized membrane protein in
+#=GF CC   alpha-proteobacteria.
+#=GF WK   http://en.wikipedia.org/wiki/ybhL_leader
+#=GF SQ   8
+
+CP000758.1/105606-105684               CAGGCAUGCUGGGGUCCCGCCAGCGGCGCCUGGCGGC.....GGCUCGAC
+BA000012.4/3454186-3454120             CAGGCAUGCUGGAGCCCCGCCAGCGGCGCCUGGGUCCGUAA.........
+AE007869.2/2665549-2665616             UAGGCUUGCUGAAGCUCCG.CAGCGGCGCCCGGG................
+CP000133.1/4169049-4169118             CAGGCAUGCUGGAGCUCCG.CAGCGGCGCCCGG..............GUC
+AM236080.1/4812613-4812682             CAGGCAUGCUGGAGCUCCG.CAGCGGCGCCCGGG..UCGAAA........
+AL591688.1/3506025-3506114             CAGGCAUGCUGGAGCCCCG.CAGCGGCGCCUGGGCGCGCAAAGGAACGAC
+AAFY01012588.1/488-418                 CAGGCAUGCUGGAGCCCCG.CAGCGGCGCCUGGGUC..............
+AAGA01009636.1/114-182                 AAGGCAUGCUGGAGCCCCG.CAGCGGCGCCUGGG................
+#=GC SS_cons                           ...........<<<<<<<<....<<<....<<<<<<<.............
+#=GC RF                                cAGGcAUGcUGgaGCCCCG.cAGCGGcGccuGGGCGCGcAAAGGAAcGAc
+
+CP000758.1/105606-105684               CUUUUGAGCGCCCCCGACACCGGA........CGGGACAUGG
+BA000012.4/3454186-3454120             .......GA.GGCCCGACACCGGA........CGGGGCAGAA
+AE007869.2/2665549-2665616             .AGGUAU.....CCCGACACCGUAGCAAUCA.CGGAGCUCAA
+CP000133.1/4169049-4169118             GAGAACC......CCGACACCGUAUCUCC.UUCGGAGCUUGU
+AM236080.1/4812613-4812682             .......AC...CCCGACACCGUA.UUUCCAUCGGAGCUUGU
+AL591688.1/3506025-3506114             AAGGUUCGC.CGCCCGACACCGUAACUUCAACCGGGGCUUAA
+AAFY01012588.1/488-418                 ...UUUG...AGCCCGACACCGUAAACCUUACCGGGGCUUAU
+AAGA01009636.1/114-182                 .UCCUUU.....CCCGACACCGUGAUUAACUCCGGGGCUUGA
+#=GC SS_cons                           .......>..>>>>>>...>>>..........>>>>>>>>..
+#=GC RF                                AAGGUUcGc.CGCCCgAcACCGUAAcUUcAAcCGGGGCuuAA
+//

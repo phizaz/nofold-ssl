@@ -1,0 +1,78 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00512
+#=GF ID   Leu_leader
+#=GF DE   Leucine operon leader
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Published; PMID:6186194
+#=GF GA   33.00
+#=GF TC   34.36
+#=GF NC   32.94
+#=GF TP   Cis-reg; leader;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   6186194
+#=GF RT   Attenuation in amino acid biosynthetic operons.
+#=GF RA   Kolter R, Yanofsky C;
+#=GF RL   Annu Rev Genet 1982;16:113-134.
+#=GF CC   At least 6 amino acid operons are known to be regulated by
+#=GF CC   attenuation [1].  In each a leader sequence of 150-200 bp
+#=GF CC   is found upstream of the first gene in the operon. This
+#=GF CC   leader sequence can assume two different secondary structures
+#=GF CC   known as the terminator and the anti-terminator structure.
+#=GF CC   In each case the leader also codes for very short peptide
+#=GF CC   sequence that is rich in the end product amino acid of the
+#=GF CC   operon. The terminator structure is recognised as a termination
+#=GF CC   signal for RNA polymerase and the operon is not transcribed.
+#=GF CC   This structure forms when the cell has an excess of the
+#=GF CC   regulatory amino acid and ribosome movement over the leader
+#=GF CC   transcript is not impeded [1]. When there is a deficiency of the
+#=GF CC   charged tRNA of the regulatory amino acid the ribosome
+#=GF CC   translating the leader peptide stalls and the antiterminator
+#=GF CC   structure can form. This allows RNA polymerase to transcribe
+#=GF CC   the operon [1].
+#=GF CC   In the Rfam alignment the consensus structure is of the
+#=GF CC   terminator.  The alternative consensus structure is the
+#=GF CC   antiterminator structure.
+#=GF WK   http://en.wikipedia.org/wiki/Leucine_operon_leader
+#=GF SQ   6
+
+CP000653.1/704557-704410               CUGGAGCAUG..AUUC.AUGA...UUCGUACCGUUCGUUCUCUCAGCCUA
+J01642.1/51-200                        CUGGAGCUGA..UUUA.AUGA...CUCACAUCGUUCGCUUUAUCGGUCUA
+BX950851.1/4281970-4282116             CGAGACACGA..CACU.AUGUUCAAGUUUACUGUCC......UACUAAGC
+M64039.1/2-149                         CUGGAGCUGA..AUUA.AUGU...CACAUAUCGUUCGUUUCACUGGGCUA
+AP008232.1/768795-768654               CAUAACUUAU..GUUC.A..A...GUCUAUCCGUCUACUAAGC.......
+AE009952.1/4041329-4041474             GAGAAGCUGAAAUUUAUGUUCUA.CUCAACCCGUCUACUAAGC.......
+#=GC SS_cons                           ...<.<<<<<...<<<.<<<<.........<<<<<<<<<<..........
+#=GC RF                                cUGGaGcugg..Auuc.auGu...uucauAcCGcuCgccauaucaGucUA
+
+CP000653.1/704557-704410               CUACUACUAAACGCAUCUCUUUUGCGCGGUAGGCUGGCGAACGAAAUUCA
+J01642.1/51-200                        CUACUACUAAACGCAUCUUCUUUGCGCGGUAGACGAGUGAGCGGCAUCCA
+BX950851.1/4281970-4282116             CUACUACUAAACGCAUCCUUCUUGCGCGGUAGGUUUGUGGGCAGACUUCA
+M64039.1/2-149                         CUACUACUCAACGCAUUUAUUGUGCGCGGUAGACCGGUGGGCGGCAUUCA
+AP008232.1/768795-768654               CUACUACUACACGUAGAAUUGAUGCGCGGCAGGCUGGUGCACGGUAUUCA
+AE009952.1/4041329-4041474             CUACUACUUAACGCAUCUCUCUUGCGCGGUAUGUUGGUGGACGGAAAUCA
+#=GC SS_cons                           ...<<<<<...<<<<.......>>>>.>>>>>..>>>>>>>>>>......
+#=GC RF                                cUACuaCuAAACGCaUcUauUuuGCGcgGuaGacuggcGagCGgaAUucA
+
+CP000653.1/704557-704410               ..ACGUUGAAUCGU.CUCCAGUAAACAA..GAAACCCGCGC..CAUUGCG
+J01642.1/51-200                        ..GCA.UUAAGCCAGCACGCAGUCAAACAAAAAACCCGCGC..CAUUGCG
+BX950851.1/4281970-4282116             GAACU.AAGUUUCUCGCCACACGAUACA..AAAACCCGCGC..UGAUGCG
+M64039.1/2-149                         ..ACA.UUAAGUCAGCUCGAAGUCAAAC..AAAACCCGCGC..CGUUGCG
+AP008232.1/768795-768654               ..GAACUGAAUUCGGGCCACUCCAGAUU..AAAACCCGCGCACUACUGCG
+AE009952.1/4041329-4041474             ..GAA.CUGAUUCAGCCAUCAAGAUUAA..CAAGCCCGCGC..AAAUGCG
+#=GC SS_cons                           ..>>>.>>>>.>>>>>.>............<<<<<<<<<<<......>>>
+#=GC RF                                ..aCa.ugaagccagCuCgAagaaAaAa..aaaaCCCGCGC..cAUUGCG
+
+CP000653.1/704557-704410               CGGGUUUUUUU
+J01642.1/51-200                        CGGGUUUUUUU
+BX950851.1/4281970-4282116             CGGGUUUUUUU
+M64039.1/2-149                         CGGGUUUUUUU
+AP008232.1/768795-768654               CGGGUUUUUUU
+AE009952.1/4041329-4041474             CGGUUUUUUUU
+#=GC SS_cons                           >>>>>>>>...
+#=GC RF                                CGGGuuuuUUU
+//

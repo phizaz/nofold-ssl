@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01386
+#=GF ID   isrB
+#=GF DE   isrB Hfq binding RNA
+#=GF AU   Daub J, Gardner PP
+#=GF SE   Predicted; WAR; Infernal
+#=GF SS   Predicted; WAR
+#=GF GA   30.00
+#=GF TC   33.21
+#=GF NC   24.15
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   18725932
+#=GF RT   Deep sequencing analysis of small noncoding RNA and mRNA targets
+#=GF RT   of the global post-transcriptional regulator, Hfq.
+#=GF RA   Sittka A, Lucchini S, Papenfort K, Sharma CM, Rolle K, Binnewies
+#=GF RA   TT, Hinton JC, Vogel J;
+#=GF RL   PLoS Genet. 2008;4:e1000163.
+#=GF RN   [2]
+#=GF RM   18267966
+#=GF RT   Small RNAs encoded within genetic islands of Salmonella
+#=GF RT   typhimurium show host-induced expression and role in virulence.
+#=GF RA   Padalon-Brauch G, Hershberg R, Elgrably-Weiss M, Baruch K,
+#=GF RA   Rosenshine I, Margalit H, Altuvia S
+#=GF RL   Nucleic Acids Res. 2008;36:1913-1927.
+#=GF WK   http://en.wikipedia.org/wiki/Hfq_binding_sRNA
+#=GF SQ   4
+
+BX571870.1/259522-259429               UCUUCUAACGAGUUGGUCCUCGUUAGUAGAAACUCCCGGUUAGCUUUGGU
+AF001386.1/7937-8024                   AACAGCACCCCGAUAUAUCUGGUUGUUAG....GUCCGGUUCGCUUUGGU
+ABAN01000041.1/25481-25566             AAAAGCACCCCGAUAUAUCAGGUUGUUGG....GUCCGGUUCGCUUUGGU
+AALE01000044.1/12337-12252             UCUGUUAACGGGUUGGUCCCCGUUAGCU.....UCCCGGUUAACUUUGGU
+#=GC SS_cons                           ...<<<<.<<.<<....>>.>>.>>>>......<<<<<<<<<<<<.....
+#=GC RF                                aaaggcaaCccGaUauauCagGUugccag....gcCCGGuucaCuUUGGU
+
+BX571870.1/259522-259429               CGGC.GA.UCCGGGGUAAAAGAACCCGCCACUUCGGUGGGUUUUUU
+AF001386.1/7937-8024                   CGGUUGG.ACCGGACAGGGCACGCCCGC...UUCGGUGGGCGUUUU
+ABAN01000041.1/25481-25566             CGGU.GACACCGGAUGGGC..AGCCCAC...UUAGGUGGGCUUUUU
+AALE01000044.1/12337-12252             CGGU.GA.CCCGGGGUAAAGAAGCCCAC...UUAGGUGGGUUUUUU
+#=GC SS_cons                           .>>>.>>.>>>>>>>.....<<<<<<<<.......>>>>>>>>...
+#=GC RF                                cgGuuga.aCCGGgcaaaagaagCCCaC...UUAGGuGGGcuuUUU
+//

@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00371
+#=GF ID   sroE
+#=GF DE   sroE RNA
+#=GF AU   Moxon SJ
+#=GF SE   PMID:14602901
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   35.63
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   14602901
+#=GF RT   RNomics in Escherichia coli detects new sRNA species and indicates
+#=GF RT   parallel transcriptional output in bacteria.
+#=GF RA   Vogel J, Bartels V, Tang TH, Churakov G, Slagter-Jager JG,
+#=GF RA   Huttenhofer A, Wagner EG;
+#=GF RL   Nucleic Acids Res 2003;31:6435-6443.
+#=GF CC   This family consists of a number of bacterial sroE RNA genes of around 90
+#=GF CC   bases in length. sroE is found in several Enterobacterial species but its
+#=GF CC   function is unknown [1].
+#=GF WK   http://en.wikipedia.org/wiki/sroE_RNA
+#=GF SQ   4
+
+M11843.1/93-184                        AUAACGUGAUGGGAAGCGCCUCGCUUCCCGUGUAUGAUUGAACCCGCAUG
+CP000647.1/3122897-3122822             AUAACGUGUUGGGAAGCGAUACGCUUCCCGUGUAUGAUUGAACCUG....
+FM200053.1/390269-390360               AGAACGUGAUGGGAAGCGGCGCGCUUCCCGUGUAUGAUUGAACCCGCAUG
+AACY020347183.1/418-327                AUAACGUGAUGGGAAGCGGCGUGCUUCCCGUGUAUGAUUGAACCCGCAUG
+#=GC SS_cons                           .........<<<<<<<<<...>>>>>>>>>........<<<<<<<.....
+#=GC RF                                AuAAcGUGAuGGGaaGCGgcuCGCuuCCCgUGUAUGAUuGaaCCCGcAUG
+
+M11843.1/93-184                        GCUCCCGAAACAUUGAGGGAAGCGUUGAGGGUUCAUUUUUAU
+CP000647.1/3122897-3122822             ...CGGGCGCGAGGCGCCG.........GGGUUCAUUUUUGU
+FM200053.1/390269-390360               GCUCCCGGUUCGUUCGGGGAAGCGCUGAGGGUUCAUUUUUAU
+AACY020347183.1/418-327                GCUCCCGUAUCGCUCGGGGAAGCGCUGAGGGUUCAUUUUUAU
+#=GC SS_cons                           ...<<<..........>>>.........>>>>>>>.......
+#=GC RF                                GcUCCCGaaacaUUgaGGGAAGcGuUGAGGGuuCaUUUUUAU
+//

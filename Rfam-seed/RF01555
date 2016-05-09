@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01555
+#=GF ID   TB9Cs3H1
+#=GF DE   Trypanosomatid snoRNA TB9Cs3H1
+#=GF AU   Doniger T, Michaeli S, Unger R, Osuch I
+#=GF SE   Predicted; WAR;
+#=GF SS   Predicted; WAR;
+#=GF GA   45.00
+#=GF TC   61.12
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   15840815
+#=GF RT   A genome-wide analysis of C/D and H/ACA-like small nucleolar RNAs in
+#=GF RT   Trypanosoma brucei reveals a trypanosome-specific pattern of rRNA
+#=GF RT   modification.
+#=GF RA   Liang XH, Uliel S, Hury A, Barth S, Doniger T, Unger R, Michaeli S;
+#=GF RL   RNA. 2005;11:619-645.
+#=GF WK   http://en.wikipedia.org/wiki/Trypanosome_H/ACA_box_snoRNAs
+#=GF SQ   5
+
+AM502253.1/1357996-1357930                 AGCCGAAUUAAACACGGAUCUGCG.AGAC...GUAC.UUCAGCUUUCGUG
+AM502223.1/448588-448656                   AGUACGAUUAAACACGGACGCGCCGCUGC...AUACGCUUGGUGCUGGCG
+AM494971.1/1240374-1240308                 CGCAGAAUUAAACACGGAUCAACU.UGAC...CUAC.UUCAGUGUCAGUG
+AAGZ01000003.1/1634812-1634880             AGCACAAUUU.ACACGGAUUCACCCUGAC.UUAUAU.UUUAAUGCCGGUG
+AAHK01028073.1/619-688                     CGCACAAUUU.ACACGGACCCGCCCUGGUGUUCUAC.CUUGGUGCCGGUG
+#=GC SS_cons                               .<<<<<<<.......<<<<..<<...<<<..............>>>.>>.
+#=GC RF                                    AGCASAAUUWaACACGGAYYYRCCCUGRCkuWRUAYgUUYRRUGYYGGUG
+
+AM502253.1/1357996-1357930                 AGAUCCGCCAGUGUUUUGCAAG
+AM502223.1/448588-448656                   CCGUCCGCCAGUGUCGUACGAG
+AM494971.1/1240374-1240308                 GAAUCCGCCAGUGUUUUGCAAG
+AAGZ01000003.1/1634812-1634880             UUAUCCGCCAGUGUUGUGCCAG
+AAHK01028073.1/619-688                     GUGUCCGCCAGUGUUGUGCAAG
+#=GC SS_cons                               ..>>>>......>>>>>>>...
+#=GC RF                                    WURUCCGCCAGUGUUKUGCAAG
+//

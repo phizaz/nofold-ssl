@@ -1,0 +1,69 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00170
+#=GF ID   msr
+#=GF DE   Retron msr RNA
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   24.18
+#=GF NC   undefined
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   12892895
+#=GF RT   msDNA-St85, a multicopy single-stranded DNA isolated from Salmonella
+#=GF RT   enterica serovar Typhimurium LT2 with the genomic analysis of its
+#=GF RT   retron.
+#=GF RA   Ahmed AM, Shimamoto T;
+#=GF RL   FEMS Microbiol Lett 2003;224:291-297.
+#=GF RN   [2]
+#=GF RM   12459273
+#=GF RT   A partial copy of msDNA from a new retron element is likely a
+#=GF RT   retrotransposed DNA found in the myxobacterium Nannocystis exedens.
+#=GF RA   Lampson BC, Xu C, Rice SA, Inouye S;
+#=GF RL   Gene 2002;299:251-261.
+#=GF CC   Retron elements are found in a wide range of mainly Gram-negative
+#=GF CC   bacteria.  The retron encodes a reverse transcriptase that is
+#=GF CC   responsible for the production of a small satellite DNA called msDNA
+#=GF CC   (multi-copy single-stranded DNA).  msDNA has both DNA (encoded by
+#=GF CC   the retron msd gene) and RNA (encoded by the msr gene) components.
+#=GF CC   The 5' end of msDNA is linked to an internal guanosine residue of
+#=GF CC   the RNA strand by a 2'-5' linkage.  The components of msDNA are
+#=GF CC   poorly conserved in sequence between different organisms -- this
+#=GF CC   family therefore represents only a subset of known msr genes.
+#=GF CC   Despite considerable investigation, very little is known about the
+#=GF CC   function of msDNA, the mobility of retron elements, or their effect
+#=GF CC   on the host cell.
+#=GF WK   http://en.wikipedia.org/wiki/Retron_msr_RNA
+#=GF SQ   10
+
+AF427793.1/1040-1105                   UGACAACGGCGAA....GGCCGAGCCU.......AGCAA...CCCGGGC.
+U02551.1/12-76                         ACUCUUUAGCGUU....GGAC.............GGUUA.CGUCUAGUCG
+X62583.1/626-698                       AAACUUUUUCGAUA...GCAUUAGCUG.......GUUACAGGUCUGGCG.
+Z12832.1/542-622                       GCUCUUUAGCGUUUUAUGGAUUUACCACCUGAUUGGUCA.AAUCUAGUUG
+X60206.1/2132-2205                     CACCCUUAGCGAGA...GGUUUAUCAUUAA....GGUCAACCUCUGGAU.
+AF261825.2/44164-44233                 ACUCUUUAGCGUUA...GGCUUUG..........AUUUAUAGCCUUGUCG
+AALE01000059.1/1978-2046               GCUCUUUAGCGUAU...GGACGGU..........UUUUG.CGUCUAGUCG
+AAUT01000053.1/25963-26033             GCUCUUUAGCGAAU...GGACUACACA.......UAUUA..GUCUAGUCG
+AB079134.1/692-757                     GCUCUUUAGCUUA....GGACG............AAUUU.CGUCUAGUCG
+AACY022254679.1/14-79                  GCUCUUUAGCUUA....GGACG............AAAUC.CGUCUAGUCG
+#=GC SS_cons                           ..<<<<<<<....................................<<<<.
+#=GC RF                                aaaccUuAgCGauA...GGaUuAgCau.......GgUaA.agUCUgGuCG
+
+AF427793.1/1040-1105                   GGCGGAUCGCC.GUCC...UUGCAACAAGCUCGUU
+U02551.1/12-76                         GGUGAUUAGCCAGACUC..UAACUUAUUGAACGUA
+X62583.1/626-698                       UGUGUUUCGCCAGGCCCAGUUGCCACGUAAU.GUG
+Z12832.1/542-622                       GGCGUUGCGCA.AACUC..UAAUUUAUUGAUUACA
+X60206.1/2132-2205                     GUUGUUUCGGC.AUCCUGCAUUGAAUCUGAGUU..
+AF261825.2/44164-44233                 AGCGUUUCGCCAGACAC..UAACUUAUUGAGUACU
+AALE01000059.1/1978-2046               GGCGGUUAGCCAGACUC..UAACUUAUUGAGCACU
+AAUT01000053.1/25963-26033             GGCGUUUAGCCAGACUG..AAAUUUAUUGAACGAC
+AB079134.1/692-757                     GGUGAUUAGCCAGACUC..UAACUUAUUGAACGGG
+AACY022254679.1/14-79                  GGUGUUUAGCCAGACUC..UAAAUUAUUGAACGAC
+#=GC SS_cons                           <<<<...>>>>.>>>>..........>>>>>.>>.
+#=GC RF                                gGcGuUUCgCcAGaCcC..UuacaaacUgAguguu
+//

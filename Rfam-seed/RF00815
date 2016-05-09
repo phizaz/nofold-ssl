@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00815
+#=GF ID   mir-244
+#=GF DE   microRNA mir-244
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   50.00
+#=GF TC   68.30
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000256
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+AAGD02001046.1/36887-36781                 UCUCCAGUUUCUCGAUCUCUUUGGUUGUACAAAGUGGUAUGGC....ACU
+ABEG01020864.1/3553-3656                   GCCCCA.UUUCUCGAUCUCUUUGGUUGUACAAAGUGGUAUGGCAAUUUCA
+CAAC02000589.1/1456779-1456876             ACCCAAAUUUCUCGAUUUCUUUGGUUGUACAAAGUGGUAUGGC....UCU
+AF067617.1/15168-15070                     CUCCAUAUC..UCAAUCUCUUUGGUUGUACAAAGUGGUAUGGC....UCA
+#=GC SS_cons                               .<<.<<<<<<<<<<<<<<<<<<<<<<<...<<<<<<<<<<<<<.......
+#=GC RF                                    acccaaaucccucgaucccuuugGcuGuAcaaaGcgGuauGGc....uca
+
+AAGD02001046.1/36887-36781                 UCUCAAUAGUCUGCUCAUACCGCUUUUCGGCUAAAGGAAUCGAGUCUUUG
+ABEG01020864.1/3553-3656                   UUAAA....AAUGCUCAUACCGCUUUUCAGCUGAAGGAAUCGUGU..UUG
+CAAC02000589.1/1456779-1456876             CU.........UGCUCAUACCGCUUUACAGCUAAAGGAAUCGAUUGAUUU
+AF067617.1/15168-15070                     UCGAA....UAAGCACAUACUGCUUUUCAGCUAAAGGAAUUGA..GAUUU
+#=GC SS_cons                               ............>>.>>>>>>>>>>>.>>>>>>>>>>>>>>>>>>>>>>>
+#=GC RF                                    uugAA....uAagCaCauaCcgCuuuaCagCuaaagggaucgagggauuu
+
+AAGD02001046.1/36887-36781                 GUGUCAUUAAU
+ABEG01020864.1/3553-3656                   UGGGUAAUUAG
+CAAC02000589.1/1456779-1456876             UGGAAACAUUU
+AF067617.1/15168-15070                     UGUAGGCUUUU
+#=GC SS_cons                               .>>........
+#=GC RF                                    uggAggauuuu
+//

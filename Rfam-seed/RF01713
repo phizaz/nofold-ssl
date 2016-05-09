@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01713
+#=GF ID   Moco-II
+#=GF DE   Moco-II RNA
+#=GF AU   Weinberg Z
+#=GF SE   Published; PMID:20230605;
+#=GF SS   Published; PMID:20230605;
+#=GF GA   35.00
+#=GF TC   41.82
+#=GF NC   22.13
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   20230605
+#=GF RT   Comparative genomics reveals 104 candidate structured RNAs from
+#=GF RT   bacteria, archaea and their metagenomes.
+#=GF RA   Weinberg Z, Wang JX, Bogue J, Yang J, Corbino K, Moy RH, Breaker
+#=GF RA   RR;
+#=GF RL   Genome Biol. 2010;11:R31.
+#=GF WK   http://en.wikipedia.org/wiki/Moco-II_RNA_motif
+#=GF SQ   7
+
+CP000116.1/2557036-2556993             U...GUAGCCAUCGGGCCGUCCGCUUA....GCGGACGGCGCCGAUUCCG
+CP000698.1/1183100-1183148             UCAGGCGCUUACUUCGUCCUCUGCCAAAG..GCAGACUUAACGAAACCCG
+CP000142.2/189530-189575               U...GCGCUCAUUUCGUCCUCCAUCGCCG..AUGGACUCAACGAAACCCG
+CP000142.2/278681-278728               U...GCGCUAAUUUCGGCCUCUGCCCAGAGUGCAGACCCAACGAAACCCG
+CP000482.1/1659585-1659542             ....GCGCUCACUUCGUCCUCUGCCCCG...GCAGACCACACGAAACCCG
+CP000482.1/1639928-1639883             U...GCGCCCACUUCGUCCUCUGUACAGA..GCAGACCCAACGAAACCCG
+CP000142.2/186813-186856               U...GCGCUUAUUUCGUCCUCCGUACU....ACGGACCCAACGAAACCCG
+#=GC SS_cons                           .............<<<<..<<<<<.......>>>>>....>>>>......
+
+CP000116.1/2557036-2556993             G
+CP000698.1/1183100-1183148             C
+CP000142.2/189530-189575               C
+CP000142.2/278681-278728               C
+CP000482.1/1659585-1659542             C
+CP000482.1/1639928-1639883             C
+CP000142.2/186813-186856               C
+#=GC SS_cons                           .
+//

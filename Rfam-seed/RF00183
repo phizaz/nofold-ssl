@@ -1,0 +1,75 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00183
+#=GF ID   G-CSF_SLDE
+#=GF DE   G-CSF factor stem-loop destabilising element (SLDE)
+#=GF AU   Moxon SJ
+#=GF SE   PMID:11865046
+#=GF SS   Published; PMID:11865046
+#=GF GA   32.00
+#=GF TC   34.39
+#=GF NC   22.80
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   11865046
+#=GF RT   RNA destabilization by the granulocyte colony-stimulating factor
+#=GF RT   stem-loop destabilizing element involves a single stem-loop that
+#=GF RT   promotes deadenylation.
+#=GF RA   Putland RA, Sassinis TA, Harvey JS, Diamond P, Coles LS, Brown CY,
+#=GF RA   Goodall GJ;
+#=GF RL   Mol Cell Biol 2002;22:1664-1673.
+#=GF CC   This family represents the granulocyte colony-stimulating factor stem-loop
+#=GF CC   destabilising element (G-CSF SLDE). G-CSF is secreted by fibroblasts and
+#=GF CC   endothelial cells in response to the inflammatory mediators interleukin-1
+#=GF CC   (IL-1) and tumour necrosis factor alpha and by activated macrophages. The
+#=GF CC   synthesis of G-CSF is regulated both transcriptionally and through control
+#=GF CC   of mRNA stability. In unstimulated cells G-CSF mRNA is unstable but
+#=GF CC   becomes stabilised in response to IL-1 or tumour necrosis factor alpha, and
+#=GF CC   also in the case of monocytes and macrophages, in response to
+#=GF CC   lipopolysaccharide. It is likely that the presence of the SLDE in the G-CSF
+#=GF CC   mRNA contributes to the specificity of regulation of G-CSF mRNA and
+#=GF CC   enhances the rate of shortening of the poly(A) tail [1].
+#=GF WK   http://en.wikipedia.org/wiki/G-CSF_factor_stem-loop_destabilising_element
+#=GF SQ   16
+
+AAIY01407164.1/1672-1764                 CUGAGGGUGCC.CACCUUGGGGCCCUUGGGAGCAGC...AG.GUCUCCCA
+AAGW01449136.1/697-609                   CCGUGAGC.CC.C....CGGGGCCCUGGGGAGCACC...AG.GAGGUCCA
+AAKN02042390.1/41925-42015               CCCAGGUCUGU.GCCCUGCAGGGCCAGG..AGCAUC...AGGGUCUCCCG
+AAHY01095698.1/215580-215673             CUGAGGCA.CCAUCUCAGGGGGGCCCAGGCAGCAUC...UG.GUCUCCCU
+U37101.1/917-1009                        CUGAGGCA.CC.UGUCUCAGGGGCCCAGGCAGCAUC...UG.GUCUCCCU
+AAQQ01352634.1/1363-1267                 CUGAGGUA.UC.UAACUUGGGCCCAUGGGAAGCGUCAGAAG.CUCUCUCA
+X03655.1/931-1023                        CUGAGGGU.CC.CCACCUGGGACCCUUGAGAGUAUC...AG.GUCUCCCA
+ABDC01229622.1/2203-2298                 CCGAGGAUACC.CACCAUGGGGCCCUCGGGAGA.UCAGAAG.GUCUCCCA
+AAQR01436569.1/1290-1196                 CUAGGGUA.CC.CACCAUGGG.GCCUUGGGAGGAUCAGAAG.GUCUCCCA
+AAPY01741689.1/3185-3107                 CUCUGG.................CCCGUGGGGCAUCAGGAG.GUCUCCCA
+AAEX02035019.1/26456-26361               CAAGGGUA.CC.CACCUUGAGGCCCAUGGAAGCAUCAGGAA.GUCUUCCA
+AANG01671083.1/530-626                   CCAAGGGUACC.CACCUUGAGGCCCUCGGAAGCAUCAGGAA.GUCUCCCA
+AF092533.1/899-995                       CUGAGGAUGCC.CACCUCGGGGCCCUUGGAAGCAUCGGGAA.GUCUCCCA
+U68481.1/913-1007                        CUAAGGGU.GC.CCACCUGGGGCCUU.GGAAGCAUUGGGAA.GUCUCCCA
+AAPE01476919.1/8471-8375                 CCGAGGGCACC.CGACUUGGGGCCCUUGGAAGCAUCAGAAG.CUCUCCCA
+AF503365.1/780-876                       CUGAGGGUACC.CACCUUGGGGCCCUUGGAAGCAUCGGGAA.GUCUCCCA
+#=GC SS_cons                             ..<<<<<<.<<.<.....>>>>>>>>>.......<<......<<<<<<<.
+#=GC RF                                  CugaGGgc.CC.caacuugGGgcCCucGGaAGcAuC...Ag.GuCuCCCA
+
+AAIY01407164.1/1672-1764                 CGUGGGAGACAAGCCA.CCCUG.UUUAAUAUUUAAACGGCAGUGUUCCCU
+AAGW01449136.1/697-609                   CGUGGGAGACAAGACUGCUCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AAKN02042390.1/41925-42015               CGUGGGGGAC..GACAUCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCA
+AAHY01095698.1/215580-215673             UCCGGGGGACAAGACAUCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCA
+U37101.1/917-1009                        UCUGGGGGACAAGACAUCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCA
+AAQQ01352634.1/1363-1267                 CGUGGAAGACAAGGCCAUACCGAUGUAAUAUUUAAACAGCAGUGUUCCCC
+X03655.1/931-1023                        CGUGGGAGACAAGAAAUCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+ABDC01229622.1/2203-2298                 CAUGGGAGACGAGACAUCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AAQR01436569.1/1290-1196                 CAUUGGAGACCAGACAUCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AAPY01741689.1/3185-3107                 UGUGGGAGACCAGACA..CCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AAEX02035019.1/26456-26361               GGUGGGAGACAAAACAACCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AANG01671083.1/530-626                   AGUGGGAGACAAGACAACCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AF092533.1/899-995                       AGUGGGAGAUGAGACAGCUCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+U68481.1/913-1007                        CGUGGGAGACAAGACAGCCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+AAPE01476919.1/8471-8375                 CGUGGGAGACAAGACAGCCCUG.UUUAAUAUUUAAACAGCAGUGUUCGCC
+AF503365.1/780-876                       CGUGGGAGACAAGACAGGCCUG.UUUAAUAUUUAAACAGCAGUGUUCCCC
+#=GC SS_cons                             ...>>>>>>>..>>.....<<<.<<<<<...>>>>>>>>...........
+#=GC RF                                  cgUGGGaGaCAAGacAaccCuG.uuuaaUAUuuaaaCaGCAGUGUUCcCc
+//

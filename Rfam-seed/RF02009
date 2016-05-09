@@ -1,0 +1,56 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02009
+#=GF ID   mir-987
+#=GF DE   microRNA mir-987
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   89.00
+#=GF TC   98.02
+#=GF NC   11.55
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000859
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   17989255
+#=GF RT   Systematic discovery and characterization of fly microRNAs using
+#=GF RT   12 Drosophila genomes
+#=GF RA   Stark A, Kheradpour P, Parts L, Brennecke J, Hodges E, Hannon
+#=GF RA   GJ, Kellis M
+#=GF RL   Genome Res. 2007;17:1865-1879.
+#=GF RN   [2]
+#=GF RM   20037610
+#=GF RT   Evolutionary flux of canonical microRNAs and mirtrons in Drosophila
+#=GF RA   Berezikov E, Liu N, Flynt AS, Hodges E, Rooks M, Hannon GJ, Lai
+#=GF RA   EC
+#=GF RL   Nat Genet. 2010;42:6-9.
+#=GF RN   [3]
+#=GF RM   17989254
+#=GF RT   Evolution, biogenesis, expression, and target predictions of
+#=GF RT   a substantially expanded set of Drosophila microRNAs
+#=GF RA   Ruby JG, Stark A, Johnston WK, Kellis M, Bartel DP, Lai EC
+#=GF RL   Genome Res. 2007;17:1850-1864.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+AASS01002766.1/1118-1014               GAACAAUGUUGGACUGUGUUUAAAGUAAAUAGUCUGGAUUGAUGAAAGUU
+AC008341.3/60747-60643                 GAACAAUGUUGGACUGUGUUUAAAGUAAAUAGUCUGGAUUGAUGAAAGUU
+AE013599.4/5200627-5200523             GAACAAUGUUGGACUGUGUUUAAAGUAAAUAGUCUGGAUUGAUGAAAGUU
+#=GC SS_cons                           ........<..<<<<<<..<<.<<<<<<<<.<<<<<...<<<<<<<..<<
+
+AASS01002766.1/1118-1014               GCAUUCGAGAAUUCAUCAACAGGCAUUUACUUCAACUGCAGUUUGAACAA
+AC008341.3/60747-60643                 GCAUUCGAGAAUUCAUCAACAGGCAUUUACUUCAACUGCAGUUUGAACAA
+AE013599.4/5200627-5200523             GCAUUCGAGAAUUCAUCAACAGGCAUUUACUUCAACUGCAGUUUGAACAA
+#=GC SS_cons                           .......>>..>>>>>>>.>>>>>>>>>>>>>.>>..>>>>>>..>....
+
+AASS01002766.1/1118-1014               AAUGC
+AC008341.3/60747-60643                 AAUGC
+AE013599.4/5200627-5200523             AAUGC
+#=GC SS_cons                           .....
+//

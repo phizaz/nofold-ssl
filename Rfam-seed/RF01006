@@ -1,0 +1,63 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01006
+#=GF ID   mir-601
+#=GF DE   microRNA mir-601
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   42.00
+#=GF TC   44.09
+#=GF NC   39.76
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000522
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF RN   [1]
+#=GF RM   16505370
+#=GF RT   The colorectal microRNAome.
+#=GF RA   Cummins JM, He Y, Leary RJ, Pagliarini R, Diaz LA, Sjoblom T,
+#=GF RA   Barad O, Bentwich Z, Szafranska AE, Labourier E, Raymond CK,
+#=GF RA   Roberts BS, Juhl H, Kinzler KW, Vogelstein B, Velculescu VE
+#=GF RL   Proc Natl Acad Sci U S A. 2006;103:3687-3692.
+#=GF RN   [2]
+#=GF RM   18186931
+#=GF RT   Identification of novel homologous microRNA genes in the rhesus
+#=GF RT   macaque genome.
+#=GF RA   Yue J, Sheng Y, Orwig KE
+#=GF RL   BMC Genomics. 2008;9:8.
+#=GF RN   [3]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates.
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF RN   [4]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome.
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [5]
+#=GF RM   19889580
+#=GF RT   Profiling of molecular pathways regulated by microRNA 601.
+#=GF RA   Ohdaira H, Nakagawa H, Yoshida K
+#=GF RL   Comput Biol Chem. 2009;33:429-433.
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   3
+
+AANU01127169.1/9531-9609                   UGCAUGAGUUCAUCUUGGUCUAGGAUUGUUGGAGGAGUCAGAAAAAUUAC
+AADB02012710.1/1595069-1594991             UGCAUGAGUUCGUCUUGGUCUAGGAUUGUUGGAGGAGUCAGAAAAACUAC
+AACZ02107180.1/11883-11961                 UGCAUGAGUUCAUCUUGGUCUAGGAUUGUUGGAGGAGUCAGAAAAACUAC
+#=GC SS_cons                               .........<<<<<<......<<<<<<.<<<<.<<<<.........>>.>
+#=GC RF                                    UaCAuGAaauCauCuuGGUCUAGGgUuGuugGgGGAguCAaAAaAgcUaC
+
+AANU01127169.1/9531-9609                   CCCAGGGAUCCUGAAGUCAUUGGGGUGGA
+AADB02012710.1/1595069-1594991             CCCAGGGAUCCUGAAGUCCUUUGGGUGGA
+AACZ02107180.1/11883-11961                 CCCAGGGAUCCUGAAGUCCUUUGGGUGGA
+#=GC SS_cons                               >>>>>.>>>>>>..........>>>>>>.
+#=GC RF                                    CCcagGgAcCCUGAAGUCcuUugGguGaa
+//

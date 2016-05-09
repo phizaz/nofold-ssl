@@ -1,0 +1,66 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01383
+#=GF ID   GRIK4_3p_UTR
+#=GF DE   GRIK4 3 prime UTR element
+#=GF AU   Gardner PP
+#=GF SE   Predicted; CMfinder
+#=GF SS   Predicted; CMfinder
+#=GF GA   12.00
+#=GF TC   12.17
+#=GF NC   11.88
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   18824690
+#=GF RT   A common variant in the 3'UTR of the GRIK4 glutamate receptor
+#=GF RT   gene affects transcript abundance and protects against bipolar
+#=GF RT   disorder.
+#=GF RA   Pickard BS, Knight HM, Hamilton RS, Soares DC, Walker R, Boyd JK,
+#=GF RA   Machell J, Maclean A, McGhee KA, Condie A, Porteous DJ, St Clair
+#=GF RA   D, Davis I, Blackwood DH, Muir WJ
+#=GF RL   Proc Natl Acad Sci U S A. 2008;105:14940-14945.
+#=GF WK   http://en.wikipedia.org/wiki/GRIK4
+#=GF SQ   10
+
+CAAA01078933.1/1710-1652                 UAGUGGCAGCAGCGAAGGA...CCAUGGAGCCA.GGCGG...........
+X59996.1/2943-3001                       GAGUAGUGGCGGCGAAGGA...CCGUGGAGCCA.GGCGG...........
+AANU01119004.1/4684-4608                 UAGUCCCGGCGGCCACAGG.ACGCGCGGAGGC..................
+AADC01102600.1/1773-1869                 UAGUCCCGGAGGCCACAGGUACGCGCAGAGGCCGGGCGGG.....GCGGG
+AP001929.5/104611-104706                 UAGUCCCGGAGGCCACAGG.ACGCGCAGAGGCCGGGCGGG.....GCGGG
+ABBA01031313.1/28753-28672               UAGUCCCGGAGGCCACAGG.ACGCGCAGAGGCCGGG..............
+AADB02014399.1/719517-719598             UAGUCCCGGAGGCCACAGG.ACGCGCAGAGGCCGGG..............
+AADA01131649.1/5135-5035                 UAGUCCCGGAGGCCACAGG.ACGCGCAGAGGCCGGGCGGGGCGGGAGGGG
+AAPY01307680.1/2250-2159                 UAGCCCCGGCGGCCCCGGA..CACGUGGAGGCCAGGUGGG.......GAG
+AAPE01626053.1/9983-9922                 UAGAGGCGGCAGAGACAGG....AAUGGAGCCAAGGCGGC..........
+#=GC SS_cons                             ..<<<<<...<<<<...............>>>>.................
+#=GC RF                                  uAGcCcCGGCgGccAcGGA.ACgcGuGGAggCcAGGCGGg..........
+
+CAAA01078933.1/1710-1652                 .....GGAGGCGGGAGGGC.UAACAU.......................U
+X59996.1/2943-3001                       .....GGAGGCGGGAGGGC.UAAUGU.......................U
+AANU01119004.1/4684-4608                 ......GGGGCGGGGCGGG.CACUGCUGUCAGCCGCGAGCCGGGACUUGU
+AADC01102600.1/1773-1869                 AGGGGAGGGGCGGGGCGGG.CGCUGCUGUCAGCCGCCAGCCGGAACUUGU
+AP001929.5/104611-104706                 AGGGGAGGGGCGGGGCGGG.CGCUGCUGUCAGCCGCCAGCCGGAACUUGU
+ABBA01031313.1/28753-28672               .....AGGGGCGGGGCGGG.CGCUGCUGUCAGCCGCCAGCCAGAACUUGU
+AADB02014399.1/719517-719598             .....AGGGGCGGGGCGGG.CGCUGCUGUCAGCCGCCAGCCGGAACUUGU
+AADA01131649.1/5135-5035                 AGGGGCGGGGCGGGGCGGG.CGCUGCUGUCAGCCGCCAGCCGGAACUUGU
+AAPY01307680.1/2250-2159                 GCGGGAGGGGCCGGGCCGG.GGCCGCUGUCCGC.GCCAGCCCGGACUUGU
+AAPE01626053.1/9983-9922                 .....GGAGGCGGGAGGCGGGAAGGAAAUCA...................
+#=GC SS_cons                             ......>>>>>.......................................
+#=GC RF                                  ...gGGGgGgCGGGagGGG.caauGuugUCAGCcGCcAGCCgGgACUUGU
+
+CAAA01078933.1/1710-1652                 ACA
+X59996.1/2943-3001                       ACA
+AANU01119004.1/4684-4608                 ACA
+AADC01102600.1/1773-1869                 ACA
+AP001929.5/104611-104706                 ACA
+ABBA01031313.1/28753-28672               ACA
+AADB02014399.1/719517-719598             ACA
+AADA01131649.1/5135-5035                 ACA
+AAPY01307680.1/2250-2159                 ACA
+AAPE01626053.1/9983-9922                 ...
+#=GC SS_cons                             ...
+#=GC RF                                  ACA
+//

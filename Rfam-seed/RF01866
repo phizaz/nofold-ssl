@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01866
+#=GF ID   ceN33
+#=GF DE   C. elegans snoRNA ceN33
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   45.00
+#=GF TC   83.75
+#=GF NC   31.48
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+CAAC02000589.1/214835-214717             CAAGCCUCC.CGACGCUGCUAUAAGUCG.GGGCGCAUAGGCGAGGCGAUG
+AAGD02001053.1/233627-233746             CAAGCCUCCUUGACGCUGCUAAUAGUCUUGGAUUCAUAGGC.UGGCGAUG
+AY948672.1/1-119                         CAAGCCUCC.UGGCGCUGCUAUUAGCCG.GGAUUCAUAGGC.UGGCGAUG
+ABLE02023781.1/1087-1204                 CAAGCCUC..UGGCGCUGC.AUUUGCCA.GAAAC..AAGGC.GGGCGAUG
+#=GC SS_cons                             ..........<<<<....................................
+
+CAAC02000589.1/214835-214717             AUUGAGAG.AUUCCCACACGCAAUUUCUACUGAUC...CGCAUGAAGGUU
+AAGD02001053.1/233627-233746             AUUGAGAU.AUUCCCACACGCAAUUUCUGCUGAUC...CACAUGAAGGUU
+AY948672.1/1-119                         AUUGAGAUUGUUCCCACACGCAAUUUCUCCUGAUC...CACAUGAAGGCU
+ABLE02023781.1/1087-1204                 AUUGAUAGAUUUACCACACGCAAUUUCGCCUGAUCGUCGAAAUGAAGGUU
+#=GC SS_cons                             ..................................................
+
+CAAC02000589.1/214835-214717             AAACUUCCUUGGACGUCUGAGCCGC
+AAGD02001053.1/233627-233746             AAACUUCCUUGGACGUCUGAGCCAC
+AY948672.1/1-119                         AAACUUCCUUGGACGUCUGAGCCGC
+ABLE02023781.1/1087-1204                 AAACUUCCUUGGACGUCUGAGCCAC
+#=GC SS_cons                             ....................>>>>.
+//

@@ -1,0 +1,50 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00285
+#=GF ID   snoZ6
+#=GF DE   Z6 small nucleolar RNA
+#=GF PI   Z6
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD; Moxon SJ, Daub J
+#=GF GA   20.00
+#=GF TC   20.48
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol 2002;22:6663-6668.
+#=GF CC   Z6 belongs to the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and D (CUGA) box motifs. Most of the members of the box C/D family function
+#=GF CC   in directing site-specific 2'-O-methylation of substrate RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Z6_small_nucleolar_RNA
+#=GF SQ   7
+
+AJ344343.1/4557-4647             UGCUAGUGAUGAAGCUGCCUCGCUCUGAGCACUGGGCCUUGCCUGGGGGC
+AB166747.1/4408-4498             UGCUAGUGAUGAAGCUGCCUCGCUCUGAGCACUGGGCCUUGCCUGGGGGC
+AY749166.1/4115-4205             UGCUGGUCAUGAAGUUGCCUCAAUCCGAGCACUGGGCCUUGCCUGGGGGC
+AB193179.1/4143-4233             UGCUGGUCAUGAAGUUGCCUCAAUCCGAGCACUGGGCCUUGCCUGGGGGC
+AB017549.1/452-542               UGCUGGUGGUGAAGCUCCCUCUCUCCGAGCACUGGGCCCUGCCUGGGGGC
+AJ010679.1/1-91                  UGCUGGUGGUGAAGCUCCCUCUCUCCGAGCACUGGGCCCUGCCUGGGGGC
+BC041570.1/378-468               UGCUGGUGGUGAAGCUCCCUCUCUCCGAGCACUGGGCCCUGCCUGGGGGC
+#=GC SS_cons                     <<<<..............................................
+#=GC RF                          uGcugGUgAUGAAGcUgCCUCacUCcGAGCACUGGGCCuUGCCUGGGGGC
+
+AJ344343.1/4557-4647             UCUAGGGAGCCAGGGGAGAUGCUACCACGGAAGCUGAAACG
+AB166747.1/4408-4498             UCUAGGGAGCCAGGGGAGAUGCUACCACGGAAGCUGAAACG
+AY749166.1/4115-4205             UCUCGGGAGCCAGGGAAGAUGCUACCACGGAAGCUGAAACA
+AB193179.1/4143-4233             UCUCGGGAGCCAGGGAAGAUGCUACCACGGAAGCUGAAACA
+AB017549.1/452-542               UCCCGGGAGCCAGGGGAGAUGCUACCUCGGAAGCUGAAGCG
+AJ010679.1/1-91                  UCCCGGGAGCCAGGGGAGAUGCUACCUCGGAAGCUGAAGCG
+BC041570.1/378-468               UCCCGGGAGCCAGGGGAGAUGCUACCUCGGAAGCUGAAGCG
+#=GC SS_cons                     .....................................>>>>
+#=GC RF                          UCucGGGAGCCAGGGgAGAUGCUACCACGGAAGCUGAagCa
+//

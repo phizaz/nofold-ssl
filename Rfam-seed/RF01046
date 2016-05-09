@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01046
+#=GF ID   WLE3
+#=GF DE   Wingless localisation element 3 (WLE3)
+#=GF AU   Brown C
+#=GF SE   Predicted
+#=GF SS   Predicted; RNAalifold
+#=GF GA   21.00
+#=GF TC   25.66
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://mrna.otago.ac.nz/cgi-bin/tt_data_browse/RNAMotif?PatID=T0202
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   18045835
+#=GF RT   A stem-loop structure in the wingless transcript defines a
+#=GF RT   consensus motif for apical RNA transport.
+#=GF RA   dos Santos G, Simmonds AJ, Krause HM
+#=GF RL   Development 2008;135:133-143.
+#=GF WK   http://en.wikipedia.org/wiki/Wingless_localisation_element_3_(WLE3)
+#=GF SQ   10
+
+S67383.1/2071-2114                     UGCUUGCAUACUGCUUUGGCCAGGACCAAAACGUAUGCGAAGUG
+DQ778987.1/872-913                     UGCUUGCAUUCCGCUUUGCCCAGCUGCAAAACGCAUGUUAAG..
+DQ778983.1/809-850                     UGCUUGCAUUUCGCUUUGCCCAGCUGCAAAACGCAUGUUAAG..
+DQ778982.1/694-735                     UGCUUUCAUGUUGCUUUGGCCGGGCUCAAAGCAGAUGGAAAG..
+AE014134.5/7315711-7315754             UGCUUGCAUACUGCUUUGGGCAGGACCAAAACGUAUGCGAAGUG
+DQ778976.1/640-681                     UGCUCGCAUACUGCUUUGGCCAGGACCAAAACGUAUGUGGAG..
+AY128458.1/2363-2406                   UGCUUGCAUACUGCUUUGGGCAGGACCAAAACGUAUGCGAAGUG
+DQ778977.1/640-683                     UGCUUGCAUACUGCUUUGGCCAGGACCAAAACGGAUGUGAAGUG
+DQ778975.1/672-715                     UGCUUGCAUACUGCUUUGGCCAGGACCAAAACGUAUGCAAAGUG
+DQ778986.1/830-873                     UGCUUGCACACUGCUUUGGCCAGGACCAAAACGUAUGCGAAGUG
+#=GC SS_cons                           <<<<<<<<<<<.<.<<<<<......>>>>>.>>>>>>>.>>>>>
+//

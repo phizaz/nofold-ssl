@@ -1,0 +1,60 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01073
+#=GF ID   GP_knot1
+#=GF DE   Gag/pol translational readthrough site
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   38.00
+#=GF TC   38.00
+#=GF NC   37.97
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00047
+#=GF DR   PKBASE; PKB00078
+#=GF DR   PKBASE; PKB00079
+#=GF DR   PKBASE; PKB00088
+#=GF DR   PKBASE; PKB00098
+#=GF DR   PKBASE; PKB00099
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   2402881
+#=GF RT   RNA pseudoknots: translational frameshifting and readthrough on viral
+#=GF RT   RNAs.
+#=GF RA   ten Dam EB, Pleij CW, Bosch L;
+#=GF RL   Virus Genes. 1990;4:121-136.
+#=GF RN   [2]
+#=GF RM   8076609
+#=GF RT   Pseudoknot-dependent read-through of retroviral gag termination
+#=GF RT   codons: importance of sequences in the spacer and loop 2.
+#=GF RA   Wills NM, Gesteland RF, Atkins JF;
+#=GF RL   EMBO J. 1994;13:4137-4144.
+#=GF WK   http://en.wikipedia.org/wiki/Gag/pol_translational_readthrough_site
+#=GF SQ   9
+
+AAHY01145900.1/2934-2995             UAGGGGGGUCAGGGU.CAGGAGCCCCCCCCUGAACCCAGGAUAACCCUCA
+AAHY01014162.1/1518-1457             UAGGGAGGUCAGGGU.CAGGAGCCCCCCCCUGAACCCAGGAUAACCCUCA
+M18247.1/2424-2485                   UAGGAGAGUCAGGGC.CAGGACCCCCCCCCUGAGCCCAGGAUAACCUUAA
+AY099324.1/2582-2643                 UAGGGGAGACGGGGU.UCGGACCCCCUCCCCGAGCCCAGGGUAACUUUGA
+M26927.1/2191-2251                   UAGGGGAGUCAGGGU.UCGGACCCCCUCCCCGAACCUAGGGUAACACUGA
+AF053745.1/2288-2348                 UAGGGAAGUCGGGGC.UCAGACCCCCUCCCUGAGCCUAGGGUAACUUUGU
+AF411814.1/2228-2289                 UAGGGGGGUCGGGGU.CAGGAGCCCCCCCCUGAACCCAGGAUAACCCUCA
+M77193.1/3206-3267                   UAGGGAGGUCAGGGC.CAGGAGCCCCCCCCUGAGCCCAGGAUAACUCUUG
+J02034.1/2580-2641                   UAGGGGUGUCAGGGCUCUGGAGCCCCCCCC.GAGCCCCGGCUAACUCUAU
+#=GC SS_cons                         ...........<<<<.<<<<.AAAAAAA>>>>.>>>>.............
+#=GC RF                              UAGGGaGGUCAGGGu.CaGGAGCCCCCCCCuGAaCCCAGGAUAACCCUCA
+
+AAHY01145900.1/2934-2995             CUGUCGGGGGGCA
+AAHY01014162.1/1518-1457             AAGUCGGGGGGCA
+M18247.1/2424-2485                   AAAUAGGGGGGCA
+AY099324.1/2582-2643                 AGGUGGAGGGGCA
+M26927.1/2191-2251                   CUGUGGAGGGGA.
+AF053745.1/2288-2348                 CUGUGGAGGGGA.
+AF411814.1/2228-2289                 AAGUAGGGAGGCA
+M77193.1/3206-3267                   AAGUUGGGGGGCA
+J02034.1/2580-2641                   CUGUAGGGGGGCA
+#=GC SS_cons                         .....aaaaaaa.
+#=GC RF                              aaGUCGGGGGGCA
+//

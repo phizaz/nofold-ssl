@@ -1,0 +1,64 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01656
+#=GF ID   ceN72-3
+#=GF DE   C. elegans sRNA ceN72-3
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR;
+#=GF GA   20.00
+#=GF TC   22.56
+#=GF NC   17.52
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/C._elegans_small_RNAs
+#=GF SQ   7
+
+ABEG01015343.1/1024-1166                   CAC.UCGGUCCGGAGUUGAUGGGUUAUCUA.....U......G.AAUCUU
+AY948637.1/1-133                           CACAUCGGUCCGGAGUUGAUGGGUUACCAG.....A......U.U.AAUU
+CAAC02000606.1/1482879-1483014             CA...CGGUCCGGCGUUGAUGGGUUAUCAG.....U......C.G.AAAU
+ABEG01016581.1/732-880                     CACUUCGGUCCGGAGUUGAUGGGUUAUCAUUCUGA.AUUGUUU.A.CUCU
+ABEG01003345.1/89-232                      CACUUCGGUCCGGAGUUGAUGGGUUAUCUA.....C......GAA.UCUU
+AY948638.1/1-132                           CACAUCGGUCCGGAGUUGAUGGGUUACCC......A......G.U.CAUU
+AC084593.1/10924-11064                     UGUCACGGUCCGGCGUUGAUGGGUUAUCAC.....U......C.G.UAAU
+#=GC SS_cons                               .<<<.<<<<<.<<.<<<<<<<<<.........................<<
+#=GC RF                                    caCaUCGGuCcGGAGuuGauGGGUUAccag.....A......u.U.aAuu
+
+ABEG01015343.1/1024-1166                   CUUCUGCUUGCAGAAGGAA..CC..CGU.U......CUUCA...G.AUGU
+AY948637.1/1-133                           CUUCUGCUUGCAGGAGAGC..CCGGUGU.C......CUUGU...G.AUGC
+CAAC02000606.1/1482879-1483014             CUUCUGCUUGCAGGAGA.A..CCGUUCUUCAG.ACAUCUGUC.UGUGGAA
+ABEG01016581.1/732-880                     CUUCUGCUUGCAGGAGAACCCCCGGUUU.C......AUUGC...G.AAAC
+ABEG01003345.1/89-232                      CUUCUGCUUGCAGAGGAAA..CC..CGU.U......CUUCA...G.AUGC
+AY948638.1/1-132                           CUUCUGCUUGCAGGAGAGC..CCGGUGU.C......CUUGU...G.AUGC
+AC084593.1/10924-11064                     CUUCUGCUUGCAGGAGG.C..CCGUUCU.UCAGGCAUCUGUCUGU.UGAA
+#=GC SS_cons                               <<<<<<....>>>>>>>>.....<<<<<.<..............>.>>>>
+#=GC RF                                    CuuCuGcUUGCaGgaGagc..ccGGugu.C......cUUGU...G.augC
+
+ABEG01015343.1/1024-1166                   AAGUCUGUUGAACACCC...CGCAAC.CCUCA.AAAAGUUGCAACCCGAU
+AY948637.1/1-133                           CA...........AACC...CGUGUU.CCU.A.ACAGAAUACAACCCCUU
+CAAC02000606.1/1482879-1483014             CA...........ACCC...CGCGUU.CCU.C.ACGGUUCGCAACCCCUU
+ABEG01016581.1/732-880                     CA...........AAACUCUCGCAUU.CUC.AUUAAGAGUGCAAAACCUU
+ABEG01003345.1/89-232                      AAGUCUGUUGAACACCC...CGCAGCCUUC.A.AACAGUUGCAAACCCUU
+AY948638.1/1-132                           CA...........AACC...CGUGUU.CCU.A.ACAGAAUACAAACCCUU
+AC084593.1/10924-11064                     CA...........ACCC...CGCGUU.CCU.C.ACGGUUCGCACCCCCUU
+#=GC SS_cons                               >....................<<<<<.<........>>>>>>........
+#=GC RF                                    CA...........AAcc...cGuguu.CcU.A.AcAGaauaCAAacccUU
+
+ABEG01015343.1/1024-1166                   CCCAUCAACACCAACUUGACCGUUGU
+AY948637.1/1-133                           CCCAUCGACACCAACUUGACCGUUGU
+CAAC02000606.1/1482879-1483014             CCCAUCAACACCAACUUGACCGA..U
+ABEG01016581.1/732-880                     CCCAUCAACACCAACUCGACCGUUGU
+ABEG01003345.1/89-232                      CCCAUCAACACCAACUUGACCGUUGU
+AY948638.1/1-132                           CCCAUCGACACCAACUUGACCGUUGU
+AC084593.1/10924-11064                     CCCAUCAGCACCAACUUGACCGUUAU
+#=GC SS_cons                               >>>>>>>>>.>>.....>>>>>.>>>
+#=GC RF                                    CCCauCgaCACCAAcUUGaCCGUuGu
+//

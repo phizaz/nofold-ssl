@@ -1,0 +1,93 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01469
+#=GF ID   rli33
+#=GF DE   Listeria sRNA rli33
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold
+#=GF GA   17.00
+#=GF TC   17.52
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  -g  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   3
+
+AE017262.2/722820-723352             CCAUUACUUUUUCUCCCUUUUUUGUAGUGGGUUGUCUUUACUUACCUUAA
+AARK02000088.1/2619-2088             CCAUUACUUUUUCUCCCUUUUUUGUAGUGGGUUGUCUUUACUUACCUUAA
+AL591976.1/68326-68860               CCAUUACUUUUUCUCCCUUUUUUGUAGUGGGUUGUCUUUACUUACCUUAA
+#=GC SS_cons                         .<<<<<<..<<<..<<....<<<<<.<<<<<<<.<<<<<<<<<<....<<
+#=GC RF                              cCauuaCuuuuucuCCcuuuuuuguAGuggguuGuCuuuaCuuaccuuaa
+
+AE017262.2/722820-723352             ACUCCCUUUUAUACU.UUUAGCGGUUGU.UAGCAGCCACUAAGAGUAUUU
+AARK02000088.1/2619-2088             ACUCCCUUUUAUACU.UUUAGCGGUUGU.UAGCAGCCACUAAGAGUAUUU
+AL591976.1/68326-68860               ACUCCCUUUUAUACUCUUUUGUGGUUGUGUAGCAACCCUUUGGAGUAUUU
+#=GC SS_cons                         <.<<<<.....<<<<.<...<.<<<<<.....>>>>>.>..>.>>>>...
+#=GC RF                              acuCCCuuuuAuaCu.cuuaguGGcuGu.uAGCagCCacuagGaGuauuu
+
+AE017262.2/722820-723352             UUUUGUAAAAAACACUAAAUAAAUGAAAACUCCUCGAACAAGGGAAAGUU
+AARK02000088.1/2619-2088             UUUUGUAAAAAACACUAAAUAAAUGAAAACUCCUCGAACAAGGGAAAGUU
+AL591976.1/68326-68860               UUUUGGAAAAAAUGCUAAAUAUAAGAAAACUCCUCAAACAAGGGAAAGUU
+#=GC SS_cons                         ...........................<<<<<<<<<<<<........>>>
+#=GC RF                              uuuuGuAAAAAAuacuAAAuAaAaGAAaaCuCCuCgaaCAAGGGAAAGuu
+
+AE017262.2/722820-723352             CGAGGAGUUCGGCAUUUACCAAUAUUUAUAAAUGCCACUGGGGAUUUUCU
+AARK02000088.1/2619-2088             CGAGGAGUUCGGCAUUUACCAAUAUUUAUAAAUGCCACUGGGGAUUUUCU
+AL591976.1/68326-68860               CGAGGAGUUCGGCAUUUACCAAUAUUUAUAAAUGCCACUGGGGAUUUUCU
+#=GC SS_cons                         >>>>>>>>>.<<<<<<<<..........>>>>>>>>...>>>>.>>>..>
+#=GC RF                              cGaGGaGuucGGCauuuaccAAuAuuuAuaaauGCCAcuGGGgAuuuucu
+
+AE017262.2/722820-723352             AAGUGAACAAAGAUAUGGAUGUUUGGGAAGAGCAUCCACUUGGAGAAUUU
+AARK02000088.1/2619-2088             AAGUGAACAAAGAUAUGGAUGUUUGGGA.GAGCAUCCACUUGGAGAAUUU
+AL591976.1/68326-68860               AAGUGAACAAAGAUAUGGAUGUUUGGGA.AAGCAUCCACUUUGAGAAUUU
+#=GC SS_cons                         >>>>>>>........<<<<<<<<<.....>>>>>>>>>....>>.>>>>>
+#=GC RF                              aaGugaacAAAGAuAuGGauGuucGGGA.gagCauCCacuuuGaGaauuu
+
+AE017262.2/722820-723352             ACCAUAGAUAGAUAGCGACAAGUUGUAAUGUAGUAUAAAUCAUACAAUUC
+AARK02000088.1/2619-2088             ACCAUAGAUAGAUAGCGACAAGUUGUAAUGUAGUAUAAAUCAUACAAUUC
+AL591976.1/68326-68860               ACCAUAGAUAGCUGGCGUUAAGUUGUAAUGUAGUAUAAAUCAUACAAUUC
+#=GC SS_cons                         >>.>>>>>......>.>..>>>..>>>>>><<<<.<<<<<..<<<<<<<<
+#=GC RF                              aCcauagauAGaugGcGauaaguuGuaauGuaGuAuaaaucAuaCaauuC
+
+AE017262.2/722820-723352             UUGUAGUGCAUCAUAUAUAGCACUGAAUUAUUAAAUUCCUGAUAAAUAAG
+AARK02000088.1/2619-2088             UUGUAGUGCAUCAUAUAUAGCACUGAAUUAUUAAAUUCCUGAUAAAUAAG
+AL591976.1/68326-68860               UUGUAGUACAUCAUAUAUAGCACUGAAUUACCAAAUUCCUGAUAAAUAAG
+#=GC SS_cons                         .<<<.<<<.......>>>.>>>..>>>>>.....................
+#=GC RF                              uuGuAguacAucAuAuauAgCacuGaauuAuuAAAuuccuGAuAAAuAAG
+
+AE017262.2/722820-723352             AAAAGACUGGAAUAAAAGUACCUCAUCAAGUAUAUUUAAUUUACGCGGGA
+AARK02000088.1/2619-2088             AAAAGACUGGAAUAAAAGUACCUCAUCAAGUAUAUUUAAUUUACGCGGGA
+AL591976.1/68326-68860               GAAAGGGUGGAAUAAAAGUAUCUCAUCAGGUAUAUUUAAAUUACACGGUA
+#=GC SS_cons                         .......<<<..<<<<.<<<<........>>>>.>>>>...<<<<<.<<<
+#=GC RF                              aAAAGaguGGAAuaaaAguaccucAucAgguauAuuuaAauuaCaCGgga
+
+AE017262.2/722820-723352             GUUAAAGAGGUGAUAGAAGGUUGAGCAAUUUUAACAUCAUGGGAUCUUUA
+AARK02000088.1/2619-2088             UUUAAAGAGGUGAUAGAAGGUUGAGCAAUUUUAACAUCAUGGGAUCUUUA
+AL591976.1/68326-68860               GUUAAGGAGGUAACGAUAAGUUGAGUAAUUUUAACAUCAUGGGAUCUUUA
+#=GC SS_cons                         <<<<<<<.<<<........<<<<<<....>>>>>>...<<<<<.......
+#=GC RF                              guuaaagAgGuaAuaaaAaGuugaguAAuuuuaaCAucauggGAucuuuA
+
+AE017262.2/722820-723352             AUGCUUAUAGCUGUUUUAGUUUUAGCAGUGUAUGUUAUUACCAAAGUGAU
+AARK02000088.1/2619-2088             AUGCUUAUAGCUGUUUUAGUUUUAGCAGUGUAUGUUAUUACCAAAGUGAU
+AL591976.1/68326-68860               AUGCUUAUAGCUGUUUUAGUUUUAGCAGUGUAUGUUAUUACCAAAGUUAU
+#=GC SS_cons                         ...>>>>>.>>>.>>>>>>>>>>....>>>>>........>>>.......
+#=GC RF                              AuGCuuauAgCuGuuuuagcucuAGcAGuGuauGuuAuuACCaAAGuuAu
+
+AE017262.2/722820-723352             UACCAAAUU.AAAAAAUAAGUAGAGUUUAACUAAAA
+AARK02000088.1/2619-2088             UACCAAAUU.AAAAAAUAAGUAGAGUUUAACUAAAA
+AL591976.1/68326-68860               UAACAAAUUAAAAAAAUAAGUAGAGUUUAACUAAAA
+#=GC SS_cons                         ...................>>>..>>>>>>>>>...
+#=GC RF                              uAacAAAuu.AAAAAAuAAGuaGAguuuaaCuaAAA
+//

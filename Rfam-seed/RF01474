@@ -1,0 +1,55 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01474
+#=GF ID   rli42
+#=GF DE   Listeia sRNA rli42
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold
+#=GF GA   22.00
+#=GF TC   22.37
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  -g  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   4
+
+AL591978.1/239617-239447               UAUCUGAAAUGCUUUAUGAGAGGAGUUUUCUUCCGCAAUGACUAAUAAAA
+AL596168.1/188493-188323               UAUCUGAAAUGCUUUAUGAGAGGAGUUUUCUUCCGCAAUGACUAAUAAAA
+AM263198.1/1378553-1378383             UAACUGAAAUGCUUUAUGAGAGGAGUUUUCUUCCGCAAUGACUAAUAAAA
+FM242711.1/1383323-1383154             UAUCUGAAAUGCUUUAUGAGAGGAGUUUUCUUCCGCA.UGACUAAUAAAA
+#=GC SS_cons                           ....<<<<<<<<<..<<<<..<<<<.....>>>><<<<<<<<<<......
+#=GC RF                                uAucugaaacgcuuuaugagAGGaguuuucuuCCgcaaugacuaAuAAAA
+
+AL591978.1/239617-239447               AAGUAGUUCGCGUUGUCGUUAUUUUAAUGUUAAUCGCGAUUGUAUUAUCA
+AL596168.1/188493-188323               AAGUAGUUCGCGUUGUCGUUAUUUUAAUGUUAAUCGCGAUUGUAUUAUCC
+AM263198.1/1378553-1378383             AAGUAGUUCGCGUUGUCGUUAUCUUAAUGCUAAUCGCGAUUGUAUUAUCC
+FM242711.1/1383323-1383154             AAGUAGUUCGCGUUGUCGUUAUUUUAAUGCUAAUCGCGAUUGUAUUAUCC
+#=GC SS_cons                           ...>>>>><<<<<<<.<<<<<...>>>>>.>>>.>>>>>>>>>.>>>>..
+#=GC RF                                AAguaguucGcGuugucguuauuuuaauguuaauCgCgauuguAuuauca
+
+AL591978.1/239617-239447               AGUGUUUUAACCGGGGUAUUAAUGUUUUU.AUAAAUAUCCAACGUCUGGG
+AL596168.1/188493-188323               AGCGUUUUAACCGGGUUACUAAUGUUUUU.AUAGACAUCCGAGGUCUGAG
+AM263198.1/1378553-1378383             AGCGUUUUAACCGGGGUAUUAAUGUUUUU.AUAGAUAUCCGAUGUCUGAG
+FM242711.1/1383323-1383154             AGUGUUUUAACCGGGGUAUUAAUG.UUUUUAUAAAUAUCCGACGUCUGAG
+#=GC SS_cons                           >>>>>>>>>....<<<<<<<.<<<....>.>>.>>>>>>>...<<<<<<<
+#=GC RF                                agcguuuuaAccgGGguaccAauguuuuu.auAgguacCCgAagccuGag
+
+AL591978.1/239617-239447               CCGAUUUGGUUCAGACUUUUUU
+AL596168.1/188493-188323               CCAAUUUGGUUCAGGCUUUUUU
+AM263198.1/1378553-1378383             CCAAUAUGGUUCAGACUUUUUU
+FM242711.1/1383323-1383154             CCAAUUUGGUUCAGGCUUUUUU
+#=GC SS_cons                           <<.....>>>>>>>>>......
+#=GC RF                                ccAAuuugguuCaggcuuuuuu
+//

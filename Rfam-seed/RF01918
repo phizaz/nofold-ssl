@@ -1,0 +1,93 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01918
+#=GF ID   mir-1249
+#=GF DE   microRNA mir-1249
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   112.00
+#=GF TC   113.06
+#=GF NC   12.71
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000667
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   20403161
+#=GF RT   Small RNA expression and strain specificity in the rat
+#=GF RA   Linsen SE, de Wit E, de Bruijn E, Cuppen E
+#=GF RL   BMC Genomics. 2010;11:249.
+#=GF RN   [2]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [3]
+#=GF RM   18285502
+#=GF RT   Application of massively parallel sequencing to microRNA profiling
+#=GF RT   and discovery in human embryonic stem cells
+#=GF RA   Morin RD, O'Connor MD, Griffith M, Kuchenbauer F, Delaney A,
+#=GF RA   Prabhu AL, Zhao Y, McDonald H, Zeng T, Hirst M, Eaves CJ, Marra
+#=GF RA   MA
+#=GF RL   Genome Res. 2008;18:610-621.
+#=GF RN   [4]
+#=GF RM   16954537
+#=GF RT   Many novel mammalian microRNA candidates identified by extensive
+#=GF RT   cloning and RAKE analysis
+#=GF RA   Berezikov E, van Tetering G, Verheul M, van de Belt J, van Laake
+#=GF RA   L, Vos J, Verloop R, van de Wetering M, Guryev V, Takada S, van
+#=GF RA   Zonneveld AJ, Mano H, Plasterk R, Cuppen E
+#=GF RL   Genome Res. 2006;16:1289-1298.
+#=GF RN   [5]
+#=GF RM   20413612
+#=GF RT   Mammalian microRNAs: experimental evaluation of novel and previously
+#=GF RT   annotated genes
+#=GF RA   Chiang HR, Schoenfeld LW, Ruby JG, Auyeung VC, Spies N, Baek
+#=GF RA   D, Johnston WK, Russ C, Luo S, Babiarz JE, Blelloch R, Schroth
+#=GF RA   GP, Nusbaum C, Bartel DP
+#=GF RL   Genes Dev. 2010;24:992-1009.
+#=GF RN   [6]
+#=GF RM   17989215
+#=GF RT   RNA sequence analysis defines Dicer's role in mouse embryonic
+#=GF RT   stem cells
+#=GF RA   Calabrese JM, Seila AC, Yeo GW, Sharp PA
+#=GF RL   Proc Natl Acad Sci U S A. 2007;104:18097-18102.
+#=GF RN   [7]
+#=GF RM   18945293
+#=GF RT   Annotation of 390 bovine miRNA genes by sequence similarity with
+#=GF RT   other species
+#=GF RA   Strozzi F, Mazza R, Malinverni R, Williams JL
+#=GF RL   Anim Genet. 2009;40:125.
+#=GF RN   [8]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+AANU01293572.1/34858-34753             CUCAGAUUCUUGUUGGCAUGGGGAGGAGGGAGGAGAUGGGCCAAGUUCCC
+AL008718.23/22697-22592                CUCAGAUUAUUGUUGGCAUGGGGAGGAGGGAGGAGAUGGGCCAAGUUCCC
+ABGA01165301.1/6990-7095               CUCAGAUUAUUGUUGGCAUGGGGAGGAGGGAGGAGAUGGGCCAAGUUCCC
+AAFC03104372.1/35525-35420             CUCAGAUUCUUGUUUGCAUGGGGAGGAGGGAGGAGAUGGGCCACGUUCCC
+#=GC SS_cons                           ...........<<<.<<..<<<<<<<<<<<.<<.<<.<<<<...<<<<<.
+
+AANU01293572.1/34858-34753             UCUGGCUGGAACGCCCUUCCCCCCCUUCUUCACCUGGCGAACUCCUACUC
+AL008718.23/22697-22592                UCUGGCUGGAACGCCCUUCCCCCCCUUCUUCACCUGGCGAACUCCUACUC
+ABGA01165301.1/6990-7095               UCUGGCUGGAACGCCCUUCCCCCCCUUCUUCACCUGGCGAACUCCUACUC
+AAFC03104372.1/35525-35420             UCUGCCUGGAACGCCCUUCCCCCCCUUCUUCACCUAGCGAACUCCUACUC
+#=GC SS_cons                           .......>>>>>>>>>.>>.>>>>>>>>>>>.>>..>>.>>>........
+
+AANU01293572.1/34858-34753             GUCCUU
+AL008718.23/22697-22592                GUCCUU
+ABGA01165301.1/6990-7095               GUCCUU
+AAFC03104372.1/35525-35420             GUCCUU
+#=GC SS_cons                           ......
+//

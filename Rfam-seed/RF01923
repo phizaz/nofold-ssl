@@ -1,0 +1,55 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01923
+#=GF ID   mir-711
+#=GF DE   microRNA mir-711
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   64.00
+#=GF TC   65.55
+#=GF NC   56.68
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000748
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   19406225
+#=GF RT   In silico detection and characteristics of novel microRNA genes
+#=GF RT   in the Equus caballus genome using an integrated ab initio and
+#=GF RT   comparative genomic approach
+#=GF RA   Zhou M, Wang Q, Sun J, Li X, Xu L, Yang H, Shi H, Ning S, Chen
+#=GF RA   L, Li Y, He T, Zheng Y
+#=GF RL   Genomics. 2009;94:125-131.
+#=GF RN   [2]
+#=GF RM   16582102
+#=GF RT   The expression profile of microRNAs in mouse embryos
+#=GF RA   Mineno J, Okamoto S, Ando T, Sato M, Chono H, Izu H, Takayama
+#=GF RA   M, Asada K, Mirochnitchenko O, Inouye M, Kato I
+#=GF RL   Nucleic Acids Res. 2006;34:1765-1771.
+#=GF RN   [3]
+#=GF RM   18215311
+#=GF RT   miRNAminer: a tool for homologous microRNA gene search
+#=GF RA   Artzi S, Kiezun A, Shomron N
+#=GF RL   BMC Bioinformatics. 2008;9:39.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   5
+
+AABR04000201.1/151715-151620             AUCCCCUGUGCCUAACUUUGAAUCUCUUCGUAGGGUGCUUCAGGGAAAGC
+AC190272.8/53341-53246                   ACCAUGAUGAACUGACUUUGAGUCUCUCCUCAGGGUGCUGCAGGCAAAGC
+AC005903.5/60778-60683                   ACCAUGAUGAACUGACUUUGAGUCUCUCCUCAGGGUGCUGCAGGCAAAGC
+L23982.1/20007-20102                     ACCAUGAUGAACUGACUUUGAGUCUCUCCUCAGGGUGCUGCAGGCAAAGC
+AAWR02008514.1/16619-16714               CUGCAGACUCCCUGACUUUAAGUCUCUUUUCAGGGUGCCACAGGCAAAGC
+#=GC SS_cons                             ...........<<.<<<<...<<<<<<<<.<.<<<<.<<.<<<......>
+
+AABR04000201.1/151715-151620             UGGGGACCCUGGGAGAGAUGUAAGUCAAGGGGGAUGCCAAGGUGGA
+AC190272.8/53341-53246                   UGGGGACCCAGGGAGAGACGUAAGUGAGGGGAGAUGCUGGGACAGA
+AC005903.5/60778-60683                   UGGGGACCCAGGGAGAGACGUAAGUGAGGGGAGAUGCUGGGACAGA
+L23982.1/20007-20102                     UGGGGACCCAGGGAGAGACGUAAGUGAGGGGAGAUGCUGGGACAGA
+AAWR02008514.1/16619-16714               UGGGGACCCAGGGAGAGACGUAAGUAAGGGGAGAUGUUAGGGUGGA
+#=GC SS_cons                             >>>>.>>>>.>>>>>>>>>..>>>>.>>..................
+//

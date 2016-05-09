@@ -1,0 +1,39 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01148
+#=GF ID   sR13
+#=GF DE   Small nucleolar RNA sR13
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   30.00
+#=GF TC   36.02
+#=GF NC   20.87
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://lowelab.ucsc.edu/snoRNAdb/
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   6
+
+AE006641.1/2223461-2223515             UGAAAUGAUGUCUGGUGACGGCU..CUGAGCCAGUGAUGUCG.CCAAAAA
+AF195107.1/1-55                        .AGGAUGAUGUACUUUCACC.CUCACUGAAAG.GUGAGGAUGAGUCCGAC
+BA000001.2/230055-230109               UUGGGUGAUGA..GAUGGCGGAUUGCUGAGAG.AUGAUGAGGACCUUAGG
+AE009950.1/1779115-1779060             UGGUGUGAUGA..AAAGGCGGAUUGCUGAGAGGAUGAUGAAGACCUUAGG
+AJ248283.1/245976-246030               UUGAAUGAUGA..GAUGGCGGAUUGCUGAGCU.GUGAUGAAGACCUUAGG
+AP006878.1/1101010-1100955             GCGGAUGAUGAC.UACGGCGGAUUCCCGAGCG.GUGAGGACGACCUUAGG
+#=GC SS_cons                           ..................................................
+#=GC RF                                UaGaAUGAUGu..gaUGaCGGaUugCUGAGAg.GUGAuGAaGAccuuAag
+
+AE006641.1/2223461-2223515             GUCUGAUC
+AF195107.1/1-55                        UACUGACG
+BA000001.2/230055-230109               GGCUGAUU
+AE009950.1/1779115-1779060             GGCUGAUC
+AJ248283.1/245976-246030               GUCUGACU
+AP006878.1/1101010-1100955             GUCUGACG
+#=GC SS_cons                           ........
+#=GC RF                                GaCUGAuu
+//

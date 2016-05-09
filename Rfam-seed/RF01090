@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01090
+#=GF ID   RF_site4
+#=GF DE   Edr gene ribosomal frameshift signal
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   42.00
+#=GF TC   46.29
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00257
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   15767280
+#=GF RT   Characterization of the frameshift signal of Edr, a mammalian example
+#=GF RT   of programmed -1 ribosomal frameshifting.
+#=GF RA   Manktelow E, Shigemoto K, Brierley I;
+#=GF RL   Nucleic Acids Res. 2005;33:1553-1563.
+#=GF WK   http://en.wikipedia.org/wiki/Ribosomal_frameshift
+#=GF SQ   7
+
+AAIY01557043.1/3331-3396             GGGAAACUCCCAGGCCCCGCUGUAGAGGGACCGUCAGCGGCCGGGCCAG.
+AAKN02016859.1/6843-6908             GGGAAACUCCCCGGCCCCGCUGUAGAGGGACCAUCAGCGACCGGGCCGG.
+AAHY01051104.1/1053-1118             GGGAAACUCCCCGGCCCCGCUGUAGGGGGACCUUCAGCGACAGGGCCAG.
+BC050659.2/1365-1433                 GGGAAACUCCCCGGCCCCGCUGUAGAGGGACCUUCAGCGACCGAACCAGC
+AAQR01741868.1/144-209               GGGAGACUCCCCGGCCCUGCUGUAGAGGGACCUUCAGCGACUGAGCCAG.
+AAEX02024914.1/7539-7604             GGGAAACUCCCCGGCCCCGCUGUAGAGGGACCUUCAGCGACCGGGCCAG.
+AB260975.1/11458-11523               GGGAAACUCCCUGGCCCCGCUGUAGAGGGACCCCCAGCGCCCGGGCCUG.
+#=GC SS_cons                         ............<<<<<<<<<<....AAAAAAAA>>>>>...>>>>>...
+#=GC RF                              GGGAAACUCCCcGGCCCCGCuGUAGAGGGACCuUCaGCGACaGGGCCAG.
+
+AAIY01557043.1/3331-3396             ..AAAGAAUGAGGUCCCCA
+AAKN02016859.1/6843-6908             ..AAAUCAUAAGGUCCCAA
+AAHY01051104.1/1053-1118             ..AACGAAUAAGGUCCCCA
+BC050659.2/1365-1433                 UUAGGCAAAAGAGUCCCCA
+AAQR01741868.1/144-209               ..AAAUAAUAAGGUCCCCA
+AAEX02024914.1/7539-7604             ..AAAUAAUAAGGUCCCCA
+AB260975.1/11458-11523               ..AACCAGAAAGGUCCCCC
+#=GC SS_cons                         .........aaaaaaaa..
+#=GC RF                              ..AAAuAAUAAGGUCCCcA
+//

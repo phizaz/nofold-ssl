@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00370
+#=GF ID   sroD
+#=GF DE   sroD RNA
+#=GF AU   Moxon SJ
+#=GF SE   PMID:14602901
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   22.23
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   14602901
+#=GF RT   RNomics in Escherichia coli detects new sRNA species and indicates
+#=GF RT   parallel transcriptional output in bacteria.
+#=GF RA   Vogel J, Bartels V, Tang TH, Churakov G, Slagter-Jager JG,
+#=GF RA   Huttenhofer A, Wagner EG;
+#=GF RL   Nucleic Acids Res 2003;31:6435-6443.
+#=GF CC   This family consists of a number of bacterial sroD RNA genes of around 90
+#=GF CC   bases in length. sroD is found in several Enterobacterial species but its
+#=GF CC   function is unknown [1].
+#=GF WK   http://en.wikipedia.org/wiki/sroD_RNA
+#=GF SQ   5
+
+CP000653.1/2564343-2564255               UUACGUGACGAAGCGCGCGCCAAAGUGGACAAUAAAGCCUAAGCUUCGAG
+X07055.1/58-143                          UUACGUGACGAAGCGCGCGGCAAAGUGGACAAUAAAGCCUGAGCGUUAAG
+L02649.1/1951-2034                       UUACGUGACGAAGCGC..GGCAAAGUGGACAAUAAAGCCUGAGCGUUAAG
+CP000647.1/2543344-2543259               CUGCGUGACGAAGCGCGCGCUAAAGUGGACAAUAAAGGCUAAGUAACGAA
+ABEJ01000013.1/114065-113977             CUGCGUGACGAAGCCCGUGGCAAAGUAGACAAUAAAGCCUGAGCGUUAAG
+#=GC SS_cons                             ..............<<<.<<<...............>>>...........
+#=GC RF                                  UUAcGUGAcGAAGcGCgcGGCAAAGUGGAcAAUAAAGCCUGAGcGUUAAG
+
+CP000653.1/2564343-2564255               UAAGU...CGCCAUGAGACGCCGGUUUAGCCGGCGUUUUUUA
+X07055.1/58-143                          UCAGU...CGUC...AGACGCCGGUUAAUCCGGCGUUUUUUU
+L02649.1/1951-2034                       UCAGU...CGUC...AGACGCCGGUUAAUCCGGCGUUUUUUU
+CP000647.1/2543344-2543259               UGAGU...CGCC...UGACGCCGGCUACGCCGGCGUUUUUUA
+ABEJ01000013.1/114065-113977             UCAGCUAACGAG...AGACGCCGGUUAAGCCGGCGUUUUUUU
+#=GC SS_cons                             ........>>.>....<<<<<<<<.....>>>>>>>>.....
+#=GC RF                                  UcAGU...cGUC...AgaCGCCGGUUAAUCCGGCGuuUUUUU
+//

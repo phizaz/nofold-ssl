@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01789
+#=GF ID   EBER1
+#=GF DE   Epstein-Barr virus EBER1
+#=GF AU   Moore B
+#=GF SE   Published; PMID:17381320
+#=GF SS   Published; PMID:17381320
+#=GF GA   30.00
+#=GF TC   39.87
+#=GF NC   16.60
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17381320
+#=GF RT   The challenge of viral snRNPs.
+#=GF RA   Conrad NK, Fok V, Cazalla D, Borah S, Steitz JA;
+#=GF RL   Cold Spring Harb Symp Quant Biol. 2006;71:377-384.
+#=GF WK   http://en.wikipedia.org/wiki/EBER
+#=GF SQ   3
+
+AY037858.1/6652-6823             GGGACCUACGCUGCCCUAGCGGUUAUGCUGGGGAGGAGAUGAGUGUGACU
+EF187849.1/115-280               AGGACCUACGCUGCCCUAGAGGUUUUGCUAGGGAGGAGACGUGUGUGGCU
+AF200364.1/1235-1424             AAGACCUACGCUGCCCUAGCGGUUCUGCUAGGGAGGAGAUUGGUGCGGCU
+#=GC SS_cons                     .<<<<<.<<<<<.<<.<<<........>>>>>..<<<<<<<.<.<<<<<.
+#=GC RF                          AGGaccuacGcugcccuaGAgguuuugCuaggcAGgaGacGuGuGuGGcu
+
+AY037858.1/6652-6823             UAAAUCACCCGUCCCGGGUACAAGUCCCGGGUGGUGAAGACGGGGUCUGG
+EF187849.1/115-280               GUAGCCACCCGUCCCGGGUACAAGUCCCGGGUGGUGAGGACGGUGUCUGU
+AF200364.1/1235-1424             UAUGCCGCCCGUCCCGGGUACAAGUCCCGGGAGGUGACGGUAGCGUCUGU
+#=GC SS_cons                     ...>>>>><<<.<<<<<<.......>>>>>>>>>..<<<.<<<.<.<<<.
+#=GC RF                          guAgCCaCccgucccGGGuAcAAguCCCggguggugagGAcgGuGucuGu
+
+AY037858.1/6652-6823             UGCUGCU..AAAAGUUUGGA........................CAGUCC
+EF187849.1/115-280               GG.....UU....GUCUUCC........................CAGACU
+AF200364.1/1235-1424             AU.....UU....GCCCUGUAUCAGGUGUAUAGCUGCUCUCUCGCAGUCG
+#=GC SS_cons                     <<................>>........................>>>.>.
+#=GC RF                          GG.....uu....gucuuCC........................CagaCu
+
+AY037858.1/6652-6823             CCGGUUUCUGCUCUCUUCGGUUCA.AACCAGCUGGUGGUCCGCCUGUUU
+EF187849.1/115-280               CUGCUUUCUGCCGUCUUCGGUCAAGUACCAGCUGGUGGUCCGCAUGUUU
+AF200364.1/1235-1424             CUGCUAUCAGCCGUCUCCGGUCCGAUGCCAGCUGGUGGUCUGCUCUUUU
+#=GC SS_cons                     >>>>>>....>>>>>>>><<.......>>>>>..>>>>>>>........
+#=GC RF                          CugCuuucugCCguCuuCGGucAAguACCagCuggugguCCgcAuguuu
+//

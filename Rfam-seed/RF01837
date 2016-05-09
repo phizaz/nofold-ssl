@@ -1,0 +1,31 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01837
+#=GF ID   toga_FSE
+#=GF DE   togavirus ribosomal frameshift element
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:18822126
+#=GF SS   Published; PMID:18822126
+#=GF GA   45.00
+#=GF TC   45.15
+#=GF NC   30.58
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r201068
+#=GF RN   [1]
+#=GF RM   18822126
+#=GF RT   Discovery of frameshifting in Alphavirus 6K resolves a 20-year
+#=GF RT   enigma.
+#=GF RA   Firth AE, Chung BY, Fleeton MN, Atkins JF;
+#=GF RL   Virol J. 2008;5:108.
+#=GF WK   http://en.wikipedia.org/wiki/Alphavirus
+#=GF SQ   3
+
+DQ149204.1/10267-10295             GAGGGUGGUCAGCUCUGCUGGUCAUCCUU
+AJ238578.1/2651-2679               GAGGGUGGUCGGCUCUGCUGGUCAUCCUU
+AJ316244.1/10393-10421             GAGGGUGGUCAGCCCUGCUGGUCAUCCUU
+#=GC SS_cons                       <<<<<<<..<<<<...>>>>..>>>>>>>
+#=GC RF                            GAGGGUGGUCaGCuCUGCuGGUCAUCCUU
+//

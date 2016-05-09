@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01804
+#=GF ID   Lambda_thermo
+#=GF DE   Lambda phage CIII thermoregulator element
+#=GF AU   Bateman A, Moore B
+#=GF SE   Published; PMID:2532257
+#=GF SS   Published; PMID:2532257; Bateman A
+#=GF GA   60.00
+#=GF TC   75.91
+#=GF NC   53.59
+#=GF TP   Cis-reg; thermoregulator;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000035 SO:riboswitch
+#=GF RN   [1]
+#=GF RM   2532257
+#=GF RT   Alternative mRNA structures of the cIII gene of bacteriophage lambda
+#=GF RT   determine the rate of its translation initiation.
+#=GF RA   Altuvia S, Kornitzer D, Teff D, Oppenheim AB;
+#=GF RL   J Mol Biol. 1989;210:265-280.
+#=GF RN   [2]
+#=GF RM   16438677
+#=GF RT   RNA thermometers.
+#=GF RA   Narberhaus F, Waldminghaus T, Chowdhury S;
+#=GF RL   FEMS Microbiol Rev. 2006;30:3-16.
+#=GF WK   http://en.wikipedia.org/wiki/Lambda_phage
+#=GF SQ   5
+
+CP000243.1/1246604-1246546             UAAGGAGCACACCAUGCAAUAUGCCAUUGCAGGGUGGCCUGUUGCUGGCU
+CP000026.1/2520723-2520781             UAAGGAGCACGCCAUGCAAUAUAGUUUUGCCGGGUGGCCCAUUGCUGGCU
+CP001144.1/624595-624537               UAAGGAGCACGCCAUGCAAUAUCGUCUUGCCGGGUGGCCCAUUGCUGGCU
+AY736146.1/34404-34346                 UAAGGAGCACGCCAUGCAAUAUCAUUUUGCCGGGUGGCCCAUUGCUGGCU
+M13767.1/3-60                          UAAGGAGCACACCAUGCAAUAUGCCAUUGCAGGGUGGCCUGUUGCUGGCU
+#=GC SS_cons                           ...<<.<<<..<<<.<<<<<<.<<<<<<....>>>>>>.>>>>>>>>>.>
+
+CP000243.1/1246604-1246546             GCCCUUCCG
+CP000026.1/2520723-2520781             GCCCUUCUG
+CP001144.1/624595-624537               GCCCUUCUG
+AY736146.1/34404-34346                 GCCCUUCUG
+M13767.1/3-60                          GCCCUUCC.
+#=GC SS_cons                           >>>>.....
+//

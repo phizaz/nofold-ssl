@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00454
+#=GF ID   p27_CRE
+#=GF DE   p27 cis-regulatory element
+#=GF AU   Moxon SJ
+#=GF SE   PMID:12837699, INFERNAL
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   35.00
+#=GF TC   47.28
+#=GF NC   26.80
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   12837699
+#=GF RT   Cell cycle-dependent translation of p27 involves a responsive element
+#=GF RT   in its 5'-UTR that overlaps with a uORF.
+#=GF RA   Gopfert U, Kullmann M, Hengst L;
+#=GF RL   Hum Mol Genet 2003;12:1767-1779.
+#=GF CC   This family represents a structured G/C rich element located in the 5' UTR
+#=GF CC   of p27 mRNA. This element contributes to cell-cycle regulated translation
+#=GF CC   and when deleted leads to a 50% drop in regulation. The element is thought
+#=GF CC   to be able to form several different structures with similar free energy.
+#=GF CC   It has been suggested that proteins may only bind to a specific structure
+#=GF CC   thus conformational changes could regulate translation [1].
+#=GF WK   http://en.wikipedia.org/wiki/p27_cis-regulatory_element
+#=GF SQ   11
+
+AAGW01497575.1/928-986                 CCACCUUAAG.GCCGCGCUCGCCAGCCUCGGCGGGGCGGCUCCCGGCGCC
+AAYZ01005918.1/1-57                    ..ACCUUAAG.GCCGCGCUCGCCAGCCUCGGUGGGGCGGCUCCCGGCGCC
+AAKN02030905.1/9746-9804               CCACCUUAAGAGC.GCGCUCGCCAGCCUCGGCUGGGCGGCUCCCGGCGCC
+U51681.1/1648-1700                     CCACCUUAAGAGC.GCG.UCGC.AGCCU...GGGGA.GGCUCCCGGCACC
+U77915.1/677-735                       CCACCUUAAGAGC.GCGCUCGCCAGCCUGGGCGGAGCGGCUCCCGGCGCC
+AAQQ01623836.1/404-347                 CCACCUUAAGACC.GCGCUUGCCAGCCUCGGCUGGGCGGCUCCCGGCGC.
+AF480891.2/120-178                     CCACCUUAAG.GCCGCGCUCGCCAGCCUCGGCGGGGCGGCUCCCGCCGCC
+AB003688.1/2994-3052                   CCACCUUAAG.GCCGCGCUCGCCAGCCUCGGCGGGGCGGCUCCCGCCGCC
+AACZ02132199.1/10361-10419             CCACCUUAAG.GCCGCGCUCGCCAGCCUCGGCGGGGCGGCUCCCGCCGCC
+AAQR01191689.1/2933-2875               CCACCUUAAG.GCCGCGCUCGCCAGCCUCGGUGGGGCGGCUCCCGGCGCU
+AAEX02011105.1/13987-13929             CCACCUUAAG.GCCGCGCUCGCCAGCCUCGGCGGGGCGGCUCCCGGCGCC
+#=GC SS_cons                           ........<<.<<.<<....>>..>>>>..<<<<<.<<<...>>>.>.>>
+#=GC RF                                ccAccUUAaGAGCaGCGcUcGCcAGCCucGgcGGGcCGGcUcCCGgCgCC
+
+AAGW01497575.1/928-986                 GCGACCAAUG
+AAYZ01005918.1/1-57                    GCGACCAAUG
+AAKN02030905.1/9746-9804               GCGACCAAUG
+U51681.1/1648-1700                     GAGACCAAUG
+U77915.1/677-735                       GAGACCAAUG
+AAQQ01623836.1/404-347                 GCGACCAAUG
+AF480891.2/120-178                     GCAACCAAUG
+AB003688.1/2994-3052                   GCAACCAAUG
+AACZ02132199.1/10361-10419             GCAACCAAUG
+AAQR01191689.1/2933-2875               GCAACCAAUG
+AAEX02011105.1/13987-13929             GCAACCAAUG
+#=GC SS_cons                           >>........
+#=GC RF                                gcgAccAAUG
+//

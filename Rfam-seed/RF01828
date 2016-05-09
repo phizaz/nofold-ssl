@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01828
+#=GF ID   SprD
+#=GF DE   Small pathogenicity island RNA D
+#=GF AU   Moore B;
+#=GF SE   Published; PMID:20532214
+#=GF SS   Published; PMID:20532214
+#=GF GA   100.00
+#=GF TC   148.85
+#=GF NC   12.87
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   20532214
+#=GF RT   A Staphylococcus aureus small RNA is required for bacterial virulence
+#=GF RT   and regulates the expression of an immune-evasion molecule.
+#=GF RA   Chabelskaya S, Gaillot O, Felden B;
+#=GF RL   PLoS Pathog. 2010;6:e1000927.
+#=GF RN   [2]
+#=GF RM   16183745
+#=GF RT   Small RNA genes expressed from Staphylococcus aureus genomic and
+#=GF RT   pathogenicity islands with specific expression among pathogenic
+#=GF RT   strains.
+#=GF RA   Pichon C, Felden B;
+#=GF RL   Proc Natl Acad Sci U S A. 2005;102:14249-14254.
+#=GF WK   http://en.wikipedia.org/wiki/SprD
+#=GF SQ   2
+
+ACHD01000263.1/80388-80529             GGGCGUUUUCAAGGAGCGCCUUUCAUUUUUUAUGUAUUGCUCCUUUUCGG
+BA000018.3/2007178-2007037             GGGCGUUUUCAAGGAGCGCCUUUCAUUUUUUAUGUAUUGCUCCUUUUCGG
+#=GC SS_cons                           <<<<<<<<.....>>>>>>>>......<<<.<<<.<<<<<<<......>>
+#=GC RF                                gGGCGuuuUcAAGgagCGCCuUUcAUUuuuuauguauuGCuCcUUUUcGg
+
+ACHD01000263.1/80388-80529             GCUAGUUUAUUAAAUUUAUUUUUGCGCUUUCCAAAUCAAUGUAUAUGUGU
+BA000018.3/2007178-2007037             GCUAGUUUAUUAAAUUUAUUUUUGCGCUUUCCAAAUCAAUGUAUAUGUGU
+#=GC SS_cons                           >>.>>>.>>>.>>>...........<<<<<<<<<<.<<<<<<<.......
+#=GC RF                                GCUaguuuauuaaaUUUAUUUUUGcgCuuuCCaaauCaauguaUAUGUGU
+
+ACHD01000263.1/80388-80529             UAUAUUGUUUAUGGGAAGUAGGUAAGCAUUUCGGUGCUUACC
+BA000018.3/2007178-2007037             UAUAUUGUUUAUGGGAAGUAGGUAAGCAUUUCGGUGCUUACC
+#=GC SS_cons                           >>>>>>>.>>.>>>>>>>>.<<<<<<<<<....>>>>>>>>>
+#=GC RF                                uauauuGuuuAuGGgaaGuAGGuaaGCauUUcGguGCuuaCC
+//

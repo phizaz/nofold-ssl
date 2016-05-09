@@ -1,0 +1,98 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01880
+#=GF ID   Xist_exon1
+#=GF DE   X-chromosome inactivation gene exon 1
+#=GF AU   Gardner PP, Eberhardt R
+#=GF SE   Gardner PP
+#=GF SS   Predicted; RNAz; Gardner PP
+#=GF GA   33.00
+#=GF TC   38.13
+#=GF NC   26.77
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0009048 GO:dosage compensation, by inactivation of X chromosome
+#=GF RN   [1]
+#=GF RM   16778056
+#=GF RT   The Xist RNA gene evolved in eutherians by pseudogenization of a
+#=GF RT   protein-coding gene.
+#=GF RA   Duret L, Chureau C, Samain S, Weissenbach J, Avner P;
+#=GF RL   Science. 2006;312:1653-1655.
+#=GF RN   [2]
+#=GF RM   1985261
+#=GF RT   A gene from the region of the human X inactivation centre is
+#=GF RT   expressed exclusively from the inactive X chromosome.
+#=GF RA   Brown CJ, Ballabio A, Rupert JL, Lafreniere RG, Grompe M,
+#=GF RA   Tonlorenzi R, Willard HF
+#=GF RL   Nature. 1991;349:38-44.
+#=GF RN   [3]
+#=GF RM   16273071
+#=GF RT   Mapping of conserved RNA secondary structures predicts thousands
+#=GF RT   of functional noncoding RNAs in the human genome.
+#=GF RA   Washietl S, Hofacker IL, Lukasser M, Huttenhofer A, Stadler PF
+#=GF RL   Nat Biotechnol. 2005;23:1383-1390.
+#=GF CC   Xist is an RNA gene on the X chromosome of the placental mammals
+#=GF CC   that acts as major effector of the X inactivation process.  The
+#=GF CC   Xist RNA, a large (17 kb in humans) [1] transcript, is expressed
+#=GF CC   on the inactive chromosome and not on the active one. It is
+#=GF CC   processed similarly to mRNAs, through splicing and
+#=GF CC   polyadenylation, however, it remains untranslated. It has been
+#=GF CC   suggested that this RNA gene evolved at least partly from a
+#=GF CC   protein coding gene that became a pseudogene [2]. The inactive X
+#=GF CC   is coated with this transcript, which is essential for the
+#=GF CC   inactivation. X lacking Xist will not be inactivated, while
+#=GF CC   duplication of the Xist gene on another chromosome causes
+#=GF CC   inactivation of that chromosome.  This Xist exon was identified
+#=GF CC   in a screen for conserved and structured elements in the human
+#=GF CC   genome [3].
+#=GF WK   http://en.wikipedia.org/wiki/Xist
+#=GF SQ   21
+
+ABRQ01553772.1/1320-1396               ..AUC.AAAAUCCGAACCCUGCAUUAGCCACCAGGUAGGU..GAUCGAU.
+AAGU02610506.1/268-352                 AAAUC.AAAACCUGACCCCACCAUUAGCCAAGGGGGAGAC..CUUACUCU
+AAGW01715590.1/678-610                 AAAUC.AAAAUCCGACCUCAGCAUUAGCCACGGGGUAGAU..GUUCCUCC
+AAKN02029935.1/44004-43920             AAAUC.AUAAUCCAACUCUAGCAUUAGCCAUGGGUUUAGC..AUUCCUCU
+ABRO01484274.1/70-153                  AAAUC.UCAAUCCAAUCCCAGGCUUGGCCAUAGGGUACAU..GUUCCUGU
+L04961.1/2266-2197                     AAAUC.AAAAUGCAACCCCAGCAAUAGUCAUGGGGUAGAU..UUU.....
+AAHX01111727.1/42624-42555             AAAUC.AAAAUCCAACCCCAGCAAUAGUAAUGGGGUGGAU..UCU.....
+L10733.1/165-81                        AAAUC.AAAAUCCGACCCCAGCAUUAGCCAAGGGGUAGGU..GUUCCUCU
+ABGA01241177.1/901-985                 AAAUC.AAAAUCCGACCCCAGCAUUAGCCAAGGGGUAGGU..GUUCCUCU
+L10731.1/167-81                        AAAUC.AAAAUCCGACCCCAGCAUUAGCCAAGGGGUAGGUGUGCUCCUCU
+ABRT010581360.1/279-363                AAAUC.AAAGUCCAACCCCAGCAUUAGCCACGGGGUAGGU..GUUCCUCU
+ABDC01412462.1/213-297                 CAAUC.AAAAUCCGACCCCAGCAUUAGCCACGGGGUAGGU..GUUCCUCU
+AAPY01379542.1/424-506                 AAACC.AAAAUCCGACCCCAGCAUUAGCCACGGGGUAGGU..UCUCCUCU
+AAEX02004678.1/47075-46991             UAAUC.AAAAUCCGACCCCAGCAUUAGCCAUGGGGUAGGU..GUUCCUCU
+ACBE01497821.1/848-932                 AAAUC.AAAAUCCGACCCCAGCAGUAGCCACGGGGUAGGU..GUUCCUCU
+ABRN01023547.1/660-744                 AAAUC.AAAAUCCGACCCCAGCAUUAGCCAUGGGGUAGGU..GUUCCUCU
+AJ421481.1/118268-118184               AAAUC.AAAAUCCGACCCCAGUAUUAGCCACGGGGUAGGU..GUUCCUCU
+ABRP01195257.1/300-383                 AAAUC.AAAGUCCAACCCCAGCAUUAGCCACGGGGUAAGU..GUUCCUCU
+AAPE01550792.1/283-367                 AAAUC.AAAAUCGAACCCCAGCAUUAGCCACAGGGUAGGU..GUUCCUCU
+AANN01200569.1/3260-3186               AAAUA.AAAAUCC.ACCCCUGCAUUAAGCACUUGAUGAUC..G......U
+AALT01125325.1/576-659                 .AGCAAUAAAUCCGACCCCAGCAGUAGCUAAGGGGUAGGU..UGUUCUC.
+#=GC SS_cons                           ...........<<.<<<<<.<<....>>...>>>>>.>>.....<<<...
+
+ABRQ01553772.1/1320-1396               .....CCGGUAGGGAUCCUCCUUCUGCCACAUGGUGAC
+AAGU02610506.1/268-352                 UGAAGAAGGCACGGAUUCCUCUUCUGCUAAAUGUUGGU
+AAGW01715590.1/678-610                 UGAGAAAGGCAGG.AUUUCCCUU...............
+AAKN02029935.1/44004-43920             UGAGGAAAGCAGGGGUUCCUCUUUUGCCCCCCAUUGGC
+ABRO01484274.1/70-153                  AGGGGACAGUAGAGGUUCCUUUUCUGC.ACCUCUUAGC
+L04961.1/2266-2197                     GGAAGAAGGUAGG.AUUCUACCUCU.........UCAC
+AAHX01111727.1/42624-42555             AGAAGAAGGGAGG.AUUCUACCUC.........CUGGC
+L10733.1/165-81                        UGAGGAAGGCAGGAAUUCCUCUUCUGCCACCUGUUGGC
+ABGA01241177.1/901-985                 UGAGGAAGGCAGGAAUUCCUCUUCUGCCACCUGUUGGC
+L10731.1/167-81                        UGAGGAAGGCAGGAAUUCCUCUUCUGCCACCUGUUGGC
+ABRT010581360.1/279-363                UGAGGAAGACAGGAAUUCCUCUUCUGCCACCAGUUGGC
+ABDC01412462.1/213-297                 GGAGGAAGGCAGGAAUUAUUCUUCUCCCACCUGUUGGG
+AAPY01379542.1/424-506                 CGAAGAAGGCAGG.AUUCCUCUUCUGCCACCUGU.GGA
+AAEX02004678.1/47075-46991             UGAGGAAGGUAGAGACUCCUCUUCUGCCACCUGUUGGC
+ACBE01497821.1/848-932                 UGAGGAAGGCAGGGAUUCCUCUUCUGCCACCUGCUGGC
+ABRN01023547.1/660-744                 UGAGGAAGGCAGGGAUUCCUCUUCUGCCACCUGUCGGC
+AJ421481.1/118268-118184               UGAGGAAGGCAGGGAUUCCUCUUCUGCCAACAGUUGGC
+ABRP01195257.1/300-383                 UGAGGAAGGCAGGGAUUCCUCUUCUGC.ACCUGAUGGC
+AAPE01550792.1/283-367                 UGAAGAAGGGAGGGAUUCCUCUUCUGCCACCUGUUGGC
+AANN01200569.1/3260-3186               UGAAGAAAGAAAGGACUUCACUUCUGCUACCUGAU...
+AALT01125325.1/576-659                 UGAGGAAGGUAGGGAUUUCUCCGGUACUACCUAAUGGA
+#=GC SS_cons                           ...>>>.<<<<<<.........>>>>>>..........
+//

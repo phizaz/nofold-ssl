@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01686
+#=GF ID   Acido-1
+#=GF DE   Acido-1 RNA
+#=GF AU   Weinberg Z
+#=GF SE   Published; PMID:20230605;
+#=GF SS   Published; PMID:20230605;
+#=GF GA   50.00
+#=GF TC   60.93
+#=GF NC   23.21
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   20230605
+#=GF RT   Comparative genomics reveals 104 candidate structured RNAs from
+#=GF RT   bacteria, archaea and their metagenomes.
+#=GF RA   Weinberg Z, Wang JX, Bogue J, Yang J, Corbino K, Moy RH, Breaker
+#=GF RA   RR;
+#=GF RL   Genome Biol. 2010;11:R31.
+#=GF WK   http://en.wikipedia.org/wiki/Acido-1_RNA_motif
+#=GF SQ   4
+
+CP000360.1/235844-235785               GGAGCAGCGAA...GAA.......UUAGUUGCGAAACUGAUUGACU.GAC
+CP000473.1/3481695-3481760             AAUGGCCCCGAGC.UGGGUA...CUCGGGGCCUGCACUCAGAGGGU.GGC
+CP000473.1/3480719-3480784             AAUGGCCCCGAGC.UGGGUA...CUCGGGGCCUGCACUCAGAGGGU.GGC
+CP000473.1/3413964-3414030             AAAGGGUCCG..CCUGGGUAGUA..CGGACCCUGCACUCAGAGGGUUGGC
+#=GC SS_cons                           ...<<<<<<<<<...........>>>>>>>>>...............<<<
+
+CP000360.1/235844-235785               GGCGGGAGAGAUCCCGCCGUU
+CP000473.1/3481695-3481760             GGUGGGAGGGGACUCACCGCC
+CP000473.1/3480719-3480784             GGUGGGAGGGGACUCACCGCC
+CP000473.1/3413964-3414030             GGCGGGAGGGGUCUCGCCGCC
+#=GC SS_cons                           <<<<<<......>>>>>>>>>
+//

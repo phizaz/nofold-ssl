@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00796
+#=GF ID   mir-48
+#=GF DE   microRNA mir-48
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   30.00
+#=GF TC   49.53
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000235
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+CAAC02000462.1/389258-389362             AGAACCAUUCGGGAUGUUGAGGUAGGCUCAGUAGAUGCGAGGAGA.....
+Z81551.1/5922-5825                       AAA..CUCCCGGGAACUUGAGGUAGGCUCAGUAGAUGCGAAUUGA.....
+AAGD02012077.1/7529-7641                 AAAUCCAUACCGGAUGUUGAGGUAGGCUCAGUAGAUGCGAUCAGAGUUGU
+ABEG01023082.1/508-395                   AAAGACAUGAGAGAAGUUGAGGUAGGCUCAGUAGAUGCGAACGUAAAUGA
+#=GC SS_cons                             .<<<<<<<..<<<<<<.<<<<.<<<<<<.....<<<<.<<<<<<......
+#=GC RF                                  AgaagCacucGGGaacUuGaGGuaGGcccAGUAGauGcGaggagA.....
+
+CAAC02000462.1/389258-389362             ....UCCACCAUUCCUCACAUCGUCUGUCCUAACUCGCCUUCCCUUGUGC
+Z81551.1/5922-5825                       .......ACGGUAUCUCACAUCCACCAGCCUAGCUCGCAUUCCC.AGAG.
+AAGD02012077.1/7529-7641                 GCC.UCAGGCGUUCCUCACAUCUUCUUGCCUAACUCGCCUUCCUUUAUGU
+ABEG01023082.1/508-395                   GCCCACAUCGGCCUUUCACAUCCACUUGCCUUCCUCGCCUUUCCAAAUGU
+#=GC SS_cons                             ...........>>>>>>.>>>>....>>>>>>.>>>>.>>>>>>..>>>>
+#=GC RF                                  ....uccAcgauuccuCACauCgacuggCCuaaCuCgcguuCCCuaguGc
+
+CAAC02000462.1/389258-389362             UUCAAUAUUUCUUU
+Z81551.1/5922-5825                       UUUACGGUAUUGUU
+AAGD02012077.1/7529-7641                 UUAACCUUUUUUCU
+ABEG01023082.1/508-395                   UUCACUUUUCAAUU
+#=GC SS_cons                             >>>...........
+#=GC RF                                  uucAcgguAuuguu
+//

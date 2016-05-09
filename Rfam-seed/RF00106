@@ -1,0 +1,86 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00106
+#=GF ID   RNAI
+#=GF DE   RNAI
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Published; PMID:7535193
+#=GF GA   31.00
+#=GF TC   31.09
+#=GF NC   30.91
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000644 SO:antisense_RNA
+#=GF RN   [1]
+#=GF RM   7523833
+#=GF RT   PcnB is required for the rapid degradation of RNAI, the antisense RNA
+#=GF RT   that controls the copy number of ColE1-related plasmids.
+#=GF RA   He L, Soderbom F, Wagner EG, Binnie U, Binns N, Masters M;
+#=GF RL   Mol Microbiol 1993;9:1131-1142.
+#=GF RN   [2]
+#=GF RM   7688127
+#=GF RT   The Escherichia coli pcnB gene promotes adenylylation of antisense
+#=GF RT   RNAI of ColE1-type plasmids in vivo and degradation of RNAI decay
+#=GF RT   intermediates.
+#=GF RA   Xu F, Lin-Chao S, Cohen SN;
+#=GF RL   Proc Natl Acad Sci U S A 1993;90:6756-6760.
+#=GF RN   [3]
+#=GF RM   7535193
+#=GF RT   Surprises at the 3' end of prokaryotic RNA.
+#=GF RA   Cohen SN;
+#=GF RL   Cell 1995;80:829-832.
+#=GF CC   RNAI is an antisense repressor of the replication of some E. coli
+#=GF CC   plasmids, including ColE1.  Plasmid replication is usually
+#=GF CC   initiated by RNAII, which acts as a primer by binding to its
+#=GF CC   template DNA.  The complementary RNAI binds RNAII prohibiting
+#=GF CC   it from its initiation role.  The rate of degradation of RNAI is
+#=GF CC   therefore a major factor in control of plasmid replication.
+#=GF CC   This rate of degradation is aided by the pcnB (plasmid copy
+#=GF CC   number B) gene product, which polyadenylates the 3' end of RNAI
+#=GF CC   targeting it for degradation by PNPase.
+#=GF CC   Please note:  This family contains subsequences annotated as
+#=GF CC   human (Z96734), Arabidopsis (AB003142), Xenopus (X91243) and S.
+#=GF CC   pombe (L25927, L25928), which match with highly significant
+#=GF CC   scores.  These eukaryotic matches are almost certainly the result
+#=GF CC   of vector contamination.
+#=GF WK   http://en.wikipedia.org/wiki/RNAI
+#=GF SQ   10
+
+X80302.1/245-141                 AGUAUUUGGUAUCUGUGCUCUGCUGAAGCCAGAUUACCUCGGUUAGAUAA
+S42973.1/3-107                   AGUAUUUGGUAUCUGCGCUCUGCUGAAGCCAG.UUACCUUCGGAAAAAGA
+U80803.1/804-704                 CAGAUUUGGUUACUGCGUUCCUCCA.AGCCAG.UUACCGCGGUUCAAAGA
+AF156893.2/4598-4498             CGAAUUUGGUUACUGCGCUCCUCCA.AGCCAG.UUACCUCGGUUCAAAGA
+Y17846.1/1185-1085               .AGAUUUGGUGGCAGCGGUCUUGUACACCCUG.UUACCACGGUUCAGAAG
+Y17716.1/6521-6420               CGUAUUUGGUGGCAGCGGUCUUGUACACCCUG.UUACCACGGUUCAGAAG
+D21263.1/151-50                  CGAAUUUGGUGGCAGCGGUCUUGUACACCCUG.UUACCACGGUUCAUAAA
+X63534.1/2865-2765               UAGAUUUGGUUACUGCGCUCCUCCA.AGCCAG.UUACCGCGGUUCAAAGA
+U65460.1/39-143                  AGUAUUUGGUAUCUGUGCUCUGCUGAAGCCAGAUUACCUCGGUUAGAUAA
+AJ132618.1/824-723               CGAAUUUGGUGGCAGCGGUCUUGUACACCCUG.UUACCACGGUUCAGAAG
+#=GC SS_cons                     .......<<<<<<<<.<<<.......>>>>>>.>>>>>..<<<<<<<<<<
+
+X80302.1/245-141                 UCUGCCAGGAUUAGCUAACCUUCGAAAAAACCACCU...GCCAGGGUGGU
+S42973.1/3-107                   GUUGGUAGC..UCUUGAUCCGGCAAACAAACCACCGCUGGUAGCGGUGGU
+U80803.1/804-704                 GUUGGUAGC.UCUGAGAACCUUCGAAAAA.CCGCCU...UGCAGGGCGGU
+AF156893.2/4598-4498             GC.GCCAAC.UCCUCGAACCUUCGAAAAAACCGCCC...GCCAAGGCGGU
+Y17846.1/1185-1085               UUCCCCAAC.UUACUGAUCCUUCGAAAAA.CCACCU...CCCCAGGUGGU
+Y17716.1/6521-6420               UUCCCCAAC.UUACUGAACCUUCGAAAAA.CCACCU...CCCCAGGUGGU
+D21263.1/151-50                  CUUGCCGGU.UUAAUGAACCUUCGAAAAA.CCACCU...UGCCGGGUGGU
+X63534.1/2865-2765               GUUGGUAGC.UCAGAGAACCUUCGAAAAA.CCGCCU...UGCAGGGCGGU
+U65460.1/39-143                  UCUGCCAGGAUUAGCUAACCUUCGAAAAAACCACCU...GCCAGGGUGGU
+AJ132618.1/824-723               UUCCCCAAC.UUACUGAACCUUCGAAAAA.CCACCU...CCCCAGGUGGU
+#=GC SS_cons                     <<.....>>.>>>>>>>>>>..<<<<<<<.<<<<<<.......>>>>>>>
+
+X80302.1/245-141                 UUUUUCGU
+S42973.1/3-107                   UUUUUUGU
+U80803.1/804-704                 UUUUUCGU
+AF156893.2/4598-4498             UUUUUCGU
+Y17846.1/1185-1085               UUUUUCGU
+Y17716.1/6521-6420               UUUUUCGU
+D21263.1/151-50                  UUUUUCGU
+X63534.1/2865-2765               UUUUUCGU
+U65460.1/39-143                  UUUUUCGU
+AJ132618.1/824-723               UUUUUCGU
+#=GC SS_cons                     >>.>>>>.
+//

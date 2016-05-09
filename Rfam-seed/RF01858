@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01858
+#=GF ID   RsaF
+#=GF DE   RNA Staph. aureus F
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19786493
+#=GF SS   Published; PMID:19786493
+#=GF GA   100.00
+#=GF TC   127.52
+#=GF NC   38.95
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19786493
+#=GF RT   A search for small noncoding RNAs in Staphylococcus aureus reveals a
+#=GF RT   conserved sequence motif for regulation.
+#=GF RA   Geissmann T, Chevalier C, Cros MJ, Boisset S, Fechter P, Noirot C,
+#=GF RA   Schrenzel J, Francois P, Vandenesch F, Gaspin C, Romby P;
+#=GF RL   Nucleic Acids Res. 2009;37:7239-7257.
+#=GF WK   http://en.wikipedia.org/wiki/Rsa_RNA
+#=GF SQ   4
+
+CP000255.1/991580-991698                 UUGUUUAGCGUCGUGUAUUCAGACACGACGUUUUUUUAUGUUCUUUUUUA
+ACHD01000003.1/67076-66958               UUGUUUAGCGUCGUGUAUUCAGACACGACGUUUUUUUAUGUUCUUUUUUA
+CABA01000085.1/50894-51012               UUGUUUAGCGUCGUGUAUUCAGACACGACGUUUUUUUAUGUUCUUUUUUA
+ACHC01000053.1/123178-123060             UUGUUUAGCGUCGUGUAUUCAGACACGACGUUUUUUUAUGUUCUUUUUUA
+#=GC SS_cons                             ......<<<<<<<<<<......>>>>>>>>>>..<<<<<.<<<<<<<<<.
+#=GC RF                                  UuuUUaagCGuCGuGuAUUcAGaCaCGaCGuuUUuuuauGuuCuuuuuuA
+
+CP000255.1/991580-991698                 AUAAGAGGGAAGUGAAGUUGUAUAAAAAUGUAUUAAAUAUGCACUUUUUA
+ACHD01000003.1/67076-66958               AUAAGAGGGAAGUGGAGUUGUAUAAAAAUGUAUUAAAUAUGCACUUUUUA
+CABA01000085.1/50894-51012               AUAAGAGAGAAGUGAAGUUGUAUAAAAAUGUAUUAAAUAUGCACUUUUUA
+ACHC01000053.1/123178-123060             AUAAGAGGGAAGUGAAGUUGUAUAAAAAUGUAUUAAAUAUGCACUUUUUA
+#=GC SS_cons                             ..>>>>>>>>>>>>>>..<<<<<<<.<<<<<<<.....>>>>>>>.>>.>
+#=GC RF                                  AUaagagaGaagugaaGUuGuauaaAaauGuauUAAAUaugCauuuuuUa
+
+CP000255.1/991580-991698                 UACAUUAACGAUUCAUAUA
+ACHD01000003.1/67076-66958               UACAUUAACGAUUCAUAUA
+CABA01000085.1/50894-51012               UACAUUAACGAUUAAUAUA
+ACHC01000053.1/123178-123060             UACAUUAACGAUUAAUAUA
+#=GC SS_cons                             >>>>...............
+#=GC RF                                  uaCaUUAAcGAUUAAUaUA
+//

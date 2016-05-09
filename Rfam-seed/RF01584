@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01584
+#=GF ID   snoR03
+#=GF DE   small nucleolar RNA snoR03
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold;
+#=GF GA   36.00
+#=GF TC   36.04
+#=GF NC   22.93
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   2
+
+ABGY01000889.1/1819-1978             CUUCAUAUAUAUUCCAUUUGUGUUCCAUGUGUU...UAUAUAAAUGAACU
+CAAJ01002653.1/9780-9629             UUUAAUAUAG.UUCCAUUUGUGUUUCAUAAGCUAAGUAUACAAAAUAGC.
+#=GC SS_cons                         ............<<<<<<<.<<.<<<<<<<<<<<...........>>>>.
+#=GC RF                              CUUCAUAUAUAUUCCAUUUGUGUUCCAUGUGUU...UAUAUAAAUGAACU
+
+ABGY01000889.1/1819-1978             ACGUGGGUCAAAAAAUGGAUAAAGAAAAUUAAGGAGAUAUAUUACUUUAU
+CAAJ01002653.1/9780-9629             UCGUGAGUCAAAAAAUGGAUAAAAAAAUUGC.AGAAAUAAA..A.AAUAU
+#=GC SS_cons                         >>>>>>>.>>..>>>>>>>.............<<<<<<<<<<<<......
+#=GC RF                              ACGUGGGUCAAAAAAUGGAUAAAGAAAAUUAAGGAGAUAUAUUACUUUAU
+
+ABGY01000889.1/1819-1978             UUCAUUUUUUGUUGUUUUAUUAAUACAUAAAAAAAAAUAGUAUAUUUCUU
+CAAJ01002653.1/9780-9629             AUCAAUUUUU.AUGAUUUAUUUAUGCAUAAA....AAUAAUUUAGUUCUU
+#=GC SS_cons                         ..<<........>>.<<<<<......>>>>>......>>>>>>>>>>>>.
+#=GC RF                              UUCAUUUUUUGUUGUUUUAUUAAUACAUAAAAAAAAAUAGUAUAUUUCUU
+
+ABGY01000889.1/1819-1978             CAACAACAUAUAA
+CAAJ01002653.1/9780-9629             CAACAACACAUUG
+#=GC SS_cons                         .............
+#=GC RF                              CAACAACAUAUAA
+//

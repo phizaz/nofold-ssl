@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01944
+#=GF ID   mir-2518
+#=GF DE   microRNA mir-2518
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   61.00
+#=GF TC   61.63
+#=GF NC   25.88
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000858
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   20037610
+#=GF RT   Evolutionary flux of canonical microRNAs and mirtrons in Drosophila
+#=GF RA   Berezikov E, Liu N, Flynt AS, Hodges E, Rooks M, Hannon GJ, Lai
+#=GF RA   EC
+#=GF RL   Nat Genet. 2010;42:6-9.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+AADE01002220.1/2022-2113             ........GGGCAGCCACACAC..ACACACGACCGUUUCGACCCCGUUGC
+AADE01004179.1/712-816               CGGCCAACGGGCAGCCACACACACACACACGACCGGAUCGAACCCGUUGC
+AAFS01004834.1/3830-3741             ........GGGCAGCCACAC....ACACACGACCGGAUCGAACCCGUUGU
+AADE01002220.1/6104-6208             CGGCCAACGGGCAGCCACACACACACACACGACCGGAUCGAACCCGUUGC
+#=GC SS_cons                         ........<<<<.............<....>..<<<<<<<<.<<<<<<<<
+
+AADE01002220.1/2022-2113             GAAUCGAACUUGGUUUGAGUUCGAGCAGCGGGUCGAUCCGAGCCAUAGCC
+AADE01004179.1/712-816               GAAUCGAACUUGGUUUGAGUUCGAGCAGCGGGUCGAUCCGAGCCAUAGCC
+AAFS01004834.1/3830-3741             GAAUCGAACUUGGUUCGAGUUCGAGCAGCGGGUCGAUCCGAGCCAUAGCC
+AADE01002220.1/6104-6208             GAAUCGAACUUGGUUUGAGUUCGAGCAGCGGGUCGAUCCGAGCCAUAGCC
+#=GC SS_cons                         ...<<<<<<<<.....>>>>>>>>>>>>>>>>>>>>>>>>.......>>>
+
+AADE01002220.1/2022-2113             CA...
+AADE01004179.1/712-816               CAGCC
+AAFS01004834.1/3830-3741             CA...
+AADE01002220.1/6104-6208             CAGCC
+#=GC SS_cons                         >....
+//

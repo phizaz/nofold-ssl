@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01823
+#=GF ID   rspL
+#=GF DE   rpsL sRNA
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19531245
+#=GF SS   Published; PMID:19531245
+#=GF GA   35.00
+#=GF TC   35.64
+#=GF NC   33.37
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19531245
+#=GF RT   Identification of candidate structured RNAs in the marine organism
+#=GF RT   'Candidatus Pelagibacter ubique'.
+#=GF RA   Meyer MM, Ames TD, Smith DP, Weinberg Z, Schwalbach MS, Giovannoni
+#=GF RA   SJ, Breaker RR;
+#=GF RL   BMC Genomics. 2009;10:268.
+#=GF WK   http://en.wikipedia.org/wiki/Pelagibacter_ubique
+#=GF SQ   6
+
+CP000084.1/1074301-1074209               UUGACGCUG.UUUUUGGUUGGAAUGUAGUA.CCU.ACUUUACGGAACUAA
+ABVS01000001.1/844565-844656             UUGGCGAUA.UUUUUGGUUGGAAUGUAGUA.CCUGCUAAUA..GUACUAA
+ABNY01009418.1/8-97                      UUGGCGAUGUUUUUGGUUUGGAAUGUAGUG.UUA.GCUUUA.GACACUAA
+AACY022375643.1/586-670                  UUGGCGAUAAUUUUUGGUUGGAAUGUAGUG.C.....AUUA..GCACUAA
+AACY020349958.1/529-446                  UUGGCGAUAAUUUUUGGUUGGAAUGUAGUG.C.....AUUA..GCACUAA
+AACY020879984.1/571-654                  UUGGCGAUA.UUUUUGGUUGGAAUGUAGUGAU.....AUU...ACACUAA
+#=GC SS_cons                             ...........<<<<<<..<<<<<<<<<<<.<...........>>>>>>.
+#=GC RF                                  UUGGCGAUAAUuuuuGgUUGgaauguaGuG.c.....AUUA..gCaCuaA
+
+CP000084.1/1074301-1074209               ACGCUGCCACAAAAUAACCUGUCAGUUAUU.UUCACUC.AAAAAUAUA
+ABVS01000001.1/844565-844656             ACGCUGCCACAAAAUAACCUGUCAGUUAUUUU.CA.CCUAAAAAUAAA
+ABNY01009418.1/8-97                      ACGCUGCCAUAA.AUAACCUGUCAGUUAUU.U.CU.CU.CAAAAACAA
+AACY022375643.1/586-670                  ACGCUGCCACAA.AUAACAUGUCAGUUAUU.U.CA.UC.AAAAAUAAA
+AACY020349958.1/529-446                  ACGCUGCCACAA.AUAACAUGUCAGUUAUU.U.CA.UC.AAAAAUAA.
+AACY020879984.1/571-654                  ACGCUGCCACAA.AUAACCUGUCAGUUAUU.U.CA.UC.AAAAAUAUA
+#=GC SS_cons                             ..<<<<................>>>>>>>>.>.>..>>.>>>>.....
+#=GC RF                                  ACgCuGCCACAA.AUAACaUGUCaGuuauu.u.CA.uC.aaaaAUAaA
+//

@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01991
+#=GF ID   SECIS_5
+#=GF DE   Selenocysteine insertion sequence 5
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; WAR; Eberhardt R
+#=GF SS   Predicted; WAR;
+#=GF GA   50.00
+#=GF TC   56.83
+#=GF NC   17.19
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:1001274 SO:SECIS_element
+#=GF DR   GO:0001514 GO:selenocysteine incorporation
+#=GF RN   [1]
+#=GF RM   15659354
+#=GF RT   A selenocysteine tRNA and SECIS element in Plasmodium falciparum.
+#=GF RA   Mourier T, Pain A, Barrell B, Griffiths-Jones S;
+#=GF RL   RNA. 2005;11:119-122.
+#=GF WK   http://en.wikipedia.org/wiki/SECIS_element
+#=GF SQ   3
+
+AL844507.2/710533-710464                   AGUGAACGAAUGAAGAAUUGUUCCUAAAUCCUGAAUAAAUAUAGGAAGGA
+AM910996.2/1038758-1038823                 AGUGAACGAAUGAAGAAUUAUUCCGAAAUCCUGAGCAGA....GGAAGGA
+AAKM01000001.1/1082307-1082372             ACUGAACGAAUGAAGAAUUAUUCCAAAAUCCCGAGCUGA....GGAAGGA
+#=GC SS_cons                               .<<<<<<<.....<<<.<<<<<<<....<<<............>>>.>>>
+#=GC RF                                    ASUGAACGAAUGAAGAAUURUUCCKAAAUCCYGAGYWGAuauaGGAAGGA
+
+AL844507.2/710533-710464                   ACAAAUUGGACAUGUUCAUU
+AM910996.2/1038758-1038823                 AUAGCUCUGACAUGUCCACA
+AAKM01000001.1/1082307-1082372             AUAGCUCUGACAUGUUCACA
+#=GC SS_cons                               >>>>.>>>....>>>>>>>.
+#=GC RF                                    AYAGCUYKGACAUGUYCAYW
+//

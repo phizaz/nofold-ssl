@@ -1,0 +1,64 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00348
+#=GF ID   snoR9_plant
+#=GF DE   Small nucleolar RNA snoR9
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD; Moxon SJ, Daub J
+#=GF GA   25.00
+#=GF TC   26.52
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   11469857
+#=GF RT   Identification of 66 box C/D snoRNAs in Arabidopsis thaliana:
+#=GF RT   extensive gene duplications generated multiple isoforms predicting
+#=GF RT   new ribosomal RNA 2'-O-methylation sites.
+#=GF RA   Barneche F, Gaspin C, Guyot R, Echeverria M;
+#=GF RL   J Mol Biol 2001;311:57-73.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   snoR9 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1,2]. This family is not related to Rfam:RF00065.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snoR9
+#=GF SQ   7
+
+AF318014.1/1-129                    AUGAAUGAUGAAAACGAUGAUUAGAUAGAAGUUUCGGCGAUGUUGUUACA
+AC007288.13/16248-16120             AUGUAUGAGAAGAUGAAUGAAGAAAAGAAAGUUCCGGUAAUGUUGUAACG
+AF318013.1/1-129                    AUGAAUGAUGAAAACGAUGAUUAGAUAGAAGUUUCGGCGAUGUUGUUACA
+AF318015.1/2-130                    AUGAAUGAUGAAAACGAUGAUUAGAUAGAAGUUUCGGCGAUGUUGUUACA
+AB028614.1/46886-46758              AUGAACGAAGAAAAAGAUGAUUAGAUAGAAGUUUCGGUGAUGUUCCAACG
+AB016878.1/364-492                  AUGUAUGAGAAGAUGAAUGAAGAAAAGAAAGUUCCGGUGAUGUUGUAACG
+AL161507.2/7333-7461                AUGUAUGAGAAGAUGAAUGAAGACAAGAAAGUUCCGGUGAUGUUGUAACG
+#=GC SS_cons                        <<<...............................................
+
+AF318014.1/1-129                    CUCAGGCAUAAAACUCAGUCAGAGAUGACGAGUUUAAAAAGCUAGGGACG
+AC007288.13/16248-16120             UUCAGGCGGUGAACACAGUCUGGGAAAACGAUUUAAAGAAGCAAGGGACG
+AF318013.1/1-129                    CUCAGGCAUAAAACUCAGUUAGAGAUGACGAGUUUAAAAAGCAAGGGACA
+AF318015.1/2-130                    CUCAGGCAUAAAACUCAGUUAGAGAUGACGAGUUUAAAAAGCUAGGGACG
+AB028614.1/46886-46758              CUCAGGCGUUAAACACAGACCGGAAAGACGAGAUAAAGAAGCAAGGGACG
+AB016878.1/364-492                  UUCAGGCGGUGAACAUAGUCUGGGAAAACGAGUUAAAGAAGCAAGGGACG
+AL161507.2/7333-7461                UUCAGGCGGUGAACACAGUCUGGGAAAACGAGUUAAAGAAGCAAGGGACG
+#=GC SS_cons                        ..................................................
+
+AF318014.1/1-129                    UUUCGUAUUUCCAUUGAUGAUGCUGACAU
+AC007288.13/16248-16120             UUUCGUAUUUCCGUCGAGGAUGCUGACAU
+AF318013.1/1-129                    UUUCGUAUUUCCAUUGAUGAUGCUGACAU
+AF318015.1/2-130                    UUUCGUAUUUCCAUUGAUGAUGCUGACAU
+AB028614.1/46886-46758              UUUCGUAUUUCCAUUGAUGAUGCUGACAU
+AB016878.1/364-492                  UUUCGUAUUUCCGUCGAGGAUGCUGACAU
+AL161507.2/7333-7461                UUUCGUAUUUCCGUCGAGGAUGCUGACAU
+#=GC SS_cons                        ..........................>>>
+//

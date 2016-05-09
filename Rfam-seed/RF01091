@@ -1,0 +1,35 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01091
+#=GF ID   PK-SPCSV
+#=GF DE   3'-terminal pseudoknot in SPCSV
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   20.00
+#=GF TC   92.90
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00265
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   15218192
+#=GF RT   Analysis of the RNA of Potato yellow vein virus: evidence for a
+#=GF RT   tripartite genome and conserved 3'-terminal structures among members
+#=GF RT   of the genus Crinivirus.
+#=GF RA   Livieratos IC, Eliasco E, Muller G, Olsthoorn RC, Salazar LF, Pleij
+#=GF RA   CW, Coutts RH;
+#=GF RL   J Gen Virol. 2004;85:2065-2075.
+#=GF WK   http://en.wikipedia.org/wiki/Sweet_potato_chlorotic_leafspot_virus
+#=GF SQ   2
+
+AJ428554.1/9347-9407             CGGUUUUCCUAAAUCGUCGUGAGACGGACCUUGGAAAACCUAGUAUUUAA
+AJ428555.1/8163-8223             CGGUUUUCCUAAAUCGUCGUGAGACGGACCUUGGAAAACCUAGUAUUUAA
+#=GC SS_cons                     .<<<<<<<<.....<<<<....>>>>AAAAA.>>>>>>>>..........
+
+AJ428554.1/9347-9407             AUAACUAGGUC
+AJ428555.1/8163-8223             AUAACUAGGUC
+#=GC SS_cons                     ......aaaaa
+//

@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01381
+#=GF ID   HIV-1_SL3
+#=GF DE   HIV-1 stem-loop 3 Psi packaging signal
+#=GF AU   Chen A, Brown C, Daub J
+#=GF SE   Chen A
+#=GF SS   Published; PMID:18713870
+#=GF GA   23.00
+#=GF TC   23.66
+#=GF NC   21.99
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   18713870
+#=GF RT   MS3D structural elucidation of the HIV-1 packaging signal.
+#=GF RA   Yu ET, Hawkins A, Eaton J, Fabris D;
+#=GF RL   Proc Natl Acad Sci U S A. 2008;105:12248-12253.
+#=GF WK   http://en.wikipedia.org/wiki/Human_immunodeficiency_virus_type_1_stem-loop_3_Psi_packaging_signal
+#=GF SQ   21
+
+AY676590.1/82-104                UGACUAGCGG.AGGCUAGGGGGGG
+M38429.1/763-785                 UGACUAGCGG.AGGCUAGAAGGAG
+AF538302.1/786-808               UGACUAGCGG.AUGCUAGAAGAAA
+DQ054367.2/722-744               UGACUAGCAG.AGGCUAGAAGGGG
+EF178342.1/85-107                UGACUAGCGG.AGACUAGAAGAAA
+M22639.1/763-785                 UGACUAGCGG.AGGCUAGAAGGAG
+K03454.1/309-331                 UGACUAGCGG.AGGCUAGAAGGAG
+AY456324.1/79-101                UGACUAGCGG.AGGCUAGAAGGGA
+AF465242.1/836-858               UGACUAGCGG.AGGCUAGAAGGAG
+AF197338.1/722-744               UGACUAGCAG.AGGCUAGAAGGAA
+M62320.1/230-252                 UGACUAGCGG.AGGCUAGAAGGAG
+DQ373064.1/307-330               UGACUAGCGGUAGGCUAGAAGGAG
+S69386.1/310-332                 UGACUAGCGG.AGGCUAGAAGGAG
+AJ239083.1/9282-9304             UGACUAGCGG.AAGCUAGAAAGGA
+X04415.1/323-345                 UGACUAGCGG.AGGCUAGAAGGAG
+AY451087.1/57-79                 UGACUAGCGG.AGGCUAGGAGAAG
+AY857150.2/10-32                 GACUUAGCGG.AGGCUAGAAGGAG
+AF042100.1/762-784               UGACUAGCGG.AGGCUAGAGGAGG
+K03455.1/763-785                 UGACUAGCGG.AGGCUAGAAGGAG
+EF178429.1/87-109                UGACUAGCGG.AGGCUAUAAAGAG
+AY451200.1/56-78                 UGACUAGCGG.AGGUUAGAAGAAG
+#=GC SS_cons                     ...<<<<<.....>>>>>......
+#=GC RF                          uGACuaGCgG.AgGCuaGAAggag
+//

@@ -1,0 +1,72 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00337
+#=GF ID   snoZ112
+#=GF DE   Small nucleolar RNA Z112
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD
+#=GF GA   21.00
+#=GF TC   33.23
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12136108
+#=GF RT   A novel gene organization: intronic snoRNA gene clusters from Oryza
+#=GF RT   sativa.
+#=GF RA   Liang D, Zhou H, Zhang P, Chen YQ, Chen X, Chen CL, Qu LH;
+#=GF RL   Nucleic Acids Res 2002;30:3262-3272.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   Z112 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z112
+#=GF SQ   6
+
+AAAA02011059.1/20354-20171             GUCCCGGUGAGGAAUCUAAGACC.....AUAGGAAGUGCCGUAUGACACU
+AY013245.2/64928-65111                 GUCCCGGUGAGGAAUCUAAGACC.....AUAGGAAGUGCCGUAUGACACU
+AJ489963.1/1-178                       GUCCCGGUGAGGAAUCUAAGACC.....AUAGGAAGUGCCG......ACU
+AJ320263.1/3-186                       GUCCCAGUGAGGAUUCUAUGACC.....AUAGGAAGUGCCGUAUGACACU
+AJ489964.1/1-182                       GUCCCGGUGAGGAAUCUAAGACC.....AUAGGAAGUGCCGUAUGACACU
+Y11048.1/873-1061                      GUCCCAGUGAAGAUCCCAAGACCUACCGAUAGGAAGUGCCGUUUGACACU
+#=GC SS_cons                           <<<<<.............................................
+#=GC RF                                guCCCgGUGAGGAaUCUAaGACC.....AUAGGAAGUGCCGuAuGAcACU
+
+AAAA02011059.1/20354-20171             UUAAACAGCAGCUGCUUUUCUCCUUUGCAAGUG.UCCAUCCUUCGACCAU
+AY013245.2/64928-65111                 UUAAACAGCAGCUGCUUUUCUCCUUUGCAAGUG.UCCAUCCUUCGACCAU
+AJ489963.1/1-178                       UUAAACAGCAGCUGCUGGUCUCCUUUGCAAGUG.UCCAUCCUUCGACCAU
+AJ320263.1/3-186                       UUAAACAGCAGCUGCUUUUCUCAUUUGCAAGUG.UCCAUCCUUCGACCAU
+AJ489964.1/1-182                       UUAAACAGCAGCUGCUUUUCUCCUUUGCAAGUG.UCCAUCCUUCGACCAU
+Y11048.1/873-1061                      GCAAACAGCAGCUGCCUCUCUCAGCUGCAGGUGUUCCAUCCUUUGACCAU
+#=GC SS_cons                           ........................<<<<<<<<<.<<<<<<<...<<<<<.
+#=GC RF                                UUAAACAGCAGCUGCUuuUCUCauuuGCaaguG.uCCauCCUUCGaCCaU
+
+AAAA02011059.1/20354-20171             AACCUUUGUGGUUUGGUCUGGGAUGGAGUACCCAUUUGCAAUUGGUUUAA
+AY013245.2/64928-65111                 AACCUUUGUGGUUUGGUCUUGGAUGGAGUACCCAUUUGCAAUUGGUUUAA
+AJ489963.1/1-178                       AACCUUUGUGGUUUGGUCUUGGAUGGAGUACCCAUUUGCAAUUGGUUUAA
+AJ320263.1/3-186                       AACCUUUGUGGUUUGGUCUGGGAUGGAGUACCCAUUUGCAAUUGGUU.AA
+AJ489964.1/1-182                       AACCUUUGUGGUUUGGUCUUGGAUGGAGUACCCAUUUGCAAUUGGUUUAA
+Y11048.1/873-1061                      AACCUUUGUGGUUUGGUC.AGGCUGGAGCUCCCAUCUGCAGCUGUUU.GU
+#=GC SS_cons                           <<<<.....>>>>>>>>>..>>>>>>>.....>>>>>>>>>.........
+#=GC RF                                aaCCUUUGUGGuuuGGuCUuGGauGGaGUACCCauuuGCaauUGGUUuAA
+
+AAAA02011059.1/20354-20171             UUCGACUGU.GUGUGUGAUUUUAAACGGGUCUCU.GAGGGAC
+AY013245.2/64928-65111                 UUCGGGUGU.GUGUGUGAUUUUAAACGGGUCUCU.GAGGGAU
+AJ489963.1/1-178                       UUCGGGUGU.GUGUGUGAUUUUAAACGGGUCUCU.GAGGGAC
+AJ320263.1/3-186                       UUCAGCUGU.GUGUGUGAUUUUAAACGGGUCUCUUGAGGGAU
+AJ489964.1/1-182                       UUCGGGUGU.GUGUG..AUUUUAAACGGGUCUCU.GAGGGAU
+Y11048.1/873-1061                      UUCAGCUGUGGUGUGUGAUUUUAAUCGGGUCUCU.GAGGGAC
+#=GC SS_cons                           .....................................>>>>>
+#=GC RF                                UUCgGgUGU.GUGUGuGAUUUUAAACGGGUCUCU.GAGGGac
+//

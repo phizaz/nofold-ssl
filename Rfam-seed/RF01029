@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01029
+#=GF ID   mir-649
+#=GF DE   microRNA mir-649
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   60.00
+#=GF TC   60.01
+#=GF NC   59.97
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000547
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   7
+
+AANU01210828.1/12529-12433             GCCCUAGCCAAAUACUGUAUUUUUUA.UCAACAUUUGGUUGAAAAACAUC
+AAGL01001349.1/310-422                 GCAUCCUUUGAAUACUGUAUUUUUUACUCUGCAUUUGGUUAAAAUAAAUC
+AADB02020429.1/80050-80146             GGCCUAGCCAAAUACUGUAUUUUUGA.UCGACAUUUGGUUGAAAAAUAUC
+AADA01118555.1/3013-2902               GCAUCUCCCAGAUACUGUAUUUUUUA.UCUGCUUUUGGUUGAAAUAAAUA
+AC188307.1/109548-109440               UCCC...ACAAAUACUGUACUUUUGA.UCUGCAUUUGGUUAAAAAAUAUC
+ABDC01582119.1/894-798                 ACAUCCUGUGAAUACUGUAUUUUUGA.UUUGCAUUUGAUUGAAAAAAUUG
+AAQR01315366.1/1543-1449               GCACCUCAAGAAUACUGUAUUUCUGA.UCUGUGUUUGGUUGAAAAAAGCU
+#=GC SS_cons                           ....<<<<.<<<<<<.<<<<<<<<<<..<<<<<<..<<<<....<<<<<.
+#=GC RF                                gcaucacaagaauaCUGuacuuuuGa.UCugCauUUGGuugAAAaauaca
+
+AANU01210828.1/12529-12433             UGUGUAUUAGUA...............AACCUGUGUUGU...........
+AAGL01001349.1/310-422                 CACAUAUAAGUG...............UACCCAGACAGUUCAGACCUGUG
+AADB02020429.1/80050-80146             UAUGUAUUAGUA...............AACCUGUGUUGU...........
+AADA01118555.1/3013-2902               UGCAUAUAAGUG...............AACCCAUGCAGUUCAAGCCCAUG
+AC188307.1/109548-109440               UGUGUAUAAGUGGACCCUCACAGUUCAAACCCAUGUUGU...........
+ABDC01582119.1/894-798                 UGUAUGUAAGUG...............GACCCAUGUUGU...........
+AAQR01315366.1/1543-1449               CACAUAUAAGUG...............AACCCAUGCAGU...........
+#=GC SS_cons                           ...>>>>>...................>>>>.>>>>>>............
+#=GC RF                                uguguauuAGUg...............aaCCcauGcaGU...........
+
+AANU01210828.1/12529-12433             ....UCAAGAGUCCGCUGUGCUUUGCUG
+AAGL01001349.1/310-422                 UUUUUCAAGGGUCAGCUGUAUACCUAGA
+AADB02020429.1/80050-80146             ....UCAAGAGUCCACUGUGUUUUGCUG
+AADA01118555.1/3013-2902               UUGUUCAAGUGUCAACUGUAUCUAGUAG
+AC188307.1/109548-109440               ....UCAAGGGCCAACUGUAUUUCUACA
+ABDC01582119.1/894-798                 ....UCAAGGGUCAACUGUAUACAUAUG
+AAQR01315366.1/1543-1449               ....UCA..AACACACGUUGUUUCAGGG
+#=GC SS_cons                           ....>>>>>>>>..>>.>>>>>>.>>>>
+#=GC RF                                ....uCaagagucaaCuGuauucaugug
+//

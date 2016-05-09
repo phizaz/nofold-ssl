@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00920
+#=GF ID   MIR444
+#=GF DE   microRNA MIR444
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   22.00
+#=GF TC   23.78
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000402
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   4
+
+AK066992.1/189-316             UGCAAGUGGAGGCGGCAAGCUAGAGACAGCAACUGCAUAUCUUGCAAGAA
+CU406550.1/236-400             UGCAUAUGGUGGCACCAAGCAUGAGGUUACAACUGCAUUACUUGCAAGGG
+AK063114.1/148-276             UGCAAUUGGGGGCAGCAAGCUAGAGGUGGCAACUGCAUAAUUUGCAAGAA
+AK249841.1/242-414             CGCAUGUGGCGGCACCAAGCAUGAGGCAACAACUGCAGUACUUGUGGGGA
+#=GC SS_cons                   .<<<<..<<<<<<<.<<<<<..<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+#=GC RF                        uGcaaauGGaGGCaacaaGCaaGaGgcagCaaCuGCacaacuuGCaaGaa
+
+AK066992.1/189-316             AAUC....................GGU.......................
+CU406550.1/236-400             AAUCACAAGUCACAAGAAACACAUGUUAUUACAAUGGAUAAUCAA.....
+AK063114.1/148-276             A.UUGU..................UGG.......................
+AK249841.1/242-414             AGGCACAAG...............UAGGACACCAACAUUACCUGCAAGCA
+#=GC SS_cons                   <<<<..............................................
+#=GC RF                        aaccauAAa...............agu.......................
+
+AK066992.1/189-316             .................UUUAUGGCCAUACCGAUGAUUUUCUUGCAAGCU
+CU406550.1/236-400             .................UGGGUCAUCAUACU.AUGACUUUCUUGCAAGUU
+AK063114.1/148-276             .................CUGAAGAUCAUACCGAUGAUAUUCUUGCAAGUU
+AK249841.1/242-414             AGACGCAAAAUUAAUAGAACAUCACCAUACUUGUGGCUUUCUUGCAAGUC
+#=GC SS_cons                   ..................................>>>>>>>>>>>>>>>>
+#=GC RF                        .................augAaaAucAUAcuaAUgguuuuCuuGCaaguu
+
+AK066992.1/189-316             GUGCAGUUGUUGUCUCAAGCUUGCUGCCUCCCUUUGCC
+CU406550.1/236-400             GUGCAGUUGUUGCCUCAAGCUUGCUGCCUCCGUCUGUC
+AK063114.1/148-276             AUGCAGUUGCUGCCUCAAGCUUGCUGCCUCCUGUUGCC
+AK249841.1/242-414             GUGCAGUUGCUGCCUCAAGCUUGCUGCCUCCCUUUGCC
+#=GC SS_cons                   >>>>>>>>>>>>>>>>..>>>>>.>>>>>>>..>>>>.
+#=GC RF                        guGCaGuuGcugcCuCAAGCuugcuGCCuCCauuugCc
+//

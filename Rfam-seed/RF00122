@@ -1,0 +1,60 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00122
+#=GF ID   GadY
+#=GF DE   GadY
+#=GF PI   IS183
+#=GF AU   Moxon SJ
+#=GF SE   Hershberg R, INFERNAL
+#=GF SS   Predicted; ILM
+#=GF GA   45.00
+#=GF TC   74.56
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   12202758
+#=GF RT   Transcriptome analysis of Escherichia coli using high-density
+#=GF RT   oligonucleotide probe arrays.
+#=GF RA   Tjaden B, Saxena RM, Stolyar S, Haynor DR, Kolker E, Rosenow C;
+#=GF RL   Nucleic Acids Res 2002;30:3732-3738.
+#=GF RN   [2]
+#=GF RM   15466020
+#=GF RT   GadY, a small-RNA regulator of acid response genes in Escherichia
+#=GF RT   coli.
+#=GF RA   Opdyke JA, Kang JG, Storz G;
+#=GF RL   J Bacteriol 2004;186:6698-6705.
+#=GF CC   This family represents a GadY RNA (previous named IS183 in [1]). GadY can
+#=GF CC   form base pairs with the 3' UTR of its target mRNA gadX, this pairing is
+#=GF CC   thought to confer increased stability to the transcript, allowing
+#=GF CC   accumulation of gadX (a transcriptional regulator of the acid response) and
+#=GF CC   therefore increased expression of downstream acid resistance genes [2].
+#=GF WK   http://en.wikipedia.org/wiki/GadY
+#=GF SQ   5
+
+CP000468.1/3964436-3964548                 CUUACUGAGAGCACAAAGUUUCCCGUGCCAACAGGGAGUGUUAUAACGGU
+AF311305.1/31-144                          CUUACUGAGAGCACAAAGUUUCCCGUGCCAACAGGGAGUGUUAUAACGGU
+AAKB02000001.1/2320614-2320501             CUUACUGAGAGCACAAAGUUUCCCGUGCCAACAGGGAGUGUUAUAACGGU
+U00039.1/79120-79233                       CUUACUGAGAGCACAAAGUUUCCCGUGCCAACAGGGAGUGUUAUAACGGU
+CP000036.1/3510427-3510540                 CUUACUGAGAGCACAAAGUUUCCCGUGCCAACAGGGAGUGUUAUAGCGGU
+#=GC SS_cons                               ...<<<<..<<<<<......<<<<<<....>>.>>>>>>>>>....>>>>
+#=GC RF                                    cUUaCuGAGagCaCAAAGUUuCCCGuGccAaCAGGGaGuGuuAUAACgGu
+
+CP000468.1/3964436-3964548                 UUAUUAGUCUGGAGACGGCAGACUAUCCUCUUCCCGGUCCCCUAUGCCGG
+AF311305.1/31-144                          UUAUUAGUCUGGAGACGGCAGACUAUCCUCUUCCCGGUCCCCUAUGCCGG
+AAKB02000001.1/2320614-2320501             UUAUUAGUCUGGAGACGGCAGACUAUCCUCUUCCCGGUCCCCUAUGCCGG
+U00039.1/79120-79233                       UUAUUAGUCUGGAGACGGCAGACUAUCCUCUUCCCGGUCCCCUAUGCCGG
+CP000036.1/3510427-3510540                 UUAUUAGUCUGGAGACGGCAGACUAUCCUCUUCCCGGUCCCCUAUGCCAG
+#=GC SS_cons                               ....<<<<<<<.......>>>>>>>.......<<<<<<.......>>>>>
+#=GC RF                                    UUAUuaGuCuGGAGAcGGCaGaCuaUccUcUUCCCGGuccccUAUgCCGG
+
+CP000468.1/3964436-3964548                 G.UUUUUUUAUGUC
+AF311305.1/31-144                          GUUUUUUUUAUGUC
+AAKB02000001.1/2320614-2320501             UUUUUUUUUAUGUC
+U00039.1/79120-79233                       GUUUUUUUUAUGUC
+CP000036.1/3510427-3510540                 GUUUUUUUUAUGUC
+#=GC SS_cons                               >.............
+#=GC RF                                    GUUUUUUUUAUGUc
+//

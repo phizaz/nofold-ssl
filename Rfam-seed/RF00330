@@ -1,0 +1,67 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00330
+#=GF ID   snoZ43
+#=GF DE   Small nucleolar RNA Z43
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   36.00
+#=GF TC   36.59
+#=GF NC   32.75
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300061
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   Z43 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z43
+#=GF SQ   7
+
+AC108499.3/94134-94034                 GGACGGUGAAGAUCGUAUCUAUUGGUCUCGUUCGUCGU..AACUGG...C
+AM447919.2/1765-1671                   GGACUGUGACGAGUUGUGUGAAAGGUCUCGUUCGUCGU...AAUGG...C
+AC122722.7/22593-22688                 G.ACACUGAUGAAUACUGUGACAGGUCUCGUUCGUCGU...AAUGG...U
+AC122722.7/4040-4136                   GGACAUUGAUGAAUACUGUGAUAGGUCUCGUUCGUCGU...AAUGG...U
+AASG02001268.1/27383-27482             GGACUGUGACGAUUGAUAUCAUUGGUCUCGUUCGGCAU...AAUGG...C
+AJ240080.1/1-102                       GGACAGUGACGAUUGAUAUU.AAGGUCUCGUUCGUCGUAAAAACGGCCGU
+AJ429604.1/1-103                       GGACAGUGACGAUUGAUAUUUAAGGUCUCGUUCGUCGUAAAAACGGCCGU
+#=GC SS_cons                           <<<<..............................................
+#=GC RF                                GGACAgUGAuGAaUaaUaUgAaAGGUCUCGUUCGUCGUAAAAAuGGccgU
+
+AC108499.3/94134-94034                 AAAUUGUUUUUGCCUUGCCGACCAUCCUGAUAUAUCACCACCCAUAUUCC
+AM447919.2/1765-1671                   AAAUU.....UGCCUUGCCGACCAUCCUGAUAUAUCACCACCCAUAUUCC
+AC122722.7/22593-22688                 AAAUU...UUUACCUUGCCGACCAUUCUGUUAUAUCACCACCCAUAUUCU
+AC122722.7/4040-4136                   AAAUU...UUUACCUUGCCGACCAUUCUGUUAUAUCACCACCCAUAUUCU
+AASG02001268.1/27383-27482             AUGCUAUGCUUGCCUUGAUGACCAUCCUGAUAUAUCACCACCCAUAUUCU
+AJ240080.1/1-102                       AAAAAGCCUAU...UUGCCGACCAUUCUGUUAUAUCACCACCCAUAUUCU
+AJ429604.1/1-103                       AAAAAGCCUAU...UUGCCGACCAUUCUGUUAUAUCACCACCCAUAUUCU
+#=GC SS_cons                           <<<.......>...>>..................................
+#=GC RF                                AAAaagccUaUAccUUGCCGACCAUUCUGUUAUAUCACCACCCAUAUUCU
+
+AC108499.3/94134-94034                 GAGUCC
+AM447919.2/1765-1671                   GAGUCC
+AC122722.7/22593-22688                 GAGUCU
+AC122722.7/4040-4136                   GAGUCC
+AASG02001268.1/27383-27482             GAGUCC
+AJ240080.1/1-102                       GAGUCC
+AJ429604.1/1-103                       GAGUCC
+#=GC SS_cons                           ..>>>>
+#=GC RF                                GAGUCC
+//

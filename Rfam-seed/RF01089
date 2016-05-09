@@ -1,0 +1,60 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01089
+#=GF ID   PK-repBA
+#=GF DE   Pseudoknot of the regulatory region of the repBA gene
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   20.00
+#=GF TC   21.47
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00179
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   7543895
+#=GF RT   The replication of an IncL/M plasmid is subject to antisense control.
+#=GF RA   Athanasopoulos V, Praszkier J, Pittard AJ;
+#=GF RL   J Bacteriol. 1995;177:4730-4741.
+#=GF RN   [2]
+#=GF RM   10074073
+#=GF RT   Analysis of elements involved in pseudoknot-dependent expression and
+#=GF RT   regulation of the repA gene of an IncL/M plasmid.
+#=GF RA   Athanasopoulos V, Praszkier J, Pittard AJ;
+#=GF RL   J Bacteriol. 1999;181:1811-1819.
+#=GF WK   http://en.wikipedia.org/wiki/Regulatory_region_of_repBA_gene
+#=GF SQ   7
+
+AF550415.2/54744-54867               AACCCCCUGAU.UCAU.CCUCUCACUUUGGCCGGUCA.GAG....AUGAA
+CP000654.1/141918-142038             AACCCCCUGAU.AUCU.UUCUCA.ACUUGG.CGGAAG.GGU....AGAU.
+AY422214.1/51958-52081               AACCCCCUGAUCCCUGUAGAAAA.CUUUGGCCGGUCU.ACU....CAGGA
+U27345.1/557-680                     AACCCCCUGAUCCUAU.UUCAGAACUUUGGCCGGCUC.GGA....AUAGA
+AY150843.2/66153-66280               AAGCCCCCGAAUCUCUAUUCACAAUCUUGG.CGGAUG.GGUUUAGAGAGA
+AE017044.1/1577-1455                 AACCCCCUGAAAUCUG...CUUCAACUUGGCGGGAGA.GA.....CAGAG
+CP000718.1/1687-1567                 AACCCCCCGAUUUCUA.GCUAUCAACUUGGCGGAAGGUGAC....UAGAC
+#=GC SS_cons                         .<<<<<<<<<<.<<<<.<<<.<<...AAAAAAAA.>>.>>>....>>>>.
+#=GC RF                              AACCCCCuGAuacccu.cccacaAacUUGGCcGGaug.ggg....agggA
+
+AF550415.2/54744-54867               AUCAGGGGGCGCAA..ACUGCCUUGCUGGCAGA.AAGGAUUAUAGCAAAU
+CP000654.1/141918-142038             AUCAGGGGGUCCAAAAGCAGGCGCGAUGCCUGUGAAGGAUUAUAACGCAU
+AY422214.1/51958-52081               AUCAGGGGGUGCAA..ACUGCCCA.CUGGCAGA.AAGGAUUAUAGCAAAU
+U27345.1/557-680                     AUCAGGGGGUGCAA..ACUGCCCA.CUGGCAGA.AAGGAUUAUAGCAAAU
+AY150843.2/66153-66280               AUCAGGGGCUCAAA.UACUGGCUG.CUGCCAGC.AAGGAUUAUAACGCAU
+AE017044.1/1577-1455                 AUCAGGGGGUCCAAAAGCAGGCGC.UGGCCUGUGAAGGAUUAUAGCAAAU
+CP000718.1/1687-1567                 AUCGAGGGGU.......UAGGUAU.AAACCUAUGAAGGAUUAUAACGCAU
+#=GC SS_cons                         >>>>>>>>>>........................................
+#=GC RF                              aUCaGGGGGUccAA.AaCuGgCua.cUGcCaGa.AAGGAUUAUAgCAAAU
+
+AF550415.2/54744-54867               GCGUACCCUAUUGCAAUACAGCCCGGCCAAUAAG
+CP000654.1/141918-142038             GCACCAUAGAAAACAAUAC...CCGGCCGCCCUA
+AY422214.1/51958-52081               GCGUAACCUAUUGCAAUACAGCCCGGCCAAUAUG
+U27345.1/557-680                     GCGUACCCUAUUGCAAUACAGCCCGGCCAAUAUG
+AY150843.2/66153-66280               GUACAAUCCAAAUCAAGCCUU.CCGACCCGCCAU
+AE017044.1/1577-1455                 GCAUAACCUAACACAACCCCU.CAGACUCGCCAU
+CP000718.1/1687-1567                 GUUUGCUCUAAAACAACCCCAUUCUGCCAUAAGC
+#=GC SS_cons                         ......................aaaaaaaa....
+#=GC RF                              GCauAAccuAaaaCAAuaCagcCcGgCcaacaau
+//

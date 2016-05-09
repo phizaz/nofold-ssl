@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01826
+#=GF ID   SAM_V
+#=GF DE   SAM-V riboswitch
+#=GF AU   Moore B
+#=GF SE   Published; PMID:19531245
+#=GF SS   Published; PMID:19531245
+#=GF GA   30.00
+#=GF TC   30.20
+#=GF NC   29.99
+#=GF TP   Cis-reg; riboswitch;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000035 SO:riboswitch
+#=GF RN   [1]
+#=GF RM   19776155
+#=GF RT   A variant riboswitch aptamer class for S-adenosylmethionine common in
+#=GF RT   marine bacteria.
+#=GF RA   Poiata E, Meyer MM, Ames TD, Breaker RR;
+#=GF RL   RNA. 2009;15:2046-2056.
+#=GF RN   [2]
+#=GF RM   19531245
+#=GF RT   Identification of candidate structured RNAs in the marine organism
+#=GF RT   'Candidatus Pelagibacter ubique'.
+#=GF RA   Meyer MM, Ames TD, Smith DP, Weinberg Z, Schwalbach MS, Giovannoni
+#=GF RA   SJ, Breaker RR;
+#=GF RL   BMC Genomics. 2009;10:268.
+#=GF WK   http://en.wikipedia.org/wiki/SAM-V_riboswitch
+#=GF SQ   6
+
+AAPV01000002.1/208413-208345             AUUAUCGGUAGGCGCAUUUGAACUGUAUUGUACGCCUUGCAUAAAGCAAA
+ABVS01000001.1/912548-912482             AUAAUCGGUAGGC..AUUUGAACUGUAUUGUGCGCCUAACAUAAAGUUAA
+CP000084.1/732850-732787                 AAUUGGUAAAGGU..AGUUGAACUGUAUUGUGCACCUUGCAUAGAGCUAA
+CP000084.1/1127423-1127359               AAUUAAGCCGGGC..AGUUGAACCAUAUUGUGCGCCCUGCAUU.UGCUUA
+AACY023226915.1/901-837                  AAUUAAGCCGGGC..AGUUGAACCAUAUUGUGCGCCCUGCAUU.UGCUUA
+ABOH01000803.1/30-94                     AUUAAAGCCGGGU..AUUUGAACCGUAUUGUGCACCCUGCAUU.UGCUAA
+#=GC SS_cons                             .........<<<<....................>>>>.............
+#=GC RF                                  AAUuaagaagGGu..AGUUGAACcGUAUUGUGCaCCcUGCAUu.uGCUAA
+
+AAPV01000002.1/208413-208345             AGUACUAAAAAAGGAGUAU
+ABVS01000001.1/912548-912482             AGCACUAAAAAAGGAGUAA
+CP000084.1/732850-732787                 AGCACUAAA.AA..AGUAA
+CP000084.1/1127423-1127359               AGCACUAAA.AAGGAGAAA
+AACY023226915.1/901-837                  AGCACUAAA.AAGGAGAAA
+ABOH01000803.1/30-94                     AGCACUAAA.AAGGAGAAA
+#=GC SS_cons                             ...................
+#=GC RF                                  AGCACUAAA.AAGGAGaAA
+//

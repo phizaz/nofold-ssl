@@ -1,0 +1,31 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01205
+#=GF ID   snR62
+#=GF DE   Small nucleolar RNA snR62
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   24.28
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   snornadb; snR62
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   2
+
+AF064274.1/1-100                     UUUUAUGAUGAAUUUAUGUUUUCAAUCUUAUCUACAUUAUCUGAAUUAAU
+AACH01000555.1/3655-3754             UUUCAUGAUGAAUUUGUGUUUUUAAUCUUAUCUACAUUAUCUGAAUUAAU
+#=GC SS_cons                         <<<...............................................
+#=GC RF                              UUUUAUGAUGAAUUUAUGUUUUCAAUCUUAUCUACAUUAUCUGAAUUAAU
+
+AF064274.1/1-100                     AGCUAACAAUAGUUAUAAUGGAAGAUAUACGACUAUCAACAAUUCUGAAA
+AACH01000555.1/3655-3754             AGCUAACAAUAGUUAUAAUGGAAGAUAUACAACUAUCAAUAAUUCUGAAA
+#=GC SS_cons                         ...............................................>>>
+#=GC RF                              AGCUAACAAUAGUUAUAAUGGAAGAUAUACGACUAUCAACAAUUCUGAAA
+//

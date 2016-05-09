@@ -1,0 +1,72 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01943
+#=GF ID   mir-999
+#=GF DE   microRNA mir-999
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   58.00
+#=GF TC   66.15
+#=GF NC   44.82
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000852
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   17989255
+#=GF RT   Systematic discovery and characterization of fly microRNAs using
+#=GF RT   12 Drosophila genomes
+#=GF RA   Stark A, Kheradpour P, Parts L, Brennecke J, Hodges E, Hannon
+#=GF RA   GJ, Kellis M
+#=GF RL   Genome Res. 2007;17:1865-1879.
+#=GF RN   [2]
+#=GF RM   20037610
+#=GF RT   Evolutionary flux of canonical microRNAs and mirtrons in Drosophila
+#=GF RA   Berezikov E, Liu N, Flynt AS, Hodges E, Rooks M, Hannon GJ, Lai
+#=GF RA   EC
+#=GF RL   Nat Genet. 2010;42:6-9.
+#=GF RN   [3]
+#=GF RM   19961592
+#=GF RT   Direct sequencing and expression analysis of a large number of
+#=GF RT   miRNAs in Aedes aegypti and a multi-species survey of novel mosquito
+#=GF RT   miRNAs
+#=GF RA   Li S, Mead EA, Liang S, Tu Z
+#=GF RL   BMC Genomics. 2009;10:581.
+#=GF RN   [4]
+#=GF RM   20167119
+#=GF RT   Identification of microRNAs expressed in two mosquito vectors,
+#=GF RT   Aedes albopictus and Culex quinquefasciatus
+#=GF RA   Skalsky RL, Vanlandingham DL, Scholle F, Higgs S, Cullen BR
+#=GF RL   BMC Genomics. 2010;11:119.
+#=GF RN   [5]
+#=GF RM   17989254
+#=GF RT   Evolution, biogenesis, expression, and target predictions of
+#=GF RT   a substantially expanded set of Drosophila microRNAs
+#=GF RA   Ruby JG, Stark A, Johnston WK, Kellis M, Bartel DP, Lai EC
+#=GF RL   Genome Res. 2007;17:1850-1864.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+AC008195.6/52633-52513                   GGAGAAGAAAGGAUGCCGCUCAAUUACCCCGACAUAGUCAUACGGUGAAU
+AAST01016047.1/649-529                   GGAGAAGAAAGGAUGCCGCUCAAUUACCCCGACAUAGUCGUACGGUGAAU
+AAGE02006027.1/163141-163260             CUCACCAGAUUACCGGAAGACGCUUGCAGGGACGCGGUCGUGCAGGAAAU
+AAWU01001445.1/28151-28270               UAGCAGGAAAACACGCCGGUCACCCGCAGGGACGCGGUCUGGCAGGAAAU
+#=GC SS_cons                             ....................<<<<<<<<<<<<<<<<<<<.<<<<<.....
+
+AC008195.6/52633-52513                   G.UUGUGUAUUGGAGACCAAUGUUAACUGUAAGACUGUGUCUCGGUGGUU
+AAST01016047.1/649-529                   G.UUGUGUAUUGGAGACCAAUGUUAACUGUAAGACUGUGUCUCGGUGGUU
+AAGE02006027.1/163141-163260             UAUUUGGCAUUAGAUUCAAAUGUUAACUGUAAGACUGUGUCUUUGCGG..
+AAWU01001445.1/28151-28270               AAUUUGGCAUUAGAUUCAAAUGUUAACUGUAAGACUGUGUCUUUGAGG..
+#=GC SS_cons                             ...<<<<<<<<<<...>>>>>>>>>>>>>>>.>>>>>>>>>>>>>>>>>>
+
+AC008195.6/52633-52513                   GCCAGCCCAGCCACACAGCCCA
+AAST01016047.1/649-529                   GCCAGCCCAGCCACACAGCCCA
+AAGE02006027.1/163141-163260             GUGAUCAUUGGCAGCGGUUAUC
+AAWU01001445.1/28151-28270               GCGAUCCUCACCAUCCACGUUC
+#=GC SS_cons                             >.....................
+//

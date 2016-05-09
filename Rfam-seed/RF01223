@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01223
+#=GF ID   snR13
+#=GF DE   Small nucleolar RNA snR13
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   21.00
+#=GF TC   23.18
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   snornadb; snR13
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Saccharomyces_cerevisiae300051
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   2
+
+U16692.1/354-477                     AGGAAGUUUUUUCCUUUUUAUAUGAUGAAUAUGAGUGCAUUUGGCUCGAG
+AACI02000088.1/9635-9513             AGGAAGUUUUUUCCUUUUAACGUGAUGAAUAUGAGUGCAUUUGGCUCGAG
+#=GC SS_cons                         .<<...............................................
+#=GC RF                              AGGAAGUUUUUUCCUUUUUAUAUGAUGAAUAUGAGUGCAUUUGGCUCGAG
+
+U16692.1/354-477                     UUGCUGUUUGGCUUUUGCCAAAUCAGUAACGGUGUGGAAAAACUCAAGCU
+AACI02000088.1/9635-9513             UUACUGUUUGGCGUUUGCCAAAUCAGUAACGGUGUGGAAAAACUCAAGCU
+#=GC SS_cons                         ..................................................
+#=GC RF                              UUGCUGUUUGGCUUUUGCCAAAUCAGUAACGGUGUGGAAAAACUCAAGCU
+
+U16692.1/354-477                     ACCUUUUUUUACUUUUAUCUGACC
+AACI02000088.1/9635-9513             ACCUU.UUUUACUUUUAUCUGAUC
+#=GC SS_cons                         ......................>>
+#=GC RF                              ACCUUUUUUUACUUUUAUCUGACC
+//

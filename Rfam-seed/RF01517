@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01517
+#=GF ID   iscRS
+#=GF DE   iscR stability element
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:19407815
+#=GF GA   35.00
+#=GF TC   45.90
+#=GF NC   11.60
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF DR   GO:0075139 GO:response to host iron concentration
+#=GF RN   [1]
+#=GF RM   19407815
+#=GF RT   Small RNA-induced differential degradation of the polycistronic mRNA
+#=GF RT   iscRSUA.
+#=GF RA   Desnoyers G, Morissette A, Prevost K, Masse E;
+#=GF RL   EMBO J. 2009;28:1551-1561.
+#=GF WK   http://en.wikipedia.org/wiki/iscR_stability_element
+#=GF SQ   4
+
+AE014075.1/2929823-2929714             UAAAAAGAAUUCAGAAUCAGGCCGGAGUGUUUA.GCGCUCCGUAAACACG
+CP000647.1/3144905-3144796             UAAAGAGCUUUCAGAAUCAGGCCGGGAUGCUCCGACAUUCCGUGUACUCG
+AL627275.1/89889-89782                 AAAAAAGAAUUCAGAAUCAGGCCGGGACGCGGA.C.GUCCCGUCAACACG
+AE014073.1/2640264-2640155             UAAAAAGAAUUCAGAAUCAGGCCGGAGUGCUAA.AUACUCCGUAAACACG
+#=GC SS_cons                           .......<<<<<.<<<<<<<<<<<<<<<........>>>>>>...<<.<<
+#=GC RF                                aAAAaAGaacucAGaauCaGGCCGGggcGuuaa.acgccCCGUaaaCaCG
+
+AE014075.1/2929823-2929714             GUCGUACAUCCAGCCGGUAGCCUGGUUCCUUGCAUUGAGUGAUGUACGGA
+CP000647.1/3144905-3144796             GUCGUACAUCAAGCCGGUUGCCUGAUUCCUUGCAUUGAGUGAUGUACGGA
+AL627275.1/89889-89782                 GUCGUACAUCCAGCCGGUUGCCUGAUUCCUUGCAUUGAGUGAUGUACGGA
+AE014073.1/2640264-2640155             GUCGUACAUCCAGCCGGUAGCCUGAUUCCUUGCAUUGAGUGAUGUACGGA
+#=GC SS_cons                           <............>>>>>.>>>>>>>>>..<.<<<......>>>.>..>>
+#=GC RF                                GUcGUAcAUccAGCCGGuaGCCuGauuCcUuGCauUGAGuGauGUacGga
+
+AE014075.1/2929823-2929714             GUUUAUAGAGC
+CP000647.1/3144905-3144796             GU.UUAAGAGC
+AL627275.1/89889-89782                 GUUUA.AGAGC
+AE014073.1/2640264-2640155             GUUUAUAGAGC
+#=GC SS_cons                           >>>........
+#=GC RF                                guuUAuAGAGc
+//

@@ -1,0 +1,77 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00360
+#=GF ID   snoZ107_R87
+#=GF DE   Small nucleolar RNA Z107/R87
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; RNAfold; Moxon SJ, Daub J, Gardner PP
+#=GF GA   21.00
+#=GF TC   23.13
+#=GF NC   20.86
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300058
+#=GF RN   [1]
+#=GF RM   11469857
+#=GF RT   Identification of 66 box C/D snoRNAs in Arabidopsis thaliana:
+#=GF RT   extensive gene duplications generated multiple isoforms predicting
+#=GF RT   new ribosomal RNA 2'-O-methylation sites.
+#=GF RA   Barneche F, Gaspin C, Guyot R, Echeverria M;
+#=GF RL   J Mol Biol 2001;311:57-73.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [3]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   Z107 and R87 are members of the C/D class of snoRNA which contain the
+#=GF CC   C (UGAUGA) and  D (CUGA) box motifs. Most of the members of the box C/D
+#=GF CC   family function in directing site-specific 2'-O-methylation of substrate
+#=GF CC   RNA
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z107/R87
+#=GF SQ   9
+
+AJ489954.1/1-104                    ......UGGCUGUGACGACUAGGUGAAAUU.CAAGCUCAACAGACCAAAU
+AY013245.2/61987-62105              ....GAUGGCAGUGACGACUUGGUAAUAUU.CAAGCUCAACAGACCAAAU
+AJ307928.1/3-121                    ....GAUGGCAGUGACGACCUGGUAAUAUU.CAAGCUCAACAGACCAAAU
+AJ489952.1/1-119                    ....GAUGGCAGUGACGACUUGGUAAUAUU.CAAGCUCAACAGACCAAAU
+AJ307662.1/4013-4128                ....GAUGGCAGUGACGACCUGGUAAUAUU.CAAGCUCAACAGACCAAAU
+AY013245.2/57789-57907              ....GAUGGCAGUGACGACUUGGUAAUAUU.CAAGCUCAACAGACCAAAU
+AC135465.23/41412-41522             ....GAUCACGAUGAUGACUCCAUAAAAUU.CAAGCUCAACAGACCGCAG
+AF318011.1/1-106                    .......GGCAGUGAUGACUCGG..AAAUUUCAAGCUCAACAGACCGGAA
+AJ298135.1/1-115                    GAGAAAUCGUGGUGAUGACUUGGAAAUAUU.CAAGCUCAACAGACCGUAA
+#=GC SS_cons                        ....<<<<<<........................................
+
+AJ489954.1/1-104                    CACAGGUCUC..UCUCCAAGGCCUU.UGGAGAUGGGAUCUGUAUGCCGA.
+AY013245.2/61987-62105              CACAGGUCUUCCUCUCUGGAUCCAC..UCCUCUGGGAUUGAUUUG..UAU
+AJ307928.1/3-121                    CACAGGUCUU..UCUCUCUGGAUCUACUCCUCAGGGAUUGAUUUG..UAU
+AJ489952.1/1-119                    CACAGGUCUUCCUCUCUGGAUCUAC..UCCUCUGGGAUUGAUUUG..UAU
+AJ307662.1/4013-4128                CACAGGUCUU..UCUCUCUGGAUC...UACUCAGGGAUUGAUUUG..UAU
+AY013245.2/57789-57907              CACAGGUCUU..UCUCUCUGGAUCCACUCCUCUGGGAUUGAUUUG..UAU
+AC135465.23/41412-41522             UGCAGUGCUU..UCUU.CU..CU.....UUCGAGAGAUUGCUUUG.CGUG
+AF318011.1/1-106                    UUAGGCGUUU..CUUCCAA....UU.UAUUGGUUGAGUCGUUUCUG.UGU
+AJ298135.1/1-115                    UGUAGGAUUU..U..............UCCUAGUGGAAAGUCUUGCGUGU
+#=GC SS_cons                        ..................................................
+
+AJ489954.1/1-104                    ....GU..UUCCGCUC.....AGCCG......
+AY013245.2/61987-62105              GCCGAUUUUCCCGCUGAACCGAGCCAUC....
+AJ307928.1/3-121                    GCCGAUUUUUCCGCUGAACCGAGCCAUC....
+AJ489952.1/1-119                    GCCGAUUUUCCCGCUGAACCGAGCCAUC....
+AJ307662.1/4013-4128                GCCGAUUUUUCCGCUGAACCGAGCCAUC....
+AY013245.2/57789-57907              GCCGAUUUUCCCGCUGAACCGAGCCAUC....
+AC135465.23/41412-41522             UC.GAUAACCCCGCUGAACUGAGUGAUC....
+AF318011.1/1-106                    ..CGAUAACCCCGCUGAUCUGAGCC.......
+AJ298135.1/1-115                    GUCGAUAAUCCCGCUGAACUGAGCGAUUUCUC
+#=GC SS_cons                        ......................>>>>>>....
+//

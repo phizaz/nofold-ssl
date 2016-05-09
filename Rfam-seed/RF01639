@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01639
+#=GF ID   ceN49
+#=GF DE   C. elegans snoRNA ceN49
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold;
+#=GF GA   65.00
+#=GF TC   84.71
+#=GF NC   10.44
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+DQ789461.1/2-136                     UCCGCCUCUCUACCAAACACUCGUAAGUACUAUUUAUUGCGAGUGCAUGG
+AY948685.1/1-134                     ACCGCCUCUCUACCAAACACUUGCAAGUUCUGUUUAUUGCAAGUGCAUGG
+AAGD02001955.1/2837-2971             UACGCCUCUCUACCAAACACUUACAAGUUCUGUUUAUUGUGAGUGCAUGG
+#=GC SS_cons                         ..<<<<<<<...<<<..<<<<<<<<<..........>>>>>>>>>..>>>
+#=GC RF                              ACCGCCUCUCUACCAAACACUUGCAAGUUCUGUUUAUUGCAAGUGCAUGG
+
+DQ789461.1/2-136                     AAGAGGCGAAUAGAGAACGGAACGUUGUCCACCCCUUCAAUCAUC.AUCA
+AY948685.1/1-134                     AAGAGGCGAAUAGAAAACGGAAUGAUGUCCACUCCUUCGAUUAUC.GUU.
+AAGD02001955.1/2837-2971             AAGAGGCGAAUAGAAAACGGAACGAUGUCCACCCCUUCAAUCAUCAGAA.
+#=GC SS_cons                         .>>>>>>>...........<<.<<<.<<.....<<<.<<<<<........
+#=GC RF                              AAGAGGCGAAUAGAAAACGGAAUGAUGUCCACUCCUUCGAUUAUC.GUU.
+
+DQ789461.1/2-136                     AAUUGGAUUGCGGGCACUUUACCACGGUCGACAUUU
+AY948685.1/1-134                     CAUUGGAUUGCGGGCACUUUACCUCGUUCGACAUUU
+AAGD02001955.1/2837-2971             AAUUGGAUUGCGGGCACUUUACCUCGGUCGACAGUU
+#=GC SS_cons                         .....>>>>>.>>>......>>.>>>.>>.......
+#=GC RF                              CAUUGGAUUGCGGGCACUUUACCUCGUUCGACAUUU
+//

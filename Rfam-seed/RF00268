@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00268
+#=GF ID   snoZ7
+#=GF DE   Small nucleolar RNA snoZ7/snoR77
+#=GF PI   snoR77
+#=GF AU   Moxon SJ
+#=GF SE   http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   23.44
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300111
+#=GF RN   [1]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol 2002;22:6663-6668.
+#=GF RN   [2]
+#=GF RM   12477388
+#=GF RT   Experimental RNomics: identification of 140 candidates for small
+#=GF RT   non-messenger RNAs in the plant Arabidopsis thaliana.
+#=GF RA   Marker C, Zemann A, Terhorst T, Kiefmann M, Kastenmayer JP, Green P,
+#=GF RA   Bachellerie JP, Brosius J, Huttenhofer A;
+#=GF RL   Curr Biol 2002;12:2002-2013.
+#=GF CC   snoZ7 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_snoZ7/snoR77
+#=GF SQ   5
+
+AJ010674.1/1-79                    CCGAUGAUGAUUAUUGCGAAAAUAUGGAAUUACCGUCUGAGUUAAUUUCU
+AC002329.2/21760-21838             CCGAUGAUGAUUAUUGCGAAAAUAUGGAAUUACCGUCUGAGUUAAUUUCU
+AC007233.7/16999-17076             CCGAUGAUGAUUAUUGCUAAACUAUGGAAUUACCGUCUGAGUUUAUU.CU
+DQ108823.1/555-632                 CCGAUGAUGAUUAUUGCUAAACUAUGGAAUUACCGUCUGAGUUUAUU.CU
+AK117712.1/558-635                 CCGAUGAUGAUUAUUGCUAAACUAUGGAAUUACCGUCUGAGUUUAUU.CU
+#=GC SS_cons                       <<................................................
+#=GC RF                            CCGAUGAUGAUUAUUGCuAAAaUAUGGAAUUACCGUCUGAGUUaAUUuCU
+
+AJ010674.1/1-79                    UUGAUGUUAAAAACGCUGGCUAACUGAGG
+AC002329.2/21760-21838             UUGAUGUUAAAAACGCUGGCUAACUGAGG
+AC007233.7/16999-17076             UUGACGAGAAAAACGCUGGCUUACUGAGG
+DQ108823.1/555-632                 UUGACGAGAAAAACGCUGGCUUACUGAGG
+AK117712.1/558-635                 UUGACGAGAAAAACGCUGGCUUACUGAGG
+#=GC SS_cons                       ...........................>>
+#=GC RF                            UUGAuGauAAAAACGCUGGCUaACUGAGG
+//

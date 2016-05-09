@@ -1,0 +1,81 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00073
+#=GF ID   mir-156
+#=GF DE   mir-156 microRNA precursor
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   27.00
+#=GF TC   33.94
+#=GF NC   23.69
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000008
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   12101121
+#=GF RT   MicroRNAs in plants.
+#=GF RA   Reinhart BJ, Weinstein EG, Rhoades MW, Bartel B, Bartel DP;
+#=GF RL   Genes Dev 2002;16:1616-1626.
+#=GF RN   [2]
+#=GF RM   11779458
+#=GF RT   microRNAs: tiny regulators with great potential.
+#=GF RA   Ambros V;
+#=GF RL   Cell 2001;107:823-826.
+#=GF CC   This family represents the plant microRNA (miRNA) precursor
+#=GF CC   mir-156. This miRNA has now been predicted or experimentally
+#=GF CC   confirmed in a range of plant species (MIPF:MIPF0000008).  Animal
+#=GF CC   miRNAs are transcribed as ~70nt precursors and subsequently
+#=GF CC   processed by the Dicer enzyme to give a ~22nt product.  In plants
+#=GF CC   the precursor sequences may be longer, and the carpel factory
+#=GF CC   (caf) enzyme appears to be involved in processing.  In this case
+#=GF CC   the mature sequence comes from the 5' arm of the precursor, and
+#=GF CC   both Arabidopsis and rice genomes contain a number of related
+#=GF CC   miRNA precursors which give rise to almost identical mature
+#=GF CC   sequences.  The extents of the hairpin precursors are not
+#=GF CC   generally known and are estimated based on hairpin prediction.
+#=GF CC   The products are thought to have regulatory roles through
+#=GF CC   complementarity to mRNA.
+#=GF WK   http://en.wikipedia.org/wiki/mir-156_microRNA_precursor
+#=GF SQ   10
+
+AP002816.1/72598-72685               CUGACAGAAGAGAGUGAGCACACACGGUGCUUU.CUUA........GCAU
+AP003332.4/36088-35998               GUGACAGAAGAGAGUGAGCACACGUGGUUGUUUCCUUGC.......AUAA
+AL606594.4/122244-122157             GUGACAGAAGAGAGUGAGCACACGGCCGGGC...GUGACGGCACCGGCGG
+AP002836.1/25247-25339               CUGACAGAAGAGAGUGAGCACACAUGGUGACUUUCUUGC.......AUGC
+AL022198.1/47163-47082               CUGACAGAAGAGAGUGAGCACAUGCAGGCACU..GUUAU.......GUGU
+AL163812.1/61753-61850               GUGACAGAAGAGAGUGAGCACACAUGGUGGUUU.CUUGCAUGCUU.UUUU
+AL391222.1/7873-7786                 UUGACAGAAGAGAGUGAGCACACAAAGGGGAA..GUUGUAUAAAA.GUUU
+AF149413.1/10006-9915                GUGACAGAAGAGAGUGAGCACACAUGGUGGCUUUCUUGC.......AUAU
+AL161579.2/181456-181372             CUGACAGAAGAGAGUGAGCACACAAAGGCACU...UUGC.......AUGU
+AC003058.3/76991-76907               GCGACAGAAGAGAGUGAGCACACAU...GGCU..CUUUU........UCU
+#=GC SS_cons                         <<<<<<<<<<<<<<<<<<<<<.<<<.........................
+
+AP002816.1/72598-72685               GCAAGAGCCA...UGCUGGGA.GCUGUGCGUGCUCACU.CUCUAUCUGUC
+AP003332.4/36088-35998               AUGAUGCCUA...UGCUUGGA.GCUACGCGUGCUCACUUCUCUCUCUGUC
+AL606594.4/122244-122157             GCG.UGCCGU...CGCGG.......CCGCGUGCUCACUGCUCUUUCUGUC
+AP002836.1/25247-25339               UGAAUGGACUCA.UGCUUGAA.GCUAUGUGUGCUCACUUCUCUCUCUGUC
+AL022198.1/47163-47082               .CUAUAACUU...UGCGU.......GUGCGUGCUCACCUCUCUUUCUGUC
+AL163812.1/61753-61850               GAUUAGGGUUUCAUGCUUGAA.GCUAUGUGUGCUUACU.CUCUCUCUGUC
+AL391222.1/7873-7786                 UGUAUAUGGU...UGCUU.......UUGCGUGCUCACU.CUCUUUUUGUC
+AF149413.1/10006-9915                .UUGAAGGUUCCAUGCUUGAA.GCUAUGUGUGCUCACU.CUCUAUCCGUC
+AL161579.2/181456-181372             UCGAUGCAUU...UGCUUCUC....UUGCGUGCUCACUGCUCUAUCUGUC
+AC003058.3/76991-76907               AGCAUGCUCA...UGCUCGAAAGCUCUGCGUGCUUACU.CUCUUCUUGUC
+#=GC SS_cons                         .........................>>>.>>>>>>>>>.>>>.>>>>>>>
+
+AP002816.1/72598-72685               AG
+AP003332.4/36088-35998               AC
+AL606594.4/122244-122157             AU
+AP002836.1/25247-25339               AG
+AL022198.1/47163-47082               AG
+AL163812.1/61753-61850               AC
+AL391222.1/7873-7786                 AU
+AF149413.1/10006-9915                AC
+AL161579.2/181456-181372             AG
+AC003058.3/76991-76907               UC
+#=GC SS_cons                         >>
+//

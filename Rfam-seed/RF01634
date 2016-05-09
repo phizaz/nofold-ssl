@@ -1,0 +1,38 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01634
+#=GF ID   ceN44
+#=GF DE   C. elegans snoRNA ceN44
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   70.00
+#=GF TC   89.91
+#=GF NC   27.87
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+DQ789442.1/1-71                      .GACCAUGAUAGGAUAACCUAGAGUCUCUGAACCAUUUCGUGUUUGCACA
+ABEG01012172.1/9703-9776             GGACUAUGAUAGGAUACCCUAGAGUCUCUGAACCAUUUCGUGUUUGUAAA
+AY948681.1/1-74                      CGACAAUGAUAGGAUAACCUAGAGUCUCUGAACCAUUUCGUGUUUGCAAA
+#=GC SS_cons                         .<<<..............................................
+#=GC RF                              gGACaAUGAUAGGAUAACCUAGAGUCUCUGAACCAUUUCGUGUUUGcAAA
+
+DQ789442.1/1-71                      AACAAUGCUCUUUGUCUGAGUC..
+ABEG01012172.1/9703-9776             AACAACGCUCUUUGUCUGAGUCAG
+AY948681.1/1-74                      AACAAUGCUCCUUGUCUGAGUCAG
+#=GC SS_cons                         ...................>>>..
+#=GC RF                              AACAAuGCUCuUUGUCUGAGUCAG
+//

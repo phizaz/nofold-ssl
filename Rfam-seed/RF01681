@@ -1,0 +1,50 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01681
+#=GF ID   P4
+#=GF DE   Pseudomonas sRNA  P4
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; Clustal_alifold;
+#=GF GA   12.00
+#=GF TC   12.73
+#=GF NC   11.00
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   16870723
+#=GF RT   Identification of 17 Pseudomonas aeruginosa sRNAs and prediction of
+#=GF RT   sRNA-encoding genes in 10 diverse pathogens using the bioinformatic
+#=GF RT   tool sRNAPredict2.
+#=GF RA   Livny J, Brencic A, Lory S, Waldor MK;
+#=GF RL   Nucleic Acids Res. 2006;34:3484-3493.
+#=GF WK   http://en.wikipedia.org/wiki/Pseudomonas_sRNA
+#=GF SQ   2
+
+CP000744.1/4962754-4962967             GAAGAAUCUCCUUUCAUCGUGGUGUUGGUACGUUGAG.AAGUCGUCUUGC
+AE004091.2/747469-747255               GAAGAAUCUCCUUUCAUCGUGGUGUUGGUACGUUGAGGAAGUCGUCUUGC
+#=GC SS_cons                           ............<<<<.<<<<.......>>>>.>>>>...<<<<<<<<..
+#=GC RF                                GAAGAAUCUCCUUUCAUCGUGGUGUUGGUACGUUGAGGAAGUCGUCUUGC
+
+CP000744.1/4962754-4962967             AUGAGGCGGCGCCGUGCUUGCCGGGCUUUGCAUCCCUAGCCGGUCGAAGG
+AE004091.2/747469-747255               AUGAGGCGGCGCCGUGCUUGCCGGGCUUUGCAUCCCUAGCCGGUCGAAGG
+#=GC SS_cons                           ..>>>>><<<<<.<.<<<<<<<<<..<<<<<<<<<<<<<<.<<<<.....
+#=GC RF                                AUGAGGCGGCGCCGUGCUUGCCGGGCUUUGCAUCCCUAGCCGGUCGAAGG
+
+CP000744.1/4962754-4962967             GGCCGCUGGGGUUAAAACUCGCAAGUUCCGGUGACAGAUCGGGGAAAAAA
+AE004091.2/747469-747255               GGCCGCUGGGGAUAAAACUCGCAAGUUCCGGUGACAGAUCGGGGAAAAAA
+#=GC SS_cons                           >>>>>>>>>>>>>.......>>>>>..>>>>><<<<..<<<<<<<<<...
+#=GC RF                                GGCCGCUGGGGAUAAAACUCGCAAGUUCCGGUGACAGAUCGGGGAAAAAA
+
+CP000744.1/4962754-4962967             UCUCGGGAGCAUCGAAUUGUUUUCAGGCCCUUUCCUCGGGUGUUCGAAGG
+AE004091.2/747469-747255               UCUCGGGAGCAUCGAAUUGUUUUCGCAGCCUUUCCUCGGGUGUUCGCAGG
+#=GC SS_cons                           <<<.<..<<<<......>>>>..>>>>...>>>>>>>>>.>>>>...>>>
+#=GC RF                                UCUCGGGAGCAUCGAAUUGUUUUCGCAGCCUUUCCUCGGGUGUUCGCAGG
+
+CP000744.1/4962754-4962967             CUCUGCGCCGGGCGU
+AE004091.2/747469-747255               CUCUGCGCCGGGCCU
+#=GC SS_cons                           >.>.>>>>>.>>>..
+#=GC RF                                CUCUGCGCCGGGCCU
+//

@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02024
+#=GF ID   mir-1180
+#=GF DE   microRNA mir-1180
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   55.00
+#=GF TC   55.30
+#=GF NC   27.24
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000789
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   19406225
+#=GF RT   In silico detection and characteristics of novel microRNA genes
+#=GF RT   in the Equus caballus genome using an integrated ab initio and
+#=GF RT   comparative genomic approach
+#=GF RA   Zhou M, Wang Q, Sun J, Li X, Xu L, Yang H, Shi H, Ning S, Chen
+#=GF RA   L, Li Y, He T, Zheng Y
+#=GF RL   Genomics. 2009;94:125-131.
+#=GF RN   [2]
+#=GF RM   17922033
+#=GF RT   MicroRNA expression signature of human sarcomas
+#=GF RA   Subramanian S, Lui WO, Lee CH, Espinosa I, Nielsen TO, Heinrich
+#=GF RA   MC, Corless CL, Fire AZ, van de Rijn M
+#=GF RL   Oncogene. 2008;27:2015-2026.
+#=GF RN   [3]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF RN   [4]
+#=GF RM   19508715
+#=GF RT   Identification and analysis of miRNAs in human breast cancer
+#=GF RT   and teratoma samples using deep sequencing
+#=GF RA   Nygaard S, Jacobsen A, Lindow M, Eriksen J, Balslev E, Flyger
+#=GF RA   H, Tolstrup N, Moller S, Krogh A, Litman T
+#=GF RL   BMC Med Genomics. 2009;2:35.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+AL160492.5/61752-61684                 GCUGCUGGACCCACCCGGCCGGGAAUAGUGCUCCUGGUUGUUUCCGGCUC
+AC124066.6/52207-52275                 GCUGCUGGACCCACCCGGCCGGGAAUAGUGCUCCUGGUUGUUUCCGGCUC
+AAWR02013581.1/12615-12683             UCUGCCUGGCCCACCCAGCCGGGAAUAGUGCACGAGUUUGUUUCCGGCUC
+#=GC SS_cons                           <<<<<<<<<<<<<<<.<<<<<<<<<<<<.........>>>>>>>>>>>>.
+
+AL160492.5/61752-61684                 GCGUGGGUGUGUCGGCGGC
+AC124066.6/52207-52275                 GCGUGGGUGUGUCGGCGGC
+AAWR02013581.1/12615-12683             GAGUGGGUGUGUCGGAGGC
+#=GC SS_cons                           >.>>>>>>...>>>>>>>>
+//

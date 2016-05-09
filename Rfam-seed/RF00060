@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00060
+#=GF ID   HgcE
+#=GF DE   HgcE RNA
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Predicted; PFOLD
+#=GF GA   50.00
+#=GF TC   79.04
+#=GF NC   undefined
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   12032319
+#=GF RT   Noncoding RNA genes identified in AT-rich hyperthermophiles.
+#=GF RA   Klein RJ, Misulovin Z, Eddy SR;
+#=GF RL   Proc Natl Acad Sci U S A 2002;99:7542-7547.
+#=GF CC   The HgcE ncRNA gene was identified computationally in AT-rich
+#=GF CC   hyperthermophiles. The genes were named hgcA through hgcG ("high GC").
+#=GF CC   HgcE is of unknown function.
+#=GF WK   http://en.wikipedia.org/wiki/HgcE_RNA
+#=GF SQ   4
+
+BA000001.2/592118-592247             GGCGCGCAAUGAACG.AGGUGACGUCGUCGGGCGGACAGGGCCCGGUCUC
+AF468961.1/1-132                     GGCGCGCGAUGAACG.AGGUGACGUCUCCGGGCGGACAGGGCCCGGCCUU
+AJ248287.2/141310-141179             GGCGCGCCAUGAACG.AGGCGACGUCGCCGGGCGGACAGGGCCCGGUCUC
+AP006878.1/465164-465039             GGCCCACAGUGAAGGGAUGAGACGAUGCCGGGCGGACAGGGCCCGGUCUC
+#=GC SS_cons                         ......................................<<<<<<<<<..<
+#=GC RF                              GGCGCGCaAUGAACG.AGGuGACGUCgcCGGGCGGACAgGGCCCGGcCUc
+
+BA000001.2/592118-592247             CGGGGCCGCCUGAGGUUGCCGAGAAUGGCGUUCAAUGAAGGCGGGCGGAU
+AF468961.1/1-132                     CGGGGCCGCCUGAGGGAGCCGAGAAGGGCAGACGAUGAAGGCGGGCGGAU
+AJ248287.2/141310-141179             CGGGGCCGCCUGAGGUUGCCGACAACGGCGGGCAAUGAGGGCGGGUGGAU
+AP006878.1/465164-465039             CGGA.CCGCUGGAGGGGGUCUCU...GGCCGUCAAUGAGAGCGGG.GGAU
+#=GC SS_cons                         <....<<<<<<......<<<......>>>.........>>>>>>..>>..
+#=GC RF                              CGGGGCCGCCuGAGGuuGCCGAgAAuGGCggaCaAUGAaGGCGGGcGgAU
+
+BA000001.2/592118-592247             AAUCCGGGCCU..AAAGAACUUUAAUUCUAA..CU
+AF468961.1/1-132                     AAGCCGGGCCCUCAAAGGGUUUUGAUUCUAA..UU
+AJ248287.2/141310-141179             AAGCCGGGCCU..AUACCACUUCAAUUCUAACCUU
+AP006878.1/465164-465039             CAGCCGGGCCC..ACACCGAUUGGUUUCUGU..UA
+#=GC SS_cons                         ..>>>>>>>>>........................
+#=GC RF                              AAgCCGGGCCcucAAAgaacUUuaAUUCUAA..uU
+//

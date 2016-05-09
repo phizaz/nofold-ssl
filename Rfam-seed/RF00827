@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00827
+#=GF ID   mir-77
+#=GF DE   microRNA mir-77
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   45.00
+#=GF TC   64.15
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000272
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+Z81124.1/29149-29248                     GCAUCUGCCAAACCGCCCGUUUGGAUGGUUGUGCUCUGAGGAAAU.ACG.
+CAAC02000490.1/201259-201155             AAUUCCAAAGAGCUGUGAAUUUGGAUAGCUGUGCUCUGAGGAAAUAACAA
+AAGD02000430.1/4126-4038                 AAAUAAAAAGAGCUGUUAGUUUGGAUGGCUGUGCUCUGAGGAAAC.ACG.
+AAGD02003971.1/5795-5695                 AACUGUAAAGAGCUGUUAGUUUGGAUGGCUGUGCUCUGAGGAAAU.ACG.
+ABEG01008878.1/38058-37964               CCAAAAAUAGAGCCAAUAAUUUGGAUGGCUGUGCCUUGAAGAAAU.ACA.
+#=GC SS_cons                             .........<<<<<<<<<<<<<<<<<<<<<<<<..<<<<.<<<<<.<<<.
+#=GC RF                                  gcAucugccgaaCcgccaauuuGGauaGcuguGcUCuGaGGaaauAaCaA
+
+Z81124.1/29149-29248                     ......CACAGAAUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUGGUAU
+CAAC02000490.1/201259-201155             UAGUCACACCCCAUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUUCU..
+AAGD02000430.1/4126-4038                 ............GUGUCAUUUCAUCAGGCCAUAGCUGUCCAAA..ACU..
+AAGD02003971.1/5795-5695                 ...GCUCAUAAAAUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUAUCA.
+ABEG01008878.1/38058-37964               ........GUUAGUGUCAUUUCAUCAGGCCAUAGCUGUCCAAAUUGUU..
+#=GC SS_cons                             .............>>>.>>>>>.>>>>..>>>>>>>>>>>>>>>>>>>..
+#=GC RF                                  uAgucAcAcagaAuGucauuuCAuCaGGcCauagCuguCCaaauugguAu
+
+Z81124.1/29149-29248                     AGAGUUUG
+CAAC02000490.1/201259-201155             .CGGUUCG
+AAGD02000430.1/4126-4038                 .CGUUUCC
+AAGD02003971.1/5795-5695                 .AUGUUCG
+ABEG01008878.1/38058-37964               .AGGUUCG
+#=GC SS_cons                             ..>>>>>.
+#=GC RF                                  AggGuucG
+//

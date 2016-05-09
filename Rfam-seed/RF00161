@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00161
+#=GF ID   nos_TCE
+#=GF DE   Nanos 3' UTR translation control element
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR, INFERNAL
+#=GF SS   Published; PMID:10882131
+#=GF GA   20.00
+#=GF TC   24.27
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000205 SO:three_prime_UTR
+#=GF DR   GO:0008595 GO:determination of anterior/posterior axis, embryo
+#=GF DR   GO:0017148 GO:negative regulation of protein biosynthetic process
+#=GF DR   GO:0005515 GO:protein binding
+#=GF RN   [1]
+#=GF RM   10882131
+#=GF RT   Overlapping but distinct RNA elements control repression and
+#=GF RT   activation of nanos translation.
+#=GF RA   Crucs S, Chatterjee S, Gavis ER;
+#=GF RL   Mol Cell 2000;5:457-467.
+#=GF CC   The Nanos protein in Drosophila is required for correct
+#=GF CC   anterior/posterior patterning in the Drosophila embryo.
+#=GF CC   Translation of the nanos mRNA is repressed in the bulk
+#=GF CC   cytoplasm and activated in the posterior region.  Repression is
+#=GF CC   mediated by a translation control element (TCE) in the 3' UTR of
+#=GF CC   the mRNA.  This element forms a Y-shaped structure, part of
+#=GF CC   which is recognised by the Smaug protein leading to translational
+#=GF CC   repression [1].
+#=GF WK   http://en.wikipedia.org/wiki/Nanos_3'_UTR_translation_control_element
+#=GF SQ   9
+
+U24695.1/2509-2569                   UGGA..AGAAGCUCUGGCAGCUUUUUAAGCGU.UUAUAUAAGA.GUUAUA
+AB194435.1/926-863                   AGGAUUUGAAGCUCUGGCAGCUUCUGCAGCGC.UUAUAUAGUCAGAAAUA
+AB194432.1/908-846                   AGAAAUCGAAGCUCUGGCAGCUUCUUAAGCGU.UUAUAUAGUCAGAAAUA
+AAEU02002047.1/7785-7722             AGGAGCAGAAGCUCUGGAAGCUUUUGUAGCGU.UUAUAUAACAAGAAAUA
+AB194434.1/965-904                   GAACU.AGAAGCUCUGGAAGCUUCUUAAGCGUUUUAUAUAAUCAGAAAUA
+M72421.1/2491-2554                   UGGAGCAGAGGCUCUGGCAGCUUUUGCAGCGU.UUAUAUAACAUGAAAUA
+AF252722.1/810-873                   NGGAGCAGAGGCUCUGGCAGCUUUUGCAGCGU.UUAUAUAACAAGAAAUA
+AB194436.1/924-862                   AGAACAAGAAGCUCUGGCAGCUUCUACAGCGC.UUAUAUAAUCAGAAAUA
+AB194415.1/11664-11723               GUCA....AAGCUCUGGCAGCUUCUUAAGCGU.UUAUAUAGUCAGAAAUA
+#=GC SS_cons                         <<<<..<<<<<<<.....>>>>>>>...<<<<..<<<<<<........>>
+#=GC RF                              aggaaaagaaGCucUGGaaGCuucuaaAGCGc.UuauauaAuaAGAAAua
+
+U24695.1/2509-2569                   UAUAUGCGCGUUCCA
+AB194435.1/926-863                   UAUAUUCGCGUUCGA
+AB194432.1/908-846                   UAUAUGCGCG.UUCA
+AAEU02002047.1/7785-7722             UAUAUACGCCUUCCG
+AB194434.1/965-904                   UAUAUGCGC..GUUC
+M72421.1/2491-2554                   UAUAUACGCAUUCCG
+AF252722.1/810-873                   UAUAUACGCAUUCCG
+AB194436.1/924-862                   UAUAUGCGCG.UUCU
+AB194415.1/11664-11723               UAUAUGCGCGAUCAU
+#=GC SS_cons                         >>>>.>>>>..>>>>
+#=GC RF                              uauaUgCGCguuccu
+//

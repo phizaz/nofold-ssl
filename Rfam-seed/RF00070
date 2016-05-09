@@ -1,0 +1,69 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00070
+#=GF ID   SNORD29
+#=GF DE   Small nucleolar RNA SNORD29
+#=GF PI   U29
+#=GF AU   Moxon SJ; Griffiths-Jones SR
+#=GF SE   Moxon SJ; Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD; Moxon SJ, Daub J
+#=GF GA   24.00
+#=GF TC   28.18
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300713
+#=GF DR   snoopy; Oryctolagus_cuniculus300345
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   8962077
+#=GF RT   A small nucleolar RNA requirement for site-specific ribose
+#=GF RT   methylation of rRNA in Xenopus.
+#=GF RA   Tycowski KT, Smith CM, Shu MD, Steitz JA;
+#=GF RL   Proc Natl Acad Sci U S A 1996;93:14480-14485.
+#=GF RN   [3]
+#=GF RM   8559254
+#=GF RT   A mammalian gene with introns instead of exons generating stable RNA
+#=GF RT   products.
+#=GF RA   Tycowski KT, Shu MD, Steitz JA;
+#=GF RL   Nature 1996;379:464-466.
+#=GF CC   U29 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD29
+#=GF SQ   10
+
+U72862.1/1-65                      .UUGCUGUGAUGAAAC.....UAACUAGCUCACUUUGA.....UUAAACA
+U72864.1/1-65                      .UUGCUGUGAUGAAAC.....UAACUAGCUCACUUUGA.....AUAAACG
+U72863.1/1-65                      .UUGCUGUGAUGAAAC.....UAACUAGCUCACUUUGA.....AUAAGCG
+U72866.1/1-65                      .UUGCUGUGAUGAAAC.....UAACUAGCUCACUUUGA.....AUAAACA
+U72865.1/1-65                      .UUGCUGUGAUGAAAC.....UAACUAGCUCACUUUGA.....UUAAGCA
+U40654.1/1763-1827                 .UUUCUAUGAUGAAUC.....AAACUAGCUCACUAUGA.....CUGCUAA
+U40580.1/2415-2479                 .UUUCUAUGAUGAAUC.....AAACUAGCUCACUAUGA.....CCGACAG
+AJ532522.1/1-93                    UUGGCGAUGAUGAUACUCUUUUACCCAGCUCAUUAUGAGACUUCCCUUUG
+AJ532523.1/1-92                    UCUGCAAUGAUGAUACCUUUUUACUCAGCUCAUUAUGAGACUUCCCUUUG
+AC087551.3/49489-49580             UCUGCAAUGAUGAUACCUUUUUACUCAGCUCAUUAUGAGACUUCCCUUUG
+#=GC SS_cons                       ..<<<.............................................
+
+U72862.1/1-65                      UGAAAAG......CUUUGAACU...........CCUGAGCAUC
+U72864.1/1-65                      UGAAAAG......CUUUGAACU...........CCUGAGCAUC
+U72863.1/1-65                      UGAAAAG......CUUUGAACU...........CCUGAGCAUC
+U72866.1/1-65                      UGAAAAG......CUUUGAACU...........CCUGAGCAUC
+U72865.1/1-65                      UGAAAAG......CUUUGAACU...........CCUGAGCAUC
+U40654.1/1763-1827                 UGAAAAC......ACAGGAACA...........CCUGAGAAAC
+U40580.1/2415-2479                 UGAAAAU......ACAUGAACA...........CCUGAGAAAC
+AJ532522.1/1-93                    UGGGUUGUCUUGGAUAUGAACUUUUCCUUUGUAUCUGAGCUUA
+AJ532523.1/1-92                    UGGGUUGUUUGGGAUAUGAACUUUCCCUUA.UACCUGAGCAGA
+AC087551.3/49489-49580             UGGGUUGUUUGGGAUAUGAACUUUCCCUUA.UACCUGAGCAGA
+#=GC SS_cons                       ......................................>>>..
+//

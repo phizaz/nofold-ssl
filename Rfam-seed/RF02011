@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02011
+#=GF ID   mir-575
+#=GF DE   microRNA mir-575
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   80.00
+#=GF TC   82.29
+#=GF NC   26.85
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000586
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [2]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF RN   [3]
+#=GF RM   16505370
+#=GF RT   The colorectal microRNAome
+#=GF RA   Cummins JM, He Y, Leary RJ, Pagliarini R, Diaz LA Jr, Sjoblom
+#=GF RA   T, Barad O, Bentwich Z, Szafranska AE, Labourier E, Raymond CK,
+#=GF RA   Roberts BS, Juhl H, Kinzler KW, Vogelstein B, Velculescu VE
+#=GF RL   Proc Natl Acad Sci U S A. 2006;103:3687-3692.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+AADB02007055.1/191943-191850             AAUUCAGCCCUGCCACUGGCUUAUGUCAUGACCUUGGGCUACUCAGGCUG
+AC073413.6/132554-132462                 .AUUCAGCCCUGCCACUGGCUUAUGUCAUGACCUUGGGCUACUCAGGCUG
+ABGA01388661.1/10721-10628               AAUUCAGCCCUGCCACUGGCUUAUGUCAUGACCUUGGGCUACUCAGGCUG
+#=GC SS_cons                             ......<<<<<<<<<<<<<<<<<<<<<<.<<<<<<<<<...>>>>>>..>
+
+AADB02007055.1/191943-191850             UCUGCACAAUGAGCCAGUUGGACAGGAGCAGUGCCACUCAACUC
+AC073413.6/132554-132462                 UCUGCACAAUGAGCCAGUUGGACAGGAGCAGUGCCACUCAACUC
+ABGA01388661.1/10721-10628               UCUGCACAAUGGGCCAGUUGGACAGGAGCAGUGCCACUCAACUC
+#=GC SS_cons                             >>>>.>>.>>>>>>>>>.>>>.>>>>.>>...............
+//

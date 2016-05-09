@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01212
+#=GF ID   sn2524
+#=GF DE   Small nucleolar RNA sn2524
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   23.00
+#=GF TC   25.67
+#=GF NC   19.83
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Caenorhabditis_elegans300032
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   2
+
+CAAC02000445.1/763027-763135             UCUUGAGAAGACUCACGUAAAACUGGAAUCCAGAAUUUUGUCUUUUUGAU
+AF039050.2/14749-14854                   UAUUGAGAGAACAUACGUAAAACUAGAGUC...AAUGCCUUCUUUCUUGU
+#=GC SS_cons                             <<<...............................................
+#=GC RF                                  UauUGAGAaaACauACGUAAAACUaGAaUCcAGAAUguugUCUUUuUgaU
+
+CAAC02000445.1/763027-763135             CUUUGUUGAUUUUUACAAGGAACGCAUCCACAAAGUCGUCGCCUUCUUCG
+AF039050.2/14749-14854                   CCUUCUCCAUUUUUACAAUAAAUGCGUCUACAAAAUCGUCGCCUUCUUCA
+#=GC SS_cons                             ..................................................
+#=GC RF                                  CuUUgUugAUUUUUACAAgaAAuGCaUCuACAAAaUCGUCGCCUUCUUCa
+
+CAAC02000445.1/763027-763135             UUAACCACA
+AF039050.2/14749-14854                   CUGAGAGUA
+#=GC SS_cons                             ......>>>
+#=GC RF                                  uUaAgaauA
+//

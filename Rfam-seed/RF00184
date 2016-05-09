@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00184
+#=GF ID   PVX_3
+#=GF DE   Potato virus X cis-acting regulatory element
+#=GF PI   PVX_cis-reg
+#=GF AU   Moxon SJ
+#=GF SE   PMID:12581634
+#=GF SS   Published; PMID:12581634
+#=GF GA   20.00
+#=GF TC   26.00
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000205 SO:three_prime_UTR
+#=GF RN   [1]
+#=GF RM   12581634
+#=GF RT   Cis-acting regulatory elements in the potato virus X 3'
+#=GF RT   non-translated region differentially affect minus-strand and
+#=GF RT   plus-strand RNA accumulation.
+#=GF RA   Pillai-Nair N, Kim KH, Hemenway C;
+#=GF RL   J Mol Biol 2003;326:701-720.
+#=GF CC   This family represents a cis-acting regulatory element which is found in
+#=GF CC   the 3' UTR of the Potato virus X genome. This element has been found to be
+#=GF CC   required for minus strand RNA accumulation and is therefore essential for
+#=GF CC   efficient viral replication [1].
+#=GF WK   http://en.wikipedia.org/wiki/Potato_virus_X_cis-acting_regulatory_element
+#=GF SQ   4
+
+AF111193.1/6358-6411             CCAUAAUUACGUCUACAUAACCGACGCCUACCCCAGUUUCAUAGUAUUUU
+AF272736.2/6358-6411             CCAUAACUACGUCUACAUAACCGACGCCUACCCCAGUUUCAUAGUAUUUU
+AY512654.1/990-1043              CCAUAACUACGUCCACAUAACCGACGCCUACCCCAGUUUCAUAGUAUUUU
+X72214.1/6355-6408               CCAUAACUACGUCCACAUAACCGACGCGUAUCCCAGUUUCAUAGUAUUUU
+#=GC SS_cons                     .........<<<<.........>>>>......<<<<..............
+#=GC RF                          CCAUAAcUACGuCuACAUAACCGaCGCcUAuCCCaGUUUCAUAGUAUUUU
+
+AF111193.1/6358-6411             CUGG
+AF272736.2/6358-6411             CUGG
+AY512654.1/990-1043              CUGG
+X72214.1/6355-6408               CUGG
+#=GC SS_cons                     >>>>
+#=GC RF                          CuGG
+//

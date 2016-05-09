@@ -1,0 +1,33 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01829
+#=GF ID   sR6
+#=GF DE   sR6 snoRNA
+#=GF AU   Moore B
+#=GF SE   Published; PMID:10775111
+#=GF SS   Predicted; Mfold; Moore B
+#=GF GA   70.00
+#=GF TC   71.65
+#=GF NC   31.85
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000275 SO:snoRNA
+#=GF RN   [1]
+#=GF RM   10775111
+#=GF RT   Homologs of small nucleolar RNAs in Archaea.
+#=GF RA   Omer AD, Lowe TM, Russell AG, Ebhardt H, Eddy SR, Dennis PP;
+#=GF RL   Science. 2000;288:517-522.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA
+#=GF SQ   2
+
+AF195100.1/1-53                      GGAUGAUGACCAAAUAGACUGAAAGAUGAAGAAAUGCACCUCAACUGACU
+CP000077.1/368187-368239             GGAUGAUGACCAAAUAGACUGAAAGAUGAAGAAAUGCACCUCAACUGACU
+#=GC SS_cons                         <<.......>>............<<.<<<.<........>>>>.>>....
+#=GC RF                              GGAUGAUGACCAAAUAGACUGAAaGAuGaAGAAAUGCACCuCaACuGACU
+
+AF195100.1/1-53                      AAA
+CP000077.1/368187-368239             AAA
+#=GC SS_cons                         ...
+#=GC RF                              AAA
+//

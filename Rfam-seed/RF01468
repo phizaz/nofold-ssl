@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01468
+#=GF ID   rli32
+#=GF DE   Listeria sRNA rli32
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted;RNAalifold
+#=GF GA   100.00
+#=GF TC   145.60
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   5
+
+CP001175.1/2047013-2047158             GUGGAGAGCUUUUAUUUU.UCCCAAAAGAAAGC.AGGUAAUGUUAGAGCA
+AADQ01000001.1/12801-12947             GUGGAGAGCUUUCAUUUU.UCCCAAGAGAAAGC.AAAUAAUGUUAGAGCA
+AL591975.1/240750-240604               GUGGAGAGCUUUCAUUUU.UCCCAAGAGAAAGC.AAAUAAUGUUAGAGCA
+AM263198.1/563016-562871               GAGGAGAGCUUUUAUUU...CCCAAAAGAAAGCAAAAUAAUGUUAAAGCA
+AL596165.1/143786-143638               GUGGAGGGCUUUUAUUUUUUCCCAAAAGAAAGC.AAGUAAUGUUAGAGCA
+#=GC SS_cons                           ..<<<<<<<<<<<.<<<......>>>.>>>>>>..<<<<<<<<<<<<<<.
+#=GC RF                                GaGGaGaGCuuucAuuuu.ucccaaaAgaaaGC.AaauaauguuagaGCA
+
+CP001175.1/2047013-2047158             AUAAUUCA.GUAUCCGAAUUAGUCUUAUCCCUUGGC.UCGCUUUAACAUU
+AADQ01000001.1/12801-12947             AUAAUUCUAGUAUCCGAAUUAGUCUUAUCCCUUGGC.UCGCUUUAAUAUU
+AL591975.1/240750-240604               AUAAUUCCAGUAUCCGAAUUAGUCUUAUCCCUUGGC.UCGCUUUAAUAUU
+AM263198.1/563016-562871               UUCAUUCU.GUAUCCGAAUUCGUCUUAUCCCUUGACGUUGCUUUAACAUU
+AL596165.1/143786-143638               AUAAUUCUAGUAUCCGAAUUAGUCUUAUCCCUUGGC.UCGCUCUAACGUU
+#=GC SS_cons                           .<<<<<<........>>>>>><<<.........>>>...>>>>>>>>>>>
+#=GC RF                                auaauuCuAGuAuccGaauuaGcCuuAucccuuGgC.uuGCucuaacauu
+
+CP001175.1/2047013-2047158             AUUACUCCCUAAUACUCCC.UUAACCGCAUCCCCCUGGUGCGGUUAUUUU
+AADQ01000001.1/12801-12947             AUUUCUCCCUAAUACUCCC.UUAACCGCAUCCCCCUGGUGCGGUUAUUUU
+AL591975.1/240750-240604               AUUUCUCCCUAAUACUCCC.UUAACCGCAUCCCCCUGGUGCGGUUAUUUU
+AM263198.1/563016-562871               AU.UCUCCCUAAUACUCCCUUUAACCGCAUCCCCCUGGUGCGGUUAUAUU
+AL596165.1/143786-143638               AUUACUCCCUAAUACUCCCUUUAACCGCAUCCCCCUGGUGCGGUUAUUUU
+#=GC SS_cons                           >>>>>>>>.............<<<<<<<<<<.....>>>>>>>>>>....
+#=GC RF                                auuuCuCCcuAAuAcucccuuuaaCCGCauCccccuGguGCGGuuauauu
+
+CP001175.1/2047013-2047158             U
+AADQ01000001.1/12801-12947             U
+AL591975.1/240750-240604               U
+AM263198.1/563016-562871               U
+AL596165.1/143786-143638               U
+#=GC SS_cons                           .
+#=GC RF                                u
+//

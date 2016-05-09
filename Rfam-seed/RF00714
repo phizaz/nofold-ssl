@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00714
+#=GF ID   MIR535
+#=GF DE   microRNA MIR535
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   56.00
+#=GF TC   61.45
+#=GF NC   34.59
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000136
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+AAAA02031907.1/20463-20366             ........GGUGACAACGAGAGAGAGCACGCCGGUGCGGCGGUCACGGUG
+CAAP02015851.1/103-203                 UAUAAUUGCUUGACAACGAGAGAGAGCAUGCUUGUCAGCAU.UCAUGUGA
+AM489362.2/576-677                     UGCAAUUGCUUGACAAAGAGAGAGAGCACACUUGUUAGCAU.UCAUGUGA
+AASG02028037.1/959-869                 CAUCAUUUGUUGACAACGAGAGAGAGCACGCUUGUUAGCCU.UCAUGUAA
+AASG02007689.1/8432-8332               CUUAGUUGGUUGACGACGAGAGAGAGCACGUUUGUCAGCAG.UCAUGCAA
+#=GC SS_cons                           ..........<<<<<<<<.<<<<<<<<<<<<..<<.......<<<<<...
+#=GC RF                                agaAauuagguGACaaCGAGAGAGaGCACGCugGaauGcau.uCauGcaa
+
+AAAA02031907.1/20463-20366             AGCCGGCCCGCGGCGGCGUACCUGCGUGCUUUCUCCCGUUGUCACUGCCA
+CAAP02015851.1/103-203                 GGA....ACAUGACUGUUUACAGGCGUGCUCUCUAUCGCUAUCAUGCAAU
+AM489362.2/576-677                     GGUA...ACAUGACUGUGUACAGGUGUGCUUUCUCUCGCUGUCAUACAAU
+AASG02028037.1/959-869                 GGA....ACAUGGUUGCACACCAGCGUGCUCCCUAUCGUUGUCAAU....
+AASG02007689.1/8432-8332               UGG....ACAUGUCUGUCUACAUGCGUGCUCUCUUUUGCCGUCAUACAAU
+#=GC SS_cons                           ........>>>>>......>>..>>>>>>>>>>>>.>>>>>>>>......
+#=GC RF                                agA....gCauGgauGuGUuCaaGCGUGCuCUCUCcCGuuGUCacaaAAu
+
+AAAA02031907.1/20463-20366             UACACA
+CAAP02015851.1/103-203                 CUUCAC
+AM489362.2/576-677                     CUUCUC
+AASG02028037.1/959-869                 ......
+AASG02007689.1/8432-8332               UUUCUC
+#=GC SS_cons                           ......
+#=GC RF                                auuauc
+//

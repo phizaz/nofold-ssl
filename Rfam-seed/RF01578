@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01578
+#=GF ID   RUF1
+#=GF DE   Plasmodium RNA of unkown function RUF1
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; Clustal_alifold;
+#=GF GA   23.00
+#=GF TC   23.66
+#=GF NC   10.93
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17901154
+#=GF RT   Structural RNAs of known and unknown function identified in malaria
+#=GF RT   parasites by comparative genomics and RNA analysis.
+#=GF RA   Chakrabarti K, Pearson M, Grate L, Sterne-Weiler T, Deans J, Donohue
+#=GF RA   JP, Ares M Jr;
+#=GF RL   RNA. 2007;13:1923-1939.
+#=GF WK   http://en.wikipedia.org/wiki/Plasmodium_RUF1_RNA
+#=GF SQ   3
+
+AASM01000666.1/1920-1657               UGCUUAAAUUACACUCCACGAUUUAAUUUUUUUUUCUGAAUAUUUUAUCG
+ABHA01002293.1/730-967                 UGGUUAAAUUACACUCAACGAUUUAAUUUUUUUUUUUGAAUAUUUUAUCG
+AANS01001205.1/23509-23246             UGGUUAAAUUACACUCAACGAUUUAAUUUUUUUUUUUGAAUAUUUUAUCG
+#=GC SS_cons                           .<<<<<<<........<<<<<<..<<<.<<<......>>>.>>>..>>>>
+#=GC RF                                UGGuuaaaUUAcAcUcaaCGauUUaauUuuuUUUUuUgaaUauuUUauCG
+
+AASM01000666.1/1920-1657               UUAUUUAUUUUUUAACCUAAAUUAAGUUAUCAUUCAAUUUUUUAUUUUCC
+ABHA01002293.1/730-967                 UUAUUUAUUUUUUAACCUAAAUUAAGUUAUCAUUCAAUUUUUUAUUUUCC
+AANS01001205.1/23509-23246             UUAUUUAUUUUUUAACCUAAAUUAAGUUAUCAUUCAAUUUUUUAUUUUCC
+#=GC SS_cons                           >>........>>>>>>>...............<<<<..<<<<<<<<<...
+#=GC RF                                uuAUUUAUUUuuuaaCCUAAAUUAAGUUAUcAuuCaAUuuuuuauuuUcc
+
+AASM01000666.1/1920-1657               AAAAAUAAAAAUUGUAUUGAUAUUUCUCUUCAUAUUCCCGGUAUUUUCAA
+ABHA01002293.1/730-967                 AAAAAUAAAAAUUGUAUUGAUAUUUCUCUUCAUAUUCCCGGUAUUUUCAA
+AANS01001205.1/23509-23246             AAAAAUAAAAAUUGUAUUGAUAUUUCUCUUCAUAUUCCCGGUAUUUUCAA
+#=GC SS_cons                           ..>>>>>>>>><<<<<<<.....<<<<<<<<........<<<<...<<<<
+#=GC RF                                AAaaauaaaaauuguauuGAUAUuuCuCuuCAUAUUcccGGuaUUUuCaa
+
+AASM01000666.1/1920-1657               CGCCCAUAAUAGGGCAGCUUCUUGUUAAGUAGUGUUGAUUUUGCCGUAAC
+ABHA01002293.1/730-967                 CGCCCAUAAUAGGGCAGCUUCUUGUUAAGUAGUGUUGAUUUUGCCGUAAC
+AANS01001205.1/23509-23246             CGCCCAUAAUAGGGCAGCUUCUUGUUAAGUAGUGUUGAUUUUGCCGUAAC
+#=GC SS_cons                           <<<<<......>>>>.<<<.<<.....>>.>>>>>>>>...>>>><<...
+#=GC RF                                CGCCCAUAAUAGGGCAgCuUCuUGUUAaGUaGuGuuGaUUUugCCGuAAc
+
+AASM01000666.1/1920-1657               AAAACGGAGAGGA.ACAAAUAUAAAUGAAAUAAAAAAUAUGUAAAAAUAA
+ABHA01002293.1/730-967                 AAAACGGCGAGGAGACAAAUAUAAAUGAAAUAAAAAAU............
+AANS01001205.1/23509-23246             AAAACGGAGAGGA.ACAAAUAUAAAUGAAAUAAAAAAUAUGUAAAAAUAA
+#=GC SS_cons                           ...>>>>>>>>>>....>>>>>>>.>>>>.....................
+#=GC RF                                AAAaCGgaGaGga.AcAaauauaaAuGaaAUAAAAAAUAuguAAAAAuAA
+
+AASM01000666.1/1920-1657               AUGAAUAUUAUAUGG
+ABHA01002293.1/730-967                 ...............
+AANS01001205.1/23509-23246             AUGAAUAUUAUAUGG
+#=GC SS_cons                           ...............
+#=GC RF                                AugAAuAuuAuAugg
+//

@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01475
+#=GF ID   rli45
+#=GF DE   Listeria snRNA rli45
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted;RNAalifold
+#=GF GA   60.00
+#=GF TC   88.75
+#=GF NC   undefined
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   6
+
+AL591982.1/53775-53852                   UUACCAUUUGUGCUAGUUUUUACUUAUAUAGCUAUGCUUUAGCGCGCGAC
+AL596171.1/97397-97474                   UUAGUAUUUGCGCAAGUUUUUACUUAUAUAGCUAUGCGCUAUCUCGUGAU
+AARL02000916.1/597-673                   UUACUAUUUGCGCAAGUUUUUACUUAUAUAGUUAUGCUUUAGC.UGUGGU
+AM263198.1/2127523-2127600               UUACUAUUUGCGCAAGUUUUUAUUUAUAUAGCUAUGCGCUAGCUCGUGAU
+AADR01000003.1/142171-142094             UUACUAUUUGCGCAAGUUUUUACUUGUAUAGUUAUGCUUUAGCUCGUGAC
+AADQ01000011.1/3685-3762                 UUACCAUUUGUGCUAGUUUUUACUUAUAUAGCUAUGCUUUAGCGCGCGAC
+#=GC SS_cons                             .......<<<<<<<<<<....>>>>.....<<<<.....>>>>..>>>.>
+#=GC RF                                  UUAcuAUuugCgCaaGuUUUUaCuuAUAUAGcuaUGCuuuagCucGcGAc
+
+AL591982.1/53775-53852                   AAUUCAAGUAUGAACGACACAGCAACAA
+AL596171.1/97397-97474                   AAUUCAAGUAUGAAUGAUAAACCGACUG
+AARL02000916.1/597-673                   AAUUCCAGCAUGAAUGACACUGCAACAA
+AM263198.1/2127523-2127600               AAUUCAAGUAUGAAUGAUGAACCAACGA
+AADR01000003.1/142171-142094             AAUUCCAGUAUGAAUGACACUGCAACAA
+AADQ01000011.1/3685-3762                 AAUUCAAGUAUGAACGACACAGCAACAA
+#=GC SS_cons                             >>..........................
+#=GC RF                                  aaUUCAAGuAUGAAuGAuAaAgCAACaA
+//

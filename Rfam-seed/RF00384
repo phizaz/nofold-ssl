@@ -1,0 +1,52 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00384
+#=GF ID   Pox_AX_element
+#=GF DE   Poxvirus AX element late mRNA cis-regulatory element
+#=GF AU   Moxon SJ
+#=GF SE   PMID:10049834
+#=GF SS   Published; PMID:10049834
+#=GF GA   23.00
+#=GF TC   78.57
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   10049834
+#=GF RT   A 43-nucleotide RNA cis-acting element governs the site-specific
+#=GF RT   formation of the 3' end of a poxvirus late mRNA.
+#=GF RA   Howard ST, Ray CA, Patel DD, Antczak JB, Pickup DJ;
+#=GF RL   Virology 1999;255:190-204.
+#=GF CC   This family represents a cis-regulatory element present at the 3' ends of
+#=GF CC   poxvirus late mRNAs and is known as the AX element.The AX element is
+#=GF CC   involved in directing the efficient production and orientation-dependent
+#=GF CC   formation of of late RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Poxvirus_AX_element_late_mRNA_cis-regulatory_element
+#=GF SQ   10
+
+AY243312.1/134177-134116             GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUCAUCGGACAAUUUC
+AY009089.1/135275-135214             GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUCCUCGGACAAUUUC
+AF012825.2/142988-142927             GAAUCUUUUCACAAAAGACUUUAUCCGACAAUUCAUCAUCUGUCAAUUGU
+Y16780.1/125961-125900               GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUUCUCGGUCAAUUUC
+DQ066533.1/2983-2922                 GAAUCUUUUCACAAAAGAUUUUAUCCGACAAUUCUUCAUCGGACAAUUUC
+AF482758.2/151000-150939             GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUCAUCAGACAAUUUC
+DQ439815.1/139301-139240             GAAUCUUUUCACAAAAGAUUUUAUCCGACAAUUCUUCAUCGGACAAUUUC
+AF380138.1/134189-134128             GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUCCUCGGACAAUUUC
+DQ441437.1/126423-126362             GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUUCUCGGUCAAUUUU
+L22579.1/125586-125525               GAAUCUUUUCACAAAAGAUUUUAUCCGAUAAUUCUUUCUCGGUCAAUUUC
+#=GC SS_cons                         .<<<<<<<<...>>>>>>>><<<<<<<<.<<<<<<.....>>..>>>>>>
+
+AY243312.1/134177-134116             GGAUUUGAAUGC
+AY009089.1/135275-135214             GGAUUUGAAUGC
+AF012825.2/142988-142927             GGAUUUGAAUGC
+Y16780.1/125961-125900               GGAUUUGAAUGC
+DQ066533.1/2983-2922                 GGAUUUGAAUGC
+AF482758.2/151000-150939             GGAUUUGAAUGC
+DQ439815.1/139301-139240             GAAUUUAAAUGC
+AF380138.1/134189-134128             GGAUUUGAAUAC
+DQ441437.1/126423-126362             GGAUUUGAAUGC
+L22579.1/125586-125525               GGAUUUAAAUGC
+#=GC SS_cons                         >>>>..>>....
+//

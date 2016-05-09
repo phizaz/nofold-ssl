@@ -1,0 +1,64 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00142
+#=GF ID   snoZ118
+#=GF DE   Small nucleolar RNA Z118/Z121/Z120
+#=GF AU   Moxon SJ
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   28.30
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   This family consists of several snoRNA Z118, Z121 and Z120 sequences which
+#=GF CC   are members of the C/D class of snoRNA which contain the C (UGAUGA) and D
+#=GF CC   (CUGA) box motifs. This family seems to be found exclusively in
+#=GF CC   rice. C/D box small nucleolar RNAs are known to act as a methylation guides
+#=GF CC   for 18S ribosomal RNA in plants [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z118/Z121/Z120
+#=GF SQ   7
+
+AJ490480.1/1-92              ...UUGCUGUGAUGACAUCUAAUAGGACGGUAUCUGAGCGACGGA..UCU
+AJ490486.1/1-108             UGUUUGCUGUGAUGAUUCCUACAUGGACGGUAUCUUAGUAAGGAACCACU
+AJ490485.1/1-108             UGUUUGCUGUGAUGAUUCCUACAUGGACGGUAUCUGAGUGAGGAACUACU
+AJ490481.1/1-105             UGUUUGCCUUGAUGAUUCCUACAAGGACGGUAUCUGAGUAAGGU...UCU
+AJ490484.1/1-108             UGUUUGCCAUGAUGAUUCCUACAAGGACGGUAUCUGAGUGAGGAACCUCU
+AJ490483.1/1-108             UGUUUGCUGUGAUGACAUCUACAAGGACGGUAUCUGAGUAAGGUGGCUCU
+AJ490482.1/2-99              UAAUUGCUGUGAUGACAUCUACAAGGACGGUAUCUGAGCGAUGGA..UCU
+#=GC SS_cons                 <<<<<<<..............................<<<<<<.......
+
+AJ490480.1/1-92              ..........AUCCUCGCGUGAUUAUA.CCUAAACUGAGACUAAAAAUGU
+AJ490486.1/1-108             UGAAAAGGUGGUCCUCACGUGAUUACAUCCAAAACUGAUC..AGAGAU.U
+AJ490485.1/1-108             UGAAAGAGUAUUCCUCACAUGAUUACAUCCAAAACUGAUC..AAAGAU.U
+AJ490481.1/1-105             UGAAAGAGUACUCCUUAUGUGAUUACAUCCAAAACUGAUC..AGAGAU.U
+AJ490484.1/1-108             UGAAAGAGAGCUCCUCACAUGAUUAUAUCCAAAACUGAUC..AGAGAU.U
+AJ490483.1/1-108             UGAAAGAGUACUCCUUGCGUGAUUACAUCCAAAACUGAUC..AGAGAU.U
+AJ490482.1/2-99              ..........AUCCUCACGUGAUUAUA.CCUAAACUGAGACUAAAAAUGU
+#=GC SS_cons                 ............>>>>>>................................
+
+AJ490480.1/1-92              CUGAGCAA...
+AJ490486.1/1-108             CUGAGCAAACA
+AJ490485.1/1-108             CUGAGCAAACG
+AJ490481.1/1-105             CUGAGUAAACA
+AJ490484.1/1-108             CUGAGCAAACA
+AJ490483.1/1-108             CUGAGCAAACA
+AJ490482.1/2-99              CUGAGCAAAAC
+#=GC SS_cons                 ....>>>>>>>
+//

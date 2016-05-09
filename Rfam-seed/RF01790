@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01790
+#=GF ID   htlv_FSE
+#=GF DE   ribosomal frameshift site
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:8416368
+#=GF SS   Published; PMID:8416368
+#=GF GA   48.00
+#=GF TC   48.82
+#=GF NC   23.48
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r200206
+#=GF RN   [1]
+#=GF RM   8416368
+#=GF RT   Characterization of ribosomal frameshifting for expression of pol
+#=GF RT   gene products of human T-cell leukemia virus type I.
+#=GF RA   Nam SH, Copeland TD, Hatanaka M, Oroszlan S;
+#=GF RL   J Virol. 1993;67:196-203.
+#=GF WK   http://en.wikipedia.org/wiki/Human_T-lymphotropic_virus
+#=GF SQ   8
+
+AF412314.1/2604-2646             GCCUCCAGGCCUUAAAUGACCUGGUCUCCAAGGCCCUGGAGGC
+DQ462191.1/2494-2536             GCCUCCAGGCCCUGACUGACCUGGUUUCCAGGGCCCUGGAGGC
+M10060.1/2600-2642               GCCUCCAGGCCUUAAAUGACCUGGUCUCCAAGGCCCUGGAGGC
+AF074966.1/2601-2643             GCCUCCAGGCCUUGCAACACUUGGUCCGGACGGCCCUGGAGGC
+AF033817.1/2252-2294             GCCUCCAGGCCUUGCAACACUUGGUCCGGAAGGCCCUGGAGGC
+EF076684.1/112-154               GCCUCCAGGCCUUGCAACACUUGGUCCGGAAGGCCCUGGAGGC
+L02534.1/2610-2652               GCCUCCAGGCCCUGCAACACCUGGUCCGGAAGGCCUUGGAGGC
+EF488483.1/2519-2561             GCCUCCAGGCCCUAAUAGACCUGGUCUCCAAGGCACUGGAGGC
+#=GC SS_cons                     <<<<<<<<<<<<<.<............>.>>>>.>>>>>>>>>
+#=GC RF                          GCCUCCAGGCCuUgcAagACuUGGUCuggAaGGCCCUGGAGGC
+//

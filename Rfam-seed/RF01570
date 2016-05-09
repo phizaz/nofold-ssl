@@ -1,0 +1,54 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01570
+#=GF ID   DdR20
+#=GF DE   D. discoideum snRNA DdR20
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:15333696
+#=GF GA   150.00
+#=GF TC   306.13
+#=GF NC   38.45
+#=GF TP   Gene; snRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   15333696
+#=GF RT   Novel non-coding RNAs in Dictyostelium discoideum and their
+#=GF RT   expression during development.
+#=GF RA   Aspegren A, Hinas A, Larsson P, Larsson A, Soderbom F;
+#=GF RL   Nucleic Acids Res. 2004;32:4646-4656.
+#=GF WK   http://en.wikipedia.org/wiki/SnRNA
+#=GF SQ   2
+
+AAFI02000003.1/1572065-1571783             AUGCAGGAUUUAGUUGCGAUUAUCUAUAACCUCUUGCUGAGGUGCGUUAG
+AJ699381.1/1-278                           AUGCAGGAUUGGGUAGCGGCAACCUGUAAUCA.....AGCGAUGCAUUCG
+#=GC SS_cons                               <<<<<.<<<<<<<<.......>>>>..>>>>...........>>>>><<<
+#=GC RF                                    auGcagGauugGGuAgcggcAaCCuguaauCA.....AgcgAugCauucG
+
+AAFI02000003.1/1572065-1571783             AGGAGAGGAUGAGAGCAUUGUUAAGACCAUUGGGGAAAACGACGCAUAGA
+AJ699381.1/1-278                           AGGCGAGGACGAGAGCAUUGUUAGGACCUUUGGGACAAGCGACGCAUACA
+#=GC SS_cons                               ...>>>...<<<<.<<<<<<<<<...<<<<<<<.....<<<<<...<<.<
+#=GC RF                                    AggCgaggAcGaGAgcauuGuuaggAccuuuGGgAcAAgcGacgcAuaca
+
+AAFI02000003.1/1572065-1571783             GUUGAUCCACACUUACGUUGGUGUCGACAUACCUUGAGUCCAUAAGGAUU
+AJ699381.1/1-278                           GUUGAUCCACACUAACGUUGGUGUCGACAUACUAUCAGUCUCUAAGGAUU
+#=GC SS_cons                               <<<<<<<<...<<<.<<<<<<<<<<<<<.<<<<.<<<<<<<....>>>>>
+#=GC RF                                    GucGauccAcAcuaAcgucGgugucgacAuacuAucagucccuAAggauu
+
+AAFI02000003.1/1572065-1571783             GAAAGUAAGUUGAUAAUGACCGAGUCAAGGUCCAGGCUGGCAACAGAGCA
+AJ699381.1/1-278                           GAAAGUAAGUUGAUAAUGACCAAGUCAAGGUCCAGGCUGGCAACAGAGCA
+#=GC SS_cons                               >>.>>>>.>>>>>>..<<.<<..<<<...<<<....<<<....>>>....
+#=GC RF                                    gaAaguaAguugauAAuGAccAAGucAAgGuccAggcuGgcAACagAgcA
+
+AAFI02000003.1/1572065-1571783             GACAGAGCGAGGCACAUCGAUGGGAAGCGAGGAAAGUCGACUUAAAGUUG
+AJ699381.1/1-278                           GACAGAGCGAGGCACAUCGAUGGGUAGCGAGGAAAGUCGACUUAAAGUCG
+#=GC SS_cons                               >>>.>>.>..>>>>.>>>>>>>..>>>...>>>...>>>>>>>>..>>>>
+#=GC RF                                    gaCAgagCgAggCacauCgauggguagcgAggaAAguCgaCuuaAAguCg
+
+AAFI02000003.1/1572065-1571783             UCCAAAGGAAAUAACAAUGUAAACUCAGACAAA
+AJ699381.1/1-278                           UCCAAAGGAAAUAACAAUGUAAACUCGAACAAA
+#=GC SS_cons                               >>>>>>>>...>>>>>>>>>...>>>>......
+#=GC RF                                    uCCaaaggAAAuaaCaauguAAACuCgAAcAAA
+//

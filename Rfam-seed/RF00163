@@ -1,0 +1,142 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00163
+#=GF ID   Hammerhead_1
+#=GF DE   Hammerhead ribozyme (type I)
+#=GF AU   Bateman A
+#=GF SE   Bateman A
+#=GF SS   Published; PMID:9632772
+#=GF GA   26.00
+#=GF TC   26.00
+#=GF NC   25.99
+#=GF TP   Gene; ribozyme;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  --fil-no-hmm  CM SEQDB
+#=GF DR   SO:0000380 SO:hammerhead_ribozyme
+#=GF RN   [1]
+#=GF RM   11024185
+#=GF RT   Hammerhead-mediated processing of satellite pDo500 family transcripts
+#=GF RT   from Dolichopoda cave crickets.
+#=GF RA   Rojas AA, Vazquez-Tello A, Ferbeyre G, Venanzetti F, Bachmann L,
+#=GF RA   Paquin B, Sbordoni V, Cedergren R;
+#=GF RL   Nucleic Acids Res 2000;28:4037-4043.
+#=GF RN   [2]
+#=GF RM   10899150
+#=GF RT   Distribution of hammerhead and hammerhead-like RNA motifs through the
+#=GF RT   GenBank.
+#=GF RA   Ferbeyre G, Bourdeau V, Pageau M, Miramontes P, Cedergren R;
+#=GF RL   Genome Res 2000;10:1011-1019.
+#=GF CC   The hammerhead ribozyme is one of the smallest catalytic
+#=GF CC   RNAs. These RNAs have an endonuclease function, and most
+#=GF CC   often are autocatalytic. Structurally it is composed of
+#=GF CC   three base paired helices, separated by short linkers of
+#=GF CC   conserved sequence. These helices are called I, II and III.
+#=GF CC   We have classified hammerhead ribozymes into three types
+#=GF CC   based on which helix the 5' and 3' ends of the sequence
+#=GF CC   join. This family are the type I hammerheads.
+#=GF CC   The conserved uridine-turn links helix I
+#=GF CC   to helix II and usually has the sequence CUGA.  Helix II and
+#=GF CC   III are linked by a sequence CGAAA.  The cleavage reaction
+#=GF CC   occurs between helix III and I, and is usually a C.
+#=GF CC   Hammerhead ribozymes are found in plant viroids and other
+#=GF CC   small replicating satellite RNA species.  Hammerhead
+#=GF CC   ribozymes have been found in animals as well as plants.
+#=GF WK   http://en.wikipedia.org/wiki/Hammerhead_ribozyme
+#=GF SQ   30
+
+X15620.1/19-62                       GGCUAGCAGUGGAAUCC.A...............................
+D87492.1/2147-2192                   CAAUUGCUGAGGAGUCCCAU..............................
+AF036749.1/121-167                   AUU.AACAGACGAGUCCCA...............................
+X15619.1/121-168                     AUCCAGCUGACGAGUCCCA...............................
+AF036395.1/119-163                   CCCUGGCUGACGAGUCCCA...............................
+AF036741.1/118-165                   AUCCAGCCGACGAGUCCCA...............................
+D87492.1/743-788                     GCACUGCUGAGGAGUCCCAC..............................
+AF036751.1/118-161                   AUCCAGCUGACGAGUCCCA...............................
+AF213692.1/353-397                   AUCCAGCCGAUGAGUUCCA...............................
+AF036746.1/113-157                   AUCCAGCUGACCAGUCGGA...............................
+AF213693.1/184-228                   AUCCAACCGAUGAGUCCCA...............................
+AF036755.1/118-162                   AUCCNGCUGACGNGUCCCA...............................
+AF036748.1/120-164                   AUCCAGCUGACGAGUCCUA...............................
+FN357486.1/345293-345249             AUCUAAAUGACGAGUCCUA...............................
+AF036393.1/119-166                   AUCCAGCUGACGAGUCCCA...............................
+AF036754.1/91-138                    AUCCAGUUGACGAGUCCCA...............................
+AF036398.1/58-102                    AUCUUUCUGACGAGUUUCA...............................
+X15621.1/101-144                     ACUCCG.UGACAAGUCUCG...............................
+D87493.1/3564-3609                   GCACUUCUGAAGAGUCCCAU..............................
+AF036752.1/118-162                   AUCCAGCUGACGAGUCCCA...............................
+M98271.1/8-53                        CGACUGCUGAGGAGUCCCAC..............................
+L07513.1/246-290                     AUCUAGCUGACGAGUCCCG...............................
+AF036390.1/118-165                   AUCCAACUGACGAGUGCCC...............................
+AF036400.1/123-167                   AUCCAGCUGACGAGUGCCA...............................
+AF404052.1/70-187                    CUUUCCCUGAAGUGACGAAGUGAUCAAGAGAUUGAAGACGAGUGAACUAA
+AF404073.1/70-162                    CUUUCCCUGAAGAGACGAAGUGAUCAAGAGAUUGAAGACGAGUGAACUAA
+AF404068.1/70-185                    CUUUCCAUGAAGAGACGAAGUGAUCAAGAGAUUGAAGACGAGUGAACUAA
+AF404040.1/70-186                    CUUUCCCUGAAGAGACGAAGUGAUCAAGAGAUUGAAGACGAGUGAACUAA
+X52041.1/178-64                      CUUUCCCUGAAGAGACGAAGUGAUCAAGAGAUUGAAGACGAGUGAACUAA
+AF404041.1/70-183                    CUUUCCCUGAAGAGACGAAGUGAUCAAGAGAUUGAAGACGAGUGAACUAA
+#=GC SS_cons                         <<<<<<.......<<<<.................................
+
+X15620.1/19-62                       .........................................AAUAGGACG
+D87492.1/2147-2192                   .........................................AAUAGGACG
+AF036749.1/121-167                   .........................................AAUAGGACG
+X15619.1/121-168                     .........................................AAUAGGACG
+AF036395.1/119-163                   .........................................AACAGGACG
+AF036741.1/118-165                   .........................................AAUAAAACG
+D87492.1/743-788                     .........................................AAUAGGACG
+AF036751.1/118-161                   .........................................AAUAGGACG
+AF213692.1/353-397                   .........................................AACAGGACU
+AF036746.1/113-157                   .........................................AAUAGGACG
+AF213693.1/184-228                   .........................................AAUAGAACG
+AF036755.1/118-162                   .........................................AAUAGGACG
+AF036748.1/120-164                   .........................................AAUAGGGUG
+FN357486.1/345293-345249             .........................................AAUGGAACU
+AF036393.1/119-166                   .........................................AACAGGACG
+AF036754.1/91-138                    .........................................AAUUGGACG
+AF036398.1/58-102                    .........................................AAUAGGACG
+X15621.1/101-144                     .........................................AAUAGGACG
+D87493.1/3564-3609                   .........................................GCUAGGACG
+AF036752.1/118-162                   .........................................AAUAGGACU
+M98271.1/8-53                        .........................................AAUAGGGCG
+L07513.1/246-290                     .........................................AAUAGGAGG
+AF036390.1/118-165                   .........................................AAUAGGAGG
+AF036400.1/123-167                   .........................................AAUAGGACG
+AF404052.1/70-187                    UUUUUUUUUAAUAAAAAGUUCACCACGACUCCUCCUUCUCUCACAAGUCG
+AF404073.1/70-162                    CGACUCCUCCUUCUCU.........................CACAAGUCG
+AF404068.1/70-185                    UUUUUUUUAAUAAAAGUUCACCACGACUCCUCCUUCUCU..CACAAGUCG
+AF404040.1/70-186                    UUUUUUUUUAAUAAAAGUUCACCACGACUCCUCCUUCUCU.CACAAGUCG
+X52041.1/178-64                      UUUUUUUAAUAAAAGUUCACCACGACUCCUCCUUCUCU...CACAAGUCG
+AF404041.1/70-183                    UUUUUUUAUAAAAGUUCACCACGACUCCUCCUUCUCU....CACAAGUCG
+#=GC SS_cons                         .............................................>>>>.
+
+X15620.1/19-62                       AA...ACGC.GCGUC...CUGGAU
+D87492.1/2147-2192                   AA...ACGG.CCGUC...CAGUGC
+AF036749.1/121-167                   AAGUGACGC.GCGUC...CUGGAU
+X15619.1/121-168                     AA...ACGC.UCGUCAAAAUGCAU
+AF036395.1/119-163                   AA...ACGC.GCGUC...CUGGAU
+AF036741.1/118-165                   AA...ACGC.GCGUCAAAGUGGAU
+D87492.1/743-788                     AA...ACGA.CCGUC...CAGUAC
+AF036751.1/118-161                   A....ACGC.ACUUC...CUAGAU
+AF213692.1/353-397                   AA...ACGC.GCUUC...UUGGAU
+AF036746.1/113-157                   AA...ACGC.GCGUC...CUGGAU
+AF213693.1/184-228                   AA...ACCU.GCGUC...CUGGAU
+AF036755.1/118-162                   GA...AGGC.GCGUC...CCGGAU
+AF036748.1/120-164                   AA...ACGC.GCGUC...CUGGAU
+FN357486.1/345293-345249             AA...ACAC.AUGUG...UUUGAU
+AF036393.1/119-166                   AA...ACGA.GAGUCAAACUGCAU
+AF036754.1/91-138                    AA...ACGC.GCGUCAAACUGGAU
+AF036398.1/58-102                    AA...ACGC.GUGUC...AUGGAU
+X15621.1/101-144                     AA...AUGU.GCGUC...CUAGAU
+D87493.1/3564-3609                   AA...ACAG.CCUUC...CAGUAC
+AF036752.1/118-162                   UG...ACGC.GCGUC...CUGGAU
+M98271.1/8-53                        AU...ACGG.ACGUC...CAGUGC
+L07513.1/246-290                     AA...GUGC.UCGUU...CAAUAU
+AF036390.1/118-165                   AA...ACGC.GCGUCAAACUGCAU
+AF036400.1/123-167                   AA...AUGU.GCAUC...CUGGAU
+AF404052.1/70-187                    AA...ACUCAGAGUC...GGAAAG
+AF404073.1/70-162                    AA...ACUCAGAGUC...GGAAAG
+AF404068.1/70-185                    AA...ACUCAGAGUC...GGAAAG
+AF404040.1/70-186                    AA...ACUCAGAGUC...GGAAAG
+X52041.1/178-64                      AA...ACUCAGAGUC...GGAAAG
+AF404041.1/70-183                    AA...ACUCAGAGUC...GGAAAG
+#=GC SS_cons                         .....<<<<.>>>>....>>>>>>
+//

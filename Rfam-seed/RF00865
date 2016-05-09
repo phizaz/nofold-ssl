@@ -1,0 +1,57 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00865
+#=GF ID   MIR169_5
+#=GF DE   microRNA MIR169_5
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   24.00
+#=GF TC   24.79
+#=GF NC   19.49
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000323
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   6
+
+AY551246.1/188-45                      AGGAUGAGAGCCGCUCAGGCUAGCC.AAGGAG..ACUGCCUGUGAGAUCA
+AAAA02026104.1/123-1                   ..AAUAAGAACCACUCAGGCUAGCC.AAGGAG..ACUGCCCAUG.AACCA
+AACV01018924.1/19093-19233             GUGACAAGAAUCACUCAGGCUAGCC.AAGGAG..ACUGCCCAUGAAACCU
+AM447150.1/70671-70532                 GAGAUAAGAGCCGGUCAGUUUAGCCGAAGGAAUGACUGCCUAAA.GACCA
+AASG02003632.1/6210-6338               AAGAGAAGAGUCUGCCAGACUAGCC.AAGGAG..ACUGCCCG...AAGC.
+AARH01003347.1/61012-61135             UCGAGAAGAGUCUGUCAGCAUAGCC.AAGGAG..ACUUCCCAUA..ACCA
+#=GC SS_cons                           <.<<<<<<<<<<..<..<.....<..<.<<.<....<<<<<<<<......
+#=GC RF                                gagaaAaGaGuCaucCAGgcUAgCC.AAGGag..ACUGCCcaug.AAcCA
+
+AY551246.1/188-45                      CAUAUGCAGAAAGCAGCUAGAAAUGC.......AUCUU..CUUCUACUGC
+AAAA02026104.1/123-1                   ............GCUUAAAGGAUCAUU......AAAUUG.CUAAUCCUUC
+AACV01018924.1/19093-19233             ............GCUGAAAGGAUCAUUUUCUGAAUAAUAAUUAAUGAUCC
+AM447150.1/70671-70532                 CGGAAUC.....GCUUUGUGGAUAAUU......ACAUU..CAGUGUUUUG
+AASG02003632.1/6210-6338               ............AGAAAAAGGGUCUC.......AAAAA..CUGAAGCCAC
+AARH01003347.1/61012-61135             ............AUUAAGAAGUUGCU.......A.AUU..CUAACCACUU
+#=GC SS_cons                           ..................................................
+#=GC RF                                ............acuaAAAGGaUcAu.......AaAuU..CuaAucauuu
+
+AY551246.1/188-45                      ACAUGAGCAGAGACACAGGCAAGUCAUCCUUGGCUACCAGA...UGCGA.
+AAAA02026104.1/123-1                   ....AGGGAGGA.CACAGGCAAGUCAUCCUUGGCUAUCAGA....GAUAA
+AACV01018924.1/19093-19233             UUACACACAAGGACACAGGCAAGUCAUCCUUGGCUACCAGA....GCUAA
+AM447150.1/70671-70532                 AAACCUGGUGGA.UUUAGGCAAGUCAUCCUUGGCUACCAGA....CGAG.
+AASG02003632.1/6210-6338               UUAGAUGCAUCG.GGCGGGCAAGUCAUCCUUGGCUACCAGACAACGCC..
+AARH01003347.1/61012-61135             G...UCUCAUAG.UGUGGGCAAGUCGUCCUUGGCUACCGAA....CAUC.
+#=GC SS_cons                           .............>>>>>>>>..>..>>.>.>....>..>.....>....
+#=GC RF                                auAaAugaAgga.caugGGCAAGucAUCCUUGgCUACCAga....Gaua.
+
+AY551246.1/188-45                      GCUCUCAUCG
+AAAA02026104.1/123-1                   GUCCUUA...
+AACV01018924.1/19093-19233             ACCCUUGUCU
+AM447150.1/70671-70532                 ACUCUUUAUC
+AASG02003632.1/6210-6338               ACUCUUUUCU
+AARH01003347.1/61012-61135             ACUCUUAUCU
+#=GC SS_cons                           >>>>>>>>>>
+#=GC RF                                aCuCuUuucc
+//

@@ -1,0 +1,33 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01834
+#=GF ID   fiv_FSE
+#=GF DE   ribosomal frameshift site
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:1310175
+#=GF SS   Published; PMID:1310175
+#=GF GA   38.00
+#=GF TC   38.40
+#=GF NC   22.84
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r200015
+#=GF RN   [1]
+#=GF RM   1310175
+#=GF RT   Identification and analysis of the gag-pol ribosomal frameshift site
+#=GF RT   of feline immunodeficiency virus.
+#=GF RA   Morikawa S, Bishop DH;
+#=GF RL   Virology. 1992;186:389-397.
+#=GF WK   http://en.wikipedia.org/wiki/Feline_immunodeficiency_virus
+#=GF SQ   5
+
+AF361320.1/1266-1300             GGGGCUAGCUGCAGCCCCAGUGAACCAAGUGCAGC
+X57002.1/1898-1932               GGGGCGAGCUGCAGCCCCAGUGAAUCAAGUGCAGC
+AY600517.1/1898-1932             GGGGCGAGCUGCAGCCCCGGUAAAUCAAGUGCAGC
+AJ304979.1/25-59                 GGGGCGAGCUGCAGCCCCAGUAAACCAAGUGCAGC
+M25381.1/1893-1927               GGGGCGAGCUGCAGCCCCAGUGAAUCAAAUGCAGC
+#=GC SS_cons                     <<<<<..AAAAAA>>>>>...........aaaaaa
+#=GC RF                          GGGGCGAGCUGCAGCCCCAGUGAAUCAAAUGCAGC
+//

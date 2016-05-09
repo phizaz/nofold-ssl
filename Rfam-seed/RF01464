@@ -1,0 +1,59 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01464
+#=GF ID   rliA
+#=GF DE   Listeria sRNA rliA
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold
+#=GF GA   180.00
+#=GF TC   182.56
+#=GF NC   140.24
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17259222
+#=GF RT   Identification of new noncoding RNAs in Listeria monocytogenes and
+#=GF RT   prediction of mRNA targets.
+#=GF RA   Mandin P, Repoila F, Vergassola M, Geissmann T, Cossart P;
+#=GF RL   Nucleic Acids Res. 2007;35:962-974.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   4
+
+AARJ02000001.1/725829-725606             ACGUGU.AUAAAAAUACGGUUUAUACACGUGGGAUUAUGGUUCUAUAUGA
+AL591975.1/153584-153807                 ACGUGU.AUAAAAAUACGGUUUAUACACGUGGGAUUAUGGUUCUAUAUGA
+AARM02000265.1/981-758                   AUAUGU.AUAAAAAUGCAUUUUAUACACAUGGGAUUUUAGUUCUAUUUGA
+AADR01000009.1/6446-6222                 ACGUGUUAUAAAAAUACGGUUUAUACACAUGGAAUUAUAGUUCUAUAUGA
+#=GC SS_cons                             <<<<<<.<<<<<.......>>>>>>>>>>><..<<..<<<<<<<<<.<<<
+#=GC RF                                  acguGu.auaaaAAUacaguuuauaCacguGGgauUaugguuCuauuuga
+
+AARJ02000001.1/725829-725606             AAUAGGUUAUUUAUUAGAAGGUUUAAAUGGCUUAUU.UUAUUUUUCGAUG
+AL591975.1/153584-153807                 AAUAGGUUAUUUAUUAGAAGGGUUAAAUGGCUUAUUUU.AUUUUUCAAUG
+AARM02000265.1/981-758                   AAUAGGUUAUUUAUUAGAACGAUUUAAUGGCUUAAU.UUAUUUUUCAAUG
+AADR01000009.1/6446-6222                 AAUAGGUUAUUUAUUAGAAGGAUUAAAUGGCUUAUU.UUAUUUUUUAAUG
+#=GC SS_cons                             <.<<<<<<<<<..............>>>>>>>>>................
+#=GC RF                                  aAuagGuuauuUAUUAGAAgGaUUaaauggCuuaaU.UUAUUUUUcAAUG
+
+AARJ02000001.1/725829-725606             UAUAAAAUUAUGUAUAUUGACACAAUUUGUGUUAUUUUGAACAUAAAUUU
+AL591975.1/153584-153807                 UAUAAAAUUAUGUAUAUUGACACAAUUUGUGUUAUUUUGAACAUAAAUUU
+AARM02000265.1/981-758                   UAUAAAAUUAUGUAUAUUGACACAAUUUGUGUUAUUUUGAACAUGAAUUU
+AADR01000009.1/6446-6222                 UAUAAAAUUAUGUAUAUGGACACAAGUUGUGUUAUUUUGAACAUAAAUUU
+#=GC SS_cons                             .......<<<<<<.<<.<<<<<<.....>>>>>>...>>.>>>>>>.>>>
+#=GC RF                                  UAUAAAAuuauGuAuaUugaCaCAAuUUGuGuuaUUUugAaCauaaAuuu
+
+AARJ02000001.1/725829-725606             AAGUAAAUCAAUUCUUAAUGUAUUGAUUUUCGCCUAAAAUAGGUCGUUCA
+AL591975.1/153584-153807                 AAGUAAAUCAAUUCUUAAUGUAUUGAUUUUCGCCUAAAAUGGGUCGUUCA
+AARM02000265.1/981-758                   AAGUAAAUCAAUUCUUAAUGUAUUGAUUUUCGCCUAAAAUAGGUCGUUCA
+AADR01000009.1/6446-6222                 AAGUGAAUCAAUUCUUAAUGUAUUGAUUUUCGUCUAAAAUAGGUCGUUCA
+#=GC SS_cons                             >.>><<<<<<<<.<.....>.>>>>>>>>.............<<<<....
+#=GC RF                                  aaguaaauCaauUCUUAAUGUauuGauuuUcGccUAAAAUAGGuCgUUcA
+
+AARJ02000001.1/725829-725606             UGACAAGAAUCGGACAUUUCAUUACA
+AL591975.1/153584-153807                 UGACAAGAAUCGGACAUUUCAUUACA
+AARM02000265.1/981-758                   UGACAAGAAUUGGACAUUUCAUUACA
+AADR01000009.1/6446-6222                 UGACAAGAAUCGGACAUUUCAUUACA
+#=GC SS_cons                             >>>>.>>>>>>>...>>..>......
+#=GC RF                                  uGaCAaGaaucgGAcauUUCAUUAcA
+//

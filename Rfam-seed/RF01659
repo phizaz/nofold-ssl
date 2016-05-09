@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01659
+#=GF ID   ceN86
+#=GF DE   C. elegans snoRNA ceN86
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   25.00
+#=GF TC   32.21
+#=GF NC   23.84
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+ABLE02004532.1/5564-5441             UUGCACAUUAUUCAAGGUUUUCCUUUUUUAUAAAG.U..UGAAUCUCUUC
+DQ789465.1/2-125                     UGGCA.GCGUUGUUUGAGAGUUUACUCCCGUGAGGAAGCAUCUAUUUAUC
+AY948708.1/1-122                     CUGCA.ACUAUUCAAGAGAUUUGCCUCCCGUGGGGCA..CGCCUUUUUUC
+#=GC SS_cons                         ..<<<........<<<<<...<<<<<<....>>>>>>.....>>>>>...
+#=GC RF                              CUGCA.ACUAUUCAAGAGAUUUGCCUCCCGUGGGGCA..CGCCUUUUUUC
+
+ABLE02004532.1/5564-5441             AUUGUGCGAUAUAAACAAUGUCCUUUAUUCCCGUUCUGGAAUUUUAUUUC
+DQ789465.1/2-125                     ..GCUGCGAGAUAAAAUAUGUCCUUUAUUCCCGCUCCUGAAUUUUGUUUC
+AY948708.1/1-122                     ..GUUGCGAAAUAAAACAUGUCCUUUAUUCCCGCUCCUGGAUUGUGUUUC
+#=GC SS_cons                         ....>>>.........<<<<.<<..<<<<..<<<.<..<<<......>>>
+#=GC RF                              ..GUUGCGAAAUAAAACAUGUCCUUUAUUCCCGCUCCUGGAUUGUGUUUC
+
+ABLE02004532.1/5564-5441             UUGCGCGAUGAUCUGGCCAUGACAAAA
+DQ789465.1/2-125                     UUGCGCGAUGAUGCGGCCAUGACAAUU
+AY948708.1/1-122                     UUGCGCGAUGAUAUGGCUAUGACAAUU
+#=GC SS_cons                         ..>.>>>..>>>>.>>.>>>>......
+#=GC RF                              UUGCGCGAUGAUAUGGCUAUGACAAUU
+//

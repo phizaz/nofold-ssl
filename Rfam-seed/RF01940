@@ -1,0 +1,48 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01940
+#=GF ID   hvt-mir-H
+#=GF DE   microRNA hvt-mir-H9
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   70.00
+#=GF TC   84.17
+#=GF NC   53.94
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000783
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   19403687
+#=GF RT   Novel microRNAs (miRNAs) encoded by herpesvirus of Turkeys: evidence
+#=GF RT   of miRNA evolution by duplication
+#=GF RA   Yao Y, Zhao Y, Smith LP, Watson M, Nair V
+#=GF RL   J Virol. 2009;83:6969-6973.
+#=GF RN   [2]
+#=GF RM   19328516
+#=GF RT   MicroRNAs of Gallid and Meleagrid herpesviruses show generally
+#=GF RT   conserved genomic locations and are virus-specific
+#=GF RA   Waidner LA, Morgan RW, Anderson AS, Bernberg EL, Kamboj S, Garcia
+#=GF RA   M, Riblet SM, Ouyang M, Isaacs GK, Markis M, Meyers BC, Green
+#=GF RA   PJ, Burnside J
+#=GF RL   Virology. 2009;388:128-136.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   4
+
+AF291866.1/121857-121945             CCAGGCUUGGGCGU..AUUUUCUCCGGUGAGCGUAGCUGCCUGUAGUCGU
+AF282130.1/115651-115740             GACAGUUUGGGCAUA.CUUUCUUAUGGACCGCCGAGGUGUGUCUAUUCGU
+AF291866.1/121538-121628             UAGGCUUGGGCACGGUCCUUCUCGCGGAUAGCGUAGAUGUCUCUAUUCGU
+AF291866.1/121390-121479             GACAGUUGGGGCAUA.CUUUCUCAUGGACCCCCGAGUUGUGUCUAUUCGU
+#=GC SS_cons                         ...................<<<<<<<<<<<<<<<<<.<<<..........
+
+AF291866.1/121857-121945             UAGCAGCUACGUUGUCCGCGGGAUUCUAGCCACCUGGCAAU
+AF282130.1/115651-115740             UAACAGCUAGGCCGUCCAUGAGGUCGUAGGCACCCAGUAAU
+AF291866.1/121538-121628             UAACAGCUACAUUGUCCGCAGGGAUCUAGCCACAUGGCAAU
+AF291866.1/121390-121479             UAACAGCUAGGCCGUCCAUGAGGUCGUAGGCACCCAGUAAU
+#=GC SS_cons                         ..>>>.>>>>>>>>>>>>>>>>>..................
+//

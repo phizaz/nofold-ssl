@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00336
+#=GF ID   snoJ26
+#=GF DE   Small nucleolar RNA J26
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; ILM; Moxon SJ, Daub J
+#=GF GA   20.00
+#=GF TC   64.44
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF CC   J26 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_J26
+#=GF SQ   5
+
+AK068808.1/2266-2115               UGGAAAAAA.CAACAAAGCGAGUAAGUUAGGAGAAGGUGACCUUUUCUCU
+AC137998.2/5577-5723               UGGAAAAAA.CAACACAGUAGGUAAAUUAGGAGAAGGUGACUUUUUCUCU
+AY220656.1/1-147                   UGGAAAAAAACAACACAGUGGGUAAGUUAGGAGAAGGUGACUUUUUCUCU
+AP003861.2/88090-88241             UGGAAAAAA.CAACACAGUGGGUAAGUUAGGAGAAGGUGACUUUUUCUCU
+AY220657.1/1-148                   UGGAAAAAAACAACACAGUGGGUAAGUUAGGAGAAGGUGACUUUUUCUCU
+#=GC SS_cons                       ..<<<<............................................
+
+AK068808.1/2266-2115               UUUUCUGAAGUAAAGGUUGGAGCUCUGCCCAUUAUAUUAAGAAGUUGGUU
+AC137998.2/5577-5723               UUUUCUGAA.....GGUUGGAGCUCUGCCCAUUAUAUUAAGAAGUUGGUU
+AY220656.1/1-147                   UUUUCUGAA.....GGUUGGAGCUCUGCCCAUUAUAUUAAGAAGUUGGUU
+AP003861.2/88090-88241             UUUUCUGAAGUAAAGGUUGGAGCUUUGCUCAUUAUAUUAAGAAGUUGGUU
+AY220657.1/1-148                   UUUUCUGAA.....GGUUGGAGCUCUGCCCAUUAUAUUAAGAAGUUGGUU
+#=GC SS_cons                       .................................<<<<<....<<<<<...
+
+AK068808.1/2266-2115               UCGGAAUACAAUUCGAGGAUAUUACAUGGAACAAAAAGCAACUGAACUUU
+AC137998.2/5577-5723               UCAGACUACAAUUCAAGGAUAAUACAUGGAACAAAAAGCAACUGAGCUUU
+AY220656.1/1-147                   UCAGACUACAAUUCAAGGAUAUUACAUGGAACAAAAAGCAACUGAGCUUU
+AP003861.2/88090-88241             UCAGACUAUAAUUCGAGGAUAUUACAUAGAACAAAAAGCAACUGAACUUU
+AY220657.1/1-148                   UCAGACUACAAUUCAAGGAUAUUACAUGGAACAAAAAGCAACUGAGCUUU
+#=GC SS_cons                       ........>>>>>....>>>>>.........................>>>
+
+AK068808.1/2266-2115               CCC
+AC137998.2/5577-5723               CAC
+AY220656.1/1-147                   CA.
+AP003861.2/88090-88241             CAC
+AY220657.1/1-148                   CAC
+#=GC SS_cons                       >..
+//

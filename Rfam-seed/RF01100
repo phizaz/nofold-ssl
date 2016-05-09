@@ -1,0 +1,32 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01100
+#=GF ID   PK-BYV
+#=GF DE   3'-terminal pseudoknot in BYV
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   20.00
+#=GF TC   58.22
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00268
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   15218192
+#=GF RT   Analysis of the RNA of Potato yellow vein virus: evidence for a
+#=GF RT   tripartite genome and conserved 3'-terminal structures among members
+#=GF RT   of the genus Crinivirus.
+#=GF RA   Livieratos IC, Eliasco E, Muller G, Olsthoorn RC, Salazar LF, Pleij
+#=GF RA   CW, Coutts RH;
+#=GF RL   J Gen Virol. 2004;85:2065-2075.
+#=GF WK   http://en.wikipedia.org/wiki/Beet_yellows_virus
+#=GF SQ   2
+
+AF056575.1/15429-15468             CUCCUAGCGAAGUCCCGCUAGGAAGAAAAAAUAAGGGCCG
+AF190581.1/15429-15468             CUCCUAGCGAAGUCCCGCUAGGAAGAAAAAAUAAGGGCCG
+#=GC SS_cons                       .<<<<<<<...AAAA.>>>>>>>...........aaaa..
+#=GC RF                            cuCCuaGCGAAGUcccGCuaGGaAGAAAAAAUAAGGGccG
+//

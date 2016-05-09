@@ -1,0 +1,132 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00134
+#=GF ID   snoZ196
+#=GF DE   Small nucleolar RNA Z196/R39/R59 family
+#=GF AU   Moxon SJ, Daub J
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   20.23
+#=GF NC   19.99
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   12477388
+#=GF RT   Experimental RNomics. Identification of 140 Candidates for Small
+#=GF RT   Non-Messenger RNAs in the Plant Arabidopsis thaliana.
+#=GF RA   Marker C, Zemann A, Terhorst T, Kiefmann M, Kastenmayer JP, Green P,
+#=GF RA   Bachellerie JP, Brosius J, Huttenhofer A;
+#=GF RL   Curr Biol 2002;12:2002-2013.
+#=GF RN   [2]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [3]
+#=GF RM   10024243
+#=GF RT   A computational screen for methylation guide snoRNAs in yeast.
+#=GF RA   Lowe TM, Eddy SR;
+#=GF RL   Science. 1999;283:1168-1171.
+#=GF RN   [4]
+#=GF RM   12215523
+#=GF RT   Purified box C/D snoRNPs are able to reproduce site-specific
+#=GF RT   2'-O-methylation of target RNA in vitro.
+#=GF RA   Galardi S, Fatica A, Bachi A, Scaloni A, Presutti C, Bozzoni I;
+#=GF RL   Mol Cell Biol. 2002;22:6663-6668.
+#=GF CC   This family includes plant snoRNA snoZ196 and yeast snoRNAs R39
+#=GF CC   and R59.  Members of this family belong to the C/D box class of
+#=GF CC   snoRNA which contain C (UGAUGA) and D (CUGA) box motifs. Most of
+#=GF CC   the members of the box C/D family function in directing
+#=GF CC   site-specific 2'-O-methylation of substrate RNAs. snoZ196 acts as
+#=GF CC   a methylation guide for 18S ribosomal RNA in plants [1].Although
+#=GF CC   the selection of the target nucleotide requires the antisense
+#=GF CC   element and the conserved box D or D' of the snoRNA, the
+#=GF CC   methyltransferase activity is supposed to reside in one of the
+#=GF CC   protein components [4].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z196/R39/R59_family
+#=GF SQ   23
+
+AACU02000289.1/168173-168259             UCAAGGAAAUGAUGG.ACAACA.......UACCCUUUG...C.GACUAGA
+X62627.1/916-1013                        CUCAUUUUAUGAUGA.AAAUCCAUUGUAUCCCAAUACAUAUUCGACUAGU
+Z73554.1/1068-1155                       CUUUCUUAAUGAUGA.AAACUAU......UCCUUAUUC...UCGACUAGU
+D25232.1/916-1003                        CUUUCUUAAUGAUGA.AAACUAU......UCCUUAUUC...UCGACUAGU
+AAFW02000099.1/355930-355833             CUCAUUUUAUGAUGA.AAAUCCAUUGUAUCCCAAUACAUAUUCGACUAGU
+U26014.1/1-76                            ....GAAAAAGAUGA.ACCUUU.......CACUCUUGGA..UUG.CU.AG
+X53575.1/491-574                         AUAUGAAAAAGAUGA.ACCUUU.......CACUCUUGGA..UUG.CU.AG
+AJ490447.1/1-83                          UGCAACCUGUGAUGU.AAAUUA.......ACCCAUUUA...CUGAAC.UA
+Z70229.1/1-81                            ...AGCCUGUGAUGC.AAAAGG.......ACCCAUGAAA..CUGAAU.UA
+AJ490442.1/2-85                          UGCAAUCUGUGAUGC.AAAUAA.......UCCCAUUUG...CUGAAU.CA
+AJ490449.1/1-82                          .GCAGCCUGUGAUGC.AAAAGU.......ACCCAUUAAA..CUGAAU.UA
+AJ490452.1/1-84                          UGCAACCUGUGAUGC.AAAACU.......ACCCAUUAAA..CUGAAU.UA
+AY220646.1/6-89                          UGCAAUCUGUGAUGC.AAAUAA.......UCCCAUUUG...CUGAAU.CA
+AY220647.1/3-86                          UGCAAUCUAUGAUGC.AAAUAA.......UCCCAUUUG...CUGAAU.CA
+Z70693.1/1-77                            ...AACCUGUGAUGU.AAAUUA.......ACCCAUUUA...CUGAAC.UA
+AJ490445.1/2-85                          UGCAAUCUAUGAUGC.AAAUAA.......UCCCAUUUG...CUGAAU.CA
+AC134045.2/133476-133559                 UGCAGCCUGUGAUGC.AAAAGU.......ACCCAUUAAA..CUGAAU.UA
+X67711.2/2410-2494                       UGCAGCCUGUGAUGGCAAAAGU.......ACCCAUUAAA..CUGAAU.UA
+AP006687.1/73908-73825                   UGCAAUCAAUGAUGA.AAUUUC.......CUUAAUAUA...AUGAAUAUA
+AC140545.26/107249-107163                UGCAAUCUAUGAUGC.AAUUUUUAUAU..CCUUACUAUU..CUG.AU.UU
+AC150706.4/102309-102395                 UGCAAUCUAUGAUGC.AAUUAAUAU....CCUUACUAUU..AUGAUUUCC
+AC068667.6/43175-43262                   UGCAAUCAGUGAUGA.AAUUAUG......UCAAAUUCA...AUGAUUAUA
+AC068667.6/51559-51646                   UGCAAUCAGUGAUGA.AAUUAUG......UCAAAUUCA...AUGAUUAUA
+#=GC SS_cons                             <<<<<<<...........................................
+#=GC RF                                  ugCaaucaAUGAUGa.AAauua.......uccuAuUaa...uUGAaU.ua
+
+AACU02000289.1/168173-168259             CUCUGU..CGAUGCUGUUGCA..AAAUUACCAUCUUUCGGGUCUGACC.C
+X62627.1/916-1013                        CAUUGA..CGAUGCUGUCGUAACUUAUCACCAUCUUUCG..ACUGAUU.A
+Z73554.1/1068-1155                       CUUUGA..CAAUGCUGUCGUU..UAAUCACCAUCUUUCG..GCUGACUAG
+D25232.1/916-1003                        CUUUGA..CAAUGCUGUCGUU..UAAUCACCAUCUUUCG..GCUGACUAG
+AAFW02000099.1/355930-355833             CAUUGA..CGAUGCUGUCGUAACUUAUCACCAUCUUUCG..ACUGAUU.A
+U26014.1/1-76                            UUUCGA..CGAUGCUGCUCC...AAAAUACCAUCUUUCG..GCUGAUU.C
+X53575.1/491-574                         UUUCGA..CGAUGCUGCUCC...AAAAUACCAUCUUUCG..GCUGAUU.C
+AJ490447.1/1-83                          CGUUGA..UUAUUUCAGU.A...AAAUCACCAUCUUUCG..GCUGAGG.U
+Z70229.1/1-81                            CACUGAAUUAAUUCCAAAC....AAAUCACCAUCUUUCGG.GCUGAGG.U
+AJ490442.1/2-85                          CUGUGA..UUAUUGCAAUCA...AAAUCACCAUCUUUCG..GCUGAGA.U
+AJ490449.1/1-82                          CACUGA..UUAUUCCAAAC....AAAUCACCAUCUUUCG..GCUGAGG.U
+AJ490452.1/1-84                          CACUGA..UUAUUACAAAC....AAAUCACCAUCUUUCG..GCUGAGG.U
+AY220646.1/6-89                          CUGUGA..UUAUUGCAAUCA...AAAUCACCAUCUUUCG..GCUGAGA.U
+AY220647.1/3-86                          CUGUGA..UUAUUGCAAUAA...AAAUCACCAUCUUUCG..GCUGAGA.U
+Z70693.1/1-77                            CGUUGA..UUAUUUCAGU.A...AAAUCACCAUCUUUCG..GCUGAGG.U
+AJ490445.1/2-85                          CUGUGA..UUAUUGCAAUAA...AAAUCACCAUCUUUCG..GCUGAGA.U
+AC134045.2/133476-133559                 CACUGA..UUAUUCCAAAC....AAAUCACCAUCUUUCG..GCUGAGG.U
+X67711.2/2410-2494                       CACUGA..UUAUUCCAAAC....AAAUCACCAUCUUUCG..GGCGAGG.U
+AP006687.1/73908-73825                   UUGUGA..UUAUUAUACC.A...AGAUCACCAUCUUUCG..GCUGAGA.U
+AC140545.26/107249-107163                CCGUGA..UUAUUCAGAA.....AUAUCACCAUCUUUCG..GCUGAGA.U
+AC150706.4/102309-102395                 CCGUGA..UUAAUAAAAU.....AUAUCACCAUCUUUCG..ACUGAGA.U
+AC068667.6/43175-43262                   CAAUGA..UUAUUAUAAUCACU.AGAUCACCAUCUUUCG..GCUGAGA.U
+AC068667.6/51559-51646                   CAAUGA..UUAUUAUAAUCACU.AGAUCACCAUCUUUCG..GCUGAGA.U
+#=GC SS_cons                             ..............................................>>.>
+#=GC RF                                  CuuUGA..UuAUuauaauca...AAAUCACCAUCUUUCG..GCUGAga.u
+
+AACU02000289.1/168173-168259             UUGA
+X62627.1/916-1013                        UAAG
+Z73554.1/1068-1155                       UAAA
+D25232.1/916-1003                        UAAA
+AAFW02000099.1/355930-355833             UAAG
+U26014.1/1-76                            ....
+X53575.1/491-574                         AUAU
+AJ490447.1/1-83                          UGCA
+Z70229.1/1-81                            U...
+AJ490442.1/2-85                          UGCA
+AJ490449.1/1-82                          UGC.
+AJ490452.1/1-84                          UGCA
+AY220646.1/6-89                          UGCA
+AY220647.1/3-86                          UGCA
+Z70693.1/1-77                            U...
+AJ490445.1/2-85                          UGCA
+AC134045.2/133476-133559                 UGCU
+X67711.2/2410-2494                       UGGC
+AP006687.1/73908-73825                   UGCA
+AC140545.26/107249-107163                UGCA
+AC150706.4/102309-102395                 UGCA
+AC068667.6/43175-43262                   UGCU
+AC068667.6/51559-51646                   UGCA
+#=GC SS_cons                             >>>>
+#=GC RF                                  uGca
+//

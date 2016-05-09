@@ -1,0 +1,48 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00366
+#=GF ID   mir-BHRF1-2
+#=GF DE   mir-BHRF1-2 microRNA precursor family
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15118162
+#=GF SS   Published; PMID:15118162
+#=GF GA   20.00
+#=GF TC   77.94
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   15118162
+#=GF RT   Identification of Virus-Encoded MicroRNAs.
+#=GF RA   Pfeffer S, Zavolan M, Grasser FA, Chien M, Russo JJ, Ju J, John B,
+#=GF RA   Enright AJ, Marks D, Sander C, Tuschl T;
+#=GF RL   Science 2004;304:734-736.
+#=GF CC   This family represents the mir-BHRF1-2 microRNA precursor found in human
+#=GF CC   herpesvirus 4 (Epstein-Barr virus), cercopithicine herpesvirus 15 and
+#=GF CC   herpesvirus papio. In Epstein-Barr virus mir-BHRF1-2 is found in the 3' UTR
+#=GF CC   of the BHRF1 (Bam HI fragment H rightward open reading frame 1) gene which
+#=GF CC   is known to encode a distant Bcl-2 homologue. The mature sequence is
+#=GF CC   excised from the 3' arm of the hairpin [1].
+#=GF WK   http://en.wikipedia.org/wiki/mir-BHRF1-2_microRNA_precursor_family
+#=GF SQ   5
+
+DQ279927.1/42964-43028             CUUUUAAAUUCUGUUGCAGCAGAUAGCUGAUACCCAAUGUUAUCUUUUGC
+AF231983.1/56-120                  CUUUUAAAUUUUGCCGUAGCAGAUAGUUGAUACUUAAUGCUAUCUUUUGC
+AY037858.1/36669-36733             CUUUUAAAUUCUGCCACAGAAGAUAGCUGAUACUCGAUGUUAUCUUUUGC
+AJ507799.2/42848-42912             CUUUUAAAUUCUGUUGCAGCAGAUAGCUGAUACCCAAUGUUAUCUUUUGC
+AF231984.1/771-835                 CUUCCAAAUUCUGCCGCAGCAGAUAGCUGAUACUCCGUGUUAUCUUUUGC
+#=GC SS_cons                       <<<<<<<.<<<<<<<<<<<.<<<<<<<...........>>>>>>>.>>>>
+#=GC RF                            cuuuaaaAucccgccgcagaagauagcugAuAcuaaAugcuaucuucugc
+
+DQ279927.1/42964-43028             GGCAGAAAUUGAAAG
+AF231983.1/56-120                  GGUGAAAUUUGAAAG
+AY037858.1/36669-36733             GGGGGAAUUUCCAAG
+AJ507799.2/42848-42912             GGCAGAAAUUGAAAG
+AF231984.1/771-835                 GGCAGGAUUUUAAAG
+#=GC SS_cons                       >>>>>>>.>>>>>>>
+#=GC RF                            ggcgggauuuuaaag
+//

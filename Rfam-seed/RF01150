@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01150
+#=GF ID   sR11
+#=GF DE   Small nucleolar RNA sR11
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   16.00
+#=GF TC   16.29
+#=GF NC   13.66
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   URL; http://lowelab.ucsc.edu/snoRNAdb/
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   8
+
+BA000002.3/840962-840900               GCCGAUGAUGUCUACUCCCGACUACGACACGCCGUGGGGAUGAGUUGAAG
+BA000023.2/1261884-1261826             GCAGAUGAUGAGCUUGACCACUUAUG......AAACUAGAUGAUUUAUUA
+CP000077.1/1152448-1152506             UUUAGUGAUGAGCUUGACCGCAUAUG......AAAAUUGAUGAUUUAAUA
+AF195105.1/1-56                        GAAUGUGAUGAUGGGUCGAUGUUAC.......UGAUUAGUUGAUGAGAUU
+AE006641.1/794185-794127               UUAAAUGAUGAGCUUGACCACUUAUG......AAGCUAGAUGAUAUAAUA
+BA000001.2/544644-544590               CGGGAUGAUGACUUUGCCGAG.UGC.......UGAGCUGGUGAUGAGUAA
+AE009950.1/497425-497371               GGGGAUGAUGAGUUUGCCGAG.UGC.......UGAGCUAGUGAUGAAUAA
+AJ248287.2/202677-202731               UGGGAUGAUGACUUUGCCGAG.UGC.......UGAGGAAGUGAUGAGUAA
+#=GC SS_cons                           ..................................................
+#=GC RF                                gaagAUGAUGAcuuugCCcagUUAC.......uGaguAGaUGAUgaGAaa
+
+BA000002.3/840962-840900               GCAUUUG..GCUGAG
+BA000023.2/1261884-1261826             AAGGUAGCCUCUGAU
+CP000077.1/1152448-1152506             AAGGUAGCCUCUGAU
+AF195105.1/1-56                        AUCUCCG..GCUGAG
+AE006641.1/794185-794127               AAGGUAGCCGCUGAG
+BA000001.2/544644-544590               ACAGUCG..UCUGAC
+AE009950.1/497425-497371               ACAGUCG..CCUGAC
+AJ248287.2/202677-202731               ACAGUCG..CCUGAC
+#=GC SS_cons                           ...............
+#=GC RF                                AcagUcG..GCUGAG
+//

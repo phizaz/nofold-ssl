@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01479
+#=GF ID   rli48
+#=GF DE   Listeria sRNA rli48
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted;RNaalfold
+#=GF GA   100.00
+#=GF TC   161.81
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   19448609
+#=GF RT   The Listeria transcriptional landscape from saprophytism to
+#=GF RT   virulence.
+#=GF RA   Toledo-Arana A, Dussurget O, Nikitas G, Sesto N, Guet-Revillet H,
+#=GF RA   Balestrino D, Loh E, Gripenland J, Tiensuu T, Vaitkevicius K,
+#=GF RA   Barthelemy M, Vergassola M, Nahori MA, Soubigou G, Regnault B, Coppee
+#=GF RA   JY, Lecuit M, Johansson J, Cossart P;
+#=GF RL   Nature. 2009;459:950-956.
+#=GF WK   http://en.wikipedia.org/wiki/Listeria_monocytogenes_non-coding_RNA
+#=GF SQ   3
+
+AARS01000002.1/441931-441784             GACGUGAUAUA.CUUUUAUAGAGGGAGGGGAGUUUCACCCCUCUG..GUU
+AL591982.1/261423-261274                 GGCAUGUUAUA.AUUUAUUAGAGGGAGGGGAAUUCCACCCCUCUGAAUUU
+AL596172.1/225721-225572                 GACGUGAUAUACUUUUAAUAGAGGGAGGGGAGUUUCACCCCUCUG.AUUU
+#=GC SS_cons                             ...<<<<...........<<<<<<<<<<<<.......>>>>>>.......
+
+AARS01000002.1/441931-441784             ACUUGUCCUUGUUUUUGUCUAUCUUGCGUAAUGUUAUCAGCGCUACUGCA
+AL591982.1/261423-261274                 ACUUGUCCUUGUUUUUAUCUUUCUUGCGUAAUGUUAUCAGCGCUACUGCA
+AL596172.1/225721-225572                 AGCGGUUCUUGUCUUUAUCAUUCUUGUGUAUUGUUGUCAGCGCUACUACA
+#=GC SS_cons                             ....<<<<<<<...<<<<<.<<<<<<<<<<.<<<.....>>>.>>>.>>>
+
+AARS01000002.1/441931-441784             AGAGUUACAAUUUCAAGGACUGUUUUUAUUUCCUCUAAGAUGUCUUUCAC
+AL591982.1/261423-261274                 AGAGUGAUAAUUUCGAGGACUGUUUUUAUUUCCUCUAAAACAUCCUUCAC
+AL596172.1/225721-225572                 AGAGUGAUAAUUUCAAGGACUGUUUUUAUUUCCUCUAAAACAUCUUUCAC
+#=GC SS_cons                             >>>>.>>>>>...>>>>>>>...........>>>>>>.........>>>>
+
+AARS01000002.1/441931-441784             U
+AL591982.1/261423-261274                 U
+AL596172.1/225721-225572                 U
+#=GC SS_cons                             .
+//

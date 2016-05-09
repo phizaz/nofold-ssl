@@ -1,0 +1,55 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02014
+#=GF ID   mir-1178
+#=GF DE   microRNA mir-1178
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   35.00
+#=GF TC   40.67
+#=GF NC   11.03
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000601
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [2]
+#=GF RM   17922033
+#=GF RT   MicroRNA expression signature of human sarcomas
+#=GF RA   Subramanian S, Lui WO, Lee CH, Espinosa I, Nielsen TO, Heinrich
+#=GF RA   MC, Corless CL, Fire AZ, van de Rijn M
+#=GF RL   Oncogene. 2008;27:2015-2026.
+#=GF RN   [3]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   3
+
+CABD01026166.1/9291-9401               AGAAGCCCAGGGGUUGGCUGGCAGAGGAAGGGAAGGGUCCGGGGUCGGCU
+AC079262.28/36467-36357                AGAAGCCCAGGCGUUGGCUGGCAGAGGAAGGGAAGGGUCCAGGGUCAGCU
+ABGA01218732.1/20464-20574             AAGCCCAGGGGGGUUGGCUGGCAGAGGAAGGGAAGGGUCCGGGGUCGGCU
+#=GC SS_cons                           ............<<<<.<<<<<<.....<<<<<<<..<...<<<<.<.<<
+
+CABD01026166.1/9291-9401               GAGCAUGCCCUCAGGUUGCUCACUGUUCUUCCCUAGAAUGUCAGGUGAUG
+AC079262.28/36467-36357                GAGCAUGCCCUCAGGUUGCUCACUGUUCUUCCCUAGAAUGUCAGGUGAUG
+ABGA01218732.1/20464-20574             GAGCAUGCCCUCAGGUUGCUCACUGUUCUUCCCUAGAAUGUCAGGUGAUG
+#=GC SS_cons                           <<<......>>>>>.>.>>>>...>..>>>>>>>....>>>>>>.>>>>.
+
+CABD01026166.1/9291-9401               UGUCACCCCAA
+AC079262.28/36467-36357                UGUCACCCCAA
+ABGA01218732.1/20464-20574             UGUCACCCCAA
+#=GC SS_cons                           ...........
+//

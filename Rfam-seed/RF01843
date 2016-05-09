@@ -1,0 +1,30 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01843
+#=GF ID   neisseria_FSE
+#=GF DE   neiserria ribosomal frameshift element
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:11943474
+#=GF SS   Published; PMID:11943474
+#=GF GA   33.00
+#=GF TC   33.12
+#=GF NC   28.98
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r201055
+#=GF RN   [1]
+#=GF RM   11943474
+#=GF RT   Recoding: translational bifurcations in gene expression.
+#=GF RA   Baranov PV, Gesteland RF, Atkins JF;
+#=GF RL   Gene. 2002;286:187-201.
+#=GF WK   http://en.wikipedia.org/wiki/Neisseria_gonorrhoeae
+#=GF SQ   4
+
+DJ080768.1/1485399-1485438             GCCCUGAAGCGGAAACCGCCCAAACACCCGUUCAGACGGC
+ABZF01000077.1/5667-5706               GCCCUGAAGCGGAUGCCGCCCAAACGCCCGUUCAGACGGC
+CP000381.1/1368994-1369033             ACCCUGAAGCGGAAACCACCCAAACGCCCGUUCAGACGGC
+ABZQ01000083.1/5704-5743               GCCCUGAAGCGGAUGCCGCCCAAACGCCCGUUCAGACGGC
+#=GC SS_cons                           <<<<<<<<<<<..<<.....>>..>>>...>>>>>..>>>
+//

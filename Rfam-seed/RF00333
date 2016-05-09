@@ -1,0 +1,73 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00333
+#=GF ID   snoZ157
+#=GF DE   Small nucleolar RNA Z157/R69/R10
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD; Moxon SJ
+#=GF GA   20.00
+#=GF TC   26.84
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300069
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   Z157, R69 and R10 are members of the C/D class of snoRNA which contain
+#=GF CC   the C (UGAUGA) and  D (CUGA) box motifs. Most of the members of the box
+#=GF CC   C/D family function in directing site-specific 2'-O-methylation of
+#=GF CC   substrate RNAs [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z157/R69/R10
+#=GF SQ   10
+
+AP004797.3/108010-108108             UUGGUAGCGGUGAUGA.G..CAAUUUUUAUUUGGACUAGAGUUUCUGAUA
+AJ490368.1/1-90                      ...GGAGCGGUGAUGA.G..CAAUUUUU.UGUGGACUAGAGUUUCUGAUA
+AJ490369.1/1-99                      UUGGUAGUGGUGAUGA.G..CAAUUUUUAUUUGGACUAGAGUUUCUGAUA
+AJ490354.1/3-101                     AUGGGAG...UGAUGAAGAACAAUUUUUAUUUGGACUAGAGUUUCUGAUA
+AJ490353.1/1-97                      GAACAUGUGGUGAUGA.G..CAACUUCUUUGUGGACUAGGGUUUCUGAUA
+AC135559.4/53404-53306               AUGGGAG...UGAUGAAGAACAAUUUUUAUUUGGACUAGAGUUUCUGAUA
+AF317936.1/1-96                      ...AAUAUGGUGAUGA.UA.CAAGAGUAUUGUGGACUAGAGUUUCAGAUC
+AF317937.1/1-96                      ...AAUAUGGUGAUGA.UA.CAAGAGUAUUGUGGACUAGAGUUUCAGAUC
+AF317993.1/1-96                      ...UUUAUGGUGAUGA.AACGAAUAUUU.CGUGGACUAGAGUUUCAGAUC
+AJ505638.1/15-116                    UUGAAUAUGGUGAUGA.UA.CAAGAGUAUUGUGGACUAGAGUUUCAGAUC
+#=GC SS_cons                         <<<<<<<<.................................<<<<...<<
+
+AP004797.3/108010-108108             CUGC.UACUUU.GUGGU.AGUUGAAGACCAAACCCUU.GGCUGUCUGAGC
+AJ490368.1/1-90                      CUAC.UUUU...GUAGU.AUUUGAAGACCAAACCCUU.GGCUGUCUGAGC
+AJ490369.1/1-99                      CUGC.UACUUU.GUGGU.AGUUGAAGACCAAACCCUU.GGCUGUCUGAGC
+AJ490354.1/3-101                     CUGC.UACUUU.GUGGU.AGUUGAAGACUAAACCCUU.GGCUGUCUGAAC
+AJ490353.1/1-97                      ACAC.UACGCA.GUGUU....UGAUGACCAAACCCUUUGGUUGUCUGAGC
+AC135559.4/53404-53306               CUGC.UACUUU.GUGGU.AGUUGAAGACUAAACCCUU.GGCUGUCUGAAC
+AF317936.1/1-96                      UGGGAUUCUUCUCCCAGAAGUUGAAGAUU.AACCCUU.GGCUGUCUGAGU
+AF317937.1/1-96                      UGGGAUUCUUCUCCCAGAAGUUGAAGAUU.AACCCUU.GGCUGUCUGAGU
+AF317993.1/1-96                      UGGG.CUCUUCACCCAGAAUUUGAAGAAACAACCCUU.GGCUGUCUGAGU
+AJ505638.1/15-116                    UGGGAUUCUUCUCCCAGAAGUUGAAGAUU.AACCCUU.GGCUGUCUGAGU
+#=GC SS_cons                         <<<<........>>>>>.>...>>>>......................>>
+
+AP004797.3/108010-108108             UUCCAG
+AJ490368.1/1-90                      UCC...
+AJ490369.1/1-99                      UUCCAG
+AJ490354.1/3-101                     UUCCAU
+AJ490353.1/1-97                      UCCUCU
+AC135559.4/53404-53306               UUCCAU
+AF317936.1/1-96                      AUU...
+AF317937.1/1-96                      AUU...
+AF317993.1/1-96                      AAA...
+AJ505638.1/15-116                    AUUAAU
+#=GC SS_cons                         >>>>>>
+//

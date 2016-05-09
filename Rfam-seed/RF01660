@@ -1,0 +1,47 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01660
+#=GF ID   ceN88
+#=GF DE   C. elegans snoRNA ceN88
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; RNAalifold;
+#=GF GA   50.00
+#=GF TC   68.82
+#=GF NC   13.67
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   4
+
+AAGD02001053.1/226532-226393             CACCUCUCGUCUUGGCGCUUCCACUGGUGAAUGUGGUUGUGUAUGUUACG
+DQ789495.1/2-142                         UAUCUCUCGUCUUGGCGCUUCCACUGGUGAAUGUGGUUGUGUAUGUUACG
+AY948710.1/1-140                         UUUCUCUCGUCUUGGCGCUUCCACUGGUGAAUGUGGUUGUGUAUGUUACG
+ABEG01006688.1/9273-9412                 UUGCUCCUAUCUUGGCGCUUCCAUUGGUGAAUAUGGCUGUGUAUGUUAUA
+#=GC SS_cons                             ..<<<<<<<<....<<<<..<<<<........>>>>..>>>>.....>>>
+#=GC RF                                  UUUCUCUCGUCUUGGCGCUUCCACUGGUGAAUGUGGUUGUGUAUGUUACG
+
+AAGD02001053.1/226532-226393             AGAGGAAAAGUAGUGCCUC.GCGGCUUUCGGAUCUCCUUCGGUGUUGGUC
+DQ789495.1/2-142                         AGAGGAAAAGUAGUGUCUUUUAGACUUUCGGAUCUCCUUCGGUGUUUGCC
+AY948710.1/1-140                         AGAGACAAAGUAGCGCCUA.ACGGCUUUCGGAUCUCCUUCGGUGUUUGUC
+ABEG01006688.1/9273-9412                 GGAGGAAAAGUAGUGUCUU.UAGACUUUCGGAUCUCCUUCGGUGUUUGUC
+#=GC SS_cons                             >>>>>.........<<<.....>>>.<<<<<<<<<.....<<..<<<<<<
+#=GC RF                                  AGAGACAAAGUAGCGCCUA.ACGGCUUUCGGAUCUCCUUCGGUGUUUGUC
+
+AAGD02001053.1/226532-226393             UUGAAUUUCGACCAAUGUCAUCCUCUGGGUUCGAGACACUU
+DQ789495.1/2-142                         UUGAAUUUCGGCAAAUGUCAUCCUCUGGGUUCGAGACAAUU
+AY948710.1/1-140                         UUGAAUUUCGACAAAUGUCAUCCUCUGGGUUCGAGACAAUU
+ABEG01006688.1/9273-9412                 UUGAAUCUCGACAAAUGUCAUCCUCUGGGUUCGAGACAAUA
+#=GC SS_cons                             .........>>>>>>..>>.......>>>>>>>>>......
+#=GC RF                                  UUGAAUUUCGACAAAUGUCAUCCUCUGGGUUCGAGACAAUU
+//

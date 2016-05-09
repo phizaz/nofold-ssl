@@ -1,0 +1,134 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00067
+#=GF ID   SNORD15
+#=GF DE   Small nucleolar RNA SNORD15
+#=GF PI   U15
+#=GF AU   Griffiths-Jones SR
+#=GF SE   Griffiths-Jones SR; Plant snoRNA database, PMID:12520043
+#=GF SS   Predicted; PFOLD; Griffiths-Jones SR, Daub J
+#=GF GA   26.00
+#=GF TC   26.40
+#=GF NC   25.31
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300760
+#=GF DR   snoopy; Homo_sapiens300742
+#=GF RN   [1]
+#=GF RM   8319909
+#=GF RT   A small nucleolar RNA is processed from an intron of the human gene
+#=GF RT   encoding ribosomal protein S3.
+#=GF RA   Tycowski KT, Shu MD, Steitz JA;
+#=GF RL   Genes Dev 1993;7:1176-1190.
+#=GF RN   [2]
+#=GF RM   7984408
+#=GF RT   Different forms of U15 snoRNA are encoded in the introns of the
+#=GF RT   ribosomal protein S1 gene of Xenopus laevis.
+#=GF RA   Pellizzoni L, Crosio C, Campioni N, Loreni F, Pierandrei-Amaldi P;
+#=GF RL   Nucleic Acids Res 1994;22:4607-4613.
+#=GF RN   [3]
+#=GF RM   11469857
+#=GF RT   Identification of 66 box C/D snoRNAs in Arabidopsis thaliana:
+#=GF RT   extensive gene duplications generated multiple isoforms predicting
+#=GF RT   new ribosomal RNA 2'-O-methylation sites.
+#=GF RA   Barneche F, Gaspin C, Guyot R, Echeverria M;
+#=GF RL   J Mol Biol 2001;311:57-73.
+#=GF RN   [4]
+#=GF RM   12520043
+#=GF RT   Plant snoRNA database.
+#=GF RA   Brown JW, Echeverria M, Qu LH, Lowe TM, Bachellerie JP, Huttenhofer
+#=GF RA   A, Kastenmayer JP, Green PJ, Shaw P, Marshall DF;
+#=GF RL   Nucleic Acids Res 2003;31:432-435.
+#=GF CC   U15 is a member of the C/D class of snoRNA which contain the
+#=GF CC   C (UGAUGA) and D (CUGA) box motifs.  U15 is encoded within
+#=GF CC   the introns of ribosomal protein S1 in Xenopus and S3 in human
+#=GF CC   and Fugu.  snoR75 from Arabidopsis [3] and homologues in rice
+#=GF CC   and other plants are alternatively known as U15, and, despite
+#=GF CC   a significantly shorter sequence length, appear to be related [4].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_SNORD15
+#=GF SQ   18
+
+X97794.1/3225-3370                 CUUCAGUGAUGAUAC.......GAUG.ACGAGUCGGAACAAAGCC....G
+X97794.1/2144-2293                 CUU.GGUGAAGAUAA.......GAUG.ACGAGUCGGAAUAGGACAGA..U
+Z34530.1/8157-8303                 CUUCAGUGAUGAGAC.......GAUG.ACGAGUCAGAAAGGAC.......
+X80988.1/3-147                     CUUCUGUGAUGAUAC.......GAUG.ACGAGUCUGAGUGGGU......A
+Z34530.1/10197-10341               CUUCUGUGAUGAUAC.......GAUG.ACGAGUCUGAGUGGGU......A
+Z34530.1/4257-4400                 CUUCAGUGAUGAUUU.......GAUG.ACGAGUCUGACUUCCU......C
+Z34530.1/6444-6594                 CUUCAGUGAUGAGAC.......GAUCGACGAGUCAGAAGGACCAUCAAUG
+AY043296.2/720-867                 CUUCGAUGAAGAGGU.......GAUG.ACGAGUCUGAGUAGGAAGUG..U
+AY043296.2/3945-4089               CUUCAGUGAUGACAC.......GAUG.ACGAGUCAGAAUGGCC.......
+L15557.1/1-146                     CUUCAGUGAUGACAC.......GAUG.ACGAGUCAGAAAGGUC.......
+L16016.1/866-1013                  CUUCGAUGAAGAGAU.......GAUG.ACGAGUCUGACUUGGGGAUG..U
+Z75112.1/2-111                     CACCAAUGAUGCAAUGGUUAAAUCAG.ACGAGUCUAUUUUGGC.......
+AY103184.1/20-105                  UCUCCUUGAUGAACACACA...GAUG.ACGAGUCCGAUCUAAU.......
+AJ489948.1/3-90                    UCUCUGUGAUGACGAAAAACA.GAUG.ACGAGUCCGAUCCAAU.......
+AJ309198.1/702-616                 UCUCCGUGAUGACGAACACA..GAUG.ACGAGUCCGAUCUAAU.......
+AF318003.1/3-90                    UCUCAGUGAUGAAGAAACAAUAGAUG.ACGAGUCCGAUGAAAU.......
+AB013389.1/56436-56523             UCUCAGUGAUGAAGGAACAAUAGAUG.ACGAGUCCGAUGAAAU.......
+AF318001.1/3-87                    UCUCAGUGAUGAAUACACA...GAUG.ACGAGUCCGAUGAAAU.......
+#=GC SS_cons                       <<<<..............................................
+
+X97794.1/3225-3370                 UCUUGUUCUGGGGGUUCGUGGUUCAGCUCUACGUUCUG..UGGUUCUG..
+X97794.1/2144-2293                 CCUGCUUCUGCCGGUCACUGGUUCAGGUCCACGUUCUG..UGGGUUUC..
+Z34530.1/8157-8303                 CAGCAAUGUAGUGUG.UCCUGCUCAGUGUCACGUUCUG..UGCCGCUCUG
+X80988.1/3-147                     AAUCCUUUUCCAGUGGUCUCUGUCUCCAUCACGUUCUG..UGCUGUAG..
+Z34530.1/10197-10341               AAUCGUUUUCCAGUGGUCUCUGUCUGUAUCACGUUCUG..UGCUGUAG..
+Z34530.1/4257-4400                 CUUUCAUGCCCCAUU.CAGCUAAAGGAGCUGCGUUCUGCAUGUUGCUUUU
+Z34530.1/6444-6594                 UAGUGUGUCUCGUGA.GUGUCACGUUCUCUGCGAGCUG..UGUUUCCGGC
+AY043296.2/720-867                 UGUCUUUGUCCAAGA.UGCCUCACUAUGCUGCGUUCUG..UGGCACAG..
+AY043296.2/3945-4089               ACGUCUUGCUCUUGG.UCCCUGUCAGUGCCAUGUUCUG..UGGUGCUG..
+L15557.1/1-146                     ACGUCCUGCUCUUGG.UCCUUGUCAGUGCCAUGUUCUG..UGGUGCUGUG
+L16016.1/866-1013                  UCUCUUUGCCCAGGUGGCCUACUCUGUGCUGCGUUCUG..UGGCACAG..
+Z75112.1/2-111                     ..............UAUCUAUUCGAGUUCUUCGAAGAA...AUUGCCG..
+AY103184.1/20-105                  ..............................CCAUUCCA..UUAAACCA..
+AJ489948.1/3-90                    ..............................CCAUUCCA..UUAAACCA..
+AJ309198.1/702-616                 ..............................CCAUUCCA..UUAAACCA..
+AF318003.1/3-90                    ..............................CCAUUCA...UAAAAUCG..
+AB013389.1/56436-56523             ..............................CCAUUCAU..UAAAUCAU..
+AF318001.1/3-87                    ..............................CCAUUCAU..UAAAUCAU..
+#=GC SS_cons                       ..................................................
+
+X97794.1/3225-3370                 ..UUCC..AGUUCCUCAG..UUCAGGGUCUU.UUUCUCUUGAAGACAUAG
+X97794.1/2144-2293                 ..UACC..AGUUCUUCAGAGUGGGUCGUCCCUCUUCAUUUGAAGACACUG
+Z34530.1/8157-8303                 UUUGGU..UGCACUGCAU.CAGCUUUGUCCU.UCUUACUGAUUGAUAUAG
+X80988.1/3-147                     ....CUG.AAGCCCACUGAGUCAAGAUUGCC.CUUGGCUUGAUGUCCUUG
+Z34530.1/10197-10341               ....CUG.AGCCCCACUGAGUCAAGAUUGCC.CUUGGCUUGAUGUGCUUG
+Z34530.1/4257-4400                 G.CUGUU.GGGUCCUCAU..AACAAAGUUGU.AU.....GAAGACUCUUG
+Z34530.1/6444-6594                 ..CGCCAUGCAUCAGCUU.....UGCCCCUU.CUUACCUGAUCGAUAUGG
+AY043296.2/720-867                 ..CUGAA.AGCACUGUGGUCAAAAGAAACUU.CCUAA..AGAUGACCAAG
+AY043296.2/3945-4089               ..UACAU.GGUUCCCUUGGCAAAAGUGUCCU.GCGCACUGAUUGAUUUAG
+L15557.1/1-146                     ..CACG..AGUUCCUUUGGCAGAAGUGUCCU.AUUUAUUGAUCGAUUUAG
+L16016.1/866-1013                  ..UUUAA.AGAGCCCUGG.UUGAAGUAAUUU.CCUAA..AGAUGACUUAG
+Z75112.1/2-111                     ................................CUAAGCGGGGUGAAAUUG
+AY103184.1/20-105                  ......................................UGGGGACAAUCG
+AJ489948.1/3-90                    ......................................UGGGGACAAUCG
+AJ309198.1/702-616                 ......................................UGGGGACAAUCG
+AF318003.1/3-90                    ......................................UGGGGACAAACG
+AB013389.1/56436-56523             .......................................GGGGACAAACG
+AF318001.1/3-87                    .......................................GGGGACAAACG
+#=GC SS_cons                       ..................................................
+
+X97794.1/3225-3370                 AGGCAUUUGUCUGAGA.AGG
+X97794.1/2144-2293                 AGGCAUUUGUCUGAGA.AGG
+Z34530.1/8157-8303                 AGGCAUUUGUCUGAGA.AGG
+X80988.1/3-147                     AGGCAUUUGUCUGAGA.AGG
+Z34530.1/10197-10341               AGGCAUUUGUCUGAGA.AGG
+Z34530.1/4257-4400                 AGGCAUUUGUCUGAGA.AGA
+Z34530.1/6444-6594                 AGGCAUUCGC.UGAGACAGG
+AY043296.2/720-867                 AGGCAUUUGUCUGAGA.AGG
+AY043296.2/3945-4089               AGGCAUUUGUCUGAGA.AGG
+L15557.1/1-146                     AGGCAUUUGUCUGAGA.AGG
+L16016.1/866-1013                  AGGCAUUUGUCUGAGA.AGG
+Z75112.1/2-111                     AGGCAUUUGUCUGAGG.UGA
+AY103184.1/20-105                  AGGCAUUUGUCUGAGA.GAA
+AJ489948.1/3-90                    AGGCAUUUGUCUGAGA.GAA
+AJ309198.1/702-616                 AGGCAUUUGUCUGAGA.GAA
+AF318003.1/3-90                    AGGCAUUUGUCUGAGA.GGA
+AB013389.1/56436-56523             AGGCAUUUGUCUGAGA.GGA
+AF318001.1/3-87                    AGGCAUUUGUCUGAGA.GGA
+#=GC SS_cons                       ..............>>.>>.
+//

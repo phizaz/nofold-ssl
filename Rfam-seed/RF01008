@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01008
+#=GF ID   mir-636
+#=GF DE   microRNA mir-636
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   28.42
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000524
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+AADB02018830.1/219491-219393             UGGCGGCCUGGGC....GGGAGCGCGCGGGCGGGGCCGGCCCCGCUGCCU
+AACZ02173548.1/11463-11561               UGGCGGCCUGGGC....GGGAGCGCGCGGGCGGGGCCGGCCCCGCUGCCU
+AAPY01605159.1/3524-3428                 UGGCGGCCGGGGC....GGGAGCACGCGGGCGGGGCCGGCCCGGCUGCCU
+AAFC03064261.1/3392-3478                 UGGCGGCCUGGGCGGGCGGGAGCACGCGGGCGGGGCCGCCGA........
+AANN01800487.1/2280-2183                 UGGCGGCCUGGGCGGGCGGGAGCACGCGGGCGGGG..CGCGGCCCGACGC
+#=GC SS_cons                             ..<<.<<<<<<<<............<<<<<<<<<<<.<<<..<<<.<<..
+#=GC RF                                  ugGcgGccuGGGc....gggAgcacGcgGGcGGGgccgGcaacgcugcau
+
+AADB02018830.1/219491-219393             GGAAUUAACCCCGC.UGUGCUUGCUCGUCCC.GCCCGCAGCCCUAGGCGG
+AACZ02173548.1/11463-11561               GGAAUUAACCCCGC.UGUGCUUGCUCGUCCC.GCCUGCAGCCCUAGGCGG
+AAPY01605159.1/3524-3428                 GGCUUAACCCUGACGUGCC...GCUCGUCCC.GCCUGCAGCCCUAGGCGG
+AAFC03064261.1/3392-3478                 ACCCUGACGCGC..........CGCUGUCCCUGUCCGCAGCCCUAGGCGG
+AANN01800487.1/2280-2183                 CGGCACCCUGACGU.UCGGCUCGC...UCCC.GCCCGCAGCCCCAGGCGG
+#=GC SS_cons                             <<......>>..>>..>>>...>>>.>>>>>.>>>>>>.>>>>.>>>>.>
+#=GC RF                                  ggaaaaaaccacgc.ugcgcuugCccguCCC.gCCcgCAgCCCuaggCgg
+
+AADB02018830.1/219491-219393             CGUCG
+AACZ02173548.1/11463-11561               CGUCG
+AAPY01605159.1/3524-3428                 CGUCG
+AAFC03064261.1/3392-3478                 CGUCG
+AANN01800487.1/2280-2183                 CGUCG
+#=GC SS_cons                             >....
+#=GC RF                                  Cgucg
+//

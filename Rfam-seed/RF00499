@@ -1,0 +1,49 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00499
+#=GF ID   Parecho_CRE
+#=GF DE   Human parechovirus 1 (HPeV1) cis regulatory element (CRE)
+#=GF AU   Moxon SJ
+#=GF SE   PMID:12438643
+#=GF SS   Published; PMID:12438643
+#=GF GA   21.00
+#=GF TC   28.20
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   12438643
+#=GF RT   Terminal RNA replication elements in human parechovirus 1.
+#=GF RA   Nateri AS, Hughes PJ, Stanway G;
+#=GF RL   J Virol 2002;76:13116-13122.
+#=GF CC   This family represents a Parechovirus cis regulatory element which is
+#=GF CC   located in the 5'-terminal 112 nucleotides of the genome of human
+#=GF CC   parechovirus 1 (HPeV1). The family consists of two stem-loop structures
+#=GF CC   (SL-A and SL-B) together with a pseudoknot. Disruption of any of these
+#=GF CC   elements impairs both viral replication and growth [1].
+#=GF WK   http://en.wikipedia.org/wiki/Human_parechovirus_1_(HPeV1)_cis_regulatory_element_(CRE)
+#=GF SQ   5
+
+S45208.1/1-115               UUUGAAAGGGGUCUCCUAGAGAGCUUGCC..UAGGGCCUUAUAACCCGAC
+AJ005695.1/1-113             UUUGAAAGGGGUCUCCUAGAGAGCUUGGCCGUCGGGCCUUACACCCCGAC
+L02971.1/1-115               UUUGAAAGGGGUCUCCUAGAGAGCUUGCC..UAGGGCCUUAUAACCCGAC
+AB084913.1/1-113             UUUGAAAGGGGUCUCCUAGAGAGCUUGGCCGUCGGGCCUUAUACCCCGAC
+AF055846.1/1-102             .............UCCUAGAGAGCUUGGCCGUCGGGCCUUAUA.CCCGAC
+#=GC SS_cons                 ...<<<<<<<<<<<<<<<<<<<<<<<<<<.<<<<<<........>>>>>>
+
+S45208.1/1-115               UUGCUGAGCUUCUAUAGGAAAAAACCCUUUCCCAGCCUUGGGGUGGCUGG
+AJ005695.1/1-113             UUGCUGAGUUUCUCUAGGAGAGU.CCCUUUCCCAGCCA.GAGGUGGCUGG
+L02971.1/1-115               UUGCUGAGCUUCUAUAGGAAAAAACCCUUUCCCAGCCUUGGGGUGGCUGG
+AB084913.1/1-113             UUGCUGAGCUUCUCUAGAAGAGU.CCUUUUCCCAGCCA.GAGGUGGCUGG
+AF055846.1/1-102             UUGCUGAGUUUCUCUAGGAGAGU.CCCUUUCCCAGCCCUGAGGCGGCUGG
+#=GC SS_cons                 ..>>>>>>>>>.>>>>>>>>>.>.>>>>>>><<<<<<..AAAAA>>>>>>
+
+S45208.1/1-115               UCAAUAAAAACCCCCAU
+AJ005695.1/1-113             UCAAACAAUACCA..AA
+L02971.1/1-115               UCAAUAAAAACCCCCAU
+AB084913.1/1-113             UUAAAUAAUACCU..AC
+AF055846.1/1-102             UCAAUAAAAGCCUCAAA
+#=GC SS_cons                 .........aaaaa...
+//

@@ -1,0 +1,31 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01171
+#=GF ID   snoR4
+#=GF DE   Small nucleolar RNA snoR4
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   22.33
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://bioinf.scri.sari.ac.uk/cgi-bin/plant_snorna/home
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   2
+
+D90215.1/1270-1191                   CUAACAAGGGGAUAAAAAAAUUCAAAUGUGAAACAACUAAUAUUCAAAUG
+AC150706.4/101845-101922             GGGAUAUGAGGAUAAAAAAAUUCAAAUGUGA..CAUCCAGUCUUACUACA
+#=GC SS_cons                         ..................................................
+#=GC RF                              GGGaUAUGAGGAUAAAAAAAUUCAAAUGUGA..CAUCCAGUCUUACUACA
+
+D90215.1/1270-1191                   UACGACGACCUUAAACAGCUCGGUGAAACU
+AC150706.4/101845-101922             UACGUGGUGAUUGAUCGACUAUCUGAUCCC
+#=GC SS_cons                         ..............................
+#=GC RF                              UACGUGGUGAUUGAUCGACUAUCUGAuCCC
+//

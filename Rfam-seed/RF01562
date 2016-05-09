@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01562
+#=GF ID   DdR12
+#=GF DE   D. discoideum snoRNA DdR12
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; Osuch I
+#=GF GA   70.00
+#=GF TC   104.51
+#=GF NC   24.52
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   15333696
+#=GF RT   Novel non-coding RNAs in Dictyostelium discoideum and their
+#=GF RT   expression during development.
+#=GF RA   Aspegren A, Hinas A, Larsson P, Larsson A, Soderbom F;
+#=GF RL   Nucleic Acids Res. 2004;32:4646-4656.
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   2
+
+AJ699373.1/1-75                          UAAGUGAUGAGAUUUAUUUCAUGUGUUUCAGAUGAUUACAUCCUGAUUAU
+AAFI02000109.1/111070-110996             UAAGUGAUGAGAUUUAUUUCAUGUGUUUCAGAUGAUUACAUCCUGAUUAU
+#=GC SS_cons                             ..................................................
+#=GC RF                                  UAAGUGAUGAGAUUUAUUUCAUGUGUUUCAGAUGAUUACAUCCUGAUUAU
+
+AJ699373.1/1-75                          AACCUAUGACGAAAAUUGACUGAUU
+AAFI02000109.1/111070-110996             AACCUAUGACGAAAAUUGACUGAUU
+#=GC SS_cons                             .........................
+#=GC RF                                  AACCUAUGACGAAAAUUGACUGAUU
+//

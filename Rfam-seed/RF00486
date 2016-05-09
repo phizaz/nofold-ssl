@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00486
+#=GF ID   mir-129
+#=GF DE   mir-129 microRNA precursor family
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ
+#=GF SS   Predicted; PFOLD
+#=GF GA   22.00
+#=GF TC   26.67
+#=GF NC   undefined
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIR; MI0000252
+#=GF DR   MIR; MI0000222
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   12007417
+#=GF RT   Identification of tissue-specific microRNAs from mouse.
+#=GF RA   Lagos-Quintana M, Rauhut R, Yalcin A, Meyer J, Lendeckel W, Tuschl T;
+#=GF RL   Curr Biol 2002;12:735-739.
+#=GF RN   [2]
+#=GF RM   12554859
+#=GF RT   New microRNAs from mouse and human.
+#=GF RA   Lagos-Quintana M, Rauhut R, Meyer J, Borkhardt A, Tuschl T;
+#=GF RL   RNA 2003;9:175-179.
+#=GF CC   mir-129 was first experimentally characterised in mouse [1] and homologues
+#=GF CC   have since been discovered in several other species. The mature
+#=GF CC   sequence is excised from the 5' arm of the hairpin.
+#=GF WK   http://en.wikipedia.org/wiki/mir-129_microRNA_precursor_family
+#=GF SQ   6
+
+BX927136.11/83051-82960              UGUCCUUCACGGCUCUUUUUGCGGUCUGGGCUUGCUGUUCCUUAAAUCAC
+BX649263.6/91330-91421               UGUCCUUUUCAGGUCUUUUUGCGGUCUGGGCUUGCUGUUCCUUGAACCAG
+AL683878.9/67086-66997               UGCCUUUCGCGAAUCUUUUUGCGGUCUGGGCUUGCUGUACAUAACU.CAA
+AC072048.4/151314-151401             UCUCCUU..UGGAUCUUUUUGCGGUCUGGGCUUGCUGUUC.UCUCGACAG
+AC018662.3/139956-140044             UCUCCUU..UGGAUCUUUUUGCGGUCUGGGCUUGCUGUUCCUCUCAACAG
+AC068205.25/6866-6955                UGCCCUUCGCGAAUCUUUUUGCGGUCUGGGCUUGCUGUACAUAACU.CAA
+#=GC SS_cons                         .........<<<<<<<<<<<<<<<<..<<<<<<.<<<.............
+
+BX927136.11/83051-82960              CAGUCAGGAAGCCCUUACCCCAAAAAGUAUCUGUGUGGGAUC
+BX649263.6/91330-91421               UAGCCAGGAAGCCCUUACCCCAAAAAGUAUCUGCAGAGGACC
+AL683878.9/67086-66997               UAGCC.GGAAGCCCUUACCCCAAAAAGCAUUCGCGGAGGGCG
+AC072048.4/151314-151401             UAGUCAGGAAGCCCUUACCCCAAAAAGUAUCUACGGGAGGC.
+AC018662.3/139956-140044             UAGUCAGGAAGCCCUUACCCCAAAAAGUAUCUGCGGGAGGC.
+AC068205.25/6866-6955                UAGCC.GGAAGCCCUUACCCCAAAAAGCAUUUGCGGAGGGCG
+#=GC SS_cons                         ....>>>.>>>>>>..>>>>>>>>>>>.>>>>>.........
+//

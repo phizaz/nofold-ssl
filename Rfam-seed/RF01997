@@ -1,0 +1,74 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01997
+#=GF ID   mir-969
+#=GF DE   microRNA mir-969
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   71.00
+#=GF TC   92.46
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000879
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   17989255
+#=GF RT   Systematic discovery and characterization of fly microRNAs using
+#=GF RT   12 Drosophila genomes
+#=GF RA   Stark A, Kheradpour P, Parts L, Brennecke J, Hodges E, Hannon
+#=GF RA   GJ, Kellis M
+#=GF RL   Genome Res. 2007;17:1865-1879.
+#=GF RN   [2]
+#=GF RM   20037610
+#=GF RT   Evolutionary flux of canonical microRNAs and mirtrons in Drosophila
+#=GF RA   Berezikov E, Liu N, Flynt AS, Hodges E, Rooks M, Hannon GJ, Lai
+#=GF RA   EC
+#=GF RL   Nat Genet. 2010;42:6-9.
+#=GF RN   [3]
+#=GF RM   17989254
+#=GF RT   Evolution, biogenesis, expression, and target predictions of
+#=GF RT   a substantially expanded set of Drosophila microRNAs
+#=GF RA   Ruby JG, Stark A, Johnston WK, Kellis M, Bartel DP, Lai EC
+#=GF RL   Genome Res. 2007;17:1850-1864.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   8
+
+AANI01015309.1/11735-11628               GCUU..CUGCCCUACGCACGAGUUCCACUAAUCAAGUUUUGAGCGGAUUC
+AAPU01009701.1/40639-40741               AUUUGGCUGUCCUACGAGCGAGUUCCACUAAUCAAGUUUUGAGUG..UUC
+AAPT01021333.1/25650-25757               GGGUGUCUGCCACACUUACGAGUUCCACUAUUCAAGUUUUGAGCGUAUU.
+AAPP01019211.1/37252-37149               AUAUU.CUGUUUUACGUGCGAGUUCCACUAAGCAAGUUUUGAGAAUUUUU
+AADE01001273.1/4151-4044                 AGGAGCCUGUUCUACGUGCGAGUUCCACCAUGCAAGUUUUGAGCGUAUA.
+AE014298.4/18018390-18018483             .AGUCUCUGUCCUACGUCCGAGUUCCACUAAGCAAGUUUUGAGAUCGUUU
+AAQB01008838.1/4488-4586                 A...UCCUGUCCUACGCAUGAGUUCCACUAAGCAAGUUUUGGGCAUAUUU
+AAPQ01006011.1/221977-222081             AAAUCUCUGUCCUACGUCCGAGUUCCACUAAGCAAGUUUUGAGAUCGUUU
+#=GC SS_cons                             .<<<..<<<<<<<<<<..<<<<<<<.<<....<<<<<<<<..........
+#=GC RF                                  AgguguCugucCuaCGUgCGaGuuCCaCuAaGCaaGuuuuGAGauuaUau
+
+AANI01015309.1/11735-11628               GAAAGUCGAAAACUUGACACGUUGAGCUCGUCCGUGGG..GCGGCAUUCA
+AAPU01009701.1/40639-40741               GAAAAUCAAAAACUUGACACGUUGAGCUCGUCUGUGUG..GCAC.....A
+AAPT01021333.1/25650-25757               UGAAAUCAAAAACUUGACACGUUGAGCUCGUGUGUGCGUUGCGG..AA.A
+AAPP01019211.1/37252-37149               UAAAAACAAAAACUUGACACGUUGAGCUCGUCCGUGGG..GCAG.....A
+AADE01001273.1/4151-4044                 UGAAUCCAAAAACUUGACACGUUGAGCUCGUGCGUGGU..GCAGCCAA.A
+AE014298.4/18018390-18018483             UAAAAACAAAAACUUGACACGUUGAGCUCGUUCGUGGG..AUGG.....A
+AAQB01008838.1/4488-4586                 CAAAAACAAAAACUUGACACGUUGAGCUCGUCUGUGUG..ACAG......
+AAPQ01006011.1/221977-222081             UAAAAACAAAAACUUGACACGUUGAGCUCGUUCGUGGG..AUGG.....A
+#=GC SS_cons                             ........>>>>>>>>....>>.>>>>>>>..>>>>>>..>>>>.....>
+#=GC RF                                  UaAAaaCAaaaaCuuGACACGuUGagCuCGUuCGugGg..acaGccAA.a
+
+AANI01015309.1/11735-11628               AGCCAGAAGAGC
+AAPU01009701.1/40639-40741               AGUUCAACAAAA
+AAPT01021333.1/25650-25757               UCAACUUACUCA
+AAPP01019211.1/37252-37149               UAAUGUCAGCAG
+AADE01001273.1/4151-4044                 UCAUCGCAGCGC
+AE014298.4/18018390-18018483             CU..........
+AAQB01008838.1/4488-4586                 ..AACGAACAAC
+AAPQ01006011.1/221977-222081             UUACUGCCGAAA
+#=GC SS_cons                             >>..........
+#=GC RF                                  ccAucgcAgcgc
+//

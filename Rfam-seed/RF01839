@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01839
+#=GF ID   eeev_FSE
+#=GF DE   eastern equine encephalitis ribosomal frameshift element
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:18822126
+#=GF SS   Published; PMID:18822126
+#=GF GA   80.00
+#=GF TC   81.45
+#=GF NC   51.75
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r201065
+#=GF RN   [1]
+#=GF RM   18822126
+#=GF RT   Discovery of frameshifting in Alphavirus 6K resolves a 20-year
+#=GF RT   enigma.
+#=GF RA   Firth AE, Chung BY, Fleeton MN, Atkins JF;
+#=GF RL   Virol J. 2008;5:108.
+#=GF WK   http://en.wikipedia.org/wiki/Eastern_equine_encephalitis_virus
+#=GF SQ   6
+
+AF159551.1/2412-2484             GCUGUGGGCCGGCUUUUUUACUUGUCUGCGGCGCCUUGGGCGCCGCAGCG
+X05816.1/2526-2595               GCUGUGGGCCGGCUUUUUUACUUGUCUGCGGC.GCUUGG..GCCGCAGCG
+EF151503.1/9916-9988             GCUGCGGUCCGGCUUUUUUACUUGUCUGCGGCGCCUUGGGCGCCGCAGCA
+DQ241303.1/9897-9969             GCUGCGGUCCGGCUUUUUUACUUGUCUGCGGCGCCUUGGGCGCCGCAGCA
+U01558.1/2412-2484               GCUGUGGGCCGGCUUUUUUACUUGUCUGCGGCGCCUUGGGCGCCGCAGCG
+AF159555.1/2412-2484             GCUGUGGGCCGGCUUUUUUACUUGUCUGCGGCGCCUUGGGCGCCGCACCG
+#=GC SS_cons                     .........................<<<<<<<<<<...>>>>>>>>>>..
+#=GC RF                          GCUGUGGGCCGGCUUUUUUACUUGUCuGCGGCGCCUUGGGCGCCGCaGCG
+
+AF159551.1/2412-2484             UACGAACACACAGCAGUGAUGCC
+X05816.1/2526-2595               UACGAACACACAGCAGUGAUGCC
+EF151503.1/9916-9988             UACGAGCACACGGCUGUGAUGUC
+DQ241303.1/9897-9969             UACGAACACGCAGCAGUGAUGCC
+U01558.1/2412-2484               UACGAACACACAGCAGUGAUGCC
+AF159555.1/2412-2484             UACAAACACACAGCAUUGAUGCG
+#=GC SS_cons                     .......................
+#=GC RF                          UACGAACACACAGCAGUGAUGCC
+//

@@ -1,0 +1,63 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01878
+#=GF ID   PRINS
+#=GF DE   PRINS RNA
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; WAR; Eberhardt R
+#=GF SS   Predicted; WAR;
+#=GF GA   40.00
+#=GF TC   44.13
+#=GF NC   29.29
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001463 SO:lincRNA
+#=GF DR   GO:0010629 GO:negative regulation of gene expression
+#=GF RN   [1]
+#=GF RM   15855153
+#=GF RT   Identification and characterization of a novel, psoriasis
+#=GF RT   susceptibility-related noncoding RNA gene, PRINS.
+#=GF RA   Sonkoly E, Bata-Csorgo Z, Pivarcsi A, Polyanka H, Kenderessy-Szabo A,
+#=GF RA   Molnar G, Szentpali K, Bari L, Megyeri K, Mandi Y, Dobozy A, Kemeny
+#=GF RA   L, Szell M;
+#=GF RL   J Biol Chem. 2005;280:24159-24167.
+#=GF RN   [2]
+#=GF RM   20377629
+#=GF RT   The anti-apoptotic protein G1P3 is overexpressed in psoriasis and
+#=GF RT   regulated by the non-coding RNA, PRINS.
+#=GF RA   Szegedi K, Sonkoly E, Nagy N, Nemeth IB, Bata-Csorgo Z, Kemeny L,
+#=GF RA   Dobozy A, Szell M;
+#=GF RL   Exp Dermatol. 2010;19:269-278.
+#=GF CC   PRINS (psoriasis associated RNA induced by stress) is a long
+#=GF CC   non-coding RNA. Its expression is induced by stress, and it may
+#=GF CC   have a protective role in cells exposed to stress. It is
+#=GF CC   over-expressed in the epidermis of patients with psoriasis
+#=GF CC   [1]. It regulates G1P3, a gene encoding a protein with
+#=GF CC   anti-apoptotic effects in keratinocytes. Overexpression of PRINS
+#=GF CC   may contribute to psoriasis via the down-regulation of G1P3 [2].
+#=GF WK   http://en.wikipedia.org/wiki/PRINS_(gene)
+#=GF SQ   8
+
+AAGU02250215.1/772-862                   UGUCCACAUCCGGAUUCACCUAAACCCCACCCAGGUUGCAUUUGCGUAGU
+AAKN02049644.1/139317-139234             UGUCCAUAUCCGGAUUUACCUAAACCCCACCCAGGUUGCAUUUACAUAG.
+AAHY01014461.1/18010-17922               UGUCCACAUCCGUGUAUGGUAAAACUCCACCCAUGGUACAUUUGCAUAG.
+AL356113.8/17824-17911                   UGUCCACAUCCGGAUUUACCUAAACCCCACCCAGGUGGCAUUUGCAUAG.
+AAPY01615122.1/5802-5889                 UGUCCACAUCCGGAUUUACCUAAACACCACCCAGGUUGGAUUUGCAUAG.
+ABRN01301722.1/757-844                   CAUCCACAUCCAGAUUUAUCUAAACCCCACCCAGGUUGCAUUUGCGUAG.
+AAFC03128263.1/14926-14839               CGUCCACAUCCAGAUUUACCUAAACCCCUCCCAGGUGGCAUAUGCAUAG.
+AAPE01442453.1/1550-1634                 UGCCCACAUCCGGAUUUAGCUAAACCCCACCCUGGUU.CAUUUGCAUAG.
+#=GC SS_cons                             ............<<<<<<................................
+#=GC RF                                  UGUCCACAUCCGGAUUUASCUAAACCCCACCCAGGUKGCAUUUGCRUAGu
+
+AAGU02250215.1/772-862                   AGCCAUGAAAA.ACCGGUAUUUUCUACCUAUGAAUCACACUC
+AAKN02049644.1/139317-139234             ..CAGUGAAAA.ACCGGUAUUUUCU....GUGAAUCACUCCG
+AAHY01014461.1/18010-17922               ..CAGUGAAAAAACUGGUAUUUCCUAUCUGUGAGUGAGUCAC
+AL356113.8/17824-17911                   ..UAAUGAAAA.ACCGGUAUUUUCUAGCUGUGAAUCACACUU
+AAPY01615122.1/5802-5889                 ..CAAUGAAAA.ACCGGUAUGUUCUAGGCAUGAAUCACACUC
+ABRN01301722.1/757-844                   ..CUAUGAAAA.ACCGGUAUUUUCUAUCCGUGAAUCACACUC
+AAFC03128263.1/14926-14839               ..CUAUGAAAA.ACCGGUAUUUUCUACCCAUGAAUCACACCC
+AAPE01442453.1/1550-1634                 ..CAAUGAAAA.ACCGGUAUUUUCUA..UGUGAAUCACUCUU
+#=GC SS_cons                             ..............................>>>>>>......
+#=GC RF                                  agCARUGAAAAaACCGGUAUUUUCUABSYRUGAAUCACWCUC
+//

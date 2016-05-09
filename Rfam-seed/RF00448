@@ -1,0 +1,76 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00448
+#=GF ID   IRES_EBNA
+#=GF DE   Epstein-Barr virus nuclear antigen (EBNA) IRES
+#=GF AU   Moxon SJ
+#=GF SE   Published; 12555070
+#=GF SS   Predicted; PFOLD
+#=GF GA   20.00
+#=GF TC   22.35
+#=GF NC   18.55
+#=GF TP   Cis-reg; IRES;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000243 SO:internal_ribosome_entry_site
+#=GF DR   GO:0043022 GO:ribosome binding
+#=GF RN   [1]
+#=GF RM   12555070
+#=GF RT   Epstein-Barr virus U leader exon contains an internal ribosome entry
+#=GF RT   site.
+#=GF RA   Isaksson A, Berggren M, Ricksten A;
+#=GF RL   Oncogene 2003;22:572-581.
+#=GF CC   This family represents an Epstein-Barr virus internal ribosome entry site
+#=GF CC   (IRES) which is found in the U leader exon in the 5' UTR of the
+#=GF CC   Epstein-Barr nuclear antigen 1 (EBNA1) gene. The EBNA IRES allows EBNA1
+#=GF CC   translation to occur under situations where initiation from the 5' cap
+#=GF CC   structure and ribosome scanning is reduced. It is thought that the EBNA
+#=GF CC   IRES is necessary for the regulation of latent gene expression [1].
+#=GF WK   http://en.wikipedia.org/wiki/Epstein-Barr_virus_nuclear_antigen_(EBNA)_IRES
+#=GF SQ   6
+
+AY037858.1/48958-49174             ....UCAGCUGAUCGUUGUUGUCAUUCUUCAAUUUUUGCAGGUAACUCAG
+M23028.1/471-674                   ....GGG.............CCCCCCGGUAUCGGGCCAGAGGUAACUUAG
+S45894.1/393-608                   AAAAGGCGCGGGAUAGCGUGCGCUACCGGAUG.....GCGGGUAACUUAG
+M12553.1/318-517                   ....AGAGGAUGAAGACUAAGUCACAGGCUUA....GCCAGGUAACUUAG
+AF448220.1/5364-5580               ....UGAGCUGAUCGUUGUUGUUAUUCUUCAAUUUCUGCAGGUAACUUAG
+M13941.1/141-357                   ....GUGGUGUAAAGUUUUGCCUGAACCUGUGGUUGGGCAGGUAACUUAG
+#=GC SS_cons                       ....<<<..............>>>..........................
+#=GC RF                            ....uGaGcugaaaguuguuguCauucuuaaAuuuuugCAGGUAACUuAG
+
+AY037858.1/48958-49174             AAAGCGUUUCUUGAGCUUCCCGGGGAUGAGCGUCUGGGAGAGCUGAUUCU
+M23028.1/471-674                   GAAGCGUUUCUUGAGCUUCCCUGGGAUGAGCGUUUGGGAGAGCUGAUUCU
+S45894.1/393-608                   GAAGCGUUUCUUGAGCUUCCCUGGGAUGAGCGUUUGGGAGAGCUGAUUCU
+M12553.1/318-517                   GAAGCGUUUCUUGAGCUUCCC.............UGGGAGAGCUGAUUCU
+AF448220.1/5364-5580               GAAGCGUUUCUUGAGCUUCCCUGGGAUGAGCGUUUGGGAGAGCUGAUUCU
+M13941.1/141-357                   GAAGCGUUUCUUGAGCUUCCCUGGGAUGAGCGUUUGGGAGAGCUGAUUCU
+#=GC SS_cons                       ...<<<......<<<..<<<<..............>>>>.....<<....
+#=GC RF                            gAAGCGUUUCUUGAGCUuCCCuGGGAUGAGcGUuUGGGaGAGCUGAUUCU
+
+AY037858.1/48958-49174             GCAGACCGGCUAGGAGCCGCAGGGCGUUCUCCGGGGCGCGGCCCGAGACC
+M23028.1/471-674                   GCAGCCCAGAGAGUAGUCUCAGGGCAUCCUCUGGAGCCUGACCUGUGAUC
+S45894.1/393-608                   GCAGCCCAGAGAGUAGUCUCAGGGCAUCCUCUGGAGCCUGACCUGUGAUC
+M12553.1/318-517                   GCAGCCCAGAGAGUAGUCUCAGGGCAUCCUCUGGAGCCUGACCUGUGAUC
+AF448220.1/5364-5580               GCAGCCCAGAGAGUAGUCUCAGGGCAUCCUCUGGAGCCUGACCUGUGAYC
+M13941.1/141-357                   GCAGCCCAGAGAGUAGUCUCAGGGCAUCCUCUGGAGCCUGACCUGUGAUC
+#=GC SS_cons                       <<...<<..............>>>>.>>>>>.<<...<<<..<<<<<<<.
+#=GC RF                            GCAGcCCAGAgAGuAGuCuCAGGGCAUCCUCuGGAGCCuGACCuguGAcC
+
+AY037858.1/48958-49174             GUCGCGUCGUAGACAGCCAGGAGACCCGGGAGCAGAUUCACCGCAGCGGC
+M23028.1/471-674                   GUCGCAUCAUAGACCGCCAGUAGACCUGGGAGCAGAUUCACCGCCGCGGC
+S45894.1/393-608                   GUCGCAUCAUAGACCGCCAGUAGACCUGGGAGCAGAUUCACCGCCGCGGC
+M12553.1/318-517                   GUCGCAUCAUAGACCGCCAGUAGACCUGGGAGCAGAUUCACCGCCGCGGC
+AF448220.1/5364-5580               GUCGCAUCAUAGACCGCCAGUAGACCUGGGAGCAGAUUCACCGCCGCGGC
+M13941.1/141-357                   GUCGCAUCAUAGACCGCCAGUAGACCUGGGAGCAGAUUCACCGCCGCGGC
+#=GC SS_cons                       .....>>>>>>>....<<<<.....>>>>...>>>.....>>..>>>...
+#=GC RF                            GUCGCgUCauaGACcGCCaGuAGACCuGGGAGCaGAUUCACCGCCGCGGC
+
+AY037858.1/48958-49174             CGUCUCCCUCAAGGUGCUGUG
+M23028.1/471-674                   CGUCUCCUUUAAGACCCACCA
+S45894.1/393-608                   CGUCUCCUUUAAGUGUGAAUC
+M12553.1/318-517                   CGUCUCCUUUAAGACCCCACC
+AF448220.1/5364-5580               CGUCUCCUUUAAGGUGCUGUG
+M13941.1/141-357                   CGUCUCCUUUAAGUGUGAAUC
+#=GC SS_cons                       .....................
+#=GC RF                            CGUCUCCuUuAAGgugcuaug
+//

@@ -1,0 +1,66 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00258
+#=GF ID   mir-130
+#=GF DE   mir-130 microRNA precursor family
+#=GF AU   Griffiths-Jones SR, Daub J
+#=GF SE   Griffiths-Jones SR, INFERNAL
+#=GF SS   Predicted; PFOLD
+#=GF GA   30.00
+#=GF TC   32.68
+#=GF NC   17.52
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   MIR; MI0000156
+#=GF DR   MIR; MI0000408
+#=GF DR   MIR; MI0000448
+#=GF DR   MIR; MI0000748
+#=GF DR   MIPF; MIPF0000034
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF RN   [1]
+#=GF RM   12007417
+#=GF RT   Identification of tissue-specific microRNAs from mouse.
+#=GF RA   Lagos-Quintana M, Rauhut R, Yalcin A, Meyer J, Lendeckel W, Tuschl T;
+#=GF RL   Curr Biol 2002;12:735-739.
+#=GF RN   [2]
+#=GF RM   12919684
+#=GF RT   Embryonic stem cell-specific MicroRNAs.
+#=GF RA   Houbaviy HB, Murray MF, Sharp PA;
+#=GF RL   Dev Cell 2003;5:351-358.
+#=GF CC   miR-130 has been identified in mouse (MIR:MI0000156,
+#=GF CC   MIR:MI0000408) [1], and in human (MIR:MI0000448, MIR:MI0000748)
+#=GF CC   [2]. miR-130 appears to be vertebrate specific miRNA and has now
+#=GF CC   been predicted or experimentally confrimed in a range of
+#=GF CC   vertebrate species (MIPF:MIPF0000034). The hairpin precursors
+#=GF CC   (represented here) are predicted based on base pairing and
+#=GF CC   cross-species conservation -- their extents are not known. In
+#=GF CC   this case the mature sequence is excised from the 3' arm of the
+#=GF CC   hairpin.
+#=GF WK   http://en.wikipedia.org/wiki/mir-130_microRNA_precursor_family
+#=GF SQ   8
+
+AAWZ01013434.1/100052-99970             CCCUGUCCAAGGCUCUUUUCACAUUGUGCUUCUGUCUGUGCCCGACCCAA
+AAGW01143916.1/2112-2194                UGCUGGCCAGAGCUCUUUUCACAUUGUGCUACUGUCUGCGCCUAUCACGA
+AL928914.15/23540-23459                 UGCUGGCCGGAGCUCUUUUCACAUUGUGCUACUGUCUA.ACGUGUACCGA
+AP000662.4/36681-36763                  UGCUGGCCAGAGCUCUUUUCACAUUGUGCUACUGUCUGCACCUGUCACUA
+AAFC03029349.1/944-1026                 UGCGGGCCGGAGCUCUUUUCACAUUGUGCUACUGUCUGCGCCUGUCACUA
+AAWR02041426.1/16299-16217              UGCGGGCCGGAGCUCUUUUCACAUUGUGCUACUGUCUGCACCUACCACUA
+AAFR03038969.1/302-384                  UCCUGGCCAGAGCUCUUUUCACAUUGUGCUACUGUCUGCACCUAUCACUA
+AAPN01026753.1/160-77                   UCCCGGCCGGAGCUCUUUUCACAUUGUGCUACUGUCUGCGCCCGUCACUA
+#=GC SS_cons                            <<<.<<<<<<.<<<<<<<<..<<<<<<<<<....................
+#=GC RF                                 ugCugGCCggAGCuCuuuucACauuGugCuAcUGUcUgcAccUaucAcuA
+
+AAWZ01013434.1/100052-99970             GCAGUGCAAUGUUA.AAAGGGCAUUGGGUGGGUG
+AAGW01143916.1/2112-2194                GCAGUGCAAUGUCA.AAAGGGCAUUGGCCAUGUA
+AL928914.15/23540-23459                 GCAGUGCAAUGUUA.AAAGGGCAUCGGCCUUGUA
+AP000662.4/36681-36763                  GCAGUGCAAUGUUA.AAAGGGCAUUGGCCGUGUA
+AAFC03029349.1/944-1026                 GCAGUGCAAUGUUA.AAAGGGCAUUGGCUGUGCA
+AAWR02041426.1/16299-16217              GCAGUGCAAUGUUA.AAAGGGCAUUGGCCAUGUA
+AAFR03038969.1/302-384                  GCAGUGCAAUGUAA.AAAGGGCAUUGGCUGGGCA
+AAPN01026753.1/160-77                   GCAGUGCAAUGUAAUAAGGGGCUUCGGCGGGGCA
+#=GC SS_cons                            ..>>>>>>>>>..>.>>>>>>>.>>>>>>..>>>
+#=GC RF                                 GcaGugCaauGUua.aaaGgGCAucGGCcauGca
+//

@@ -1,0 +1,108 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00722
+#=GF ID   mir-451
+#=GF DE   microRNA mir-451
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   41.00
+#=GF TC   41.76
+#=GF NC   28.49
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000148
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF RN   [1]
+#=GF RM   18619946
+#=GF RT   Role of MicroRNA miR-27a and miR-451 in the regulation of
+#=GF RT   MDR1/P-glycoprotein expression in human cancer cells.
+#=GF RA   Zhu H, Wu H, Liu X, Evans BR, Medina DJ, Liu CG, Yang JM
+#=GF RL   Biochem Pharmacol. 2008;76:582-588.
+#=GF RN   [2]
+#=GF RM   18765229
+#=GF RT   MIR-451 and Imatinib mesylate inhibit tumor growth of
+#=GF RT   Glioblastoma stem cells.
+#=GF RA   Gal H, Pandi G, Kanner AA, Ram Z, Lithwick-Yanai G, Amariglio N,
+#=GF RA   Rechavi G, Givol D
+#=GF RL   Biochem Biophys Res Commun. 2008;376:86-90.
+#=GF RN   [3]
+#=GF RM   18849488
+#=GF RT   miR-451 regulates zebrafish erythroid maturation in vivo via its
+#=GF RT   target gata2.
+#=GF RA   Pase L, Layton JE, Kloosterman WP, Carradice D, Waterhouse PM,
+#=GF RA   Lieschke GJ
+#=GF RL   Blood. 2009;113:1794-1804.
+#=GF RN   [4]
+#=GF RM   20218812
+#=GF RT   miR-451 enhances erythroid differentiation in K562 cells.
+#=GF RA   Bruchova-Votavova H, Yoon D, Prchal JT
+#=GF RL   Leuk Lymphoma. 2010;51:686-693.
+#=GF RN   [5]
+#=GF RM   20679397
+#=GF RT   Defective erythroid differentiation in miR-451 mutant mice
+#=GF RT   mediated by 14-3-3zeta.
+#=GF RA   Patrick DM, Zhang CC, Tao Y, Yao H, Qi X, Schwartz RJ, Jun-Shen
+#=GF RA   Huang L, Olson EN
+#=GF RL   Genes Dev. 2010;24:1614-1619.
+#=GF RN   [6]
+#=GF RM   20679398
+#=GF RT   miR-451 protects against erythroid oxidant stress by repressing
+#=GF RT   14-3-3zeta.
+#=GF RA   Yu D, dos Santos CO, Zhao G, Jiang J, Amigo JD, Khandros E, Dore
+#=GF RA   LC, Yao Y, D'Souza J, Zhang Z, Ghaffari S, Choi J, Friend S, Tong
+#=GF RA   W, Orange JS, Paw BH, Weiss MJ
+#=GF RL   Genes Dev. 2010;24:1620-1633.
+#=GF RN   [7]
+#=GF RM   20699384
+#=GF RT   Conserved vertebrate mir-451 provides a platform for
+#=GF RT   Dicer-independent, Ago2-mediated microRNA biogenesis.
+#=GF RA   Yang JS, Maurin T, Robine N, Rasmussen KD, Jeffrey KL, Chandwani
+#=GF RA   R, Papapetrou EP, Sadelain M, O'Carroll D, Lai EC
+#=GF RL   Proc Natl Acad Sci U S A. 2010;107:15163-15168.
+#=GF WK   http://en.wikipedia.org/wiki/Mir-451_microRNA
+#=GF SQ   17
+
+AAVX01465249.1/530-602                   CUGGGGGGUGUCAAUCAAACCGUUACCAUUACUUGUAUU.AAGUACUGGU
+BAAE01003505.1/1574-1502                 ACAGAGCGGGGCCGUCAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AANH01000562.1/126354-126425             CAGAGGAGAGGCCGUCAAACCGUUACCAUUACUG.AGUUUCAGUUAUGGU
+CAAB01000931.1/60591-60519               GCAGGGGAGGCCCGUCAAACCGUUACCAUUACUG.AGUUUCAGUUAUGGU
+CAAE01014557.1/33640-33712               GCCGGGGAGGGCCGUCAAACCGUUACCAUUACUG.AGUUUCAGUAAUGGU
+BX548073.8/159677-159748                 ACAGAGAGAGGCGGCGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AADN02025858.1/509-580                   CACAUGGCUGGCAGGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AAGU02141945.1/2025-1955                 CUUGGGAAUGACGAGGAA.CCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AAKN02033337.1/59671-59742               CUUGGGGAUGGCGAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AAHX01064968.1/4545-4616                 UUUGGGAAUGGCGAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+ABBA01015038.1/33404-33475               CUUGGGAAUGGCAAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AAQR01668505.1/765-694                   UGUGGGAAUGGCAAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AACN010082587.1/2136-2207                CUUGGGGAUGGCGAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AANG01161467.1/4651-4580                 CUUGGGAAUGGCGAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AAFC03123225.1/17309-17380               ACUUGGGGUGGCGAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+AAFR03044825.1/5420-5349                 GGGCAGCCUGGCGGGGAAACCGUUACCAUUACUG.UGUU.UAGUAAUGGU
+AAPN01323131.1/127-56                    CGAGGGUCUGGCGAGGAAACCGUUACCAUUACUG.AGUU.UAGUAAUGGU
+#=GC SS_cons                             .....<<<<<<<<<<..<<<<<<<<<<<<<<<<<......>>>>>>>>>>
+#=GC RF                                  aaagagggcggCggggAaaCCguuaCCauuaCug.Aguu.caGuaauGGu
+
+AAVX01465249.1/530-602                   AAGGGUUAUAUUGCUGC.CUCCGAU
+BAAE01003505.1/1574-1502                 AAGGGUUCCACGGCCUCUGCUCAAA
+AANH01000562.1/126354-126425             AAGGGUUAUACGGCC.C.UCGCUCA
+CAAB01000931.1/60591-60519               AAGGGUUCCACGGCUCU.CGCUCAA
+CAAE01014557.1/33640-33712               AAGGGUUCCGCGGCCCU.CGCUCCA
+BX548073.8/159677-159748                 AAGGGUUCUGCUGCCUU.UUCUCAA
+AADN02025858.1/509-580                   AACGGUUCUGCUGACAG.CCAGGCA
+AAGU02141945.1/2025-1955                 AAUGGUUCUCUUGCUGC.AUCCAAA
+AAKN02033337.1/59671-59742               GACGGUUCUCUUGCUGC.UCCCCGA
+AAHX01064968.1/4545-4616                 AAUGGUUCUCUUGCUGC.UCCCACA
+ABBA01015038.1/33404-33475               AAUGGUUCUCUUGCUAU.ACCCAGA
+AAQR01668505.1/765-694                   AACGGUUCUCUUGCUGC.ACCCAAA
+AACN010082587.1/2136-2207                AAUGGUUCUCUUGCUGU.ACCCACA
+AANG01161467.1/4651-4580                 AACGGUUCUCUUGCUGC.ACCCAGA
+AAFC03123225.1/17309-17380               AACGGUUCUCUUGCUGC.ACCCAGA
+AAFR03044825.1/5420-5349                 AAGGGUUCUCCCGCUGC.GCUGAGU
+AAPN01323131.1/127-56                    AACGGUUCUCUGGCUGG.GCCCACC
+#=GC SS_cons                             >>>>>>>..>>>>>>>>.>>.....
+#=GC RF                                  aacGGuuaucccGccgc.ccaaaaa
+//

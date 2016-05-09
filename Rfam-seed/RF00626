@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00626
+#=GF ID   Gurken
+#=GF DE   Gurken localisation signal
+#=GF AU   Bateman A
+#=GF SE   Bateman A, INFERNAL
+#=GF SS   Published; PMID:15992540
+#=GF GA   20.00
+#=GF TC   22.68
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   15992540
+#=GF RT   gurken and the I factor retrotransposon RNAs share common
+#=GF RT   localization signals and machinery.
+#=GF RA   Van De Bor V, Hartswood E, Jones C, Finnegan D, Davis I;
+#=GF RL   Dev Cell. 2005;9:51-62.
+#=GF CC   Drosophila gurken mRNA is localized by dynein-mediated transport
+#=GF CC   to a crescent near the oocyte nucleus, thus targeting the
+#=GF CC   TGFalpha signal and forming the primary embryonic axes
+#=GF CC   [1]. Gurken contains an RNA stem loop within the coding region
+#=GF CC   that forms a signal for dynein-mediated RNA transport to the
+#=GF CC   oocyte nucleus [1]. This hairpin is conserved in other drosophila
+#=GF CC   species.
+#=GF WK   http://en.wikipedia.org/wiki/Gurken_localisation_signal
+#=GF SQ   3
+
+L22531.1/397-465                       CAAAGUAAUUUUCGUGCUCUCAACAAUUGUCGCCGUCACAGAUUGUUGUU
+AAPP01019865.1/13195-13127             CAAAGUAAUUUUCGUGCUCUCAACAAUUGUCGCCGUCACAGAUUGUUGUU
+AY051814.1/378-446                     CAAAGUAAUUUUCGUGCUCUCAACAAUUGUCGCCGUCACAGAUUGUUGUU
+#=GC SS_cons                           ..<<<<<<..<<<<.<<<<.<<<<<<<<<<.......>>>.>>>>>>>..
+#=GC RF                                cAaaGuaauuuucGuGcucucaacaauuGucgccgucaCagauuguuguu
+
+L22531.1/397-465                       CGAGCCGAAUCUUACUUCU
+AAPP01019865.1/13195-13127             CGAGCCGGAUCUUACUACU
+AY051814.1/378-446                     CGAGCCGAAUCUUACUUCU
+#=GC SS_cons                           .>>>>>>>>..>>>>>>..
+#=GC RF                                cgagCCgaaucuuaCuucu
+//

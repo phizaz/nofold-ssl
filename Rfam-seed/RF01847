@@ -1,0 +1,220 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01847
+#=GF ID   Plant_U3
+#=GF DE   Plant small nucleolar RNA U3
+#=GF AU   Gardner PP
+#=GF SE   Published; PMID:19875933; Gardner PP
+#=GF SS   Published; PMID:19875933; Gardner PP
+#=GF GA   74.00
+#=GF TC   75.87
+#=GF NC   73.89
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001179 SO:U3_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Mus_musculus300259
+#=GF DR   snoopy; Homo_sapiens300287
+#=GF RN   [1]
+#=GF RM   9016512
+#=GF RT   The uRNA database.
+#=GF RA   Zwieb C;
+#=GF RL   Nucleic Acids Res 1997;25:102-103.
+#=GF RN   [2]
+#=GF RM   10567566
+#=GF RT   Nuclear retention elements of U3 small nucleolar RNA.
+#=GF RA   Speckmann W, Narayanan A, Terns R, Terns MP;
+#=GF RL   Mol Cell Biol 1999;19:8412-8421.
+#=GF RN   [3]
+#=GF RM   19875933
+#=GF RT   Comparative analysis of eukaryotic U3 snoRNA.
+#=GF RA   Marz M, Stadler PF
+#=GF RL   RNA Biol. 2010;6:503-507.
+#=GF CC   Small nucleolar RNAs (snoRNAs) are involved in the processing and
+#=GF CC   modification of rRNA in the nucleolus. There are two main classes
+#=GF CC   of snoRNAs: the box C/D class, and the box H/ACA class. U3 snoRNA
+#=GF CC   is a member of the box C/D class. Indeed, the box C/D element is
+#=GF CC   a subset of the six short sequence elements found in all U3
+#=GF CC   snoRNAs, namely boxes A, A', B, C, C', and D. The U3 snoRNA
+#=GF CC   secondary structure is characterised by a small 5' domain (with
+#=GF CC   boxes A and A'), and a larger 3' domain (with boxes B, C, C', and
+#=GF CC   D), the two domains being linked by a single-stranded
+#=GF CC   hinge. Boxes B and C form the B/C motif, which appears to be
+#=GF CC   exclusive to U3 snoRNAs, and boxes C' and D form the C'/D
+#=GF CC   motif. The latter is functionally similar to the C/D motifs found
+#=GF CC   in other snoRNAs.
+#=GF CC   The 5' domain and the hinge region act as a pre-rRNA-binding
+#=GF CC   domain. The 3' domain has conserved protein-binding sites. Both
+#=GF CC   the box B/C and box C'/D motifs are sufficient for nuclear
+#=GF CC   retention of U3 snoRNA. The box C'/D motif is also necessary for
+#=GF CC   nucleolar localisation, stability and hyper-methylation of
+#=GF CC   U3 snoRNA. Both box B/C and C'/D motifs are involved in specific
+#=GF CC   protein interactions and are necessary for the rRNA processing
+#=GF CC   functions of U3 snoRNA.
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_U3
+#=GF SQ   24
+
+AJ001179.1/171-392                       AUGACCGUACUUGAACAGGAUCUGUUCUAUAGG.UCA..U...ACACCUG
+ACCP01000231.1/27198-26976               UCGACUGUACUUGAACAGGAUUCAUACU.UCAGUUGGUAA...ACCCUCG
+CP001331.1/215080-214858                 UCGACUGUACUUGAACAGGAUUCAUUUCUACAG.UAG..AUACACCCUAA
+ABEU01014426.1/8756-8528                 ACGACUAUACUUGAACAGGAUCUGUUCUAUAGU.GCG..U...ACAUCUG
+AAAA02023191.1/14338-14116               ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCGUUG
+AL606650.5/82385-82608                   ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCGUUG
+AL606444.3/140424-140208                 ACGACCUUACUUGAACGGGAUCUGUUCUAUAGGCUCG..U...ACCGUUG
+AC225244.1/2684-2865                     ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACUGCCA
+AC232160.1/15508-15625                   ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACUGCCA
+X63065.1/858-1075                        ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCGCUG
+ABXC01000575.1/44008-43791               ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGAUCG..U...ACCGCUG
+Z29641.1/759-982                         ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGAUCG..U...ACUGUUG
+CAAP02002257.1/25046-25259               ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCUCUG
+Z11883.1/3211-3429                       ACGACCUUACUUGAACAAGAUCUGUUCUAUAGGCUCG..U...ACCACUG
+X14411.1/488-704                         ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCAUUG
+AP004474.1/40162-40381                   ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACAACUG
+AC144759.11/63139-62925                  ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGAUUG..U...ACUACUG
+EU417382.1/206-243                       ACGACCUUACUUGAAUAAGAUCUGUUCUAUAGAGUAG..U..........
+EU417382.1/147-184                       ACGACCUUACUUGAACAAGAUCUGUUCUAUAGGAUCG..U..........
+AASG02024127.1/1647-1860                 ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCUCUG
+AARH01001777.1/338669-338456             ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGAUCG..U...ACCUCUG
+AB007644.1/28030-28248                   ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCUCUG
+AC189322.2/92619-92834                   ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGCUCG..U...ACCUCUG
+ABIM01001008.1/15000-15216               ACGACCUUACUUGAACAGGAUCUGUUCUAUAGGUUCG..U...ACCUCUG
+#=GC SS_cons                             <<<.<<<.....<<<<<<...>>>>>>...>>>.>.>..>.......<<<
+#=GC RF                                  ACgACCuUACUUGAACAGGAUCUGUUCUAUaGGcuCG..U...ACcucUG
+
+AJ001179.1/171-392                       .UCUGUGUUCUUC.AACUCAG.A.CAA.GUUCCUCAACCCAGACGAAGAC
+ACCP01000231.1/27198-26976               UCAGUAUU.CUCC..AAUACUUGACAA.GCUCCUCAUGUCAGACGAAGAC
+CP001331.1/215080-214858                 UCAGUAUU.CUCCA.AAUACU.GACAA.GCUUCUCAUGUCGGAAGAAGAG
+ABEU01014426.1/8756-8528                 AUCUGUGUUCUCC.AACACAG.A.CAA.GACCUUCAACCCGGACGAUGAU
+AAAA02023191.1/14338-14116               CAUCCUUU.ACCAA.UAAGGA.GGCAA.GCACUCAAGUCUGGUUGAUGCG
+AL606650.5/82385-82608                   CAUCCUUG.ACUAA.UAAGGA.GGCAA.GCACUCAAGCUUGGUUGAUGAC
+AL606444.3/140424-140208                 CAUCCUUG.ACUAA.UAAGGA.GGCAA.GCACUUAAGCUUGGUUGAUGAC
+AC225244.1/2684-2865                     GCAGGGUU.GGACU.UAUC...GCCGG.G......GGCCCGGUUACCGUC
+AC232160.1/15508-15625                   GAG..CGU.GUUUA.AUG....GCUAG.GAUCCC....CUCGUUGAUGCC
+X63065.1/858-1075                        CAUCCUUU.ACCAA.UAAGGA.GGCAAGCACUU.CAGUCUGGUUGAUGCA
+ABXC01000575.1/44008-43791               CAUCCUUG.ACUAA.UAAGGA.GGCAA.GCACUUAAGCCUGGUUGAUGAG
+Z29641.1/759-982                         CAUCUUUG.AUUAA.UAAGAA.GGCAA.GUACUUAAACCUGGUUGAUGAG
+CAAP02002257.1/25046-25259               UAUCCUUG.AGUUC.UAAGGA.GACAG.GAACCUCAGUCUGGUGGAUGAA
+Z11883.1/3211-3429                       UAUCGUUG.ACUUC.UAAGGA.GAUAG.GAAACCAAGUCUGGUGGAUGAA
+X14411.1/488-704                         UAUCCUUG.AAUUC.UAAGGA.GACAG.GAAUCCAAGUCUGGUUGAUGAA
+AP004474.1/40162-40381                   UAUCCUUG.AGUUC.UAAGGA.GACAGGAACCA.AAGUCUGGUUGAUGAA
+AC144759.11/63139-62925                  UGUCCUUG.AUUUC.UAAGGA.GAUAGGAACAU.AUGUCUGGUAGAUGAG
+EU417382.1/206-243                       ..................................................
+EU417382.1/147-184                       ..................................................
+AASG02024127.1/1647-1860                 UAUCCUUU.AUCAC.AAAGGA.GACAGGAACUC.AAGUCUGGUGGAUGAA
+AARH01001777.1/338669-338456             UAUCCUUA.AUCAC.UAAGGA.GACAG.GAACCUAAGCCUGGUUGAGGAA
+AB007644.1/28030-28248                   UUUCCUUG.AUUUC.UCAAGA.GACAGGCCCUU.AACCCUGGUUGAUGAA
+AC189322.2/92619-92834                   UAUCCUUG.AUUUC.UAAGGA.GACAG.GCCCCUAAACCUGGUUGAUGAA
+ABIM01001008.1/15000-15216               UUUCCUGG.AGUUC.GAAGGA.GACAG.GAUCUCAAGUCUGGCGGAUGAA
+#=GC SS_cons                             <.<<<<<<.......>>>>>>..>>>>.........<<<<<.........
+#=GC RF                                  cAuCCuug.Auuac.caaGGa.GgCAg.gaacuuAAgcCuGGuuGAUGAa
+
+AJ001179.1/171-392                       AU.GCAGCCCCGG.CGCCUGAGCGCUACGUA....UGACCAC.UGUGGCC
+ACCP01000231.1/27198-26976               UG.AAG.CUCACCUAGUCUGAGCCGGAAAU......CUGCGAUUCUCCU.
+CP001331.1/215080-214858                 UA.AUG.ACUCCCUAGUCUGAGCCGGAAGU......CUGCAUCGCUCCCA
+ABEU01014426.1/8756-8528                 UC.AGG.GCUCUCCGGCCUGAGCGCGAUUGCCGCGGCUGGUGCCAGUGG.
+AAAA02023191.1/14338-14116               AC.AUG.ACCUCUGGGCCAGAGCGUGAUUA.......ACGGCCAGGAUG.
+AL606650.5/82385-82608                   GC.AUG.ACCUGUGGGCCAGAGCGUGAUUG.......ACGGCCCGGAUC.
+AL606444.3/140424-140208                 GC.AUG.ACCUGUGGGCCAGAGCGUGAUUA.......ACGGCC.....G.
+AC225244.1/2684-2865                     AC.CUG.GCGGUAACCGCGCAAAACCACGA....................
+AC232160.1/15508-15625                   GG.AUA.......................C....................
+X63065.1/858-1075                        UC.UG..ACCUCUGGGCCAGAGCGUGAUUA......ACGGCCA.GGAUU.
+ABXC01000575.1/44008-43791               UC.AUG.ACCUGUGGGCCAGAGCGUGAUUA.......ACGGCCA.GGAU.
+Z29641.1/759-982                         AAUUUG.ACCUGUGGGCCAGAGCGUGAUUU......AACGGC.CAGGAC.
+CAAP02002257.1/25046-25259               CA.AUG.ACCGUGCGAUCAGAGCGUGAUUAA....CU...GCUUAACCU.
+Z11883.1/3211-3429                       UC.GUG.GUCAUGAAACUCGAGUGUGAUG........AUUGUUCUUCAG.
+X14411.1/488-704                         GC.AUG.GCCAUGUGACCAGAGCGUGAUUA.......ACAGCUAUCCAU.
+AP004474.1/40162-40381                   CA.CUG.ACCGUGUGAUCAGAGCGUGAUUAA.....UAGUC.GUCCGAU.
+AC144759.11/63139-62925                  UU.GUG.ACCGUGUGAUCAGAGCGUGAUUA........ACGGCC.AGGA.
+EU417382.1/206-243                       ..................................................
+EU417382.1/147-184                       ..................................................
+AASG02024127.1/1647-1860                 UC.AUG.ACCGUGUGAUCAGAGCGUGAUUA........ACGGCUG.GAG.
+AARH01001777.1/338669-338456             UU.GUG.ACCGCUUGAUCAUAGCGUGAGUA.........AUGGCU.UGA.
+AB007644.1/28030-28248                   CC.AUG.ACCGUGCGGCUAGAGCGUGAUUG......A.CGGCUACG.AU.
+AC189322.2/92619-92834                   UC.AUA.GCCGUGCGAUCUGAGUGUGAUUA.......ACGGUUA..CGA.
+ABIM01001008.1/15000-15216               UC.GUG.ACCGUGUGAUCAGAGCGUGAUUA.......AUGGCAGAAGCG.
+#=GC SS_cons                             .......<<<<<<<<<<<<.<<<<.............<<<<<<<<<<<<.
+#=GC RF                                  uc.auG.aCCgugcGgCCaGagCGUGAUUA.......accgccugcggg.
+
+AJ001179.1/171-392                       GUGCC....GCU...GGCACGG.ACG..CGUGGU......U.CUGGAUGA
+ACCP01000231.1/27198-26976               AUGAC....GCCU.AGUCA..GGGAU..UUCGCU.......UGAUGAUGG
+CP001331.1/215080-214858                 AGGUU....GAAA..GACCAGGGAC...UGUGCU.......UGAUGAUGG
+ABEU01014426.1/8756-8528                 CCCCC....UUGC..GGGGGCCGGA...GC..CAGCCUGCCAGAUGAACG
+AAAA02023191.1/14338-14116               ACUCC....CGAUGCGGGCUCAUCCGACGGCUGU.......AGAGGAUCG
+AL606650.5/82385-82608                   AUUUC....CGUG.UGAAUUGAUCCCGCGGCUGU.......AGAGGAUCG
+AL606444.3/140424-140208                 GAUCACUGGCUGAUUUGAUCC..CAC..GGCUGU.......AGAGGAUCG
+AC225244.1/2684-2865                     UAAAU....UUGC..A.........................AUUUGAAAU
+AC232160.1/15508-15625                   ....G....ACAG............................AGUGCAG..
+X63065.1/858-1075                        .CCCU....UAUG..GGGGCAAUCCA..CGGCUG......UAGAGGAUCG
+ABXC01000575.1/44008-43791               UAAGC....UUGA.UGCUGGGUCUGG..UGCUGU.......AGAGGAUCG
+Z29641.1/759-982                         UUUGC....CUUGGUGCAUUGUCUGG..AGCUGC.......AGAUGAUCG
+CAAP02002257.1/25046-25259               G.CUU....UGUU..GGGUCAGG.GC..UGU..........AGAGGAUCG
+Z11883.1/3211-3429                       GGCCU....UUCG..GGGUCAUUGUG..UGCAGU.......AGAUGAUUG
+X14411.1/488-704                         GGUUU....CUC...GAGCUGUGGUU..ACAGU........AGAUGAUCG
+AP004474.1/40162-40381                   UGACC....UUCG..GGUUCAUCAGA..UCGACGG.....UGGAGGAUCG
+AC144759.11/63139-62925                  UGAUG....UGUG..CAUCAUCUUCA..GCUGU........AGAUGAUCG
+EU417382.1/206-243                       ..................................................
+EU417382.1/147-184                       ..................................................
+AASG02024127.1/1647-1860                 GAUCU....UUCU..GGGUUCUCAGG..GCUGU........AGAGGAUCG
+AARH01001777.1/338669-338456             UUGUC....CUCG.UGAUCAUCAUGG..CUGU.........AGAGGAUCG
+AB007644.1/28030-28248                   .CGUC....CUCG..GACGCAUCCGG..UGCUG.......UAGAGGAUCG
+AC189322.2/92619-92834                   UUCUC....CUCG..GAGUCUC.U.G..CACUGU.......AGAGGAUCG
+ABIM01001008.1/15000-15216               GUU......CUCG....AACCGUUGA..UGCUGU.......AGAGGAUCG
+#=GC SS_cons                             <<<<<..........>>>>>>>>>>>..>>>>>>..............>>
+#=GC RF                                  guccc....uuug..gggaccccgca..ggcggu.......AGAgGAUCG
+
+AJ001179.1/171-392                       AC.G.UCC.CGCCG.....AGACCAUUCCAC..CGGCAGGG....AUGGU
+ACCP01000231.1/27198-26976               CC.CC...CCGUCG..ACAUUCCA......AGUCGGGG...CUGGACGGC
+CP001331.1/215080-214858                 CC...CCC.UAACA.....UCAUUC.....C..AGUUGGGGC.GGACGGC
+ABEU01014426.1/8756-8528                 UC...CCG.CCUCC.....UCAUUC....CU..GGGGGCGG..UGAUGGA
+AAAA02023191.1/14338-14116               UU...CCU.GC.CU..GGUUCACU.......CCAGUGCAGG....GUGGC
+AL606650.5/82385-82608                   UU.C.CUU.GCCGG..GC.UUUC........GCUUGGUCAG..GGUUGGC
+AL606444.3/140424-140208                 UU.U.CUU.GCCGG..GC.CUC.........GCCUGGCCAG...GAUGGC
+AC225244.1/2684-2865                     UU.........GAA..UU.CAA.A.......AAUUCGGCAA...ACCGCG
+AC232160.1/15508-15625                   ................G.....GC........C.................
+X63065.1/858-1075                        UU...CCU.GC.CU..UGCUCAU.......GCUUGUGCAGG....GUGGC
+ABXC01000575.1/44008-43791               UU.C.CUG.GUUGG..GU.CCU.........GCCUAGCUGG...GGUGGC
+Z29641.1/759-982                         UU.C.UUG.GCCAG..GC.UUAAU.......GUCUGGCUAG...GGUGGC
+CAAP02002257.1/25046-25259               UU.C.UCA.GCCGA..GC.UUUG........GCUCGACUGG...GAUGGU
+Z11883.1/3211-3429                       UU.C.UCA.GC.CU..GG.UUUGC.......CCGUCCCUGA...GAUGGU
+X14411.1/488-704                         UU.C.UUA..GACCCUUA.AUCU........CAGGCC.UAA...GAUGGU
+AP004474.1/40162-40381                   U....UCU.CAGCG..GG.UAUCA.......CCGGCUGGGG.....UGGU
+AC144759.11/63139-62925                  UU...CUU.GGCCU..AG.UUCAA.......CUAA.CCGGG....AUGGU
+EU417382.1/206-243                       ..................................................
+EU417382.1/147-184                       ..................................................
+AASG02024127.1/1647-1860                 UA...CCU.AGGCU..GC.CUA.........GCUGACUGGG....AUGAU
+AARH01001777.1/338669-338456             UU...UCC.UAGCC..A..UUUAC......C.UGGCUGGGA....AUGGU
+AB007644.1/28030-28248                   UUAC.UCG.GCUCG..GU..UUCU.......ACCUUGCCGG...GGUGGU
+AC189322.2/92619-92834                   CU.A.UCC.GGUUA..GG.UUUGA.......CCUCUCCGGG....GUGGU
+ABIM01001008.1/15000-15216               UU.C.UCA.GU.UG..GGUUUGAU.......CCUG.ACUGG..GGGUGGU
+#=GC SS_cons                             >>...<<<.<<<<<..<<.............>>>>>>>>>>.....>>>>
+#=GC RF                                  cu.c.cCg.gcgcg..gg.uuaaa.......cccgcgccGg...GauGGc
+
+AJ001179.1/171-392                       GCUCGGGG...CAUUCAGAUGGGU.
+ACCP01000231.1/27198-26976               UAGGUGAC....GUUCUGAUGGCUA
+CP001331.1/215080-214858                 UAGGGAGC....GUUCGGACGGCUG
+ABEU01014426.1/8756-8528                 CGGAGAGC....GUUCUGACGGGC.
+AAAA02023191.1/14338-14116               CCAGAGGU....UGUCUGACAGACA
+AL606650.5/82385-82608                   CCAUAGGU....UGUCUGACAGGCA
+AL606444.3/140424-140208                 UCUCAGGU....UCUCUGACAGGC.
+AC225244.1/2684-2865                     GUUACCGCGCGAUGUGUGACGGGCC
+AC232160.1/15508-15625                   ...........UUGUCUGACAGACA
+X63065.1/858-1075                        CCAGAGGU....UGUCUGACAGACU
+ABXC01000575.1/44008-43791               CCAUGGGU....UGUCUGACAGGC.
+Z29641.1/759-982                         CUACAGGC....UGUUUGACAGGUU
+CAAP02002257.1/25046-25259               CGCACGGU....UGUCUGACAGAC.
+Z11883.1/3211-3429                       CUCAUGGC....AGUCUGACAGACU
+X14411.1/488-704                         CUCAUGGC....UGUCUGACAGAC.
+AP004474.1/40162-40381                   CACACGGU....UGUCUGACAGGCU
+AC144759.11/63139-62925                  CACAUGGU....UGUCUGACAGAUU
+EU417382.1/206-243                       .........................
+EU417382.1/147-184                       .........................
+AASG02024127.1/1647-1860                 CGCAUGGU....UGUCUGACAGACU
+AARH01001777.1/338669-338456             CUUGCGGU....UGUCUGACAGGGU
+AB007644.1/28030-28248                   CGCACGGC....GGUCUGACAGGUC
+AC189322.2/92619-92834                   CGCACGGU....UGUCUGACAGGCC
+ABIM01001008.1/15000-15216               CACCCGGU....UAUCUGACAGACC
+#=GC SS_cons                             >>>>>>>>...........>>>>>.
+#=GC RF                                  CgcacGGu....ugUCUGACaGgcu
+//

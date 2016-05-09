@@ -1,0 +1,36 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01510
+#=GF ID   MFR
+#=GF DE   M. florum riboswitch
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Published; PMID:17911257
+#=GF GA   40.00
+#=GF TC   77.71
+#=GF NC   23.13
+#=GF TP   Cis-reg; riboswitch;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000035 SO:riboswitch
+#=GF DR   GO:0032546 GO:deoxyribonucleoside binding
+#=GF DR   GO:0031554 GO:regulation of transcription termination
+#=GF RN   [1]
+#=GF RM   17911257
+#=GF RT   Guanine riboswitch variants from Mesoplasma florum selectively
+#=GF RT   recognize 2'-deoxyguanosine.
+#=GF RA   Kim JN, Roth A, Breaker RR;
+#=GF RL   Proc Natl Acad Sci U S A. 2007;104:16092-16097.
+#=GF WK   http://en.wikipedia.org/wiki/Mesoplasma_florum_novel_riboswitches
+#=GF SQ   2
+
+AE017263.1/668937-668875             ACUUAUACAGGGUAGCAUAAUGGGCUACUGAA.CCGCCCCGGGACCAAUC
+AE017263.1/29965-30028               ACUUAUACAGGGUAGCAUAAUGGGCUACUGACCCCGCCAUGAAACCUAUU
+#=GC SS_cons                         <<<<<<<...<<<<<<.......>>>>>>........<<<<<<<....>>
+#=GC RF                              acuuauacAggGuaGcAuAAugggCuaCugAaaccgccccgagaccaAuc
+
+AE017263.1/668937-668875             UCGGGACUAUAAGU
+AE017263.1/29965-30028               UCAUGACUAUAGGU
+#=GC SS_cons                         >>>>>..>>>>>>>
+#=GC RF                              ucgggAcuauaagu
+//

@@ -1,0 +1,35 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01092
+#=GF ID   GP_knot2
+#=GF DE   Gag/pol translational readthrough site
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   20.00
+#=GF TC   27.30
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00048
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   8076609
+#=GF RT   Pseudoknot-dependent read-through of retroviral gag termination
+#=GF RT   codons: importance of sequences in the spacer and loop 2.
+#=GF RA   Wills NM, Gesteland RF, Atkins JF;
+#=GF RL   EMBO J. 1994;13:4137-4144.
+#=GF WK   http://en.wikipedia.org/wiki/Gag/pol_translational_readthrough_site
+#=GF SQ   2
+
+DQ003591.1/2531-2591             UAGGGCCGUCAGGGUUCUCCCGCCCUCCGUGAACCCAGGCUAAAAGUUAA
+M54993.1/172-232                 UAGGGCCGUCAGGGUUCUCCCGCCCUCCGUGAACCCAGGCUAAAAGUUAA
+#=GC SS_cons                     ...........<<<<<<.<..AAAAAAA>.>>>>>>..............
+#=GC RF                          UAGGGCCGUCAGGGuuCUCCCGCCCUCCGUGaaCCCAGGCUAAAAGUUAA
+
+DQ003591.1/2531-2591             GGUAGGGGGGC
+M54993.1/172-232                 GGUAGGGGGGC
+#=GC SS_cons                     ....aaaaaaa
+#=GC RF                          GGUAGGGGGGC
+//

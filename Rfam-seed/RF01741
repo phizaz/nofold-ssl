@@ -1,0 +1,37 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01741
+#=GF ID   hopC
+#=GF DE   hopC RNA
+#=GF AU   Weinberg Z
+#=GF SE   Published; PMID:20230605;
+#=GF SS   Published; PMID:20230605;
+#=GF GA   45.00
+#=GF TC   49.42
+#=GF NC   19.78
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   20230605
+#=GF RT   Comparative genomics reveals 104 candidate structured RNAs from
+#=GF RT   bacteria, archaea and their metagenomes.
+#=GF RA   Weinberg Z, Wang JX, Bogue J, Yang J, Corbino K, Moy RH, Breaker
+#=GF RA   RR;
+#=GF RL   Genome Biol. 2010;11:R31.
+#=GF WK   http://en.wikipedia.org/wiki/HopC_RNA_motif
+#=GF SQ   4
+
+AE000511.1/965107-965166               UUACAAGCUCUGAUGUAACUAAAUCC.CA..AUUUAAUCUCAAUCAAGGA
+AM260522.1/1116631-1116693             CCAUAAGCCCUGAUGUAACUUAAACCACAAAUUUAAACUUCAAUCAAGGA
+CP000241.1/931504-931564               UUACAAGCUCUGAUGUAACUAAAUCC.CAA.AUUUAAUCUCAAUCAAGGA
+AE001439.1/931454-931513               UUACAAGCUCUGAUGUAACUGAAUCC.CA..AUUUAAUCUCAAUCAAGGA
+#=GC SS_cons                           ......<<<<<<<<.....<<<<<.......>>>>>......>>>..>>>
+
+AE000511.1/965107-965166               GCAUCCCAUUGAU
+AM260522.1/1116631-1116693             GCAUCCCAUUGAC
+CP000241.1/931504-931564               GCAUCCCAUUGAU
+AE001439.1/931454-931513               GCAUCCCAUUGAU
+#=GC SS_cons                           >>...........
+//

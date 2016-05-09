@@ -1,0 +1,67 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00433
+#=GF ID   Hsp90_CRE
+#=GF DE   Hsp90 cis-regulatory element
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15347681, INFERNAL
+#=GF SS   Published; PMID:15347681
+#=GF GA   22.00
+#=GF TC   22.79
+#=GF NC   undefined
+#=GF TP   Cis-reg; thermoregulator;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   15347681
+#=GF RT   Translational regulation of Hsp90 mRNA. AUG-proximal 5'-untranslated
+#=GF RT   region elements essential for preferential heat shock translation.
+#=GF RA   Ahmed R, Duncan RF;
+#=GF RL   J Biol Chem 2004;279:49919-49930.
+#=GF CC   The hsp90 gene product is involved in the Drosophila heat shock
+#=GF CC   response and translation of the hsp90 mRNA is very inefficient
+#=GF CC   under normal growth temperatures. When heat shock occurs
+#=GF CC   translation becomes more efficient.  This family represents a
+#=GF CC   section of the Drosophila hsp90 mRNA 5' UTR that is required for
+#=GF CC   increased translational efficiency during the heat shock
+#=GF CC   response. The exact mechanism of action unknown [1].
+#=GF WK   http://en.wikipedia.org/wiki/Hsp90_cis-regulatory_element
+#=GF SQ   6
+
+AAEU02000132.1/310682-310830             AGUCUUAAAAAAAU.UUCGUGAGGUGUGCGUCGUUACAGCAAGCAGCGUC
+AY122080.1/193-344                       AGUCUUGAAAAAAAUUUCGUACGGUGUGCGUCGUAACAACAAGCAGCGUC
+J01106.1/161-312                         AGUCUUGAAAAAAAUUUCGUACGGUGUGCGUCGUAACAACAAACAGCGUC
+X03810.1/877-1028                        AGUCUUGAAAAAAAUUUCGUACGGUGUGCGUCGUAACAACAAGCAGCGUC
+AAPQ01006550.1/448359-448507             AGUCUUGAAAAAAU.UUCGUGCAGUGCGCGUCGUAGCAGCAAAUAGCGUC
+X03811.1/879-1030                        AGUCUUGAAAAAAAUUUCGUGCGGUGUGCGUCGUUACAGCAAACAGCGUC
+#=GC SS_cons                             .<<<<<<.......<<<<<.<<<.<<<..<<.......>>..>>>.>>>.
+#=GC RF                                  AgccuuGAAAAAAAuuucguacGguGcgcGccguaAcAgCAAgCagCguc
+
+AAEU02000132.1/310682-310830             UGA..AGUUUUGUGAAUUUCCAAUUCUAUACAAAGCAAAGUGAAAAUAUC
+AY122080.1/193-344                       UGAAAAGUUUUGUGAAUUUCCAAUUCUAUACAAAGCAAAGUGAAAAUAUC
+J01106.1/161-312                         UGAAAAGUUUUGUGAAUUUCCAAUUCUAUACAAAGCAAAGUGAAAAUAUC
+X03810.1/877-1028                        UGAAAAGUUUUGUGAAUUUCCAAUUCUAUACAAAGCAAAGUGAAAAUAUC
+AAPQ01006550.1/448359-448507             UGA..AGUUUUGUGAAUUUCCAAUUCUAUACAAAGCAAAGUGAAAAUAUC
+X03811.1/879-1030                        UGAAAAGUUUUGUGAAUUUCCACUUCUACACAAAGCAAAGAGAAAAUAUC
+#=GC SS_cons                             >>>>>.....<<<<..<<<<...<<<<<<.<<.<<.<<<<<<<<<<<<..
+#=GC RF                                  cgaaaAguuuuguGAAuuuccAauucuacAcaAaGcaaaGugaaaauauc
+
+AAEU02000132.1/310682-310830             UGUAUUUUUACCUUUAUUCUGUGAAUAGAACGAAAAACAUACAUACAAGG
+AY122080.1/193-344                       UGUAUUUUUACCUUUAUUCUGUGAAUAGAACGAAAAACAUACAUACAAGA
+J01106.1/161-312                         UGUAUUUUUACCUUUAUUCUGUGAAUAGAACGAAAAACAUACAUACAAGG
+X03810.1/877-1028                        UGUAUUUUUACCUUUAUUCUGUGAAUAGAACGAAAAACAUACAUACAAGG
+AAPQ01006550.1/448359-448507             UGUAUUUUUACCUUUAUUCUGUGAAUAGAACGAAAAACAUACAUACAAGG
+X03811.1/879-1030                        UGUAUUUUUACCUUUAUUCUGUGAAUAGAACGAAAAACAUAAAUACAAGG
+#=GC SS_cons                             ..>>>>>>>>.>>>>...>>.>>.>>>>>>.>>>>..>>>>....>>>>>
+#=GC RF                                  uguauuuucacCuuuAuuCugugAguagaacgaaaAACacaaAuACaagg
+
+AAEU02000132.1/310682-310830             UG
+AY122080.1/193-344                       UG
+J01106.1/161-312                         UG
+X03810.1/877-1028                        UG
+AAPQ01006550.1/448359-448507             UG
+X03811.1/879-1030                        UG
+#=GC SS_cons                             >.
+#=GC RF                                  cg
+//

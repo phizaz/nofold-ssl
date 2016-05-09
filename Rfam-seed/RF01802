@@ -1,0 +1,52 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01802
+#=GF ID   HSUR
+#=GF DE   Herpesvirus saimiri U RNA1/RNA2
+#=GF PI   HSUR1
+#=GF AU   Moore B, Daub J
+#=GF SE   Published; PMID:17381320
+#=GF SS   Published; PMID:17381320
+#=GF GA   40.00
+#=GF TC   43.92
+#=GF NC   23.74
+#=GF TP   Gene; snRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000274 SO:snRNA
+#=GF RN   [1]
+#=GF RM   17381320
+#=GF RT   The challenge of viral snRNPs.
+#=GF RA   Conrad NK, Fok V, Cazalla D, Borah S, Steitz JA;
+#=GF RL   Cold Spring Harb Symp Quant Biol. 2006;71:377-384.
+#=GF WK   http://en.wikipedia.org/wiki/HSUR
+#=GF SQ   4
+
+M28071.1/1837-1695             ACACUACAUAUUUAUUUA..UUUAUUUCUUAGUAAUGUUUACUGGAACUU
+M21438.1/2-144                 ACACUACAUAUUUAUUUA..UUUAUUUCUUAGUAAUGUUUACUGGAACUU
+M55264.1/3425-3311             ACACUACAUAUUUAUUGUAUUUUAUUUAUUAAUGC...............
+M28071.1/2665-2551             ACACUACAUAUUUAUUG...UUUAUUUAUAC......CUGAU........
+#=GC SS_cons                   ..............................<<<<<<<.<<..<<<<<<<<
+#=GC RF                        ACACUACAUAUUUAUUUA..UUUAUUUCUUaGuaauGUuuACuGgaaCuu
+
+M28071.1/1837-1695             AAAUCUGU.GAUAACCUAAACUAAAAGUCUCA.AACAACCCGUUACUUGC
+M21438.1/2-144                 AAAUCUGU.GAUAACCUAAACUAAAAGUCUCAAA.CAACCCGUUACUUGC
+M55264.1/3425-3311             .....UGCUUUAAACCUCA.CACA........CA.......AGGAUUUGC
+M28071.1/2665-2551             AAUGCUGC.UUUAAUCACA.CACG.........AGGUAUC......GCUU
+#=GC SS_cons                   ......<<...........>>...>>>>>>>>....>>..>>>>>>>...
+#=GC RF                        AAAUCUGu.GAUAACCUAAaCUAAaaGucuCaAAACaaCCCguuaCuUGC
+
+M28071.1/1837-1695             U..GACCAAUUUUUGUAGGUACUGGGUGUAAAUA..U..GAUGACCGGUA
+M21438.1/2-144                 U..GACCAAUUUUUGUAGGUACUGGGUGUAAAUA..U..GAUGACCGGUA
+M55264.1/3425-3311             UUCUACUAAUUUUUGAAAGCACUGGGUGUAUAUAGCU..AAAAACCAGUG
+M28071.1/2665-2551             C..UACUAAUUUUUGAAAGCGCUGGGUGUACAUA..UUUAAAAACCAGCG
+#=GC SS_cons                   .................<<<<<<<<...................>>>>>>
+#=GC RF                        U..GACCAAUUUUUGUAGGuaCuGGGUGUAAAUA..U..GAUGACCgGua
+
+M28071.1/1837-1695             CCA
+M21438.1/2-144                 CCA
+M55264.1/3425-3311             CUA
+M28071.1/2665-2551             CUG
+#=GC SS_cons                   >>.
+#=GC RF                        CCA
+//

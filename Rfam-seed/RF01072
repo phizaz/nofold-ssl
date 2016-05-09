@@ -1,0 +1,67 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01072
+#=GF ID   TMV_UPD-PK3
+#=GF DE   Pseudoknot of upstream pseudoknot domain (UPD) of the 3'UTR
+#=GF AU   Wilkinson A
+#=GF SE   Pseudobase
+#=GF SS   Pseudobase
+#=GF GA   23.00
+#=GF TC   23.19
+#=GF NC   22.61
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   PKBASE; PKB00055
+#=GF DR   SO:0005836 SO:regulatory_region
+#=GF RN   [1]
+#=GF RM   3934645
+#=GF RT   Five pseudoknots are present at the 204 nucleotides long 3' noncoding
+#=GF RT   region of tobacco mosaic virus RNA.
+#=GF RA   van Belkum A, Abrahams JP, Pleij CW, Bosch L;
+#=GF RL   Nucleic Acids Res. 1985;13:7673-7686.
+#=GF RN   [2]
+#=GF RM   8355685
+#=GF RT   A phylogenetically conserved sequence within viral 3' untranslated
+#=GF RT   RNA pseudoknots regulates translation.
+#=GF RA   Leathers V, Tanguay R, Kobayashi M, Gallie DR;
+#=GF RL   Mol Cell Biol. 1993;13:5331-5347.
+#=GF RN   [3]
+#=GF RM   8608444
+#=GF RT   A central pseudoknotted three-way junction imposes tRNA-like mimicry
+#=GF RT   and the orientation of three 5' upstream pseudoknots in the 3'
+#=GF RT   terminus of tobacco mosaic virus RNA.
+#=GF RA   Felden B, Florentz C, Giege R, Westhof E;
+#=GF RL   RNA. 1996;2:201-212.
+#=GF WK   http://en.wikipedia.org/wiki/UPSK_RNA
+#=GF SQ   27
+
+AAMG01000647.1/78-108             AGUG..UUUUUCCCUCCACUUAAAUCGAAGGAU
+S68164.1/1326-1356                AGUG..UUUUUCUCUCCACUUGAAUCGAAGAGA
+AJ132578.1/6804-6834              AGUG..CUUUCCAGUUCACUUAAAUAGAACUGG
+X52774.1/2980-3010                AGUG..UUUGCAAGUCCACUAUAAUCGAACUUG
+M81486.1/3404-3434                AGUG..UUUUCAUGUCCACUUAAAUCGAACAUG
+AJ223597.1/2737-2767              AGUG..UUUUUCGUUCCACUUAAAUCGAAACGA
+Z97873.1/5659-5689                AGUG..UUUUGAAGUCCACUUAAAUAGAACUUC
+AJ223596.1/5826-5856              AGUG..UUUGCCGUUCCACUUAAAUCGAAACGG
+AF321057.1/6425-6455              AGAG..UUUUUCCCUCCUCUUAAAUCGAAGGGA
+U30944.1/6092-6122                AGUG..UUUUUCUCUCCACUUAAAUCGAAGAGA
+D13438.1/6370-6402                AGUGUUUUUUUCCCUCCACUUAAAUCGAAGGGU
+AJ295948.1/6376-6406              AGAG..UUUUUCCCUCCUCUUAAAUCGAAGGGC
+AB089381.1/6287-6317              AGUG..UUUAUCCCUCCACUUAAAUCGAAGGGC
+AF155507.2/6248-6278              AGUG..UUUUUCCCUCCACUUAAAUCGAAGGGU
+X72587.1/563-593                  AGUG..UUUUUCCCUCCACUUAAAUCGAAGGGU
+AF103782.1/729-757                AGUG...UUUUCCCUCCACUUAAAUCGAAGGG.
+AF165884.2/2227-2257              AGUG..UUUUUCUGUCCACUUAAAUCGAACAGA
+X82130.1/6266-6296                AGUG..GCUAUCCCUCCACUUAAAUCGAAGGGU
+AB127937.1/964-994                AGUG..CUUUCCCGUUCACUUAAAUCGAACGGU
+AF103781.1/547-576                AGUG..UUUUUCUCUCCACUUAAAUCGAAGAG.
+DQ356949.1/6642-6672              UGUU..UAUUCCGUUCCACUGAAAUCGAAACGG
+AM398436.1/6246-6275              AGUG...UUUACUCUCCACUUAAAUCGAAGAGU
+AM040955.1/6093-6123              AGUG..UUUUAUCCUCCACUUAAAUCGAAGGAU
+AB017503.1/6087-6117              AGUG..UUUUCCUCUCCACUUAAAUCGAAGAGG
+AB261167.1/6350-6380              AGUG..UUUUUCCGUCCACUUAAAUCGAACGGC
+AF035633.1/1264-1294              AGUG..UUUUCGGCUCCACUUAAAUCGAAGCCC
+AY751781.1/621-651                AGUG..UUUCGGCUUCCACUUAAAUCGAAAGCC
+#=GC SS_cons                      <<<<......AAAAAA>>>>......a.aaaaa
+//

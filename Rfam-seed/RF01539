@@ -1,0 +1,43 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01539
+#=GF ID   TB11Cs4H1
+#=GF DE   Trypanosomatid snoRNA TB11Cs4H1
+#=GF AU   Doniger T, Michaeli S, Unger R, Osuch I
+#=GF SE   Predicted; WAR;
+#=GF SS   Predicted; WAR;
+#=GF GA   16.00
+#=GF TC   16.81
+#=GF NC   14.07
+#=GF TP   Gene; snRNA; snoRNA; HACA-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000594 SO:H_ACA_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF RN   [1]
+#=GF RM   15840815
+#=GF RT   A genome-wide analysis of C/D and H/ACA-like small nucleolar RNAs in
+#=GF RT   Trypanosoma brucei reveals a trypanosome-specific pattern of rRNA
+#=GF RT   modification.
+#=GF RA   Liang XH, Uliel S, Hury A, Barth S, Doniger T, Unger R, Michaeli S;
+#=GF RL   RNA. 2005;11:619-645.
+#=GF WK   http://en.wikipedia.org/wiki/Trypanosome_H/ACA_box_snoRNAs
+#=GF SQ   5
+
+AM502245.1/215597-215667                 UCAUCUUGACCUGUCUGGCA.CCUGUCUUUACA.CCUGUCAGUGACAGAG
+CP000079.1/382998-382928                 UCAUCUUGACCUGUCUGGCA.CCUGUCUUUACA.CCUGUCAGUGACAGAA
+AM494964.1/383447-383517                 GCAUCUUGAUCUGUCUGGCA.CCUGUCUUUACA.CCUGUCAGUGACAGAG
+AAHB01000003.1/139856-139786             AAAUCUUACCCUGUCUAGCUGCCUGUCAGUAUA.C.UUUCGGUGACGGUA
+AAHK01031442.1/205-276                   ACAUCUUGCCCUGUCUGGCGCCCUGUCUGUGCAAACGGUUGGUGGCGG.G
+#=GC SS_cons                             ...<<<<<<.......<<<...<<<<<................>>>>>..
+#=GC RF                                  aaAuCuugccCUGUCUgGCa.CCuGuCugUAcA.ccugUcgGUGaCaGaa
+
+AM502245.1/215597-215667                 CACGCCCGAAAGUUCAAGAAAGA
+CP000079.1/382998-382928                 CACGCCCGAAAGUUCAAGAGAGA
+AM494964.1/383447-383517                 CCCGCCCGAAAGCUCAAGAGAGA
+AAHB01000003.1/139856-139786             UUGGCUCGAAAGUGUAAGAGAGA
+AAHK01031442.1/205-276                   CCCGCCCGAAAGCGCAAGAGAGA
+#=GC SS_cons                             ...>>>.......>>>>>>....
+#=GC RF                                  cacGCcCGAAAGugcaaGaGAGA
+//

@@ -1,0 +1,71 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00388
+#=GF ID   Anti-Q_RNA
+#=GF DE   Anti-Q RNA
+#=GF PI   QaRNA
+#=GF AU   Moxon SJ
+#=GF SE   PMID:14651627
+#=GF SS   Published; PMID:14651627
+#=GF GA   20.00
+#=GF TC   35.70
+#=GF NC   undefined
+#=GF TP   Gene; antisense;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000644 SO:antisense_RNA
+#=GF RN   [1]
+#=GF RM   14651627
+#=GF RT   Characterization of cis-acting prgQ mutants: evidence for two
+#=GF RT   distinct repression mechanisms by Qa RNA and PrgX protein in
+#=GF RT   pheromone-inducible enterococcal plasmid pCF10.
+#=GF RA   Bae T, Kozlowicz BK, Dunny GM;
+#=GF RL   Mol Microbiol 2004;51:271-281.
+#=GF RN   [2]
+#=GF RM   20097859
+#=GF RT   Direct evidence for control of the pheromone-inducible prgQ
+#=GF RT   operon of Enterococcus faecalis plasmid pCF10 by a
+#=GF RT   countertranscript-driven attenuation mechanism.
+#=GF RA   Johnson CM, Manias DA, Haemig HA, Shokeen S, Weaver KE, Henkin
+#=GF RA   TM, Dunny GM
+#=GF RL   J Bacteriol. 2010;192:1634-1642.
+#=GF RN   [3]
+#=GF RM   20332003
+#=GF RT   Structural analysis of the Anti-Q-Qs interaction: RNA-mediated
+#=GF RT   regulation of E. faecalis plasmid pCF10 conjugation.
+#=GF RA   Shokeen S, Johnson CM, Greenfield TJ, Manias DA, Dunny GM, Weaver
+#=GF RA   KE
+#=GF RL   Plasmid. 2010;63:0-0.
+#=GF CC   Qa RNA is a cis-regulatory element from Enterococcus faecalis which is
+#=GF CC   known to negatively regulate prgQ transcription via an antisense mechanism
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Anti-Q_RNA
+#=GF SQ   6
+
+AE016833.1/44522-44622             GUUGUAACUAAUGUUGCAACAAACGA.........GAACCGAGUAUAGUU
+D78016.1/6410-6307                 GUUGUAACUUAUGUUGCAGUGUUCGA.........GAACCGAGUAUAGUU
+AE016831.1/5476-5375               GUUGUAACUAAUGUUGCAACAAACGA.........GAACCGAGUAUAGUU
+AY855841.2/8399-8298               GUUGUAACUAAUGUUGCAACAAACGA.........GAACCGAGUAGAGUU
+AE016833.1/5415-5306               AUUCUACCUUAUUUGAUAGUAGAUUUAAAACUUUGCAACAGAACC..GUU
+AE002565.1/35056-35157             GUUGUAACUUAUGUUGCAACAAACGA.........GAACCGAUUAUAGUU
+#=GC SS_cons                       <<<<<<<<....>>>>>>>>...............<<<<<<<....<<<<
+#=GC RF                            guuguaaCUaAUGuugcaacAaAcgA.........GaaCCGaguAuaguu
+
+AE016833.1/44522-44622             CAUGGGGUUCUGUUGCAAAGUUUUAAAUAAAGAAUAAAAUCCC.UUACGG
+D78016.1/6410-6307                 CAUGGGAUCAGCAUGAAUUAUUUAACUAUCCUCUUGGGUUGGUAGCCCAA
+AE016831.1/5476-5375               CAUGCUGU.AUCAUGAAUUGUUUAACUGUCCUCUAGGAUUCCC.GUCCUA
+AY855841.2/8399-8298               CAUGUCAU.ACCAUGAAUUGUUUAACUGCCCCCUAGGAUUGCC.GUCCUA
+AE016833.1/5415-5306               CAUGGGUAUAGCAUGAAUUGUUUAACUGUCCUCUAGGAUUCCC.GUCCUA
+AE002565.1/35056-35157             CAUGGUGU.CUCAUGAAUUAUUUAACUGUCCUCUGGGAUUCCC.GUCCCA
+#=GC SS_cons                       <<<<.......>>>>>>>>......<<<<<...<<<<<<.....>>>>>>
+#=GC RF                            CauGggauuAuCauGaacugUUUAAcugcccucuaGgauUccc.gucCua
+
+AE016833.1/44522-44622             UAUC.UAUGAUU.
+D78016.1/6410-6307                 AGAUAGUCGGUUC
+AE016831.1/5476-5375               UGACAGUCGGUUC
+AY855841.2/8399-8298               UGGCAGUCGGUUC
+AE016833.1/5415-5306               UGGCAGUCGGUUC
+AE002565.1/35056-35157             UGGCAGUCGGUUC
+#=GC SS_cons                       .>>>>>>>>>>>>
+#=GC RF                            uggcaguCGGuuC
+//

@@ -1,0 +1,31 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01154
+#=GF ID   snoU43C
+#=GF DE   Small nucleolar RNA U43C
+#=GF AU   Wilkinson A
+#=GF SE   Predicted; WAR; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   20.00
+#=GF TC   26.11
+#=GF NC   undefined
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   URL; http://snoopy.med.miyazaki-u.ac.jp/view.cgi?id=CIO30001
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF WK   http://en.wikipedia.org/wiki/SnoRNA
+#=GF SQ   3
+
+CT573197.7/96185-96124                   AAAAAUGUGAUAAAAA.UUUAG.......GUCAGACUUUAUAUAAAGUGC
+AABS01000015.1/305590-305656             UAAAAUGUGAUGAAAA.UUUAGACGGGCGGUCUGAU.....AUAAAGUGC
+AACT01018974.1/47309-47374               UUAAAUAUGAUGAAAAAUUUAGACGGGCGGUCUGAU......CAAAAUGC
+#=GC SS_cons                             .<<<..............................................
+
+CT573197.7/96185-96124                   UCCUAAC....UA...CUGUAUACUUA
+AABS01000015.1/305590-305656             UGAUU.CGUCUUUUUUCUGA...UUUU
+AACT01018974.1/47309-47374               UGAUU.CGUC.UAAUUCUGA...UUUA
+#=GC SS_cons                             .......................>>>.
+//

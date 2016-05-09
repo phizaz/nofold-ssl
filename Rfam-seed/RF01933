@@ -1,0 +1,51 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01933
+#=GF ID   bxd_5
+#=GF DE   Bithoraxoid conserved region 5
+#=GF AU   Eberhardt R
+#=GF SE   Predicted; WAR; Eberhardt R
+#=GF SS   Predicted; WAR;
+#=GF GA   50.00
+#=GF TC   60.63
+#=GF NC   undefined
+#=GF TP   Gene;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001463 SO:lincRNA
+#=GF DR   GO:0006342 GO:chromatin silencing
+#=GF RN   [1]
+#=GF RM   17174895
+#=GF RT   Transcription of bxd noncoding RNAs promoted by trithorax represses
+#=GF RT   Ubx in cis by transcriptional interference.
+#=GF RA   Petruk S, Sedkov Y, Riley KM, Hodgson J, Schweisguth F, Hirose S,
+#=GF RA   Jaynes JB, Brock HW, Mazo A;
+#=GF RL   Cell. 2006;127:1209-1221.
+#=GF RN   [2]
+#=GF RM   17568198
+#=GF RT   A model for initiation of mosaic HOX gene expression patterns by
+#=GF RT   non-coding RNAs in early embryos.
+#=GF RA   Petruk S, Sedkov Y, Brock HW, Mazo A;
+#=GF RL   RNA Biol. 2007;4:1-6.
+#=GF CC   Bithoraxoid (bxd) is a long non-coding RNA found in
+#=GF CC   Drosophila. It silences the expression of the Ultrabithorax (Ubx)
+#=GF CC   gene by transcriptional interference [1,2].
+#=GF WK   http://en.wikipedia.org/wiki/Bxd_(gene)
+#=GF SQ   5
+
+AAPU01011051.1/190382-190325             GACUCAACCAACCAGUUUCGACAACGCGAACUCCGAACUUAAUCGAAACA
+M27995.1/122-66                          GACCUAACCAACCAGU.UCGGCAACGCGAACUCCGAACUUAAUCGAAACA
+AAST01029201.1/717-661                   GACCUAACCAACCAGU.UCGGCAACGCGAACUCCGAACUUAAUCGAAACA
+AC095017.1/68409-68353                   GACCUAACCAACCAGU.UCGGCAACGCGAACUCCGAACUUAAUCGAAACA
+AAPP01019539.1/295414-295358             AACCCAACCAACCAGU.UCAGCAACGCGAACUCCGAACUUAAUCGAAACA
+#=GC SS_cons                             ..............<<.<<<......>>>>>...<<......>>......
+#=GC RF                                  GACYYAACCAACCAGUuUCGGCAACGCGAACUCCGAACUUAAUCGAAACA
+
+AAPU01011051.1/190382-190325             UCAAAGGA
+M27995.1/122-66                          UCAAAGGA
+AAST01029201.1/717-661                   UCAAAGGA
+AC095017.1/68409-68353                   UCAAAGGA
+AAPP01019539.1/295414-295358             UCAAAGGA
+#=GC SS_cons                             ........
+#=GC RF                                  UCAAAGGA
+//

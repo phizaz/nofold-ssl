@@ -1,0 +1,45 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01026
+#=GF ID   MIR828
+#=GF DE   microRNA MIR828
+#=GF AU   Wilkinson A
+#=GF SE   miRBase; Wilkinson A
+#=GF SS   Predicted; WAR; Wilkinson A
+#=GF GA   18.00
+#=GF TC   18.35
+#=GF NC   17.48
+#=GF TP   Gene; miRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   MIPF; MIPF0000544
+#=GF DR   SO:0001244 SO:pre_miRNA
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF WK   http://en.wikipedia.org/wiki/MicroRNA
+#=GF SQ   5
+
+AM442138.1/1883-1823                 UUGGUUUCUUGCUCAAAUGAGUGUUCCACAUCA.................
+AM481109.2/2574-2468                 AAAGUUUCUUGCUCAAAUGAGUAUUCCAAACAACAGCUUGUGAAGCAAUG
+AC168149.8/75695-75613               AAUGUUUCUUGCUCAAAUGAGUAUUCCA......................
+AL161571.2/157498-157597             AAUGUUUCUUGCUUAAAUGAGUAUUCCAUGUAA............AAAUG
+AC189237.1/100224-100330             AAUGUUUCUUGCUUAAAUGGGUAUUCCAUGAAAGUGAUUC.....ACACU
+#=GC SS_cons                         ....<<.<<<....<<<<<<<<<<<.<<<.....................
+#=GC RF                              AAaGUUuCuUGCUcAAAUGAGuaUUCCAaAuAA............aAAUG
+
+AM442138.1/1883-1823                 ....................................ACCUG.GAUAGUCA
+AM481109.2/2574-2468                 AUUACUGUCAUAGUCUCUGCAUGUGGAUUGUU.....GUUGAGAUGCUCA
+AC168149.8/75695-75613               ......AUCACAGUUGCAGAUCUUUGUUUUCUGCUGAC.UGAGAUGCUCA
+AL161571.2/157498-157597             AUUCACUCACUCGUAUGGGUGGGUUGGGUUUUCUCUUCAUGAGAUGCUCA
+AC189237.1/100224-100330             CACUAUGUAGACCUAACUACGAGUCGAUUUCUCUCUUCAUGAGAUGCUCA
+#=GC SS_cons                         ......................................>>>.>>>>>>>>
+#=GC RF                              AUUaauuuaaUaGUaUggGuagGUuGagUuUUcucuacuUGAGAugCUCA
+
+AM442138.1/1883-1823                 UUUCCUGCAAAACCA
+AM481109.2/2574-2468                 UUU...GAGGAAGCA
+AC168149.8/75695-75613               UUU...GAGCAAGCA
+AL161571.2/157498-157597             UUU...GAGCAAGCA
+AC189237.1/100224-100330             UUU...AAGCAAGCA
+#=GC SS_cons                         >>>...>>>.>>...
+#=GC RF                              UUU...GaGaAAgCA
+//

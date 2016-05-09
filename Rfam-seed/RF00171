@@ -1,0 +1,92 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00171
+#=GF ID   Tombus_5
+#=GF DE   Tombusvirus 5' UTR
+#=GF AU   Griffiths-Jones SR, Moxon SJ
+#=GF SE   Griffiths-Jones SR
+#=GF SS   Published; PMID:11162089
+#=GF GA   35.00
+#=GF TC   41.74
+#=GF NC   25.21
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000204 SO:five_prime_UTR
+#=GF RN   [1]
+#=GF RM   11162089
+#=GF RT   An RNA domain within the 5' untranslated region of the tomato bushy
+#=GF RT   stunt virus genome modulates viral RNA replication.
+#=GF RA   Wu B, Vanti WB, White KA;
+#=GF RL   J Mol Biol 2001;305:741-756.
+#=GF RN   [2]
+#=GF RM   13130137
+#=GF RT   A second functional RNA domain in the 5' UTR of the Tomato bushy
+#=GF RT   stunt virus genome: Intra- and interdomain interactions mediate viral
+#=GF RT   RNA replication.
+#=GF RA   Ray D, Wu B, White KA;
+#=GF RL   RNA 2003;9:1232-1245.
+#=GF RN   [3]
+#=GF RM   15367615
+#=GF RT   Structural properties of a multifunctional T-shaped RNA domain that
+#=GF RT   mediate efficient tomato bushy stunt virus RNA replication.
+#=GF RA   Ray D, Na H, White KA;
+#=GF RL   J Virol 2004;78:10490-10500.
+#=GF CC   Tomato bushy stunt virus is the prototype member of the Tombusviridae
+#=GF CC   family.  In addition to viral proteins p33 and the RNA-dependent RNA
+#=GF CC   polymerase p92, and unknown host factors, RNA signals within the UTRs
+#=GF CC   are necessary for genome replication.  2 RNA domains in the 5' UTR
+#=GF CC   have been reported [1,2], a 5' T-shaped domain (TSD) followed by a
+#=GF CC   stem-loop (SL5) and a downstream domain (DSD).  These domains are
+#=GF CC   combined into a single family here.  Reference [2] proposes that
+#=GF CC   TSD-DSD interactions are involved in the mediation of viral RNA
+#=GF CC   replication.  The full alignment of this family contains a number of
+#=GF CC   defective interfering (DI) deletion mutants, used to study RNA virus
+#=GF CC   replication.
+#=GF WK   http://en.wikipedia.org/wiki/Tombusvirus_5'_UTR
+#=GF SQ   9
+
+AJ249740.1/2-171             GAAAUUCCCCAGGAUUUCUCGACC..UAGUUCGUUGUU.AUCUGGUGACU
+M21958.1/2-168               .AAAUUCUCCAGGAUUUCUCGACC..UAGUUCGUUU...AUCUGGUGACU
+X85215.2/2-146               GAAAUAUCUCAGGAUUU...GACC...............GUCCGGUGAGU
+M25270.1/3-154               .AAAUUCUCCAGGAUUUCUCAACC..UUGGUUGUGCU..AUCUGGUGACU
+AY163842.1/2-137             GAAAUUCUCCAGCCU.....GACC...............AGGUGGUGAGU
+X15511.1/2-163               GAAAUCCUCCAGGACACCUCGACC..UAGGUUGUGU...AUCCGGUGAUU
+U80935.1/2-169               GAAAUUCCCCAGGAUUUCUCGACC..UAGUACGUCU...ACCUGGUGACU
+AY100482.1/2-169             GAAAUUCCUCAG.AUUUCUC..CCUGUUGACCAGGAGUUAU.CGGUGAGU
+X62493.1/2-182               .AAAUUCUCCAGGAUUUCUCGACC..UCGGUUGUUUU..AUCUGGUAGUU
+#=GC SS_cons                 <<<<<<<<<..<<<<........................>>>>.......
+
+AJ249740.1/2-171             UGCGCUAACUGUUGCUUUGCGUAGAGAAUUUCUCUCCU....UUGUUAAU
+M21958.1/2-168               UGCGC.UACCGUUGCUUUGCGUAGAGAAUUUCUCUCCA....UAAUUAUU
+X85215.2/2-146               UGCGC...UUAUCACU.UGCGUAAGGUAUUUCUCUCUUCA..UUGUUCAU
+M25270.1/3-154               UGCGC...GUGUUGUC.UGCGUAGAGAAUUUCUCUCCU....UAACCAA.
+AY163842.1/2-137             UGCGG....UGUUGUCUACCGUAGAGGAUUUCUCUCGU....GCCUUGUU
+X15511.1/2-163               UGCGU..ACUGUUGCUUUGCGUAGAGGAUUUCUCUCCU....GUUCACUA
+U80935.1/2-169               UGCGCUGUCUGUUGCUUUGCGUAGGGAAUUUCUCUCCA....AUAUUAUU
+AY100482.1/2-169             UGCGC...UUUGUGCUUUGCGUAAGGGAUUUCUCUCGUACAGGUACGAUC
+X62493.1/2-182               UGCGCUAAUCUUCGCUUUGCGUAGGGAAUUUCUCUCCU....UAAUACAU
+#=GC SS_cons                 <<<<<.............>>>>>>>>>>>>>>.<<<<<............
+
+AJ249740.1/2-171             UCUUUGACUU.AGGGGUUUGAAGGUUGGGUCUACCUU..UCGGGG.....
+M21958.1/2-168               AUCUUUAGUUGUGGGGUUUGAAGGUUGGGUCUACCUU..UCGGGG.....
+X85215.2/2-146               AUG........GAGGGUUUGAAGGCUGAGUCUACCACAACUGUGG.....
+M25270.1/3-154               ..........AAGGGGUUUGAAGACUGGGUCUACCGC..UUGCGG.....
+AY163842.1/2-137             ...........ACGGGUUUGAAGGGCGAGCCUAUCU...UC.GGA.....
+X15511.1/2-163               C.....AUAUCAGGGGUUUGAAGGCAGGGUCUACCUU..UCGGGG.....
+U80935.1/2-169               AUCUUUAAUU.UGGGGUUUGAAGGUUGGGUCUACCCU..UCGGGG.....
+AY100482.1/2-169             UCGGACCAGCUACGGGUUUGAAGGGUGAGCCUAUUCU..UCGGAA.....
+X62493.1/2-182               UUCUG.AGUUAAGGGGUUUGAAGGUUGGGUCUAUCUU..UUGAGUUUAUC
+#=GC SS_cons                 ...........>>>>>.......<<<<<.<<<.<<<......>>>.....
+
+AJ249740.1/2-171             ........GGAUAAAUUGUAACUUCCAACAAACAAGCAACAUG
+M21958.1/2-168               ........GGAUAAAUUGUAACUUCCAACAAACAAGCGACAUG
+X85215.2/2-146               ........GGAUAAAUUGUAACUUUCAGCAAACA.GUG..AUG
+M25270.1/3-154               .........GAUAAAUUGUAACUUCCAGUAAACGA.CGACAUG
+AY163842.1/2-137             ........GGGUAAAUUGUAACUUUCGCCAAACAGG.ACUAUG
+X15511.1/2-163               ........GGAUAAAUUGUAACUUCCUGCAAAUAAGCAAAAUG
+U80935.1/2-169               ........GGAUAAAUUGUAACUUCCAACAAAUAAGCGACAUG
+AY100482.1/2-169             ........GGGUAAAUUGUAACUUUCACC.AAUAAGCA..AUG
+X62493.1/2-182               UCACUAGAGGAUAAAUUGUAACUUCCAACAAAUAAGCGAUAUG
+#=GC SS_cons                 ........>>>.............>>>>>..............
+//

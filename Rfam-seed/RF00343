@@ -1,0 +1,61 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00343
+#=GF ID   snoZ122
+#=GF DE   Small nucleolar RNA Z122
+#=GF AU   Moxon SJ
+#=GF SE   Moxon SJ, INFERNAL
+#=GF SS   Predicted; PFOLD
+#=GF GA   26.00
+#=GF TC   26.47
+#=GF NC   25.13
+#=GF TP   Gene; snRNA; snoRNA; CD-box;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000593 SO:C_D_box_snoRNA
+#=GF DR   GO:0006396 GO:RNA processing
+#=GF DR   GO:0005730 GO:nucleolus
+#=GF DR   snoopy; Arabidopsis_thaliana300100
+#=GF RN   [1]
+#=GF RM   12007400
+#=GF RT   Small nucleolar RNAs: an abundant group of noncoding RNAs with
+#=GF RT   diverse cellular functions.
+#=GF RA   Kiss T;
+#=GF RL   Cell 2002;109:145-148.
+#=GF RN   [2]
+#=GF RM   12736310
+#=GF RT   The high diversity of snoRNAs in plants: identification and
+#=GF RT   comparative study of 120 snoRNA genes from Oryza sativa.
+#=GF RA   Chen CL, Liang D, Zhou H, Zhuo M, Chen YQ, Qu LH;
+#=GF RL   Nucleic Acids Res 2003;31:2601-2613.
+#=GF CC   Z122 is a member of the C/D class of snoRNA which contain the C (UGAUGA)
+#=GF CC   and  D (CUGA) box motifs. Most of the members of the box C/D family
+#=GF CC   function in directing site-specific 2'-O-methylation of substrate RNAs
+#=GF CC   [1].
+#=GF WK   http://en.wikipedia.org/wiki/Small_nucleolar_RNA_Z122
+#=GF SQ   9
+
+AK069030.1/2288-2376                     UUUGGGAAAUGAUGAACAAUUCAUCUCAG.....AUAUCCUUUAUGG.AU
+AJ458935.1/853-941                       UUUGGGAAAUGAUGAACAAUUCAUCUCAG.....AUAUCCUUUAUGG.AU
+AJ490491.1/1-89                          UUUGGGAAAUGAUGAACAAUUCAUCUCAG.....AUAUCCUUUAUGG.AU
+CAAP02004492.1/842-935                   UUUGGGAAAUGAUGAGAGAUUCAAACAGGUUAGCAUAUGCUUAAUGG.UU
+AP009338.1/8469-8551                     UUUGGGAUAUGAUGCUAAAGAUUUUUAAC.....AGAGGCUUUAG.....
+AC161107.24/105444-105363                UUUGGGAUAUGAUGAUAAU...AAUGCUG.....ACA.....GAGGC.AC
+AASG02005749.1/15149-15064               GUUGGGAAAUGAUGA.GAAGUUAUCUCA......AGUUAUCAAAGGC.AC
+AARH01006106.1/238770-238847             UUUGGGAGAUGAUGAGAAA...............AUUAAUCAGAGGC.AC
+AJ010669.1/1-82                          ..UGGGAUAUGAUGA.CAA...AAAUACG.....AUAUCUCUAAGGCUAA
+#=GC SS_cons                             <<<<<<<...........................................
+#=GC RF                                  uuuGGGAaAUGAUGAACAAuucAaaUaaG.....AUAUCuuUaAuGg.Aa
+
+AK069030.1/2288-2376                     UUAUUUUCA.GAAUGAUGAAAAUUUGCACGUCAGUCUGAUCCCAAA
+AJ458935.1/853-941                       UUAUUUUCA.GAAUGAUGAAAAUUUGCACGUCAGUCUGAUCCCAAA
+AJ490491.1/1-89                          UUAUUUUCA.GAAUGAUGAAAAUUUGCACGUCAGUCUGAUCCCAAA
+CAAP02004492.1/842-935                   UUUUUGUCA.UGUUGAAUAUUUUUUGCACGUCAAUCUGAUCCCAAA
+AP009338.1/8469-8551                     ..CUUUGCU.GAAUUAUUGAUAUUUGCACGUCAGUCUGAUCCCAAA
+AC161107.24/105444-105363                UAGCUGUUCUGAAACAAAAAUAUUUGCACGUCAGUCUGAUCCUAAA
+AASG02005749.1/15149-15064               UAGCUGUGC.UGAAUGUCU.UAUUUGCACGUCAGUCUGAUCCCAAA
+AARH01006106.1/238770-238847             CAGCUCUGC.UGAA.AUUCUAUUUUGCACGUCAGUCUGAUCCCAGA
+AJ010669.1/1-82                          UUGCUGUGC.GGAUGAAAUGUAUUUGCACGUCAGUCUGAUCCCA..
+#=GC SS_cons                             .......................................>>>>>>>
+#=GC RF                                  UUauUuUga.GaAUGAaaaaaAUUUGCACGUCAGUCUGAUCCCaaa
+//

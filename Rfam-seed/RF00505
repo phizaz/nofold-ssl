@@ -1,0 +1,44 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00505
+#=GF ID   RydC
+#=GF DE   RydC RNA
+#=GF AU   Moxon SJ
+#=GF SE   PMID:15618228
+#=GF SS   Published; PMID:15618228
+#=GF GA   45.00
+#=GF TC   56.66
+#=GF NC   undefined
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000655 SO:ncRNA
+#=GF RN   [1]
+#=GF RM   15618228
+#=GF RT   A small bacterial RNA regulates a putative ABC transporter.
+#=GF RA   Antal M, Bordeau V, Douchin V, Felden B;
+#=GF RL   J Biol Chem. 2005;280:7901-7908.
+#=GF CC   This family represents a bacterial non-coding RNA called RydC. RydC is
+#=GF CC   thought to regulate an mRNA, yejABEF which encodes an ABC transporter
+#=GF CC   protein. RydC is known to bind the protein Hfq which causes a
+#=GF CC   conformational change in the RNA molecule. The Hfq/RydC complex is then
+#=GF CC   thought to bind to the target mRNA and induce its degradation [1].
+#=GF WK   http://en.wikipedia.org/wiki/RydC_RNA
+#=GF SQ   5
+
+U00096.2/1489530-1489467               CUUCCGAUGUAGACCCGU.AUUCUUCGCCUGUACCACGGGUC.GGUUUUA
+CU928161.2/1508420-1508357             CUUCCGAUGUAGGCCCGU.AUUCUUCGCCUGUACCACGGGUC.GGUUUUA
+AL627270.1/77020-76955                 CUUCCGAUGUAGACCCGUCCUCCUUCGCCUGCGUCACGGGUCCUGGUUAG
+CP001113.1/1726026-1726091             CUUCCGAUGUAGACCCGUCCUCCUUCGCCUGCGUCACGGGUCUUGGUUAG
+CP000038.1/1826318-1826381             CUUCCGAUGUAGACCCGU.AUUCUUCGCCUGUACCACGGGUC.GGUUUUA
+#=GC SS_cons                           ...........<<<<<<<.......AAAAAAAAA.>>>>>>>........
+#=GC RF                                CUUCCGAUGUAGACCCGucaUuCUUCGCCUGuauCaCGGGUCcuGuUUaa
+
+U00096.2/1489530-1489467               GUACAGGCGUUUUCUU
+CU928161.2/1508420-1508357             GUACAGGCGUUUUCUU
+AL627270.1/77020-76955                 ACGCAGGCGUUUUCUG
+CP001113.1/1726026-1726091             ACGCAGGCGUUUUCUG
+CP000038.1/1826318-1826381             GUACAGGCAUUUUCUU
+#=GC SS_cons                           aaaaaaaaa.......
+#=GC RF                                auaCAGGCGUUUUCUu
+//

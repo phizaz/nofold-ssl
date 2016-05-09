@@ -1,0 +1,69 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF02022
+#=GF ID   mir-1275
+#=GF DE   microRNA mir-1275
+#=GF AU   Boursnell C
+#=GF SE   Predicted; ClustalW2
+#=GF SS   Predicted; RNAalifold
+#=GF GA   56.00
+#=GF TC   79.74
+#=GF NC   29.00
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0000276 SO:microRNA
+#=GF DR   MIPF; MIPF0000674
+#=GF DR   GO:0035068 GO:micro-ribonucleoprotein complex
+#=GF DR   GO:0035195 GO:miRNA-mediated gene silencing
+#=GF DR   URL; http://www.mirbase.org
+#=GF RN   [1]
+#=GF RM   18760970
+#=GF RT   Computational identification of novel microRNA homologs in the
+#=GF RT   chimpanzee genome
+#=GF RA   Baev V, Daskalova E, Minkov I
+#=GF RL   Comput Biol Chem. 2009;33:62-70.
+#=GF RN   [2]
+#=GF RM   18285502
+#=GF RT   Application of massively parallel sequencing to microRNA profiling
+#=GF RT   and discovery in human embryonic stem cells
+#=GF RA   Morin RD, O'Connor MD, Griffith M, Kuchenbauer F, Delaney A,
+#=GF RA   Prabhu AL, Zhao Y, McDonald H, Zeng T, Hirst M, Eaves CJ, Marra
+#=GF RA   MA
+#=GF RL   Genome Res. 2008;18:610-621.
+#=GF RN   [3]
+#=GF RM   20214803
+#=GF RT   Genome-wide comparative analysis of microRNAs in three non-human
+#=GF RT   primates
+#=GF RA   Brameier M
+#=GF RL   BMC Res Notes. 2010;3:64.
+#=GF WK   http://en.wikipedia.org/wiki/Micro_RNA
+#=GF SQ   6
+
+AANU01208069.1/6838-6918                 CCUCUGUUAGGAAGGGUGUUGGGGGAGAGGUUGUC...............
+AANU01208069.1/5405-5303                 CCUCUGUUAGGAAGAGUG.UGGGGGAGAGGCUGCCUCAUGUCUUGUUUGU
+AL589941.6/62761-62682                   CCUCUGUGAGAAAGGGUG.UGGGGGAGAGGCUGUC...............
+AADB02010022.1/904419-904521             CCUCUGUUAGGAAGGAUG.UAGGGGAGAGGCUGCCUCAAGUCGUGCUUGU
+AC193265.3/130181-130103                 CCUCUGUGAGAAAGGGUG.UGGGGGAGAGGCUGUC...............
+ABGA01022599.1/16760-16839               CCUCUGUUAGGAAGGGUG.UGGGGGAGAGGCUGUC...............
+#=GC SS_cons                             <<<<<<<............<<<<<<<<<<<<...................
+#=GC RF                                  CCuCuGuuAGaAAGGGUG.uGGGGgagaGgCUGUc...............
+
+AANU01208069.1/6838-6918                 ......CUGUGUCUGUAAAUAUGCAAAACUUAUUUUCCCCAAG..GCUGA
+AANU01208069.1/5405-5303                 CUCACAUUGUGUCUAUAAACAUGCAAAACUUGUUUCCCCCAAGCAACAGA
+AL589941.6/62761-62682                   ......UUGUGUCUGUAAGUAUGCCAAACUUAUUUUCCCCAAG..GCAGA
+AADB02010022.1/904419-904521             CUCACAUUGUGUCUAUAAACAUGCAAAACUUGUUUCCCCCAAGCAACAGA
+AC193265.3/130181-130103                 ......UUGUGUCUGUAAGUAUGCCAAACUUAUUUUCCCCAAG..GCAGA
+ABGA01022599.1/16760-16839               ......UUGUGUCUGUAAAUAUGCAAAACUUAUCUUCCCCAAG..GCAGA
+#=GC SS_cons                             ..........>>>><<<<<<.......>>>>>>>>>>>>>>....>>>>>
+#=GC RF                                  ......UUGUGuCuguaaguAUGcaAAacuuaucuuCCCCaAG..gCaGa
+
+AANU01208069.1/6838-6918                 GGGA
+AANU01208069.1/5405-5303                 GGGA
+AL589941.6/62761-62682                   GGGA
+AADB02010022.1/904419-904521             GGGA
+AC193265.3/130181-130103                 GGG.
+ABGA01022599.1/16760-16839               GGGA
+#=GC SS_cons                             >>..
+#=GC RF                                  GGGA
+//

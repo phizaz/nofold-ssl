@@ -1,0 +1,58 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF00179
+#=GF ID   GAIT
+#=GF DE   GAIT element
+#=GF AU   Moxon SJ
+#=GF SE   See reference [1]
+#=GF SS   Published; PMID:12588972
+#=GF GA   20.00
+#=GF TC   24.08
+#=GF NC   undefined
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0000233 SO:mature_transcript
+#=GF RN   [1]
+#=GF RM   12588972
+#=GF RT   Transcript-selective translational silencing by gamma interferon is
+#=GF RT   directed by a novel structural element in the ceruloplasmin mRNA 3'
+#=GF RT   untranslated region.
+#=GF RA   Sampath P, Mazumder B, Seshadri V, Fox PL;
+#=GF RL   Mol Cell Biol 2003;23:1509-1519.
+#=GF CC   This family represents a cis-acting element in the 3'-UTR of the
+#=GF CC   ceruloplasmin (Cp) gene called gamma interferon inhibitor of translation
+#=GF CC   (GAIT). The GAIT element is involved in selective translational
+#=GF CC   silencing of the Cp transcript. Ceruloplasmin (Cp) is a multifunctional,
+#=GF CC   copper-containing glycoprotein produced by the liver and secreted into
+#=GF CC   the plasma. As an acute-phase protein, its plasma concentration can
+#=GF CC   double during multiple inflammatory conditions. Plasma Cp has been
+#=GF CC   reported to be an independent risk factor for cardiovascular disease,
+#=GF CC   including atherosclerosis, carotid restenosis after endarterectomy, and
+#=GF CC   myocardial infarction. Translational silencing of Cp, and
+#=GF CC   possibly other transcripts, mediated by the GAIT element may contribute to
+#=GF CC   the resolution of the local inflammatory response following cytokine
+#=GF CC   activation of macrophages [1].
+#=GF WK   http://en.wikipedia.org/wiki/GAIT_element
+#=GF SQ   8
+
+D45045.2/8585-8655                 GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+X69706.1/260-330                   GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+M18058.1/1580-1650                 GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+AK095290.1/2797-2865               GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+M13699.1/3255-3321                 GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+AC104966.4/51221-51291             GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+AC131209.2/6785-6855               GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+M13536.1/2617-2687                 GUAUGUGAAAGUGUAAAAUAGAAUGUUACUUUGGAAUGACUAUAAACAUU
+#=GC SS_cons                       <<<<<<...<<<.........<<<<<<....<<<.....>>>..>>>>>>
+
+D45045.2/8585-8655                 AAAAGAAGACUGGAAGCAUAC
+X69706.1/260-330                   AAAAGAAGACUGGAAGCAUAC
+M18058.1/1580-1650                 GAAAGAAGACUGGAAACAUAC
+AK095290.1/2797-2865               AAAAGAAGACUGGAAGCAU..
+M13699.1/3255-3321                 AAAAGA.GACUGGA.GCAU..
+AC104966.4/51221-51291             GAAAGAAGACUGGAAACAUAC
+AC131209.2/6785-6855               AAAAGAAGACUGGAAGCAUAC
+M13536.1/2617-2687                 AAAAGAAGACUGGAAGCAUAC
+#=GC SS_cons                       ........>>>....>>>>>>
+//

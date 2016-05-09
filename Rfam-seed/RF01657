@@ -1,0 +1,42 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01657
+#=GF ID   ceN74-2
+#=GF DE   C. elegans sRNA ceN74-2
+#=GF AU   Osuch I
+#=GF SE   INFERNAL
+#=GF SS   Predicted; WAR; cmfinder;
+#=GF GA   22.00
+#=GF TC   22.26
+#=GF NC   20.31
+#=GF TP   Gene; sRNA;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000000  --toponly  CM SEQDB
+#=GF DR   SO:0001263 SO:ncRNA_gene
+#=GF RN   [1]
+#=GF RM   17903271
+#=GF RT   Systematic identification of non-coding RNA 2,2,7-trimethylguanosine
+#=GF RT   cap structures in Caenorhabditis elegans.
+#=GF RA   Jia D, Cai L, He H, Skogerbo G, Li T, Aftab MN, Chen R;
+#=GF RL   BMC Mol Biol. 2007;8:86.
+#=GF WK   http://en.wikipedia.org/wiki/C._elegans_small_RNAs
+#=GF SQ   6
+
+AY948639.1/1-79                            GUCUCGGUCCGGCGUCAGUGGGUUAUCGUAUUUCUCUCCCUUCGGGG..A
+AY948640.1/1-78                            GUAUCGGUCCGGCGUCAGUGGGUUAUCAAGUUUGCCUCCCUUCGG.G..A
+CAAC02000474.1/1664399-1664320             CUGUCGGUCCGGCGUCAGUGGGUUAUCGUGAUUCUUUCCCUCCGG.GGAA
+CAAC02000474.1/1542122-1542198             ACCUCGGUCCGGCAUCUUUGGGUUAUCU.UAUAGGAUCUCUUCGG.G..G
+ABEG01019118.1/11496-11420                 GCAUCGGUCCGGAGUCAGUGGGUUAUCG.GUUCUUUCCCCUUGGG.G..A
+ABEG01019019.1/2076-2145                   CGGACGGUCCGGAGUCAGUGGGUUAUCCAAAAUUU........GA.A..A
+#=GC SS_cons                               <<<.<<<<<.<<.<<<.<<<<<............................
+#=GC RF                                    gcaUCGGuCCGGcGuCAGuGGGUUAUCGuGuUuuUuuCCCUucGG.G..A
+
+AY948639.1/1-79                            AUUUCCCAUCGGCAUCAACUUGACCGUUGCG
+AY948640.1/1-78                            AUUUCUCAUCGGCACCAACUUGACCGUUGCU
+CAAC02000474.1/1664399-1664320             AUUUCCCAUCGACACCACCUUGACCGUUGUU
+CAAC02000474.1/1542122-1542198             AUCAUCCAUUGAUACUAACUUGACCGUUGAA
+ABEG01019118.1/11496-11420                 AUUUCCCAUCGGCACCAACUCGACCGUUGUU
+ABEG01019019.1/2076-2145                   CCCUCCCAUUGACACCAACUUGACCGUUUGU
+#=GC SS_cons                               ....>>>>>.>>>.>>.....>>>>>.>>>.
+#=GC RF                                    AUUUCCCaUCGgCACCAACUuGaCCGUugcu
+//

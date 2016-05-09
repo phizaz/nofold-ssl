@@ -1,0 +1,46 @@
+# STOCKHOLM 1.0
+
+#=GF AC   RF01768
+#=GF ID   flavi_FSE
+#=GF DE   ribosomal frameshift site
+#=GF AU   Boursnell C
+#=GF SE   Published; PMID:19196463
+#=GF SS   Published; PMID:19196463
+#=GF GA   27.00
+#=GF TC   27.47
+#=GF NC   22.85
+#=GF TP   Cis-reg;
+#=GF BM   cmbuild  -F CM SEED; cmcalibrate --mpi -s 1 CM
+#=GF BM   cmsearch  -Z 169604 -E 1000  --toponly  CM SEQDB
+#=GF DR   SO:0001427 SO:cis_regulatory_frameshift_element
+#=GF DR   URL; http://recode.ucc.ie/recode/r200969
+#=GF RN   [1]
+#=GF RM   19196463
+#=GF RT   A conserved predicted pseudoknot in the NS2A-encoding sequence of
+#=GF RT   West Nile and Japanese encephalitis flaviviruses suggests NS1' may
+#=GF RT   derive from ribosomal frameshifting.
+#=GF RA   Firth AE, Atkins JF;
+#=GF RL   Virol J. 2009;6:14.
+#=GF WK   http://en.wikipedia.org/wiki/West_Nile_virus
+#=GF SQ   7
+
+DQ666451.1/3558-3619             GGGCCUUCUGGUCGUGUUCUUGGCCACCCAGGAGGUCCUUCGCAAGAGGU
+FJ495189.1/3567-3628             GGGCCUUCUGGUGAUGUUUCUGGCCACCCAGGAGGUCCUUCGCAAGAGGU
+FJ151394.1/3558-3619             GGGCCUUCUGGUCGUGUUCUUGGCCACCCAGGAGGUCCUUCGCAAGAGGU
+AY453411.1/3564-3625             GGGCCUUCUGGUGAUGUUUCUGGCCACCCAGGAGGUCCUGAGGAAGAGGU
+X03467.1/3565-3626               AGGCCUUCUGGUGAUGUUUCUGGCCACCCAGGAGGUCUUGAGGAAGAGGU
+EF429200.1/3558-3619             GGGCCUUCUGGUCGUGUUCUUGGCCACCCAGGAGGUCCUUCGCAAGAGGU
+AY898809.1/3566-3627             GGGCCUCUUGGUAGUUUUCCUGGCCACCCAGGAGGUCUUGAGGAAGAGGU
+#=GC SS_cons                     <<<<<<<<<<<......AAAAAAA...>>>>>>>>>>>............
+#=GC RF                          xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+DQ666451.1/3558-3619             GGACAGCCAAGA
+FJ495189.1/3567-3628             GGACGGCCAGAU
+FJ151394.1/3558-3619             GGACAGCCAAGA
+AY453411.1/3564-3625             GGACGGCCAGAU
+X03467.1/3565-3626               GGACGGCCAGAC
+EF429200.1/3558-3619             GGACGGCCAAGA
+AY898809.1/3566-3627             GGACGGCCAGAA
+#=GC SS_cons                     .....aaaaaaa
+#=GC RF                          xxxxxxxxxxxx
+//
