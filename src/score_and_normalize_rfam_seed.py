@@ -4,6 +4,7 @@ from utils_analysis import *
 path = '../Rfam-seed/db'
 
 families = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f)) and len(list(map(lambda x: x != '.DS_Store', os.listdir(os.path.join(path, f))))) == 1]
+families.sort()
 
 for family in families:
     print(family)
