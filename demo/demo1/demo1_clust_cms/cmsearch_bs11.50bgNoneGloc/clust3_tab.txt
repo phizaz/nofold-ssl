@@ -1,0 +1,40 @@
+# command:    cmsearch --toponly --informat FASTA -T 11.50 -o /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/cmsearch_bs11.50bgNoneGloc/clust3_aln.txt --tabfile /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/cmsearch_bs11.50bgNoneGloc/clust3_tab.txt --gcfile /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/cmsearch_bs11.50bgNoneGloc/clust3_gc.txt -g /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/clust3.cm /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1.db
+# date:       Mon May  9 11:13:36 2016
+# num seqs:   30
+# dbsize(Mb): 0.002888
+#
+# Pre-search info for CM 1: clust3-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       11.50
+#
+# CM: clust3-1
+#                                              target coord   query coord                         
+#                                    ----------------------  ------------                         
+# model name  target name                 start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ---------------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust3-1    trna_1                          1          73      1     73     92.08         -   53
+  clust3-1    trna_2                          1          74      1     73     64.03         -   70
+  clust3-1    trna_3                          1          73      1     73     97.82         -   58
+  clust3-1    trna_4                          1          72      1     73     79.87         -   60
+  clust3-1    trna_5                          1          72      1     73     63.19         -   71
+  clust3-1    trna_6                          1          73      1     73     77.24         -   64
+  clust3-1    trna_7                          1          73      1     73     89.76         -   66
+  clust3-1    trna_8                          1          73      1     73     70.62         -   68
+  clust3-1    trna_9                          1          73      1     73     44.38         -   66
+  clust3-1    trna_10                         1          72      1     73     36.80         -   58
+#
+# Post-search info for CM 1: clust3-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00        11      0.2853
+#   2   cm  cyk  glc  1e-10        0.00        10      0.2521
+#   3   cm  ins  glc  1e-15       11.50        10      0.2521
+#
+#    run time
+# -----------
+#    00:00:00

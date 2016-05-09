@@ -1,0 +1,60 @@
+# cmscore :: score RNA covariance model against sequences
+# INFERNAL 1.0.2 (October 2009)
+# Copyright (C) 2009 HHMI Janelia Farm Research Campus
+# Freely distributed under the GNU General Public License (GPLv3)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: /usr/local/bin/cmscore --search -a --infile /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1.db /Users/phizaz/Projects/nofold-ssl/models/rfam_cms/RF00650.cm
+# date:    Sun May  8 20:44:24 2016
+# seed:    1462715064
+# mode:    input file (/Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1.db)
+#
+#  idx  cm name                     strat  config  sub    nseq
+# ----  -------------------------  ------  ------  ---  ------
+#    1  mir-153                    search  glocal   no      30
+#
+#                                                  comparison with stage 1    
+#                                             --------------------------------
+# stage      alg  bands     tau     run time   spdup  num dif  frc dif  sc dif
+# -----  -------  -----  ------  -----------  ------  -------  -------  ------
+      1      cyk      -       -  00:00:00.37       -        -        -       -
+#
+# seq name                   length   stage 1 sc  stage  2 sc      sc dif
+# -------------------------  ------  -----------  -----------  ----------
+  trna_1                         73     -18.3501     -18.3501      0.0000
+  trna_2                         74     -19.3269     -19.4437      0.1167
+  trna_3                         73     -15.9874     -15.9874      0.0000
+  trna_4                         72     -16.3804     -16.3804      0.0000
+  trna_5                         72      -9.9800      -9.9800      0.0000
+  trna_6                         73     -15.5144     -15.5144      0.0000
+  trna_7                         73     -17.6821     -17.6821      0.0000
+  trna_8                         73     -12.7809     -12.7809      0.0000
+  trna_9                         73     -11.1389     -11.1389      0.0000
+  trna_10                        72     -10.3921     -10.3921      0.0000
+  u5_1                          114      -6.3300      -6.3300      0.0000
+  u5_2                          116      -6.0057      -6.0057      0.0000
+  u5_3                          118      -6.5514      -6.5514      0.0000
+  u5_4                          117      -2.5010      -2.5010      0.0000
+  u5_5                          107      -7.9812      -7.9812      0.0000
+  u5_6                          116      -8.8103      -8.8103      0.0000
+  u5_7                          116     -10.3126     -10.3126      0.0000
+  u5_8                          126      -8.9076      -8.9076      0.0000
+  u5_9                          115     -10.9389     -10.9389      0.0000
+  u5_10                         115      -4.8848      -4.8848      0.0000
+  rrtWT_uc011zgd.1_2370         100      -5.1226      -5.1226      0.0000
+  rrtWT_uc007ino.1_879          100      -8.8408      -8.8408      0.0000
+  rrtWT_uc012dtn.1_1041         100     -11.8998     -12.7912      0.8915
+  rrtWT_uc007bjr.2_621          100      -9.8745      -9.8745      0.0000
+  rrtWT_uc008hom.1_603          100     -13.0400     -13.0400      0.0000
+  rrtWT_uc007wki.1_323          100     -13.0227     -13.0227      0.0000
+  rrtWT_uc008fec.1_254          100     -17.0046     -17.0046      0.0000
+  rrtWT_uc007wxx.1_716          100      -6.1885      -6.1885      0.0000
+  rrtWT_uc009qex.2_2789         100     -14.1227     -14.1227      0.0000
+  rrtWT_uc007xbv.1_1165         100     -10.1373     -10.1373      0.0000
+#
+#                                                  comparison with stage 1    
+#                                             --------------------------------
+# stage      alg  bands     tau     run time   spdup  num dif  frc dif  sc dif
+# -----  -------  -----  ------  -----------  ------  -------  -------  ------
+      2      cyk    hmm   1e-07  00:00:00.65    0.57        2  0.06667    0.50
+#
+# CPU time: 1.02u 0.01s 00:00:01.03 Elapsed: 00:00:01

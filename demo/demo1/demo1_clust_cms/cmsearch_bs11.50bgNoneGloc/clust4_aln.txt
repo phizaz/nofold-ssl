@@ -1,0 +1,188 @@
+
+CM: clust4-1
+>u5_1
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 104
+ Score = 38.34, GC =  39
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+            U CU: G UU CUCUUCAG UC U UAAAUCUUUC:CCUUUUA: AAAGAUUUC  UGG
+         1 CUGCUUGGUUUGCUCUUCAGGUCUUGUAAAUCUUUCACCUUUUAUAAAAGAUUUC--UGG 58      
+
+           >>.>>>>>>------..>>>>------------------<<<<<<<______>>>>>>>
+        61 aG.aGgaaCAAcuau..GaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           AG AG AA  ACU+U  :AG CUUAA   A UUUU UG       GCU C  C      
+        59 AGaAGGAAGCACUCUggAAGUCUUAACUGAUUUUUGUG-------GCUGCUUC------ 104     
+
+
+>u5_2
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 115
+ Score = 78.33, GC =  35
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+           A ACUC  GUUUCUCUUCA AU G AUAA UCUUUCGCCUUUUACUAAAGA UUCC UGG
+         1 ACACUCAUGUUUCUCUUCAUAUCGAAUAAGUCUUUCGCCUUUUACUAAAGAUUUCCAUGG 60      
+
+           >>>>>>>>------>>>>------------------<<<<<<<______>>>>>>>
+        61 aGaGgaaCAAcuauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           AGAGGAAC AC  UGAGU UU A  +A UUUUU   ::CC:   UC     :GG::
+        61 AGAGGAAC-ACCUUGAGUAUUUACUAAUUUUUUGAUGUCCUGGUUCAAUGUAGGAU 115     
+
+
+>u5_3
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 95
+ Score = 45.36, GC =  43
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+           AU CUCUGGUUUCUCUUCA AU GUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCC UGG
+         1 AUUCUCUGGUUUCUCUUCAAAUUGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG 60      
+
+           >>>>>>>>------>>>>------------------<<<<<<<______>>>>.>>>
+        61 aGaGgaaCAAcuauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggg.gCu 116     
+           AGA         + GAG CU           U UG ::CCC:G      C:GG G::
+        61 AGA---------CAGAGUCUC--------GCUCUGUCACCCAG-----GCUGGaGUG 95      
+
+
+>u5_4
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 2 - 117
+ Score = 98.59, GC =  34
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+           AU CUCUGGUU: UCUUCA A CG AUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG
+         2 AU-CUCUGGUUUCUCUUCAUAACGAAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG 60      
+
+           >>>>>>>>------>>>.>------------------<<<<<<<______>>>>>>>
+        61 aGaGgaaCAAcuauGaG.ucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           AGA :AACAACUAUGAG U  U  U +AAUUUUUUGAAG:C::GC + G C::G:CU
+        61 AGAAAAACAACUAUGAGuUUAUGGUUAAAUUUUUUGAAGUCUUGCCUAGGCAAGGCU 117     
+
+
+>u5_5
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 107
+ Score = 40.45, GC =  50
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+             :::C G:::  ::: C: A CG AUA::UCUUUCGCCUUUUACUAAAGA::UCCG:G 
+         1 CGCGAC-GAGCUGAACGCGUAGCGAAUAUCUCUUUCGCCUUUUACUAAAGAGAUCCGCGA 59      
+
+           >>>>>>>>------>>>>------------------<<<<<<<______>>>>>>>
+        61 aGaGgaaCAAcuauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           :::  ::: AC + G:::C U AUC A  UUUUUG :G    GCU+   C    C:
+        60 GUUUUGCUCACGCAGUCGCAU-AUCCAUCUUUUUGUGG---GGCUUUUGC----CU 107     
+
+
+>u5_6
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 116
+ Score = 134.29, GC =  41
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+           AUACUCUGGUUUCUCUUCAGAUCGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG
+         1 AUACUCUGGUUUCUCUUCAGAUCGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG 60      
+
+           >>>>>>>>------>>>>------------------<<<<<<<______>>>>>>>
+        61 aGaGgaaCAAcuauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           AGAGGAACAA+U+UGAGUCUUAA C AAUUUUUUGA:G:CC:GCUC   C:GG:C:
+        61 AGAGGAACAAUUCUGAGUCUUAACCCAAUUUUUUGAGGUCCUGCUCGUGCAGGGCU 116     
+
+
+>u5_7
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 116
+ Score = 70.69, GC =  37
+
+           ::<<<<--<<<<<<<<<<<---..<<---<<<<<<<<-<_______>->>>>>>>>->>>
+         1 AUaCuCUGGuuuCuCuuCaGAU..CGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGu 58      
+             ACUCUGGUUUCUCUUCA  U  CG AUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGU
+         1 --ACUCUGGUUUCUCUUCAAUUguCGAAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGU 58      
+
+           >>>>>>>>>>---..--->>>>------------------<<<<<.<<______>>>>>>
+        59 GgaGaGgaaCAAc..uauGaGucUuAaucuAAUUUUUUGAaGccc.cGCUccgACggggC 115     
+           GGAGAGGAACA +   AUGAGUCU  A+ UAAUUUUU G AG: C C: UC  A:G  :C
+        59 GGAGAGGAACACUcuAAUGAGUCUA-AAAUAAUUUUUAGUAGUGCcCUGUCGCAAG--AC 115     
+
+           >
+       116 u 116     
+           U
+       116 U 116     
+
+
+>u5_8
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 112
+ Score = 70.56, GC =  38
+
+           ::<<<<--<<<<<<<<<<<---..<<---<<<<<<<<-<_______>->>>>>>>>->>>
+         1 AUaCuCUGGuuuCuCuuCaGAU..CGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGu 58      
+            UACUCUGGUUUCUCUUCA  U  CG AUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGU
+         1 -UACUCUGGUUUCUCUUCAAUUguCGAAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGU 59      
+
+           >>>>>>>>>>---..--->>>>------------------<<<<<<<______>>>>>>>
+        59 GgaGaGgaaCAAc..uauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           GGAGAGGAACA +   AUGAGUCU  A+ UAAU UUUUG AG:  C:      :G  :CU
+        60 GGAGAGGAACACUcuAAUGAGUCUA-AAAUAAUCUUUUGUAGUGCCC------GGCGACU 112     
+
+
+>u5_9
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 115
+ Score = 127.48, GC =  40
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+           AUACUCUG:UUUCUCUUCAGAUCGUAUAAAUCUUUC CCUUU A  AAAGAUUUCCGUGG
+         1 AUACUCUGGUUUCUCUUCAGAUCGUAUAAAUCUUUCCCCUUUCANCAAAGAUUUCCGUGG 60      
+
+           >>>>>>>>------>>>>------------------<<<<<<<______>>>>>>>
+        61 aGaGgaaCAAcuauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           AGAGGAA:AACU+UGAGUCUUAA CUAAUUUUUUG AGCC::GCUCCGAC::GGCU
+        61 AGAGGAAUAACUCUGAGUCUUAAGCUAAUUUUUUG-AGCCUUGCUCCGACAAGGCU 115     
+
+
+>u5_10
+
+  Plus strand results:
+
+ Query = 1 - 116, Target = 1 - 115
+ Score = 132.43, GC =  44
+
+           ::<<<<--<<<<<<<<<<<---<<---<<<<<<<<-<_______>->>>>>>>>->>>>>
+         1 AUaCuCUGGuuuCuCuuCaGAUCGUAUaaauCuuuCgCCUUUuAcuaaaGauuuCCGuGg 60      
+           AUACUCUGGUUUCUCUUCAGAUCGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG
+         1 AUACUCUGGUUUCUCUUCAGAUCGUAUAAAUCUUUCGCCUUUUACUAAAGAUUUCCGUGG 60      
+
+           >>>>>>>>------>>>>------------------<<<<<<<______>>>>>>>
+        61 aGaGgaaCAAcuauGaGucUuAaucuAAUUUUUUGAaGccccGCUccgACggggCu 116     
+           AGAGGAACAAC A GAGU U   U  AAUUUUUUGA:GC:CCGCU+CGACGG:GC:
+        61 AGAGGAACAACCACGAGUGUC-GUGGAAUUUUUUGAGGCUCCGCUUCGACGGAGCU 115     
+
+
+//

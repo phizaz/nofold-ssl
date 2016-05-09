@@ -1,0 +1,3 @@
+ClustID	Info	Count	MFE	CovContr	MPI	SCI	SCI/MPI	Zscore	AvgDissim	TopCMs	Members
+M1	3	10	-63.22	-33.46	-	-	-	-	0.48	tRNA,14.149;tRNA-Sec,7.751;tmRNA,4.524;mascRNA-menRNA,3.951;mir-550,3.763;Tymo_tRNA-like,3.700;Vault,3.522;Bacteria_large_SRP,2.574;Deinococcus_Y_RNA,2.381;UPD-PKc,2.260	trna_10,trna_8,trna_9,trna_6,trna_7,trna_4,trna_5,trna_2,trna_3,trna_1
+M2	4	10	-38.40	-22.16	-	-	-	-	0.60	U5,16.496;potC,2.674;SmY,2.670;MIR1122,2.545;mir-22,2.453;mir-124,2.386;ctRNA_pGA1,2.304;SNORD100,2.279;mir-454,2.205;RNA-OUT,2.185	u5_10,u5_7,u5_6,u5_5,u5_4,u5_3,u5_2,u5_1,u5_9,u5_8

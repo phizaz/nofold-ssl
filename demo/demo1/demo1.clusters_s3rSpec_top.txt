@@ -1,0 +1,3 @@
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+3	**	3	-	0.27	trna_1,trna_3,trna_7
+4	**	3	-	0.30	u5_10,u5_6,u5_9

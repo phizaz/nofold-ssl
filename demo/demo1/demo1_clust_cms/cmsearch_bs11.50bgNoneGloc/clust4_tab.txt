@@ -1,0 +1,40 @@
+# command:    cmsearch --toponly --informat FASTA -T 11.50 -o /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/cmsearch_bs11.50bgNoneGloc/clust4_aln.txt --tabfile /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/cmsearch_bs11.50bgNoneGloc/clust4_tab.txt --gcfile /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/cmsearch_bs11.50bgNoneGloc/clust4_gc.txt -g /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1_clust_cms/clust4.cm /Users/phizaz/Projects/nofold-ssl/demo/demo1/demo1.db
+# date:       Mon May  9 11:13:36 2016
+# num seqs:   30
+# dbsize(Mb): 0.002888
+#
+# Pre-search info for CM 1: clust4-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       11.50
+#
+# CM: clust4-1
+#                                              target coord   query coord                         
+#                                    ----------------------  ------------                         
+# model name  target name                 start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ---------------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust4-1    u5_1                            1         104      1    116     38.34         -   39
+  clust4-1    u5_2                            1         115      1    116     78.33         -   35
+  clust4-1    u5_3                            1          95      1    116     45.36         -   43
+  clust4-1    u5_4                            2         117      1    116     98.59         -   34
+  clust4-1    u5_5                            1         107      1    116     40.45         -   50
+  clust4-1    u5_6                            1         116      1    116    134.29         -   41
+  clust4-1    u5_7                            1         116      1    116     70.69         -   37
+  clust4-1    u5_8                            1         112      1    116     70.56         -   38
+  clust4-1    u5_9                            1         115      1    116    127.48         -   40
+  clust4-1    u5_10                           1         115      1    116    132.43         -   44
+#
+# Post-search info for CM 1: clust4-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00        10      0.4017
+#   2   cm  cyk  glc  1e-10        0.00        10      0.4017
+#   3   cm  ins  glc  1e-15       11.50        10      0.3847
+#
+#    run time
+# -----------
+#    00:00:01
