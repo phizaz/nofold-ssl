@@ -1,3 +1,0 @@
-ClustID	MergedIDs	Count	AvgDissim	Members
-M1	3	10	0.48	trna_10,trna_8,trna_9,trna_6,trna_7,trna_4,trna_5,trna_2,trna_3,trna_1
-M2	4	10	0.60	u5_10,u5_7,u5_6,u5_5,u5_4,u5_3,u5_2,u5_1,u5_9,u5_8

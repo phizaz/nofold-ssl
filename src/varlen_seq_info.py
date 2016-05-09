@@ -36,6 +36,8 @@ for line in ins:
 	idList.append(id)
 ins.close()
 
+print(seqs)
+
 # get info
 info = {}
 for id in idList:

@@ -15,7 +15,10 @@ for each in files:
         os.path.join(root, each),
         os.path.join(root, 'fasta', each + '.fasta')
     )
-    (output, res, error) = run_command(command)
+    short, excess = record.name.split('/')
+    new_name = family + '-' + short
+
+(output, res, error) = run_command(command)
 
     if error:
         print ">>Error detected. Exiting."

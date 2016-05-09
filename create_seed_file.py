@@ -15,9 +15,12 @@ def get_records(file):
         records = SeqIO.parse(file, 'fasta')
         results = []
         for record in records:
+            short, excess = record.name.split('/')
+            new_name = family + '_' + short
             # alter the record by adding family in front
-            record.id = family + '.' + record.id
-            record.name = family + '.' + record.name
+            record.id = new_name
+            record.name = new_name
+            record.description = ''
             results.append(record)
         return results
 
