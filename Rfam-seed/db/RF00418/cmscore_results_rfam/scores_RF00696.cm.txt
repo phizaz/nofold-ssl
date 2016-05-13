@@ -1,0 +1,49 @@
+# cmscore :: score RNA covariance model against sequences
+# INFERNAL 1.0.2 (October 2009)
+# Copyright (C) 2009 HHMI Janelia Farm Research Campus
+# Freely distributed under the GNU General Public License (GPLv3)
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# command: /usr/local/bin/cmscore --search -a --infile /home/the_akita_ta/nofold-ssl/Rfam-seed/db/RF00418/RF00418.db /home/the_akita_ta/nofold-ssl/models/rfam_cms/RF00696.cm
+# date:    Tue May 10 02:35:23 2016
+# seed:    1462847723
+# mode:    input file (/home/the_akita_ta/nofold-ssl/Rfam-seed/db/RF00418/RF00418.db)
+#
+#  idx  cm name                     strat  config  sub    nseq
+# ----  -------------------------  ------  ------  ---  ------
+#    1  mir-203                    search  glocal   no      19
+#
+#                                                  comparison with stage 1    
+#                                             --------------------------------
+# stage      alg  bands     tau     run time   spdup  num dif  frc dif  sc dif
+# -----  -------  -----  ------  -----------  ------  -------  -------  ------
+      1      cyk      -       -  00:00:00.28       -        -        -       -
+#
+# seq name                   length   stage 1 sc  stage  2 sc      sc dif
+# -------------------------  ------  -----------  -----------  ----------
+  RF00418_AAGU02227281.1        136      -6.6944      -6.6944      0.0000
+  RF00418_AAIY01556911.1        141     -11.7874     -11.7874      0.0000
+  RF00418_AAYZ01244227.1        137     -10.7709     -10.7709      0.0000
+  RF00418_AF357386.1            126      -5.6683      -5.6683      0.0000
+  RF00418_AABR04001620.1        135      -5.7243      -5.7243      0.0000
+  RF00418_AAQQ01789110.1        137      -6.0827      -6.0827      0.0000
+  RF00418_AJ609450.1            137      -9.6418      -9.6418      0.0000
+  RF00418_AL590431.11           136      -1.5599      -1.5599      0.0000
+  RF00418_AL049745.9            136      -8.7740      -8.7740      0.0000
+  RF00418_ABDC01240840.1        136      -9.8243      -9.8243      0.0000
+  RF00418_AAQR01162064.1        136     -10.5589     -10.5589      0.0000
+  RF00418_AAEX02026315.1        137     -11.7376     -12.6978      0.9602
+  RF00418_AANG01021210.1        136     -13.4762     -13.4762      0.0000
+  RF00418_AAFC03027776.1        135      -6.7374      -6.7374      0.0000
+  RF00418_AAPE01281662.1        136      -7.4397      -7.4397      0.0000
+  RF00418_AALT01368588.1        136      -9.9076      -9.9076      0.0000
+  RF00418_AAWR02038694.1        136     -13.4244     -13.4244      0.0000
+  RF00418_AAGV020286123.1       137      -2.3895      -2.3895      0.0000
+  RF00418_AAFR03052180.1        134      -4.2664      -4.2664      0.0000
+#
+#                                                  comparison with stage 1    
+#                                             --------------------------------
+# stage      alg  bands     tau     run time   spdup  num dif  frc dif  sc dif
+# -----  -------  -----  ------  -----------  ------  -------  -------  ------
+      2      cyk    hmm   1e-07  00:00:00.54    0.52        1  0.05263    0.96
+#
+# CPU time: 0.82u 0.00s 00:00:00.82 Elapsed: 00:00:01
