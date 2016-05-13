@@ -55,12 +55,12 @@ for family in families:
     all_sequences += get_seed_some_sequences(family, total=5)
 
 # also get sequences from the query file as well
-# query_file = 'Rfam-seed/Rfam-query.bitscore'
-# all_sequences += get_sequences_from_file(query_file)
+query_file = 'demo/demo1/demo1.db'
+all_sequences += get_sequences_from_file(query_file)
 
 # save to file
 header = get_header('RF00001')
-outfile = 'Rfam-seed/Rfam-combined.bitscore'
+outfile = 'Rfam-seed/combined.bitscore'
 with open(outfile, 'w') as handle:
     handle.write(header + '\n')
     for name, scores in all_sequences:
@@ -69,8 +69,4 @@ with open(outfile, 'w') as handle:
             handle.write(str(score) + '\t')
         handle.write('\n')
 
-print(len(all_sequences))
-
-
-
-
+print('total database size:', len(all_sequences))

@@ -16,7 +16,7 @@ def save_file(header, names, scores, outfile):
                 handle.write(str(s) + '\t')
             handle.write('\n')
 
-file = 'Rfam-seed/Rfam-combined.bitscore'
+file = 'Rfam-seed/combined.bitscore'
 
 all_scores = []
 all_names = []
@@ -36,7 +36,7 @@ pca = PCA(n_components=components)
 pca.fit(all_scores)
 pca_scores = pca.transform(all_scores)
 header = '\t'.join(['PC' + str(i + 1) for i in range(components)])
-save_file(header, all_names, pca_scores, 'Rfam-seed/Rfam-combined.pcNorm100.bitscore')
+save_file(header, all_names, pca_scores, 'Rfam-seed/combined.pcNorm100.bitscore')
 
 # normalize the scores
 print('Z-normalizing...')
@@ -48,4 +48,4 @@ for col in pca_scores.T:
     normalized_scores.append(normalize(col))
 
 normalized_scores = np.array(normalized_scores).T
-save_file(header, all_names, normalized_scores, 'Rfam-seed/Rfam-combined.zNorm.pcNorm100.bitscore')
+save_file(header, all_names, normalized_scores, 'Rfam-seed/combined.zNorm.pcNorm100.bitscore')
