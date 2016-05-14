@@ -20,6 +20,8 @@ file = 'Rfam-seed/combined.bitscore'
 
 all_scores = []
 all_names = []
+
+tmp = set()
 with open(file, 'r') as handle:
     handle.readline()
     for line in handle:
@@ -28,13 +30,14 @@ with open(file, 'r') as handle:
         name, scores = tokens[0], list(map(float, tokens[1:]))
         all_names.append(name)
         all_scores.append(scores)
+        if len(scores) == 58:
+            print(line)
 
 # get the 100 PC scores
 print('PCA-lizing...')
 components = 100
 pca = PCA(n_components=components)
-pca.fit(all_scores)
-pca_scores = pca.transform(all_scores)
+pca_scores = pca.fit_transform(all_scores)
 header = '\t'.join(['PC' + str(i + 1) for i in range(components)])
 save_file(header, all_names, pca_scores, 'Rfam-seed/combined.pcNorm100.bitscore')
 
