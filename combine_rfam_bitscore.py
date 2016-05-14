@@ -55,7 +55,7 @@ for family in families:
     all_sequences += get_seed_some_sequences(family, total=5)
 
 # also get sequences from the query file as well
-query_file = 'demo/demo1/demo1.db'
+query_file = 'Rfam-seed/query/query.bitscore'
 all_sequences += get_sequences_from_file(query_file)
 
 # save to file

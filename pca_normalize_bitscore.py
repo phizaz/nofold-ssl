@@ -21,7 +21,6 @@ file = 'Rfam-seed/combined.bitscore'
 all_scores = []
 all_names = []
 
-tmp = set()
 with open(file, 'r') as handle:
     handle.readline()
     for line in handle:
@@ -30,8 +29,6 @@ with open(file, 'r') as handle:
         name, scores = tokens[0], list(map(float, tokens[1:]))
         all_names.append(name)
         all_scores.append(scores)
-        if len(scores) == 58:
-            print(line)
 
 # get the 100 PC scores
 print('PCA-lizing...')

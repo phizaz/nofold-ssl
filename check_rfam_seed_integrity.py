@@ -1,8 +1,6 @@
 import sys
 from os.path import isfile, join, isdir, exists
 from os import listdir
-from Bio import SeqIO
-from multiprocessing.dummy import Pool as ThreadPool
 
 path = 'Rfam-seed/db'
 
