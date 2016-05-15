@@ -15,11 +15,13 @@ available_families = set(filter(check_family, families))
 
 query_file = 'Rfam-seed/query/query.db'
 count = 0
+not_having_families = set()
 with open(query_file, 'r') as handle:
     records = SeqIO.parse(handle, 'fasta')
     for record in records:
         family = record.name.split('_')[0][1:]
-        if family not in available_families:
+        if family not in available_families and family not in not_having_families:
+            not_having_families.add(family)
             print('not having:', family)
             count += 1
 

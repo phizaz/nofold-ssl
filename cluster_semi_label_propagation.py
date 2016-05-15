@@ -1,11 +1,13 @@
 from sklearn.semi_supervised import LabelPropagation
+from os.path import join
 
 def create_map(strings):
     all_strings = set(strings)
     all_int = [i for i in range(len(all_strings))]
     return dict(zip(all_strings, all_int)), dict(zip(all_int, all_strings))
 
-file = 'Rfam-seed/combined.zNorm.pcNorm100.bitscore'
+tag = 'query.cripple25'
+file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
 
 names = []
 points = []
@@ -32,7 +34,7 @@ family_to_int, int_to_family = create_map(names)
 print('having', len(points) + len(test_points), 'points')
 
 print('training the label propagation')
-ssl = LabelPropagation(kernel='knn', n_neighbors=17)
+ssl = LabelPropagation(kernel='knn', n_neighbors=19)
 X = points + test_points
 Y = list(map(lambda n: family_to_int[n], names)) + [-1 for i in range(len(test_names))]
 ssl.fit(X, Y)
@@ -45,7 +47,7 @@ for name, label in zip(test_names, labels):
     clusters[label].append(name)
 
 print('saving results to file')
-outfile = 'Rfam-seed/combined.labelPropagation.cluster'
+outfile = join('Rfam-seed', 'combined.' + tag + '.labelPropagation.cluster')
 with open(outfile, 'w') as handle:
     for label, members in clusters.items():
         for name in members:
