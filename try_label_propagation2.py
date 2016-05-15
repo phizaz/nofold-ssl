@@ -37,9 +37,9 @@ def points_by_label(points, labels, label):
     return np.array(out_points), np.array(out_labels)
 
 points, labels = concatenate((
-    gaussian_with_labels((0, 0), 1, 100, 0, 5),
-    gaussian_with_labels((5, 5), 1, 100),
-    gaussian_with_labels((10, 10), 1, 100, 1, 5)
+    gaussian_with_labels((-1, -1), 1, 100, 0, 5),
+    gaussian_with_labels((0, 0), 1, 100),
+    gaussian_with_labels((1.1 , 1.1), 1, 100, 1, 1)
 ))
 
 ssl = LabelPropagation()

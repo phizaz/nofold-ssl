@@ -3,9 +3,16 @@ from os.path import isfile, join, isdir, exists
 from os import listdir
 from random import shuffle, sample
 from Bio import SeqIO
+from optparse import OptionParser
+import numpy as np
+
+parser = OptionParser(usage='cluster using semi-supervised label spreading algorithm')
+parser.add_option("--query", action="store", default='query', dest="QUERY", help="the query name")
+parser.add_option("--cripple", action="store", type='int', default=8, dest="CRIPPLE", help="cripple degree")
+(opts, args) = parser.parse_args()
 
 path = 'Rfam-seed/db'
-query = 'query'
+query = opts.QUERY
 
 families = [f for f in listdir(path) if isdir(join(path, f))]
 
@@ -43,13 +50,32 @@ def get_seed_some_sequences(family, total=5):
         return []
 
     sequences = get_seed_sequences(family)
+    names, _points = list(zip(*sequences))
+    points = np.array(_points)
 
     if len(sequences) < total:
         print('not enough sequences in family:', family, 'it has only:', len(sequences))
 
-    # take randomly
-    shuffle(sequences)
-    return sequences[:total]
+    def dist(a, b):
+        return np.linalg.norm(a - b)
+
+    def average_dist(points, origin):
+        s = 0
+        for point in points:
+            d = dist(point, origin)
+            s += d
+        avg_dist = s / len(points)
+        return avg_dist
+
+    def retain_high_density(names, points, retaining):
+        avg_dists = [(name, origin, average_dist(points, origin)) for name, origin in zip(names, points)]
+        sorted_dists = sorted(avg_dists, key=lambda x: x[2])
+        retained = list(map(lambda x: (x[0], x[1]), sorted_dists[:retaining]))
+        return retained
+
+    # take only the most dense
+    high_density_sequences = retain_high_density(names, points, retaining=total)
+    return high_density_sequences
 
 # get querying families, not having families
 available_families = set(filter(check_family, families))
@@ -71,8 +97,8 @@ query_file = join('Rfam-seed', query, query + '.bitscore')
 all_sequences += get_sequences_from_file(query_file)
 
 # get some scores from each seeding family (except the marked as crippled)
-cripple_family_count = 25
-print('cripple count:', 25)
+cripple_family_count = opts.CRIPPLE
+print('cripple count:', cripple_family_count)
 cripple_more = cripple_family_count - len(not_having_families)
 if cripple_more < 0:
     print('cannot attain the target cripple count!')

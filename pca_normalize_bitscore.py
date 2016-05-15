@@ -5,6 +5,7 @@ from random import shuffle
 from sklearn.decomposition import PCA
 import numpy as np
 import scipy as sp
+from optparse import OptionParser
 
 def save_file(header, names, scores, outfile):
     assert isinstance(header, str)
@@ -16,7 +17,11 @@ def save_file(header, names, scores, outfile):
                 handle.write(str(s) + '\t')
             handle.write('\n')
 
-file_name = 'combined.query.cripple25.bitscore'
+parser = OptionParser(usage='further clustering using inter-cluster distance criteria')
+parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
+(opts, args) = parser.parse_args()
+
+file_name = 'combined.' + opts.TAG + '.bitscore'
 no_extension_name = '.'.join(file_name.split('.')[:-1])
 print('no_extension_name:', no_extension_name)
 file = join('Rfam-seed', file_name)
