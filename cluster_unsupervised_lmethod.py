@@ -1,5 +1,4 @@
-from lmethod import get_clusters_cnt
-from sklearn.cluster import AgglomerativeClustering
+from lmethod import agglomerative_l_method
 
 file = 'Rfam-seed/combined.zNorm.pcNorm100.bitscore'
 
@@ -20,17 +19,13 @@ with open(file, 'r') as handle:
 
 print('having', len(points), 'points')
 
-print('calculating number of clusters using l-method..')
-cluster_cnt = get_clusters_cnt(points, linkage='ward')
-
-print('clustering data into', cluster_cnt, 'clusters')
-agg = AgglomerativeClustering(n_clusters=cluster_cnt, linkage='ward')
-agg.fit(points)
-
+print('cluster using l-method..')
+agg = agglomerative_l_method(points, method='ward')
 labels = agg.labels_
+cluster_cnt = max(labels) + 1
 
 print('saving results to file')
-outfile = 'Rfam-seed/combined.lmethod.cluster'
+outfile = 'Rfam-seed/combined.lmethod-ward.cluster'
 clusters = [[] for i in range(cluster_cnt)]
 for name, label in zip(names, labels):
     clusters[label].append(name)
