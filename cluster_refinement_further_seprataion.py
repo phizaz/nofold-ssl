@@ -60,6 +60,13 @@ def dist_cluster_avg(A, B):
     s = sum(np.linalg.norm(a - b) for a, b in product(points_A, points_B))
     return s / float(len(points_A) * len(points_B))
 
+def labels_to_clusters(names, labels):
+    cluster_cnt = max(labels) + 1
+    sub_clusters = [[] for i in range(cluster_cnt)]
+    for name, label in zip(names, labels):
+        sub_clusters[label].append(name)
+    return sub_clusters
+
 print('pruning clusters...')
 pruned_clusters = list(map(retain_high_density, clusters))
 
@@ -69,14 +76,32 @@ pruned_clusters = list(map(retain_high_density, clusters))
 
 print('further intra-clustering...')
 total_clusters = 0
-for i, names in enumerate(pruned_clusters):
+final_clusters = []
+for i, names in enumerate(clusters):
     local_inter_cluster_dist = min(dist_cluster_avg(names, cluster) for cluster in pruned_clusters[:i] + pruned_clusters[i+1:])
-    print('local inter cluster dist:', local_inter_cluster_dist)
+    print('local inter-cluster dist:', local_inter_cluster_dist)
 
     points = list(map(point_of, names))
     agg = AgglomerativeClusteringMaxMergeDist()
     labels = agg.fit(points, local_inter_cluster_dist, method='average', metric='euclidean')
     cluster_cnt = max(labels) + 1
+
+    if cluster_cnt == 1:
+        final_clusters.append(names)
+    else:
+        sub_clusters = labels_to_clusters(names, labels)
+        final_clusters += sub_clusters
+
     total_clusters += cluster_cnt
 
 print('total clusters:', total_clusters)
+print('final_clusters count:', len(final_clusters))
+
+print('saving final cluster to file...')
+outfile = cluster_file + '.refined.cluster'
+with open(outfile, 'w') as handle:
+    for members in final_clusters:
+        for name in members:
+            handle.write(name + ' ')
+        handle.write('\n')
+print('saved!')
