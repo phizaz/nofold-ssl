@@ -1,7 +1,13 @@
 from lmethod import agglomerative_l_method
 from os.path import join
+from optparse import OptionParser
 
-tag = 'query.cripple25'
+parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
+parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
+parser.add_option("--linkage", action="store", default='ward', dest="LINKAGE", help="linkage for hierachical clustering")
+(opts, args) = parser.parse_args()
+
+tag = opts.TAG
 file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
 
 names = []
@@ -21,13 +27,13 @@ with open(file, 'r') as handle:
 
 print('having', len(points), 'points')
 
-print('cluster using l-method..')
-agg = agglomerative_l_method(points, method='ward')
+print('cluster using l-method linkage:', opts.LINKAGE)
+agg = agglomerative_l_method(points, method=opts.LINKAGE)
 labels = agg.labels_
 cluster_cnt = max(labels) + 1
 
 print('saving results to file')
-outfile = join('Rfam-seed', 'combined.' + tag + '.lmethod-ward.cluster')
+outfile = join('Rfam-seed', 'combined.' + tag + '.lmethod.' + opts.LINKAGE + '.cluster')
 clusters = [[] for i in range(cluster_cnt)]
 for name, label in zip(names, labels):
     clusters[label].append(name)
