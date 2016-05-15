@@ -43,7 +43,7 @@ with open(file, 'r') as handle:
             test_names.append(name)
             test_points.append(scores)
 
-names_to_int, int_to_name = create_map(names)
+family_to_int, int_to_family = create_map(map(family_of, names))
 
 print('having', len(points) + len(test_points), 'points')
 
@@ -56,7 +56,7 @@ elif opts.KERNEL == 'rbf':
     print('gamma:', opts.GAMMA)
     ssl = LabelPropagation(kernel='rbf', gamma=opts.GAMMA)
 X = points + test_points
-Y = list(map(lambda n: names_to_int[n], names)) + [-1 for i in range(len(test_names))]
+Y = list(map(lambda n: family_to_int[n], map(family_of, names))) + [-1 for i in range(len(test_names))]
 ssl.fit(X, Y)
 labels = ssl.transduction_[len(points):]
 end_time = time.time()
@@ -64,10 +64,9 @@ print('training took:', end_time - start_time, 'seconds')
 
 clusters = {}
 for name, label in zip(test_names, labels):
-    family = family_of(int_to_name[label])
-    if family not in clusters:
-        clusters[family] = []
-    clusters[family].append(name)
+    if label not in clusters:
+        clusters[label] = []
+    clusters[label].append(name)
 
 print('saving results to file')
 outfile = join('Rfam-seed', 'combined.' + tag + '.labelPropagation.cluster')
