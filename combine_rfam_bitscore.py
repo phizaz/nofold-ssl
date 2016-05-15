@@ -9,6 +9,7 @@ import numpy as np
 parser = OptionParser(usage='cluster using semi-supervised label spreading algorithm')
 parser.add_option("--query", action="store", default='query', dest="QUERY", help="the query name")
 parser.add_option("--cripple", action="store", type='int', default=8, dest="CRIPPLE", help="cripple degree")
+parser.add_option("--sample", action="store", type='int', default=5, dest="SAMPLE", help="number of seed sequenecs shall be randomly taken from each family")
 (opts, args) = parser.parse_args()
 
 path = 'Rfam-seed/db'
@@ -134,7 +135,7 @@ print('taking from:', len(seed_families), '/', len(available_families))
 for family in seed_families:
     #all_sequences += get_high_dense_seed_sequences(family, total=3)
     # all_sequences += get_centroid_seed_sequences(family)
-    all_sequences += get_random_seed_sequences(family, total=5)
+    all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
 
 # save to file
 header = get_header('RF00001')
