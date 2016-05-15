@@ -1,6 +1,8 @@
 from lmethod import agglomerative_l_method
+from os.path import join
 
-file = 'Rfam-seed/combined.zNorm.pcNorm100.bitscore'
+tag = 'query.cripple25'
+file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
 
 names = []
 points = []
@@ -25,7 +27,7 @@ labels = agg.labels_
 cluster_cnt = max(labels) + 1
 
 print('saving results to file')
-outfile = 'Rfam-seed/combined.lmethod-ward.cluster'
+outfile = join('Rfam-seed', 'combined.' + tag + '.lmethod-ward.cluster')
 clusters = [[] for i in range(cluster_cnt)]
 for name, label in zip(names, labels):
     clusters[label].append(name)

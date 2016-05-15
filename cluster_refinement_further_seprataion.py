@@ -2,9 +2,12 @@ import numpy as np
 from sklearn.neighbors import BallTree
 from itertools import combinations, product
 from agglomerative_clustering import AgglomerativeClusteringMaxMergeDist
+from os.path import join
 
-score_file = 'Rfam-seed/combined.zNorm.pcNorm100.bitscore'
-cluster_file = 'Rfam-seed/combined.labelPropagation.cluster'
+tag = 'query.cripple25'
+alg = 'labelPropagation'
+score_file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
+cluster_file = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.cluster')
 
 print('loading score file')
 sequences = {}
@@ -98,7 +101,7 @@ print('total clusters:', total_clusters)
 print('final_clusters count:', len(final_clusters))
 
 print('saving final cluster to file...')
-outfile = cluster_file + '.refined.cluster'
+outfile = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.refined.cluster')
 with open(outfile, 'w') as handle:
     for members in final_clusters:
         for name in members:
