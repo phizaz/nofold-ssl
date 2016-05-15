@@ -18,10 +18,11 @@ parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
 parser.add_option("--kernel", action="store", default='rbf', dest="KERNEL", help="kernel")
 parser.add_option("--gamma", action="store", type='float', default=1, dest="GAMMA", help="rbf kernel's gamma")
 parser.add_option("--nn", action="store", type='int', default=19, dest="NN", help="knn's nearest neighbor parameter")
+parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
-file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
+file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 
 names = []
 points = []

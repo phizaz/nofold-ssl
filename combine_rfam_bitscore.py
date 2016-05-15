@@ -45,7 +45,7 @@ def get_seed_sequences(family):
     file = join(path, family, family + '.bitscore')
     return get_sequences_from_file(file)
 
-def get_seed_some_sequences(family, total=5):
+def get_high_dense_seed_sequences(family, total=5):
     if not check_family(family):
         return []
 
@@ -76,6 +76,28 @@ def get_seed_some_sequences(family, total=5):
     # take only the most dense
     high_density_sequences = retain_high_density(names, points, retaining=total)
     return high_density_sequences
+
+def get_random_seed_sequences(family, total=5):
+    if not check_family(family):
+        return []
+
+    sequences = get_seed_sequences(family)
+    return sample(sequences, min(total, len(sequences)))
+
+def get_centroid_seed_sequences(family):
+    if not check_family(family):
+        return []
+
+    sequences = get_seed_sequences(family)
+    names, _points = list(zip(*sequences))
+    points = np.array(_points)
+
+    centroid = np.zeros(points[0].shape)
+    for point in points:
+        centroid += point
+    centroid /= len(points)
+
+    return [(family + '_centorid', centroid)]
 
 # get querying families, not having families
 available_families = set(filter(check_family, families))
@@ -110,7 +132,9 @@ print('marked as crippled:', cripple_families)
 seed_families = available_families - set(cripple_families)
 print('taking from:', len(seed_families), '/', len(available_families))
 for family in seed_families:
-    all_sequences += get_seed_some_sequences(family, total=5)
+    #all_sequences += get_high_dense_seed_sequences(family, total=3)
+    # all_sequences += get_centroid_seed_sequences(family)
+    all_sequences += get_random_seed_sequences(family, total=5)
 
 # save to file
 header = get_header('RF00001')

@@ -8,11 +8,12 @@ from optparse import OptionParser
 parser = OptionParser(usage='further clustering using inter-cluster distance criteria')
 parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
 parser.add_option("--alg", action="store", default='labelPropagation', dest="ALG", help="the file's algorithm description")
+parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
 alg = opts.ALG
-score_file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
+score_file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 cluster_file = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.cluster')
 
 print('loading score file')
@@ -67,8 +68,19 @@ def dist_cluster_min(A, B):
 def dist_cluster_avg(A, B):
     points_A = list(map(point_of, A))
     points_B = list(map(point_of, B))
-    s = sum(np.linalg.norm(a - b) for a, b in product(points_A, points_B))
+    s = sum(dist(a, b) for a, b in product(points_A, points_B))
     return s / float(len(points_A) * len(points_B))
+
+def centroid_of(points):
+    centroid = sum(points) / len(points)
+    return centroid
+
+def dist_cluster_centroid(A, B):
+    points_A = list(map(point_of, A))
+    points_B = list(map(point_of, B))
+    centroid_A = centroid_of(points_A)
+    centroid_B = centroid_of(points_B)
+    return dist(centroid_A, centroid_B)
 
 def labels_to_clusters(names, labels):
     cluster_cnt = max(labels) + 1

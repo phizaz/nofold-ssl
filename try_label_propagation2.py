@@ -39,10 +39,10 @@ def points_by_label(points, labels, label):
 points, labels = concatenate((
     gaussian_with_labels((-1, -1), 1, 100, 0, 5),
     gaussian_with_labels((0, 0), 1, 100),
-    gaussian_with_labels((1.1 , 1.1), 1, 100, 1, 1)
+    gaussian_with_labels((1.1 , 1.1), 1, 100, 1, 5)
 ))
 
-ssl = LabelPropagation()
+ssl = LabelPropagation(kernel='knn', n_neighbors=7)
 ssl.fit(points, labels)
 labels = ssl.predict(points)
 

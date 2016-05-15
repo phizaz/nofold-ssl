@@ -4,7 +4,7 @@ from sklearn.svm import SVC
 svm takes to much time on multi-class classification
 '''
 
-file = 'Rfam-seed/combined.zNorm.pcNorm100.bitscore'
+file = 'Rfam-seed/combined.zNorm.pcNorm100.zNorm.bitscore'
 
 names = []
 points = []

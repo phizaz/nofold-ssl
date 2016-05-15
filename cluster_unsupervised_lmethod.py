@@ -4,11 +4,12 @@ from optparse import OptionParser
 
 parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
 parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
-parser.add_option("--linkage", action="store", default='ward', dest="LINKAGE", help="linkage for hierachical clustering")
+parser.add_option("--linkage", action="store", default='ward', dest="LINKAGE", help="linkage for hierarchical clustering")
+parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
-file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
+file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 
 names = []
 points = []

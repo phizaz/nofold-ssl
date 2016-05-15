@@ -17,8 +17,19 @@ def save_file(header, names, scores, outfile):
                 handle.write(str(s) + '\t')
             handle.write('\n')
 
+def normalize(array):
+    return sp.stats.mstats.zscore(array)
+
+def get_header(family):
+    path = 'Rfam-seed/db'
+    file = join(path, family, family + '.bitscore')
+    with open(file, 'r') as handle:
+        header = handle.readline().strip()
+    return header
+
 parser = OptionParser(usage='further clustering using inter-cluster distance criteria')
 parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
+parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
 (opts, args) = parser.parse_args()
 
 file_name = 'combined.' + opts.TAG + '.bitscore'
@@ -42,6 +53,8 @@ with open(file, 'r') as handle:
             print('dimension not consistent:', name)
 
 all_lens = set(map(len, all_scores))
+all_scores = np.array(all_scores)
+
 if len(all_lens) > 1:
     print('all_lens:', all_lens)
     print('dimension not consistent')
@@ -49,20 +62,16 @@ if len(all_lens) > 1:
 
 # get the 100 PC scores
 print('PCA-lizing...')
-components = 100
+components = opts.COMPONENTS
+header = '\t'.join(['PC' + str(i + 1) for i in range(components)])
 pca = PCA(n_components=components)
 pca_scores = pca.fit_transform(all_scores)
-header = '\t'.join(['PC' + str(i + 1) for i in range(components)])
-save_file(header, all_names, pca_scores, join('Rfam-seed', no_extension_name + '.pcNorm100.bitscore'))
+save_file(header, all_names, pca_scores, join('Rfam-seed', no_extension_name + '.pcNorm' + str(components) + '.bitscore'))
 
-# normalize the scores
-print('Z-normalizing...')
-def normalize(array):
-    return sp.stats.mstats.zscore(array)
-
-normalized_scores = []
+# normalize the PC scores
+print('Z-normalizing for PC' + str(opts.COMPONENTS))
+pc_normalized_scores = []
 for col in pca_scores.T:
-    normalized_scores.append(normalize(col))
-
-normalized_scores = np.array(normalized_scores).T
-save_file(header, all_names, normalized_scores, join('Rfam-seed', no_extension_name + '.zNorm.pcNorm100.bitscore'))
+    pc_normalized_scores.append(normalize(col))
+pc_normalized_scores = np.array(pc_normalized_scores).T
+save_file(header, all_names, pc_normalized_scores, join('Rfam-seed', no_extension_name + '.pcNorm' + str(components) + '.zNorm.bitscore'))

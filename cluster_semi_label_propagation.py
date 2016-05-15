@@ -17,10 +17,11 @@ parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
 parser.add_option("--kernel", action="store", default='rbf', dest="KERNEL", help="kernel")
 parser.add_option("--gamma", action="store", type='float', default=1, dest="GAMMA", help="rbf kernel's gamma")
 parser.add_option("--nn", action="store", type='int', default=19, dest="NN", help="knn's nearest neighbor parameter")
+parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
-file = join('Rfam-seed', 'combined.' + tag + '.zNorm.pcNorm100.bitscore')
+file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 
 names = []
 points = []
@@ -42,7 +43,7 @@ with open(file, 'r') as handle:
             test_names.append(name)
             test_points.append(scores)
 
-family_to_int, int_to_family = create_map(map(family_of, names))
+names_to_int, int_to_name = create_map(names)
 
 print('having', len(points) + len(test_points), 'points')
 
@@ -55,7 +56,7 @@ elif opts.KERNEL == 'rbf':
     print('gamma:', opts.GAMMA)
     ssl = LabelPropagation(kernel='rbf', gamma=opts.GAMMA)
 X = points + test_points
-Y = list(map(lambda n: family_to_int[n], map(family_of, names))) + [-1 for i in range(len(test_names))]
+Y = list(map(lambda n: names_to_int[n], names)) + [-1 for i in range(len(test_names))]
 ssl.fit(X, Y)
 labels = ssl.transduction_[len(points):]
 end_time = time.time()
@@ -63,9 +64,10 @@ print('training took:', end_time - start_time, 'seconds')
 
 clusters = {}
 for name, label in zip(test_names, labels):
-    if label not in clusters:
-        clusters[label] = []
-    clusters[label].append(name)
+    family = family_of(int_to_name[label])
+    if family not in clusters:
+        clusters[family] = []
+    clusters[family].append(name)
 
 print('saving results to file')
 outfile = join('Rfam-seed', 'combined.' + tag + '.labelPropagation.cluster')
@@ -76,4 +78,4 @@ with open(outfile, 'w') as handle:
             handle.write(name + ' ')
         handle.write('\n')
 
-print('saving done!')
+print('saving done!', len(clusters), 'clusters')
