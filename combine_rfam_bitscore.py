@@ -1,9 +1,11 @@
 import sys
 from os.path import isfile, join, isdir, exists
 from os import listdir
-from random import shuffle
+from random import shuffle, sample
+from Bio import SeqIO
 
 path = 'Rfam-seed/db'
+query = 'query'
 
 families = [f for f in listdir(path) if isdir(join(path, f))]
 
@@ -49,18 +51,44 @@ def get_seed_some_sequences(family, total=5):
     shuffle(sequences)
     return sequences[:total]
 
-# get some sequences from each seeding family
-all_sequences = []
-for family in families:
-    all_sequences += get_seed_some_sequences(family, total=5)
+# get querying families, not having families
+available_families = set(filter(check_family, families))
+query_database = join('Rfam-seed', query, query + '.db')
+query_families = set()
+with open(query_database, 'r') as handle:
+    records = SeqIO.parse(handle, 'fasta')
+    for record in records:
+        family = record.name.split('_')[0][1:]
+        query_families.add(family)
+print('families required by the query:', len(query_families))
+not_having_families = query_families - available_families
+print('families we don\'t have:', len(not_having_families))
 
-# also get sequences from the query file as well
-query_file = 'Rfam-seed/query/query.bitscore'
+all_sequences = []
+
+# get scores from the query
+query_file = join('Rfam-seed', query, query + '.bitscore')
 all_sequences += get_sequences_from_file(query_file)
+
+# get some scores from each seeding family (except the marked as crippled)
+cripple_family_count = 25
+print('cripple count:', 25)
+cripple_more = cripple_family_count - len(not_having_families)
+if cripple_more < 0:
+    print('cannot attain the target cripple count!')
+    sys.exit()
+print('more to be crippled:', cripple_more)
+cripple_target_families = query_families - not_having_families
+cripple_families = sample(cripple_target_families, cripple_more)
+print('marked as crippled:', cripple_families)
+seed_families = available_families - set(cripple_families)
+print('taking from:', len(seed_families), '/', len(available_families))
+for family in seed_families:
+    all_sequences += get_seed_some_sequences(family, total=5)
 
 # save to file
 header = get_header('RF00001')
-outfile = 'Rfam-seed/combined.bitscore'
+outfile = 'Rfam-seed/combined.' + query + '.cripple' + str(cripple_family_count) + '.bitscore'
 with open(outfile, 'w') as handle:
     handle.write(header + '\n')
     for name, scores in all_sequences:
