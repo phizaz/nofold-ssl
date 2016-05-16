@@ -139,10 +139,13 @@ if opts.SAMPLE > 0:
     print('taking randomly for:', opts.SAMPLE)
 for family in seed_families:
     #all_sequences += get_high_dense_seed_sequences(family, total=3)
+    sequences_available = len(get_seed_sequences(family))
     if opts.INC_CENTROID == 'true':
         all_sequences += get_centroid_seed_sequences(family)
     if opts.SAMPLE > 0:
-        all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
+        # avoid adding the centroid again
+        if not (opts.INC_CENTROID == 'true' and sequences_available == 1):
+            all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
 
 # save to file
 header = get_header('RF00001')
