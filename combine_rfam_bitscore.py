@@ -10,6 +10,7 @@ parser = OptionParser(usage='cluster using semi-supervised label spreading algor
 parser.add_option("--query", action="store", default='query', dest="QUERY", help="the query name")
 parser.add_option("--cripple", action="store", type='int', default=8, dest="CRIPPLE", help="cripple degree")
 parser.add_option("--sample", action="store", type='int', default=5, dest="SAMPLE", help="number of seed sequenecs shall be randomly taken from each family")
+parser.add_option("--inc_centroid", action="store", default='false', dest="INC_CENTROID", help="should include cetroid ?")
 (opts, args) = parser.parse_args()
 
 path = 'Rfam-seed/db'
@@ -132,10 +133,16 @@ cripple_families = sample(cripple_target_families, cripple_more)
 print('marked as crippled:', cripple_families)
 seed_families = available_families - set(cripple_families)
 print('taking from:', len(seed_families), '/', len(available_families))
+if opts.INC_CENTROID == 'true':
+    print('including centroids')
+if opts.SAMPLE > 0:
+    print('taking randomly for:', opts.SAMPLE)
 for family in seed_families:
     #all_sequences += get_high_dense_seed_sequences(family, total=3)
-    # all_sequences += get_centroid_seed_sequences(family)
-    all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
+    if opts.INC_CENTROID == 'true':
+        all_sequences += get_centroid_seed_sequences(family)
+    if opts.SAMPLE > 0:
+        all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
 
 # save to file
 header = get_header('RF00001')
