@@ -9,6 +9,7 @@ parser = OptionParser(usage='further clustering using inter-cluster distance cri
 parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
 parser.add_option("--alg", action="store", default='labelPropagation', dest="ALG", help="the file's algorithm description")
 parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
+parser.add_option("--C", action="store", type='float', default=1.1, dest="C", help="splitting cluster parameter")
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
@@ -89,7 +90,7 @@ def labels_to_clusters(names, labels):
         sub_clusters[label].append(name)
     return sub_clusters
 
-def split_clusters(clusters, C = 1.15):
+def split_clusters(clusters, C):
     print('pruning clusters...')
     # pruned_clusters = list(map(retain_high_density, clusters))
     pruned_clusters = clusters
@@ -117,7 +118,7 @@ def split_clusters(clusters, C = 1.15):
     print('final_clusters count:', len(final_clusters))
     return final_clusters
 
-final_clusters = split_clusters(clusters)
+final_clusters = split_clusters(clusters, C=opts.C)
 
 print('saving final cluster to file...')
 outfile = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.refined.cluster')
