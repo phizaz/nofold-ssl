@@ -56,8 +56,8 @@ def get_high_dense_seed_sequences(family, total=5):
     names, _points = list(zip(*sequences))
     points = np.array(_points)
 
-    if len(sequences) < total:
-        print('not enough sequences in family:', family, 'it has only:', len(sequences))
+    # if len(sequences) < total:
+    #    print('not enough sequences in family:', family, 'it has only:', len(sequences))
 
     def dist(a, b):
         return np.linalg.norm(a - b)

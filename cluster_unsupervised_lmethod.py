@@ -45,4 +45,4 @@ with open(outfile, 'w') as handle:
             handle.write(name + ' ')
         handle.write('\n')
 
-print('saving done!')
+print('saving done!', cluster_cnt, 'clusters')
