@@ -12,6 +12,7 @@ parser.add_option("--cripple", action="store", type='int', default=8, dest="CRIP
 parser.add_option("--sample", action="store", type='int', default=5, dest="SAMPLE", help="number of seed sequenecs shall be randomly taken from each family")
 parser.add_option("--inc_centroid", action="store", default='false', dest="INC_CENTROID", help="should include cetroid ?")
 parser.add_option("--high_density", action="store", default='false', dest="HIGH_DENSITY", help="should samples be selected from high density profile ?")
+parser.add_option("--small", action="store", default='false', dest="SMALL", help="take only the relevant seed families")
 (opts, args) = parser.parse_args()
 
 path = 'Rfam-seed/db'
@@ -132,12 +133,16 @@ print('more to be crippled:', cripple_more)
 cripple_target_families = query_families - not_having_families
 cripple_families = sample(cripple_target_families, cripple_more)
 print('marked as crippled:', cripple_families)
-seed_families = available_families - set(cripple_families)
+if opts.SMALL == 'true':
+    print('take as small seed families as possible...')
+    seed_families = cripple_target_families - set(cripple_families)
+else:
+    seed_families = available_families - set(cripple_families)
 print('taking from:', len(seed_families), '/', len(available_families))
 if opts.INC_CENTROID == 'true':
     print('including centroids')
 if opts.SAMPLE > 0:
-    print('taking randomly for:', opts.SAMPLE)
+    print('taking randomly for:', opts.SAMPLE, 'samples per families')
 if opts.HIGH_DENSITY == 'true':
     print('sample will be taken from high denisty areas...')
 for family in seed_families:

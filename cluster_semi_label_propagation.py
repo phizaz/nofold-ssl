@@ -9,8 +9,11 @@ def create_map(strings):
     return dict(zip(all_strings, all_int)), dict(zip(all_int, all_strings))
 
 def family_of(name):
-    family, rest = name.split('_')
-    return family
+    first, rest = name.split('_')
+    if first[0] == 'Q':
+        return first[1:]
+    else:
+        return first
 
 parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
 parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
@@ -72,7 +75,7 @@ print('saving results to file')
 outfile = join('Rfam-seed', 'combined.' + tag + '.labelPropagation.cluster')
 with open(outfile, 'w') as handle:
     for label, members in clusters.items():
-        # handle.write(int_to_family[label] + ' ')
+        # handle.write(int_to_family[label] + '\n')
         for name in members:
             handle.write(name + ' ')
         handle.write('\n')
