@@ -49,7 +49,7 @@ def average_dist(points, origin):
     avg_dist = s / len(points)
     return avg_dist
 
-def retain_high_density(names, portion=0.8):
+def retain_high_density(names, portion=0.9):
     points = list(map(point_of, names))
     take_out = int((1 - portion) * len(points))
     retaining = len(points) - take_out
@@ -89,31 +89,35 @@ def labels_to_clusters(names, labels):
         sub_clusters[label].append(name)
     return sub_clusters
 
-print('pruning clusters...')
-pruned_clusters = list(map(retain_high_density, clusters))
+def split_clusters(clusters, C = 1.15):
+    print('pruning clusters...')
+    # pruned_clusters = list(map(retain_high_density, clusters))
+    pruned_clusters = clusters
 
-print('further intra-clustering...')
-total_clusters = 0
-final_clusters = []
-for i, (names, pruned_names) in enumerate(zip(clusters, pruned_clusters)):
-    local_inter_cluster_dist = min(dist_cluster_avg(pruned_names, pruned_cluster) for pruned_cluster in pruned_clusters[:i] + pruned_clusters[i+1:])
-    print('local inter-cluster dist:', local_inter_cluster_dist)
+    print('further intra-clustering...')
+    total_clusters = 0
+    final_clusters = []
+    for i, (names, pruned_names) in enumerate(zip(clusters, pruned_clusters)):
+        local_inter_cluster_dist = C * min(dist_cluster_avg(pruned_names, pruned_cluster) for pruned_cluster in pruned_clusters[:i] + pruned_clusters[i+1:])
+        print('local inter-cluster dist:', local_inter_cluster_dist)
 
-    points = list(map(point_of, names))
-    agg = AgglomerativeClusteringMaxMergeDist()
-    labels = agg.fit(points, local_inter_cluster_dist, method='average', metric='euclidean')
-    cluster_cnt = max(labels) + 1
+        points = list(map(point_of, names))
+        agg = AgglomerativeClusteringMaxMergeDist()
+        labels = agg.fit(points, local_inter_cluster_dist, method='average', metric='euclidean')
+        cluster_cnt = max(labels) + 1
 
-    if cluster_cnt == 1:
-        final_clusters.append(names)
-    else:
-        sub_clusters = labels_to_clusters(names, labels)
-        final_clusters += sub_clusters
+        if cluster_cnt == 1:
+            final_clusters.append(names)
+        else:
+            sub_clusters = labels_to_clusters(names, labels)
+            final_clusters += sub_clusters
 
-    total_clusters += cluster_cnt
+        total_clusters += cluster_cnt
+    print('total clusters:', total_clusters)
+    print('final_clusters count:', len(final_clusters))
+    return final_clusters
 
-print('total clusters:', total_clusters)
-print('final_clusters count:', len(final_clusters))
+final_clusters = split_clusters(clusters)
 
 print('saving final cluster to file...')
 outfile = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.refined.cluster')
