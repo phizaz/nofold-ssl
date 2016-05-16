@@ -121,5 +121,3 @@ def find_distance_among_clusters(clusters):
         min_cluster_dist[family_A] = min(dist_cluster_avg(points_A, points_B), min_cluster_dist[family_A])
     largest_min_cluster_dist = list(reversed(sorted(min_cluster_dist.values())))
     return largest_min_cluster_dist
-
-
