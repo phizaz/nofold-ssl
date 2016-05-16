@@ -11,6 +11,7 @@ parser.add_option("--query", action="store", default='query', dest="QUERY", help
 parser.add_option("--cripple", action="store", type='int', default=8, dest="CRIPPLE", help="cripple degree")
 parser.add_option("--sample", action="store", type='int', default=5, dest="SAMPLE", help="number of seed sequenecs shall be randomly taken from each family")
 parser.add_option("--inc_centroid", action="store", default='false', dest="INC_CENTROID", help="should include cetroid ?")
+parser.add_option("--high_density", action="store", default='false', dest="HIGH_DENSITY", help="should samples be selected from high density profile ?")
 (opts, args) = parser.parse_args()
 
 path = 'Rfam-seed/db'
@@ -137,6 +138,8 @@ if opts.INC_CENTROID == 'true':
     print('including centroids')
 if opts.SAMPLE > 0:
     print('taking randomly for:', opts.SAMPLE)
+if opts.HIGH_DENSITY == 'true':
+    print('sample will be taken from high denisty areas...')
 for family in seed_families:
     #all_sequences += get_high_dense_seed_sequences(family, total=3)
     sequences_available = len(get_seed_sequences(family))
@@ -145,7 +148,10 @@ for family in seed_families:
     if opts.SAMPLE > 0:
         # avoid adding the centroid again
         if not (opts.INC_CENTROID == 'true' and sequences_available == 1):
-            all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
+            if opts.HIGH_DENSITY == 'true':
+                all_sequences += get_high_dense_seed_sequences(family, total=opts.SAMPLE)
+            else:
+                all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE)
 
 # save to file
 header = get_header('RF00001')
