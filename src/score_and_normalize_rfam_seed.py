@@ -1,4 +1,6 @@
 import os, sys
+from os.path import join, exists, isdir
+from os import listdir
 from utils_analysis import *
 import shutil
 from optparse import OptionParser
@@ -13,11 +15,11 @@ print('max CPU:', opts.MAX_CPU)
 
 path = '../Rfam-seed/db'
 
-def things_count(path):
-    l = list(filter(lambda x: x != '.DS_Store', os.listdir(path)))
-    return len(l)
+def check_family(family):
+    expected_file = join(path, family, family + '.bitscore')
+    return exists(expected_file)
 
-families = [f for f in os.listdir(path) if os.path.isdir(os.path.join(path, f)) and things_count(os.path.join(path, f)) == 1]
+families = [f for f in listdir(path) if isdir(join(path, f)) and check_family(f)]
 families.sort()
 families = list(filter(lambda x: x >= opts.START_RF, families))
 
