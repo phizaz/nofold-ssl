@@ -117,15 +117,20 @@ if __name__ == '__main__':
 	print ""
 		
 	
+	# # create output directory if necessary
+	# if os.path.exists(scoresOut):
+	# 	print ""
+	# 	print "Output directory", scoresOut, "already exists."
+	# 	response = raw_input("Ok to overwrite existing CM output files? (y/n) ")
+	# 	if response != "y":
+	# 		print "Exiting."
+	# 		sys.exit()
+	# else:
+	# 	print "Output directory", scoresOut, "does not exist, creating."
+	# 	os.makedirs(scoresOut)
+
 	# create output directory if necessary
-	if os.path.exists(scoresOut):
-		print ""
-		print "Output directory", scoresOut, "already exists."
-		response = raw_input("Ok to overwrite existing CM output files? (y/n) ")
-		if response != "y":
-			print "Exiting."
-			sys.exit()
-	else:
+	if not os.path.exists(scoresOut):
 		print "Output directory", scoresOut, "does not exist, creating."
 		os.makedirs(scoresOut)
 	
@@ -136,9 +141,12 @@ if __name__ == '__main__':
 	for cmFile in cmList:
 		count += 1
 		cmName = os.path.basename(cmFile)
-		outFile = scoresOut + "scores_" + cmName + ".txt"		
-		params = [DB_FILE, cmFile, outFile, PROG_PATH]
-		execList.append(params)
+		outFile = scoresOut + "scores_" + cmName + ".txt"
+
+		# calculate only if necessary (not exist or the file is too small
+		if not os.path.exists(outFile) or (os.path.exists(outFile) and os.stat(outFile).st_size < 10):
+			params = [DB_FILE, cmFile, outFile, PROG_PATH]
+			execList.append(params)
 
 	print ""
 	print "======================================================"
