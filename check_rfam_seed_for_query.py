@@ -3,6 +3,10 @@ from os.path import isfile, join, isdir, exists
 from os import listdir
 from Bio import SeqIO
 
+'''
+Get the families (that is required by the query) that have no bitscores (not calculated yet!)
+'''
+
 path = 'Rfam-seed/db'
 
 families = [f for f in listdir(path) if isdir(join(path, f))]

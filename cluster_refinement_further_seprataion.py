@@ -5,6 +5,12 @@ from agglomerative_clustering import AgglomerativeClusteringMaxMergeDist
 from os.path import join
 from optparse import OptionParser
 
+'''
+Further refine clusters from inital label propagation by splitting and merging
+Splitting using the local inter-cluster distance criteria
+Merging using the supervised merging techninque (merge those clusters having the same neareast 'seed' centroid)
+'''
+
 def point_of(name):
     return sequences[name]
 

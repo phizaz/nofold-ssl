@@ -1,7 +1,7 @@
 from sklearn.svm import SVC
 
 '''
-svm takes to much time on multi-class classification
+svm takes to much time on multi-class classification, not to be used in this experiment
 '''
 
 file = 'Rfam-seed/combined.zNorm.pcNorm100.zNorm.bitscore'

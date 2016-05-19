@@ -3,6 +3,11 @@ from os.path import join
 import time
 from optparse import OptionParser
 
+'''
+Semi-supervised clustering using label propagation
+This will definitely give lesser-than-actual number of clusters, becasue of the insufficient 'seed' families.
+'''
+
 def create_map(strings):
     all_strings = set(strings)
     all_int = [i for i in range(len(all_strings))]

@@ -2,6 +2,10 @@ import sys
 from os.path import isfile, join, isdir, exists
 from os import listdir
 
+'''
+Get the families that have no bitscores
+'''
+
 path = 'Rfam-seed/db'
 
 families = [f for f in listdir(path) if isdir(join(path, f))]

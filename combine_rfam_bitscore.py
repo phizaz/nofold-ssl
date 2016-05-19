@@ -6,6 +6,11 @@ from Bio import SeqIO
 from optparse import OptionParser
 import numpy as np
 
+'''
+Combine the rfam seeds with the given query
+this should be the first step of doing semi-supervised clustering
+'''
+
 parser = OptionParser(usage='cluster using semi-supervised label spreading algorithm')
 parser.add_option("--query", action="store", default='query', dest="QUERY", help="the query name")
 parser.add_option("--cripple", action="store", type='int', default=8, dest="CRIPPLE", help="cripple degree")

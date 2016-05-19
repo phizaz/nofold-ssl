@@ -2,6 +2,10 @@ from lmethod import agglomerative_l_method
 from os.path import join
 from optparse import OptionParser
 
+'''
+Clustering using fully unsupervised clustering (l-method)
+'''
+
 parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
 parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
 parser.add_option("--linkage", action="store", default='ward', dest="LINKAGE", help="linkage for hierarchical clustering")

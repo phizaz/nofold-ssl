@@ -4,6 +4,10 @@ import sys
 import time
 from optparse import OptionParser
 
+'''
+Semi-supervised clustering using label spreading, no successfully try has been reported!
+'''
+
 def create_map(strings):
     all_strings = set(strings)
     all_int = [i for i in range(len(all_strings))]

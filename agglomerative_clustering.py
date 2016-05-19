@@ -1,4 +1,9 @@
 from fastcluster import linkage
+import numpy as np
+
+'''
+Agglomerative hierarchical clustering with a given max merge distance
+'''
 
 class DisjointSet:
     def __init__(self, sets_cnt):
@@ -68,7 +73,6 @@ class AgglomerativeClusteringMaxMergeDist:
         for a, b, merge_dist, _ in merge_hist:
             if merge_dist > max_merge_dist:
                 break
-
             a, b = int(a), int(b)
             disjoint.join(a, b)
 

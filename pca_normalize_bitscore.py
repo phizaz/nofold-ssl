@@ -7,6 +7,10 @@ import numpy as np
 import scipy as sp
 from optparse import OptionParser
 
+'''
+Normalize the combined bitscore using PCA and Z-normalizer
+'''
+
 def save_file(header, names, scores, outfile):
     assert isinstance(header, str)
     with open(outfile, 'w') as handle:
