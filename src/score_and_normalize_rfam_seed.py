@@ -19,7 +19,7 @@ def check_family(family):
     expected_file = join(path, family, family + '.bitscore')
     return exists(expected_file)
 
-families = [f for f in listdir(path) if isdir(join(path, f)) and check_family(f)]
+families = [f for f in listdir(path) if isdir(join(path, f)) and not check_family(f)]
 families.sort()
 families = list(filter(lambda x: x >= opts.START_RF, families))
 
