@@ -34,9 +34,9 @@ for family in families:
     )
     (output, res, error) = run_command(command)
 
-    shutil.rmtree(os.path.join(path, family, 'cmscore_results_rfam'))
-
     if error:
         print ">>Error detected. Exiting."
         print(output)
         sys.exit()
+    else:
+        shutil.rmtree(os.path.join(path, family, 'cmscore_results_rfam'))
