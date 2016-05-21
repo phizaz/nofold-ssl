@@ -48,3 +48,7 @@ Since, NoFold-SSL is a semi-supervised clustering algorithm. It needs initial la
 If you find yourself in a need of more seed "coverage", you can do the transformation yourself using a script `src/score_and_normalize_rfam_seed.py` which takes `--cpus` the number of cpu cores to be used, `--begin` the start family to be transformed can be something like `RF01900`.
 
 All the seed sequences can be found in `Rfam-seed/db`. `*.db` files are the raw sequences. The transformed sequences should be in files with an extension `*.bitscore`.
+
+
+## Extras
+Of our curiosity, we have implemented the L-Method (Salvador and Chan 2004) with hierarchical clustering just to see how this general clustering method will work  in a special clustering scenario. The script is implemented in the file `cluster_unsupervised_lmethod.py`.
