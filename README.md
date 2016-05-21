@@ -41,3 +41,11 @@ The files involved are:
 * `pca_normalize_bitscore.py` – run PCA on the combined bitscore file, after that run the Z-normalization.
 * `cluster_semi_label_propagation.py` – first step clustering using label propagation options are `--kernel` can be either "knn" or "rbf" `--nn` is the number of nearest neighbors for knn kernel `--gamma` is the gamma for rbf kernel.
 * `cluster_refinement_further_seprataion.py` – last step clustering this further refines the clusters by separating, by local inter-cluster distance , and merging many times. `--C` is a parameter that multiplies the local inter-cluster distance, if this number is high the separating phase will not work really hard (number of clusters is lower).
+
+## Digging Deeper
+Since, NoFold-SSL is a semi-supervised clustering algorithm. It needs initial labeled seeds, which we have collected from Rfam database targeting only the "seed" sequences of each family. However, to transform all of them into the euclidean space is a time-taking process. We have managed to do only ~70% of all the families (and counting). 
+
+If you find yourself in a need of more seed "coverage", you can do the transformation yourself using a script `src/score_and_normalize_rfam_seed.py` which takes `--cpus` the number of cpu cores to be used, `--begin` the start family to be transformed can be something like `RF01900`.
+
+All the seed sequences can be found in `Rfam-seed/db`. `*.db` files are the raw sequences. The transformed sequences should be in files with an extension `*.bitscore`.
+
