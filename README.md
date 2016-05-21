@@ -8,7 +8,7 @@ Having all RNA sequences translated to a vector in an euclidean space, we can no
 
 In this project, we aim to introduce a semi-supervised clustering approach to the RNA clustering problem. In so doing, we take "seeds" from each Rfam family as initial settings for the semi-supervised clustering. After that, we use label propagation to label those without "family" labels. It is expected that this process will generate a less-than-actual number of clusters especially when we don't have seeds for every possible family.
 
-The final process is tailor the clustering results by splitting and merging many times until covergence. We will split the cluster if the merge-distance of points in the cluster is "more" than the "local" inter-cluster distance. One may think this as a realization of the clustering concept which states inter-cluster distance shall be greater than the intra- one. Consequently, if the convergence is not met, we will merge the clusters together where the centroids of the clusters have the same family of nearest "seed" centroid.
+The final process is to tailor the clustering results by splitting and merging many times until covergence. We will split the cluster if the merge-distance of points in the cluster is "more" than the "local" inter-cluster distance. One may think this as a realization of the clustering concept which states inter-cluster distance shall be greater than the intra- one. Consequently, if the convergence is not met, we will merge the clusters together where the centroids of the clusters have the same family of nearest "seed" centroid.
 
 ## Requirements
 If you also want to use NoFold (for comparison), you definitely need to meet the NoFold software requirements which are:
@@ -48,4 +48,3 @@ Since, NoFold-SSL is a semi-supervised clustering algorithm. It needs initial la
 If you find yourself in a need of more seed "coverage", you can do the transformation yourself using a script `src/score_and_normalize_rfam_seed.py` which takes `--cpus` the number of cpu cores to be used, `--begin` the start family to be transformed can be something like `RF01900`.
 
 All the seed sequences can be found in `Rfam-seed/db`. `*.db` files are the raw sequences. The transformed sequences should be in files with an extension `*.bitscore`.
-
