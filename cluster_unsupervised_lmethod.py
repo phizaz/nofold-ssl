@@ -26,7 +26,7 @@ with open(file, 'r') as handle:
         name, scores = tokens[0], list(map(float, tokens[1:]))
 
         # take only the unlabeled ones, because l-method is an unsupervised approach
-        if name.split('_')[0][:3] == 'QRF':
+        if name.split('_')[0][:2] != 'RF':
             names.append(name)
             points.append(scores)
 

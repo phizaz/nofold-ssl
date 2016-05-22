@@ -53,8 +53,8 @@ with open(file, 'r') as handle:
         all_names.append(name)
         all_scores.append(scores)
 
-        if len(scores) != 1973:
-            print('dimension not consistent:', name)
+        # if len(scores) != 1973:
+        #     print('dimension not consistent:', name)
 
 all_lens = set(map(len, all_scores))
 all_scores = np.array(all_scores)

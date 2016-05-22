@@ -36,3 +36,17 @@ python pca_normalize_bitscore.py --tag=query3.cripple9 && \
 python cluster_semi_label_propagation.py --tag=query3.cripple9 --kernel=knn --nn=7 && \
 python cluster_refinement_further_seprataion.py --tag=query3.cripple9 --alg=labelPropagation --C=1.1 && \
 python cluster_unsupervised_lmethod.py --tag=query3.cripple9 --linkage=ward
+
+# 1-2-3 synthetic
+python combine_rfam_bitscore.py --query=novel-1-2-3hp --unformatted=true --sample=5 --high_density=false && \
+python pca_normalize_bitscore.py --tag=novel-1-2-3hp && \
+python cluster_semi_label_propagation.py --tag=novel-1-2-3hp --kernel=knn --nn=7 && \
+python cluster_refinement_further_seprataion.py --tag=novel-1-2-3hp --alg=labelPropagation --C=1.1 && \
+python cluster_unsupervised_lmethod.py --tag=novel-1-2-3hp --linkage=ward
+
+# rfam75id-rename
+python combine_rfam_bitscore.py --query=rfam75id-rename --unformatted=true --sample=5 --high_density=false && \
+python pca_normalize_bitscore.py --tag=rfam75id-rename && \
+python cluster_semi_label_propagation.py --tag=rfam75id-rename --kernel=knn --nn=7 && \
+python cluster_refinement_further_seprataion.py --tag=rfam75id-rename --alg=labelPropagation --C=1.1 && \
+python cluster_unsupervised_lmethod.py --tag=rfam75id-rename --linkage=ward
