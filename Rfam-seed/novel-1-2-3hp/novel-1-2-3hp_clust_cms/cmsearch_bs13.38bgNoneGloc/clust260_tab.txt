@@ -1,0 +1,35 @@
+# command:    cmsearch --toponly --informat FASTA -T 13.38 -o /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust260_aln.txt --tabfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust260_tab.txt --gcfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust260_gc.txt -g /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/clust260.cm /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp.db
+# date:       Thu Jan 23 16:06:45 2014
+# num seqs:   150
+# dbsize(Mb): 0.010650
+#
+# Pre-search info for CM 1: clust260-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       13.38
+#
+# CM: clust260-1
+#                                     target coord   query coord                         
+#                           ----------------------  ------------                         
+# model name  target name        start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust260-1  novel-1hp_31           2          70      1     71     27.11         -   57
+  clust260-1  novel-3hp_4            1          71      1     71     76.17         -   56
+  clust260-1  novel-3hp_15           1          71      1     71     52.45         -   37
+  clust260-1  novel-3hp_47           1          71      1     71     72.18         -   37
+  clust260-1  novel-3hp_49           1          71      1     71     76.23         -   46
+#
+# Post-search info for CM 1: clust260-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00         5      0.0333
+#   2   cm  cyk  glc  1e-10        0.00         5      0.0333
+#   3   cm  ins  glc  1e-15       13.38         5      0.0331
+#
+#    run time
+# -----------
+#    00:00:01

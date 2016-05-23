@@ -1,0 +1,33 @@
+# command:    cmsearch --toponly --informat FASTA -T 13.38 -o /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust218_aln.txt --tabfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust218_tab.txt --gcfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust218_gc.txt -g /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/clust218.cm /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp.db
+# date:       Thu Jan 23 16:06:44 2014
+# num seqs:   150
+# dbsize(Mb): 0.010650
+#
+# Pre-search info for CM 1: clust218-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       13.38
+#
+# CM: clust218-1
+#                                     target coord   query coord                         
+#                           ----------------------  ------------                         
+# model name  target name        start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust218-1  novel-2hp_3            1          71      1     71     75.63         -   56
+  clust218-1  novel-2hp_40           1          71      1     71     78.27         -   65
+  clust218-1  novel-2hp_48           1          71      1     71     73.22         -   51
+#
+# Post-search info for CM 1: clust218-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00         5      0.0333
+#   2   cm  cyk  glc  1e-10        0.00         5      0.0333
+#   3   cm  ins  glc  1e-15       13.38         3      0.0200
+#
+#    run time
+# -----------
+#    00:00:01

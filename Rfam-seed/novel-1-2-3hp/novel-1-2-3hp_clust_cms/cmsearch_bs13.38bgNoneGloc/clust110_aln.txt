@@ -1,0 +1,75 @@
+
+CM: clust110-1
+>novel-1hp_47
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 22.97, GC =  44
+
+           ((((((((((((((<<<<<____>>>>><<<<<<___>>>>>><<<<<____>>>>>)))
+         1 gaguacgUauucagcacUgAccccAgugCguucuuAcggaacGacagGAaAGCcugucug 60      
+           G::UAC:U::U:::::    C+    ::C:U:C:U  :G:A:GA:    A     :U:::
+         1 GUAUACAUGGUAUCAUUAGGCUGGAGAUCAUGCCUCUGGCAUGAUCUCCAGCCUAAUGAU 60      
+
+           )))))))))))
+        61 aauAcguacuc 71      
+           A::A:GUA::C
+        61 ACCAUGUAUAC 71      
+
+
+>novel-3hp_31
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 77.36, GC =  52
+
+           ((((((((((((((<<<<<____>>>>><<<<<<___>>>>>><<<<<____>>>>>)))
+         1 gaguacgUauucagcacUgAccccAgugCguucuuAcggaacGacagGAaAGCcugucug 60      
+           G::UACGUA:UC:::A:U:ACCC:A:U:CG:U:UUA G:A:CGACAGG  A CCUGU::G
+         1 GGAUACGUAGUCUUGAGUCACCCGACUCCGGUUUUAGGAACCGACAGGCCAUCCUGUAAG 60      
+
+           )))))))))))
+        61 aauAcguacuc 71      
+           A:UACGUA::C
+        61 ACUACGUAUCC 71      
+
+
+>novel-3hp_36
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 79.87, GC =  39
+
+           ((((((((((((((<<<<<____>>>>><<<<<<___>>>>>><<<<<____>>>>>)))
+         1 gaguacgUauucagcacUgAccccAgugCguucuuAcggaacGacagGAaAGCcugucug 60      
+           :A::A::UAUU:AGCACUGAC+CCAGUGC:U:C: AC:G:A:GA::GGA+AGCC::UCU:
+         1 UACGAUAUAUUUAGCACUGACUCCAGUGCAUACGGACAGUAUGAACGGAUAGCCGUUCUA 60      
+
+           )))))))))))
+        61 aauAcguacuc 71      
+           AAUA::U::U:
+        61 AAUAUAUCGUA 71      
+
+
+>novel-3hp_50
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 73.96, GC =  41
+
+           ((((((((((((((<<<<<____>>>>><<<<<<___>>>>>><<<<<____>>>>>)))
+         1 gaguacgUauucagcacUgAccccAgugCguucuuAcggaacGacagGAaAGCcugucug 60      
+           GAGU:::U:U::A:::CUG +C CAG::C:UU:U  CG:AA:G::A::AA G::U:::U:
+         1 GAGUUGUUCUGAAAUUCUGCACGCAGAACCUUAUCGCGUAAGGGUAUAAAGGUAUACUUU 60      
+
+           )))))))))))
+        61 aauAcguacuc 71      
+           :A:A:::ACUC
+        61 CAGAACAACUC 71      
+
+
+//

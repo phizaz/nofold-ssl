@@ -1,0 +1,36 @@
+# command:    cmsearch --toponly --informat FASTA -T 13.38 -o /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust116_aln.txt --tabfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust116_tab.txt --gcfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust116_gc.txt -g /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/clust116.cm /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp.db
+# date:       Thu Jan 23 16:06:44 2014
+# num seqs:   150
+# dbsize(Mb): 0.010650
+#
+# Pre-search info for CM 1: clust116-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       13.38
+#
+# CM: clust116-1
+#                                     target coord   query coord                         
+#                           ----------------------  ------------                         
+# model name  target name        start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust116-1  novel-1hp_28          10          62      1     71     18.58         -   43
+  clust116-1  novel-1hp_32          11          61      1     71     24.49         -   53
+  clust116-1  novel-2hp_12           1          71      1     71     77.46         -   56
+  clust116-1  novel-2hp_37           1          71      1     71     36.86         -   58
+  clust116-1  novel-2hp_38           1          71      1     71     74.10         -   37
+  clust116-1  novel-2hp_42           1          71      1     71     76.14         -   51
+#
+# Post-search info for CM 1: clust116-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00         9      0.0600
+#   2   cm  cyk  glc  1e-10        0.00         9      0.0600
+#   3   cm  ins  glc  1e-15       13.38         6      0.0364
+#
+#    run time
+# -----------
+#    00:00:01

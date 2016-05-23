@@ -1,0 +1,37 @@
+# command:    cmsearch --toponly --informat FASTA -T 13.38 -o /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust175_aln.txt --tabfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust175_tab.txt --gcfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust175_gc.txt -g /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/clust175.cm /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp.db
+# date:       Thu Jan 23 16:06:43 2014
+# num seqs:   150
+# dbsize(Mb): 0.010650
+#
+# Pre-search info for CM 1: clust175-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       13.38
+#
+# CM: clust175-1
+#                                     target coord   query coord                         
+#                           ----------------------  ------------                         
+# model name  target name        start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust175-1  novel-1hp_28           1          71      1     71     81.67         -   55
+  clust175-1  novel-1hp_30           1          71      1     71     60.01         -   65
+  clust175-1  novel-1hp_39           1          71      1     71     78.71         -   41
+  clust175-1  novel-1hp_43           3          69      1     71     50.22         -   39
+  clust175-1  novel-1hp_44           3          69      1     71     50.64         -   54
+  clust175-1  novel-1hp_48           1          71      1     71     75.52         -   46
+  clust175-1  novel-3hp_7            2          70      1     71     24.02         -   62
+#
+# Post-search info for CM 1: clust175-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00        10      0.0667
+#   2   cm  cyk  glc  1e-10        0.00        10      0.0667
+#   3   cm  ins  glc  1e-15       13.38         7      0.0457
+#
+#    run time
+# -----------
+#    00:00:01

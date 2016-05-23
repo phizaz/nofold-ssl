@@ -1,0 +1,147 @@
+
+CM: clust41-1
+>novel-1hp_11
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 3 - 69
+ Score = 22.46, GC =  49
+
+           ((((((((((.......<<<<<<<<<<<<<___..__>>>>>>>>>>>>><<<<<<<<__
+         1 ccgcuCCUga.......aCcccgcCcugcguAA..gacgcagGgcgggGuggcAaCuuua 51      
+           ::GC:CCUGA       :C:::::::UGC:+ +   +:GCA:::::::G:: :       
+         3 GAGCACCUGAucgacaaCCUUGAUGAUGCUAUUccCUAGCAUCAUCAAGGUUG------- 55      
+
+           __>>>>>>>>))))))))))
+        52 auaaGuUgccucAGGagcgg 71      
+            U     : :UCAGG:GC::
+        56 -U-----CGAUCAGGUGCUC 69      
+
+
+>novel-1hp_32
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 11 - 61
+ Score = 20.80, GC =  53
+
+           ((((((((((<<<<<<<<<<<<<_____>>>>>>>>>>>>><<<<<<<<____>>>>>>>
+         1 ccgcuCCUgaaCcccgcCcugcguAAgacgcagGgcgggGuggcAaCuuuaauaaGuUgc 60      
+           :C::: C:::: ::::::C::C:+  GA:G::G:::::: :                   
+        11 GCUUCGCCCUUGUAGAAACCACAACCGAUGUGGUUUCUACA------------------- 51      
+
+           >))))))))))
+        61 cucAGGagcgg 71      
+            :::G :::G:
+        52 -AGGGCGAAGC 61      
+
+
+>novel-2hp_6
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 76.56, GC =  46
+
+           ((((((((((<<<<<<<<<<<<<_____>>>>>>>>>>>>><<<<<<<<____>>>>>>>
+         1 ccgcuCCUgaaCcccgcCcugcguAAgacgcagGgcgggGuggcAaCuuuaauaaGuUgc 60      
+           C::CUC:UG:ACCC::::CUGC:+A+GA:GCAG::::GGGU:::AAC:UU+  A:GUU::
+         1 CGACUCUUGGACCCGAAUCUGCUAAUGAAGCAGAUUCGGGUAAUAACGUUUCCACGUUAU 60      
+
+           >))))))))))
+        61 cucAGGagcgg 71      
+           ::CA:GAG::G
+        61 UCCAAGAGUCG 71      
+
+
+>novel-2hp_9
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 60.16, GC =  38
+
+           ((((((((((<<<<<<<<<<<<<_____>>>>>>>>>>>>><<<<<<<<____>>>>>>>
+         1 ccgcuCCUgaaCcccgcCcugcguAAgacgcagGgcgggGuggcAaCuuuaauaaGuUgc 60      
+           ::G::::UG:ACC::G::CU::GUAAG+C::AG::C::GGU::C:A :UU + A: U:G:
+         1 UUGUGUUUGUACCUGGUUCUUUGUAAGUCAAAGAACCAGGUUACCAACUUGUGAGUUGGU 60      
+
+           >))))))))))
+        61 cucAGGagcgg 71      
+           ::CA::::C::
+        61 AACAAACACAA 71      
+
+
+>novel-2hp_14
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 59.15, GC =  66
+
+           ((((((((((<<<<<<<<<<<<<_____>>>>>>>>>>>>><<<<<<<<____>>>>>>>
+         1 ccgcuCCUgaaCcccgcCcugcguAAgacgcagGgcgggGuggcAaCuuuaauaaGuUgc 60      
+           :CG:::CU:::CC:C:CC::G:G+A+  C:C::GG:G:GG:::C:AC:: A  ::GU:G:
+         1 GCGUGUCUAGGCCACUCCACGUGAAUCCCACGUGGAGUGGCCUCCACCGGAGCCGGUGGA 60      
+
+           >))))))))))
+        61 cucAGGagcgg 71      
+           :::AG:::CG:
+        61 GCUAGACACGC 71      
+
+
+>novel-2hp_29
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 75.44, GC =  46
+
+           ((((((((((<<<<<<<<<<<<<_____>>>>>>>>>>>>><<<<<<<<____>>>>>>>
+         1 ccgcuCCUgaaCcccgcCcugcguAAgacgcagGgcgggGuggcAaCuuuaauaaGuUgc 60      
+           :CG::CCU:AAC::CGCC:::::U AG+:::::GGCG::GUG::A:CU:UAAU:AG:U::
+         1 ACGUACCUUAACUUCGCCGGUAAUUAGUUUACCGGCGAAGUGUGACCUGUAAUCAGGUCA 60      
+
+           >))))))))))
+        61 cucAGGagcgg 71      
+           CU:AGG::CG:
+        61 CUAAGGUACGU 71      
+
+
+>novel-2hp_46
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 79.43, GC =  55
+
+           ((((((((((<<<<<<<<<<<<<_____>>>>>>>>>>>>><<<<<<<<____>>>>>>>
+         1 ccgcuCCUgaaCcccgcCcugcguAAgacgcagGgcgggGuggcAaCuuuaauaaGuUgc 60      
+           :CG:UCCUGA:C::::CCCUGCGUAA  CGCAGGG::::G::GCAACUU  + AAGUUGC
+         1 UCGGUCCUGACCUAUUCCCUGCGUAACGCGCAGGGAAUAGGUGCAACUUGCUGAAGUUGC 60      
+
+           >))))))))))
+        61 cucAGGagcgg 71      
+           :UCAGGA:CG:
+        61 AUCAGGACCGA 71      
+
+
+>novel-3hp_23
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 2 - 70
+ Score = 19.50, GC =  48
+
+           ((((((((((<<<<<<<<<<<<<__.___>>>>>>>>>>>>><...<<<<<<<____>>>
+         1 ccgcuCCUgaaCcccgcCcugcguA.AgacgcagGgcgggGug...gcAaCuuuaauaaG 56      
+           ::G::C:U:AA      ::::C:U  + A:G::::G GG++U:   G:AAC:U +  A:G
+         2 UAGGACUUUAA------GGCACAUUcUCAUGUGCCGGGGAAUAcccGGAACGUAUCGACG 55      
+
+           >>>>>))))))))))
+        57 uUgccucAGGagcgg 71      
+           UU:C:U:A:G::C::
+        56 UUCCUUAAAGUCCUA 70      
+
+
+//

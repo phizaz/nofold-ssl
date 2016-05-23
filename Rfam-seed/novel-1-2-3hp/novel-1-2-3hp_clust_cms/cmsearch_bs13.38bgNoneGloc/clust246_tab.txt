@@ -1,0 +1,38 @@
+# command:    cmsearch --toponly --informat FASTA -T 13.38 -o /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust246_aln.txt --tabfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust246_tab.txt --gcfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust246_gc.txt -g /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/clust246.cm /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp.db
+# date:       Thu Jan 23 16:06:46 2014
+# num seqs:   150
+# dbsize(Mb): 0.010650
+#
+# Pre-search info for CM 1: clust246-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       13.38
+#
+# CM: clust246-1
+#                                     target coord   query coord                         
+#                           ----------------------  ------------                         
+# model name  target name        start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust246-1  novel-1hp_15          11          61      1     71     23.12         -   55
+  clust246-1  novel-2hp_10           1          71      1     71     72.61         -   37
+  clust246-1  novel-2hp_11           1          71      1     71     49.13         -   48
+  clust246-1  novel-2hp_13           1          71      1     71     75.96         -   44
+  clust246-1  novel-2hp_17           1          71      1     71     43.76         -   51
+  clust246-1  novel-2hp_36           1          71      1     71     56.33         -   61
+  clust246-1  novel-2hp_39           1          71      1     71     61.53         -   54
+  clust246-1  novel-2hp_41           1          71      1     71     81.99         -   54
+#
+# Post-search info for CM 1: clust246-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00         8      0.0533
+#   2   cm  cyk  glc  1e-10        0.00         8      0.0533
+#   3   cm  ins  glc  1e-15       13.38         8      0.0515
+#
+#    run time
+# -----------
+#    00:00:00

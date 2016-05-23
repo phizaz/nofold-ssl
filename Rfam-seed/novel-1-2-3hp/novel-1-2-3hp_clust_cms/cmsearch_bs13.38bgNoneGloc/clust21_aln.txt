@@ -1,0 +1,129 @@
+
+CM: clust21-1
+>novel-1hp_7
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 78.80, GC =  35
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           ::G::C:G::CAAUAAAAA:A:AUA:AG::U:UGC A A:A::CU:UAU:U:UUUUUAUU
+         1 GUGAGCUGUGCAAUAAAAAUACAUAUAGUGUCUGCUAGAGACACUAUAUGUAUUUUUAUU 60      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           G::C:G::C::
+        61 GCACAGCUCAC 71      
+
+
+>novel-1hp_18
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 56.67, GC =  41
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           ::::::::::C:A::A:A::A::::::G::U:U + +AA:A::C::::::U::U:U::U:
+         1 GGCAUAUCGGCUAGCAUAGUAAUGUUCGUGUUUCUUUAAAACACGAACAUUACUAUGCUA 60      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           G::::::::::
+        61 GCCGAUAUGCC 71      
+
+
+>novel-1hp_28
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 61.47, GC =  55
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           ::G:C::::C:AA:AAA:A:A:::A:AGC::G:GC + :C::GCU:U:::U:U:UUU:UU
+         1 CCGCCGGAGCGAAAAAACAAAUGAAGAGCGAGCGCUUCGCUCGCUCUUCAUUUGUUUUUU 60      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           :G::::G:C::
+        61 CGCUCCGGCGG 71      
+
+
+>novel-1hp_34
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 79.80, GC =  32
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           UAGG::CG:CCA:UAAAA:::GAUAAAGCAUGU CA++ACAUGCUUUAUC:::UUUUA:U
+         1 UAGGUACGUCCACUAAAAUAUGAUAAAGCAUGUUCAUUACAUGCUUUAUCAUAUUUUAGU 60      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           GG:CG::CCUA
+        61 GGACGUACCUA 71      
+
+
+>novel-1hp_43
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 1 - 71
+ Score = 80.69, GC =  37
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           UAG:CC:GC::AA:A::AAGAG:::A:G:AUGUG+A AACAU:C:U:::CUCUU::U:UU
+         1 UAGUCCUGCUAAAAACCAAGAGUGUAUGUAUGUGUACAACAUACAUACACUCUUGGUUUU 60      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           ::GC:GG:CUA
+        61 UAGCAGGACUA 71      
+
+
+>novel-1hp_48
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 2 - 70
+ Score = 52.14, GC =  45
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           U:G:::CG:::A:UA::A::::A::::::A:G G+    C:U::::::U::::U::UA:U
+         2 UCGUUGCGGAAAGUACGAUAGUAAGCGAUAGGAGUU--ACCUAUCGCUUACUAUCGUACU 59      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           :::CG:::C:A
+        60 UUCCGCAACGA 70      
+
+
+>novel-2hp_12
+
+  Plus strand results:
+
+ Query = 1 - 71, Target = 11 - 41
+ Score = 14.30, GC =  42
+
+           <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<_____>>>>>>>>>>>>>>>>>>>>>>
+         1 uaGgcccGcccAauAaaAagagauaaaGcaugugcAaaacaugCuuuaucucuUuuUauU 60      
+           :AGG:::G:::AA                    G+A                      UU
+        11 GAGGUUUGUUGAA--------------------GUAGG--------------------UU 30      
+
+           >>>>>>>>>>>
+        61 gggCgggcCua 71      
+           :::C:::CCU:
+        31 CAACAAACCUC 41      
+
+
+//

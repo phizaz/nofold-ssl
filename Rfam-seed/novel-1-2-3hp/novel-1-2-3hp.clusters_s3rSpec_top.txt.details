@@ -1,0 +1,1238 @@
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+119	**	3	-	0.14	novel-1hp_15,novel-1hp_42,novel-1hp_47
+
+Best CMs (by avg z-score):
+  1. mir-625 (17.071)
+  2. mir-934 (15.930)
+  3. mir-885 (15.048)
+  4. mir-642 (14.914)
+  5. mir-548 (14.866)
+  6. mir-607 (14.333)
+  7. mir-296 (14.256)
+  8. mir-944 (14.133)
+  9. mir-185 (13.628)
+  10. mir-942 (12.909)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.612 (4.06142893769e-41)
+  2. mir.42 (6.1151184779e-39)
+  3. mir.580 (8.788705615e-35)
+  4. MIR821 (1.34913395722e-34)
+  5. mir.190 (3.90115586781e-32)
+  6. mir.345 (4.86749323189e-31)
+  7. mir.599 (9.4751693971e-31)
+  8. mir.191 (7.43451666393e-30)
+  9. mir.708 (9.58374593789e-30)
+  10. mir.193 (1.61316601822e-28)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust119.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust119_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))))
+  MFE = -128.96 (Covariance contribution: -63.39)
+
+Multiple alignment from mlocarna:
+  novel-1hp_15	GCCGUCUUACGGUUGUCAGGAUAGGCAGUGCAGUAUGGCUGCACUGCCUAUCCUGACAACCGUAAGACGGC
+  novel-1hp_47	GUAUACAUGGUAUCAUUAGGCUGGAGAUCAUGCCUCUGGCAUGAUCUCCAGCCUAAUGAUACCAUGUAUAC
+  novel-1hp_42	CAUAGUGAUUGCACGGAAGAGCUGGGUCUGCAACAUACUUGCAGACCCAGCUCUUCCGUGCAAUCACUAUG
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+271	**	3	-	0.16	novel-1hp_36,novel-1hp_4,novel-1hp_46
+
+Best CMs (by avg z-score):
+  1. mir-934 (17.004)
+  2. mir-625 (16.832)
+  3. mir-944 (15.100)
+  4. mir-642 (14.807)
+  5. mir-296 (14.425)
+  6. mir-607 (14.348)
+  7. mir-885 (14.171)
+  8. mir-942 (13.713)
+  9. mir-548 (13.638)
+  10. mir-624 (13.001)
+
+Best CMs (by 1-sided pvalue):
+  1. let.7 (5.7977902788e-43)
+  2. mir.582 (1.08480769686e-39)
+  3. mir.942 (1.84186864033e-39)
+  4. mir.361 (8.68262423952e-33)
+  5. mir.83 (1.6922553181e-32)
+  6. mir.3 (1.86999387831e-32)
+  7. mir.316 (1.22182986238e-31)
+  8. mir.499 (1.79549593122e-31)
+  9. mir.605 (6.4937237665e-31)
+  10. MIR403 (9.28558123103e-31)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust271.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust271_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((((((((((((.....)))))))))))))))))))))))))))))))))
+  MFE = -126.87 (Covariance contribution: -64.47)
+
+Multiple alignment from mlocarna:
+  novel-1hp_36	AGUACGAAAUUCUAGGUAGCGUCGUGUUCGACUGAUCCAGUCGAACACGACGCUACCUAGAAUUUCGUACU
+  novel-1hp_46	GUCACGCAAAGAUUCGGUCCGUCUCUAUAGACACUAUAUGUCUAUAGAGACGGACCGAAUCUUUGCGUGAC
+  novel-1hp_4	UACAGGCGGUCGGUCUUAGUCUGUAGACCAACGAGUUCCGUUGGUCUACAGACUAAGACCGACCGCCUGUA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+175	**	3	-	0.17	novel-1hp_28,novel-1hp_39,novel-1hp_48
+
+Best CMs (by avg z-score):
+  1. mir-625 (16.741)
+  2. mir-934 (15.614)
+  3. mir-944 (14.978)
+  4. mir-548 (14.807)
+  5. mir-642 (14.284)
+  6. mir-607 (14.278)
+  7. mir-885 (14.138)
+  8. mir-185 (13.603)
+  9. mir-296 (13.458)
+  10. mir-942 (13.053)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.937 (1.11869293553e-44)
+  2. mir.192 (1.52539687505e-39)
+  3. mir.155 (1.84207762934e-38)
+  4. MIR1444 (2.26846814465e-38)
+  5. mir.286 (4.65739656514e-38)
+  6. snoZ39 (3.93230825996e-37)
+  7. mir.228 (2.19852188385e-36)
+  8. mir.580 (2.87897489736e-36)
+  9. mir.278 (2.92616040407e-35)
+  10. mir.876 (4.46484777614e-34)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust175.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust175_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))))
+  MFE = -123.60 (Covariance contribution: -62.46)
+
+Multiple alignment from mlocarna:
+  novel-1hp_39	ACCGAGUUGGUAAUUAAAGAGAAAUCGACGCACACAUUGUGCGUCGAUUUCUCUUUAAUUACCAACUCGGU
+  novel-1hp_28	CCGCCGGAGCGAAAAAACAAAUGAAGAGCGAGCGCUUCGCUCGCUCUUCAUUUGUUUUUUCGCUCCGGCGG
+  novel-1hp_48	GUCGUUGCGGAAAGUACGAUAGUAAGCGAUAGGAGUUACCUAUCGCUUACUAUCGUACUUUCCGCAACGAC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+169	**	3	-	0.18	novel-1hp_13,novel-1hp_23,novel-1hp_3
+
+Best CMs (by avg z-score):
+  1. mir-625 (16.516)
+  2. mir-642 (16.337)
+  3. mir-885 (15.837)
+  4. mir-934 (15.680)
+  5. mir-296 (15.357)
+  6. mir-944 (14.262)
+  7. mir-607 (14.030)
+  8. mir-942 (13.199)
+  9. mir-548 (13.110)
+  10. mir-185 (13.105)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.504 (3.96574382202e-46)
+  2. mir.337 (6.6228668972e-41)
+  3. mir.624 (1.30643260337e-35)
+  4. mir.942 (8.94159109176e-35)
+  5. mir.605 (1.09706694731e-34)
+  6. mir.304 (6.8696120768e-34)
+  7. mir.1265 (5.44587471499e-33)
+  8. mir.944 (2.28894732983e-30)
+  9. mir.127 (3.48618724733e-30)
+  10. mir.136 (2.47778043553e-29)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust169.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust169_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((((((((((((.....)))))))))))))))))))))))))))))))))
+  MFE = -133.38 (Covariance contribution: -65.08)
+
+Multiple alignment from mlocarna:
+  novel-1hp_3	ACGGUUACGAGGAACUGCGCAUCAUGCCCAUCGGUCUACGAUGGGCAUGAUGCGCAGUUCCUCGUAACCGU
+  novel-1hp_23	CCCUCAAGAGAGGAGAUCUUCCCGUGUAAGUGGCAGAUCCACUUACACGGGAAGAUCUCCUCUCUUGAGGG
+  novel-1hp_13	GCCACGAGGCAUCGAUGAUCCCAAUCUGGACUCGCCCCGAGUCCAGAUUGGGAUCAUCGAUGCCUCGUGGC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+21	**	3	-	0.18	novel-1hp_34,novel-1hp_43,novel-1hp_7
+
+Best CMs (by avg z-score):
+  1. mir-625 (15.797)
+  2. mir-642 (15.763)
+  3. mir-296 (14.726)
+  4. mir-934 (14.572)
+  5. mir-944 (14.433)
+  6. mir-548 (13.834)
+  7. mir-607 (13.090)
+  8. mir-3179 (12.952)
+  9. mir-885 (12.918)
+  10. mir-624 (12.493)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.601 (7.302621606e-39)
+  2. mir.283 (2.21524185983e-37)
+  3. mir.12 (4.07745120671e-37)
+  4. mir.337 (2.85147937361e-36)
+  5. mir.52 (1.22395645919e-34)
+  6. mir.185 (1.56380718426e-33)
+  7. MIR1023 (5.39847355678e-33)
+  8. mir.44 (9.56404294236e-33)
+  9. mir.280 (1.06448007558e-32)
+  10. ctRNA_pT181 (1.40360590574e-31)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust21.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust21_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((((((((((((.....)))))))))))))))))))))))))))))))))
+  MFE = -111.40 (Covariance contribution: -57.17)
+
+Multiple alignment from mlocarna:
+  novel-1hp_43	UAGUCCUGCUAAAAACCAAGAGUGUAUGUAUGUGUACAACAUACAUACACUCUUGGUUUUUAGCAGGACUA
+  novel-1hp_7	GUGAGCUGUGCAAUAAAAAUACAUAUAGUGUCUGCUAGAGACACUAUAUGUAUUUUUAUUGCACAGCUCAC
+  novel-1hp_34	UAGGUACGUCCACUAAAAUAUGAUAAAGCAUGUUCAUUACAUGCUUUAUCAUAUUUUAGUGGACGUACCUA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+111	**	4	-	0.20	novel-1hp_10,novel-1hp_24,novel-1hp_32,novel-1hp_45
+
+Best CMs (by avg z-score):
+  1. mir-296 (16.532)
+  2. mir-625 (16.352)
+  3. mir-934 (16.150)
+  4. mir-642 (16.071)
+  5. mir-944 (14.806)
+  6. mir-885 (14.554)
+  7. mir-607 (14.166)
+  8. mir-548 (13.606)
+  9. mir-942 (13.341)
+  10. mir-3179 (13.074)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.160 (8.25239248381e-33)
+  2. mir.315 (1.19180491537e-24)
+  3. MIR394 (7.66460133738e-24)
+  4. mir.145 (8.02022626437e-24)
+  5. mir.365 (9.26631217729e-24)
+  6. mir.653 (1.88097139575e-23)
+  7. mir.BART7 (2.01447069139e-23)
+  8. mir.593 (6.31700386093e-23)
+  9. mir.649 (1.003610972e-22)
+  10. mir.48 (1.50428806276e-22)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust111.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust111_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((((((((((((.....)))))))))))))))))))))))))))))))))
+  MFE = -117.63 (Covariance contribution: -58.21)
+
+Multiple alignment from mlocarna:
+  novel-1hp_32	CCGAACCUGGGCUUCGCCCUUGUAGAAACCACAACCGAUGUGGUUUCUACAAGGGCGAAGCCCAGGUUCGG
+  novel-1hp_24	UGUGGUACUGUCCACGCUUUAAGAAGAACCCAAACGGAUUGGGUUCUUCUUAAAGCGUGGACAGUACCACA
+  novel-1hp_10	AGAUGGCCUCGUGAAACCUACAUUACAAUAAUUUCAGUAAUUAUUGUAAUGUAGGUUUCACGAGGCCAUCU
+  novel-1hp_45	AAGUAUUCCGCGGCGUCACCUUAAAAUUCUAAUACCAUAUUAGAAUUUUAAGGUGACGCCGCGGAAUACUU
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+31	**	3	-	0.20	novel-1hp_37,novel-1hp_40,novel-1hp_49
+
+Best CMs (by avg z-score):
+  1. mir-625 (15.280)
+  2. mir-885 (15.115)
+  3. mir-934 (15.035)
+  4. mir-642 (14.605)
+  5. mir-944 (13.997)
+  6. mir-296 (13.832)
+  7. mir-942 (12.814)
+  8. mir-548 (12.778)
+  9. mir-624 (12.758)
+  10. mir-607 (12.677)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.422 (2.66960695206e-45)
+  2. mir.624 (1.85518526844e-34)
+  3. MIR845_1 (9.92218019059e-34)
+  4. mir.1829 (2.05256076863e-33)
+  5. mir.616 (2.26381759835e-32)
+  6. MIR811 (2.32280583033e-31)
+  7. MIR815 (1.67864484779e-30)
+  8. TB10Cs1H1 (3.02673390588e-29)
+  9. mir.34 (4.29095887776e-29)
+  10. mir.251 (5.78509294044e-29)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust31.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust31_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))))
+  MFE = -116.33 (Covariance contribution: -57.80)
+
+Multiple alignment from mlocarna:
+  novel-1hp_49	AUUACGUCUUCGACCUAGAAAAGAUUGCUCUGGCUCUCCCAGAGCAAUCUUUUCUAGGUCGAAGACGUAAU
+  novel-1hp_40	UGUGGCAAUUAUUAGCUCCAAGAUAUUCCUUUUACUCUAAAAGGAAUAUCUUGGAGCUAAUAAUUGCCACA
+  novel-1hp_37	AUCCAACCAGUCAGAGCCCUUAAGUUCUGCUCUGCCCUAGAGCAGAACUUAAGGGCUCUGACUGGUUGGAU
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+87	**	3	-	0.22	novel-1hp_14,novel-1hp_19,novel-1hp_6
+
+Best CMs (by avg z-score):
+  1. mir-625 (16.642)
+  2. mir-934 (15.395)
+  3. mir-642 (15.332)
+  4. mir-296 (15.077)
+  5. mir-944 (14.848)
+  6. mir-885 (14.641)
+  7. mir-607 (13.595)
+  8. mir-548 (13.412)
+  9. mir-299 (13.159)
+  10. mir-942 (13.116)
+
+Best CMs (by 1-sided pvalue):
+  1. KCNQ1OT1_1 (2.57621986312e-62)
+  2. mir.1296 (1.16965210625e-45)
+  3. mir.872 (3.14131734743e-45)
+  4. mir.60 (4.75999260825e-43)
+  5. MIR403 (2.01392510693e-41)
+  6. mir.80 (3.73681110002e-40)
+  7. mir.789 (1.94738266373e-32)
+  8. MIR1444 (6.22064183883e-32)
+  9. mir.458 (7.38165510873e-31)
+  10. mir.328 (9.60410081807e-30)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust87.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust87_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((((((((((((.....)))))))))))))))))))))))))))))))))
+  MFE = -122.55 (Covariance contribution: -61.31)
+
+Multiple alignment from mlocarna:
+  novel-1hp_14	GCUACGCGAGACGAGGCAGCUACCACAAUAAUGUUGUCCAUUAUUGUGGUAGCUGCCUCGUCUCGCGUAGC
+  novel-1hp_6	ACUUGCUUGGAUUGAAGUUCAACACAGCAAAAUAUUCCAUUUUGCUGUGUUGAACUUCAAUCCAAGCAAGU
+  novel-1hp_19	CCCCGAGGAUGGGCUGCUACAUCAAAUUCAAGUCAUUAACUUGAAUUUGAUGUAGCAGCCCAUCCUCGGGG
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+41	**	3	-	0.24	novel-2hp_29,novel-2hp_46,novel-2hp_6
+
+Best CMs (by avg z-score):
+  1. Hsp90_CRE (5.259)
+  2. symR (5.134)
+  3. gyrA (5.084)
+  4. ROSE (5.017)
+  5. mir-642 (4.997)
+  6. yybP-ykoY (4.967)
+  7. Bacteria_large_SRP (4.959)
+  8. mir-607 (4.866)
+  9. snoZ248 (4.689)
+  10. Archaea_SRP (4.663)
+
+Best CMs (by 1-sided pvalue):
+  1. mir.554 (1.96969080837e-09)
+  2. HgcG (4.17554148455e-08)
+  3. snR49 (4.74215471822e-08)
+  4. SL1 (1.04228083652e-07)
+  5. RNAI (7.14666939596e-07)
+  6. SAM.Chlorobi (1.08085278634e-06)
+  7. ffh (3.14765275469e-06)
+  8. tpke11 (5.172269853e-06)
+  9. U11 (6.36442484755e-06)
+  10. SraB (1.00249945097e-05)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust41.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust41_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((.....)))))))))))))((((((((....))))))))))))))))))
+  MFE = -107.28 (Covariance contribution: -60.65)
+
+Multiple alignment from mlocarna:
+  novel-2hp_29	ACGUACCUUAACUUCGCCGGUAAUUAGUUUACCGGCGAAGUGUGACCUGUAAUCAGGUCACUAAGGUACGU
+  novel-2hp_6	CGACUCUUGGACCCGAAUCUGCUAAUGAAGCAGAUUCGGGUAAUAACGUUUCCACGUUAUUCCAAGAGUCG
+  novel-2hp_46	UCGGUCCUGACCUAUUCCCUGCGUAACGCGCAGGGAAUAGGUGCAACUUGCUGAAGUUGCAUCAGGACCGA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+30	**	3	-	0.30	novel-2hp_18,novel-2hp_43,novel-2hp_47
+
+Best CMs (by avg z-score):
+  1. mir-642 (7.649)
+  2. Archaea_SRP (7.600)
+  3. Bacteria_large_SRP (6.124)
+  4. yybP-ykoY (5.963)
+  5. mir-934 (5.951)
+  6. mir-625 (5.768)
+  7. P36 (5.717)
+  8. mir-607 (5.698)
+  9. Plasmid_R1162 (5.500)
+  10. RNAI (5.057)
+
+Best CMs (by 1-sided pvalue):
+  1. GlmY_tke1 (2.23205111277e-32)
+  2. S_pombe_snR99 (1.00439718827e-16)
+  3. pfl (6.7653408798e-06)
+  4. ykkC.yxkD (1.02926469006e-05)
+  5. KCNQ1OT1_5 (0.000619471147058)
+  6. LOC285194 (0.00101153466579)
+  7. Pyrobac.1 (0.00116038659037)
+  8. snoTBR17 (0.00138269439175)
+  9. PK.PYVV (0.00143793658038)
+  10. VrrA (0.00285585258888)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust30.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust30_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -110.88 (Covariance contribution: -61.21)
+
+Multiple alignment from mlocarna:
+  novel-2hp_43	ACCUACACGUCAAUUUAAGGCGAGAACCUCGCCUUAAAUUGAGCGAUCAUCUGUGAUCGCUACGUGUAGGU
+  novel-2hp_47	GACAUAGUUGAUCAUUGGGGGCUCGAAGAGCCCCCAAUGAUCGGCUACGGUACCGUAGCCGCAACUAUGUC
+  novel-2hp_18	CGCAAGAGUCCGGUGCUAGGGGUGGGAAACCCCUAGCACCGCAAUCACCUCGUGGUGAUUGGACUCUUGCG
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+218	**	3	-	0.32	novel-2hp_3,novel-2hp_40,novel-2hp_48
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (8.069)
+  2. Bacteria_large_SRP (6.471)
+  3. P36 (6.278)
+  4. mir-642 (5.857)
+  5. Clostridiales-1 (5.537)
+  6. RRE (5.443)
+  7. 5S_rRNA (5.173)
+  8. mir-607 (5.099)
+  9. RNAI (5.022)
+  10. traJ-II (4.947)
+
+Best CMs (by 1-sided pvalue):
+  1. snR190 (1.09758544502e-08)
+  2. rnk_pseudo (1.93684747789e-07)
+  3. rseX (2.50693970356e-06)
+  4. SNORD101 (2.55573860426e-06)
+  5. IRES_L.myc (5.75272338752e-05)
+  6. flg.Rhizobiales (7.32084225223e-05)
+  7. RRE (7.40170497283e-05)
+  8. symR (0.00021032953547)
+  9. RF_site6 (0.000246539005028)
+  10. STnc490k (0.00028389412388)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust218.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust218_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -113.60 (Covariance contribution: -61.70)
+
+Multiple alignment from mlocarna:
+  novel-2hp_40	CGUGCACGGCUGUGAGUCGUGGGUCUCGCCCACGACUCACAACAGACCCUUGAGGGUCUGUGCCGUGCACG
+  novel-2hp_48	UCGUCUGCAGUAUUAUCUGGCGCGCGUCGCGCCAGAUAAUAUCAAGAGAUAGCUCUCUUGACUGCAGACGA
+  novel-2hp_3	GGGCGCCAGUACGACAGGACAGGGGUACCCUGUCCUGUCGUAAAAACGAGUUAUCGUUUUUACUGGCGCCC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+220	**	4	-	0.34	novel-2hp_31,novel-2hp_39,novel-2hp_50,novel-2hp_8
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (6.881)
+  2. mir-642 (6.661)
+  3. Bacteria_large_SRP (5.633)
+  4. yybP-ykoY (4.841)
+  5. P36 (4.786)
+  6. symR (4.501)
+  7. Clostridiales-1 (4.484)
+  8. gyrA (4.341)
+  9. ykkC-yxkD (4.338)
+  10. mir-607 (4.307)
+
+Best CMs (by 1-sided pvalue):
+  1. ceN56 (0.000225815021937)
+  2. IRES_HIF1 (0.000369344178107)
+  3. snR49 (0.000447272517726)
+  4. TCV_H5 (0.00184715087535)
+  5. P36 (0.00252481188934)
+  6. TLS.PK3 (0.00287949082623)
+  7. Tymo_tRNA.like (0.00353250891303)
+  8. DsrA (0.00403200546323)
+  9. sraL (0.00534474874641)
+  10. X6C (0.0056996501477)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust220.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust220_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -103.16 (Covariance contribution: -55.49)
+
+Multiple alignment from mlocarna:
+  novel-2hp_31	UCUCGAACCUCUGAGUCCGUAGAACUCGUCUACGGACUCAGUGCUACCCACACGGGUAGCAAGGUUCGAGA
+  novel-2hp_39	GUUUCCAGCUGGUUUGAGACUUCCUGGGGAAGUCUCAAACCGGACUCGGUAUUCCGAGUCCAGCUGGAAAC
+  novel-2hp_50	GCUUGCUAGCGACCGAACUCGAACCGUUUUCGAGUUCGGUCUCUCCAACAGGUGUUGGAGAGCUAGCAAGC
+  novel-2hp_8	UCACGAUCUACCGUAUUAUACUGUCAGGCAGUAUAAUACGGAUCUCUGAGCCUUCAGAGAUUAGAUCGUGA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+116	**	3	-	0.34	novel-2hp_12,novel-2hp_38,novel-2hp_42
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (7.922)
+  2. traJ-II (4.988)
+  3. ceN72-3 (4.984)
+  4. P36 (4.955)
+  5. mir-642 (4.802)
+  6. Bacteria_large_SRP (4.747)
+  7. mir-625 (4.565)
+  8. yybP-ykoY (4.553)
+  9. mir-607 (4.548)
+  10. mir-934 (4.487)
+
+Best CMs (by 1-sided pvalue):
+  1. traJ.II (1.28822955171e-09)
+  2. IBV_D.RNA (3.81296392397e-07)
+  3. flg.Rhizobiales (5.31116540842e-06)
+  4. X6C (6.01850899882e-06)
+  5. SBWMV1_UPD.PKb (7.65361301129e-06)
+  6. snR50 (7.5505178402e-05)
+  7. snosnR54 (8.22278140995e-05)
+  8. DdR15 (0.000171001761198)
+  9. P15 (0.000245540860974)
+  10. snoU83D (0.000326212040213)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust116.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust116_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((.....)))))))))))))((((((((....))))))))))))))))))
+  MFE = -104.10 (Covariance contribution: -58.64)
+
+Multiple alignment from mlocarna:
+  novel-2hp_42	CGACUGGGCCUAUGUAAAGGUUUAUAUAAAACCUUUACAUACCGUCGUCAUCGGACGACGGGGCCCAGUCG
+  novel-2hp_12	CAGCCAGCGGGAGGUUUGUUGAAGUAGGUUCAACAAACCUCCGUUCUCUCGGUAGAGAACGCCGCUGGCUG
+  novel-2hp_38	GCUACUUGGGUAAUCGAAUCUAUUGUGUAUAGAUUCGAUUAUGUCUUACAAUUGUAAGACACCCAAGUAGC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+182	**	3	-	0.34	novel-2hp_16,novel-2hp_2,novel-2hp_44
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (6.345)
+  2. mir-642 (5.844)
+  3. P36 (5.780)
+  4. yybP-ykoY (5.549)
+  5. traJ-II (5.284)
+  6. mir-885 (5.281)
+  7. symR (5.098)
+  8. mir-607 (5.086)
+  9. RRE (4.988)
+  10. ceN72-3 (4.972)
+
+Best CMs (by 1-sided pvalue):
+  1. rpsL_psuedo (8.80945457919e-24)
+  2. cHP (5.26573883415e-20)
+  3. Lysine (8.28908315832e-14)
+  4. snR75 (3.4866500417e-13)
+  5. PyrR (4.16601878371e-13)
+  6. Qrr (1.30239391967e-09)
+  7. snR56 (1.41879306027e-09)
+  8. rpsL_ricks (4.24591394747e-09)
+  9. glmS (1.35830699346e-08)
+  10. Plasmid_R1162 (2.76376935956e-08)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust182.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust182_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((.....)))))))))))))((((((((....))))))))))))))))))
+  MFE = -99.10 (Covariance contribution: -55.53)
+
+Multiple alignment from mlocarna:
+  novel-2hp_2	AAUCAGGCAGGCUUCGUUGUUCUUUAUGAGAACAACGAAGCACGAGUUUUCAAAAACUCGUCUGCCUGAUU
+  novel-2hp_44	GAAGAUGAGACGGGUACGAUCAGAUAACCUGAUCGUACCCGGGCUAUUACACAUAAUAGCCUCUCAUCUUC
+  novel-2hp_16	GUCAAGAGUAUGCUGCGAUACGUUUGAUACGUAUCGCAGCAUGAGCUAUUCAUAUAGCUCAUACUCUUGAC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+136	**	3	-	0.34	novel-3hp_17,novel-3hp_24,novel-3hp_30
+
+Best CMs (by avg z-score):
+  1. mir-625 (5.216)
+  2. MIR1151 (4.770)
+  3. ceN72-3 (4.709)
+  4. mir-452 (4.697)
+  5. mir-744 (4.673)
+  6. tRNA-Sec (4.564)
+  7. mir-3179 (4.508)
+  8. mir-548 (4.487)
+  9. mir-938 (4.468)
+  10. mir-191 (4.337)
+
+Best CMs (by 1-sided pvalue):
+  1. snoZ163 (0.000863290903497)
+  2. sn2903 (0.000942414178408)
+  3. snoU82P (0.00222050271511)
+  4. SNORD86 (0.00545340217544)
+  5. tRNA.Sec (0.00646840841607)
+  6. sn3071 (0.00773019649689)
+  7. MIR169_2 (0.00941272020745)
+  8. SBWMV2_UPD.PKb (0.0118139727276)
+  9. IRES_Bip (0.012457316319)
+  10. SNORD64 (0.0128483466438)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust136.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust136_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))((((((...))))))(((((....)))))))))))))))))))
+  MFE = -98.50 (Covariance contribution: -58.04)
+
+Multiple alignment from mlocarna:
+  novel-3hp_30	GGCAGGAUCACUGAGAGACACCCGUCUCGUCCUACGGUAGGACGACCGAUCACGGUCUCAGUGAUCCUGCC
+  novel-3hp_17	CUGAUGAAGUCAGUCUACUCUGCAGUAGGAUAUCGCUAAUAUCGUUACGUUCGUAACACUGACUUCAUCAG
+  novel-3hp_24	AGGGUGGCAGCCGUUACGCAGAUGCGUAGCGACCAUAGGUCGCAACUGUAUGCAGUUACGGCUGCCACCCU
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+57	**	3	-	0.34	novel-3hp_13,novel-3hp_40,novel-3hp_43
+
+Best CMs (by avg z-score):
+  1. mir-548 (6.766)
+  2. mir-625 (6.766)
+  3. mir-3179 (6.129)
+  4. mir-885 (5.991)
+  5. mir-934 (5.716)
+  6. mir-942 (5.638)
+  7. mir-452 (5.634)
+  8. MIR815 (5.612)
+  9. mir-296 (5.505)
+  10. mir-607 (5.410)
+
+Best CMs (by 1-sided pvalue):
+  1. isrF (4.90231300249e-09)
+  2. snoR35 (2.21286145564e-07)
+  3. snR65 (4.86671353851e-06)
+  4. HIV.1_SD (0.000175998709722)
+  5. HOTAIRM1_1 (0.000993888547452)
+  6. IRES_HIF1 (0.00197079682852)
+  7. snoZ43 (0.00301622987565)
+  8. lincRNA.p21_2 (0.00382810284262)
+  9. Cobalamin (0.00481179127777)
+  10. sR16 (0.0057665675186)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust57.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust57_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))(((((.....)))))(((((....)))))))))))))))))))
+  MFE = -90.98 (Covariance contribution: -56.01)
+
+Multiple alignment from mlocarna:
+  novel-3hp_13	UCACAAUGACUUUGGAUAGUUGACUAUCGUCUACCCCGUAGACCGGAGAUAACUCCGCAAAGUCAUUGUGA
+  novel-3hp_43	AUAUCCGGAAAAUUGGCUGUGUACAGCCUCGUUAGCAGAACGACUCUGCAUGCAGAGAAUUUUCCGGAUAU
+  novel-3hp_40	GACCAGAGAAUACUUGGUGUAUUCACCACGGCAGGCGGUGCCGCGGUAAGCGUACCGAGUAUUCUCUGGUC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+20	**	3	-	0.35	novel-3hp_28,novel-3hp_34,novel-3hp_42
+
+Best CMs (by avg z-score):
+  1. mir-160 (4.767)
+  2. Entero_5_CRE (4.730)
+  3. Archaea_SRP (4.509)
+  4. tRNA-Sec (4.401)
+  5. yybP-ykoY (4.393)
+  6. mir-452 (4.079)
+  7. MIR821 (4.066)
+  8. mir-744 (3.902)
+  9. ceN72-3 (3.858)
+  10. mir-632 (3.815)
+
+Best CMs (by 1-sided pvalue):
+  1. group.II.D1D4.7 (5.39874749821e-17)
+  2. TUG1_4 (1.76676999473e-07)
+  3. SNORD115 (6.66068868138e-06)
+  4. SNORD43 (5.72476502623e-05)
+  5. CRISPR.DR40 (8.655116937e-05)
+  6. snoR69Y (0.000161121386082)
+  7. plasmodium_snoR16 (0.00018945852718)
+  8. enod40 (0.000223239214468)
+  9. snoR12 (0.000443635510353)
+  10. snR67 (0.000606548990106)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust20.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust20_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))(((((.....)))))(((((....)))))))))))))))))))
+  MFE = -86.51 (Covariance contribution: -53.28)
+
+Multiple alignment from mlocarna:
+  novel-3hp_28	CAUGCACUACCAUGGGCCUUUGGAGGCCGGACCGAAUGGGUCCAUUAAUAAAUUAAUCAUGGUAGUGCAUG
+  novel-3hp_34	GCAUGACAAACUCAGUCUAGCGGUAGACGUAAGGAAUACUUACCUUAUUCAGAUAAGUGAGUUUGUCAUGC
+  novel-3hp_42	GAAACAAGCUCACUCGACGGAUCCGUCGAAGACAAUCUGUCUUUUAAAUCGUUUUAAAGUGAGCUUGUUUC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+177	**	4	-	0.36	novel-2hp_19,novel-2hp_30,novel-2hp_33,novel-2hp_37
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (5.396)
+  2. P36 (4.983)
+  3. mir-642 (4.957)
+  4. Clostridiales-1 (4.920)
+  5. mir-607 (4.917)
+  6. RNAI (4.675)
+  7. mir-572 (4.567)
+  8. CC1840 (4.519)
+  9. GP_knot2 (4.451)
+  10. mir-934 (4.418)
+
+Best CMs (by 1-sided pvalue):
+  1. snoR86 (1.91339612316e-10)
+  2. Yfr1 (7.00488938942e-06)
+  3. P5 (8.98111660853e-06)
+  4. SNORA74 (2.25669965356e-05)
+  5. snoR111 (8.98222157428e-05)
+  6. sroE (0.000104902120413)
+  7. SCARNA4 (0.000226940825303)
+  8. Pxr (0.000486343267431)
+  9. ceN43 (0.000629178560983)
+  10. Bacillaceae.1 (0.000726297301929)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust177.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust177_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -99.68 (Covariance contribution: -56.13)
+
+Multiple alignment from mlocarna:
+  novel-2hp_33	UAUGAAAUAGUUUAGGGUAGCAGACCCACUGCUACCCUAAAGUACGACAGCUGUGUCGUACCUAUUUCAUA
+  novel-2hp_19	GAAAUAUAAUAGUGGGUUCAUUGUGCGGCAAUGAACCCACUUAGUACGCCCAUGCGUACUAAUUAUAUUUC
+  novel-2hp_30	UGCGAUAAGUAAUAGAGGGCUUCUGACCGAAGCCCUCUAUUGGGUAGCCCCCUGGCUACCCACUUAUCGCA
+  novel-2hp_37	UACUGUACGGGUUAGGGUAAGCGCGCCGCGCUUACCCUAACUCAAGGACGGCGGUCCUUGACCGUACAGUA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+281	**	4	-	0.36	novel-2hp_14,novel-2hp_28,novel-2hp_34,novel-2hp_49
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (7.205)
+  2. HCV_SLIV (5.795)
+  3. Bacteria_large_SRP (5.424)
+  4. yybP-ykoY (5.330)
+  5. gyrA (5.131)
+  6. mir-607 (5.102)
+  7. P36 (5.016)
+  8. symR (5.007)
+  9. RNAI (4.922)
+  10. Clostridiales-1 (4.778)
+
+Best CMs (by 1-sided pvalue):
+  1. HgcG (2.29361787163e-14)
+  2. ffh (1.68364570844e-09)
+  3. SCARNA20 (9.99742686171e-09)
+  4. SNORA66 (1.31860740533e-08)
+  5. GEMM_RNA_motif (7.02646265296e-06)
+  6. HgcF (1.1836040415e-05)
+  7. SscA (5.02495503233e-05)
+  8. snoR83 (0.000143853421713)
+  9. snoR639 (0.000198949797118)
+  10. Cyano.2 (0.00020277975169)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust281.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust281_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((((((.....)))))))))))))((((((((....))))))))))))))))))
+  MFE = -102.50 (Covariance contribution: -57.12)
+
+Multiple alignment from mlocarna:
+  novel-2hp_28	CUAUUUUAACGCUCUCCACUGAAUACGCUUCAGUGGAGAGCUAACGCACAGAUGUGCGUUAGUUAAAAUAG
+  novel-2hp_49	UUACUUCAAGAAAUGCCUGUGAAUACGAUUCACAGGCAUUUAAGCACCAGCCCUGGUGCUUCUUGAAGUAA
+  novel-2hp_14	GCGUGUCUAGGCCACUCCACGUGAAUCCCACGUGGAGUGGCCUCCACCGGAGCCGGUGGAGCUAGACACGC
+  novel-2hp_34	AUUUAAGCAGUGCCCACCCUUAAUAGGUUUAAGGGUGGGCAAGCAUGGGCGCGCCCAUGCUCUGCUUAAAU
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+255	**	3	-	0.36	novel-3hp_25,novel-3hp_29,novel-3hp_32
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (4.454)
+  2. tRNA-Sec (4.166)
+  3. mir-67 (4.132)
+  4. mir-160 (4.072)
+  5. MIR820 (3.929)
+  6. mir-592 (3.892)
+  7. Entero_5_CRE (3.798)
+  8. MIR815 (3.770)
+  9. yybP-ykoY (3.736)
+  10. BC040587 (3.716)
+
+Best CMs (by 1-sided pvalue):
+  1. SNORD88 (1.34776315435e-16)
+  2. RNaseP_bact_a (0.00014513999301)
+  3. CRISPR.DR52 (0.00149980641582)
+  4. SNORD24 (0.00245566741684)
+  5. tRNA.Sec (0.0105687746901)
+  6. rli45 (0.0136354164663)
+  7. HOTAIR_3 (0.0139816213993)
+  8. HIV.1_SL3 (0.0197087131248)
+  9. snR41 (0.0274767533375)
+  10. Cobalamin (0.0297096611276)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust255.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust255_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))((((((...))))))(((((....)))))))))))))))))))
+  MFE = -94.23 (Covariance contribution: -56.06)
+
+Multiple alignment from mlocarna:
+  novel-3hp_29	UUUCGUUACUCCAGUAUGUUACCACAUAUGCAGCUAGGCUGCAGGCAUAAACAUGCCCUGGAGUAACGAAA
+  novel-3hp_32	AUUCAAUCGCUCGGCGCGUUCCUACGCGUAGAGUGAAGCUCUAACACGACCACGUGUCCGAGCGAUUGAAU
+  novel-3hp_25	CUGAUGUGCCGUCCCUACUAUUUAGUAGAGGGUCGAGAACCCUAGGUACGGAUACCUGGACGGCACAUCAG
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+241	**	4	-	0.37	novel-2hp_1,novel-2hp_17,novel-2hp_22,novel-2hp_7
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (6.885)
+  2. mir-885 (5.444)
+  3. mir-607 (5.407)
+  4. mir-642 (5.104)
+  5. P36 (4.860)
+  6. 23S-methyl (4.824)
+  7. Bacteria_large_SRP (4.787)
+  8. mir-625 (4.736)
+  9. Clostridiales-1 (4.682)
+  10. yybP-ykoY (4.657)
+
+Best CMs (by 1-sided pvalue):
+  1. msiK (2.29090487268e-24)
+  2. snoR137 (1.27349667938e-07)
+  3. snoR64a (2.0026219624e-07)
+  4. Gut.1 (4.91736808687e-06)
+  5. SNORA8 (8.71028695382e-06)
+  6. U8 (1.97653789526e-05)
+  7. CRISPR.DR63 (0.000140086502368)
+  8. U6 (0.000194578996631)
+  9. SL1 (0.000201950521145)
+  10. whalefall.1 (0.000270119755872)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust241.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust241_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -96.83 (Covariance contribution: -52.73)
+
+Multiple alignment from mlocarna:
+  novel-2hp_22	CCAGGGGUCUUUCCGCAUAUCUCAUACUGAGAUAUGCGGAAUUAUUAUCGCUGGAUAAUAAAGACCCCUGG
+  novel-2hp_1	AGUAUAGAGUUCUACCAACGAUACUUUGUAUCGUUGGUAGAAGAACUCUCGUCAGAGUUCUACUCUAUACU
+  novel-2hp_7	CGCAGACGGUUGACUUUGACCCGCAGCUCGGGUCAAAGUCAGAUAAUAUGUUGAUAUUAUCACCGUCUGCG
+  novel-2hp_17	GAAUCAUUUCGUCUGACCCCCGACUCUAUCGGGGGUCAGACGCAGUCAAAAGGUUGACUGCGAAAUGAUUC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+260	**	3	-	0.39	novel-3hp_4,novel-3hp_47,novel-3hp_49
+
+Best CMs (by avg z-score):
+  1. yybP-ykoY (4.937)
+  2. MIR815 (4.904)
+  3. mir-452 (4.795)
+  4. MIR475 (4.476)
+  5. RSV_PBS (4.472)
+  6. MIR820 (4.452)
+  7. RCNMV_TE_DR1 (4.324)
+  8. mir-136 (4.320)
+  9. mir-708 (4.301)
+  10. mir-491 (4.279)
+
+Best CMs (by 1-sided pvalue):
+  1. SNORD88 (3.36869237064e-05)
+  2. TB9Cs2H1 (0.000233297052383)
+  3. SNORD31 (0.000479518141401)
+  4. sR13 (0.00137586581052)
+  5. CRISPR.DR14 (0.0032439000998)
+  6. sR49 (0.0034918463681)
+  7. BsrC (0.00350187520022)
+  8. sR21 (0.00377641692909)
+  9. snR79 (0.00560956080989)
+  10. snoZ194 (0.00643268730578)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust260.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust260_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))(((((.....)))))(((((....)))))))))))))))))))
+  MFE = -87.84 (Covariance contribution: -53.48)
+
+Multiple alignment from mlocarna:
+  novel-3hp_4	GGACAUUCCAAACACAUCAAGCAUGAUGGGCGCAUUGAGCGCCCGGCUCCUCAGCCGUGUUUGGAAUGUCC
+  novel-3hp_47	ACAUCCAUACUCGUAUAUUUGGAAAUAUACAGCACAUGGCUGUGAUAUGUUGAUAUCACGAGUAUGGAUGU
+  novel-3hp_49	AUCUCAUCCCUCAGGAUUUAUUGAAAUCCACGGAGGUCCCGUGCAAAUGGCUAUUUGCUGAGGGAUGAGAU
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+146	**	3	-	0.39	novel-3hp_19,novel-3hp_33,novel-3hp_39
+
+Best CMs (by avg z-score):
+  1. tRNA-Sec (4.792)
+  2. mir-160 (4.405)
+  3. MIR162_2 (3.755)
+  4. mir-284 (3.717)
+  5. MIR821 (3.669)
+  6. RNaseP_nuc (3.664)
+  7. P4 (3.626)
+  8. mir-940 (3.498)
+  9. RCNMV_TE_DR1 (3.388)
+  10. mir-156 (3.382)
+
+Best CMs (by 1-sided pvalue):
+  1. RMST_8 (6.98801359987e-08)
+  2. snoR32_R81 (5.93438296327e-06)
+  3. TMV_UPD.PK2 (0.000989535994667)
+  4. snoR27 (0.00111145090495)
+  5. RtT (0.00111802048724)
+  6. snoU18 (0.00126951670378)
+  7. snoU40 (0.00204622913062)
+  8. plasmodium_snoR21 (0.00288479410118)
+  9. Tombus_3_IV (0.0034072439494)
+  10. SBRMV1_UPD.PKf (0.00418101947058)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust146.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust146_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))(((((.....)))))(((((....)))))))))))))))))))
+  MFE = -87.02 (Covariance contribution: -52.25)
+
+Multiple alignment from mlocarna:
+  novel-3hp_39	UCUGAAUUUAGUACCUGCGGGAUCGCAGUUCGUUGGUUACGAAAGAUCUUCAGAUCUGUACUAAAUUCAGA
+  novel-3hp_33	GACACGAUUAGCAUCCUCCUUGCGGAGGCACUGAGGUUCAGUGGAUUAAGCAUAAUCAUGCUAAUCGUGUC
+  novel-3hp_19	AGGUUCUGAAAGUGUGCUCUGGCGAGCAUCGUUGAAAGAACGAGAGACAUAGGUCUCCACUUUCAGAACCU
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+296	**	4	-	0.40	novel-3hp_11,novel-3hp_16,novel-3hp_41,novel-3hp_45
+
+Best CMs (by avg z-score):
+  1. MIR1151 (5.555)
+  2. mir-934 (5.239)
+  3. mir-708 (5.158)
+  4. mir-625 (4.873)
+  5. Archaea_SRP (4.845)
+  6. RCNMV_TE_DR1 (4.818)
+  7. mir-21 (4.702)
+  8. mir-452 (4.529)
+  9. MIR815 (4.439)
+  10. mir-160 (4.432)
+
+Best CMs (by 1-sided pvalue):
+  1. MEG3_1 (0.00342347973224)
+  2. CRISPR.DR24 (0.010303864069)
+  3. mtDNA_ssA (0.0123728126718)
+  4. SNORD23 (0.0132559287697)
+  5. sR42 (0.0302772331421)
+  6. RF_site3 (0.0315049959586)
+  7. DdR15 (0.0316203251552)
+  8. RCNMV_TE_DR1 (0.0322420062631)
+  9. IRES_Bip (0.0326737274114)
+  10. cspA (0.0397421617963)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust296.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust296_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))(((((.....)))))(((((....)))))))))))))))))))
+  MFE = -90.14 (Covariance contribution: -53.41)
+
+Multiple alignment from mlocarna:
+  novel-3hp_16	GUAUCAACUGGGCGUACUUAUGCAAGUAGAAAAUACACUUUUCGCCCAAGAAUGGGCCGCCCAGUUGAUAC
+  novel-3hp_45	GUCAAUUGAGACUAUCCCGGGGCCGGGAAAGAAAGGCCUUCUUACGGUUCCGACCGUUAGUCUCAAUUGAC
+  novel-3hp_41	GAUUUGAUACCGGCGUACCACAGGGUACAAGAGCCGACCUCUUCUGCACGUGUGCAGGCCGGUAUCAAAUC
+  novel-3hp_11	UCUAUCGUGGCCCCCAACUUCACAGUUGAACAGUUUAUCUGUUCGGCCUUCCGGCCGGGGGCCACGAUAGA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+110	**	3	-	0.41	novel-3hp_31,novel-3hp_36,novel-3hp_50
+
+Best CMs (by avg z-score):
+  1. MIR821 (4.275)
+  2. mir-744 (4.262)
+  3. mir-452 (4.167)
+  4. SAM (3.997)
+  5. mir-625 (3.877)
+  6. tRNA-Sec (3.727)
+  7. MIR815 (3.715)
+  8. ceN72-3 (3.668)
+  9. Clostridiales-1 (3.497)
+  10. mir-160 (3.466)
+
+Best CMs (by 1-sided pvalue):
+  1. Lnt (1.06019592346e-05)
+  2. snoR98 (1.08564611361e-05)
+  3. ZEB2_AS1_2 (0.000127079412718)
+  4. SCARNA13 (0.000185934458994)
+  5. SNORD100 (0.000305946770269)
+  6. TMV_UPD.PK2 (0.000352588906125)
+  7. CRISPR.DR56 (0.00103028125363)
+  8. snR75 (0.00154969536776)
+  9. Evf1_2 (0.00188255760594)
+  10. RF_site1 (0.00271738157807)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust110.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust110_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))((((((...))))))(((((....)))))))))))))))))))
+  MFE = -83.48 (Covariance contribution: -52.38)
+
+Multiple alignment from mlocarna:
+  novel-3hp_31	GGAUACGUAGUCUUGAGUCACCCGACUCCGGUUUUAGGAACCGACAGGCCAUCCUGUAAGACUACGUAUCC
+  novel-3hp_50	GAGUUGUUCUGAAAUUCUGCACGCAGAACCUUAUCGCGUAAGGGUAUAAAGGUAUACUUUCAGAACAACUC
+  novel-3hp_36	UACGAUAUAUUUAGCACUGACUCCAGUGCAUACGGACAGUAUGAACGGAUAGCCGUUCUAAAUAUAUCGUA
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+164	**	3	-	0.41	novel-2hp_15,novel-2hp_26,novel-2hp_45
+
+Best CMs (by avg z-score):
+  1. Archaea_SRP (6.712)
+  2. IBV_D-RNA (5.156)
+  3. mir-642 (5.135)
+  4. mir-185 (4.972)
+  5. mir-625 (4.879)
+  6. CC1840 (4.779)
+  7. 5S_rRNA (4.743)
+  8. Bacteria_large_SRP (4.741)
+  9. Clostridiales-1 (4.679)
+  10. P36 (4.566)
+
+Best CMs (by 1-sided pvalue):
+  1. RF_site5 (3.13736715994e-11)
+  2. SL1 (1.28784605335e-09)
+  3. rne.II (4.02568832598e-08)
+  4. SprD (2.53737350375e-07)
+  5. X7SK (5.34969929788e-05)
+  6. Entero_OriR (7.90129057952e-05)
+  7. GP_knot1 (9.48902410222e-05)
+  8. StyR.44 (0.000100199491991)
+  9. RMST_2 (0.000191041335667)
+  10. CC1840 (0.000374925397479)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust164.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust164_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -113.16 (Covariance contribution: -61.53)
+
+Multiple alignment from mlocarna:
+  novel-2hp_15	CCGCGGCUAGAAUAGCCAUCCGGACGUCCCGGAUGGCUAUUCACUGCGGACGCCCGCAGUGCUAGCCGCGG
+  novel-2hp_26	CUCAGGUUGAAGCGAGGCUCUGAGCCGUUCAGAGCCUCGCUCCUCUUUUUACCAAAAGAGGUCAACCUGAG
+  novel-2hp_45	GGUGGAAAGUGAGCCUCUGUAGAGUUUCUCUACAGAGGCUCCCCUCAAGAGCACUUGAGGGACUUUCCACC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+246	**	3	-	0.41	novel-2hp_10,novel-2hp_13,novel-2hp_41
+
+Best CMs (by avg z-score):
+  1. mir-885 (6.384)
+  2. Archaea_SRP (6.191)
+  3. 5S_rRNA (5.731)
+  4. P36 (5.506)
+  5. symR (5.093)
+  6. PtaRNA1 (5.021)
+  7. sar (4.898)
+  8. Hsp90_CRE (4.818)
+  9. mir-62 (4.718)
+  10. mir-607 (4.550)
+
+Best CMs (by 1-sided pvalue):
+  1. snR58 (1.57874863582e-16)
+  2. S_pombe_snR93 (5.79644237384e-12)
+  3. ceN67 (9.5995676797e-09)
+  4. S_pombe_snR35 (8.90099044989e-08)
+  5. CRISPR.DR20 (2.14986837984e-07)
+  6. FinP (1.85899905216e-06)
+  7. STnc490k (3.02428558487e-06)
+  8. SNORD33 (5.92427967648e-06)
+  9. RsaH (4.72217942184e-05)
+  10. ykkC.yxkD (7.15776855361e-05)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust246.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust246_global.out/ --free-endgaps --indel=-100 --threads=4
+  ((((((((((((((((((((((((...))))))))))))))((((((((....))))))))))))))))))
+  MFE = -98.45 (Covariance contribution: -57.28)
+
+Multiple alignment from mlocarna:
+  novel-2hp_10	UGUUUUCGUGAUUUUUAUAUCUUCGUCAAAGAUAUAAAAAUGACAGACGACCGCGUCUGUCCACGAAAACA
+  novel-2hp_13	UCUGACGUAUCCUACAAAACUCCUCGCGGGAGUUUUGUAGGGAGUACAUUAGUAUGUACUCAUACGUCAGA
+  novel-2hp_41	GCUUGGGGAUUUAUACCCAUUUCCCACGGAAAUGGGUAUAAGUCCGACGUGUGCGUCGGACAUCCCCAAGC
+
+//
+
+
+
+
+
+
+ClustID	SigLvl	Count	MFE	AvgDist	Members
+33	**	3	-	0.43	novel-3hp_20,novel-3hp_22,novel-3hp_37
+
+Best CMs (by avg z-score):
+  1. mir-160 (5.454)
+  2. MIR475 (4.819)
+  3. mir-197 (4.526)
+  4. ceN72-3 (4.510)
+  5. mir-708 (4.317)
+  6. mir-BART7 (4.288)
+  7. MIR820 (4.218)
+  8. mir-185 (4.095)
+  9. MIR821 (4.006)
+  10. mir-452 (3.936)
+
+Best CMs (by 1-sided pvalue):
+  1. SNORD94 (6.07207809777e-11)
+  2. SNORD83 (1.10265705593e-05)
+  3. SNORD11B (0.000228076761103)
+  4. Glycine (0.000369510213421)
+  5. SNORD105 (0.000401943115599)
+  6. sn2524 (0.000814293785352)
+  7. SNORD125 (0.0016730746183)
+  8. TLS.PK6 (0.00348567440166)
+  9. snosnR71 (0.00360793492181)
+  10. RMST_4 (0.00419746319897)
+
+Structure and mfe from mlocarna:
+  Command: mlocarna /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust33.fa --tgtdir=/home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_structs/clust33_global.out/ --free-endgaps --indel=-100 --threads=4
+  (((((((((((((((((((....)))))(((((.....)))))(((((....)))))))))))))))))))
+  MFE = -84.49 (Covariance contribution: -52.62)
+
+Multiple alignment from mlocarna:
+  novel-3hp_22	CCCUGAUACAUUAUUGGAUGAAUAUCCAUAUGAAAUCAUCAUAGUUUUACAUAAAACAUAAUGUAUCAGGG
+  novel-3hp_20	GCCUGUCCUGGAAGGUUAACCAAUUAACAUGGGCGCUUCCCAUUAAACACUCGUUUACUUCCAGGACAGGC
+  novel-3hp_37	UCCUAGUGGGCAAACAGACAUCCGUCUGUGAUGAUACGCAUCAUUCAAUCGUUUGAAUUUGCCCACUAGGA
+
+//
+
+
+
+
+
+

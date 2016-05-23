@@ -1,0 +1,38 @@
+# command:    cmsearch --toponly --informat FASTA -T 13.38 -o /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust41_aln.txt --tabfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust41_tab.txt --gcfile /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/cmsearch_bs13.38bgNoneGloc/clust41_gc.txt -g /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp_clust_cms/clust41.cm /home/sarahmid/Project1_RNAstruct/results/novel-71nt_dinuc500/1-2-3hp/novel-1-2-3hp.db
+# date:       Thu Jan 23 16:06:44 2014
+# num seqs:   150
+# dbsize(Mb): 0.010650
+#
+# Pre-search info for CM 1: clust41-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut
+# ---  ---  ---  ---  -----  ----------
+#   1  hmm  fwd  glc      -        3.00
+#   2   cm  cyk  glc  1e-10        0.00
+#   3   cm  ins  glc  1e-15       13.38
+#
+# CM: clust41-1
+#                                     target coord   query coord                         
+#                           ----------------------  ------------                         
+# model name  target name        start        stop  start   stop    bit sc   E-value  GC%
+# ----------  ------------  ----------  ----------  -----  -----  --------  --------  ---
+  clust41-1   novel-1hp_11           3          69      1     71     22.46         -   49
+  clust41-1   novel-1hp_32          11          61      1     71     20.80         -   53
+  clust41-1   novel-2hp_6            1          71      1     71     76.56         -   46
+  clust41-1   novel-2hp_9            1          71      1     71     60.16         -   38
+  clust41-1   novel-2hp_14           1          71      1     71     59.15         -   66
+  clust41-1   novel-2hp_29           1          71      1     71     75.44         -   46
+  clust41-1   novel-2hp_46           1          71      1     71     79.43         -   55
+  clust41-1   novel-3hp_23           2          70      1     71     19.50         -   48
+#
+# Post-search info for CM 1: clust41-1
+#
+# rnd  mod  alg  cfg   beta  bit sc cut  num hits  surv fract
+# ---  ---  ---  ---  -----  ----------  --------  ----------
+#   1  hmm  fwd  glc      -        3.00        10      0.0667
+#   2   cm  cyk  glc  1e-10        0.00        10      0.0667
+#   3   cm  ins  glc  1e-15       13.38         8      0.0509
+#
+#    run time
+# -----------
+#    00:00:01
