@@ -1,5 +1,5 @@
 import os, sys
-from os.path import join, exists, isdir
+from os.path import join, exists, isdir, isfile, splitext
 from os import listdir
 from utils_analysis import *
 import shutil
@@ -39,4 +39,8 @@ for family in families:
         print(output)
         sys.exit()
     else:
-        shutil.rmtree(os.path.join(path, family, 'cmscore_results_rfam'))
+        # check the cmscore results integrity
+        cmscore_results = os.path.join(path, family, 'cmscore_results_rfam')
+        files = [f for f in listdir(cmscore_results) if isfile(join(cmscore_results, f)) and splitext(join(cmscore_results, f))[1] == '.txt']
+        if len(files) == 1973:
+            shutil.rmtree(os.path.join(path, family, 'cmscore_results_rfam'))
