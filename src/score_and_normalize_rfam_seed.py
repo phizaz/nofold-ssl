@@ -40,7 +40,13 @@ for family in families:
         sys.exit()
     else:
         # check the cmscore results integrity
-        cmscore_results = os.path.join(path, family, 'cmscore_results_rfam')
-        files = [f for f in listdir(cmscore_results) if isfile(join(cmscore_results, f)) and splitext(join(cmscore_results, f))[1] == '.txt']
-        if len(files) == 1973:
-            shutil.rmtree(os.path.join(path, family, 'cmscore_results_rfam'))
+        bitscore_file_path = os.path.join(path, family, family + '.bitscore')
+        with open(bitscore_file_path, 'r') as handle:
+            # ignore the header line
+            handle.readline()
+            # count bitscore cms
+            line_cnt = 0
+            for _ in handle: line_cnt += 1
+            if line_cnt == 1973:
+                shutil.rmtree(os.path.join(path, family, 'cmscore_results_rfam'))
+
