@@ -79,8 +79,6 @@ if len(families) == 0:
 
 print('starting from', opts.START_RF, 'actually', families[0])
 
-sys.exit(0)
-
 for family in families:
     print(family)
 
