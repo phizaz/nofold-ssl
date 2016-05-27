@@ -10,6 +10,7 @@ from multiprocessing.pool import Pool
 parser = OptionParser(usage='score and normalize the Rfam seed')
 parser.add_option("--begin", action="store", default='RF00000', dest="START_RF", help="Path to folder containing Infernal executables. Default is to assume they have been added to your PATH and can be called by name.")
 parser.add_option("--cpus", action="store", type='int', default=1, dest="MAX_CPU", help="Maximum number of CPUs to use. Default is [%default].")
+parser.add_option("--force", action="store", default='false', dest="FORCE", help="start by removing all cmscores results in the past")
 (opts, args) = parser.parse_args()
 
 print('start RF:', opts.START_RF)
@@ -59,6 +60,13 @@ def remove_cmscore_results(family):
     return False
 
 all_families = [f for f in listdir(path) if isdir(join(path, f))]
+
+if opts.FORCE == 'true':
+    print('start clean (--force)')
+    for family in all_families:
+        if remove_cmscore_results(family):
+            print('removing cmscores of', family)
+
 p = Pool()
 check_results = p.map(check_family, all_families)
 calculated_families = list(map(lambda fr: fr[0], filter(lambda fr: fr[1], zip(all_families, check_results))))
