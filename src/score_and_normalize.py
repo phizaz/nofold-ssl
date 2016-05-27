@@ -140,6 +140,7 @@ if __name__ == '__main__':
     execList = []
     count = 0
     cmList = glob.glob(CM_FOLDER + "/*.cm")
+
     for cmFile in cmList:
         count += 1
         cmName = os.path.basename(cmFile)
@@ -149,9 +150,6 @@ if __name__ == '__main__':
         if not os.path.exists(outFile) or (os.path.exists(outFile) and os.stat(outFile).st_size < 10):
             params = [DB_FILE, cmFile, outFile, PROG_PATH]
             execList.append(params)
-
-    # sort by db name (outfile)
-    execList.sort(key=lambda x: x[2])
 
     print ""
     print "======================================================"
