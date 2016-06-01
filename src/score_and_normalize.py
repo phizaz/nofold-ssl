@@ -16,8 +16,37 @@
 # ====================================================================
 import subprocess, sys, os, time, glob
 from multiprocessing import Pool, cpu_count
+from multiprocessing.pool import ThreadPool
 from optparse import OptionParser
+from os.path import exists, join
+from Bio import SeqIO
+from functools import partial
 
+def get_database_record_names(db_file):
+    with open(db_file, 'r') as handle:
+        records = SeqIO.parse(handle, 'fasta')
+        names = set(map(lambda x: x.name, records))
+    return names
+
+def is_valid_cmscore_file(file, db_file):
+    # go through each file, extract bitscores
+    # check if any IDs got cut off
+    if not exists(file):
+        return False
+
+    record_names = set(get_database_record_names(db_file))
+    having_names = set()
+    with open(file, 'r') as handle:
+        # get scores
+        for line in handle:
+            if line[0] == '#':
+                continue
+            tokens = line.split()
+            if len(tokens) != 5:
+                continue
+            name = tokens[0]
+            having_names.add(name)
+    return record_names == having_names
 
 # ------------------------------------------------------------------
 # Runs the db through Infernal and scores with the given CM.
@@ -141,15 +170,23 @@ if __name__ == '__main__':
     count = 0
     cmList = glob.glob(CM_FOLDER + "/*.cm")
 
+    outFiles = []
     for cmFile in cmList:
-        count += 1
         cmName = os.path.basename(cmFile)
         outFile = scoresOut + "scores_" + cmName + ".txt"
+        outFiles.append((outFile, cmName, cmFile))
 
-        # calculate only if necessary (not exist or the file is too small
-        if not os.path.exists(outFile) or (os.path.exists(outFile) and os.stat(outFile).st_size < 10):
-            params = [DB_FILE, cmFile, outFile, PROG_PATH]
-            execList.append(params)
+    def filter_fn(p):
+        outFile, cmName, cmFile = p
+        return not is_valid_cmscore_file(outFile, DB_FILE)
+    pool = Pool()
+    check_results = pool.map(filter_fn, outFiles)
+    invalidOutFiles = list(map(lambda ab: ab[0], filter(lambda ab: ab[1], zip(outFiles, check_results))))
+    count = len(invalidOutFiles)
+
+    for outFile, cmName, cmFile in invalidOutFiles:
+        params = [DB_FILE, cmFile, outFile, PROG_PATH]
+        execList.append(params)
 
     print ""
     print "======================================================"
