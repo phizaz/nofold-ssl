@@ -5,6 +5,12 @@ from random import shuffle, sample
 from Bio import SeqIO
 from optparse import OptionParser
 import numpy as np
+from sklearn.neighbors import BallTree
+from multiprocessing.pool import Pool
+from multiprocessing import cpu_count
+from collections import Counter
+from functools import partial
+import time
 
 '''
 Combine the rfam seeds with the given query
@@ -16,19 +22,61 @@ parser.add_option('--query', action='store', default='query', dest='QUERY', help
 parser.add_option('--unformatted', action='store', default='false', dest="UNFORMATTED", help='is the query from somewhere else?')
 parser.add_option('--cripple', action='store', type='int', dest='CRIPPLE', help='cripple degree')
 parser.add_option('--sample', action='store', type='int', default=5, dest='SAMPLE', help='number of seed sequenecs shall be randomly taken from each family')
-parser.add_option('--inc_centroid', action='store', default='false', dest='INC_CENTROID', help='should include cetroid ?')
-parser.add_option('--high_density', action='store', default='false', dest='HIGH_DENSITY', help='should samples be selected from high density profile ?')
+parser.add_option('--type', action='store', default='random', dest='TYPE', help='what kind of seed selection preferred?')
+parser.add_option('--nn', action='store', type='int', default=7, dest='NN', help='number of nearest neighbors for closest seed selection')
 parser.add_option('--small', action='store', default='false', dest='SMALL', help='take only the relevant seed families')
 (opts, args) = parser.parse_args()
+
+# validate possible types
+possible_types = {'high_density', 'closest', 'random'}
+if opts.TYPE not in possible_types:
+    print('not recornized type')
+    print('possible types:', possible_types)
+    sys.exit()
+
+# validate sample parameter
+if opts.TYPE in {'high_density', 'random'}:
+    if opts.SAMPLE <= 0:
+        print('sample count is not proper')
+        sys.exit()
 
 path = 'Rfam-seed/db'
 query = opts.QUERY
 
 families = [f for f in listdir(path) if isdir(join(path, f))]
 
+def get_family_record_cnt(family):
+    db_file = join(path, family, family + '.db')
+    with open(db_file, 'r') as handle:
+        records = SeqIO.parse(handle, 'fasta')
+        names = set(map(lambda x: x.name, records))
+        record_cnt = len(names)
+    return record_cnt
+
 def check_family(family):
-    expected_file = join(path, family, family + '.bitscore')
-    return exists(expected_file)
+    record_cnt = get_family_record_cnt(family)
+    bitscore_file = join(path, family, family + '.bitscore')
+    if not exists(bitscore_file):
+        return False
+    with open(bitscore_file, 'r') as handle:
+        # ignore the header line
+        handle.readline()
+        line_cnt = 0
+        for line in handle:
+            line = line.strip()
+
+            if len(line) == 0:
+                continue
+
+            line_cnt += 1
+            tokens = line.split('\t')
+            name, scores = tokens[0], tokens[1:]
+            if len(scores) != 1973:
+                return False
+
+        if line_cnt != record_cnt:
+            return False
+    return True
 
 def get_header(family):
     file = join(path, family, family + '.bitscore')
@@ -117,7 +165,7 @@ def get_centroid_seed_sequences(family, cols=None):
         centroid += point
     centroid /= len(points)
 
-    return [(family + '_centorid', centroid)]
+    return (family + '_centroid', centroid)
 
 all_sequences = []
 
@@ -128,13 +176,17 @@ print('query cols count:', len(query_header_cols))
 
 all_sequences += query_sequences
 
+pool = Pool()
+check_results = pool.map(check_family, families)
+pool.close()
+available_families = set(map(lambda fr: fr[0], filter(lambda fr: fr[1], zip(families, check_results))))
+
 if opts.UNFORMATTED == 'true':
     print('unformatted is "true"')
     print('taking from all we have')
-    seed_families = set(filter(check_family, families))
+    seed_families = available_families
 else:
     # get querying families, not having families
-    available_families = set(filter(check_family, families))
     query_database = join('Rfam-seed', query, query + '.db')
     query_families = set()
     with open(query_database, 'r') as handle:
@@ -167,24 +219,92 @@ else:
     print('taking from:', len(seed_families), '/', len(available_families))
 
 # taking seeds
-if opts.INC_CENTROID == 'true':
-    print('including centroids')
-if opts.SAMPLE > 0:
-    print('taking randomly for:', opts.SAMPLE, 'samples per families')
-if opts.HIGH_DENSITY == 'true':
-    print('sample will be taken from high denisty areas...')
-for family in seed_families:
-    #all_sequences += get_high_dense_seed_sequences(family, total=3)
-    sequences_available = len(get_seed_sequences(family, cols=query_header_cols))
-    if opts.INC_CENTROID == 'true':
-        all_sequences += get_centroid_seed_sequences(family, cols=query_header_cols)
-    if opts.SAMPLE > 0:
-        # avoid adding the centroid again
-        if not (opts.INC_CENTROID == 'true' and sequences_available == 1):
-            if opts.HIGH_DENSITY == 'true':
-                all_sequences += get_high_dense_seed_sequences(family, total=opts.SAMPLE, cols=query_header_cols)
-            else:
-                all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE, cols=query_header_cols)
+print('always include centroids...')
+if opts.TYPE == 'high_density':
+    print('sample will be taken from high denisty areas...', opts.SAMPLE, 'samples per families')
+elif opts.TYPE == 'random':
+    print('sample will be taken randomly...', opts.SAMPLE, 'samples per families')
+elif opts.TYPE == 'closest':
+    print('only closest:', opts.NN, 'neighbors seeds to queries will be taken...')
+
+# add centroids
+# always include centroid for each family (if not wanted can be filtered out)
+print('getting centroids for each family...')
+pool = Pool()
+get_centroid = partial(get_centroid_seed_sequences, cols=query_header_cols)
+all_sequences += pool.map(get_centroid, seed_families)
+pool.close()
+
+if opts.TYPE in {'random', 'high_density'}:
+    for family in seed_families:
+        if opts.TYPE == 'random':
+            all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE, cols=query_header_cols)
+        elif opts.TYPE == 'high_density':
+            all_sequences += get_high_dense_seed_sequences(family, total=opts.SAMPLE, cols=query_header_cols)
+elif opts.TYPE in {'closest'}:
+    all_query_names = list(map(lambda x: x[0], query_sequences))
+    all_query_points = list(map(lambda x: x[1], query_sequences))
+
+    query_points_closests = [[] for i in range(len(all_query_points))]
+
+    def get_query_point_closests_by_family(family):
+        # print('family:', family)
+        seed_sequences = get_seed_sequences(family, cols=query_header_cols)
+        seed_names = list(map(lambda x: x[0], seed_sequences))
+        seed_points = list(map(lambda x: x[1], seed_sequences))
+
+        nearest_seed = BallTree(seed_points)
+        k = min(opts.NN, len(seed_points))
+        p_dists, p_idxs = nearest_seed.query(all_query_points, k=k)
+
+        results = [[] for i in range(len(all_query_points))]
+        for query_idx, (dists, idxs) in enumerate(zip(p_dists, p_idxs)):
+            closest_seed_names = list(map(lambda x: seed_names[x], idxs))
+            closest_seed_points = list(map(lambda x: seed_points[x], idxs))
+            results[query_idx] += list(zip(dists, closest_seed_names, closest_seed_points))
+        return results
+
+    print('load sequences and find local KNN...')
+    time_start = time.time()
+    pool = Pool(cpu_count() * 2)
+    local_query_points_closests = []
+    for i, each in enumerate(pool.imap_unordered(get_query_point_closests_by_family, seed_families), 1):
+        print('family:', i, 'of', len(seed_families))
+        local_query_points_closests.append(each)
+    pool.close()
+    time_stop = time.time()
+    print('time elapsed:', time_stop - time_start)
+
+    print('merge results...')
+    for each in local_query_points_closests:
+        for all, local in zip(query_points_closests, each):
+            all += local
+
+    print('sorting and selecting first', opts.NN, 'for each query point results')
+    selected_seed = {}
+    selected_seed_by_family = Counter()
+    for each in query_points_closests:
+        each.sort(key=lambda x: x[0])
+        # select only nearest neighbors
+        each = each[:opts.NN]
+        for dist, name, point in each:
+            if name not in selected_seed:
+                family, _ = name.split('_')
+                selected_seed_by_family[family] += 1
+                selected_seed[name] = point
+    print('seed count:', len(selected_seed))
+    print('seed by family:', selected_seed_by_family)
+
+    print('getting selected seed sequences')
+    selected_seed_sequences = []
+    for name, point in selected_seed.items():
+        selected_seed_sequences.append((name, point))
+
+    all_sequences += selected_seed_sequences
+
+else:
+    print('type is not correct')
+    sys.exit()
 
 # save to file
 if opts.UNFORMATTED == 'true':

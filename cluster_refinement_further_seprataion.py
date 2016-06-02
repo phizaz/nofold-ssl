@@ -120,17 +120,18 @@ def merge_clusters(families, closest_seed_centroid, clusters):
     print('merged left', len(result_clusters), 'clusters')
     return result_clusters
 
-
 parser = OptionParser(usage='further clustering using inter-cluster distance criteria')
-parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
-parser.add_option("--alg", action="store", default='labelPropagation', dest="ALG", help="the file's algorithm description")
-parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
-parser.add_option("--C", action="store", type='float', default=1.0, dest="C", help="splitting cluster parameter")
+parser.add_option('--tag', action='store', default='', dest='TAG', help='tag')
+parser.add_option('--alg', action='store', default='labelPropagation', dest='ALG', help='the file algorithm description')
+parser.add_option('--components', action='store', type='int', default=100, dest='COMPONENTS', help='PCAs number of components')
+parser.add_option('--C', action='store', type='float', default=1.0, dest='C', help='splitting cluster parameter')
+parser.add_option('--true-centroid', action='store', default='false', dest='TRUE_CENTROID')
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
 alg = opts.ALG
 score_file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
+centroid_file = join('Rfam-seed', 'combined.' + tag + '.centroid.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 cluster_file = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.cluster')
 
 print('loading score file')
@@ -143,6 +144,7 @@ with open(score_file, 'r') as handle:
         name, scores = tokens[0], list(map(float, tokens[1:]))
         sequences[name] = np.array(scores)
 
+# get seed clusters
 seed_clusters = {}
 for name, scores in sequences.items():
     family = family_of(name)
@@ -150,12 +152,26 @@ for name, scores in sequences.items():
         seed_clusters[family] = []
     seed_clusters[family].append(scores)
 
-print('calculating centroids for seed clusters..')
-seed_centroids = []
-seed_families = []
-for family, points in seed_clusters.items():
-    seed_families.append(family)
-    seed_centroids.append(centroid_of(points))
+if opts.TRUE_CENTROID == 'true':
+    print('loading centroids from file..')
+    seed_centroids = []
+    seed_centroids_families = []
+    with open(centroid_file, 'r') as handle:
+        handle.readline()
+        for line in handle:
+            line = line.strip()
+            tokens = line.split('\t')
+            name, scores = tokens[0], list(map(float, tokens[1:]))
+            family = name.split('_')[0]
+            seed_centroids_families.append(family)
+            seed_centroids.append(np.array(scores))
+else:
+    print('calculating centroids for seed clusters..')
+    seed_centroids = []
+    seed_centroids_families = []
+    for family, points in seed_clusters.items():
+        seed_centroids_families.append(family)
+        seed_centroids.append(centroid_of(points))
 
 closest_seed_centroid = BallTree(seed_centroids)
 
@@ -170,7 +186,7 @@ with open(cluster_file, 'r') as handle:
 splitted_clusters = split_clusters(clusters, C=opts.C)
 for round in range(5):
     print('round:', round + 1)
-    merged_clusters = merge_clusters(seed_families, closest_seed_centroid, splitted_clusters)
+    merged_clusters = merge_clusters(seed_centroids_families, closest_seed_centroid, splitted_clusters)
     splitted_clusters = split_clusters(merged_clusters, C=opts.C)
 
 final_clusters = splitted_clusters
