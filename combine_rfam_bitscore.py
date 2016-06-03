@@ -10,6 +10,8 @@ from multiprocessing.pool import Pool
 from multiprocessing import cpu_count
 from collections import Counter
 from functools import partial
+import sortedcontainers as sc
+from operator import itemgetter
 import time
 
 '''
@@ -194,19 +196,21 @@ else:
         for record in records:
             family = record.name.split('_')[0][1:]
             query_families.add(family)
+
     print('families required by the query:', len(query_families))
     not_having_families = query_families - available_families
     print('families we don\'t have:', len(not_having_families))
-
-
+    print(not_having_families)
 
     # get some scores from each seeding family (except the marked as crippled)
     cripple_family_count = opts.CRIPPLE
     print('cripple count:', cripple_family_count)
     cripple_more = cripple_family_count - len(not_having_families)
+
     if cripple_more < 0:
         print('cannot attain the target cripple count!')
         sys.exit()
+
     print('more to be crippled:', cripple_more)
     cripple_target_families = query_families - not_having_families
     cripple_families = sample(cripple_target_families, cripple_more)
@@ -245,7 +249,8 @@ elif opts.TYPE in {'closest'}:
     all_query_names = list(map(lambda x: x[0], query_sequences))
     all_query_points = list(map(lambda x: x[1], query_sequences))
 
-    query_points_closests = [[] for i in range(len(all_query_points))]
+    # using sorted list
+    query_points_closests = [sc.SortedListWithKey(key=itemgetter(0)) for i in range(len(all_query_points))]
 
     def get_query_point_closests_by_family(family):
         # print('family:', family)
@@ -264,29 +269,24 @@ elif opts.TYPE in {'closest'}:
             results[query_idx] += list(zip(dists, closest_seed_names, closest_seed_points))
         return results
 
-    print('load sequences and find local KNN...')
+    print('load sequences and find local KNN and merge and sort and delete excess elements from the result in real time..')
     time_start = time.time()
-    pool = Pool(cpu_count() * 2)
+    pool = Pool(int(cpu_count() * 1.5))
     local_query_points_closests = []
     for i, each in enumerate(pool.imap_unordered(get_query_point_closests_by_family, seed_families), 1):
         print('family:', i, 'of', len(seed_families))
-        local_query_points_closests.append(each)
+        for all, local in zip(query_points_closests, each):
+            all += local
+            # delete the excess elements
+            del all[opts.NN:]
     pool.close()
     time_stop = time.time()
     print('time elapsed:', time_stop - time_start)
 
-    print('merge results...')
-    for each in local_query_points_closests:
-        for all, local in zip(query_points_closests, each):
-            all += local
-
-    print('sorting and selecting first', opts.NN, 'for each query point results')
+    print('getting selected seed sequences')
     selected_seed = {}
     selected_seed_by_family = Counter()
     for each in query_points_closests:
-        each.sort(key=lambda x: x[0])
-        # select only nearest neighbors
-        each = each[:opts.NN]
         for dist, name, point in each:
             if name not in selected_seed:
                 family, _ = name.split('_')
@@ -295,7 +295,6 @@ elif opts.TYPE in {'closest'}:
     print('seed count:', len(selected_seed))
     print('seed by family:', selected_seed_by_family)
 
-    print('getting selected seed sequences')
     selected_seed_sequences = []
     for name, point in selected_seed.items():
         selected_seed_sequences.append((name, point))
