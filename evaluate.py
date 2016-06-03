@@ -3,6 +3,7 @@ from optparse import OptionParser
 from collections import Counter
 import numpy as np
 from operator import itemgetter
+from Bio import SeqIO
 
 def transform():
     pass
@@ -14,22 +15,24 @@ def get_clusters(lines):
         clusters.append(names)
     return clusters
 
-def get_names(clusters):
+def get_names(names):
     names_by_family = {}
-    for names in clusters:
-        for name in names:
-            family, _ = name.split('_')
+    for name in names:
+        family = name.split('_')[0]
 
-            if family not in names_by_family:
-                names_by_family[family] = []
-            names_by_family[family].append(name)
+        # not relevant
+        if family[:2] not in {'QR', 'RF'}:
+            continue
+
+        if family not in names_by_family:
+            names_by_family[family] = []
+        names_by_family[family].append(name)
     return names_by_family
-
 
 def is_dominated_by(family, cluster):
     counter = Counter()
     for name in cluster:
-        fam, _ = name.split('_')
+        fam = name.split('_')[0]
         counter[fam] += 1
     dominant_family, cnt = counter.most_common(1).pop()
     return family == dominant_family, cnt
@@ -59,7 +62,7 @@ def precision_of(family, clusters, names_by_family):
 def family_cnt_in_cluster(family, cluster):
     counter = Counter()
     for name in cluster:
-        fam, _ = name.split('_')
+        fam = name.split('_')[0]
         counter[fam] += 1
     return counter[family]
 
@@ -70,12 +73,12 @@ def max_in_cluster_of(family, clusters, names_by_family):
 
 parser = OptionParser(usage='evaluate the clustering results')
 parser.add_option('--file', action='store', dest='FILE', help='cluster result file')
+parser.add_option('--db', action='store', dest='DB', help='db file')
 parser.add_option('--nofold', action='store', default='false', dest='NOFOLD', help='is the result from original NoFold ?')
 (opts, args) = parser.parse_args()
 
 print('evaluating form file:', opts.FILE)
 
-clusters = []
 with open(opts.FILE, 'r') as handle:
     if opts.NOFOLD == 'true':
         print('transforming nofold result ...')
@@ -93,7 +96,11 @@ with open(opts.FILE, 'r') as handle:
 print('number of sequences:', sum(len(names) for names in clusters))
 print('number of clusters:', len(clusters))
 
-names_by_family = get_names(clusters)
+with open(opts.DB, 'r') as handle:
+    records = SeqIO.parse(handle, 'fasta')
+    names = map(lambda x: x.name, records)
+
+names_by_family = get_names(names)
 print('number of families:', len(names_by_family))
 
 families = names_by_family.keys()
@@ -103,26 +110,28 @@ for family in sorted(families):
         family,
         sensitivity_of(family, clusters, names_by_family),
         precision_of(family, clusters, names_by_family),
-        max_in_cluster_of(family, clusters, names_by_family)
+        max_in_cluster_of(family, clusters, names_by_family),
+        len(names_by_family[family]) # weight
     ))
 
 output_file = opts.FILE + '.evaluation'
 with open(output_file, 'w') as handle:
-    col_names = ['sensitivity', 'precision', 'max_in_cluster']
+    col_names = ['sensitivity', 'precision', 'max_in_cluster', 'seq_cnt']
     handle.write('\t'.join(['family'] + col_names) + '\n')
     for cols in results:
         handle.write('\t'.join(map(str, cols)) + '\n')
 
-    sensitivities = np.array(map(itemgetter(1), results))
-    precisions = np.array(map(itemgetter(2), results))
-    max_in_clusters = np.array(map(itemgetter(3), results))
+    sensitivities = map(itemgetter(1), results)
+    precisions = map(itemgetter(2), results)
+    max_in_clusters = map(itemgetter(3), results)
+    weights = map(itemgetter(4), results)
 
-    handle.write('\t'.join(map(lambda x: 'avg_' + x, col_names)) + '\n')
+    handle.write('\t'.join(map(lambda x: 'avg_' + x, col_names[:3])) + '\n')
     handle.write('\t'.join(map(str,
                                [
-                                   sensitivities.mean(),
-                                   precisions.mean(),
-                                   max_in_clusters.mean()
+                                   np.average(sensitivities, weights=weights),
+                                   np.average(precisions, weights=weights),
+                                   np.average(max_in_clusters, weights=weights)
                                ])) + '\n')
 
 print('done!')
