@@ -14,7 +14,7 @@ def create_map(strings):
     return dict(zip(all_strings, all_int)), dict(zip(all_int, all_strings))
 
 def family_of(name):
-    first, rest = name.split('_')
+    first = name.split('_')[0]
     if first[0] == 'Q':
         return first[1:]
     else:
@@ -61,7 +61,7 @@ with open(file, 'r') as handle:
 
 family_to_int, int_to_family = create_map(map(family_of, names))
 
-print('having', len(points) + len(test_points), 'points')
+print('having', len(points) + len(test_points) + len(centroid_points), 'points')
 
 print('training the label propagation')
 start_time = time.time()
