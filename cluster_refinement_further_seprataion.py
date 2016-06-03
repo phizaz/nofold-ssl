@@ -4,6 +4,8 @@ from itertools import combinations, product
 from agglomerative_clustering import AgglomerativeClusteringMaxMergeDist
 from os.path import join
 from optparse import OptionParser
+from multiprocessing.pool import Pool
+from functools import partial
 
 '''
 Further refine clusters from inital label propagation by splitting and merging
@@ -15,7 +17,7 @@ def point_of(name):
     return sequences[name]
 
 def family_of(name):
-    first, _  = name.split('_')
+    first = name.split('_')[0]
     if first[0] == 'Q':
         return first[1:]
     else:
@@ -75,29 +77,34 @@ def labels_to_clusters(names, labels):
 def total_sequences(clusters):
     return sum(len(names) for names in clusters)
 
+
+def split_cluster((i, names), clusters, C):
+    local_inter_cluster_dist = C * min(dist_cluster_avg(names, cluster) for cluster in clusters[:i] + clusters[i + 1:])
+    # print('local inter-cluster dist:', local_inter_cluster_dist)
+
+    points = list(map(point_of, names))
+    agg = AgglomerativeClusteringMaxMergeDist()
+    labels = agg.fit(points, local_inter_cluster_dist, method='average', metric='euclidean')
+    cluster_cnt = max(labels) + 1
+
+    if cluster_cnt == 1:
+        return [names]
+    else:
+        return labels_to_clusters(names, labels)
+
 def split_clusters(clusters, C):
-    # print('pruning clusters...')
-    # pruned_clusters = list(map(retain_high_density, clusters))
-    pruned_clusters = clusters
     print('splitting clusters...')
     total_clusters = 0
     final_clusters = []
-    for i, (names, pruned_names) in enumerate(zip(clusters, pruned_clusters)):
-        local_inter_cluster_dist = C * min(dist_cluster_avg(pruned_names, pruned_cluster) for pruned_cluster in pruned_clusters[:i] + pruned_clusters[i+1:])
-        # print('local inter-cluster dist:', local_inter_cluster_dist)
 
-        points = list(map(point_of, names))
-        agg = AgglomerativeClusteringMaxMergeDist()
-        labels = agg.fit(points, local_inter_cluster_dist, method='average', metric='euclidean')
-        cluster_cnt = max(labels) + 1
+    pool = Pool()
+    partial_fn = partial(split_cluster, clusters=clusters, C=C)
+    splitted_clusters = pool.map(partial_fn, enumerate(clusters))
+    pool.close()
 
-        if cluster_cnt == 1:
-            final_clusters.append(names)
-        else:
-            sub_clusters = labels_to_clusters(names, labels)
-            final_clusters += sub_clusters
+    for each in splitted_clusters:
+        final_clusters += each
 
-        total_clusters += cluster_cnt
     print('final_clusters count:', len(final_clusters))
     return final_clusters
 
@@ -119,6 +126,18 @@ def merge_clusters(families, closest_seed_centroid, clusters):
     result_clusters = merged_clusters.values()
     print('merged left', len(result_clusters), 'clusters')
     return result_clusters
+
+def identical_clusters(A, B):
+    if len(A) != len(B):
+        return False
+
+    def tuplize(clusters):
+        l = []
+        for each in clusters:
+            l.append(tuple(set(each)))
+        return tuple(sorted(l))
+
+    return tuplize(A) == tuplize(B)
 
 parser = OptionParser(usage='further clustering using inter-cluster distance criteria')
 parser.add_option('--tag', action='store', default='', dest='TAG', help='tag')
@@ -184,10 +203,14 @@ with open(cluster_file, 'r') as handle:
         clusters.append(names)
 
 splitted_clusters = split_clusters(clusters, C=opts.C)
-for round in range(5):
+for round in range(10):
+    last_split_clusters = splitted_clusters
     print('round:', round + 1)
     merged_clusters = merge_clusters(seed_centroids_families, closest_seed_centroid, splitted_clusters)
     splitted_clusters = split_clusters(merged_clusters, C=opts.C)
+
+    if identical_clusters(last_split_clusters, splitted_clusters):
+        break
 
 final_clusters = splitted_clusters
 
