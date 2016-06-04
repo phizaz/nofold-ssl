@@ -17,7 +17,7 @@ def check_family(family):
 
 available_families = set(filter(check_family, families))
 
-query_file = 'Rfam-seed/query/query.db'
+query_file = 'Rfam-seed/query3/query3.db'
 count = 0
 not_having_families = set()
 with open(query_file, 'r') as handle:
