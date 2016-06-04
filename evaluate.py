@@ -4,6 +4,7 @@ from collections import Counter
 import numpy as np
 from operator import itemgetter
 from Bio import SeqIO
+from os.path import join
 
 '''
 Evaluate the clustering quality using three benchmarks
@@ -81,12 +82,17 @@ def max_in_cluster_of(family, clusters, names_by_family):
     return cnt / all_cnt
 
 parser = OptionParser(usage='evaluate the clustering results')
-parser.add_option('--file', action='store', dest='FILE', help='cluster result file')
-parser.add_option('--db', action='store', dest='DB', help='db file')
+parser.add_option('--tag', action='store', dest='TAG', help='cluster result file')
+parser.add_option('--query', action='store', dest='QUERY', help='db file')
+parser.add_option('--alg', action='store', dest='ALG', default='labelPropagation', help='alg name')
 parser.add_option('--nofold', action='store', default='false', dest='NOFOLD', help='is the result from original NoFold ?')
 (opts, args) = parser.parse_args()
 
+opts.FILE = join('Rfam-seed', 'combined.' + opts.TAG + '.' + opts.ALG + '.refined.cluster')
+opts.DB = join('Rfam-seed', opts.QUERY, opts.QUERY + '.db')
+
 print('evaluating form file:', opts.FILE)
+print('database file:', opts.DB)
 
 with open(opts.FILE, 'r') as handle:
     if opts.NOFOLD == 'true':
