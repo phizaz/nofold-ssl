@@ -250,10 +250,11 @@ elif opts.TYPE in {'closest'}:
     all_query_points = list(map(lambda x: x[1], query_sequences))
 
     # using sorted list
-    query_points_closests = [sc.SortedListWithKey(key=itemgetter(0)) for i in range(len(all_query_points))]
+    # query_points_closests = [sc.SortedListWithKey(key=itemgetter(0)) for i in range(len(all_query_points))]
+    query_points_closests = [[] for i in range(len(all_query_points))]
 
     def get_query_point_closests_by_family(family):
-        # print('family:', family)
+        # finding kNN from each family and them combine is a way to save memory, but slower !
         seed_sequences = get_seed_sequences(family, cols=query_header_cols)
         seed_names = list(map(lambda x: x[0], seed_sequences))
         seed_points = list(map(lambda x: x[1], seed_sequences))
@@ -269,16 +270,28 @@ elif opts.TYPE in {'closest'}:
             results[query_idx] += list(zip(dists, closest_seed_names, closest_seed_points))
         return results
 
+    def remove_excess():
+        for each in query_points_closests:
+            each.sort(key=itemgetter(0))
+            del each[opts.NN:]
+
     print('load sequences and find local KNN and merge and sort and delete excess elements from the result in real time..')
     time_start = time.time()
-    pool = Pool(int(cpu_count() * 1.5))
+    pool = Pool(int(cpu_count()))
     local_query_points_closests = []
+    cleanup_loops = 100
     for i, each in enumerate(pool.imap_unordered(get_query_point_closests_by_family, seed_families), 1):
         print('family:', i, 'of', len(seed_families))
         for all, local in zip(query_points_closests, each):
             all += local
-            # delete the excess elements
-            del all[opts.NN:]
+            # # delete the excess elements
+            # del all[opts.NN:]
+
+        if i % cleanup_loops == 0:
+            print('cleaning up...')
+            remove_excess()
+    remove_excess()
+
     pool.close()
     time_stop = time.time()
     print('time elapsed:', time_stop - time_start)
