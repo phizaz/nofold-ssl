@@ -57,7 +57,8 @@ def score_cm(params):
     cmFile = params[1]
     outFile = params[2]
     progPath = params[3]
-    command = "%s --search -a --infile %s %s > %s" % (progPath, seqDB, cmFile, outFile)
+    maxMem = 4000
+    command = "%s --mxsize %d --search -a --infile %s %s > %s" % (progPath, maxMem, seqDB, cmFile, outFile)
 
     start = time.time()  # time the scoring for this CM
     job = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
