@@ -14,7 +14,7 @@ def create_map(strings):
     return dict(zip(all_strings, all_int)), dict(zip(all_int, all_strings))
 
 def family_of(name):
-    first, rest = name.split('_')
+    first = name.split('_')[0]
     if first[0] == 'Q':
         return first[1:]
     else:
@@ -34,26 +34,34 @@ file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + 
 names = []
 points = []
 
+centroid_names = []
+centroid_points = []
+
 test_names = []
 test_points = []
 
 with open(file, 'r') as handle:
-    handle.readline()
+    bitscore_header = handle.readline().strip().split('\t')
     for line in handle:
         line = line.strip()
         tokens = line.split('\t')
         name, scores = tokens[0], list(map(float, tokens[1:]))
 
         if name.split('_')[0][:2] == 'RF':
-            names.append(name)
-            points.append(scores)
+            # ignore the centroids (we will use it later)
+            if name.find('_centroid') == -1:
+                names.append(name)
+                points.append(scores)
+            else:
+                centroid_names.append(name)
+                centroid_points.append(scores)
         else:
             test_names.append(name)
             test_points.append(scores)
 
 family_to_int, int_to_family = create_map(map(family_of, names))
 
-print('having', len(points) + len(test_points), 'points')
+print('having', len(points) + len(test_points) + len(centroid_points), 'points')
 
 print('training the label propagation')
 start_time = time.time()
@@ -83,6 +91,15 @@ with open(outfile, 'w') as handle:
         # handle.write(int_to_family[label] + '\n')
         for name in members:
             handle.write(name + ' ')
+        handle.write('\n')
+
+centroid_file = join('Rfam-seed', 'combined.' + tag + '.centroid.pcNorm' + str(len(bitscore_header)) + '.zNorm.bitscore')
+with open(centroid_file, 'w') as handle:
+    handle.write('\t'.join(bitscore_header) + '\n')
+    for name, scores in zip(centroid_names, centroid_points):
+        handle.write(name + '\t')
+        for score in scores:
+            handle.write(str(score) + '\t')
         handle.write('\n')
 
 print('saving done!', len(clusters), 'clusters')

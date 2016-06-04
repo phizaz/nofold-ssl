@@ -19,17 +19,16 @@ print('max CPU:', opts.MAX_CPU)
 path = '../Rfam-seed/db'
 
 def get_family_record_cnt(family):
-    db_file = os.path.join(path, family, family + '.db')
+    db_file = join(path, family, family + '.db')
     with open(db_file, 'r') as handle:
         records = SeqIO.parse(handle, 'fasta')
         names = set(map(lambda x: x.name, records))
         record_cnt = len(names)
     return record_cnt
 
-
 def check_family(family):
     record_cnt = get_family_record_cnt(family)
-    bitscore_file = os.path.join(path, family, family + '.bitscore')
+    bitscore_file = join(path, family, family + '.bitscore')
     if not exists(bitscore_file):
         return False
     with open(bitscore_file, 'r') as handle:
@@ -53,7 +52,7 @@ def check_family(family):
     return True
 
 def remove_cmscore_results(family):
-    cmscore_path = os.path.join(path, family, 'cmscore_results_rfam')
+    cmscore_path = join(path, family, 'cmscore_results_rfam')
     if exists(cmscore_path):
         shutil.rmtree(cmscore_path)
         return True
@@ -92,7 +91,7 @@ for family in families:
 
     command = 'python %s %s --cpus=%d --infernal-path=%s' % (
         'score_and_normalize.py',
-        os.path.join(path, family, family + '.db'),
+        join(path, family, family + '.db'),
         opts.MAX_CPU,
         '/usr/local/bin/'
     )
