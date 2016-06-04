@@ -5,14 +5,23 @@ import numpy as np
 from operator import itemgetter
 from Bio import SeqIO
 
-def transform():
-    pass
+'''
+Evaluate the clustering quality using three benchmarks
+1. Sensitivity
+2. Precision
+3. Max in cluster - how good the sequences of a family are distributed in one big cluster.
+'''
+
+def is_name(name):
+    return name[:2] in {'QR', 'RF'}
 
 def get_clusters(lines):
     clusters = []
     for line in lines:
-        names = line.strip().split()
-        clusters.append(names)
+        names = filter(is_name, line.strip().split())
+        # remove the clusters that don't contain actual sequences
+        if len(names) > 0:
+            clusters.append(names)
     return clusters
 
 def get_names(names):
@@ -98,7 +107,7 @@ print('number of clusters:', len(clusters))
 
 with open(opts.DB, 'r') as handle:
     records = SeqIO.parse(handle, 'fasta')
-    names = map(lambda x: x.name, records)
+    names = filter(is_name, map(lambda x: x.name, records))
 
 names_by_family = get_names(names)
 print('number of families:', len(names_by_family))
