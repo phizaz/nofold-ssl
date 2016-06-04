@@ -50,9 +50,9 @@ python combine_rfam_bitscore.py --query=rfam75id-rename --cripple=0 --type=close
 python pca_normalize_bitscore.py --tag=rfam75id-rename.cripple0 && \
 python cluster_semi_label_propagation.py --tag=rfam75id-rename.cripple0 --kernel=rbf --gamma=0.5 && \
 python cluster_refinement_further_seprataion.py --tag=rfam75id-rename.cripple0 --alg=labelPropagation --C=1.1 --true-centroid=false && \
-python evaluate.py --file=Rfam-seed/combined.rfam75id-rename.cripple0.labelPropagation.refined.cluster --db=Rfam-seed/rfam75id-rename/rfam75id-rename.db --nofold=false
+python evaluate.py --tag=rfam75id-rename.cripple0 --query=rfam75id-rename --nofold=false
 
-python evaluate.py --file=Rfam-seed/rfam75id/rfam75id.clusters_s3rSpec_top.txt_expanded_merged_bs17.41bgNoneGloc.txt --db=Rfam-seed/rfam75id/rfam75id.db --nofold=true
+python evaluate.py --file=Rfam-seed/rfam75id/rfam75id.clusters_s3rSpec_top.txt_expanded_merged_bs17.41bgNoneGloc.txt --query=rfam75id --nofold=true
 
 # rfam75id_dinuc3000-rename (closest)
 # 2 cores - 2241.38s, 2387.28s (NN = 3)
@@ -60,9 +60,9 @@ python combine_rfam_bitscore.py --query=rfam75id_dinuc3000-rename --cripple=1 --
 python pca_normalize_bitscore.py --tag=rfam75id_dinuc3000-rename.cripple1 && \
 python cluster_semi_label_propagation.py --tag=rfam75id_dinuc3000-rename.cripple1 --kernel=rbf --gamma=0.5 && \
 python cluster_refinement_further_seprataion.py --tag=rfam75id_dinuc3000-rename.cripple1 --alg=labelPropagation --C=1.1 --true-centroid=false && \
-python evaluate.py --file=Rfam-seed/combined.rfam75id_dinuc3000-rename.cripple1.labelPropagation.refined.cluster --db=Rfam-seed/rfam75id_dinuc3000-rename/rfam75id_dinuc3000-rename.db --nofold=false
+python evaluate.py --tag=rfam75id_dinuc3000-rename.cripple1 --query=rfam75id_dinuc3000-rename --nofold=false
 
-python evaluate.py --file=Rfam-seed/rfam75id_dinuc3000/rfam75id_dinuc3000.clusters_s3rSpec_top.txt_expanded_merged_bs19.64bgNoneGloc.txt --db=Rfam-seed/rfam75id_dinuc3000/rfam75id_dinuc3000.db --nofold=true
+python evaluate.py --file=Rfam-seed/rfam75id_dinuc3000/rfam75id_dinuc3000.clusters_s3rSpec_top.txt_expanded_merged_bs19.64bgNoneGloc.txt --db=rfam75id_dinuc3000 --nofold=true
 
 # rfam75id_embed-rename (closest)
 # 2 cores - 532.83s , 589.38s (NN = 3)
@@ -70,7 +70,7 @@ python combine_rfam_bitscore.py --query=rfam75id_embed-rename --cripple=0 --type
 python pca_normalize_bitscore.py --tag=rfam75id_embed-rename.cripple0 && \
 python cluster_semi_label_propagation.py --tag=rfam75id_embed-rename.cripple0 --kernel=rbf --gamma=0.5 && \
 python cluster_refinement_further_seprataion.py --tag=rfam75id_embed-rename.cripple0 --alg=labelPropagation --C=1.1 --true-centroid=false && \
-python evaluate.py --file=Rfam-seed/combined.rfam75id_embed-rename.cripple0.labelPropagation.refined.cluster --db=Rfam-seed/rfam75id_embed-rename/rfam75id_embed-rename.db --nofold=false 
+python evaluate.py --tag=rfam75id_embed-rename.cripple0 --query=rfam75id_embed-rename --nofold=false 
 
-python evaluate.py --file=Rfam-seed/rfam75id_embed/rfam75id_embed.clusters_s3rSpec_top.txt_expanded_merged_bs17.83bgNoneGloc.txt --db=Rfam-seed/rfam75id_embed/rfam75id_embed.db --nofold=true
+python evaluate.py --file=Rfam-seed/rfam75id_embed/rfam75id_embed.clusters_s3rSpec_top.txt_expanded_merged_bs17.83bgNoneGloc.txt --db=rfam75id_embed --nofold=true
 
