@@ -1,11 +1,15 @@
 import numpy as np
-from sklearn.neighbors import BallTree
+from sklearn.neighbors import BallTree, KNeighborsClassifier
+from sklearn.semi_supervised import LabelPropagation
 from itertools import combinations, product
 from agglomerative_clustering import AgglomerativeClusteringMaxMergeDist
 from os.path import join
 from optparse import OptionParser
 from multiprocessing.pool import Pool
 from functools import partial
+from operator import itemgetter
+from collections import Counter
+import sys
 
 '''
 Further refine clusters from inital label propagation by splitting and merging
@@ -15,6 +19,27 @@ Merging using the supervised merging techninque (merge those clusters having the
 
 def point_of(name):
     return sequences[name]
+
+def points_of(names):
+    return map(point_of, names)
+
+def create_map(strings):
+    all_strings = set(strings)
+    all_int = [i for i in range(len(all_strings))]
+    str_to_int = dict(zip(all_strings, all_int))
+    int_to_str = dict(zip(all_int, all_strings))
+
+    def map_to_int(string):
+        return str_to_int[string]
+
+    def map_to_str(int):
+        return int_to_str[int]
+
+    return map_to_int, map_to_str
+
+def is_seed(name):
+    first = name.split('_')[0]
+    return first[:2] == 'RF'
 
 def family_of(name):
     first = name.split('_')[0]
@@ -127,6 +152,75 @@ def merge_clusters(families, closest_seed_centroid, clusters):
     print('merged left', len(result_clusters), 'clusters')
     return result_clusters
 
+def merge_clusters_label_propagation(seed_clusters, clusters):
+    seeds_points = []
+    seeds_labels = []
+    for family, points in seed_clusters.items():
+        seeds_points.append(centroid_of(points))
+        seeds_labels.append(family)
+
+    to_int, to_str = create_map(seeds_labels)
+    int_labels = map(to_int, seeds_labels)
+
+    unknown_points = []
+    unknown_clusters = []
+    for clust_id, names in enumerate(clusters):
+        points = points_of(names)
+        unknown_points += points
+        unknown_clusters += [clust_id for i in range(len(points))]
+
+    points = seeds_points + unknown_points
+    labels = int_labels + [-1 for i in range(len(unknown_points))]
+
+    ssl = LabelPropagation(kernel='rbf', gamma=0.5)
+    ssl.fit(points, labels)
+
+    predicted_labels = ssl.transduction_[len(seeds_points):]
+    counters = [Counter() for i in range(len(clusters))]
+    for label, cluster in zip(predicted_labels, unknown_clusters):
+        counters[cluster][label] += 1
+
+    cluster_labels = map(lambda x: x.most_common(1).pop()[0], counters)
+    # print(cluster_labels)
+
+    merged_clusters = {}
+    for label, names in zip(cluster_labels, clusters):
+        if label not in merged_clusters:
+            merged_clusters[label] = []
+        merged_clusters[label] += names
+
+    result_clusters = merged_clusters.values()
+    print('merged left', len(result_clusters), 'clusters')
+    return result_clusters
+
+def merge_clusters_knn(seed_clusters, clusters):
+    seeds_points = []
+    seeds_labels = []
+    for family, points in seed_clusters.items():
+        seeds_points.append(centroid_of(points))
+        seeds_labels.append(family)
+
+    knn = KNeighborsClassifier(n_neighbors=1)
+    knn.fit(seeds_points, seeds_labels)
+
+    predicted_labels = []
+    for names in clusters:
+        points = points_of(names)
+        labels = knn.predict(points)
+        counter = Counter(labels)
+        label, cnt = counter.most_common(1).pop()
+        predicted_labels.append(label)
+
+    merged_clusters = {}
+    for label, names in zip(predicted_labels, clusters):
+        if label not in merged_clusters:
+            merged_clusters[label] = []
+        merged_clusters[label] += names
+
+    result_clusters = merged_clusters.values()
+    print('merged left', len(result_clusters), 'clusters')
+    return result_clusters
+
 def identical_clusters(A, B):
     if len(A) != len(B):
         return False
@@ -144,13 +238,11 @@ parser.add_option('--tag', action='store', default='', dest='TAG', help='tag')
 parser.add_option('--alg', action='store', default='labelPropagation', dest='ALG', help='the file algorithm description')
 parser.add_option('--components', action='store', type='int', default=100, dest='COMPONENTS', help='PCAs number of components')
 parser.add_option('--C', action='store', type='float', default=1.0, dest='C', help='splitting cluster parameter')
-parser.add_option('--true-centroid', action='store', default='false', dest='TRUE_CENTROID')
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
 alg = opts.ALG
 score_file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
-centroid_file = join('Rfam-seed', 'combined.' + tag + '.centroid.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 cluster_file = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.cluster')
 
 print('loading score file')
@@ -163,34 +255,28 @@ with open(score_file, 'r') as handle:
         name, scores = tokens[0], list(map(float, tokens[1:]))
         sequences[name] = np.array(scores)
 
+# get all seeds
+all_seeds = []
+for name, scores in sequences.items():
+    family = family_of(name)
+    if not is_seed(name):
+        continue
+    all_seeds.append((name, scores))
+
 # get seed clusters
 seed_clusters = {}
-for name, scores in sequences.items():
+for name, scores in all_seeds:
     family = family_of(name)
     if family not in seed_clusters:
         seed_clusters[family] = []
     seed_clusters[family].append(scores)
 
-if opts.TRUE_CENTROID == 'true':
-    print('loading centroids from file..')
-    seed_centroids = []
-    seed_centroids_families = []
-    with open(centroid_file, 'r') as handle:
-        handle.readline()
-        for line in handle:
-            line = line.strip()
-            tokens = line.split('\t')
-            name, scores = tokens[0], list(map(float, tokens[1:]))
-            family = name.split('_')[0]
-            seed_centroids_families.append(family)
-            seed_centroids.append(np.array(scores))
-else:
-    print('calculating centroids for seed clusters..')
-    seed_centroids = []
-    seed_centroids_families = []
-    for family, points in seed_clusters.items():
-        seed_centroids_families.append(family)
-        seed_centroids.append(centroid_of(points))
+print('calculating centroids for seed clusters..')
+seed_centroids = []
+seed_centroids_families = []
+for family, points in seed_clusters.items():
+    seed_centroids_families.append(family)
+    seed_centroids.append(centroid_of(points))
 
 closest_seed_centroid = BallTree(seed_centroids)
 
@@ -207,6 +293,8 @@ for round in range(10):
     last_split_clusters = splitted_clusters
     print('round:', round + 1)
     merged_clusters = merge_clusters(seed_centroids_families, closest_seed_centroid, splitted_clusters)
+    # merged_clusters = merge_clusters_label_propagation(seed_clusters, splitted_clusters)
+    # merged_clusters = merge_clusters_knn(seed_clusters, splitted_clusters)
     splitted_clusters = split_clusters(merged_clusters, C=opts.C)
 
     if identical_clusters(last_split_clusters, splitted_clusters):
