@@ -13,6 +13,7 @@ from functools import partial
 import sortedcontainers as sc
 from operator import itemgetter
 import time
+import utils
 
 '''
 Combine the rfam seeds with the given query
@@ -45,40 +46,7 @@ if opts.TYPE in {'high_density', 'random'}:
 path = 'Rfam-seed/db'
 query = opts.QUERY
 
-families = [f for f in listdir(path) if isdir(join(path, f))]
-
-def get_family_record_cnt(family):
-    db_file = join(path, family, family + '.db')
-    with open(db_file, 'r') as handle:
-        records = SeqIO.parse(handle, 'fasta')
-        names = set(map(lambda x: x.name, records))
-        record_cnt = len(names)
-    return record_cnt
-
-def check_family(family):
-    record_cnt = get_family_record_cnt(family)
-    bitscore_file = join(path, family, family + '.bitscore')
-    if not exists(bitscore_file):
-        return False
-    with open(bitscore_file, 'r') as handle:
-        # ignore the header line
-        handle.readline()
-        line_cnt = 0
-        for line in handle:
-            line = line.strip()
-
-            if len(line) == 0:
-                continue
-
-            line_cnt += 1
-            tokens = line.split('\t')
-            name, scores = tokens[0], tokens[1:]
-            if len(scores) != 1973:
-                return False
-
-        if line_cnt != record_cnt:
-            return False
-    return True
+families = utils.get_all_families()
 
 def get_header(family):
     file = join(path, family, family + '.bitscore')
@@ -108,7 +76,7 @@ def get_sequences_from_file(file, cols=None):
     return sequences, header_cols
 
 def get_seed_sequences(family, cols=None):
-    if not check_family(family):
+    if not utils.check_family(family):
         return []
 
     file = join(path, family, family + '.bitscore')
@@ -116,7 +84,7 @@ def get_seed_sequences(family, cols=None):
     return sequences
 
 def get_high_dense_seed_sequences(family, total=5, cols=None):
-    if not check_family(family):
+    if not utils.check_family(family):
         return []
 
     sequences = get_seed_sequences(family, cols)
@@ -148,14 +116,14 @@ def get_high_dense_seed_sequences(family, total=5, cols=None):
     return high_density_sequences
 
 def get_random_seed_sequences(family, total=5, cols=None):
-    if not check_family(family):
+    if not utils.check_family(family):
         return []
 
     sequences = get_seed_sequences(family, cols)
     return sample(sequences, min(total, len(sequences)))
 
 def get_centroid_seed_sequences(family, cols=None):
-    if not check_family(family):
+    if not utils.check_family(family):
         return []
 
     sequences = get_seed_sequences(family, cols)
@@ -178,10 +146,7 @@ print('query cols count:', len(query_header_cols))
 
 all_sequences += query_sequences
 
-pool = Pool()
-check_results = pool.map(check_family, families)
-pool.close()
-available_families = set(map(lambda fr: fr[0], filter(lambda fr: fr[1], zip(families, check_results))))
+available_families = set(utils.get_calculated_families())
 
 if opts.UNFORMATTED == 'true':
     print('unformatted is "true"')
@@ -230,14 +195,6 @@ elif opts.TYPE == 'random':
     print('sample will be taken randomly...', opts.SAMPLE, 'samples per families')
 elif opts.TYPE == 'closest':
     print('only closest:', opts.NN, 'neighbors seeds to queries will be taken...')
-
-# add centroids
-# always include centroid for each family (if not wanted can be filtered out)
-print('getting centroids for each family...')
-pool = Pool()
-get_centroid = partial(get_centroid_seed_sequences, cols=query_header_cols)
-all_sequences += pool.map(get_centroid, seed_families)
-pool.close()
 
 if opts.TYPE in {'random', 'high_density'}:
     for family in seed_families:
