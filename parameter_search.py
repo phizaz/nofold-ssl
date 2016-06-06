@@ -66,7 +66,7 @@ def run_evaluate(tag, query, alg):
     )
     (output, res, error) = utils.run_command(command)
 
-jobs_cnt = len(CRIPPLE) * len(NN_SEED) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA)
+jobs_cnt = len(CRIPPLE) * len(NN_SEED) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA) * len(C)
 print('total jobs:', jobs_cnt)
 
 job_i = 1
@@ -116,12 +116,13 @@ for cripple, nn_seed in product(CRIPPLE, NN_SEED):
                 'precision': precision,
                 'max_in_cluster': max_in_cluster
             })
+
 time_end = time.time()
 print('time elapsed:', time_end - time_start)
 
 # save results
 print('saving ...')
-outfile = 'parameter_search.csv'
+outfile = 'parameter_search.' + QUERY + '.csv'
 with open(outfile, 'w') as handle:
     fieldnames = ['sensitivity', 'precision', 'max_in_cluster', 'alg', 'alpha', 'nn_seed', 'kernel', 'gamma', 'c', 'cripple', 'query']
     writer = csv.DictWriter(handle, fieldnames=fieldnames)
