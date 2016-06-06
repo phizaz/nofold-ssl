@@ -16,14 +16,14 @@ QUERY = opts.QUERY
 
 # seeding
 CRIPPLE = opts.CRIPPLE
-NN_SEED = [1, 3, 5, 7, 13, 19]
+NN_SEED = [7, 13, 19, 25]
 LENGTH_NORM = ['false', 'true']
 
 # ssl
-ALG = ['labelPropagation', 'labelSpreading']
+ALG = ['labelSpreading']
 KERNEL = ['rbf']
 GAMMA = [0.5]
-ALPHA = np.linspace(0.1, 1.0, 10)
+ALPHA = np.linspace(0.4, 1.0, 7)
 
 # further
 # C = [1.1]
@@ -121,6 +121,7 @@ for nn_seed in NN_SEED:
                     'query': QUERY,
                     'cripple': cripple,
                     'nn_seed': nn_seed,
+                    'length_norm': length_norm,
                     'alg': alg,
                     'kernel': kernel,
                     'gamma': gamma,
@@ -138,7 +139,7 @@ print('time elapsed:', time_end - time_start)
 print('saving ...')
 outfile = 'parameter_search.' + QUERY + '.cripple' + str(CRIPPLE) + '.csv'
 with open(outfile, 'w') as handle:
-    fieldnames = ['sensitivity', 'precision', 'max_in_cluster', 'alg', 'alpha', 'nn_seed', 'kernel', 'gamma', 'c', 'cripple', 'query']
+    fieldnames = ['sensitivity', 'precision', 'max_in_cluster', 'alg', 'alpha', 'nn_seed', 'length_norm','kernel', 'gamma', 'c', 'cripple', 'query']
     writer = csv.DictWriter(handle, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(results)
