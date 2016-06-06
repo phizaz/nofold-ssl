@@ -17,6 +17,7 @@ QUERY = opts.QUERY
 # seeding
 CRIPPLE = opts.CRIPPLE
 NN_SEED = [1, 3, 5, 7, 13, 19]
+LENGTH_NORM = ['false', 'true']
 
 # ssl
 ALG = ['labelPropagation', 'labelSpreading']
@@ -44,10 +45,10 @@ def run_combine(query, cripple, nn_seed):
     print('')
     (output, res, error) = utils.run_command(command)
 
-def run_normalize(tag, query):
+def run_normalize(tag, query, length_norm):
     # python pca_normalize_bitscore.py --tag=rfam75id_embed-rename.cripple0 --query=rfam75id_embed-rename
-    command = 'python pca_normalize_bitscore.py --tag=%s --query=%s' % (
-        tag, query
+    command = 'python pca_normalize_bitscore.py --tag=%s --query=%s --lengthnorm=%s' % (
+        tag, query, length_norm
     )
     (output, res, error) = utils.run_command(command)
 
@@ -72,7 +73,7 @@ def run_evaluate(tag, query, alg):
     )
     (output, res, error) = utils.run_command(command)
 
-jobs_cnt = len(NN_SEED) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA) * len(C)
+jobs_cnt = len(NN_SEED) * len(LENGTH_NORM) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA) * len(C)
 print('total jobs:', jobs_cnt)
 
 job_i = 1
@@ -86,44 +87,49 @@ for nn_seed in NN_SEED:
 
     print('combining...')
     run_combine(QUERY, cripple, nn_seed)
-    print('normalizing...')
-    run_normalize(tag, QUERY)
 
-    for alg, kernel, gamma, alpha in product(ALG, KERNEL, GAMMA, ALPHA):
+    for length_norm in LENGTH_NORM:
+        print('length_norm:', length_norm)
+        print('normalizing...')
+        run_normalize(tag, QUERY, length_norm)
 
-        for c in C:
-            print('job:', job_i, 'of', jobs_cnt)
-            job_i += 1
-
+        for alg, kernel, gamma, alpha in product(ALG, KERNEL, GAMMA, ALPHA):
             print('cripple:', cripple, 'nn_seed:', nn_seed)
             print('alg:', alg, 'kernel:', kernel, 'gamma:', gamma, 'alpha:', alpha)
-            print('c:', c)
 
-            # run
-            print('running...')
+            print('running ssl...')
             run_ssl(tag, alg, kernel, gamma, alpha)
-            run_further(tag, alg, c)
-            run_evaluate(tag, QUERY, alg)
 
-            # get result
-            sensitivity, precision, max_in_cluster = get_result(tag, alg)
-            print('sense:', sensitivity)
-            print('preci:', precision)
-            print('max_in:', max_in_cluster)
+            for c in C:
+                print('job:', job_i, 'of', jobs_cnt)
+                job_i += 1
 
-            results.append({
-                'query': QUERY,
-                'cripple': cripple,
-                'nn_seed': nn_seed,
-                'alg': alg,
-                'kernel': kernel,
-                'gamma': gamma,
-                'alpha': alpha,
-                'c': c,
-                'sensitivity': sensitivity,
-                'precision': precision,
-                'max_in_cluster': max_in_cluster
-            })
+                print('c:', c)
+
+                # run
+                print('run further cluster...')
+                run_further(tag, alg, c)
+                run_evaluate(tag, QUERY, alg)
+
+                # get result
+                sensitivity, precision, max_in_cluster = get_result(tag, alg)
+                print('sense:', sensitivity)
+                print('preci:', precision)
+                print('max_in:', max_in_cluster)
+
+                results.append({
+                    'query': QUERY,
+                    'cripple': cripple,
+                    'nn_seed': nn_seed,
+                    'alg': alg,
+                    'kernel': kernel,
+                    'gamma': gamma,
+                    'alpha': alpha,
+                    'c': c,
+                    'sensitivity': sensitivity,
+                    'precision': precision,
+                    'max_in_cluster': max_in_cluster
+                })
 
 time_end = time.time()
 print('time elapsed:', time_end - time_start)
