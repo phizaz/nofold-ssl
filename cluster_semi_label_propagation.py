@@ -1,7 +1,8 @@
-from sklearn.semi_supervised import LabelPropagation
+from sklearn.semi_supervised import LabelPropagation, LabelSpreading
 from os.path import join
 import time
 from optparse import OptionParser
+import sys
 
 '''
 Semi-supervised clustering using label propagation
@@ -21,11 +22,13 @@ def family_of(name):
         return first
 
 parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
-parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
-parser.add_option("--kernel", action="store", default='rbf', dest="KERNEL", help="kernel")
-parser.add_option("--gamma", action="store", type='float', default=1, dest="GAMMA", help="rbf kernel's gamma")
-parser.add_option("--nn", action="store", type='int', default=19, dest="NN", help="knn's nearest neighbor parameter")
-parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
+parser.add_option('--tag', action='store', default='', dest='TAG', help='tag')
+parser.add_option('--alg', action='store', default='labelPropagation', dest='ALG', help='labelPropagation or labelSpreading ?')
+parser.add_option('--kernel', action='store', default='rbf', dest='KERNEL', help='kernel')
+parser.add_option('--gamma', action='store', type='float', default=1, dest='GAMMA', help='rbf kernel\'s gamma')
+parser.add_option('--nn', action='store', type='int', default=19, dest='NN', help='knn\'s nearest neighbor parameter')
+parser.add_option('--alpha', action='store', type='float', dest='ALPHA', help='clamping parameter for SSL model')
+parser.add_option('--components', action='store', type='int', default=100, dest='COMPONENTS', help='PCA\'s number of components')
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
@@ -63,14 +66,39 @@ family_to_int, int_to_family = create_map(map(family_of, names))
 
 print('having', len(points) + len(test_points) + len(centroid_points), 'points')
 
-print('training the label propagation')
+print('training SSL model...')
 start_time = time.time()
+
+# selecting alg
+if opts.ALG == 'labelPropagation':
+    print('using labelPropagation')
+    ssl_alg = LabelPropagation
+    if not opts.ALPHA:
+        opts.ALPHA = 1.0
+elif opts.ALG == 'labelSpreading':
+    print('using labelSpreading')
+    ssl_alg = LabelSpreading
+    if not opts.ALPHA:
+        opts.ALPHA = 0.2
+else:
+    print('wrong alg option')
+    sys.exit()
+
+print('using clamping of', opts.ALPHA)
+
+# selecting options
 if opts.KERNEL == 'knn':
+    print('using KNN kernel')
     print('n_neighbors:', opts.NN)
-    ssl = LabelPropagation(kernel='knn', n_neighbors=opts.NN)
+    ssl = ssl_alg(kernel='knn', n_neighbors=opts.NN, alpha=opts.ALPHA)
 elif opts.KERNEL == 'rbf':
+    print('using RBF kernel')
     print('gamma:', opts.GAMMA)
-    ssl = LabelPropagation(kernel='rbf', gamma=opts.GAMMA)
+    ssl = ssl_alg(kernel='rbf', gamma=opts.GAMMA, alpha=opts.ALPHA)
+else:
+    print('wrong kernel option')
+    sys.exit()
+
 X = points + test_points
 Y = list(map(lambda n: family_to_int[n], map(family_of, names))) + [-1 for i in range(len(test_names))]
 ssl.fit(X, Y)
@@ -85,7 +113,7 @@ for name, label in zip(test_names, labels):
     clusters[label].append(name)
 
 print('saving results to file')
-outfile = join('Rfam-seed', 'combined.' + tag + '.labelPropagation.cluster')
+outfile = join('Rfam-seed', 'combined.' + tag + '.' + opts.ALG + '.cluster')
 with open(outfile, 'w') as handle:
     for label, members in clusters.items():
         # handle.write(int_to_family[label] + '\n')

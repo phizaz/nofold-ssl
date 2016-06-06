@@ -49,3 +49,29 @@ def get_calculated_families():
     pool.close()
     available_families = sorted(map(lambda fr: fr[0], filter(lambda fr: fr[1], zip(families, check_results))))
     return available_families
+
+def run_command(command, verbose=False):
+    """
+    Run the given command using the system shell
+    *fix this to print output as it goes
+    """
+    import subprocess
+    error = False
+
+    if verbose == True:
+        print command
+        print ""
+
+    job = subprocess.Popen(command, bufsize=0, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    jobOutput = []
+    if verbose == True:
+        for line in job.stdout:
+            print "   ", line,
+            jobOutput.append(line)
+    else:
+        jobOutput = job.stdout.readlines()
+    result = job.wait()
+    if result != 0:
+        error = True
+
+    return (jobOutput, result, error)
