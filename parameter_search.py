@@ -5,11 +5,17 @@ import utils
 import csv
 import time
 import pprint
+from optparse import OptionParser
 
-QUERY = 'rfam75id_embed-rename'
+parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
+parser.add_option('--query', action='store', dest='QUERY', help='query')
+parser.add_option('--cripple', action='store', default=0, type='int', dest='CRIPPLE', help='cripple')
+(opts, args) = parser.parse_args()
+
+QUERY = opts.QUERY
 
 # seeding
-CRIPPLE = [0]
+CRIPPLE = opts.CRIPPLE
 NN_SEED = [1, 3, 5, 7, 13, 19]
 
 # ssl
@@ -66,15 +72,17 @@ def run_evaluate(tag, query, alg):
     )
     (output, res, error) = utils.run_command(command)
 
-jobs_cnt = len(CRIPPLE) * len(NN_SEED) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA) * len(C)
+jobs_cnt = len(NN_SEED) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA) * len(C)
 print('total jobs:', jobs_cnt)
 
 job_i = 1
 results = []
 time_start = time.time()
-for cripple, nn_seed in product(CRIPPLE, NN_SEED):
+for nn_seed in NN_SEED:
+    cripple = CRIPPLE
     nn_seed = int(nn_seed)
     tag = QUERY + '.cripple' + str(cripple)
+    print('tag:', tag)
 
     print('combining...')
     run_combine(QUERY, cripple, nn_seed)
@@ -122,7 +130,7 @@ print('time elapsed:', time_end - time_start)
 
 # save results
 print('saving ...')
-outfile = 'parameter_search.' + QUERY + '.csv'
+outfile = 'parameter_search.' + QUERY + '.cripple' + str(CRIPPLE) + '.csv'
 with open(outfile, 'w') as handle:
     fieldnames = ['sensitivity', 'precision', 'max_in_cluster', 'alg', 'alpha', 'nn_seed', 'kernel', 'gamma', 'c', 'cripple', 'query']
     writer = csv.DictWriter(handle, fieldnames=fieldnames)
