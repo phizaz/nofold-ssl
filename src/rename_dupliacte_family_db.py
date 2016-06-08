@@ -2,7 +2,7 @@ from os.path import join, isdir
 from os import listdir
 from Bio import SeqIO
 
-path = 'Rfam-seed/db'
+path = '../Rfam-seed/db'
 families = [f for f in listdir(path) if isdir(join(path, f))]
 
 def rename_family_db(family):

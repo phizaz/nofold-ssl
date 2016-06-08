@@ -14,7 +14,7 @@ for line in open('Rfam.seed'):
     if state is None:
         if line.find('# STOCKHOLM 1.0') >= 0:
             if buffer is not None:
-                write(RF, buffer, 'Rfam-seed/stockholm/' + RF)
+                write(RF, buffer, '../Rfam-seed/stockholm/' + RF)
             buffer = []
             state = 'find rf'
 

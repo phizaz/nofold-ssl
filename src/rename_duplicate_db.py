@@ -24,6 +24,6 @@ def rename_db(db_file):
     with open(db_file, 'w') as handle:
         SeqIO.write(results, handle, 'fasta')
 
-rename_db(join('Rfam-seed', 'query', 'query.db'))
-rename_db(join('Rfam-seed', 'query2', 'query2.db'))
-rename_db(join('Rfam-seed', 'query3', 'query3.db'))
+rename_db(join('../quries', 'query', 'query.db'))
+rename_db(join('../quries', 'query2', 'query2.db'))
+rename_db(join('../quries', 'query3', 'query3.db'))

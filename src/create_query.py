@@ -93,5 +93,5 @@ for fam in selected_fams:
         all_embed_records += embed_records
 
 print('saving..')
-save_records(join('quries', query, query + '.db'), all_embed_records)
+save_records(join('../quries', query, query + '.db'), all_embed_records)
 print('done..')

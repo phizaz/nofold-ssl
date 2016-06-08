@@ -6,8 +6,8 @@ from Bio import SeqIO
 families = utils.get_calculated_families()
 
 def count(family):
-    bitscore_file = join('Rfam-seed', 'db', family, family + '.bitscore')
-    db_file = join('Rfam-seed', 'db', family, family + '.db')
+    bitscore_file = join('../Rfam-seed', 'db', family, family + '.bitscore')
+    db_file = join('../Rfam-seed', 'db', family, family + '.db')
 
     with open(db_file, 'r') as handle:
         records = list(SeqIO.parse(handle, 'fasta'))

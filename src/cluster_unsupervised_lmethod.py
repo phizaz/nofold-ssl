@@ -13,7 +13,7 @@ parser.add_option("--components", action="store", type='int', default=100, dest=
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
-file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
+file = join('../results', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 
 names = []
 points = []
@@ -38,7 +38,7 @@ labels = agg.labels_
 cluster_cnt = max(labels) + 1
 
 print('saving results to file')
-outfile = join('Rfam-seed', 'combined.' + tag + '.lmethod.' + opts.LINKAGE + '.cluster')
+outfile = join('../results', 'combined.' + tag + '.lmethod.' + opts.LINKAGE + '.cluster')
 clusters = [[] for i in range(cluster_cnt)]
 for name, label in zip(names, labels):
     clusters[label].append(name)

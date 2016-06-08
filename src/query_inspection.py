@@ -34,7 +34,7 @@ parser.add_option("--components", action="store", type='int', default=100, dest=
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
-file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
+file = join('../results', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 
 names = []
 points = []

@@ -5,7 +5,7 @@ from sklearn.decomposition import PCA
 visualization using 2d scatter plot with PCA is not gonna give us anything.
 '''
 
-file = 'Rfam-seed/combined.zNorm.pcNorm100.bitscore'
+file = '../results/combined.zNorm.pcNorm100.bitscore'
 
 all_names = []
 all_scores = []

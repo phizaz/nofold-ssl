@@ -8,7 +8,7 @@ import sys
 add successfully computed family
 '''
 
-path = 'Rfam-seed/db'
+path = '../Rfam-seed/db'
 
 def get_family_record_cnt(family):
     db_file = join(path, family, family + '.db')

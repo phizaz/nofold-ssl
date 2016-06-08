@@ -3,7 +3,7 @@ from os.path import isfile, join
 from Bio import SeqIO
 from multiprocessing.dummy import Pool as ThreadPool
 
-root = 'Rfam-seed/fasta'
+root = '../Rfam-seed/fasta'
 
 files = [f for f in os.listdir(root) if isfile(join(root, f)) and f != '.DS_Store']
 
@@ -30,5 +30,5 @@ pool = ThreadPool(processes=POOL_SIZE)
 output = pool.map(get_records, files)
 records = [record for each in output for record in each]
 
-with open('Rfam-seed/Rfam-seed.db', 'w') as file:
+with open('../Rfam-seed/Rfam-seed.db', 'w') as file:
     SeqIO.write(records, file, 'fasta')

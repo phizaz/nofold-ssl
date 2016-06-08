@@ -42,8 +42,8 @@ def prepare_normalizer():
                 results.append(dict(zip(cols, digits)))
         return results
 
-    means_file = join('norm', 'varlen2.scale_means.txt')
-    sds_file = join('norm', 'varlen2.scale_sds.txt')
+    means_file = join('../norm', 'varlen2.scale_means.txt')
+    sds_file = join('../norm', 'varlen2.scale_sds.txt')
 
     db_means = read_file(means_file)
     db_sds = read_file(sds_file)
@@ -88,7 +88,7 @@ def prepare_normalizer():
     return supervised_normalize
 
 def get_header(family):
-    path = 'Rfam-seed/db'
+    path = '../Rfam-seed/db'
     file = join(path, family, family + '.bitscore')
     with open(file, 'r') as handle:
         header = handle.readline().strip()
@@ -104,7 +104,7 @@ parser.add_option("--components", action="store", type='int', default=100, dest=
 file_name = 'combined.' + opts.TAG + '.bitscore'
 no_extension_name = '.'.join(file_name.split('.')[:-1])
 print('no_extension_name:', no_extension_name)
-file = join('Rfam-seed', file_name)
+file = join('../results', file_name)
 
 all_scores = []
 all_names = []
@@ -141,7 +141,7 @@ if opts.LENGTH_NORM == 'true':
 
         length_name = {}
 
-        db_file = join('Rfam-seed', opts.QUERY, opts.QUERY + '.db')
+        db_file = join('../quries', opts.QUERY, opts.QUERY + '.db')
         files = [db_file]
 
         all_families = set()
@@ -153,7 +153,7 @@ if opts.LENGTH_NORM == 'true':
         print('families involved:', all_families)
 
         for family in all_families:
-            file = join('Rfam-seed', 'db', family, family + '.db')
+            file = join('../Rfam-seed', 'db', family, family + '.db')
             files.append(file)
 
         for file in files:
@@ -174,7 +174,7 @@ if opts.LENGTH_NORM == 'true':
         for col, digit in zip(cols, scores):
             row.append(supervised_normalize(col, length_of(name), digit))
         z_length_normalized_scores.append(row)
-    save_file(full_header, all_names, z_length_normalized_scores, join('Rfam-seed', no_extension_name + '.zNorm.bitscore'))
+    save_file(full_header, all_names, z_length_normalized_scores, join('../results', no_extension_name + '.zNorm.bitscore'))
     # patch the score back, and feed it to the next step
     all_scores = z_length_normalized_scores
 
@@ -184,7 +184,7 @@ components = opts.COMPONENTS
 header = '\t'.join(['PC' + str(i + 1) for i in range(components)])
 pca = PCA(n_components=components)
 pca_scores = pca.fit_transform(all_scores)
-save_file(header, all_names, pca_scores, join('Rfam-seed', no_extension_name + '.pcNorm' + str(components) + '.bitscore'))
+save_file(header, all_names, pca_scores, join('../results', no_extension_name + '.pcNorm' + str(components) + '.bitscore'))
 
 # normalize the PC scores
 print('Z-normalizing for PC' + str(opts.COMPONENTS))
@@ -192,4 +192,4 @@ pc_normalized_scores = []
 for col in pca_scores.T:
     pc_normalized_scores.append(normalize(col))
 pc_normalized_scores = np.array(pc_normalized_scores).T
-save_file(header, all_names, pc_normalized_scores, join('Rfam-seed', no_extension_name + '.pcNorm' + str(components) + '.zNorm.bitscore'))
+save_file(header, all_names, pc_normalized_scores, join('../results', no_extension_name + '.pcNorm' + str(components) + '.zNorm.bitscore'))

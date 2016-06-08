@@ -32,7 +32,7 @@ parser.add_option('--components', action='store', type='int', default=100, dest=
 (opts, args) = parser.parse_args()
 
 tag = opts.TAG
-file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
+file = join('../results', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
 
 names = []
 points = []
@@ -113,7 +113,7 @@ for name, label in zip(test_names, labels):
     clusters[label].append(name)
 
 print('saving results to file')
-outfile = join('Rfam-seed', 'combined.' + tag + '.' + opts.ALG + '.cluster')
+outfile = join('../results', 'combined.' + tag + '.' + opts.ALG + '.cluster')
 with open(outfile, 'w') as handle:
     for label, members in clusters.items():
         # handle.write(int_to_family[label] + '\n')
@@ -121,7 +121,7 @@ with open(outfile, 'w') as handle:
             handle.write(name + ' ')
         handle.write('\n')
 
-centroid_file = join('Rfam-seed', 'combined.' + tag + '.centroid.pcNorm' + str(len(bitscore_header)) + '.zNorm.bitscore')
+centroid_file = join('../results', 'combined.' + tag + '.centroid.pcNorm' + str(len(bitscore_header)) + '.zNorm.bitscore')
 with open(centroid_file, 'w') as handle:
     handle.write('\t'.join(bitscore_header) + '\n')
     for name, scores in zip(centroid_names, centroid_points):

@@ -43,7 +43,7 @@ if opts.TYPE in {'high_density', 'random'}:
         print('sample count is not proper')
         sys.exit()
 
-path = 'Rfam-seed/db'
+path = '../Rfam-seed/db'
 query = opts.QUERY
 
 families = utils.get_all_families()
@@ -140,7 +140,7 @@ def get_centroid_seed_sequences(family, cols=None):
 all_sequences = []
 
 # get scores from the query
-query_file = join('Rfam-seed', query, query + '.bitscore')
+query_file = join('../quries', query, query + '.bitscore')
 query_sequences, query_header_cols = get_sequences_from_file(query_file)
 print('query cols count:', len(query_header_cols))
 
@@ -150,11 +150,11 @@ available_families = set(utils.get_calculated_families())
 
 if opts.UNFORMATTED == 'true':
     print('unformatted is "true"')
-    print('taking from all we have')
+    print('taking from all we have, dont care for cripples')
     seed_families = available_families
 else:
     # get querying families, not having families
-    query_database = join('Rfam-seed', query, query + '.db')
+    query_database = join('../quries', query, query + '.db')
     query_families = set()
     with open(query_database, 'r') as handle:
         records = SeqIO.parse(handle, 'fasta')
@@ -277,9 +277,9 @@ else:
 
 # save to file
 if opts.UNFORMATTED == 'true':
-    outfile = 'Rfam-seed/combined.' + query + '.bitscore'
+    outfile = '../results/combined.' + query + '.bitscore'
 else:
-    outfile = 'Rfam-seed/combined.' + query + '.cripple' + str(cripple_family_count) + '.bitscore'
+    outfile = '../results/combined.' + query + '.cripple' + str(cripple_family_count) + '.bitscore'
 with open(outfile, 'w') as handle:
     handle.write('\t'.join(query_header_cols) + '\n')
     for name, scores in all_sequences:

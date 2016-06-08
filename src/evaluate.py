@@ -90,9 +90,9 @@ parser.add_option('--nofold', action='store', default='false', dest='NOFOLD', he
 (opts, args) = parser.parse_args()
 
 if not opts.FILE:
-    opts.FILE = join('Rfam-seed', 'combined.' + opts.TAG + '.' + opts.ALG + '.refined.cluster')
+    opts.FILE = join('../results', 'combined.' + opts.TAG + '.' + opts.ALG + '.refined.cluster')
 
-opts.DB = join('Rfam-seed', opts.QUERY, opts.QUERY + '.db')
+opts.DB = join('../quries', opts.QUERY, opts.QUERY + '.db')
 
 print('evaluating form file:', opts.FILE)
 print('database file:', opts.DB)

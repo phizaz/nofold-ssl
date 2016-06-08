@@ -242,8 +242,8 @@ parser.add_option('--C', action='store', type='float', default=1.0, dest='C', he
 
 tag = opts.TAG
 alg = opts.ALG
-score_file = join('Rfam-seed', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
-cluster_file = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.cluster')
+score_file = join('../results', 'combined.' + tag + '.pcNorm' + str(opts.COMPONENTS) + '.zNorm.bitscore')
+cluster_file = join('../results', 'combined.' + tag + '.' + alg + '.cluster')
 
 print('loading score file')
 sequences = {}
@@ -303,7 +303,7 @@ for round in range(10):
 final_clusters = splitted_clusters
 
 print('saving final cluster to file...')
-outfile = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.refined.cluster')
+outfile = join('../results', 'combined.' + tag + '.' + alg + '.refined.cluster')
 with open(outfile, 'w') as handle:
     for members in final_clusters:
         for name in members:

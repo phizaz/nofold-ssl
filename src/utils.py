@@ -3,7 +3,7 @@ from os import listdir
 from Bio import SeqIO
 from multiprocessing.pool import Pool
 
-path = 'Rfam-seed/db'
+path = '../Rfam-seed/db'
 
 def get_family_record_cnt(family):
     db_file = join(path, family, family + '.db')

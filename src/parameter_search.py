@@ -30,7 +30,7 @@ ALPHA = np.linspace(0.4, 1.0, 7)
 C = np.linspace(1.0, 1.3, 4)
 
 def get_result(tag, alg):
-    path = join('Rfam-seed', 'combined.' + tag + '.' + alg + '.refined.cluster.evaluation')
+    path = join('../results', 'combined.' + tag + '.' + alg + '.refined.cluster.evaluation')
     with open(path, 'r') as handle:
         lines = handle.readlines()
         scores = map(float, lines[-1].strip().split())

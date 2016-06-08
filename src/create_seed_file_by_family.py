@@ -3,7 +3,7 @@ from os.path import isfile, join
 from Bio import SeqIO
 from multiprocessing.dummy import Pool as ThreadPool
 
-root = 'Rfam-seed/fasta'
+root = '../Rfam-seed/fasta'
 
 files = [f for f in os.listdir(root) if isfile(join(root, f)) and f != '.DS_Store']
 
@@ -24,7 +24,7 @@ def worker(file):
             record.description = ''
             alt_records.append(record)
 
-    output_db = join('Rfam-seed', 'db', family, family + '.db')
+    output_db = join('../Rfam-seed', 'db', family, family + '.db')
     # create dir along the path if not exists
     db_path = os.path.dirname(output_db)
     if not os.path.exists(db_path):
