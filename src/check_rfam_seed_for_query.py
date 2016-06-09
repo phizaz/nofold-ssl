@@ -8,7 +8,7 @@ import utils
 Get the families (that is required by the query) that have no bitscores (not calculated yet!)
 '''
 
-path = '../quries/query/query.db'
+path = '../queries/query/query.db'
 
 def family_of(name):
     first = name.split('_')[0]

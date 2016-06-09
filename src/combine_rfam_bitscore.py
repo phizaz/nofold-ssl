@@ -140,7 +140,7 @@ def get_centroid_seed_sequences(family, cols=None):
 all_sequences = []
 
 # get scores from the query
-query_file = join('../quries', query, query + '.bitscore')
+query_file = join('../queries', query, query + '.bitscore')
 query_sequences, query_header_cols = get_sequences_from_file(query_file)
 print('query cols count:', len(query_header_cols))
 
@@ -154,7 +154,7 @@ if opts.UNFORMATTED == 'true':
     seed_families = available_families
 else:
     # get querying families, not having families
-    query_database = join('../quries', query, query + '.db')
+    query_database = join('../queries', query, query + '.db')
     query_families = set()
     with open(query_database, 'r') as handle:
         records = SeqIO.parse(handle, 'fasta')

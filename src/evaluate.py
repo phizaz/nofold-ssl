@@ -92,7 +92,7 @@ parser.add_option('--nofold', action='store', default='false', dest='NOFOLD', he
 if not opts.FILE:
     opts.FILE = join('../results', 'combined.' + opts.TAG + '.' + opts.ALG + '.refined.cluster')
 
-opts.DB = join('../quries', opts.QUERY, opts.QUERY + '.db')
+opts.DB = join('../queries', opts.QUERY, opts.QUERY + '.db')
 
 print('evaluating form file:', opts.FILE)
 print('database file:', opts.DB)

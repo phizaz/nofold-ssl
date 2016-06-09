@@ -1,7 +1,7 @@
 from os.path import join, basename, dirname, exists
 from os import makedirs
 
-file = '../quries/rfam75id_dinuc3000/rfam75id_dinuc3000.bitscore'
+file = '../queries/rfam75id_dinuc3000/rfam75id_dinuc3000.bitscore'
 
 output = []
 with open(file, 'r') as handle:

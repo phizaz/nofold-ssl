@@ -141,7 +141,7 @@ if opts.LENGTH_NORM == 'true':
 
         length_name = {}
 
-        db_file = join('../quries', opts.QUERY, opts.QUERY + '.db')
+        db_file = join('../queries', opts.QUERY, opts.QUERY + '.db')
         files = [db_file]
 
         all_families = set()

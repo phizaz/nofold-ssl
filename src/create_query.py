@@ -226,8 +226,8 @@ all_bg_records = generate_background(all_raw_records, 3 * len(all_sampled_record
 print(len(all_bg_records))
 
 print('saving..')
-save_records(join('../quries', query, query + '.db'), all_sampled_records)
-save_records(join('../quries', query + '_embed', query + '_embed.db'), all_embed_records)
-save_records(join('../quries', query + '_bg', query + '_bg.db'), all_sampled_records + all_bg_records)
-save_records(join('../quries', query + '_embed_bg', query + '_embed_bg' + '.db'), all_embed_records + all_bg_records)
+save_records(join('../queries', query, query + '.db'), all_sampled_records)
+save_records(join('../queries', query + '_embed', query + '_embed.db'), all_embed_records)
+save_records(join('../queries', query + '_bg', query + '_bg.db'), all_sampled_records + all_bg_records)
+save_records(join('../queries', query + '_embed_bg', query + '_embed_bg' + '.db'), all_embed_records + all_bg_records)
 print('done..')
