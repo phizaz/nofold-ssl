@@ -4,7 +4,7 @@ import utils
 import gzip
 from Bio import SeqIO
 from Bio.Seq import Seq
-from Bio.Alphabet import SingleLetterAlphabet, RNAAlphabet, DNAAlphabet
+from Bio.Alphabet import SingleLetterAlphabet
 from Bio.SeqRecord import SeqRecord
 from collections import Counter
 from random import randint, sample
@@ -129,7 +129,7 @@ def get_length_distribution(strings):
     counter = Counter(map(len, strings))
     return dict(zip(counter.keys(), normalize(counter.values())))
 
-def generate_background(records, generate_size):
+def generate_background(records, generate_size, namespace='bg'):
     sequences = map(seq_of, records)
     length_distribution = get_length_distribution(sequences)
     long_sequence = ''.join(sequences)
@@ -154,7 +154,7 @@ def generate_background(records, generate_size):
     print('generating background...')
     results = []
     for i in range(generate_size):
-        name = 'bg_' + str(i + 1)
+        name = namespace + str(i + 1)
         length = weighted_random(1, length_distribution.keys(), length_distribution.values())[0]
         print('seq:', i, 'len:', length)
         seq = generate_background_each(length, begin_prob, trans_prob)
@@ -180,6 +180,10 @@ def save_records(file, records):
     with open(file, 'w') as handle:
         SeqIO.write(seq_records, handle, 'fasta')
 
+def records_of(fam):
+    with gzip.open(join(rfam_path, fam + '.fa.gz')) as handle:
+        return list(SeqIO.parse(handle, 'fasta'))
+
 query = 'fam40_typedistributed'
 
 # a =transition_freq('RYKMSWBDHNVN')
@@ -192,42 +196,40 @@ selected_fams = ['RF01848', 'RF02044', 'RF00727', 'RF02402', 'RF01607', 'RF01687
 total_seq_cnt = 1000
 seq_per_fam = int(total_seq_cnt / len(selected_fams))
 
-all_embed_records = []
 all_raw_records = []
 all_sampled_records = []
+all_embed_records = []
+all_embed_sampled_records = []
+
+# create name map database
+name_map = dict()
 for fam in selected_fams:
-    print('fam:', fam)
-    names_taken = Counter()
-    with gzip.open(join(rfam_path, fam + '.fa.gz')) as handle:
-        raw_records = map(lambda x: (fam, x.name, str(x.seq)),SeqIO.parse(handle, 'fasta'))
-        print('size:', len(raw_records))
+    raw_records = []
+    for i, record in enumerate(records_of(fam)):
+        name = fam + '_' + ('%05d' % i)
+        name_map[name] = record.name
 
-        all_raw_records += raw_records
+        raw_records.append((fam, name, str(record.seq)))
+    all_raw_records += raw_records
 
-        sampled_records = sample(raw_records, seq_per_fam)
-        print(sampled_records)
+    sampled_records = sample(raw_records, seq_per_fam)
+    embed_records = embed(raw_records, (10, 50))
+    embed_sampled_records = sample(embed_records, seq_per_fam)
 
-        all_sampled_records += sampled_records
+    all_sampled_records += sampled_records
+    all_embed_records += embed_records
+    all_embed_sampled_records += embed_sampled_records
 
-        records = []
-        for _, name, seq in sampled_records:
-            decorated_name = decorate_name(fam, name)
-            names_taken[decorated_name] += 1
-
-            if names_taken[decorated_name] > 1:
-                decorated_name += ':' + str(names_taken[decorated_name])
-
-            records.append((fam, decorated_name, seq))
-
-        embed_records = embed(records, (10, 50))
-        all_embed_records += embed_records
-
-all_bg_records = generate_background(all_raw_records, 3 * len(all_sampled_records))
-print(len(all_bg_records))
+all_bg_records = generate_background(all_raw_records, 3 * len(all_sampled_records), 'bg')
+all_embed_bg_records = generate_background(all_embed_records, 3 * len(all_embed_sampled_records), 'bg_embed')
 
 print('saving..')
 save_records(join('../queries', query, query + '.db'), all_sampled_records)
-save_records(join('../queries', query + '_embed', query + '_embed.db'), all_embed_records)
-save_records(join('../queries', query + '_bg', query + '_bg.db'), all_sampled_records + all_bg_records)
-save_records(join('../queries', query + '_embed_bg', query + '_embed_bg' + '.db'), all_embed_records + all_bg_records)
+save_records(join('../queries', query + '_embed', query + '_embed.db'), all_embed_sampled_records)
+save_records(join('../queries', query + '_bg', query + '_bg.db'), all_bg_records)
+save_records(join('../queries', query + '_embed_bg', query + '_embed_bg' + '.db'), all_embed_bg_records)
 print('done..')
+
+with open(join('../queries', query + '.namemap'), 'w') as handle:
+    for key, val in name_map.items():
+        handle.write(key + ' ' + val + '\n')
