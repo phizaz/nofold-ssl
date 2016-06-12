@@ -55,25 +55,10 @@ def get_header(family):
     return header
 
 def get_sequences_from_file(file, cols=None):
-    sequences = []
-    with open(file, 'r') as handle:
-        # discard the header
-        header_cols = handle.readline().strip().split('\t')
-        header_cols_idx = [i for i in range(len(header_cols))]
-        map_header_idx = dict(zip(header_cols, header_cols_idx))
-
-        if cols is None:
-            cols = header_cols
-
-        only_cols = [col for col in cols if col in map_header_idx]
-        only_cols_idx = set(map_header_idx[col] for col in only_cols)
-        for line in handle:
-            line = line.strip()
-            tokens = line.split('\t')
-            name, scores = tokens[0], list(map(float, tokens[1:]))
-            only_scores = [scores[i] for i in range(len(scores)) if i in only_cols_idx]
-            sequences.append((name, only_scores))
-    return sequences, header_cols
+    names, points, header = utils.get_bitscores(file)
+    if not cols is None:
+        points, header = utils.retain_bitscore_cols(cols, points, header)
+    return list(zip(names, points)), header
 
 def get_seed_sequences(family, cols=None):
     if not utils.check_family(family):
@@ -142,9 +127,8 @@ all_sequences = []
 # get scores from the query
 query_file = join('../queries', query, query + '.bitscore')
 query_sequences, query_header_cols = get_sequences_from_file(query_file)
-print('query cols count:', len(query_header_cols))
-
 all_sequences += query_sequences
+print('query cols count:', len(query_header_cols))
 
 available_families = set(utils.get_calculated_families())
 
@@ -154,13 +138,7 @@ if opts.UNFORMATTED == 'true':
     seed_families = available_families
 else:
     # get querying families, not having families
-    query_database = join('../queries', query, query + '.db')
-    query_families = set()
-    with open(query_database, 'r') as handle:
-        records = SeqIO.parse(handle, 'fasta')
-        for record in records:
-            family = record.name.split('_')[0][1:]
-            query_families.add(family)
+    query_families = utils.get_query_families(query)
 
     print('families required by the query:', len(query_families))
     not_having_families = query_families - available_families
@@ -289,3 +267,6 @@ with open(outfile, 'w') as handle:
         handle.write('\n')
 
 print('total database size:', len(all_sequences))
+
+
+

@@ -2,7 +2,9 @@ from os.path import join, basename, dirname, exists
 from os import makedirs
 from Bio import SeqIO
 
-file = '../queries/rfam75id_dinuc3000/rfam75id_dinuc3000.db'
+# file = '../queries/fam40_typedistributed_plain_bg/fam40_typedistributed_plain_bg.db'
+query = 'fam40_typedistributed_bg'
+file = join('../queries', query, query + '.db')
 
 with open(file, 'r') as handle:
     records = list(SeqIO.parse(handle, 'fasta'))

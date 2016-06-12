@@ -3,7 +3,7 @@ from itertools import chain
 from os.path import join
 from Bio import SeqIO
 
-queries = ['fam40_typedistributed', 'fam40_typedistributed_bg']
+queries = ['fam40_typedistributed-rename', 'fam40_typedistributed_bg-rename']
 name = 'fam40_typedistributed_plain_bg'
 
 def combine(queries):

@@ -206,7 +206,7 @@ name_map = dict()
 for fam in selected_fams:
     raw_records = []
     for i, record in enumerate(records_of(fam)):
-        name = fam + '_' + ('%05d' % i)
+        name = 'Q' + fam + '_' + ('%05d' % i)
         name_map[name] = record.name
 
         raw_records.append((fam, name, str(record.seq)))
