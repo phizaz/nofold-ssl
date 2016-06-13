@@ -39,7 +39,7 @@ def qfam_of(name):
     # return the family part not including 'Q'
     return fam[1:]
 
-def check_bitscore(bitscore_file, db_file):
+def check_bitscore(bitscore_file, db_file, strict=True):
     cm_count = len(get_cm_paths())
     record_cnt = get_record_count(db_file)
     if not exists(bitscore_file):
@@ -57,17 +57,18 @@ def check_bitscore(bitscore_file, db_file):
             line_cnt += 1
             tokens = line.split('\t')
             name, scores = tokens[0], tokens[1:]
-            if len(scores) != cm_count:
+
+            if strict and len(scores) != cm_count:
                 return False
 
         if line_cnt != record_cnt:
             return False
     return True
 
-def check_query(query):
+def check_query(query, strict=True):
     db_file = join('../queries', query, query + '.db')
     bitscore_file = join('../queries', query, query + '.bitscore')
-    return check_bitscore(bitscore_file, db_file)
+    return check_bitscore(bitscore_file, db_file, strict=strict)
 
 def check_family(family):
     db_file = join(path, family, family + '.db')

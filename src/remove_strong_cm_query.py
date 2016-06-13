@@ -51,7 +51,6 @@ for fam, (names, points) in by_family.items():
 print(len(strong_cms))
 print(strong_cms)
 
-
 print('writing..')
 out_path = join('../queries', out_query)
 utils.make_path(out_path)
