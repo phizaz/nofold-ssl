@@ -1,9 +1,13 @@
 from os.path import join, basename, dirname, exists
 from os import makedirs
 from Bio import SeqIO
+from argparse import ArgumentParser
 
-# file = '../queries/fam40_typedistributed_plain_bg/fam40_typedistributed_plain_bg.db'
-query = 'fam40_typedistributed_bg'
+parser = ArgumentParser(description='rename rna database')
+parser.add_argument('--query', action='store', required=True)
+args = parser.parse_args()
+
+query = args.query
 file = join('../queries', query, query + '.db')
 
 with open(file, 'r') as handle:

@@ -1,8 +1,12 @@
 from os.path import join, basename, dirname, exists
 from os import makedirs
+from argparse import ArgumentParser
 
-# file = '../queries/fam40_typedistributed_plain_bg/fam40_typedistributed_plain_bg.bitscore'
-query = 'fam40_typedistributed_bg'
+parser = ArgumentParser(description='rename rna bitscore')
+parser.add_argument('--query', action='store', required=True)
+args = parser.parse_args()
+
+query = args.query
 file = join('../queries', query, query + '.bitscore')
 
 output = []
