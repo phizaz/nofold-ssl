@@ -16,7 +16,31 @@ def get_record_count(db_file):
         record_cnt = len(names)
     return record_cnt
 
+def get_cm_paths():
+    path = join('../models', 'rfam_cms')
+    models = filter(lambda x: 'cm' in x, listdir(path))
+    full_path = map(lambda x: join(path, x), models)
+    return list(full_path)
+
+def is_bg(name):
+    bg_keywords = ['dinucShuff', 'bg']
+    return any(keyword in name for keyword in bg_keywords)
+
+def fam_of(name):
+    fam = name.split('_')[0]
+    if fam[:2] != 'RF':
+        raise ValueError('not a seed sequenec, not RF')
+    return fam
+
+def qfam_of(name):
+    fam = name.split('_')[0]
+    if fam[:2] != 'QR':
+        raise ValueError('not a query sequence, not QRF')
+    # return the family part not including 'Q'
+    return fam[1:]
+
 def check_bitscore(bitscore_file, db_file):
+    cm_count = len(get_cm_paths())
     record_cnt = get_record_count(db_file)
     if not exists(bitscore_file):
         return False
@@ -33,7 +57,7 @@ def check_bitscore(bitscore_file, db_file):
             line_cnt += 1
             tokens = line.split('\t')
             name, scores = tokens[0], tokens[1:]
-            if len(scores) != 1973:
+            if len(scores) != cm_count:
                 return False
 
         if line_cnt != record_cnt:
@@ -69,23 +93,6 @@ def get_records(db_file):
 
 def get_query_records(query):
     return get_records(join('../queries', query, query + '.db'))
-
-def is_bg(name):
-    bg_keywords = ['dinucShuff', 'bg']
-    return any(keyword in name for keyword in bg_keywords)
-
-def fam_of(name):
-    fam = name.split('_')[0]
-    if fam[:2] != 'RF':
-        raise ValueError('not a seed sequenec, not RF')
-    return fam
-
-def qfam_of(name):
-    fam = name.split('_')[0]
-    if fam[:2] != 'QR':
-        raise ValueError('not a query sequence, not QRF')
-    # return the family part not including 'Q'
-    return fam[1:]
 
 def get_query_families(query):
     families = set()
