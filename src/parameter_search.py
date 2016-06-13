@@ -16,18 +16,18 @@ QUERY = opts.QUERY
 
 # seeding
 CRIPPLE = opts.CRIPPLE
-NN_SEED = [7, 13, 19, 25]
+NN_SEED = [25]
 LENGTH_NORM = ['false', 'true']
 
 # ssl
-ALG = ['labelSpreading']
+ALG = ['labelSpreading', 'labelPropagation']
 KERNEL = ['rbf']
 GAMMA = [0.5]
 ALPHA = np.linspace(0.4, 1.0, 7)
 
 # further
 # C = [1.1]
-C = np.linspace(1.0, 1.3, 4)
+C = np.linspace(1.0, 1.5, 6)
 
 def get_result(tag, alg):
     path = join('../results', 'combined.' + tag + '.' + alg + '.refined.cluster.evaluation')

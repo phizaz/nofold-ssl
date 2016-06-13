@@ -2,9 +2,15 @@ import utils
 from itertools import chain
 from os.path import join
 from Bio import SeqIO
+from argparse import ArgumentParser
 
-queries = ['fam40_typedistributed-rename', 'fam40_typedistributed_bg-rename']
-name = 'fam40_typedistributed_plain_bg'
+parser = ArgumentParser(description='rename rna bitscore')
+parser.add_argument('--query', action='store', required=True)
+parser.add_argument('--output', action='store', required=True)
+args = parser.parse_args()
+
+queries = args.query.strip().split(',')
+name = args.output
 
 def combine(queries):
     for query in queries:

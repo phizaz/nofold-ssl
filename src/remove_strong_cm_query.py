@@ -4,10 +4,16 @@ from operator import itemgetter
 from functools import partial
 import numpy as np
 from normalizer_length import LengthNormalizer
+from argparse import ArgumentParser
 import sys
 
-query = 'fam40_typedistributed_plain_bg'
-out_query = 'fam40_typedistributed_plain_bg_weak'
+parser = ArgumentParser(description='rename rna bitscore')
+parser.add_argument('--query', action='store', required=True)
+parser.add_argument('--output', action='store', required=True)
+args = parser.parse_args()
+
+query = args.query
+out_query = args.output
 
 if not utils.check_query(query):
     print('query is not ready')
@@ -23,7 +29,7 @@ print('separate by family')
 by_family = {}
 for name, point in zip(ori_names, points):
     # skip backgrounds
-    if name.find('_') == -1:
+    if name.find('bg') != -1:
         continue
 
     fam = name.split('_')[0]
