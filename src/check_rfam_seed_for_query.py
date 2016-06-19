@@ -8,7 +8,7 @@ import utils
 Get the families (that is required by the query) that have no bitscores (not calculated yet!)
 '''
 
-path = '../queries/query/query.db'
+path = '../queries/fam40_typedistributed_embed+bg_weak/fam40_typedistributed_embed+bg_weak.db'
 
 def family_of(name):
     first = name.split('_')[0]
@@ -19,7 +19,7 @@ def family_of(name):
 
 with open(path, 'r') as handle:
     records = SeqIO.parse(handle, 'fasta')
-    required_families = set(map(family_of, map(lambda x: x.name, records)))
+    required_families = set(map(utils.qfam_of, filter(lambda x: not utils.is_bg(x), map(lambda x: x.name, records))))
 
 available_families = set(utils.get_calculated_families())
 not_having_families = required_families - available_families

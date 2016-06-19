@@ -1,33 +1,14 @@
 import numpy as np
-from itertools import product
+from itertools import product, chain
 from os.path import join
 import utils
 import csv
 import time
 import pprint
-from optparse import OptionParser
-
-parser = OptionParser(usage='cluster using semi-supervised label propagation algorithm')
-parser.add_option('--query', action='store', dest='QUERY', help='query')
-parser.add_option('--cripple', action='store', default=0, type='int', dest='CRIPPLE', help='cripple')
-(opts, args) = parser.parse_args()
-
-QUERY = opts.QUERY
-
-# seeding
-CRIPPLE = opts.CRIPPLE
-NN_SEED = [25]
-LENGTH_NORM = ['false', 'true']
-
-# ssl
-ALG = ['labelSpreading', 'labelPropagation']
-KERNEL = ['rbf']
-GAMMA = [0.5]
-ALPHA = np.linspace(0.4, 1.0, 7)
-
-# further
-# C = [1.1]
-C = np.linspace(1.0, 1.5, 6)
+import sys
+from globalmem_client import GlobalMemClient
+from argparse import ArgumentParser
+from collections import defaultdict
 
 def get_result(tag, alg):
     path = join('../results', 'combined.' + tag + '.' + alg + '.refined.cluster.evaluation')
@@ -42,8 +23,9 @@ def run_combine(query, cripple, nn_seed):
     command = 'python combine_rfam_bitscore.py --query=%s --cripple=%d --type=closest --nn=%d' % (
         query, cripple, nn_seed
     )
-    print('')
     (output, res, error) = utils.run_command(command)
+    if error:
+        raise Exception(output)
 
 def run_normalize(tag, query, length_norm):
     # python pca_normalize_bitscore.py --tag=rfam75id_embed-rename.cripple0 --query=rfam75id_embed-rename
@@ -51,6 +33,8 @@ def run_normalize(tag, query, length_norm):
         tag, query, length_norm
     )
     (output, res, error) = utils.run_command(command)
+    if error:
+        raise Exception(output)
 
 def run_ssl(tag, alg, kernel, gamma, alpha):
     # python cluster_semi_label_propagation.py --tag=rfam75id_embed-rename.cripple0 --alg=labelPropagation --kernel=rbf --gamma=0.5 --alpha=0.8
@@ -58,6 +42,8 @@ def run_ssl(tag, alg, kernel, gamma, alpha):
         tag, alg, kernel, gamma, alpha
     )
     (output, res, error) = utils.run_command(command)
+    if error:
+        raise Exception(output)
 
 def run_further(tag, alg, c):
     # python cluster_refinement_further_seprataion.py - -tag = rfam75id_embed - rename.cripple0 - -alg = labelPropagation - -C = 1.1
@@ -65,6 +51,8 @@ def run_further(tag, alg, c):
         tag, alg, c
     )
     (output, res, error) = utils.run_command(command)
+    if error:
+        raise Exception(output)
 
 def run_evaluate(tag, query, alg):
     # python evaluate.py --tag=rfam75id_embed-rename.cripple0 --query=rfam75id_embed-rename --nofold=false --alg=labelPropagation
@@ -72,75 +60,205 @@ def run_evaluate(tag, query, alg):
         tag, query, alg
     )
     (output, res, error) = utils.run_command(command)
+    if error:
+        raise Exception(output)
 
-jobs_cnt = len(NN_SEED) * len(LENGTH_NORM) * len(ALG) * len(KERNEL) * len(GAMMA) * len(ALPHA) * len(C)
-print('total jobs:', jobs_cnt)
 
-job_i = 1
-results = []
-time_start = time.time()
-for nn_seed in NN_SEED:
-    cripple = CRIPPLE
-    nn_seed = int(nn_seed)
-    tag = QUERY + '.cripple' + str(cripple)
-    print('tag:', tag)
+parser = ArgumentParser(usage='cluster using semi-supervised label propagation algorithm')
+parser.add_argument('--query', required=True)
+parser.add_argument('--cripple', default=0, type=int)
+parser.add_argument('--use-cache', default=False, action='store_true')
+parser.add_argument('--cache-url')
+parser.add_argument('--admin-token')
+parser.add_argument('--flush-cache', default=False, action='store_true')
+args = parser.parse_args()
 
-    print('combining...')
-    run_combine(QUERY, cripple, nn_seed)
+if args.use_cache:
+    if not args.cache_url:
+        print 'no cache url (--cache-url)'
+        sys.exit()
+    if not args.admin_token:
+        print 'no admin token (--admin-token)'
+        sys.exit()
 
-    for length_norm in LENGTH_NORM:
-        print('length_norm:', length_norm)
-        print('normalizing...')
-        run_normalize(tag, QUERY, length_norm)
+# query name
+QUERY = args.query
 
-        for alg, kernel, gamma, alpha in product(ALG, KERNEL, GAMMA, ALPHA):
-            print('cripple:', cripple, 'nn_seed:', nn_seed)
-            print('alg:', alg, 'kernel:', kernel, 'gamma:', gamma, 'alpha:', alpha)
+# seeding
+CRIPPLE = args.cripple
 
-            print('running ssl...')
-            run_ssl(tag, alg, kernel, gamma, alpha)
+search_arguments = [
+    ['query', 'cripple', 'nn_seed'],
+    ['length_norm'],
+    ['alg', 'kernel', 'gamma', 'alpha'],
+    ['c']
+]
+search_space = {
+    'query': [QUERY],
+    'cripple': [CRIPPLE],
+    'nn_seed': [25],
+    'length_norm': ['false', 'true'],
+    'alg': ['labelSpreading', 'labelPropagation'],
+    'kernel': ['rbf'],
+    'gamma': [0.5],
+    'alpha': np.linspace(0.4, 1.0, 7),
+    'c': np.linspace(1.0, 1.5, 6)
+}
 
-            for c in C:
-                print('job:', job_i, 'of', jobs_cnt)
-                job_i += 1
+def space_of(arg):
+    return search_space[arg]
 
-                print('c:', c)
+def level_of(arg):
+    for i, items in enumerate(search_arguments):
+        if arg in items:
+            return i
+    raise NameError('arg not found')
 
-                # run
-                print('run further cluster...')
-                run_further(tag, alg, c)
-                run_evaluate(tag, QUERY, alg)
+def stack_of(job):
+    stack = defaultdict(list)
+    for arg, each in zip(all_arguments, job):
+        level = level_of(arg)
+        stack[level].append(each)
+    return stack
 
-                # get result
-                sensitivity, precision, max_in_cluster = get_result(tag, alg)
-                print('sense:', sensitivity)
-                print('preci:', precision)
-                print('max_in:', max_in_cluster)
+def uncommon_level(job_a, job_b):
+    stack_a = stack_of(job_a)
+    stack_b = stack_of(job_b)
+    for (level, items_a), (level, items_b) in zip(stack_a.items(), stack_b.items()):
+        if items_a != items_b:
+            return level
+    raise ValueError('job a and b are equal')
 
-                results.append({
-                    'query': QUERY,
-                    'cripple': cripple,
-                    'nn_seed': nn_seed,
-                    'length_norm': length_norm,
-                    'alg': alg,
-                    'kernel': kernel,
-                    'gamma': gamma,
-                    'alpha': alpha,
-                    'c': c,
-                    'sensitivity': sensitivity,
-                    'precision': precision,
-                    'max_in_cluster': max_in_cluster
-                })
+def jobkey_of(job):
+    keys = []
+    for each in job:
+        if isinstance(each, float):
+            keys.append(str(round(each, 6)))
+        else:
+            keys.append(str(each))
+    return '|'.join(keys)
 
-time_end = time.time()
-print('time elapsed:', time_end - time_start)
+def result_of(job, d):
+    assert isinstance(d, dict)
+
+    expect_keys = {'sensitivity', 'precision', 'max_in_cluster'}
+    assert set(d.keys()) == expect_keys
+
+    result_dict = dict(zip(all_arguments, job))
+
+    # turn the value to float
+    for key, val in d.items():
+        d[key] = float(val)
+
+    result_dict.update(d)
+    return result_dict
+
+def compute_from(level, job):
+    print 'compute from level:', level
+    query, cripple, nn_seed, length_norm, alg, kernel, gamma, alpha, c = job
+
+    tag = '{}.cripple{}'.format(query, cripple)
+
+    if level == 0:
+        print 'run combine'
+        run_combine(query, cripple, nn_seed)
+        level += 1
+
+    if level == 1:
+        print 'run normalize'
+        run_normalize(tag, query, length_norm)
+        level += 1
+
+    if level == 2:
+        print 'run ssl'
+        run_ssl(tag, alg, kernel, gamma, alpha)
+        level += 1
+
+    if level == 3:
+        print 'run further'
+        run_further(tag, alg, c)
+        print 'run evaluate'
+        run_evaluate(tag, query, alg)
+        level += 1
+
+    sensitivity, precision, max_in_cluster = get_result(tag, alg)
+    return dict(sensitivity=sensitivity,
+                precision=precision,
+                max_in_cluster=max_in_cluster)
+
+def run():
+    global last_job
+    for i, job in enumerate(all_jobs):
+        jobkey = jobkey_of(job)
+
+        print 'jobkey:', jobkey
+
+        if args.use_cache:
+            assert isinstance(cache, GlobalMemClient)
+            can_lock, data = cache.lock(jobkey)
+            if not can_lock:
+                # someone does this job
+                if data:
+                    # the result is in cache
+                    results[i] = result_of(job, data)
+                    print 'cache hit:', i, 'result:', results[i]
+                else:
+                    print 'cache locked:', i
+                continue
+
+        if last_job:
+            start_level = uncommon_level(last_job, job)
+        else:
+            start_level = 0
+
+        # perform the real job
+        print 'working on job:', i, 'detail:', job
+        data = compute_from(start_level, job)
+        results[i] = result_of(job, data)
+        print 'job done:', i, 'result:', results[i]
+        last_job = job
+
+        if args.use_cache:
+            assert isinstance(cache, GlobalMemClient)
+            cache.unlock(jobkey, data)
+
+all_arguments = list(chain(*search_arguments))
+all_jobs = list(product(*map(space_of, all_arguments)))
+
+project_name = 'parameter_search.{}.cripple{}'.format(QUERY, CRIPPLE)
+out_file = project_name + '.csv'
+
+print 'project name:', project_name
+
+if args.use_cache:
+    print 'using cache url:', args.cache_url, 'admin_token:', args.admin_token
+    cache = GlobalMemClient(url=args.cache_url, project_name=project_name, admin_token=args.admin_token)
+    cache.create()
+    if args.flush_cache:
+        print 'flush cache'
+        cache.delete()
+        cache.create()
+else:
+    print 'dont use cache'
+
+results = [None] * len(all_jobs)
+last_job = None
+
+while True:
+
+    # perform the search
+    run()
+
+    if all(results):
+        break
+    else:
+        time.sleep(60)
 
 # save results
 print('saving ...')
 outfile = 'parameter_search.' + QUERY + '.cripple' + str(CRIPPLE) + '.csv'
 with open(outfile, 'w') as handle:
-    fieldnames = ['sensitivity', 'precision', 'max_in_cluster', 'alg', 'alpha', 'nn_seed', 'length_norm','kernel', 'gamma', 'c', 'cripple', 'query']
-    writer = csv.DictWriter(handle, fieldnames=fieldnames)
+    writer = csv.DictWriter(handle, fieldnames=all_arguments)
     writer.writeheader()
     writer.writerows(results)
 print('done...')

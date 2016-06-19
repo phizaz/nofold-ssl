@@ -20,8 +20,12 @@ If you also want to use NoFold (for comparison), you definitely need to meet the
 
 But, for NoFold-SSL itself you will need:
 
-* Python 2.X with numpy, scipy, scikit-learn and fastcluster packages
+* Python 2.X with numpy, scipy, scikit-learn, biopython, sortedcontainers and fastcluster packages
 * Infernal (v.1.0.2)
+
+## Change Log
+### Version 2
+* we updated the directory structure to be easier to reason with. So, the new directories are `queries`, `results` (containing all the products made by the workflow), `src` (source code have been moved into this). We also renamed the old `src` to be `nofold-src`.
 
 ## Getting Started
 In this repo, we included three datasets, namely "query", "query2", "query3", which can be used right away.
