@@ -148,7 +148,7 @@ def result_of(job, d):
 
     # turn the value to float
     for key, val in d.items():
-        d[key] = float(val)
+        d[str(key)] = float(val)
 
     result_dict.update(d)
     return result_dict
@@ -201,6 +201,8 @@ def run():
                 if data:
                     # the result is in cache
                     results[i] = result_of(job, data)
+                    # local_cache[jobkey] = data
+                    # save_cache()
                     print 'cache hit:', i, 'result:', results[i]
                 else:
                     print 'cache locked:', i
@@ -227,6 +229,13 @@ all_jobs = list(product(*map(space_of, all_arguments)))
 
 project_name = 'parameter_search.{}.cripple{}'.format(QUERY, CRIPPLE)
 out_file = project_name + '.csv'
+
+# local_cache = dict()
+#
+# def save_cache():
+#     import json
+#     with open(project_name + '.json', 'w') as handle:
+#         json.dump(local_cache, handle, indent=4)
 
 print 'project name:', project_name
 
