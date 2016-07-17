@@ -100,7 +100,7 @@ search_arguments = [
 search_space = {
     'query': [QUERY],
     'cripple': [CRIPPLE],
-    'nn_seed': [7, 13, 25],
+    'nn_seed': [7, 19],
     # 'nn_seed': [7],
     'length_norm': ['false', 'true'],
     # 'length_norm': ['false'],
