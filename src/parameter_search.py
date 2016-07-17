@@ -6,9 +6,9 @@ import csv
 import time
 import pprint
 import sys
-from globalmem_client import GlobalMemClient
 from argparse import ArgumentParser
 from collections import defaultdict
+from gaw import GawClient
 
 def get_result(tag, alg):
     path = join('../results', 'combined.' + tag + '.' + alg + '.refined.cluster.evaluation')
@@ -68,17 +68,21 @@ parser = ArgumentParser(usage='cluster using semi-supervised label propagation a
 parser.add_argument('--query', required=True)
 parser.add_argument('--cripple', default=0, type=int)
 parser.add_argument('--use-cache', default=False, action='store_true')
-parser.add_argument('--cache-url')
-parser.add_argument('--admin-token')
+parser.add_argument('--cache-ip', type=str)
+parser.add_argument('--cache-port', type=int)
+parser.add_argument('--cache-secret', type=str)
 parser.add_argument('--flush-cache', default=False, action='store_true')
 args = parser.parse_args()
 
 if args.use_cache:
-    if not args.cache_url:
-        print 'no cache url (--cache-url)'
+    if not args.cache_ip:
+        print 'no cache ip (--cache-ip)'
         sys.exit()
-    if not args.admin_token:
-        print 'no admin token (--admin-token)'
+    if not args.cache_port:
+        print 'no cache port (--cache-port)'
+        sys.exit()
+    if not args.cache_secret:
+        print 'no admin secret (--cache-secret)'
         sys.exit()
 
 # query name
@@ -96,13 +100,17 @@ search_arguments = [
 search_space = {
     'query': [QUERY],
     'cripple': [CRIPPLE],
-    'nn_seed': [25],
+    'nn_seed': [7, 13, 25],
+    # 'nn_seed': [7],
     'length_norm': ['false', 'true'],
+    # 'length_norm': ['false'],
     'alg': ['labelSpreading', 'labelPropagation'],
+    # 'alg': ['labelSpreading'],
     'kernel': ['rbf'],
     'gamma': [0.5],
     'alpha': np.linspace(0.4, 1.0, 7),
-    'c': np.linspace(1.0, 1.5, 6)
+    # 'alpha': [1.0],
+    'c': np.linspace(1.0, 1.5, 6),
 }
 
 def space_of(arg):
@@ -136,7 +144,7 @@ def jobkey_of(job):
             keys.append(str(round(each, 6)))
         else:
             keys.append(str(each))
-    return '|'.join(keys)
+    return '[nofold-ssl]' + '|'.join(keys) # adding some namespace
 
 def result_of(job, d):
     assert isinstance(d, dict)
@@ -159,10 +167,10 @@ def compute_from(level, job):
 
     tag = '{}.cripple{}'.format(query, cripple)
 
-    if level == 0:
-        print 'run combine'
-        run_combine(query, cripple, nn_seed)
-        level += 1
+    # if level == 0:
+    #     print 'run combine'
+    #     run_combine(query, cripple, nn_seed)
+    #     level += 1
 
     if level == 1:
         print 'run normalize'
@@ -194,19 +202,7 @@ def run():
         print 'jobkey:', jobkey
 
         if args.use_cache:
-            assert isinstance(cache, GlobalMemClient)
-            can_lock, data = cache.lock(jobkey)
-            if not can_lock:
-                # someone does this job
-                if data:
-                    # the result is in cache
-                    results[i] = result_of(job, data)
-                    # local_cache[jobkey] = data
-                    # save_cache()
-                    print 'cache hit:', i, 'result:', results[i]
-                else:
-                    print 'cache locked:', i
-                continue
+            raise Exception('cache is not ready for now')
 
         if last_job:
             start_level = uncommon_level(last_job, job)
@@ -221,40 +217,27 @@ def run():
         last_job = job
 
         if args.use_cache:
-            assert isinstance(cache, GlobalMemClient)
-            cache.unlock(jobkey, data)
+            raise Exception('cache is not ready for now')
 
 all_arguments = list(chain(*search_arguments))
+output_fields = ['sensitivity', 'precision', 'max_in_cluster']
 all_jobs = list(product(*map(space_of, all_arguments)))
 
 project_name = 'parameter_search.{}.cripple{}'.format(QUERY, CRIPPLE)
 out_file = project_name + '.csv'
 
-# local_cache = dict()
-#
-# def save_cache():
-#     import json
-#     with open(project_name + '.json', 'w') as handle:
-#         json.dump(local_cache, handle, indent=4)
-
 print 'project name:', project_name
 
 if args.use_cache:
-    print 'using cache url:', args.cache_url, 'admin_token:', args.admin_token
-    cache = GlobalMemClient(url=args.cache_url, project_name=project_name, admin_token=args.admin_token)
-    cache.create()
-    if args.flush_cache:
-        print 'flush cache'
-        cache.delete()
-        cache.create()
+    raise Exception('cache is not ready for now')
 else:
     print 'dont use cache'
 
 results = [None] * len(all_jobs)
 last_job = None
 
+# perform the search until done
 while True:
-
     # perform the search
     run()
 
@@ -265,9 +248,9 @@ while True:
 
 # save results
 print('saving ...')
-outfile = 'parameter_search.' + QUERY + '.cripple' + str(CRIPPLE) + '.csv'
+outfile = 'parameter_search.{}.cripple{}.csv'.format(QUERY, CRIPPLE)
 with open(outfile, 'w') as handle:
-    writer = csv.DictWriter(handle, fieldnames=all_arguments)
+    writer = csv.DictWriter(handle, fieldnames=all_arguments + output_fields)
     writer.writeheader()
     writer.writerows(results)
 print('done...')
