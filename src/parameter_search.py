@@ -167,10 +167,10 @@ def compute_from(level, job):
 
     tag = '{}.cripple{}'.format(query, cripple)
 
-    # if level == 0:
-    #     print 'run combine'
-    #     run_combine(query, cripple, nn_seed)
-    #     level += 1
+    if level == 0:
+        print 'run combine'
+        run_combine(query, cripple, nn_seed)
+        level += 1
 
     if level == 1:
         print 'run normalize'
