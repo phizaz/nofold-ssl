@@ -107,7 +107,7 @@ search_space = {
     'alg': ['labelSpreading', 'labelPropagation'],
     # 'alg': ['labelSpreading'],
     'kernel': ['rbf'],
-    'gamma': [0.5],
+    'gamma': np.linspace(0.5, 1.0, 6),
     'alpha': np.linspace(0.4, 1.0, 7),
     # 'alpha': [1.0],
     'c': np.linspace(1.0, 1.5, 6),
