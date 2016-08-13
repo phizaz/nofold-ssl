@@ -29,6 +29,10 @@ class PathTest(unittest.TestCase):
         paths = utils.path.get_cm_paths()
         self.assertEqual(len(paths), 1973)
 
+    def test_results_path(self):
+        path = utils.path.results_path()
+        self.assertEqual(normpath(path), normpath('/Users/phizaz/Projects/nofold-ssl/results'))
+
 class MakePathTest(unittest.TestCase):
 
     test_path = join(utils.path.root_path(), '_test_', '_sub_test_')

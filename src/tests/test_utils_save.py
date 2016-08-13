@@ -38,7 +38,7 @@ class SaveQueryRecordsTest(unittest.TestCase):
             self.assertEqual(r.seq, s.seq)
 
 
-class SaveBitscoresTest(unittest.TestCase):
+class SaveQueryBitscoresTest(unittest.TestCase):
     query = '_test_save_bitscores_'
 
     def setUp(self):
@@ -57,7 +57,7 @@ class SaveBitscoresTest(unittest.TestCase):
 
     def runTest(self):
         names, points, header = utils.get.get_query_bitscores('test_rna')
-        utils.save.save_bitscores(self.query, names, points, header)
+        utils.save.save_query_bitscores(self.query, names, points, header)
         _names, _points, _header = utils.get.get_query_bitscores(self.query)
         self.assertListEqual(names, _names)
         self.assertListEqual(points, _points)

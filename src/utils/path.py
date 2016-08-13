@@ -32,3 +32,7 @@ def get_cm_paths():
     models = filter(lambda x: 'cm' in x, listdir(path))
     full_path = map(lambda x: join(path, x), models)
     return list(full_path)
+
+def results_path():
+    from os.path import join
+    return join(root_path(), 'results')

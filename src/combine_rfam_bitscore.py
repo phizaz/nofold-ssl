@@ -1,272 +1,116 @@
-import sys
-from os.path import isfile, join, isdir, exists
-from os import listdir
-from random import shuffle, sample
-from Bio import SeqIO
-from optparse import OptionParser
-import numpy as np
-from sklearn.neighbors import BallTree
-from multiprocessing.pool import Pool
-from multiprocessing import cpu_count
-from collections import Counter
-from functools import partial
-import sortedcontainers as sc
-from operator import itemgetter
-import time
-import utils
+from __future__ import print_function
 
 '''
 Combine the rfam seeds with the given query
 this should be the first step of doing semi-supervised clustering
 '''
 
-parser = OptionParser(usage='cluster using semi-supervised label spreading algorithm')
-parser.add_option('--query', action='store', default='query', dest='QUERY', help='the query name')
-parser.add_option('--unformatted', action='store', default='false', dest="UNFORMATTED", help='is the query from somewhere else?')
-parser.add_option('--cripple', action='store', type='int', dest='CRIPPLE', help='cripple degree')
-parser.add_option('--sample', action='store', type='int', default=5, dest='SAMPLE', help='number of seed sequenecs shall be randomly taken from each family')
-parser.add_option('--type', action='store', default='random', dest='TYPE', help='what kind of seed selection preferred?')
-parser.add_option('--nn', action='store', type='int', default=7, dest='NN', help='number of nearest neighbors for closest seed selection')
-parser.add_option('--small', action='store', default='false', dest='SMALL', help='take only the relevant seed families')
-(opts, args) = parser.parse_args()
 
-# validate possible types
-possible_types = {'high_density', 'closest', 'random'}
-if opts.TYPE not in possible_types:
-    print('not recornized type')
-    print('possible types:', possible_types)
-    sys.exit()
+def run(query, unformatted, cripple, nn):
+    import utils
+    import sys
 
-# validate sample parameter
-if opts.TYPE in {'high_density', 'random'}:
-    if opts.SAMPLE <= 0:
-        print('sample count is not proper')
-        sys.exit()
+    # get scores from the query
+    query_names, query_points, query_header = utils.get.get_query_bitscores(query)
 
-path = '../Rfam-seed/db'
-query = opts.QUERY
+    all_names = []
+    all_points = []
 
-families = utils.get_all_families()
+    all_names += query_names
+    all_points += query_points
+    print('query cols count:', len(query_header))
 
-def get_header(family):
-    file = join(path, family, family + '.bitscore')
-    with open(file, 'r') as handle:
-        header = handle.readline().strip()
-    return header
+    available_families = set(utils.get.get_calculated_families())
 
-def get_sequences_from_file(file, cols=None):
-    names, points, header = utils.get_bitscores(file)
-    if not cols is None:
-        points, header = utils.retain_bitscore_cols(cols, points, header)
-    return list(zip(names, points)), header
-
-def get_seed_sequences(family, cols=None):
-    if not utils.check_family(family):
-        return []
-
-    file = join(path, family, family + '.bitscore')
-    sequences, _ = get_sequences_from_file(file, cols)
-    return sequences
-
-def get_high_dense_seed_sequences(family, total=5, cols=None):
-    if not utils.check_family(family):
-        return []
-
-    sequences = get_seed_sequences(family, cols)
-    names, _points = list(zip(*sequences))
-    points = np.array(_points)
-
-    # if len(sequences) < total:
-    #    print('not enough sequences in family:', family, 'it has only:', len(sequences))
-
-    def dist(a, b):
-        return np.linalg.norm(a - b)
-
-    def average_dist(points, origin):
-        s = 0
-        for point in points:
-            d = dist(point, origin)
-            s += d
-        avg_dist = s / len(points)
-        return avg_dist
-
-    def retain_high_density(names, points, retaining):
-        avg_dists = [(name, origin, average_dist(points, origin)) for name, origin in zip(names, points)]
-        sorted_dists = sorted(avg_dists, key=lambda x: x[2])
-        retained = list(map(lambda x: (x[0], x[1]), sorted_dists[:retaining]))
-        return retained
-
-    # take only the most dense
-    high_density_sequences = retain_high_density(names, points, retaining=total)
-    return high_density_sequences
-
-def get_random_seed_sequences(family, total=5, cols=None):
-    if not utils.check_family(family):
-        return []
-
-    sequences = get_seed_sequences(family, cols)
-    return sample(sequences, min(total, len(sequences)))
-
-def get_centroid_seed_sequences(family, cols=None):
-    if not utils.check_family(family):
-        return []
-
-    sequences = get_seed_sequences(family, cols)
-    names, _points = list(zip(*sequences))
-    points = np.array(_points)
-
-    centroid = np.zeros(points[0].shape)
-    for point in points:
-        centroid += point
-    centroid /= len(points)
-
-    return (family + '_centroid', centroid)
-
-all_sequences = []
-
-# get scores from the query
-query_file = join('../queries', query, query + '.bitscore')
-query_sequences, query_header_cols = get_sequences_from_file(query_file)
-all_sequences += query_sequences
-print('query cols count:', len(query_header_cols))
-
-available_families = set(utils.get_calculated_families())
-
-if opts.UNFORMATTED == 'true':
-    print('unformatted is "true"')
-    print('taking from all we have, dont care for cripples')
-    seed_families = available_families
-else:
-    # get querying families, not having families
-    query_families = utils.get_query_families(query)
-
-    print('families required by the query:', len(query_families))
-    not_having_families = query_families - available_families
-    print('families we don\'t have:', len(not_having_families))
-    print(not_having_families)
-
-    # get some scores from each seeding family (except the marked as crippled)
-    cripple_family_count = opts.CRIPPLE
-    print('cripple count:', cripple_family_count)
-    cripple_more = cripple_family_count - len(not_having_families)
-
-    if cripple_more < 0:
-        print('cannot attain the target cripple count!')
-        sys.exit()
-
-    print('more to be crippled:', cripple_more)
-    cripple_target_families = query_families - not_having_families
-    cripple_families = sample(cripple_target_families, cripple_more)
-    print('marked as crippled:', cripple_families)
-    if opts.SMALL == 'true':
-        print('take as small seed families as possible...')
-        seed_families = cripple_target_families - set(cripple_families)
+    if unformatted:
+        print('unformatted is "true"')
+        print('taking from all we have, dont care for cripples')
+        seed_families = available_families
     else:
+        query_families = utils.get.get_query_families(query)
+        print('families required by the query:', len(query_families))
+
+        not_having_families = query_families - available_families
+        print('families we don\'t have:', len(not_having_families))
+        print(not_having_families)
+
+        # get some scores from each seeding family (except the marked as crippled)
+        cripple_family_count = cripple
+        print('cripple count:', cripple_family_count)
+        cripple_more = cripple_family_count - len(not_having_families)
+
+        if cripple_more < 0:
+            print('cannot attain the target cripple count!')
+            sys.exit(1)
+
+        print('more to be crippled:', cripple_more)
+        cripple_target_families = query_families - not_having_families
+        import random
+        cripple_families = random.sample(cripple_target_families, cripple_more)
+        print('marked as crippled:', cripple_families)
         seed_families = available_families - set(cripple_families)
-    print('taking from:', len(seed_families), '/', len(available_families))
+        print('taking from:', len(seed_families), '/', len(available_families))
 
-# taking seeds
-print('always include centroids...')
-if opts.TYPE == 'high_density':
-    print('sample will be taken from high denisty areas...', opts.SAMPLE, 'samples per families')
-elif opts.TYPE == 'random':
-    print('sample will be taken randomly...', opts.SAMPLE, 'samples per families')
-elif opts.TYPE == 'closest':
-    print('only closest:', opts.NN, 'neighbors seeds to queries will be taken...')
+    # taking seeds
+    print('always include centroids...')
+    print('only closest:', nn, 'neighbors seeds to queries will be taken...')
 
-if opts.TYPE in {'random', 'high_density'}:
-    for family in seed_families:
-        if opts.TYPE == 'random':
-            all_sequences += get_random_seed_sequences(family, total=opts.SAMPLE, cols=query_header_cols)
-        elif opts.TYPE == 'high_density':
-            all_sequences += get_high_dense_seed_sequences(family, total=opts.SAMPLE, cols=query_header_cols)
-elif opts.TYPE in {'closest'}:
-    all_query_names = list(map(lambda x: x[0], query_sequences))
-    all_query_points = list(map(lambda x: x[1], query_sequences))
-
-    # using sorted list
-    # query_points_closests = [sc.SortedListWithKey(key=itemgetter(0)) for i in range(len(all_query_points))]
-    query_points_closests = [[] for i in range(len(all_query_points))]
-
-    def get_query_point_closests_by_family(family):
-        # finding kNN from each family and them combine is a way to save memory, but slower !
-        seed_sequences = get_seed_sequences(family, cols=query_header_cols)
-        seed_names = list(map(lambda x: x[0], seed_sequences))
-        seed_points = list(map(lambda x: x[1], seed_sequences))
-
-        nearest_seed = BallTree(seed_points)
-        k = min(opts.NN, len(seed_points))
-        p_dists, p_idxs = nearest_seed.query(all_query_points, k=k)
-
-        results = [[] for i in range(len(all_query_points))]
-        for query_idx, (dists, idxs) in enumerate(zip(p_dists, p_idxs)):
-            closest_seed_names = list(map(lambda x: seed_names[x], idxs))
-            closest_seed_points = list(map(lambda x: seed_points[x], idxs))
-            results[query_idx] += list(zip(dists, closest_seed_names, closest_seed_points))
-        return results
-
-    def remove_excess():
-        for each in query_points_closests:
-            each.sort(key=itemgetter(0))
-            del each[opts.NN:]
-
-    print('load sequences and find local KNN and merge and sort and delete excess elements from the result in real time..')
+    import time
     time_start = time.time()
-    pool = Pool(int(cpu_count()))
-    local_query_points_closests = []
-    cleanup_loops = 100
-    for i, each in enumerate(pool.imap_unordered(get_query_point_closests_by_family, seed_families), 1):
-        print('family:', i, 'of', len(seed_families))
-        for all, local in zip(query_points_closests, each):
-            all += local
-            # # delete the excess elements
-            # del all[opts.NN:]
-
-        if i % cleanup_loops == 0:
-            print('cleaning up...')
-            remove_excess()
-    remove_excess()
-
-    pool.close()
+    query_points_closests = utils.get.get_knearest_seed_given_query(nn, query_header, query_points, seed_families)
     time_stop = time.time()
     print('time elapsed:', time_stop - time_start)
 
     print('getting selected seed sequences')
     selected_seed = {}
+    from collections import Counter
     selected_seed_by_family = Counter()
     for each in query_points_closests:
         for dist, name, point in each:
             if name not in selected_seed:
-                family, _ = name.split('_')
+                family = utils.short.fam_of(name)
                 selected_seed_by_family[family] += 1
                 selected_seed[name] = point
     print('seed count:', len(selected_seed))
     print('seed by family:', selected_seed_by_family)
 
-    selected_seed_sequences = []
+    seed_names = []
+    seed_points = []
     for name, point in selected_seed.items():
-        selected_seed_sequences.append((name, point))
+        seed_names.append(name)
+        seed_points.append(point)
 
-    all_sequences += selected_seed_sequences
-
-else:
-    print('type is not correct')
-    sys.exit()
-
-# save to file
-if opts.UNFORMATTED == 'true':
-    outfile = '../results/combined.' + query + '.bitscore'
-else:
-    outfile = '../results/combined.' + query + '.cripple' + str(cripple_family_count) + '.bitscore'
-with open(outfile, 'w') as handle:
-    handle.write('\t'.join(query_header_cols) + '\n')
-    for name, scores in all_sequences:
-        handle.write(name + '\t')
-        for score in scores:
-            handle.write(str(score) + '\t')
-        handle.write('\n')
-
-print('total database size:', len(all_sequences))
+    all_names += seed_names
+    all_points += seed_points
+    all_header = query_header
+    return all_names, all_points, all_header
 
 
+if __name__ == '__main__':
+    import argparse
+    import sys
+    import utils
 
+    parser = argparse.ArgumentParser(usage='cluster using semi-supervised label spreading algorithm')
+    parser.add_argument('--query', required=True, help='the query name')
+    parser.add_argument('--unformatted', default=False, action='store_true',
+                        help='is the query from somewhere else?')
+    parser.add_argument('--cripple', type=int, help='cripple degree')
+    parser.add_argument('--nn', type=int, default=7,
+                        help='number of nearest neighbors for closest seed selection')
+    args = parser.parse_args()
+
+    names, points, header = run(query=args.query,
+                                unformatted=args.unformatted,
+                                cripple=args.cripple,
+                                nn=args.nn)
+
+    from os.path import join
+    # save to file
+    if args.unformatted == 'true':
+        outfile = join(utils.path.results_path(), 'combined.' + args.query + '.bitscore')
+    else:
+        outfile = join(utils.path.results_path(), 'combined.' + args.query + '.cripple' + str(args.cripple) + '.bitscore')
+    utils.save.save_bitscores(outfile, names, points, header)
+
+    print('total database size:', len(points))
