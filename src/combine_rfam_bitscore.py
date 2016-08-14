@@ -27,7 +27,7 @@ def run(query, unformatted, cripple, nn):
         print('taking from all we have, dont care for cripples')
         seed_families = available_families
     else:
-        query_families = utils.get.get_query_families(query)
+        query_families = utils.get.get_query_general_families(query)
         print('families required by the query:', len(query_families))
 
         not_having_families = query_families - available_families

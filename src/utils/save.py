@@ -27,3 +27,17 @@ def save_query_bitscores(query, names, points, header):
 
     file = join(queries_path(), query, query + '.bitscore')
     return save_bitscores(file, names, points, header)
+
+
+def save_name_clusters(file, clusters):
+    with open(file, 'w') as handle:
+        if isinstance(clusters, dict):
+            clusters = clusters.items()
+        elif isinstance(clusters, list):
+            clusters = enumerate(clusters)
+        else:
+            raise Exception('alien clusters')
+        for label, names in clusters:
+            handle.write(
+                ' '.join(names) + '\n'
+            )

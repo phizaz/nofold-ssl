@@ -55,6 +55,10 @@ class GetTest(unittest.TestCase):
         self.assertTrue(all(fam[:2] == 'RF' for fam in families))
         self.assertEqual(len(families), 40)
 
+    def test_get_query_general_families(self):
+        families = utils.get.get_query_general_families('novel-1-2-3hp')
+        self.assertEqual(len(families), 3)
+
     def test_get_bitscores(self):
         supplies_path = join(utils.path.src_path(), 'tests', 'supplies', 'check_bitscore')
         bitscore_file = join(supplies_path, 'RF00014.bitscore')
@@ -180,3 +184,11 @@ class GetTest(unittest.TestCase):
 
         for key, val in _lengths.items():
             self.assertEqual(lengths[key], val)
+
+    def test_get_mixed_bitscore(self):
+        file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore')
+        seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(file)
+        self.assertEqual(len(seed_points), len(seed_names))
+        self.assertEqual(len(query_names), len(query_points))
+        self.assertGreater(len(seed_names), 0)
+        self.assertGreater(len(query_names), 0)

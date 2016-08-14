@@ -1,37 +1,29 @@
+from __future__ import print_function
 from os.path import join
-from Bio import SeqIO
 
 class Lengther:
 
     def __init__(self, query, names):
-        def open_file(file):
-            with open(file, 'r') as handle:
-                records = SeqIO.parse(handle, 'fasta')
-                length_name = {}
-                for record in records:
-                    length_name[record.name] = len(record.seq)
-            return length_name
-
+        import utils
         self.length_name = {}
 
         # get length from the query itself
-        db_file = join('../queries', query, query + '.db')
-        files = [db_file]
+        self.length_name.update(utils.get.get_query_lengths_name_variants(query))
+
 
         required_families = set()
         for name in names:
-            fam = name.split('_')[0]
-            if fam[:2] == 'RF':
+            try:
+                fam = utils.short.fam_of(name)
                 required_families.add(fam)
+            except Exception as e:
+                pass
 
         print('required families:', required_families)
         print('count:', len(required_families))
 
         for fam in required_families:
-            files.append(join('../Rfam-seed/db', fam, fam + '.db'))
-
-        for file in files:
-            self.length_name.update(open_file(file))
+            self.length_name.update(utils.get.get_family_lengths(fam))
 
     def length_of(self, name):
         return self.length_name[name]
@@ -57,6 +49,7 @@ class Mapper:
 class LengthNormalizer:
 
     def __init__(self):
+        import utils
         def read_file(file):
             idxs = []
             vectors = []
@@ -72,8 +65,8 @@ class LengthNormalizer:
                     vectors.append(digits)
             return idxs, vectors, cols
 
-        means_file = join('../norm', 'varlen2.scale_means.txt')
-        sds_file = join('../norm', 'varlen2.scale_sds.txt')
+        means_file = join(utils.path.norm_path(), 'varlen2.scale_means.txt')
+        sds_file = join(utils.path.norm_path(), 'varlen2.scale_sds.txt')
 
         self.mean_mapper = Mapper(*read_file(means_file))
         self.sd_mapper = Mapper(*read_file(sds_file))

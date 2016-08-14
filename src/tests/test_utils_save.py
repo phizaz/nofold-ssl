@@ -62,3 +62,43 @@ class SaveQueryBitscoresTest(unittest.TestCase):
         self.assertListEqual(names, _names)
         self.assertListEqual(points, _points)
         self.assertListEqual(header, _header)
+class SaveClustersTest(unittest.TestCase):
+
+    file = join(utils.path.results_path(), 'test_save_clusters.clusters')
+
+    def setUp(self):
+        import os
+        try:
+            os.remove(self.file)
+        except:
+            pass
+
+    def tearDown(self):
+        import os
+        try:
+            os.remove(self.file)
+        except:
+            pass
+
+
+    def test_labeless_clusters(self):
+        clusters = [
+            ['A', 'B', 'C'],
+            ['D', 'E'],
+            ['F']
+        ]
+        utils.save.save_name_clusters(self.file, clusters)
+
+        self.assertListEqual(utils.get.get_name_clusters(self.file), clusters)
+
+    def test_label_clusters(self):
+        clusters = dict(
+            a=['A', 'B', 'C'],
+            b=['D', 'E']
+        )
+        utils.save.save_name_clusters(self.file, clusters)
+        self.assertListEqual(utils.get.get_name_clusters(self.file), [
+            ['A', 'B', 'C'],
+            ['D', 'E']
+        ])
+

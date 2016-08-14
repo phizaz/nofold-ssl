@@ -15,6 +15,9 @@ def qfam_of(name):
     # return the family part not including 'Q'
     return fam[1:]
 
+def general_fam_of(name):
+    return name.split('_')[0]
+
 def normalize_array(array):
     import scipy.stats
     return scipy.stats.mstats.zscore(array)

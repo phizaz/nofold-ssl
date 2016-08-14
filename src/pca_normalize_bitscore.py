@@ -11,8 +11,10 @@ def length_normalize(names, points, header, query):
     return n_points
 
 def pca(components, points):
-    pc_header = ['PC{}'.format(i+1) for i in range(components)]
+    assert components <= len(points[0]), 'number of components is more than the actual dimension'
+    assert components <= len(points), 'number of components is more than the number of points'
     from sklearn.decomposition import PCA
+    pc_header = ['PC{}'.format(i+1) for i in range(components)]
     pca = PCA(n_components=components)
     pc_points = pca.fit_transform(points)
     return pc_points, pc_header

@@ -62,6 +62,15 @@ def get_query_families(query):
         families.add(fam)
     return families
 
+def get_query_general_families(query):
+    from .short import is_bg, general_fam_of
+    families = set()
+    for rec in get_query_records(query):
+        if is_bg(rec.name): continue
+        fam = general_fam_of(rec.name)
+        families.add(fam)
+    return families
+
 
 def get_bitscores(bitscore_file):
     with open(bitscore_file, 'r') as handle:
@@ -70,10 +79,10 @@ def get_bitscores(bitscore_file):
         header = handle.readline().strip().split()
         for line in handle:
             tokens = line.strip().split()
-            name, scores = tokens[0], list(map(float, tokens[1:]))
-            assert len(scores) == len(header)
+            name, point = tokens[0], list(map(float, tokens[1:]))
+            assert len(point) == len(header), 'point doesn\'t have the same dimension as header'
             names.append(name)
-            points.append(scores)
+            points.append(point)
     return names, points, header
 
 
@@ -255,3 +264,30 @@ def get_query_lengths(query):
     from os.path import join
     from .path import queries_path
     return get_lengths(join(queries_path(), query, query + '.db'))
+
+def get_seed_query_bitscore(mixed_bitscore_file):
+    names, points, header = get_bitscores(mixed_bitscore_file)
+    seed_names = []
+    seed_points = []
+    query_names = []
+    query_points = []
+    from .short import fam_of, qfam_of
+    for name, point in zip(names, points):
+        try:
+            fam_of(name)
+            seed_names.append(name)
+            seed_points.append(point)
+        except Exception as e:
+            query_names.append(name)
+            query_points.append(point)
+
+    return seed_names, seed_points, query_names, query_points, header
+
+def get_name_clusters(cluster_file):
+    clusters = []
+    with open(cluster_file) as handle:
+        for line in handle:
+            names = line.strip().split(' ')
+            clusters.append(names)
+
+    return clusters

@@ -21,6 +21,8 @@ class ShortTest(unittest.TestCase):
         self.assertRaises(ValueError, utils.short.qfam_of, 'RF1234_abc')
         self.assertEqual(utils.short.qfam_of('QRF1234_abc'), 'RF1234')
 
+    def test_general_fam_of(self):
+        self.assertEqual(utils.short.general_fam_of('ABC_DEF'), 'ABC')
 
     def test_normalize_array(self):
 
