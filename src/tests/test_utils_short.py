@@ -20,3 +20,12 @@ class ShortTest(unittest.TestCase):
     def test_qfam_of(self):
         self.assertRaises(ValueError, utils.short.qfam_of, 'RF1234_abc')
         self.assertEqual(utils.short.qfam_of('QRF1234_abc'), 'RF1234')
+
+
+    def test_normalize_array(self):
+
+        arr = [9, 10, 11]
+        res = utils.short.normalize_array(arr)
+        print(res)
+        for each in res:
+            self.assertTrue(-2 < each < 2, 'after z-normalization the range should be quite small')

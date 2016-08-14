@@ -33,6 +33,26 @@ class PathTest(unittest.TestCase):
         path = utils.path.results_path()
         self.assertEqual(normpath(path), normpath('/Users/phizaz/Projects/nofold-ssl/results'))
 
+    def test_norm_path(self):
+        path = utils.path.norm_path()
+        self.assertEqual(normpath(path), normpath('/Users/phizaz/Projects/nofold-ssl/norm'))
+
+    def test_family_db_path(self):
+        path = utils.path.family_db_path('RF00014')
+        utils.get.get_sequences(path)
+
+    def test_family_bitscore_path(self):
+        path = utils.path.family_bitscore_path('RF00014')
+        utils.get.get_bitscores(path)
+
+    def test_query_db_path(self):
+        path = utils.path.query_db_path('test_rna')
+        utils.get.get_sequences(path)
+
+    def test_query_bitscore_path(self):
+        path = utils.path.query_bitscore_path('test_rna')
+        utils.get.get_bitscores(path)
+
 class MakePathTest(unittest.TestCase):
 
     test_path = join(utils.path.root_path(), '_test_', '_sub_test_')

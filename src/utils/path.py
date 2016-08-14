@@ -18,6 +18,9 @@ def db_path():
     from os.path import join
     return join(root_path(), 'Rfam-seed', 'db')
 
+def norm_path():
+    from os.path import join
+    return join(root_path(), 'norm')
 
 def make_path(path):
     from os.path import exists
@@ -36,3 +39,19 @@ def get_cm_paths():
 def results_path():
     from os.path import join
     return join(root_path(), 'results')
+
+def family_db_path(family):
+    from os.path import join
+    return join(db_path(), family, family + '.db')
+
+def family_bitscore_path(family):
+    from os.path import join
+    return join(db_path(), family, family + '.bitscore')
+
+def query_db_path(query):
+    from os.path import join
+    return join(queries_path(), query, query + '.db')
+
+def query_bitscore_path(query):
+    from os.path import join
+    return join(queries_path(), query, query + '.bitscore')

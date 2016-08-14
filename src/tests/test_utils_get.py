@@ -84,6 +84,13 @@ class GetTest(unittest.TestCase):
         for each in seqs:
             self.assertIsInstance(each, str)
 
+    def test_get_family_records(self):
+        records = utils.get.get_family_records('RF00014')
+        self.assertEqual(len(records), 5)
+        for each in records:
+            self.assertTrue(hasattr(each, 'name'))
+            self.assertTrue(hasattr(each, 'seq'))
+
     def test_get_family_bitscores(self):
         names, points, header = utils.get.get_family_bitscores('RF00014')
         self.assertEqual(len(names), 5)
@@ -127,3 +134,49 @@ class GetTest(unittest.TestCase):
         self.assertEqual(len(results), 2)
         for each in results:
             self.assertEqual(len(each), 3)
+
+    def test_get_family_lengths(self):
+        lengths = utils.get.get_family_lengths('RF00014')
+        print(lengths)
+        self.assertDictEqual(lengths, {'RF00014_CP000468.1': 87, 'RF00014_AE005674.1': 87, 'RF00014_M15749.1': 85,
+                                       'RF00014_CP000653.1': 85, 'RF00014_CP000857.1': 84})
+
+    def test_get_query_lengths(self):
+        lengths = utils.get.get_query_lengths('test_rna')
+        print(lengths)
+        self.assertDictEqual(lengths, {'QRF01739_AESD01000480.1_RNA': 61, 'QRF01739_AESD01000480.1': 61})
+
+    def test_get_name_variations(self):
+        db_file = utils.path.query_db_path('test_rna')
+        bitscore_file = utils.path.query_bitscore_path('test_rna')
+        name_variants = utils.get.get_names_variants(db_file, bitscore_file)
+        print(name_variants)
+        self.assertListEqual(name_variants, [['QRF01739_AESD01000480.1'],
+                                             ['QRF01739_AESD01000480.1_RNA', 'QRF01739_AESD01000480.1_R']])
+
+    def test_get_lengths_name_variants(self):
+        db_file = utils.path.query_db_path('test_rna')
+        bitscore_file = utils.path.query_bitscore_path('test_rna')
+        names, _, _ = utils.get.get_query_bitscores('test_rna')
+        lengths = utils.get.get_lengths_name_variants(db_file, bitscore_file)
+        for name in names:
+            self.assertEqual(lengths[name], 61)
+
+    def test_get_query_lengths_name_variants(self):
+        lengths = utils.get.get_query_lengths_name_variants('test_rna')
+        names, _, _ = utils.get.get_query_bitscores('test_rna')
+        for name in names:
+            print(name)
+            self.assertEqual(lengths[name], 61)
+
+        lengths = utils.get.get_query_lengths_name_variants('novel-1-2-3hp')
+        _lengths = utils.get.get_query_lengths('novel-1-2-3hp')
+        for key, val in _lengths.items():
+            self.assertEqual(lengths[key], val)
+
+    def test_get_family_lengths_name_variants(self):
+        lengths = utils.get.get_family_lengths_name_variants('RF00014')
+        _lengths = utils.get.get_family_lengths('RF00014')
+
+        for key, val in _lengths.items():
+            self.assertEqual(lengths[key], val)

@@ -5,7 +5,7 @@ def is_bg(name):
 def fam_of(name):
     fam = name.split('_')[0]
     if fam[:2] != 'RF':
-        raise ValueError('not a seed sequenec, not RF')
+        raise ValueError('not a seed sequence, not RF')
     return fam
 
 def qfam_of(name):
@@ -14,3 +14,8 @@ def qfam_of(name):
         raise ValueError('not a query sequence, not QRF')
     # return the family part not including 'Q'
     return fam[1:]
+
+def normalize_array(array):
+    import scipy.stats
+    return scipy.stats.mstats.zscore(array)
+

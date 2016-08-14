@@ -1,5 +1,6 @@
 from __future__ import print_function
 
+
 def get_all_families():
     from .path import db_path
     from os import listdir
@@ -90,6 +91,12 @@ def get_family_bitscores(family):
     return get_bitscores(join(db_path(), family, family + '.bitscore'))
 
 
+def get_family_records(family):
+    from os.path import join
+    from .path import db_path
+    return get_records(join(db_path(), family, family + '.db'))
+
+
 def get_family_sequences(family):
     from os.path import join
     from .path import db_path
@@ -114,6 +121,7 @@ def get_family_header(family):
         header = handle.readline().strip().split()
     return header
 
+
 def get_knearest_points_given_a(k, a_points, target_names, target_points):
     from sklearn.neighbors import BallTree
     k = min(k, len(target_points))
@@ -127,11 +135,13 @@ def get_knearest_points_given_a(k, a_points, target_names, target_points):
         results[idx] += list(zip(_dists, names, points))
     return results
 
+
 def get_knearest_seed_in_family_given_query(k, query_header, query_points, family):
     from .modify import retain_bitscore_cols
     seed_names, seed_points, seed_header = get_family_bitscores(family)
     seed_points, seed_header = retain_bitscore_cols(query_header, seed_points, seed_header)
     return get_knearest_points_given_a(k, query_points, seed_names, seed_points)
+
 
 def get_knearest_seed_given_query(k, query_header, query_points, families=None):
     if not families:
@@ -165,3 +175,83 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None):
     pool.close()
 
     return results
+
+
+def get_names_variants(db_file, bitscore_file):
+    records = get_records(db_file)
+    names = list(map(lambda x: x.name, records))
+    _names, _, _ = get_bitscores(bitscore_file)
+
+    assert len(names) == len(set(names)), 'names in db_file must be unique'
+    assert len(_names) == len(set(_names)), 'names in bitscore_file must be unique'
+
+    results = []
+
+    i_names = list(enumerate(names))
+    i_names.sort(key=lambda x: x[1])
+    _names.sort()
+
+    zipped = []
+    for (i, name), _name in zip(i_names, _names):
+        zipped.append((i, name, _name))
+
+    zipped.sort(key=lambda x: x[0])
+
+    assert len(names) == len(_names), 'db file and bitscore file should have same number of rows'
+
+    for i, name, _name in zipped:
+        if len(name) < len(_name):
+            assert name in _name, 'db file and bitscore file should contain the same thing '
+        else:
+            assert _name in name, 'db file and bitscore file should contain the same thing'
+
+        if name == _name:
+            results.append([name])
+        else:
+            results.append([name, _name])
+
+    return results
+
+
+def get_lengths_name_variants(db_file, bitscore_file):
+    names = get_names_variants(db_file, bitscore_file)
+    records = get_records(db_file)
+    lengths = {}
+
+    for name, rec in zip(names, records):
+        for n in name:
+            lengths[n] = len(rec.seq)
+
+    return lengths
+
+def get_query_lengths_name_variants(query):
+    import utils
+    db_file = utils.path.query_db_path(query)
+    bitscore_file = utils.path.query_bitscore_path(query)
+    return get_lengths_name_variants(db_file, bitscore_file)
+
+def get_family_lengths_name_variants(family):
+    import utils
+    db_file = utils.path.family_db_path(family)
+    bitscore_file = utils.path.family_bitscore_path(family)
+    return get_lengths_name_variants(db_file, bitscore_file)
+
+
+def get_lengths(db_file):
+    records = get_records(db_file)
+    lengths = {}
+    for rec in records:
+        lengths[rec.name] = len(rec.seq)
+    return lengths
+
+
+def get_family_lengths(family):
+    from os.path import join
+    from .path import db_path
+    return get_lengths(join(db_path(), family, family + '.db'))
+
+
+def get_query_lengths(query):
+    from os.path import join
+    from .path import queries_path
+    return get_lengths(join(queries_path(), query, query + '.db'))

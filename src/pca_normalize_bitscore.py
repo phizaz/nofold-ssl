@@ -1,77 +1,71 @@
-import sys
-from os.path import isfile, join, isdir, exists
-from os import listdir
-from random import shuffle
-from sklearn.decomposition import PCA
-import numpy as np
-import scipy as sp
-from optparse import OptionParser
-import bisect as bs
-import utils
-from Bio import SeqIO
+from __future__ import print_function
 
 '''
 Normalize the combined bitscore using PCA and Z-normalizer
 '''
 
-def save_file(header, names, scores, outfile):
-    assert isinstance(header, str)
-    with open(outfile, 'w') as handle:
-        handle.write(header + '\n')
-        for name, score in zip(names, scores):
-            handle.write(name + '\t')
-            for s in score:
-                handle.write(str(s) + '\t')
-            handle.write('\n')
-
-def normalize(l):
-    return sp.stats.mstats.zscore(l)
-
-def get_header(family):
-    path = '../Rfam-seed/db'
-    file = join(path, family, family + '.bitscore')
-    with open(file, 'r') as handle:
-        header = handle.readline().strip()
-    return header
-
-parser = OptionParser(usage='further clustering using inter-cluster distance criteria')
-parser.add_option("--tag", action="store", default='', dest="TAG", help="tag")
-parser.add_option('--query', action='store', dest='QUERY', help='db file')
-parser.add_option('--lengthnorm', action='store', dest='LENGTH_NORM', default='false', help='whether to use length normalization?')
-parser.add_option("--components", action="store", type='int', default=100, dest="COMPONENTS", help="PCA's number of components")
-(opts, args) = parser.parse_args()
-
-file_name = 'combined.' + opts.TAG + '.bitscore'
-no_extension_name = '.'.join(file_name.split('.')[:-1])
-print('no_extension_name:', no_extension_name)
-file = join('../results', file_name)
-
-names, points, header = utils.get_bitscores(file)
-
-# Z-normalize according to lengths
-if opts.LENGTH_NORM == 'true':
-    from normalizer_length import LengthNormalizer
-
-    print('Supervised Z-normalizing according to length...')
+def length_normalize(names, points, header, query):
+    from utils.helpers.lengthnorm import LengthNormalizer
     normalizer = LengthNormalizer()
-    length_normalized_points = normalizer.length_normalize_full(names, points, header, opts.QUERY)
+    n_points = normalizer.length_normalize_full(names, points, header, query)
+    return n_points
 
-    save_file('\t'.join(header), names, length_normalized_points, join('../results', no_extension_name + '.zNorm.bitscore'))
-    # patch the score back, and feed it to the next step
-    points = length_normalized_points
+def pca(components, points):
+    pc_header = ['PC{}'.format(i+1) for i in range(components)]
+    from sklearn.decomposition import PCA
+    pca = PCA(n_components=components)
+    pc_points = pca.fit_transform(points)
+    return pc_points, pc_header
 
-# get the 100 PC scores
-print('PCA-lizing...')
-components = opts.COMPONENTS
-pc_header = '\t'.join(['PC' + str(i + 1) for i in range(components)])
-pca = PCA(n_components=components)
-pca_scores = pca.fit_transform(points)
-save_file(pc_header, names, pca_scores, join('../results', no_extension_name + '.pcNorm' + str(components) + '.bitscore'))
+def znormalize(points):
+    import numpy as np
+    import utils
+    n_points = []
+    for col in points.T:
+        n_points.append(utils.short.normalize_array(col))
+    n_points = np.array(n_points).T
+    return n_points
 
-# normalize the PC scores
-print('Z-normalizing for PC' + str(opts.COMPONENTS))
-pc_normalized_scores = []
-for col in pca_scores.T:
-    pc_normalized_scores.append(normalize(col))
-pc_normalized_scores = np.array(pc_normalized_scores).T
-save_file(pc_header, names, pc_normalized_scores, join('../results', no_extension_name + '.pcNorm' + str(components) + '.zNorm.bitscore'))
+if __name__ == '__main__':
+    import utils
+    import argparse
+    from os.path import join
+
+    parser = argparse.ArgumentParser(usage='further clustering using inter-cluster distance criteria')
+    parser.add_argument('--tag', required=True, help="tag")
+    parser.add_argument('--query', required=True, help='query file in the form of db file')
+    parser.add_argument('--lengthnorm', default=False, action='store_true', help='whether to use length normalization?')
+    parser.add_argument('--components', type=int, default=100, help="PCA's number of components")
+    args = parser.parse_args()
+
+    file_name = 'combined.' + args.tag + '.bitscore'
+    no_extension_name = '.'.join(file_name.split('.')[:-1])
+    print('no_extension_name:', no_extension_name)
+    file = join(utils.path.results_path(), file_name)
+
+    names, points, header = utils.get.get_bitscores(file)
+    file_ext = ''
+
+    if args.lengthnorm:
+        print('Length normalizing ...')
+        points = length_normalize(names, points, header, args.query)
+        file_ext += '.zNorm'
+        file = join(utils.path.results_path(), '{}{}.bitscore'.format(no_extension_name, file_ext))
+        utils.save.save_bitscores(file, names, points, header)
+        print('Saved length normalize ...')
+
+    print('PCA {} components ..'.format(args.components))
+    points, pc_header = pca(args.components, points)
+    file_ext += '.pcNorm{}'.format(args.components)
+    file = join(utils.path.results_path(), '{}{}.bitscore'.format(no_extension_name, file_ext))
+    utils.save.save_bitscores(file, names, points, pc_header)
+    print('Saved PCA normalize')
+
+
+    print('Z-normalizing ..')
+    points = znormalize(points)
+    file_ext += '.zNorm'
+    file = join(utils.path.results_path(), '{}{}.bitscore'.format(no_extension_name, file_ext))
+    utils.save.save_bitscores(file, names, points, pc_header)
+    print('Saved Z-normalize ...')
+
