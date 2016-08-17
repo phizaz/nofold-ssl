@@ -14,3 +14,12 @@ def retain_bitscore_cols(cols, points, header):
             row.append(point[i])
         new_points.append(row)
     return new_points, new_header
+
+def group_bitscore_by_family(names, points):
+    from .short import general_fam_of
+    from collections import defaultdict
+    groups = defaultdict(list)
+    for name, point in zip(names, points):
+        fam = general_fam_of(name)
+        groups[fam].append(point)
+    return groups

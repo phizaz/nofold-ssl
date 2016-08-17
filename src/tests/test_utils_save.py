@@ -3,6 +3,7 @@ import utils
 from os.path import join
 from utils import *
 
+
 class SaveQueryRecordsTest(unittest.TestCase):
     query = '_test_save_query_record_'
 
@@ -10,13 +11,15 @@ class SaveQueryRecordsTest(unittest.TestCase):
         import shutil
         try:
             shutil.rmtree(join(utils.path.queries_path(), self.query))
-        except: pass
+        except:
+            pass
 
     def tearDown(self):
         import shutil
         try:
             shutil.rmtree(join(utils.path.queries_path(), self.query))
-        except: pass
+        except:
+            pass
 
     def runTest(self):
         from Bio import SeqIO
@@ -24,7 +27,6 @@ class SaveQueryRecordsTest(unittest.TestCase):
         with open(join(utils.path.queries_path(), 'test_rna', 'test_rna.db')) as handle:
             records = SeqIO.parse(handle, 'fasta')
             records = list(records)
-
 
         utils.save.save_query_records(self.query, records)
 
@@ -62,8 +64,9 @@ class SaveQueryBitscoresTest(unittest.TestCase):
         self.assertListEqual(names, _names)
         self.assertListEqual(points, _points)
         self.assertListEqual(header, _header)
-class SaveClustersTest(unittest.TestCase):
 
+
+class SaveClustersTest(unittest.TestCase):
     file = join(utils.path.results_path(), 'test_save_clusters.clusters')
 
     def setUp(self):
@@ -79,7 +82,6 @@ class SaveClustersTest(unittest.TestCase):
             os.remove(self.file)
         except:
             pass
-
 
     def test_labeless_clusters(self):
         clusters = [
@@ -101,4 +103,3 @@ class SaveClustersTest(unittest.TestCase):
             ['A', 'B', 'C'],
             ['D', 'E']
         ])
-

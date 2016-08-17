@@ -271,7 +271,7 @@ def get_seed_query_bitscore(mixed_bitscore_file):
     seed_points = []
     query_names = []
     query_points = []
-    from .short import fam_of, qfam_of
+    from .short import fam_of
     for name, point in zip(names, points):
         try:
             fam_of(name)

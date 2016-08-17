@@ -31,3 +31,19 @@ class ShortTest(unittest.TestCase):
         print(res)
         for each in res:
             self.assertTrue(-2 < each < 2, 'after z-normalization the range should be quite small')
+
+    def test_identical_clusters(self):
+        A = [
+            [1,2,3],
+            [4,5],
+        ]
+        B = [
+            [5,4],
+            [2,3,1]
+        ]
+        self.assertTrue(utils.short.identical_clusters(A, B))
+        C = [
+            [5,4],
+            [2,3,2]
+        ]
+        self.assertFalse(utils.short.identical_clusters(A, C))
