@@ -27,7 +27,7 @@ def run(query, unformatted, cripple, nn):
         print('taking from all we have, dont care for cripples')
         seed_families = available_families
     else:
-        query_families = utils.get.get_query_general_families(query)
+        query_families = utils.get.get_query_families(query)
         print('families required by the query:', len(query_families))
 
         not_having_families = query_families - available_families
@@ -94,7 +94,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(usage='cluster using semi-supervised label spreading algorithm')
     parser.add_argument('--query', required=True, help='the query name')
     parser.add_argument('--unformatted', default=False, action='store_true',
-                        help='is the query from somewhere else?')
+                        help='is the query from somewhere else? that the name of each query doesn\'t begin with QRF')
     parser.add_argument('--cripple', type=int, help='cripple degree')
     parser.add_argument('--nn', type=int, default=7,
                         help='number of nearest neighbors for closest seed selection')
@@ -106,11 +106,13 @@ if __name__ == '__main__':
                                 nn=args.nn)
 
     from os.path import join
+
     # save to file
-    if args.unformatted == 'true':
+    if args.unformatted:
         outfile = join(utils.path.results_path(), 'combined.' + args.query + '.bitscore')
     else:
-        outfile = join(utils.path.results_path(), 'combined.' + args.query + '.cripple' + str(args.cripple) + '.bitscore')
+        outfile = join(utils.path.results_path(),
+                       'combined.' + args.query + '.cripple' + str(args.cripple) + '.bitscore')
     utils.save.save_bitscores(outfile, names, points, header)
 
     print('total database size:', len(points))

@@ -109,7 +109,7 @@ class GetTest(unittest.TestCase):
         header = utils.get.get_family_header('RF00001')
         self.assertEqual(len(header), 1973)
 
-    def test_get_knearest_points_given_a(self):
+    def test_get_knearest_points(self):
         a_points = [
             [1, 1], [10, 10]
         ]
@@ -118,11 +118,12 @@ class GetTest(unittest.TestCase):
         ]
 
         target_names = ['t', 'tt', 'ttt', 'tttt']
-        results = utils.get.get_knearest_points_given_a(2, a_points, target_names, target_points)
+        results = utils.get.get_knearest_points(2, a_points, target_names, target_points)
         self.assertEqual(len(results), len(a_points))
         for each in results:
             self.assertEqual(len(each), 2)
             for dist, name, point in each:
+                self.assertIsInstance(dist, float)
                 self.assertIn(name, target_names)
                 self.assertIn(point, target_points)
 
@@ -230,4 +231,30 @@ class GetNameClusterTest(unittest.TestCase):
             ['A', 'B', 'C'],
             ['D', 'E']
         ])
+
+class GetClustersTest(unittest.TestCase):
+
+    def test(self):
+        clusters = utils.get.get_clusters(
+            join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.labelSpreading.cluster'),
+            join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore')
+        )
+        print(len(clusters))
+        for clust in clusters:
+            print(clust.__dict__)
+
+        names, points, header = utils.get.get_bitscores(join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore'))
+        name_point = {
+            name: point
+            for name, point in zip(names, points)
+        }
+
+        self.assertGreater(len(clusters), 0)
+        for clust in clusters:
+            self.assertEqual(len(clust.names), len(clust.points))
+            for point in clust.points:
+                self.assertIsInstance(point, list)
+                self.assertEqual(len(point), 100)
+            for name, point in zip(clust.names, clust.points):
+                self.assertListEqual(point, name_point[name])
 

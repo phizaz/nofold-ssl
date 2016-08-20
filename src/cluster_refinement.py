@@ -7,190 +7,132 @@ Merging using the supervised merging techninque (merge those clusters having the
 '''
 
 
-def point_of(name):
-    return sequences[name]
-
-
-def points_of(names):
-    return map(point_of, names)
-
-
-def retain_high_density(names, portion=0.9):
-    points = list(map(point_of, names))
-    take_out = int((1 - portion) * len(points))
-    retaining = len(points) - take_out
-    avg_dists = [(name, average_dist(points, origin)) for name, origin in zip(names, points)]
-    sorted_dists = sorted(avg_dists, key=lambda x: x[1])
-    retained = list(map(lambda x: x[0], sorted_dists[:retaining]))
-    return retained
-
-
-def labels_to_clusters(names, labels):
-    cluster_cnt = max(labels) + 1
-    sub_clusters = [[] for i in range(cluster_cnt)]
-    for name, label in zip(names, labels):
-        sub_clusters[label].append(name)
-    return sub_clusters
-
-
-def total_sequences(clusters):
-    return sum(len(names) for names in clusters)
-
-
-def split_cluster((i, names), clusters, C):
-    local_inter_cluster_dist = C * min(dist_cluster_avg(names, cluster) for cluster in clusters[:i] + clusters[i + 1:])
-    # print('local inter-cluster dist:', local_inter_cluster_dist)
-
-    points = list(map(point_of, names))
-    agg = AgglomerativeClusteringMaxMergeDist()
-    labels = agg.fit(points, local_inter_cluster_dist, method='average', metric='euclidean')
-    cluster_cnt = max(labels) + 1
-
-    if cluster_cnt == 1:
-        return [names]
-    else:
-        return labels_to_clusters(names, labels)
-
 def split_cluster(cluster, clusters, C):
-    import utils.helpers.space as space
+    from utils.helpers import space
     assert isinstance(cluster, space.Cluster)
     assert all(isinstance(cluster, space.Cluster) for cluster in clusters)
 
+    clust_dist = [
+        cluster.dist_avg(oth_clust)
+        for oth_clust in clusters
+        if cluster != oth_clust
+        ]
+
+    split_threshold = min(clust_dist) * C
+
+    from utils.helpers.hclust import HierarchicalClustMaxMergeDist
+    hclust = HierarchicalClustMaxMergeDist()
+    split_labels = hclust.fit(cluster.points, split_threshold, method='average')
+    labels_cnt = max(split_labels) + 1
+
+    split_names = [[] for _ in range(labels_cnt)]
+    split_points = [[] for _ in range(labels_cnt)]
+    for name, point, label in zip(cluster.names, cluster.points, split_labels):
+        split_names[label].append(name)
+        split_points[label].append(point)
+
+    new_clusters = []
+    for names, points in zip(split_names, split_points):
+        new_clusters.append(space.Cluster(names, points))
+
+    return new_clusters
 
 
 def split_clusters(clusters, C):
+    from utils.helpers import space
+    assert isinstance(clusters, list)
+    assert all(isinstance(cluster, space.Cluster) for cluster in clusters)
+
     from multiprocessing import Pool
     from functools import partial
-    print('splitting clusters...')
-    final_clusters = []
 
+    print('splitting clusters...')
     pool = Pool()
-    partial_fn = partial(split_cluster, clusters=clusters, C=C)
-    splitted_clusters = pool.map(partial_fn, enumerate(clusters))
+    fn = partial(split_cluster, clusters=clusters, C=C)
+    splitted_clusters = pool.map(fn, clusters)
     pool.close()
 
+    all_clusts = []
     for each in splitted_clusters:
-        final_clusters += each
+        all_clusts += each
 
-    print('final_clusters count:', len(final_clusters))
-    return final_clusters
-
-
-def merge_clusters(families, closest_seed_centroid, clusters):
-    print('mergining clusters...')
-    merged_clusters = {}
-    for names in clusters:
-        points = list(map(point_of, names))
-        centroid = centroid_of(points)
-        _dist, _idx = closest_seed_centroid.query([centroid], 1)
-        closest_dist = float(_dist)
-        closest_family_idx = int(_idx)
-        closest_family = families[closest_family_idx]
-
-        if closest_family not in merged_clusters:
-            merged_clusters[closest_family] = []
-        merged_clusters[closest_family] += names
-
-    result_clusters = merged_clusters.values()
-    print('merged left', len(result_clusters), 'clusters')
-    return result_clusters
+    print('final clusters cnt:', len(all_clusts))
+    return all_clusts
 
 
-def merge_clusters_label_propagation(seed_clusters, clusters):
-    seeds_points = []
-    seeds_labels = []
-    for family, points in seed_clusters.items():
-        seeds_points.append(centroid_of(points))
-        seeds_labels.append(family)
+def merge_clusters(closest_family, clusters):
+    from utils.helpers import space
+    assert isinstance(closest_family, space.ClosestPoint)
+    assert all(isinstance(clust, space.Cluster) for clust in clusters)
 
-    to_int, to_str = create_map(seeds_labels)
-    int_labels = map(to_int, seeds_labels)
+    print('merging clusters...')
+    from collections import defaultdict
+    clusts_by_fam = defaultdict(list)
+    for clust in clusters:
+        fam = closest_family.closest(space.centroid_of(clust.points))
+        clusts_by_fam[fam].append(clust)
 
-    unknown_points = []
-    unknown_clusters = []
-    for clust_id, names in enumerate(clusters):
-        points = points_of(names)
-        unknown_points += points
-        unknown_clusters += [clust_id for i in range(len(points))]
+    all_clusts = []
+    for fam, clusts in clusts_by_fam.items():
+        if len(clusts) > 1:
+            names = []
+            points = []
+            for clust in clusts:
+                names += clust.names
+                points += clust.points
 
-    points = seeds_points + unknown_points
-    labels = int_labels + [-1 for i in range(len(unknown_points))]
+            new_clust = space.Cluster(names, points)
+            all_clusts.append(new_clust)
+        else:
+            clust = clusts.pop()
+            all_clusts.append(clust)
 
-    ssl = LabelPropagation(kernel='rbf', gamma=0.5)
-    ssl.fit(points, labels)
+    print('merged clusters cnt:', len(all_clusts))
 
-    predicted_labels = ssl.transduction_[len(seeds_points):]
-    counters = [Counter() for i in range(len(clusters))]
-    for label, cluster in zip(predicted_labels, unknown_clusters):
-        counters[cluster][label] += 1
-
-    cluster_labels = map(lambda x: x.most_common(1).pop()[0], counters)
-    # print(cluster_labels)
-
-    merged_clusters = {}
-    for label, names in zip(cluster_labels, clusters):
-        if label not in merged_clusters:
-            merged_clusters[label] = []
-        merged_clusters[label] += names
-
-    result_clusters = merged_clusters.values()
-    print('merged left', len(result_clusters), 'clusters')
-    return result_clusters
+    return all_clusts
 
 
-def merge_clusters_knn(seed_clusters, clusters):
-    seeds_points = []
-    seeds_labels = []
-    for family, points in seed_clusters.items():
-        seeds_points.append(centroid_of(points))
-        seeds_labels.append(family)
+def identical_clusters(A, B):
+    assert isinstance(A, list)
+    assert isinstance(B, list)
+    from utils.helpers import space
+    assert all(isinstance(clust, space.Cluster) for clust in A)
+    assert all(isinstance(clust, space.Cluster) for clust in B)
 
-    knn = KNeighborsClassifier(n_neighbors=1)
-    knn.fit(seeds_points, seeds_labels)
+    def prepare_name(names):
+        return tuple(set(names))
 
-    predicted_labels = []
-    for names in clusters:
-        points = points_of(names)
-        labels = knn.predict(points)
-        counter = Counter(labels)
-        label, cnt = counter.most_common(1).pop()
-        predicted_labels.append(label)
+    def prepare_clust(clust):
+        return sorted(tuple(map(lambda x: prepare_name(x.names), clust)))
 
-    merged_clusters = {}
-    for label, names in zip(predicted_labels, clusters):
-        if label not in merged_clusters:
-            merged_clusters[label] = []
-        merged_clusters[label] += names
+    AA = prepare_clust(A)
+    BB = prepare_clust(B)
 
-    result_clusters = merged_clusters.values()
-    print('merged left', len(result_clusters), 'clusters')
-    return result_clusters
-
-
-
+    return AA == BB
 
 
 if __name__ == '__main__':
     import utils
     import argparse
-    import sys
     from os.path import join
     import utils.helpers.space as space
 
     parser = argparse.ArgumentParser(usage='further clustering using inter-cluster distance criteria')
     parser.add_argument('--tag', required=True, help='tag')
-    parser.add_argument('--alg', help='task\'s algorithm description')
+    parser.add_argument('--lengthnorm', default=False, action='store_true',
+                        help='did you use --lengthnorm in normalization step?')
+    parser.add_argument('--alg', required=True, help='task\'s algorithm description')
     parser.add_argument('--components', type=int, default=100, help='PCAs number of components')
     parser.add_argument('--C', type=float, default=1.0, help='splitting cluster parameter')
     args = parser.parse_args()
 
-    score_file = join(utils.path.results_path(), 'combined.{}.pcNorm{}.zNorm.bitscore'.format(
-        args.tag, args.components
+    point_file = join(utils.path.results_path(), 'combined.{}{}.pcNorm{}.zNorm.bitscore'.format(
+        args.tag, '.zNorm' if args.lengthnorm else '', args.components
     ))
     cluster_file = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
 
     print('loading score file')
-    seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(score_file)
+    seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(point_file)
 
     # get seed clusters
     seed_groups = utils.modify.group_bitscore_by_family(seed_names, seed_points)
@@ -200,19 +142,25 @@ if __name__ == '__main__':
     for fam, points in seed_groups.items():
         seed_centroids[fam] = space.centroid_of(points)
 
-    closest_seed_centroid = space.ClosestPoint(seed_centroids.values(), seed_centroids.keys())
+    closest_family = space.ClosestPoint(seed_centroids.values(), seed_centroids.keys())
 
     print('loading cluster file:', cluster_file)
-    clusters = utils.get.get_name_clusters(cluster_file)
+    clusters = utils.get.get_clusters(cluster_file, point_file)
 
-    splitted_clusters = split_clusters(clusters, C=opts.C)
+    splitted_clusters = split_clusters(clusters, C=args.C)
     for round in range(10):
-        last_split_clusters = splitted_clusters
         print('round:', round + 1)
-        merged_clusters = merge_clusters(seed_centroids_families, closest_seed_centroid, splitted_clusters)
-        # merged_clusters = merge_clusters_label_propagation(seed_clusters, splitted_clusters)
-        # merged_clusters = merge_clusters_knn(seed_clusters, splitted_clusters)
-        splitted_clusters = split_clusters(merged_clusters, C=opts.C)
+
+        last_split_clusters = splitted_clusters
+        merged_clusters = merge_clusters(closest_family, splitted_clusters)
+
+        if len(merged_clusters) == 1:
+            print('unfortunately after merging there is only one cluster left...')
+            print('we\'ll assume that the one cluster is the answer')
+            splitted_clusters = merged_clusters
+            break
+
+        splitted_clusters = split_clusters(merged_clusters, C=args.C)
 
         if identical_clusters(last_split_clusters, splitted_clusters):
             break
@@ -220,10 +168,6 @@ if __name__ == '__main__':
     final_clusters = splitted_clusters
 
     print('saving final cluster to file...')
-    outfile = join('../results', 'combined.' + tag + '.' + alg + '.refined.cluster')
-    with open(outfile, 'w') as handle:
-        for members in final_clusters:
-            for name in members:
-                handle.write(name + ' ')
-            handle.write('\n')
+    outfile = join(utils.path.results_path(), 'combined.{}.{}.refined.cluster'.format(args.tag, args.alg))
+    utils.save.save_clusters(outfile, final_clusters)
     print('saved!')

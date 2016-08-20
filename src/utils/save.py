@@ -41,3 +41,11 @@ def save_name_clusters(file, clusters):
             handle.write(
                 ' '.join(names) + '\n'
             )
+
+def save_clusters(file, clusters):
+    from .helpers.space import Cluster
+    assert all(isinstance(clust, Cluster) for clust in clusters)
+    name_clusters = []
+    for clust in clusters:
+        name_clusters.append(clust.names)
+    return save_name_clusters(file, name_clusters)

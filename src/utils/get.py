@@ -62,6 +62,7 @@ def get_query_families(query):
         families.add(fam)
     return families
 
+
 def get_query_general_families(query):
     from .short import is_bg, general_fam_of
     families = set()
@@ -131,13 +132,13 @@ def get_family_header(family):
     return header
 
 
-def get_knearest_points_given_a(k, a_points, target_names, target_points):
+def get_knearest_points(k, query_points, target_names, target_points):
     from sklearn.neighbors import BallTree
     k = min(k, len(target_points))
     tree = BallTree(target_points)
-    dists, idxs = tree.query(a_points, k=k)
+    dists, idxs = tree.query(query_points, k=k)
 
-    results = [[] for i in range(len(a_points))]
+    results = [[] for i in range(len(query_points))]
     for idx, (_dists, _idxs) in enumerate(zip(dists, idxs)):
         names = list(map(lambda idx: target_names[idx], _idxs))
         points = list(map(lambda idx: target_points[idx], _idxs))
@@ -149,7 +150,7 @@ def get_knearest_seed_in_family_given_query(k, query_header, query_points, famil
     from .modify import retain_bitscore_cols
     seed_names, seed_points, seed_header = get_family_bitscores(family)
     seed_points, seed_header = retain_bitscore_cols(query_header, seed_points, seed_header)
-    return get_knearest_points_given_a(k, query_points, seed_names, seed_points)
+    return get_knearest_points(k, query_points, seed_names, seed_points)
 
 
 def get_knearest_seed_given_query(k, query_header, query_points, families=None):
@@ -233,11 +234,13 @@ def get_lengths_name_variants(db_file, bitscore_file):
 
     return lengths
 
+
 def get_query_lengths_name_variants(query):
     import utils
     db_file = utils.path.query_db_path(query)
     bitscore_file = utils.path.query_bitscore_path(query)
     return get_lengths_name_variants(db_file, bitscore_file)
+
 
 def get_family_lengths_name_variants(family):
     import utils
@@ -265,6 +268,7 @@ def get_query_lengths(query):
     from .path import queries_path
     return get_lengths(join(queries_path(), query, query + '.db'))
 
+
 def get_seed_query_bitscore(mixed_bitscore_file):
     names, points, header = get_bitscores(mixed_bitscore_file)
     seed_names = []
@@ -283,11 +287,29 @@ def get_seed_query_bitscore(mixed_bitscore_file):
 
     return seed_names, seed_points, query_names, query_points, header
 
+
 def get_name_clusters(cluster_file):
     clusters = []
     with open(cluster_file) as handle:
         for line in handle:
             names = line.strip().split(' ')
             clusters.append(names)
+
+    return clusters
+
+
+def get_clusters(cluster_file, point_file):
+    clusters = []
+    from .helpers.space import Cluster
+    name_clusters = get_name_clusters(cluster_file)
+    names, points, header = get_bitscores(point_file)
+    name_point = {
+        name: point
+        for name, point in zip(names, points)
+        }
+    for names in name_clusters:
+        clusters.append(Cluster(
+            names, list(map(lambda x: name_point[x], names))
+        ))
 
     return clusters

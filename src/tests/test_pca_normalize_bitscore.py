@@ -42,13 +42,46 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
         from os.path import exists
 
         query = 'novel-1-2-3hp'
-        tag = 'novel-1-2-3hp.cripple3'
+        tag = 'novel-1-2-3hp'
+
+        if not exists(join(utils.path.results_path(), 'combined.{}.bitscore'.format(tag))):
+            utils.run.run_python_attach_output(join(utils.path.src_path(), 'combine_rfam_bitscore.py'),
+                                               '--unformatted',
+                                               query=query,
+                                               nn=19)
+
+        files = [
+            join(utils.path.results_path(), 'combined.{}.zNorm.bitscore'.format(tag)),
+            join(utils.path.results_path(), 'combined.{}.zNorm.pcNorm100.bitscore'.format(tag)),
+            join(utils.path.results_path(), 'combined.{}.zNorm.pcNorm100.zNorm.bitscore'.format(tag))
+        ]
+
+        for file in files:
+            if exists(file):
+                remove(file)
+
+        utils.run.run_python_attach_output(join(utils.path.src_path(), 'pca_normalize_bitscore.py'),
+                                           '--lengthnorm',
+                                           tag=tag,
+                                           query=query,
+                                           components=100)
+
+        for file in files:
+            self.assertTrue(exists(file))
+
+    def test_real_large(self):
+        from os.path import join
+        from os import remove
+        from os.path import exists
+
+        query = 'rfam75id-rename'
+        tag = 'rfam75id-rename.cripple0'
 
         if not exists(join(utils.path.results_path(), 'combined.{}.bitscore'.format(tag))):
             utils.run.run_python_attach_output(join(utils.path.src_path(), 'combine_rfam_bitscore.py'),
                                                query=query,
-                                               cripple=3,
-                                               nn=3)
+                                               cripple=0,
+                                               nn=7)
 
         files = [
             join(utils.path.results_path(), 'combined.{}.zNorm.bitscore'.format(tag)),

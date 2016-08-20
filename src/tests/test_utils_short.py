@@ -35,7 +35,7 @@ class ShortTest(unittest.TestCase):
     def test_identical_clusters(self):
         A = [
             [1,2,3],
-            [4,5],
+            [4,5]
         ]
         B = [
             [5,4],
@@ -47,3 +47,15 @@ class ShortTest(unittest.TestCase):
             [2,3,2]
         ]
         self.assertFalse(utils.short.identical_clusters(A, C))
+
+    def test_list_equal(self):
+        A = [1,2,3]
+        B = [1,2,3,4]
+
+        self.assertFalse(utils.short.list_equal(A, B))
+
+        C = [3,2,1]
+        self.assertFalse(utils.short.list_equal(A, C))
+
+        D = [1,2,3]
+        self.assertTrue(utils.short.list_equal(A, D))

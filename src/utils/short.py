@@ -40,3 +40,7 @@ def identical_clusters(A, B):
         return tuple(sorted(l))
 
     return tuplize(A) == tuplize(B)
+
+def list_equal(a, b):
+    if len(a) != len(b): return False
+    return all(aa == bb for aa, bb in zip(a, b))

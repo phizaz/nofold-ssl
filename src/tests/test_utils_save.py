@@ -103,3 +103,19 @@ class SaveClustersTest(unittest.TestCase):
             ['A', 'B', 'C'],
             ['D', 'E']
         ])
+
+    def test_save_clusters(self):
+        from utils.helpers import space
+        A = [
+            space.Cluster(['a', 'b'], [
+                [0, 0], [1, 1]
+            ]),
+            space.Cluster(['c'], [
+                [2, 2]
+            ])
+        ]
+        utils.save.save_clusters(self.file, A)
+        self.assertListEqual(utils.get.get_name_clusters(self.file), [
+            ['a', 'b'],
+            ['c']
+        ])

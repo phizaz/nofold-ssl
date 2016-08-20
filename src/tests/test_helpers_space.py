@@ -55,6 +55,8 @@ class ClosestPointTest(unittest.TestCase):
         closest = utils.helpers.space.ClosestPoint(points)
         res = closest.closest([0,0])
         self.assertEqual(res, 0)
+        res = closest.closest([3,3])
+        self.assertEqual(res, 2)
 
     def test_names(self):
         points = [
@@ -64,6 +66,8 @@ class ClosestPointTest(unittest.TestCase):
         closest = utils.helpers.space.ClosestPoint(points, names)
         res = closest.closest([2,2])
         self.assertEqual(res, 'b')
+        res = closest.closest([0,0])
+        self.assertEqual(res, 'a')
 
 class ClusterTest(unittest.TestCase):
 
@@ -96,3 +100,16 @@ class ClusterTest(unittest.TestCase):
         ])
         dist = A.dist_centroid(B)
         self.assertAlmostEqual(dist, 1.0)
+
+    def test_same(self):
+        A = utils.helpers.space.Cluster('A', ['a', 'b'], [
+            [0, -1], [0, 3]
+        ])
+        B = utils.helpers.space.Cluster('B', ['c', 'd'], [
+            [1, 0], [1, 2]
+        ])
+        C = utils.helpers.space.Cluster('A', ['a', 'b'], [
+            [0, -1], [0, 3]
+        ])
+        self.assertFalse(A.same(B))
+        self.assertTrue(A.same(C))
