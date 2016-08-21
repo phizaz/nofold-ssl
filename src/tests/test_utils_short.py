@@ -2,6 +2,11 @@ import unittest
 from src import utils
 class ShortTest(unittest.TestCase):
 
+    def test_is_name(self):
+        self.assertTrue(utils.short.is_name('QRF00001'))
+        self.assertTrue(utils.short.is_name('RF00001'))
+        self.assertFalse(utils.short.is_name('novel1-2-3hp'))
+
     def test_is_bg(self):
 
         self.assertTrue(utils.short.is_bg('dinucShuffaoeu'))

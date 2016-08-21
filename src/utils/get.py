@@ -289,7 +289,6 @@ def get_seed_query_bitscore(mixed_bitscore_file):
 
     return seed_names, seed_points, query_names, query_points, header
 
-
 def get_name_clusters(cluster_file):
     clusters = []
     with open(cluster_file) as handle:

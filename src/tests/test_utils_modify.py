@@ -17,3 +17,19 @@ class ModifyTest(unittest.TestCase):
         groups = utils.modify.group_bitscore_by_family(names, points)
         print(groups)
         self.assertDictEqual(groups, dict(A=[1,2], B=[3]))
+
+    def test_group_names_by_family(self):
+        names = [
+            'RF0001_A',
+            'RF0001_B',
+            'RF0002_C',
+            'QRF0002_D',
+            'BG0001'
+        ]
+
+        group = utils.modify.group_names_by_family(names)
+        print(group)
+        self.assertListEqual(group['RF0002'], ['RF0002_C', 'QRF0002_D'])
+        self.assertListEqual(group['RF0001'], ['RF0001_A', 'RF0001_B'])
+        cnt = sum(len(each) for each in group.values())
+        self.assertEqual(cnt, 4, 'BG should not appear in the group')

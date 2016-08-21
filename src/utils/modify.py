@@ -23,3 +23,15 @@ def group_bitscore_by_family(names, points):
         fam = general_fam_of(name)
         groups[fam].append(point)
     return groups
+
+def group_names_by_family(names):
+    from .short import general_fam_of, is_bg
+    names_by_family = {}
+    for name in names:
+        if not is_bg(name):
+            family = general_fam_of(name)
+
+        if family not in names_by_family:
+            names_by_family[family] = []
+        names_by_family[family].append(name)
+    return names_by_family

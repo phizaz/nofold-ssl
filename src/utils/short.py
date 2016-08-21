@@ -1,3 +1,6 @@
+def is_name(name):
+    return name[:2] in {'QR', 'RF'}
+
 def is_bg(name):
     bg_keywords = ['dinucShuff', 'bg']
     return any(keyword in name for keyword in bg_keywords)
