@@ -1,6 +1,6 @@
 import unittest
 import utils
-from pca_normalize_bitscore import length_normalize, pca, znormalize
+from normalize_bitscore import length_normalize, pca, znormalize
 
 
 class PCANormalizeBitscoreTest(unittest.TestCase):
@@ -48,7 +48,7 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
             utils.run.run_python_attach_output(join(utils.path.src_path(), 'combine_rfam_bitscore.py'),
                                                '--unformatted',
                                                query=query,
-                                               nn=19)
+                                               nn=13)
 
         files = [
             join(utils.path.results_path(), 'combined.{}.zNorm.bitscore'.format(tag)),
@@ -60,7 +60,7 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
             if exists(file):
                 remove(file)
 
-        utils.run.run_python_attach_output(join(utils.path.src_path(), 'pca_normalize_bitscore.py'),
+        utils.run.run_python_attach_output(join(utils.path.src_path(), 'normalize_bitscore.py'),
                                            '--lengthnorm',
                                            tag=tag,
                                            query=query,
@@ -93,7 +93,7 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
             if exists(file):
                 remove(file)
 
-        utils.run.run_python_attach_output(join(utils.path.src_path(), 'pca_normalize_bitscore.py'),
+        utils.run.run_python_attach_output(join(utils.path.src_path(), 'normalize_bitscore.py'),
                                            '--lengthnorm',
                                            tag=tag,
                                            query=query,

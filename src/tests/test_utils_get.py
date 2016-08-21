@@ -194,6 +194,43 @@ class GetTest(unittest.TestCase):
         self.assertGreater(len(seed_names), 0)
         self.assertGreater(len(query_names), 0)
 
+    def test_get_center_point(self):
+        points = [
+            [0, 0],
+            [2,3],
+            [4,4]
+        ]
+        names = ['a', 'b', 'c']
+        name, point = utils.get.get_center_point(names, points)
+        print(name, point)
+        self.assertEqual(name, 'b')
+        self.assertEqual(point, points[1])
+
+    def test_get_family_center_point(self):
+        name, point = utils.get.get_family_center_point('RF00005')
+        print(name, point)
+        self.assertEqual(name, 'RF00005_M68929.1:25')
+        self.assertIsInstance(point, list)
+
+    def test_get_family_center_point_with_retain(self):
+        _, _, header = utils.get.get_query_bitscores('rfam75id-rename')
+        name, point = utils.get.get_family_center_point('RF00005', header)
+        self.assertEqual(name, 'RF00005_M68929.1:25')
+        self.assertEqual(len(header), len(point))
+
+    def test_get_families_center_points(self):
+        _, _, header = utils.get.get_query_bitscores('rfam75id-rename')
+        # families = utils.get.get_calculated_families()
+        families = ['RF00001', 'RF00002', 'RF00005', 'RF00009']
+        print('start getting families center points')
+        res = utils.get.get_families_center_points(families, header)
+        self.assertEqual(len(res), len(families))
+        for name, point in res:
+            self.assertIsInstance(name, str)
+            self.assertIsInstance(point, list)
+
+        print(res)
+
 class GetNameClusterTest(unittest.TestCase):
     file = join(utils.path.results_path(), 'test_save_clusters.clusters')
 

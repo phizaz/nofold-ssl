@@ -81,7 +81,9 @@ def get_bitscores(bitscore_file):
         for line in handle:
             tokens = line.strip().split()
             name, point = tokens[0], list(map(float, tokens[1:]))
-            assert len(point) == len(header), 'point doesn\'t have the same dimension as header'
+            assert len(point) == len(
+                header), 'point doesn\'t have the same dimension as header, point {}, header {}'.format(len(point),
+                                                                                                        len(header))
             names.append(name)
             points.append(point)
     return names, points, header
@@ -313,3 +315,36 @@ def get_clusters(cluster_file, point_file):
         ))
 
     return clusters
+
+
+def get_center_point(names, points):
+    from .helpers import space
+    centroid = space.centroid_of(points)
+    min_dist, center_name, center_point = min(
+        [(space.dist(centroid, point), name, point) for name, point in zip(names, points)], key=lambda x: x[0])
+    return center_name, center_point
+
+
+def get_family_center_point(family, retain_cols=None):
+    from .modify import retain_bitscore_cols
+    names, points, header = get_family_bitscores(family)
+    if retain_cols is not None:
+        points, _ = retain_bitscore_cols(retain_cols, points, header)
+    name, point = get_center_point(names, points)
+    return name, point
+
+
+def get_families_center_points(families, retain_cols=None):
+    from .modify import retain_bitscore_cols
+    from multiprocessing import Pool
+    from functools import partial
+    from builtins import zip
+    p = Pool()
+    fn = partial(get_family_center_point, retain_cols=retain_cols)
+    results = []
+    for i, (fam, (name, point)) in enumerate(zip(families, p.imap(fn, families)), 1):
+        print('job {} of {} fam: {}'.format(i, len(families), fam))
+        results.append((name, point))
+    p.close()
+    print('done')
+    return results

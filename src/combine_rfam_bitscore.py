@@ -55,24 +55,24 @@ def run(query, unformatted, cripple, nn):
     print('always include centroids...')
     print('only closest:', nn, 'neighbors seeds to queries will be taken...')
 
-    import time
-    time_start = time.time()
-    query_points_closests = utils.get.get_knearest_seed_given_query(nn, query_header, query_points, seed_families)
-    time_stop = time.time()
-    print('time elapsed:', time_stop - time_start)
-
-    print('getting selected seed sequences')
+    seed_points_closest = utils.get.get_knearest_seed_given_query(nn, query_header, query_points, seed_families)
     selected_seed = {}
     from collections import Counter
-    selected_seed_by_family = Counter()
-    for each in query_points_closests:
+    seed_cnt_by_fam = Counter()
+    for each in seed_points_closest:
         for dist, name, point in each:
             if name not in selected_seed:
                 family = utils.short.fam_of(name)
-                selected_seed_by_family[family] += 1
+                seed_cnt_by_fam[family] += 1
                 selected_seed[name] = point
     print('seed count:', len(selected_seed))
-    print('seed by family:', selected_seed_by_family)
+    print('seed by family:', seed_cnt_by_fam)
+
+    # add seed from center of each family
+    print('add seeds from a center of each family...')
+    for name, point in utils.get.get_families_center_points(seed_families, query_header):
+        selected_seed[name] = point
+    print('total selected seed count:', len(selected_seed))
 
     seed_names = []
     seed_points = []

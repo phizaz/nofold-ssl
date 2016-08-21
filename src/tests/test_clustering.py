@@ -1,4 +1,4 @@
-from cluster_semi_label_propagation import run
+from clustering import run
 import unittest
 import utils
 
@@ -19,23 +19,23 @@ class ClusterSemiLabelPropagation(unittest.TestCase):
 
     def test_real(self):
         from os.path import join
-        utils.run.run_python_attach_output(join(utils.path.src_path(), 'cluster_semi_label_propagation.py'),
+        utils.run.run_python_attach_output(join(utils.path.src_path(), 'clustering.py'),
                                            '--lengthnorm',
                                            tag='novel-1-2-3hp',
                                            alg='labelSpreading',
                                            kernel='rbf',
                                            gamma=0.5,
-                                           alpha=0.8)
+                                           alpha=1.0)
 
         clusters = utils.get.get_name_clusters(join(utils.path.results_path(), 'combined.novel-1-2-3hp.labelSpreading.cluster'))
-        self.assertTrue(2 <= len(clusters) <= 10, msg='clustering quality is too bad')
+        self.assertTrue(2 <= len(clusters), msg='clustering quality is too bad')
         for names in clusters:
             for name in names:
                 self.assertTrue('novel' in name, msg='should cluster only the query')
 
     def test_real_large(self):
         from os.path import join
-        utils.run.run_python_attach_output(join(utils.path.src_path(), 'cluster_semi_label_propagation.py'),
+        utils.run.run_python_attach_output(join(utils.path.src_path(), 'clustering.py'),
                                            '--lengthnorm',
                                            tag='rfam75id-rename.cripple0',
                                            alg='labelSpreading',
