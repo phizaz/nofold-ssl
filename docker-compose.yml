@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  parameter-search:
+    image: phizaz/nofold-ssl
+    volumes:
+      - ./:/nofold-ssl
+    working_dir: /nofold-ssl/src
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python parameter_search.py
