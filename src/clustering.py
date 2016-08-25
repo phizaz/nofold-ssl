@@ -51,11 +51,20 @@ def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, 
     ssl.fit(X, Y)
     query_predicted_labels = ssl.transduction_[len(seed_points):]
 
-    clusters = {}
-    for name, label in zip(query_names, query_predicted_labels):
-        if label not in clusters:
-            clusters[label] = []
-        clusters[label].append(name)
+    groups = {}
+    for name, label, point in zip(query_names, query_predicted_labels, query_points):
+        if label not in groups:
+            groups[label] = []
+        groups[label].append((name, point))
+
+    from utils.helpers import space
+    clusters = []
+    for name, points in groups.items():
+        clusters.append(space.Cluster(
+            names=map(lambda x: x[0], points),
+            points=map(lambda x: x[1], points),
+        ))
+
     return clusters
 
 
@@ -85,5 +94,5 @@ if __name__ == '__main__':
                    args.gamma)
 
     outfile = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
-    utils.save.save_name_clusters(outfile, clusters)
+    utils.save.save_clusters(outfile, clusters)
     print('saving done!', len(clusters), 'clusters')

@@ -9,12 +9,14 @@ class ClusterSemiLabelPropagation(unittest.TestCase):
 
         from os.path import join
 
-        file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore')
+        file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.zNorm.pcNorm100.zNorm.bitscore')
         seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(file)
         clusters = run(seed_names, seed_points, query_names, query_points, 'labelSpreading', 'rbf', 1.0, None, 0.5)
-        self.assertTrue(2 <= len(clusters) <= 4, msg='clustering quality is too bad')
-        for label, names in clusters.items():
-            for name in names:
+        self.assertTrue(2 <= len(clusters), msg='clustering quality is too bad {}'.format(len(clusters)))
+        from utils.helpers import space
+        for cluster in clusters:
+            self.assertIsInstance(cluster, space.Cluster)
+            for name in cluster.names:
                 self.assertTrue('novel' in name, msg='should cluster only the query')
 
     def test_real(self):

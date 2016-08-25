@@ -49,3 +49,10 @@ def save_clusters(file, clusters):
     for clust in clusters:
         name_clusters.append(clust.names)
     return save_name_clusters(file, name_clusters)
+
+def save_csv(cols, rows, file):
+    import csv
+    with open(file, 'w') as handle:
+        writer = csv.writer(handle)
+        writer.writerow(cols)
+        writer.writerows(rows)

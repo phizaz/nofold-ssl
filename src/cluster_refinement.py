@@ -110,44 +110,20 @@ def identical_clusters(A, B):
 
     return AA == BB
 
-
-if __name__ == '__main__':
+def run(clusters, seed_names, seed_points, c):
     import utils
-    import argparse
-    from os.path import join
-    import utils.helpers.space as space
-
-    parser = argparse.ArgumentParser(usage='further clustering using inter-cluster distance criteria')
-    parser.add_argument('--tag', required=True, help='tag')
-    parser.add_argument('--lengthnorm', default=False, action='store_true',
-                        help='did you use --lengthnorm in normalization step?')
-    parser.add_argument('--alg', required=True, help='task\'s algorithm description')
-    parser.add_argument('--components', type=int, default=100, help='PCAs number of components')
-    parser.add_argument('--C', type=float, default=1.0, help='splitting cluster parameter')
-    args = parser.parse_args()
-
-    point_file = join(utils.path.results_path(), 'combined.{}{}.pcNorm{}.zNorm.bitscore'.format(
-        args.tag, '.zNorm' if args.lengthnorm else '', args.components
-    ))
-    cluster_file = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
-
-    print('loading score file')
-    seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(point_file)
-
     # get seed clusters
     seed_groups = utils.modify.group_bitscore_by_family(seed_names, seed_points)
 
     print('calculating centroids for seed clusters..')
+    from utils.helpers import space
     seed_centroids = {}
     for fam, points in seed_groups.items():
         seed_centroids[fam] = space.centroid_of(points)
 
     closest_family = space.ClosestPoint(seed_centroids.values(), seed_centroids.keys())
 
-    print('loading cluster file:', cluster_file)
-    clusters = utils.get.get_clusters(cluster_file, point_file)
-
-    splitted_clusters = split_clusters(clusters, C=args.C)
+    splitted_clusters = split_clusters(clusters, C=c)
     for round in range(10):
         print('round:', round + 1)
 
@@ -160,12 +136,39 @@ if __name__ == '__main__':
             splitted_clusters = merged_clusters
             break
 
-        splitted_clusters = split_clusters(merged_clusters, C=args.C)
+        splitted_clusters = split_clusters(merged_clusters, C=c)
 
         if identical_clusters(last_split_clusters, splitted_clusters):
             break
 
-    final_clusters = splitted_clusters
+    return splitted_clusters
+
+if __name__ == '__main__':
+    import utils
+    import argparse
+    from os.path import join
+
+    parser = argparse.ArgumentParser(usage='further clustering using inter-cluster distance criteria')
+    parser.add_argument('--tag', required=True, help='tag')
+    parser.add_argument('--lengthnorm', default=False, action='store_true',
+                        help='did you use --lengthnorm in normalization step?')
+    parser.add_argument('--alg', required=True, help='task\'s algorithm description')
+    parser.add_argument('--components', type=int, default=100, help='PCAs number of components')
+    parser.add_argument('--c', type=float, default=1.0, help='splitting cluster parameter')
+    args = parser.parse_args()
+
+    point_file = join(utils.path.results_path(), 'combined.{}{}.pcNorm{}.zNorm.bitscore'.format(
+        args.tag, '.zNorm' if args.lengthnorm else '', args.components
+    ))
+    cluster_file = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
+
+    print('loading score file')
+    seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(point_file)
+
+    print('loading cluster file:', cluster_file)
+    clusters = utils.get.get_clusters(cluster_file, point_file)
+
+    final_clusters = run(clusters, seed_names, seed_points, args.c)
 
     print('saving final cluster to file...')
     outfile = join(utils.path.results_path(), 'combined.{}.{}.refined.cluster'.format(args.tag, args.alg))

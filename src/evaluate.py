@@ -58,7 +58,7 @@ def max_in_cluster_of(family, clusters, names_by_family):
     return cnt / all_cnt
 
 
-def run(names, clusters):
+def run(names, name_clusters):
     import utils
     names_by_family = utils.modify.group_names_by_family(names)
     print('number of families:', len(names_by_family))
@@ -75,9 +75,9 @@ def run(names, clusters):
 
     for family in sorted(families):
         res['family'].append(family)
-        res['sensitivity'].append(sensitivity_of(family, clusters, names_by_family)),
-        res['precision'].append(precision_of(family, clusters)),
-        res['max_in_cluster'].append(max_in_cluster_of(family, clusters, names_by_family)),
+        res['sensitivity'].append(sensitivity_of(family, name_clusters, names_by_family)),
+        res['precision'].append(precision_of(family, name_clusters)),
+        res['max_in_cluster'].append(max_in_cluster_of(family, name_clusters, names_by_family)),
         res['seq_cnt'].append(len(names_by_family[family]))
 
     avg = OrderedDict()
@@ -103,7 +103,6 @@ def nofold_get_name_clusters(cluster_file):
 if __name__ == '__main__':
     import argparse
     import utils
-    from os.path import join
 
     parser = argparse.ArgumentParser(usage='evaluate the clustering results')
     parser.add_argument('--file', required=True, help='cluster result file')

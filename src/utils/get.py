@@ -271,8 +271,7 @@ def get_query_lengths(query):
     return get_lengths(join(queries_path(), query, query + '.db'))
 
 
-def get_seed_query_bitscore(mixed_bitscore_file):
-    names, points, header = get_bitscores(mixed_bitscore_file)
+def get_seed_query_bitscore_plain(names, points, header):
     seed_names = []
     seed_points = []
     query_names = []
@@ -288,6 +287,10 @@ def get_seed_query_bitscore(mixed_bitscore_file):
             query_points.append(point)
 
     return seed_names, seed_points, query_names, query_points, header
+
+def get_seed_query_bitscore(mixed_bitscore_file):
+    names, points, header = get_bitscores(mixed_bitscore_file)
+    return get_seed_query_bitscore_plain(names, points, header)
 
 def get_name_clusters(cluster_file):
     clusters = []
@@ -347,3 +350,10 @@ def get_families_center_points(families, retain_cols=None):
     p.close()
     print('done')
     return results
+
+def get_results_avg(file):
+    with open(file, 'r') as handle:
+        lines = handle.readlines()
+        scores = map(float, lines[-1].strip().split())
+        sensitivity, precision, max_in_cluster = scores
+    return sensitivity, precision, max_in_cluster

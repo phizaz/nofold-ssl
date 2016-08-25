@@ -186,8 +186,11 @@ class GetTest(unittest.TestCase):
         for key, val in _lengths.items():
             self.assertEqual(lengths[key], val)
 
+    def tets_get_mixed_bitscore_plain(self):
+        raise NotImplementedError
+
     def test_get_mixed_bitscore(self):
-        file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore')
+        file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.zNorm.pcNorm100.zNorm.bitscore')
         seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(file)
         self.assertEqual(len(seed_points), len(seed_names))
         self.assertEqual(len(query_names), len(query_points))
@@ -268,6 +271,14 @@ class GetNameClusterTest(unittest.TestCase):
             ['A', 'B', 'C'],
             ['D', 'E']
         ])
+
+    def test_get_results_avg(self):
+        path = join(utils.path.results_path(), 'combined.novel-1-2-3hp.labelSpreading.refined.cluster.evaluation')
+        sensitivity, precision, max_in_cluster = utils.get.get_results_avg(path)
+        self.assertAlmostEqual(sensitivity, 1.0)
+        self.assertAlmostEqual(precision, 1.0)
+        self.assertGreater(max_in_cluster, 0.8)
+
 
 class GetClustersTest(unittest.TestCase):
 

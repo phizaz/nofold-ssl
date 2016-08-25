@@ -119,3 +119,11 @@ class SaveClustersTest(unittest.TestCase):
             ['a', 'b'],
             ['c']
         ])
+
+    def test_save_csv(self):
+        utils.save.save_csv(
+            ['a', 'b'],
+            [[1,2], [3,4]],
+            join(utils.path.results_path(), 'test_save_csv.csv')
+        )
+

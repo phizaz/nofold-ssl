@@ -12,7 +12,6 @@ def run_command_attach_output(command):
         raise Exception('run_command_attach_output with command {} exit with {}'.format(command, p.returncode))
 
 def run_python(script_file, *args, **kwargs):
-    import subprocess
     import sys
 
     params = [

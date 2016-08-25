@@ -165,7 +165,7 @@ class ClusterRefinementTest(unittest.TestCase):
             '--lengthnorm',
             tag='novel-1-2-3hp',
             alg='labelSpreading',
-            C=1.0, # if set to C=1.1 or 1.2 the results would be very bad
+            c=1.0, # if set to C=1.1 or 1.2 the results would be very bad
         )
 
     def test_real_large(self):
@@ -175,6 +175,6 @@ class ClusterRefinementTest(unittest.TestCase):
             '--lengthnorm',
             tag='rfam75id-rename.cripple0',
             alg='labelSpreading',
-            C=1.2
+            c=1.2
         )
 
