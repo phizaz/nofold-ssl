@@ -77,8 +77,8 @@ if __name__ == '__main__':
         'c'
     ]
     search_space = {
-        'query': ['rfam75id-rename'],
-        'cripple': [0],
+        'query': ['rfam75id-rename', 'rfam75id_embed-rename', 'rfam75id_dinuc3000-rename', 'fam40_typedistributed_embed+bg_weak', 'fam40_typedistributed_plain+bg_weak'],
+        'cripple': [0, 0, 1, 6, 6],
         'nn_seed': [7, 19],
         'length_norm': [True, False],
         'alg': ['labelSpreading', 'labelPropagation'],
