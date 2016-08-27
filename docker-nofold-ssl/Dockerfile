@@ -1,10 +1,6 @@
 FROM phizaz/sklearn:python2
 MAINTAINER Konpat Preechakul <the.akita.ta@gmail.com>
 
-RUN pip install --no-cache-dir biopython
-RUN pip install --no-cache-dir fastcluster
-RUN pip install --no-cache-dir sortedcontainers
-
 # install infernal for cmscore
 ENV infernal infernal-1.0.2
 RUN mkdir -p /tmp \
@@ -15,3 +11,8 @@ RUN mkdir -p /tmp \
     && ./configure \
     && make && make install \
     && rm -rf /tmp/*
+
+RUN pip install --no-cache-dir biopython
+RUN pip install --no-cache-dir fastcluster
+RUN pip install --no-cache-dir sortedcontainers
+RUN pip install --no-cache-dir future
