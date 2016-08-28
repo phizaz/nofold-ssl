@@ -1,9 +1,9 @@
 from __future__ import print_function
 
 
-def run_combine(query, cripple, nn_seed):
+def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
     from combine_rfam_bitscore import run
-    return run(query, unformatted=False, cripple=cripple, nn=nn_seed)
+    return run(query, unformatted, cripple, nn_seed, inc_centroids)
 
 
 def run_normalize(names, points, header, query, length_norm):
@@ -50,6 +50,7 @@ def run_refinement_and_evaluate(clusters, names, points, header, c):
     _, _, query_names, _, _ = utils.get.get_seed_query_bitscore_plain(names, points, header)
     return run_evaluate(name_clusters, query_names)
 
+
 def save(search_arguments, results):
     import utils
     from os.path import join
@@ -61,6 +62,7 @@ def save(search_arguments, results):
         ]
     utils.save.save_csv(cols, rows, outfile)
     return cols, rows
+
 
 if __name__ == '__main__':
     from argparse import ArgumentParser
@@ -76,10 +78,16 @@ if __name__ == '__main__':
         'alg', 'kernel', 'gamma', 'alpha',
         'c'
     ]
+
     search_space = {
-        'query': ['rfam75id-rename', 'rfam75id_embed-rename', 'rfam75id_dinuc3000-rename', 'fam40_typedistributed_embed+bg_weak', 'fam40_typedistributed_plain+bg_weak'],
-        'cripple': [0, 0, 1, 6, 6],
+        # 'query': ['rfam75id-rename', 'rfam75id_embed-rename', 'rfam75id_dinuc3000-rename',
+        #           'fam40_typedistributed_embed+bg_weak', 'fam40_typedistributed_plain+bg_weak'],
+        'query': ['novel-1-2-3hp'],
+        'unformatted': [True],
+        # 'cripple': [0, 0, 1, 6, 6],
+        'cripple': [None],
         'nn_seed': [7, 19],
+        'inc_centroids': [True, False],
         'length_norm': [True, False],
         'alg': ['labelSpreading', 'labelPropagation'],
         'kernel': ['rbf'],
@@ -92,13 +100,13 @@ if __name__ == '__main__':
 
     results = {}
 
-    for query, cripple in zip(search_space['query'], search_space['cripple']):
-        for nn_seed in search_space['nn_seed']:
+    for query, unformatted, cripple in zip(search_space['query'], search_space['unformatted'], search_space['cripple']):
+        for nn_seed, inc_centroids in product(search_space['nn_seed'], search_space['inc_centroids']):
             print('combining query:{} cripple:{} nn_seed:{}'.format(query, cripple, nn_seed))
-            names, points, header = run_combine(query, cripple, nn_seed)
+            names, points, header = run_combine(query, unformatted, cripple, nn_seed, inc_centroids)
 
             for length_norm in search_space['length_norm']:
-                print('normalizing length_norm: {}'.format(length_norm))
+                print('normalizing query: {} length_norm: {}'.format(query, length_norm))
                 names, points, header = run_normalize(names, points, header, query, length_norm)
 
                 for alg, kernel, gamma, alpha in product(
@@ -107,11 +115,11 @@ if __name__ == '__main__':
                         search_space['gamma'],
                         search_space['alpha']
                 ):
-                    print('clustering alg: {} kernel: {} gamma: {} alpha: {}'.format(alg, kernel, gamma, alpha))
+                    print('clustering query: {} alg: {} kernel: {} gamma: {} alpha: {}'.format(query, alg, kernel, gamma, alpha))
                     clusters = run_clustering(names, points, header, alg, kernel, gamma, alpha)
 
                     for c in search_space['c']:
-                        print('refining c: {} and evaluating ...'.format(c))
+                        print('refining query: {} c: {} and evaluating ...'.format(query, c))
                         avg = run_refinement_and_evaluate(clusters, names, points, header, c)
 
                         results[(

@@ -5,4 +5,3 @@ scikit-learn
 biopython
 sortedcontainers
 fastcluster
-globalmem-client

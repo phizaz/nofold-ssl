@@ -6,3 +6,5 @@ results/*.*
 cover
 .coverage
 tmp
+.remoterunignore
+.remoterunrc
