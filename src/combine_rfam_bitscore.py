@@ -6,7 +6,7 @@ this should be the first step of doing semi-supervised clustering
 '''
 
 
-def run(query, unformatted, cripple, nn):
+def run(query, unformatted, cripple, nn, inc_centroids):
     import utils
     import sys
 
@@ -68,11 +68,12 @@ def run(query, unformatted, cripple, nn):
     print('seed count:', len(selected_seed))
     print('seed by family:', seed_cnt_by_fam)
 
-    # add seed from center of each family
-    print('add seeds from a center of each family...')
-    for name, point in utils.get.get_families_center_points(seed_families, query_header):
-        selected_seed[name] = point
-    print('total selected seed count:', len(selected_seed))
+    if inc_centroids:
+        # add seed from center of each family
+        print('add seeds from a center of each family...')
+        for name, point in utils.get.get_families_center_points(seed_families, query_header):
+            selected_seed[name] = point
+        print('total selected seed count:', len(selected_seed))
 
     seed_names = []
     seed_points = []
@@ -98,12 +99,14 @@ if __name__ == '__main__':
     parser.add_argument('--cripple', type=int, help='cripple degree')
     parser.add_argument('--nn', type=int, default=7,
                         help='number of nearest neighbors for closest seed selection')
+    parser.add_argument('--inc-centroids', default=False, action='store_true', help='should centroid of each family be included in the seeds ?')
     args = parser.parse_args()
 
     names, points, header = run(query=args.query,
                                 unformatted=args.unformatted,
                                 cripple=args.cripple,
-                                nn=args.nn)
+                                nn=args.nn,
+                                inc_centroids=args.inc_centroids)
 
     from os.path import join
 
