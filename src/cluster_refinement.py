@@ -150,15 +150,12 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(usage='further clustering using inter-cluster distance criteria')
     parser.add_argument('--tag', required=True, help='tag')
-    parser.add_argument('--lengthnorm', default=False, action='store_true',
-                        help='did you use --lengthnorm in normalization step?')
     parser.add_argument('--alg', required=True, help='task\'s algorithm description')
-    parser.add_argument('--components', type=int, default=100, help='PCAs number of components')
     parser.add_argument('--c', type=float, default=1.0, help='splitting cluster parameter')
     args = parser.parse_args()
 
-    point_file = join(utils.path.results_path(), 'combined.{}{}.pcNorm{}.zNorm.bitscore'.format(
-        args.tag, '.zNorm' if args.lengthnorm else '', args.components
+    point_file = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(
+        args.tag
     ))
     cluster_file = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
 

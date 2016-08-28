@@ -76,18 +76,15 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(usage='cluster using semi-supervised label propagation algorithm')
     parser.add_argument('--tag', required=True, help='tag')
-    parser.add_argument('--lengthnorm', default=False, action='store_true',
-                        help='did you use --lengthnorm in the normalization step')
     parser.add_argument('--alg', default='labelSpreading', help='labelPropagation or labelSpreading ?')
     parser.add_argument('--kernel', default='rbf', help='kernel')
     parser.add_argument('--gamma', type=float, default=0.5, help='rbf kernel\'s gamma')
     parser.add_argument('--nn', type=int, default=19, help='knn\'s nearest neighbor parameter')
     parser.add_argument('--alpha', type=float, help='clamping parameter for SSL model')
-    parser.add_argument('--components', type=int, default=100, help='PCA\'s number of components')
     args = parser.parse_args()
 
     file = join(utils.path.results_path(),
-                'combined.{}{}.pcNorm{}.zNorm.bitscore'.format(args.tag, '.zNorm' if args.lengthnorm else '', args.components))
+                'combined.{}.normalized.bitscore'.format(args.tag))
     seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(file)
 
     clusters = run(seed_names, seed_points, query_names, query_points, args.alg, args.kernel, args.alpha, args.nn,

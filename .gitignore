@@ -3,3 +3,6 @@ env
 .idea
 *.pyc
 results/*.*
+cover
+.coverage
+tmp

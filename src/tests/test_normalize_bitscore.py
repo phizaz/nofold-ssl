@@ -1,6 +1,6 @@
 import unittest
 import utils
-from normalize_bitscore import length_normalize, pca, znormalize
+from normalize_bitscore import length_normalize, pca, znormalize, run
 
 
 class PCANormalizeBitscoreTest(unittest.TestCase):
@@ -36,6 +36,35 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
             for each in point:
                 self.assertTrue(-2 < each < 2)
 
+    def test_run(self):
+        from os.path import join
+        bitscore_file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.bitscore')
+        names, points, header = utils.get.get_bitscores(bitscore_file)
+        query = 'novel-1-2-3hp'
+        components = 100
+
+        l_names, l_points, l_header = run(names, points, header, query, components, True)
+        nl_names, nl_points, nl_header = run(names, points, header, query, components, False)
+
+        self.assertListEqual(l_names, nl_names)
+
+        def almost_equal(a, b):
+            return abs(a - b) < 1e-3
+
+        def list_not_equal(l1, l2):
+            return any(not almost_equal(a, b) for a, b in zip(l1, l2))
+
+
+        self.assertEqual(len(l_points), len(nl_points))
+        for l_point, nl_point in zip(l_points, nl_points):
+            self.assertTrue(list_not_equal(l_point, nl_point), msg='normalization has no effect ! {} = {}'.format(l_point, nl_point))
+
+        self.assertListEqual(l_header, nl_header)
+
+        print(l_points[0])
+        print(nl_points[0])
+
+
     def test_real(self):
         from os.path import join
         from os import remove
@@ -50,15 +79,9 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
                                                query=query,
                                                nn=13)
 
-        files = [
-            join(utils.path.results_path(), 'combined.{}.zNorm.bitscore'.format(tag)),
-            join(utils.path.results_path(), 'combined.{}.zNorm.pcNorm100.bitscore'.format(tag)),
-            join(utils.path.results_path(), 'combined.{}.zNorm.pcNorm100.zNorm.bitscore'.format(tag))
-        ]
-
-        for file in files:
-            if exists(file):
-                remove(file)
+        file = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(tag))
+        if exists(file):
+            remove(file)
 
         utils.run.run_python_attach_output(join(utils.path.src_path(), 'normalize_bitscore.py'),
                                            '--lengthnorm',
@@ -66,8 +89,7 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
                                            query=query,
                                            components=100)
 
-        for file in files:
-            self.assertTrue(exists(file))
+        self.assertTrue(exists(file), 'file {} not found'.format(file))
 
     def test_real_large(self):
         from os.path import join
@@ -83,15 +105,9 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
                                                cripple=0,
                                                nn=7)
 
-        files = [
-            join(utils.path.results_path(), 'combined.{}.zNorm.bitscore'.format(tag)),
-            join(utils.path.results_path(), 'combined.{}.zNorm.pcNorm100.bitscore'.format(tag)),
-            join(utils.path.results_path(), 'combined.{}.zNorm.pcNorm100.zNorm.bitscore'.format(tag))
-        ]
-
-        for file in files:
-            if exists(file):
-                remove(file)
+        file = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(tag))
+        if exists(file):
+            remove(file)
 
         utils.run.run_python_attach_output(join(utils.path.src_path(), 'normalize_bitscore.py'),
                                            '--lengthnorm',
@@ -99,5 +115,4 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
                                            query=query,
                                            components=100)
 
-        for file in files:
-            self.assertTrue(exists(file))
+        self.assertTrue(exists(file))

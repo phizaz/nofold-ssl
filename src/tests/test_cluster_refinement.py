@@ -69,19 +69,20 @@ class ClusterRefinementTest(unittest.TestCase):
         clust_equal(splitted[3], C)
 
     def test_merge_clusters(self):
-        from os.path import join
+        from os.path import join, exists
+
         clusters = utils.get.get_clusters(join(
             utils.path.results_path(),
-            'combined.novel-1-2-3hp.cripple3.labelSpreading.cluster'
+            'combined.novel-1-2-3hp.labelSpreading.cluster'
         ), join(
             utils.path.results_path(),
-            'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore'
+            'combined.novel-1-2-3hp.normalized.bitscore'
         ))
         print(clusters)
         for clust in clusters:
             print(clust.names)
 
-        score_file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.cripple3.zNorm.pcNorm100.zNorm.bitscore')
+        score_file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.normalized.bitscore')
         seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(score_file)
         # get seed clusters
         seed_groups = utils.modify.group_bitscore_by_family(seed_names, seed_points)
@@ -162,7 +163,6 @@ class ClusterRefinementTest(unittest.TestCase):
         from os.path import join
         utils.run.run_python_attach_output(
             join(utils.path.src_path(), 'cluster_refinement.py'),
-            '--lengthnorm',
             tag='novel-1-2-3hp',
             alg='labelSpreading',
             c=1.0, # if set to C=1.1 or 1.2 the results would be very bad
@@ -172,7 +172,6 @@ class ClusterRefinementTest(unittest.TestCase):
         from os.path import join
         utils.run.run_python_attach_output(
             join(utils.path.src_path(), 'cluster_refinement.py'),
-            '--lengthnorm',
             tag='rfam75id-rename.cripple0',
             alg='labelSpreading',
             c=1.2

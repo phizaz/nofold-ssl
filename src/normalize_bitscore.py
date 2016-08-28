@@ -4,20 +4,23 @@ from __future__ import print_function
 Normalize the combined bitscore using PCA and Z-normalizer
 '''
 
+
 def length_normalize(names, points, header, query):
     from utils.helpers.lengthnorm import LengthNormalizer
     normalizer = LengthNormalizer()
     n_points = normalizer.length_normalize_full(names, points, header, query)
     return n_points
 
+
 def pca(components, points):
     assert components <= len(points[0]), 'number of components is more than the actual dimension'
     assert components <= len(points), 'number of components is more than the number of points'
     from sklearn.decomposition import PCA
-    pc_header = ['PC{}'.format(i+1) for i in range(components)]
+    pc_header = ['PC{}'.format(i + 1) for i in range(components)]
     pca = PCA(n_components=components)
     pc_points = pca.fit_transform(points)
     return pc_points, pc_header
+
 
 def znormalize(points):
     import numpy as np
@@ -27,6 +30,20 @@ def znormalize(points):
         n_points.append(utils.short.normalize_array(col))
     n_points = np.array(n_points).T
     return n_points
+
+
+def run(names, points, header, query, components, lengthnorm):
+    if lengthnorm:
+        print('Length normalizing ...')
+        points = length_normalize(names, points, header, query)
+
+    print('PCA {} components ..'.format(components))
+    points, header = pca(components, points)
+
+    print('Z-normalizing ..')
+    points = znormalize(points)
+    return names, points, header
+
 
 if __name__ == '__main__':
     import utils
@@ -46,28 +63,9 @@ if __name__ == '__main__':
     file = join(utils.path.results_path(), file_name)
 
     names, points, header = utils.get.get_bitscores(file)
-    file_ext = ''
+    names, points, header = run(names, points, header, args.query, args.components, args.lengthnorm)
 
-    if args.lengthnorm:
-        print('Length normalizing ...')
-        points = length_normalize(names, points, header, args.query)
-        file_ext += '.zNorm'
-        file = join(utils.path.results_path(), '{}{}.bitscore'.format(no_extension_name, file_ext))
-        utils.save.save_bitscores(file, names, points, header)
-        print('Saved length normalize ...')
-
-    print('PCA {} components ..'.format(args.components))
-    points, pc_header = pca(args.components, points)
-    file_ext += '.pcNorm{}'.format(args.components)
-    file = join(utils.path.results_path(), '{}{}.bitscore'.format(no_extension_name, file_ext))
-    utils.save.save_bitscores(file, names, points, pc_header)
-    print('Saved PCA normalize')
-
-
-    print('Z-normalizing ..')
-    points = znormalize(points)
-    file_ext += '.zNorm'
-    file = join(utils.path.results_path(), '{}{}.bitscore'.format(no_extension_name, file_ext))
-    utils.save.save_bitscores(file, names, points, pc_header)
-    print('Saved Z-normalize ...')
-
+    print('Saving results to file...')
+    outfile = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(args.tag))
+    utils.save.save_bitscores(outfile, names, points, header)
+    print('Saving done !')

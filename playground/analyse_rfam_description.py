@@ -109,7 +109,9 @@ for threshold in range(max_bit_cnt, 0, -1):
 
 print('picked:', len(picked))
 print(have)
-for i, each in enumerate(have):
+l = list(enumerate(have))
+l.sort(key=lambda x: -x[1])
+for i, each in l:
     if each > 0:
         print to_type(i), ':', int(each)
 print(picked)
