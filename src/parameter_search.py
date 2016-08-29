@@ -60,35 +60,28 @@ def save(search_arguments, results):
     return cols, rows
 
 
+def load_search_space_file(file):
+    import json
+    with open(file) as handle:
+        search_space = json.load(handle)
+    return search_space
+
+
 if __name__ == '__main__':
     from argparse import ArgumentParser
 
     parser = ArgumentParser(usage='cluster using semi-supervised label propagation algorithm')
+    parser.add_argument('search_space_file', help='a json file of the search space')
     args = parser.parse_args()
-
-    import numpy as np
 
     search_arguments = [
         'query', 'unformatted', 'cripple', 'nn_seed', 'inc_centroids', 'length_norm', 'alg', 'kernel', 'gamma', 'alpha',
         'c'
     ]
 
-    search_space = {
-        # 'query': ['rfam75id-rename', 'rfam75id_embed-rename', 'rfam75id_dinuc3000-rename',
-        #           'fam40_typedistributed_embed+bg_weak', 'fam40_typedistributed_plain+bg_weak'],
-        'query': ['novel-1-2-3hp'],
-        'unformatted': [True],
-        # 'cripple': [0, 0, 1, 6, 6],
-        'cripple': [None],
-        'nn_seed': [7, 19],
-        'inc_centroids': [True, False],
-        'length_norm': [True, False],
-        'alg': ['labelSpreading', 'labelPropagation'],
-        'kernel': ['rbf'],
-        'gamma': [0.5],
-        'alpha': np.linspace(0.4, 1.0, 7),
-        'c': np.linspace(1.0, 1.5, 6),
-    }
+    search_space = load_search_space_file(args.search_space_file)
+
+    assert len(search_space['query']) == len(search_space['unformatted']) == len(search_space['cripple'])
 
     from itertools import product
 
@@ -118,10 +111,13 @@ if __name__ == '__main__':
                         print('refining query: {} c: {} and evaluating ...'.format(query, c))
                         avg = run_refinement_and_evaluate(clusters, names, points, header, c)
 
-                        results[(
+                        idx = (
                             query, unformatted, cripple, nn_seed, inc_centroids, length_norm, alg, kernel, gamma, alpha,
                             c
-                        )] = avg
+                        )
+                        assert len(idx) == len(search_arguments)
+
+                        results[idx] = avg
 
                         print('results sense: {} prec: {} max_in: {}'.format(
                             avg['sensitivity'],

@@ -30,8 +30,8 @@ class ParameterSearchTest(unittest.TestCase):
         def list_not_equal(l1, l2):
             return any(not almost_equal(a, b) for a, b in zip(l1, l2))
 
-        self.assertTrue(list_not_equal([1,2,3], [1,2,4]))
-        self.assertFalse(list_not_equal([1,2,3], [1,2,3]))
+        self.assertTrue(list_not_equal([1, 2, 3], [1, 2, 4]))
+        self.assertFalse(list_not_equal([1, 2, 3], [1, 2, 3]))
         self.assertFalse(list_not_equal([1.0001, 2.0001], [0.9999, 1.99999]))
 
         query = 'rfam75id-rename'
@@ -42,7 +42,8 @@ class ParameterSearchTest(unittest.TestCase):
 
         self.assertEqual(len(l_points), len(nl_points))
         for l_point, nl_point in zip(l_points, nl_points):
-            self.assertTrue(list_not_equal(l_point, nl_point), msg='normalization has no effect ! {} = {}'.format(l_point, nl_point))
+            self.assertTrue(list_not_equal(l_point, nl_point),
+                            msg='normalization has no effect ! {} = {}'.format(l_point, nl_point))
 
         self.assertListEqual(l_header, nl_header)
 
@@ -78,7 +79,7 @@ class ParameterSearchTest(unittest.TestCase):
             rec.name
             for rec in utils.get.get_query_records('rfam75id-rename')
             if not utils.short.is_bg(rec.name)
-        ]
+            ]
 
         average = run_evaluate(clusters, names)
         print(average)
@@ -90,7 +91,7 @@ class ParameterSearchTest(unittest.TestCase):
     def test_save(self):
         args = ['a', 'b', 'c']
         results = {
-            (1,2,3): {
+            (1, 2, 3): {
                 'sensitivity': 4,
                 'precision': 5,
                 'max_in_cluster': 6
@@ -100,4 +101,19 @@ class ParameterSearchTest(unittest.TestCase):
         self.assertListEqual(cols, ['a', 'b', 'c', 'sensitivity', 'precision', 'max_in_cluster'])
         self.assertListEqual(rows, [(1, 2, 3, 4, 5, 6)])
 
-
+    def test_load_search_space_file(self):
+        from os.path import join
+        file = join(utils.path.src_path(), 'search_space_paper.json')
+        search_space = load_search_space_file(file)
+        print(search_space)
+        self.assertDictEqual(search_space, {u'kernel': [u'rbf'], u'c': [1.0, 1.1, 1.2, 1.3, 1.4, 1.5],
+                                            u'inc_centroids': [True, False],
+                                            u'alg': [u'labelSpreading', u'labelPropagation'],
+                                            u'cripple': [0, 0, 1, 6, 6], u'length_norm': [True, False],
+                                            u'alpha': [0.6, 0.7, 0.8, 0.9, 1.0],
+                                            u'unformatted': [False, False, False, False, False],
+                                            u'query': [u'rfam75id-rename', u'rfam75id_embed-rename',
+                                                       u'rfam75id_dinuc3000-rename',
+                                                       u'fam40_typedistributed_embed+bg_weak',
+                                                       u'fam40_typedistributed_plain+bg_weak'], u'gamma': [0.5],
+                                            u'nn_seed': [1, 7, 13, 19]})

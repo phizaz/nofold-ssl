@@ -1,11 +1,11 @@
 version: '2'
 
 services:
-  parameter-search:
+  param-search-paper:
     image: phizaz/nofold-ssl
     volumes:
-      - ./:/nofold-ssl
-    working_dir: /nofold-ssl/src
+      - ./:/run
+    working_dir: /run/src
     environment:
       - PYTHONUNBUFFERED=1
-    command: python parameter_search.py
+    command: python parameter_search.py search_space_paper.json
