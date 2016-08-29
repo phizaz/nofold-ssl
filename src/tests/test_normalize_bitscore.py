@@ -1,6 +1,6 @@
 import unittest
-import utils
-from normalize_bitscore import length_normalize, pca, znormalize, run
+from src import utils
+from src.normalize_bitscore import length_normalize, pca, znormalize, run
 
 
 class PCANormalizeBitscoreTest(unittest.TestCase):
@@ -37,6 +37,20 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
                 self.assertTrue(-2 < each < 2)
 
     def test_run(self):
+        def almost_equal(a, b):
+            return abs(a - b) < 1e-3
+
+        self.assertTrue(almost_equal(1, 1.0001))
+        self.assertFalse(almost_equal(1, 1.1))
+
+        def list_not_equal(l1, l2):
+            return any(not almost_equal(a, b) for a, b in zip(l1, l2))
+
+        self.assertTrue(list_not_equal([1,2,3], [1,2,4]))
+        self.assertFalse(list_not_equal([1,2,3], [1,2,3]))
+        self.assertFalse(list_not_equal([1.0001, 2.0001], [0.9999, 1.99999]))
+
+
         from os.path import join
         bitscore_file = join(utils.path.results_path(), 'combined.novel-1-2-3hp.bitscore')
         names, points, header = utils.get.get_bitscores(bitscore_file)
@@ -47,13 +61,6 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
         nl_names, nl_points, nl_header = run(names, points, header, query, components, False)
 
         self.assertListEqual(l_names, nl_names)
-
-        def almost_equal(a, b):
-            return abs(a - b) < 1e-3
-
-        def list_not_equal(l1, l2):
-            return any(not almost_equal(a, b) for a, b in zip(l1, l2))
-
 
         self.assertEqual(len(l_points), len(nl_points))
         for l_point, nl_point in zip(l_points, nl_points):

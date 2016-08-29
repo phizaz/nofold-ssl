@@ -7,12 +7,8 @@ def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
 
 
 def run_normalize(names, points, header, query, length_norm):
-    from normalize_bitscore import length_normalize, pca, znormalize
-    if length_norm:
-        points = length_normalize(names, points, header, query)
-    points, header = pca(100, points)
-    points = znormalize(points)
-    return names, points, header
+    from normalize_bitscore import run
+    return run(names, points, header, query, 100, length_norm)
 
 
 def run_clustering(names, points, header, alg, kernel, gamma, alpha):
@@ -73,9 +69,7 @@ if __name__ == '__main__':
     import numpy as np
 
     search_arguments = [
-        'query', 'cripple', 'nn_seed',
-        'length_norm',
-        'alg', 'kernel', 'gamma', 'alpha',
+        'query', 'unformatted', 'cripple', 'nn_seed', 'inc_centroids', 'length_norm', 'alg', 'kernel', 'gamma', 'alpha',
         'c'
     ]
 
@@ -115,7 +109,9 @@ if __name__ == '__main__':
                         search_space['gamma'],
                         search_space['alpha']
                 ):
-                    print('clustering query: {} alg: {} kernel: {} gamma: {} alpha: {}'.format(query, alg, kernel, gamma, alpha))
+                    print(
+                        'clustering query: {} alg: {} kernel: {} gamma: {} alpha: {}'.format(query, alg, kernel, gamma,
+                                                                                             alpha))
                     clusters = run_clustering(names, points, header, alg, kernel, gamma, alpha)
 
                     for c in search_space['c']:
@@ -123,8 +119,8 @@ if __name__ == '__main__':
                         avg = run_refinement_and_evaluate(clusters, names, points, header, c)
 
                         results[(
-                            query, cripple, nn_seed, length_norm,
-                            alg, kernel, gamma, alpha, c
+                            query, unformatted, cripple, nn_seed, inc_centroids, length_norm, alg, kernel, gamma, alpha,
+                            c
                         )] = avg
 
                         print('results sense: {} prec: {} max_in: {}'.format(

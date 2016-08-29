@@ -238,16 +238,16 @@ def get_lengths_name_variants(db_file, bitscore_file):
 
 
 def get_query_lengths_name_variants(query):
-    import utils
-    db_file = utils.path.query_db_path(query)
-    bitscore_file = utils.path.query_bitscore_path(query)
+    from . import path
+    db_file = path.query_db_path(query)
+    bitscore_file = path.query_bitscore_path(query)
     return get_lengths_name_variants(db_file, bitscore_file)
 
 
 def get_family_lengths_name_variants(family):
-    import utils
-    db_file = utils.path.family_db_path(family)
-    bitscore_file = utils.path.family_bitscore_path(family)
+    from . import path
+    db_file = path.family_db_path(family)
+    bitscore_file = path.family_bitscore_path(family)
     return get_lengths_name_variants(db_file, bitscore_file)
 
 
