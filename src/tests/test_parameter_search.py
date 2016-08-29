@@ -1,5 +1,6 @@
 import unittest
-from parameter_search import *
+from src.parameter_search import *
+from src import utils
 
 
 class ParameterSearchTest(unittest.TestCase):
@@ -7,7 +8,7 @@ class ParameterSearchTest(unittest.TestCase):
         query = 'rfam75id-rename'
         cripple = 0
         nn_seed = 3
-        names, points, header = run_combine(query, cripple, nn_seed)
+        names, points, header = run_combine(query, False, cripple, nn_seed, False)
         print(len(names))
         print(len(points))
         print(len(header))
@@ -16,31 +17,51 @@ class ParameterSearchTest(unittest.TestCase):
         self.assertEqual(len(header), 1929)
 
     def test_run_normalized(self):
-        import utils
         from os.path import join
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.bitscore')
         names, points, header = utils.get.get_bitscores(path)
-        names, points, header = run_normalize(names, points, header, 'rfam75id-rename', True)
-        print(len(names))
-        print(len(points))
-        print(len(header))
-        self.assertEqual(len(header), 100)
+
+        def almost_equal(a, b):
+            return abs(a - b) < 1e-3
+
+        self.assertTrue(almost_equal(1, 1.0001))
+        self.assertFalse(almost_equal(1, 1.1))
+
+        def list_not_equal(l1, l2):
+            return any(not almost_equal(a, b) for a, b in zip(l1, l2))
+
+        self.assertTrue(list_not_equal([1,2,3], [1,2,4]))
+        self.assertFalse(list_not_equal([1,2,3], [1,2,3]))
+        self.assertFalse(list_not_equal([1.0001, 2.0001], [0.9999, 1.99999]))
+
+        query = 'rfam75id-rename'
+        l_names, l_points, l_header = run_normalize(names, points, header, query, True)
+        nl_names, nl_points, nl_header = run_normalize(names, points, header, query, False)
+
+        self.assertListEqual(l_names, nl_names)
+
+        self.assertEqual(len(l_points), len(nl_points))
+        for l_point, nl_point in zip(l_points, nl_points):
+            self.assertTrue(list_not_equal(l_point, nl_point), msg='normalization has no effect ! {} = {}'.format(l_point, nl_point))
+
+        self.assertListEqual(l_header, nl_header)
+
+        print(l_points[0])
+        print(nl_points[0])
 
     def test_run_clustering(self):
-        import utils
         from os.path import join
-        path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.zNorm.pcNorm100.zNorm.bitscore')
+        path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(path)
         clusters = run_clustering(names, points, header, 'labelSpreading', 'rbf', 0.5, 1.0)
-        from utils.helpers import space
+        from src.utils.helpers import space
         for cluster in clusters:
-            self.assertIn(cluster, space.Cluster)
+            self.assertIsInstance(cluster, space.Cluster)
         print(len(clusters))
 
     def test_run_cluster_refinement(self):
-        import utils
         from os.path import join
-        point_file = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.zNorm.pcNorm100.zNorm.bitscore')
+        point_file = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(point_file)
 
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.cluster')
@@ -50,7 +71,6 @@ class ParameterSearchTest(unittest.TestCase):
         print(len(clusters))
 
     def test_run_evaluate(self):
-        import utils
         from os.path import join
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.refined.cluster')
         clusters = utils.get.get_name_clusters(path)
