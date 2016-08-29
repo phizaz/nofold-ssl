@@ -24,12 +24,12 @@ class ModifyTest(unittest.TestCase):
             'RF0001_B',
             'RF0002_C',
             'QRF0002_D',
-            'BG0001'
+            'bg0001'
         ]
 
         group = utils.modify.group_names_by_family(names)
         print(group)
-        self.assertListEqual(group['RF0002'], ['RF0002_C', 'QRF0002_D'])
+        self.assertListEqual(group['RF0002'], ['RF0002_C'])
+        self.assertListEqual(group['QRF0002'], ['QRF0002_D'])
         self.assertListEqual(group['RF0001'], ['RF0001_A', 'RF0001_B'])
-        cnt = sum(len(each) for each in group.values())
-        self.assertEqual(cnt, 4, 'BG should not appear in the group')
+        self.assertTrue('bg0001' not in group)

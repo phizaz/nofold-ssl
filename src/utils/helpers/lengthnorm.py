@@ -4,7 +4,7 @@ from os.path import join
 class Lengther:
 
     def __init__(self, query, names):
-        from src import utils
+        import utils
         self.length_name = {}
 
         # get length from the query itself
@@ -49,7 +49,7 @@ class Mapper:
 class LengthNormalizer:
 
     def __init__(self):
-        from src import utils
+        import utils
         def read_file(file):
             idxs = []
             vectors = []

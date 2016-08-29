@@ -72,43 +72,43 @@ class ClosestPointTest(unittest.TestCase):
 class ClusterTest(unittest.TestCase):
 
     def test_dist_avg(self):
-        A = utils.helpers.space.Cluster('A', ['a', 'b'], [
+        A = utils.helpers.space.Cluster(['a', 'b'], [
             [0, -1], [0, 3]
         ])
-        B = utils.helpers.space.Cluster('B', ['c', 'd'], [
+        B = utils.helpers.space.Cluster(['c', 'd'], [
             [1, 0], [1, 2]
         ])
         dist = A.dist_avg(B)
         self.assertAlmostEqual(dist, 2.288245611270)
 
     def test_dist_min(self):
-        A = utils.helpers.space.Cluster('A', ['a', 'b'], [
+        A = utils.helpers.space.Cluster(['a', 'b'], [
             [0, -1], [0, 3]
         ])
-        B = utils.helpers.space.Cluster('B', ['c', 'd'], [
+        B = utils.helpers.space.Cluster(['c', 'd'], [
             [1, 0], [1, 2]
         ])
         dist = A.dist_min(B)
         self.assertAlmostEqual(dist, 1.414213562)
 
     def test_dist_centroid(self):
-        A = utils.helpers.space.Cluster('A', ['a', 'b'], [
+        A = utils.helpers.space.Cluster(['a', 'b'], [
             [0, -1], [0, 3]
         ])
-        B = utils.helpers.space.Cluster('B', ['c', 'd'], [
+        B = utils.helpers.space.Cluster(['c', 'd'], [
             [1, 0], [1, 2]
         ])
         dist = A.dist_centroid(B)
         self.assertAlmostEqual(dist, 1.0)
 
     def test_same(self):
-        A = utils.helpers.space.Cluster('A', ['a', 'b'], [
+        A = utils.helpers.space.Cluster(['a', 'b'], [
             [0, -1], [0, 3]
         ])
-        B = utils.helpers.space.Cluster('B', ['c', 'd'], [
+        B = utils.helpers.space.Cluster(['c', 'd'], [
             [1, 0], [1, 2]
         ])
-        C = utils.helpers.space.Cluster('A', ['a', 'b'], [
+        C = utils.helpers.space.Cluster(['a', 'b'], [
             [0, -1], [0, 3]
         ])
         self.assertFalse(A.same(B))
