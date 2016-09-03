@@ -9,3 +9,12 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
     command: python parameter_search.py search_space_paper.json
+
+  param-search-novel-1-2-3hp:
+    image: phizaz/nofold-ssl
+    volumes:
+      - ./:/run
+    working_dir: /run/src
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python parameter_search.py search_space_novel-1-2-3hp.json

@@ -85,6 +85,15 @@ if __name__ == '__main__':
 
     from itertools import product
 
+    total_job_cnt = len(search_space['query']) * len(search_space['nn_seed']) * len(
+        search_space['inc_centroids']) * len(search_space['length_norm']) * len(search_space['alg']) * len(
+        search_space['kernel']) * len(search_space['gamma']) * len(search_space['alpha']) * len(search_space['c'])
+
+    print('total jobs cnt: {}'.format(total_job_cnt))
+
+    import itertools
+    job_no = itertools.count(1)
+
     results = {}
 
     for query, unformatted, cripple in zip(search_space['query'], search_space['unformatted'], search_space['cripple']):
@@ -119,7 +128,8 @@ if __name__ == '__main__':
 
                         results[idx] = avg
 
-                        print('results sense: {} prec: {} max_in: {}'.format(
+                        print('({}/{}) done! results sense: {} prec: {} max_in: {}'.format(
+                            job_no.next(), total_job_cnt,
                             avg['sensitivity'],
                             avg['precision'],
                             avg['max_in_cluster']
