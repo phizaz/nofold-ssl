@@ -1,6 +1,6 @@
 import unittest
-import utils.helpers.space as space
-import utils
+from src import utils
+from src.utils.helpers import space
 import numpy as np
 
 class SpaceTest(unittest.TestCase):

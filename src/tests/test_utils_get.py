@@ -1,6 +1,6 @@
 import unittest
 
-import utils
+from src import utils
 from os.path import join
 
 

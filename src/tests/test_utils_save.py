@@ -1,7 +1,6 @@
 import unittest
-import utils
+from src import utils
 from os.path import join
-from utils import *
 
 
 class SaveQueryRecordsTest(unittest.TestCase):

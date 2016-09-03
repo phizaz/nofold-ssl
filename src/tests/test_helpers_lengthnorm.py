@@ -1,7 +1,6 @@
 import unittest
-import utils.helpers.lengthnorm as lengthnorm
-import utils
-
+from src import utils
+from src.utils.helpers import lengthnorm
 
 class LengtherTest(unittest.TestCase):
     def runTest(self):

@@ -1,6 +1,6 @@
 import unittest
-import utils
-import utils.helpers.disjoint as disjoint
+from src import utils
+from src.utils.helpers import disjoint
 
 class DisjointTest(unittest.TestCase):
 

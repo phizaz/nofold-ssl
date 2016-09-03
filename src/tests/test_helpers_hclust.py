@@ -1,6 +1,6 @@
 import unittest
-import utils
-import utils.helpers.hclust as hclust
+from src import utils
+from src.utils.helpers import hclust
 
 class HClustTest(unittest.TestCase):
 

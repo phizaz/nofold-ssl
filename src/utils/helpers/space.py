@@ -79,6 +79,6 @@ class Cluster(object):
 
     def same(self, cluster):
         assert isinstance(cluster, Cluster)
-        from utils.short import list_equal
+        from src.utils.short import list_equal
         return list_equal(self.names, cluster.names) and all(
             list_equal(a, b) for a, b in zip(self.points, cluster.points))

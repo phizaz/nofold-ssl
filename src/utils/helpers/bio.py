@@ -32,7 +32,7 @@ def expand_tuple(aa, possibles='ACGT'):
 def dinuc_freq(sequence, possibles='ACGT'):
     assert len(possibles) == 4
     from collections import Counter
-    from utils.short import sliding_window, zeros
+    from src.utils.short import sliding_window, zeros
     from itertools import product
 
     possible_dinucs = map(lambda x: ''.join(x), product(possibles, possibles))
@@ -47,7 +47,7 @@ def transition_freq(sequence, possibles='ACGT'):
     assert len(possibles) == 4
     from collections import Counter
     from itertools import product
-    from utils.short import sliding_window, zeros
+    from src.utils.short import sliding_window, zeros
 
     possible_dinucs = map(lambda x: ''.join(x), product(possibles, possibles))
     counter = dict()
@@ -66,7 +66,7 @@ def transition_freq(sequence, possibles='ACGT'):
 
 
 def generate_background_each(size, begin_prob, trans_prob):
-    from utils.short import weighted_random
+    from src.utils.short import weighted_random
 
     begin = ''.join(weighted_random(1, begin_prob.keys(), begin_prob.values()))
     result = list(begin)
@@ -83,7 +83,7 @@ def generate_background_each(size, begin_prob, trans_prob):
 
 def get_length_distribution(strings):
     from collections import Counter
-    from utils.short import unit_normalize
+    from src.utils.short import unit_normalize
 
     counter = Counter(map(len, strings))
     return dict(zip(counter.keys(), unit_normalize(counter.values())))

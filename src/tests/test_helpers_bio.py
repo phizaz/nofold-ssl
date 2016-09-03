@@ -1,6 +1,6 @@
 import unittest
-import utils
-from utils.helpers import bio
+from src import utils
+from src.utils.helpers import bio
 
 
 class BioTest(unittest.TestCase):
