@@ -1,6 +1,6 @@
-from clustering import run
+from src.clustering import run
 import unittest
-import utils
+from src import utils
 
 class ClusterSemiLabelPropagation(unittest.TestCase):
 
@@ -13,7 +13,7 @@ class ClusterSemiLabelPropagation(unittest.TestCase):
         seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(file)
         clusters = run(seed_names, seed_points, query_names, query_points, 'labelSpreading', 'rbf', 1.0, None, 0.5)
         self.assertTrue(2 <= len(clusters), msg='clustering quality is too bad {}'.format(len(clusters)))
-        from utils.helpers import space
+        from src.utils.helpers import space
         for cluster in clusters:
             self.assertIsInstance(cluster, space.Cluster)
             for name in cluster.names:

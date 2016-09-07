@@ -1,11 +1,11 @@
 import unittest
-import utils
-from cluster_refinement import *
+from src import utils
+from src.cluster_refinement import *
 
 
 class ClusterRefinementTest(unittest.TestCase):
     def test_split_cluster(self):
-        import utils.helpers.space as space
+        import src.utils.helpers.space as space
         A = space.Cluster([
             'a', 'b'
         ], [
@@ -34,7 +34,7 @@ class ClusterRefinementTest(unittest.TestCase):
         self.assertListEqual(splitted[1].points, [[1,1]])
 
     def test_split_clusters(self):
-        from utils.helpers import space
+        from src.utils.helpers import space
         A = space.Cluster([
             'a', 'b'
         ], [
@@ -90,7 +90,7 @@ class ClusterRefinementTest(unittest.TestCase):
 
         print('calculating centroids for seed clusters..')
         seed_centroids = {}
-        from utils.helpers import space
+        from src.utils.helpers import space
         for fam, points in seed_groups.items():
             seed_centroids[fam] = space.centroid_of(points)
         # print('seed_centroids:', seed_centroids)
@@ -119,7 +119,7 @@ class ClusterRefinementTest(unittest.TestCase):
         self.assertEqual(count, __count)
 
     def test_identical_clusters(self):
-        from utils.helpers import space
+        from src.utils.helpers import space
         A = [
             space.Cluster(['a', 'b'], [
                 [0, 0], [1,1]

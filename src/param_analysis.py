@@ -97,8 +97,10 @@ def many_filters(cols, vals, rows):
 
     return list(rows)
 
+
 def get_many(cols, row):
     return tuple(row[col] for col in cols)
+
 
 def open_file_get_only(file, args, vals):
     from os.path import join
@@ -171,26 +173,24 @@ def main():
 
     bg_file = join(utils.path.results_path(),
                    'parameter_search.2016-09-06 10:23:00.211147-fam75id-bg.csv')
-    row =open_file_get_only(bg_file, args, [
+    row = open_file_get_only(bg_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
     print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     embed_file = join(utils.path.results_path(),
                       'parameter_search.2016-09-04 19:51:43.718908-fam75id-embed.csv')
-    row =open_file_get_only(embed_file, args, [
+    row = open_file_get_only(embed_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
     print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     plain_file = join(utils.path.results_path(),
                       'parameter_search.2016-09-06 06:10:32.356377-fam75id-plain.csv')
-    row =open_file_get_only(plain_file, args, [
+    row = open_file_get_only(plain_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
     print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
-
-
 
 
 if __name__ == '__main__':

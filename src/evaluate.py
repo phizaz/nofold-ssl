@@ -7,6 +7,9 @@ Evaluate the clustering quality using three benchmarks
 3. Max in cluster - how good the sequences of a family are distributed in one big cluster.
 '''
 
+def is_not_bg(name):
+    from src import utils
+    return not utils.short.is_bg(name)
 
 def dominator_of(cluster):
     from collections import Counter
@@ -57,9 +60,25 @@ def max_in_cluster_of(family, clusters, names_by_family):
     all_cnt = len(names_by_family[family])
     return cnt / all_cnt
 
+def remove_bg_from_clusters(name_clusters):
+    name_clusters = [
+        remove_bg(names)
+        for names in name_clusters
+        ]
+    name_clusters = list(filter(lambda x: len(x) > 0, name_clusters))
+    return name_clusters
+
+def remove_bg(l):
+    return list(filter(is_not_bg, l))
+
 
 def run(names, name_clusters):
     import utils
+
+    # remove all the background sequences
+    names = remove_bg(names)
+    name_clusters = remove_bg_from_clusters(name_clusters)
+
     names_by_family = utils.modify.group_names_by_family(names)
     print('number of families:', len(names_by_family))
 
@@ -89,6 +108,7 @@ def run(names, name_clusters):
 
     return res, avg
 
+
 def nofold_get_name_clusters(cluster_file):
     print('transforming nofold result ...')
     clusters = []
@@ -99,6 +119,7 @@ def nofold_get_name_clusters(cluster_file):
             names = tokens[4].strip().split(',')
             clusters.append(names)
     return clusters
+
 
 if __name__ == '__main__':
     import argparse
@@ -121,7 +142,6 @@ if __name__ == '__main__':
     names = [
         rec.name
         for rec in utils.get.get_query_records(args.query)
-        if not utils.short.is_bg(rec.name)
         ]
 
     results, average = run(names, clusters)
