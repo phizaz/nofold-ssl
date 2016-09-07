@@ -41,6 +41,8 @@ class ParameterSearchTest(unittest.TestCase):
         self.assertListEqual(l_names, nl_names)
 
         self.assertEqual(len(l_points), len(nl_points))
+        for a, aa in zip(l_points, l_points):
+            self.assertFalse(list_not_equal(a, aa))
         for l_point, nl_point in zip(l_points, nl_points):
             self.assertTrue(list_not_equal(l_point, nl_point),
                             msg='normalization has no effect ! {} = {}'.format(l_point, nl_point))
