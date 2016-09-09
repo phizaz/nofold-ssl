@@ -9,7 +9,7 @@ def open_result(file):
 
 
 def row_score(row):
-    if float(row['max_in_cluster']) < 0.8:
+    if float(row['sensitivity']) < 0.8 or float(row['precision']) < 0.8 or float(row['max_in_cluster']) < 0.8:
         return 0
     else:
         return 1 * float(row['sensitivity']) + 1 * float(row['precision']) + 1 * float(row['max_in_cluster'])
@@ -115,9 +115,9 @@ def main():
     from os.path import join
     from src import utils
     file_embed = join(utils.path.results_path(),
-                      'parameter_search.2016-09-03 14:13:10.465030-fam40-embed.csv')
+                      'parameter_search.2016-09-08 18:09:44.230213.csv')
     file_plain = join(utils.path.results_path(),
-                      'parameter_search.2016-09-06 02:17:39.007583-fam40-plain.csv')
+                      'parameter_search.2016-09-09 04:08:21.216191.csv')
 
     # rows = open_result(file_embed)
     rows = open_result(file_plain)
@@ -192,6 +192,12 @@ def main():
     ])
     print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
+    synthetic_file = join(utils.path.results_path(),
+                          'parameter_search.2016-09-02 18:12:22.039287-novel.csv')
+    row = open_file_get_only(synthetic_file, args, [
+        nn_seed, inc_centroids, length_norm, alg, alpha, c
+    ])
+    print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
 if __name__ == '__main__':
     main()
