@@ -27,7 +27,7 @@ no_bg_name_by_family = {
     fam: remove_bg(names)
     for fam, names in names_by_family.items()
     if len(remove_bg(names)) > 0
-}
+    }
 
 print('no_bg_name_by_family:', no_bg_name_by_family)
 
@@ -127,3 +127,22 @@ class EvaluateTest(unittest.TestCase):
         )
         from os.path import exists
         self.assertTrue(exists(file + '.evaluation'))
+
+    def test_nofold(self):
+        from os.path import join
+
+        file = join(utils.path.queries_path(), 'rfam75id_embed',
+                    'rfam75id_embed.clusters_s3rSpec_top.txt_expanded_merged_bs17.83bgNoneGloc.txt')
+        clusters = nofold_get_name_clusters(file)
+
+        names = [
+            rec.name
+            for rec in utils.get.get_query_records('rfam75id_embed')
+            ]
+        res, avg = run(names, clusters)
+
+        print(avg)
+
+        from collections import OrderedDict
+        self.assertDictEqual(avg, OrderedDict([('sensitivity', 0.70347648261758688), ('precision', 0.9371906252479747),
+                                               ('max_in_cluster', 0.68098159509202449)]))

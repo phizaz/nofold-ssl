@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 def open_result(file):
     import csv
     rows = []
@@ -172,32 +174,32 @@ def main():
     print(scores)
 
     bg_file = join(utils.path.results_path(),
-                   'parameter_search.2016-09-06 10:23:00.211147-fam75id-bg.csv')
+                   'parameter_search.2016-09-10 17:36:24.557450.csv')
     row = open_file_get_only(bg_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
-    print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
+    print('paper with background:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     embed_file = join(utils.path.results_path(),
-                      'parameter_search.2016-09-04 19:51:43.718908-fam75id-embed.csv')
+                      'parameter_search.2016-09-11 12:59:46.078175.csv')
     row = open_file_get_only(embed_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
-    print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
+    print('paper embedded:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     plain_file = join(utils.path.results_path(),
-                      'parameter_search.2016-09-06 06:10:32.356377-fam75id-plain.csv')
+                      'parameter_search.2016-09-11 13:00:08.845259.csv')
     row = open_file_get_only(plain_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
-    print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
+    print('paper plain:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     synthetic_file = join(utils.path.results_path(),
-                          'parameter_search.2016-09-02 18:12:22.039287-novel.csv')
+                          'parameter_search.2016-09-11 09:53:50.909419.csv')
     row = open_file_get_only(synthetic_file, args, [
         nn_seed, inc_centroids, length_norm, alg, alpha, c
     ])
-    print(get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
+    print('paper synthetic:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
 if __name__ == '__main__':
     main()
