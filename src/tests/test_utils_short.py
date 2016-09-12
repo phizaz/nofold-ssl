@@ -96,3 +96,7 @@ class ShortTest(unittest.TestCase):
     def test_datetime_now(self):
         r = utils.short.datetime_now()
         print(r)
+
+    def test_unique_name(self):
+        r = utils.short.unique_name()
+        print(r)

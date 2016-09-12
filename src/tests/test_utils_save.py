@@ -1,6 +1,36 @@
+from __future__ import print_function
 import unittest
 from src import utils
 from os.path import join
+
+
+class SaveRecordsTest(unittest.TestCase):
+    def setUp(self):
+        from os import makedirs
+        from os.path import join
+        makedirs(join(utils.path.root_path(), 'tmp'))
+
+    def tearDown(self):
+        import shutil
+        try:
+            shutil.rmtree(join(utils.path.root_path(), 'tmp'))
+        except:
+            pass
+
+    def runTest(self):
+        records = utils.get.get_query_records('test_rna')
+        utils.save.save_records(records, join(
+            utils.path.root_path(), 'tmp', 'test_rna.db'
+        ))
+
+        _records = utils.get.get_records(join(
+            utils.path.root_path(), 'tmp', 'test_rna.db'
+        ))
+
+        self.assertEqual(len(records), len(_records))
+        for a, b in zip(records, _records):
+            self.assertEqual(a.name, b.name)
+            self.assertEqual(a.seq, b.seq)
 
 
 class SaveQueryRecordsTest(unittest.TestCase):
@@ -122,7 +152,6 @@ class SaveClustersTest(unittest.TestCase):
     def test_save_csv(self):
         utils.save.save_csv(
             ['a', 'b'],
-            [[1,2], [3,4]],
+            [[1, 2], [3, 4]],
             join(utils.path.results_path(), 'test_save_csv.csv')
         )
-

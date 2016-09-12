@@ -38,3 +38,10 @@ def group_names_by_family(names):
             names_by_family[family] = []
         names_by_family[family].append(name)
     return names_by_family
+
+
+def names_of_records(records):
+    return [
+        rec.name
+        for rec in records
+    ]

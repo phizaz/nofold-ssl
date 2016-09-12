@@ -1,3 +1,10 @@
+def save_records(records, outfile):
+    from Bio import SeqIO
+    for record in records:
+        record.description = ''
+    with open(outfile, 'w') as handle:
+        SeqIO.write(records, handle, 'fasta')
+
 def save_query_records(query, records):
     from os.path import join
     from .path import make_path, queries_path

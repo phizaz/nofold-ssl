@@ -85,3 +85,7 @@ def unit_normalize(l):
 def datetime_now():
     from datetime import datetime
     return datetime.now()
+
+def unique_name():
+    from uuid import uuid4
+    return str(uuid4())
