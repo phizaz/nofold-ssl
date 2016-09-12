@@ -56,6 +56,7 @@ def get_cm_paths():
     from os import listdir
     path = cm_path()
     models = filter(lambda x: 'cm' in x, listdir(path))
+    models.sort()
     full_path = map(lambda x: join(path, x), models)
     return list(full_path)
 
