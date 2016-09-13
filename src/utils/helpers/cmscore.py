@@ -48,7 +48,7 @@ def get_cmscore_output(cm_file, records, prog_path='cmscore'):
     tmp_file = join(utils.path.tmp_path(), utils.short.unique_name())
     utils.save.save_records(records, tmp_file)
 
-    max_mem = 4000  # MB
+    max_mem = 8000  # MB
 
     import time
     start = time.time()  # time the scoring for this CM
