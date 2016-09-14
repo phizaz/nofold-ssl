@@ -5,7 +5,7 @@ def int_fam(fam):
     return int(fam[2:])
 
 
-def run(start, end):
+def run(start, end, cpu):
     from src import utils
     all_fam = set(map(int_fam, utils.get.get_all_families()))
     calculated_fam = set(map(int_fam, utils.get.get_calculated_families()))
@@ -28,7 +28,7 @@ def run(start, end):
         print('({}/{}) fam: {}'.format(i, len(job_fam), fam))
 
         records = utils.get.get_family_records(fam)
-        scores = cmscore.get_cmscores(records)
+        scores = cmscore.get_cmscores(records, cpu=cpu)
         cmscore.save_cmscores(scores, join(
             utils.path.db_path(), fam, '{}.bitscore'.format(fam)
         ))
@@ -40,6 +40,7 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--start', type=int)
     parser.add_argument('--end', type=int)
+    parser.add_argument('--cpu', type=int)
     args = parser.parse_args()
 
-    run(args.start, args.end)
+    run(args.start, args.end, args.cpu)

@@ -12,5 +12,5 @@ class CmscoreSeedTest(unittest.TestCase):
         self.assertListEqual(int_fam[:3], [1,2,3])
 
     def test_run(self):
-        r = cmscore_seed.run(None, None)
+        r = cmscore_seed.run(None, None, 2)
         print(r)

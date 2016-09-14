@@ -83,10 +83,14 @@ def get_cmscore(cm_file, records, prog_path='cmscore'):
     return (cm_name, score, total_time)
 
 
-def get_cmscores(records, prog_path='cmscore'):
-    from multiprocessing import Pool
+def get_cmscores(records, prog_path='cmscore', cpu=None):
+    from multiprocessing import Pool, cpu_count
 
-    p = Pool()
+    if not cpu:
+        cpu = cpu_count()
+
+    print('cmscore with cpus: {}'.format(cpu))
+    p = Pool(cpu)
     from src import utils
     cm_files = utils.path.get_cm_paths()
     from functools import partial
