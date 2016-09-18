@@ -82,6 +82,15 @@ class PrepareQueryTest(unittest.TestCase):
         self.assertEqual(len(points), 2)
         self.assertEqual(len(header), 1973)
 
+    def test_run_real(self):
+        from os.path import join
+        import os
+        os.environ['PATH'] += ':/usr/local/bin'
+        utils.run.run_python_attach_output(
+            join(utils.path.src_path(), 'prepare_query.py'),
+            'test_rna-rename', '--cpu=4'
+        )
+
 
 
 
