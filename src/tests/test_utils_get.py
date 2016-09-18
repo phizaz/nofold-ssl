@@ -279,6 +279,18 @@ class GetNameClusterTest(unittest.TestCase):
         self.assertAlmostEqual(precision, 1.0)
         self.assertGreater(max_in_cluster, 0.8)
 
+    def test_new_record(self):
+        name = 'test'
+        sequence = 'ACGT'
+        rec = utils.get.new_record(name, sequence)
+        print(rec)
+        from Bio.SeqRecord import SeqRecord
+        self.assertIsInstance(rec, SeqRecord)
+        self.assertEqual(rec.seq, sequence)
+        self.assertEqual(rec.description, '')
+        self.assertEqual(rec.name, name)
+        self.assertEqual(rec.id, name)
+
 
 class GetClustersTest(unittest.TestCase):
 

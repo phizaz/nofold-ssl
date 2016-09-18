@@ -357,3 +357,7 @@ def get_results_avg(file):
         scores = map(float, lines[-1].strip().split())
         sensitivity, precision, max_in_cluster = scores
     return sensitivity, precision, max_in_cluster
+
+def new_record(name, sequence):
+    from Bio.SeqRecord import SeqRecord
+    return SeqRecord(sequence, id=name, name=name, description='')

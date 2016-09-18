@@ -97,14 +97,14 @@ def get_cmscores(records, prog_path='cmscore', cpu=None):
     fn = partial(get_cmscore, records=records, prog_path=prog_path)
 
     from collections import OrderedDict
-    output = OrderedDict()
+    cmscores = OrderedDict()
     for i, (cm_name, score, time) in enumerate(p.imap(fn, cm_files), 1):
         print('({}/{}) cm_name: {} time elapsed: {:.3f}'.format(i, len(cm_files), cm_name, time))
         for name, val in score.items():
-            if name not in output:
-                output[name] = OrderedDict()
-            output[name][cm_name] = val
-    return output
+            if name not in cmscores:
+                cmscores[name] = OrderedDict()
+            cmscores[name][cm_name] = val
+    return cmscores
 
 def serialize_cmscores(cmscores):
     output = ''
