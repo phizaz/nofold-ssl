@@ -3,7 +3,8 @@ from __future__ import print_function
 
 def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
     from combine_rfam_bitscore import run
-    return run(query, unformatted, cripple, nn_seed, inc_centroids)
+    from multiprocessing import cpu_count
+    return run(query, unformatted, cripple, nn_seed, inc_centroids, cpu=cpu_count())
 
 
 def run_normalize(names, points, header, query, length_norm):

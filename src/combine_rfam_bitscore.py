@@ -6,7 +6,7 @@ this should be the first step of doing semi-supervised clustering
 '''
 
 
-def run(query, unformatted, cripple, nn, inc_centroids):
+def run(query, unformatted, cripple, nn, inc_centroids, cpu=None):
     import utils
     import sys
 
@@ -55,7 +55,8 @@ def run(query, unformatted, cripple, nn, inc_centroids):
     print('always include centroids...')
     print('only closest:', nn, 'neighbors seeds to queries will be taken...')
 
-    seed_points_closest = utils.get.get_knearest_seed_given_query(nn, query_header, query_points, seed_families)
+    seed_points_closest = utils.get.get_knearest_seed_given_query(nn, query_header, query_points, seed_families,
+                                                                  cpu=cpu)
     selected_seed = {}
     from collections import Counter
     seed_cnt_by_fam = Counter()
@@ -99,14 +100,17 @@ if __name__ == '__main__':
     parser.add_argument('--cripple', type=int, help='cripple degree')
     parser.add_argument('--nn', type=int, default=7,
                         help='number of nearest neighbors for closest seed selection')
-    parser.add_argument('--inc-centroids', default=False, action='store_true', help='should centroid of each family be included in the seeds ?')
+    parser.add_argument('--inc-centroids', default=False, action='store_true',
+                        help='should centroid of each family be included in the seeds ?')
+    parser.add_argument('--cpu', type=int, default=None)
     args = parser.parse_args()
 
     names, points, header = run(query=args.query,
                                 unformatted=args.unformatted,
                                 cripple=args.cripple,
                                 nn=args.nn,
-                                inc_centroids=args.inc_centroids)
+                                inc_centroids=args.inc_centroids,
+                                cpu=args.cpu)
 
     from os.path import join
 
