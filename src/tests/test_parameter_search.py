@@ -56,7 +56,7 @@ class ParameterSearchTest(unittest.TestCase):
         from os.path import join
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(path)
-        clusters = run_clustering(names, points, header, 'labelSpreading', 'rbf', 0.5, 1.0)
+        clusters = run_clustering(names, points, header, 'labelSpreading', 'rbf', 0.5, 1.0, True)
         from src.utils.helpers import space
         for cluster in clusters:
             self.assertIsInstance(cluster, space.Cluster)
@@ -70,7 +70,7 @@ class ParameterSearchTest(unittest.TestCase):
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.cluster')
         clusters = utils.get.get_clusters(path, point_file)
 
-        clusters = run_cluster_refinement(clusters, names, points, header, 1.0)
+        clusters = run_cluster_refinement(clusters, names, points, header, 1.0, True)
         print(len(clusters))
 
     def test_run_evaluate(self):

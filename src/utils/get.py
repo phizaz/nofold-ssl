@@ -163,7 +163,7 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None):
     from sklearn.neighbors import BallTree
     from multiprocessing import Pool, cpu_count
     from functools import partial
-    pool = Pool(cpu_count())
+    pool = Pool(cpu_count() + 1) # observing that cpu = cpu_count() doesn't do its utmost
 
     results = [[] for i in range(len(query_points))]
 

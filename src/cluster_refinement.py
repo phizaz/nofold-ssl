@@ -110,7 +110,7 @@ def identical_clusters(A, B):
 
     return AA == BB
 
-def run(clusters, seed_names, seed_points, c):
+def run(clusters, seed_names, seed_points, c, merge):
     import utils
     # get seed clusters
     seed_groups = utils.modify.group_bitscore_by_family(seed_names, seed_points)
@@ -124,22 +124,24 @@ def run(clusters, seed_names, seed_points, c):
     closest_family = space.ClosestPoint(seed_centroids.values(), seed_centroids.keys())
 
     splitted_clusters = split_clusters(clusters, C=c)
-    for round in range(10):
-        print('round:', round + 1)
 
-        last_split_clusters = splitted_clusters
-        merged_clusters = merge_clusters(closest_family, splitted_clusters)
+    if merge: # whether to do the merging loop
+        for round in range(10):
+            print('round:', round + 1)
 
-        if len(merged_clusters) == 1:
-            print('unfortunately after merging there is only one cluster left...')
-            print('we\'ll assume that the one cluster is the answer')
-            splitted_clusters = merged_clusters
-            break
+            last_split_clusters = splitted_clusters
+            merged_clusters = merge_clusters(closest_family, splitted_clusters)
 
-        splitted_clusters = split_clusters(merged_clusters, C=c)
+            if len(merged_clusters) == 1:
+                print('unfortunately after merging there is only one cluster left...')
+                print('we\'ll assume that the one cluster is the answer')
+                splitted_clusters = merged_clusters
+                break
 
-        if identical_clusters(last_split_clusters, splitted_clusters):
-            break
+            splitted_clusters = split_clusters(merged_clusters, C=c)
+
+            if identical_clusters(last_split_clusters, splitted_clusters):
+                break
 
     return splitted_clusters
 
@@ -152,6 +154,7 @@ if __name__ == '__main__':
     parser.add_argument('--tag', required=True, help='tag')
     parser.add_argument('--alg', required=True, help='task\'s algorithm description')
     parser.add_argument('--c', type=float, default=1.0, help='splitting cluster parameter')
+    parser.add_argument('--merge', default=False, action='store_true', help='whether doing the merge loop')
     args = parser.parse_args()
 
     point_file = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(
@@ -165,7 +168,7 @@ if __name__ == '__main__':
     print('loading cluster file:', cluster_file)
     clusters = utils.get.get_clusters(cluster_file, point_file)
 
-    final_clusters = run(clusters, seed_names, seed_points, args.c)
+    final_clusters = run(clusters, seed_names, seed_points, args.c, args.merge)
 
     print('saving final cluster to file...')
     outfile = join(utils.path.results_path(), 'combined.{}.{}.refined.cluster'.format(args.tag, args.alg))

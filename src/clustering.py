@@ -6,7 +6,7 @@ This will definitely give lesser-than-actual number of clusters, becasue of the 
 '''
 
 
-def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, nn, gamma):
+def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, nn, gamma, multilabel):
     import utils.helpers.namemap
 
     names = seed_names + query_names
@@ -49,7 +49,21 @@ def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, 
     query_labels = [-1 for i in range(len(query_points))]
     Y = seed_labels + query_labels
     ssl.fit(X, Y)
-    query_predicted_labels = ssl.transduction_[len(seed_points):]
+
+    if multilabel:
+        predicted_probs = ssl.label_distributions_[len(seed_points):]
+
+        from src.utils.helpers import lmethod
+
+        clusters_cnt = lmethod.get_clusters_cnt(predicted_probs)
+        print('l-method clusters_cnt:', clusters_cnt)
+
+        from sklearn.cluster import AgglomerativeClustering
+        agg = AgglomerativeClustering(n_clusters=clusters_cnt)
+        agg.fit(predicted_probs)
+        query_predicted_labels = agg.labels_
+    else:
+        query_predicted_labels = ssl.transduction_[len(seed_points):]
 
     groups = {}
     for name, label, point in zip(query_names, query_predicted_labels, query_points):
@@ -81,6 +95,9 @@ if __name__ == '__main__':
     parser.add_argument('--gamma', type=float, default=0.5, help='rbf kernel\'s gamma')
     parser.add_argument('--nn', type=int, default=19, help='knn\'s nearest neighbor parameter')
     parser.add_argument('--alpha', type=float, help='clamping parameter for SSL model')
+    parser.add_argument('--multilabel', default=False, action='store_true',
+                        help='whether or not to use l-method to cluster on the label confidence domain, '
+                             'instead of using traditional semi-supervised learning')
     args = parser.parse_args()
 
     file = join(utils.path.results_path(),
@@ -88,7 +105,7 @@ if __name__ == '__main__':
     seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore(file)
 
     clusters = run(seed_names, seed_points, query_names, query_points, args.alg, args.kernel, args.alpha, args.nn,
-                   args.gamma)
+                   args.gamma, args.multilabel)
 
     outfile = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
     utils.save.save_clusters(outfile, clusters)

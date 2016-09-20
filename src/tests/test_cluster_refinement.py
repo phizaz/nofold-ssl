@@ -159,7 +159,17 @@ class ClusterRefinementTest(unittest.TestCase):
         self.assertTrue(identical_clusters(A, C))
         self.assertFalse(identical_clusters(A, D))
 
-    def test_real(self):
+    def test_real_merge(self):
+        from os.path import join
+        utils.run.run_python_attach_output(
+            join(utils.path.src_path(), 'cluster_refinement.py'),
+            '--merge',
+            tag='novel-1-2-3hp',
+            alg='labelSpreading',
+            c=1.0, # if set to C=1.1 or 1.2 the results would be very bad
+        )
+
+    def test_real_no_merge(self):
         from os.path import join
         utils.run.run_python_attach_output(
             join(utils.path.src_path(), 'cluster_refinement.py'),
@@ -172,6 +182,7 @@ class ClusterRefinementTest(unittest.TestCase):
         from os.path import join
         utils.run.run_python_attach_output(
             join(utils.path.src_path(), 'cluster_refinement.py'),
+            '--merge',
             tag='rfam75id-rename.cripple0',
             alg='labelSpreading',
             c=1.2

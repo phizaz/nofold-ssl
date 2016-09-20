@@ -11,7 +11,7 @@ def open_result(file):
 
 
 def row_score(row):
-    if float(row['sensitivity']) < 0.8 or float(row['precision']) < 0.8 or float(row['max_in_cluster']) < 0.8:
+    if float(row['max_in_cluster']) < 0.65:
         return 0
     else:
         return 1 * float(row['sensitivity']) + 1 * float(row['precision']) + 1 * float(row['max_in_cluster'])
@@ -116,10 +116,10 @@ def open_file_get_only(file, args, vals):
 def main():
     from os.path import join
     from src import utils
-    file_embed = join(utils.path.results_path(),
-                      'parameter_search.2016-09-08 18:09:44.230213.csv')
+    # file_embed = join(utils.path.results_path(),
+    #                   'parameter_search.2016-09-08 18:09:44.230213.csv')
     file_plain = join(utils.path.results_path(),
-                      'parameter_search.2016-09-09 04:08:21.216191.csv')
+                      'parameter_search.2016-09-20 06:10:37.569943.csv')
 
     # rows = open_result(file_embed)
     rows = open_result(file_plain)
@@ -127,7 +127,7 @@ def main():
     _mean = mean(scores)
     _std = sd(scores)
 
-    args = ['nn_seed', 'inc_centroids', 'length_norm', 'alg', 'alpha', 'c']
+    args = ['nn_seed', 'inc_centroids', 'length_norm', 'alg', 'gamma', 'alpha', 'c']
 
     # nn
     scores = sorted_normalized_col('nn_seed', [1, 7, 13, 19], rows, _mean, _std)
@@ -135,19 +135,25 @@ def main():
     print('nn_seed:', nn_seed)
     print(scores)
 
-    scores = sorted_normalized_col('inc_centroids', ['True', 'False'], rows, _mean, _std, exact=True)
+    scores = sorted_normalized_col('inc_centroids', ['True'], rows, _mean, _std, exact=True)
     inc_centroids = scores[0][0]
     print('inc_centroids:', inc_centroids)
     print(scores)
 
-    scores = sorted_normalized_col('length_norm', ['True', 'False'], rows, _mean, _std, exact=True)
+    scores = sorted_normalized_col('length_norm', ['True'], rows, _mean, _std, exact=True)
     length_norm = scores[0][0]
     print('length_norm:', length_norm)
     print(scores)
 
-    scores = sorted_normalized_col('alg', ['labelSpreading', 'labelPropagation'], rows, _mean, _std, exact=True)
+    scores = sorted_normalized_col('alg', ['labelSpreading'], rows, _mean, _std, exact=True)
     alg = scores[0][0]
     print('alg:', alg)
+    print(scores)
+
+    scores = sorted_normalized_col('gamma', [0.1, 0.2, 0.3, 0.4, 0.5], rows, _mean, _std)
+    gamma = scores[0][0]
+    # gamma = 0.5
+    print('gamma:', gamma)
     print(scores)
 
     scores = sorted_normalized_col('alpha', [
@@ -176,28 +182,28 @@ def main():
     bg_file = join(utils.path.results_path(),
                    'parameter_search.2016-09-10 17:36:24.557450.csv')
     row = open_file_get_only(bg_file, args, [
-        nn_seed, inc_centroids, length_norm, alg, alpha, c
+        nn_seed, inc_centroids, length_norm, alg, gamma, alpha, c
     ])
     print('paper with background:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     embed_file = join(utils.path.results_path(),
                       'parameter_search.2016-09-11 12:59:46.078175.csv')
     row = open_file_get_only(embed_file, args, [
-        nn_seed, inc_centroids, length_norm, alg, alpha, c
+        nn_seed, inc_centroids, length_norm, alg, gamma, alpha, c
     ])
     print('paper embedded:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     plain_file = join(utils.path.results_path(),
                       'parameter_search.2016-09-11 13:00:08.845259.csv')
     row = open_file_get_only(plain_file, args, [
-        nn_seed, inc_centroids, length_norm, alg, alpha, c
+        nn_seed, inc_centroids, length_norm, alg, gamma, alpha, c
     ])
     print('paper plain:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     synthetic_file = join(utils.path.results_path(),
                           'parameter_search.2016-09-11 09:53:50.909419.csv')
     row = open_file_get_only(synthetic_file, args, [
-        nn_seed, inc_centroids, length_norm, alg, alpha, c
+        nn_seed, inc_centroids, length_norm, alg, gamma, alpha, c
     ])
     print('paper synthetic:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 

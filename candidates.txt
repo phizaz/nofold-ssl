@@ -1,0 +1,5 @@
+fam40_typedistributed_plain+bg_weak,False,40,7,True,True,labelSpreading,rbf,0.4,0.6,1.0,0.96699999999999997,0.96949826323102184,0.64300000000000002
+fam40_typedistributed_plain+bg_weak,False,40,7,True,True,labelSpreading,rbf,0.4,0.7,1.0,0.96199999999999997,0.96592746595895529,0.65400000000000003
+fam40_typedistributed_plain+bg_weak,False,40,7,True,True,labelSpreading,rbf,0.4,0.9,1.2,0.71299999999999997,0.81486257494598358,0.72099999999999997
+fam40_typedistributed_plain+bg_weak,False,40,7,True,True,labelSpreading,rbf,0.4,0.9,1.1,0.83199999999999996,0.90798210209026919,0.71099999999999997
+fam40_typedistributed_plain+bg_weak,False,40,7,True,True,labelSpreading,rbf,0.4,0.9,1.0,0.96099999999999997,0.9642715459570298,0.65800000000000003
