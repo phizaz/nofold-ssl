@@ -167,7 +167,7 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
     if not cpu:
         cpu = cpu_count()
 
-    pool = Pool(cpu) # observing that cpu = cpu_count() doesn't do its utmost
+    pool = Pool(cpu)  # observing that cpu = cpu_count() doesn't do its utmost
 
     results = [[] for i in range(len(query_points))]
 
@@ -180,6 +180,7 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
     fn = partial(get_knearest_seed_in_family_given_query, k, query_header, query_points)
     for i, each in enumerate(pool.imap_unordered(fn, families)):
         print('family:', i, 'of', len(families))
+
         for all, local in zip(results, each):
             all += local
 
@@ -292,9 +293,11 @@ def get_seed_query_bitscore_plain(names, points, header):
 
     return seed_names, seed_points, query_names, query_points, header
 
+
 def get_seed_query_bitscore(mixed_bitscore_file):
     names, points, header = get_bitscores(mixed_bitscore_file)
     return get_seed_query_bitscore_plain(names, points, header)
+
 
 def get_name_clusters(cluster_file):
     clusters = []
@@ -355,12 +358,14 @@ def get_families_center_points(families, retain_cols=None):
     print('done')
     return results
 
+
 def get_results_avg(file):
     with open(file, 'r') as handle:
         lines = handle.readlines()
         scores = map(float, lines[-1].strip().split())
         sensitivity, precision, max_in_cluster = scores
     return sensitivity, precision, max_in_cluster
+
 
 def new_record(name, sequence):
     from Bio.SeqRecord import SeqRecord

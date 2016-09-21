@@ -1,3 +1,4 @@
+from __future__ import division
 from fastcluster import linkage
 from collections import deque
 from sklearn.metrics import mean_squared_error

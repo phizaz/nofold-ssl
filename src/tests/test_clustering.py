@@ -105,3 +105,26 @@ class ClusterSemiLabelPropagation(unittest.TestCase):
         clusters = utils.get.get_name_clusters(
             join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.cluster'))
         self.assertTrue(18 <= len(clusters) <= 30, msg='clustering quality is too bad')
+
+    def test_real_large_with_multilabel(self):
+        from os.path import join, exists
+        query = 'rfam75id-rename'
+        tag = '{}.cripple0'.format(query)
+        file = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(tag))
+        if not exists(file):
+            utils.run.run_python_attach_output(join(utils.path.src_path(), 'normalize_bitscore.py'),
+                                               '--lengthnorm',
+                                               tag=tag,
+                                               query=query)
+
+        utils.run.run_python_attach_output(join(utils.path.src_path(), 'clustering.py'),
+                                           '--multilabel',
+                                           tag='rfam75id-rename.cripple0',
+                                           alg='labelSpreading',
+                                           kernel='rbf',
+                                           gamma=0.5,
+                                           alpha=1)
+
+        clusters = utils.get.get_name_clusters(
+            join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.cluster'))
+        self.assertTrue(18 <= len(clusters) <= 30, msg='clustering quality is too bad')

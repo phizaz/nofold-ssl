@@ -52,6 +52,7 @@ def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, 
 
     if multilabel:
         predicted_probs = ssl.label_distributions_[len(seed_points):]
+        print(predicted_probs[:2])
 
         from src.utils.helpers import lmethod
 
@@ -59,7 +60,7 @@ def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, 
         print('l-method clusters_cnt:', clusters_cnt)
 
         from sklearn.cluster import AgglomerativeClustering
-        agg = AgglomerativeClustering(n_clusters=clusters_cnt)
+        agg = AgglomerativeClustering(n_clusters=clusters_cnt, affinity='euclidean', linkage='ward')
         agg.fit(predicted_probs)
         query_predicted_labels = agg.labels_
     else:

@@ -11,7 +11,7 @@ def open_result(file):
 
 
 def row_score(row):
-    if float(row['max_in_cluster']) < 0.65:
+    if float(row['sensitivity']) < 0.7 or float(row['precision']) < 0.7 or float(row['max_in_cluster']) < 0.7:
         return 0
     else:
         return 1 * float(row['sensitivity']) + 1 * float(row['precision']) + 1 * float(row['max_in_cluster'])
@@ -119,7 +119,7 @@ def main():
     # file_embed = join(utils.path.results_path(),
     #                   'parameter_search.2016-09-08 18:09:44.230213.csv')
     file_plain = join(utils.path.results_path(),
-                      'parameter_search.2016-09-20 06:10:37.569943.csv')
+                      'parameter_search.2016-09-21 11:04:36.362155.csv')
 
     # rows = open_result(file_embed)
     rows = open_result(file_plain)
@@ -127,7 +127,7 @@ def main():
     _mean = mean(scores)
     _std = sd(scores)
 
-    args = ['nn_seed', 'inc_centroids', 'length_norm', 'alg', 'gamma', 'alpha', 'c']
+    args = ['nn_seed', 'inc_centroids', 'length_norm', 'alg', 'gamma', 'alpha', 'multilabel', 'c', 'merge']
 
     # nn
     scores = sorted_normalized_col('nn_seed', [1, 7, 13, 19], rows, _mean, _std)
@@ -167,6 +167,11 @@ def main():
     print('alpha:', alpha)
     print(scores)
 
+    scores = sorted_normalized_col('multilabel', ['True', 'False'], rows, _mean, _std, exact=True)
+    multilabel = scores[0][0]
+    print('multilabel:', multilabel)
+    print(scores)
+
     scores = sorted_normalized_col('c', [
         1.0,
         1.1,
@@ -177,6 +182,11 @@ def main():
     ], rows, _mean, _std)
     c = scores[0][0]
     print('c:', c)
+    print(scores)
+
+    scores = sorted_normalized_col('merge', ['True', 'False'], rows, _mean, _std, exact=True)
+    merge = scores[0][0]
+    print('merge:', merge)
     print(scores)
 
     bg_file = join(utils.path.results_path(),
