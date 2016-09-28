@@ -52,7 +52,7 @@ def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, 
 
     if multilabel:
         predicted_probs = ssl.label_distributions_[len(seed_points):]
-        print(predicted_probs[:2])
+        # print(predicted_probs[:2])
 
         from src.utils.helpers import lmethod
 

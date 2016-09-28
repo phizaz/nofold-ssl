@@ -9,13 +9,21 @@ def open_result(file):
             rows.append(row)
     return rows
 
+def l1_score(float):
+    return 1 - float
+
+def l2_score(float):
+    return (1 - float) ** 2
 
 def row_score(row):
     if float(row['sensitivity']) < 0.7 or float(row['precision']) < 0.7 or float(row['max_in_cluster']) < 0.7:
         return 0
     else:
-        return 1 * float(row['sensitivity']) + 1 * float(row['precision']) + 1 * float(row['max_in_cluster'])
-
+        sense = float(row['sensitivity'])
+        prec = float(row['precision'])
+        max_in = float(row['max_in_cluster'])
+        return 1.0 / (l1_score(sense) + l1_score(prec) + l1_score(max_in))
+        # return (1.0 / ((l2_score(sense) + l2_score(prec) + l2_score(max_in)) ** 0.5))
 
 def row_normalized(row, mean, sd):
     return (row_score(row) - mean) / sd
@@ -68,7 +76,7 @@ def get_filter(col, val, exact=False):
 
 
 def intelligient_filter(col, val):
-    exacts = ['inc_centroids', 'length_norm', 'alg']
+    exacts = ['inc_centroids', 'length_norm', 'alg', 'multilabel', 'merge']
     if col in exacts:
         return get_filter(col, val, True)
     else:
@@ -119,7 +127,7 @@ def main():
     # file_embed = join(utils.path.results_path(),
     #                   'parameter_search.2016-09-08 18:09:44.230213.csv')
     file_plain = join(utils.path.results_path(),
-                      'parameter_search.2016-09-21 11:04:36.362155.csv')
+                      'parameter_search.2016-09-22 09:14:31.039601.csv')
 
     # rows = open_result(file_embed)
     rows = open_result(file_plain)
@@ -178,7 +186,6 @@ def main():
         1.2,
         1.3,
         1.4,
-        1.5
     ], rows, _mean, _std)
     c = scores[0][0]
     print('c:', c)
@@ -188,6 +195,11 @@ def main():
     merge = scores[0][0]
     print('merge:', merge)
     print(scores)
+
+    row = open_file_get_only(file_plain, args, [
+        nn_seed, inc_centroids, length_norm, alg, gamma, alpha, multilabel, c, merge
+    ])
+    print('fam40 plain:', get_many(['sensitivity', 'precision', 'max_in_cluster'], row))
 
     bg_file = join(utils.path.results_path(),
                    'parameter_search.2016-09-10 17:36:24.557450.csv')
