@@ -2,38 +2,39 @@ from __future__ import print_function
 
 
 def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
-    from combine_rfam_bitscore import run
+    import combine_rfam_bitscore
     from multiprocessing import cpu_count
-    return run(query, unformatted, cripple, nn_seed, inc_centroids, cpu=cpu_count())
+    return combine_rfam_bitscore.run(query, unformatted, cripple, nn_seed, inc_centroids, cpu=cpu_count())
 
 
-def run_normalize(names, points, header, query, length_norm):
-    from normalize_bitscore import run
-    return run(names, points, header, query, 100, length_norm)
+def run_normalize(names, points, header, query, pca_n, length_norm):
+    import normalize_bitscore
+    return normalize_bitscore.run(names, points, header, query, pca_n, length_norm)
 
 
 def run_clustering(names, points, header, alg, kernel, gamma, alpha, multilabel):
-    from clustering import run
+    import clustering
     import utils
     seed_names, seed_points, query_names, query_points, header = utils.get.get_seed_query_bitscore_plain(names, points,
                                                                                                          header)
-    clusters = run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, -1, gamma, multilabel)
+    clusters = clustering.run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, -1, gamma,
+                              multilabel)
     return clusters
 
 
 def run_cluster_refinement(clusters, names, points, header, c, merge):
-    from cluster_refinement import run
+    import cluster_refinement
     import utils
     seed_names, seed_points, _, _, _ = utils.get.get_seed_query_bitscore_plain(names, points, header)
-    clusters = run(clusters, seed_names, seed_points, c, merge)
+    clusters = cluster_refinement.run(clusters, seed_names, seed_points, c, merge)
     return clusters
 
 
 def run_evaluate(name_clusters, names):
-    from evaluate import run
+    import evaluate
     import utils
     names = filter(lambda x: not utils.short.is_bg(x), names)
-    results, average = run(names, name_clusters)
+    results, average = evaluate.run(names, name_clusters)
     return average
 
 
@@ -48,11 +49,11 @@ def run_refinement_and_evaluate(clusters, names, points, header, c, merge):
     return run_evaluate(name_clusters, query_names)
 
 
-def save(search_arguments, results):
+def save(arguments, results):
     import utils
     from os.path import join
     outfile = join(utils.path.results_path(), 'parameter_search.{}.csv'.format(utils.short.datetime_now()))
-    cols = search_arguments + ['sensitivity', 'precision', 'max_in_cluster']
+    cols = arguments + ['sensitivity', 'precision', 'max_in_cluster']
     rows = [
         key + (val['sensitivity'], val['precision'], val['max_in_cluster'])
         for key, val in results.items()
@@ -68,53 +69,60 @@ def load_search_space_file(file):
     return search_space
 
 
-if __name__ == '__main__':
-    from argparse import ArgumentParser
-
-    parser = ArgumentParser(usage='cluster using semi-supervised label propagation algorithm')
-    parser.add_argument('search_space_file', help='a json file of the search space')
-    args = parser.parse_args()
-
+def get_search_arguments():
     search_arguments = [
-        'query', 'unformatted', 'cripple', 'nn_seed', 'inc_centroids', 'length_norm', 'alg', 'kernel', 'gamma', 'alpha',
+        'query', 'nn_seed', 'inc_centroids', 'components', 'length_norm', 'alg', 'kernel', 'gamma', 'alpha',
         'multilabel', 'c', 'merge'
     ]
+    query_arguments = ['query', 'unformatted', 'cripple']
+    return search_arguments, query_arguments
 
-    search_space = load_search_space_file(args.search_space_file)
 
-    assert len(search_space['query']) == len(search_space['unformatted']) == len(search_space['cripple'])
+def get_all_arguments():
+    search_args, query_args = get_search_arguments()
+    return query_args + search_args[1:] # omit the 'query' argument
 
-    from itertools import product
 
-    total_job_cnt = len(search_space['query']) * len(search_space['nn_seed']) * len(
-        search_space['inc_centroids']) * len(search_space['length_norm']) * len(search_space['alg']) * len(
-        search_space['kernel']) * len(search_space['gamma']) * len(search_space['alpha']) * len(
-        search_space['multilabel']) * len(search_space['c']) * len(search_space['merge'])
+def param_search(search_space):
+    search_arguments, query_arguments = get_search_arguments()
+    # search space validation
+    for arg in search_arguments:
+        assert arg in search_space, 'missing arg `{}`'.format(arg)
+    for arg in query_arguments:
+        assert arg in search_space['query'], 'missing arg `{}` in query section'.format(arg)
 
+    import numpy
+    total_job_cnt = numpy.product(len(search_space[a]) for a in search_arguments)
     print('total jobs cnt: {}'.format(total_job_cnt))
 
     import itertools
-
     job_no = itertools.count(1)
-
     results = {}
+    from itertools import product
+    for A in search_space['query']:
+        query, unformatted, cripple = A['query'], A['unformatted'], A['cripple']
 
-    for query, unformatted, cripple in zip(search_space['query'], search_space['unformatted'], search_space['cripple']):
-        for nn_seed, inc_centroids in product(search_space['nn_seed'], search_space['inc_centroids']):
+        for B in product(search_space['nn_seed'], search_space['inc_centroids']):
+            nn_seed, inc_centroids = B
+
             print('combining query:{} cripple:{} nn_seed:{}'.format(query, cripple, nn_seed))
             names, points, header = run_combine(query, unformatted, cripple, nn_seed, inc_centroids)
 
-            for length_norm in search_space['length_norm']:
-                print('normalizing query: {} length_norm: {}'.format(query, length_norm))
-                names, points, header = run_normalize(names, points, header, query, length_norm)
+            for C in product(search_space['components'], search_space['length_norm']):
+                components, length_norm = C
 
-                for alg, kernel, gamma, alpha, multilabel in product(
+                print('normalizing query: {} length_norm: {}'.format(query, length_norm))
+                names, points, header = run_normalize(names, points, header, query, components, length_norm)
+
+                for D in product(
                         search_space['alg'],
                         search_space['kernel'],
                         search_space['gamma'],
                         search_space['alpha'],
                         search_space['multilabel'],
                 ):
+                    alg, kernel, gamma, alpha, multilabel = D
+
                     print(
                         'clustering query: {} alg: {} kernel: {} gamma: {} alpha: {} multilabel: {}'.format(query, alg,
                                                                                                             kernel,
@@ -123,13 +131,16 @@ if __name__ == '__main__':
                                                                                                             multilabel))
                     clusters = run_clustering(names, points, header, alg, kernel, gamma, alpha, multilabel)
 
-                    for c, merge in product(search_space['c'], search_space['merge']):
+                    for E in product(search_space['c'], search_space['merge']):
+                        c, merge = E
+
                         print('refining query: {} c: {} merg: {} and evaluating ...'.format(query, c, merge))
                         avg = run_refinement_and_evaluate(clusters, names, points, header, c, merge)
 
-                        idx = (
-                            query, unformatted, cripple, nn_seed, inc_centroids, length_norm, alg, kernel, gamma, alpha,
-                            multilabel, c, merge
+                        idx = tuple(
+                            item
+                            for item in l
+                            for l in (A, B, C, D, E)
                         )
                         assert len(idx) == len(search_arguments)
 
@@ -142,4 +153,17 @@ if __name__ == '__main__':
                             avg['max_in_cluster']
                         ))
 
-    save(search_arguments, results)
+    return results
+
+
+if __name__ == '__main__':
+    from argparse import ArgumentParser
+
+    parser = ArgumentParser(usage='cluster using semi-supervised label propagation algorithm')
+    parser.add_argument('search_space_file', help='a json file of the search space')
+    args = parser.parse_args()
+
+    search_space = load_search_space_file(args.search_space_file)
+    results = param_search(search_space)
+
+    save(get_all_arguments(), results)

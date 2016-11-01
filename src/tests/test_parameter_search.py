@@ -8,17 +8,17 @@ class ParameterSearchTest(unittest.TestCase):
         query = 'rfam75id-rename'
         cripple = 0
         nn_seed = 3
-        names, points, header = run_combine(query, False, cripple, nn_seed, False)
+        names, points, header = run_combine(query, False, cripple, nn_seed, True)
         print(len(names))
         print(len(points))
         print(len(header))
         self.assertEqual(len(names), len(points))
-        self.assertEqual(len(names), 4877)
+        self.assertEqual(len(names), 4879)
         self.assertEqual(len(header), 1929)
 
     def test_run_normalized(self):
         from os.path import join
-        path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.bitscore')
+        path = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.bitscore')
         names, points, header = utils.get.get_bitscores(path)
 
         def almost_equal(a, b):
@@ -54,7 +54,7 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_run_clustering(self):
         from os.path import join
-        path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.normalized.bitscore')
+        path = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(path)
         clusters = run_clustering(names, points, header, 'labelSpreading', 'rbf', 0.5, 1.0, True)
         from src.utils.helpers import space
@@ -64,7 +64,7 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_run_cluster_refinement(self):
         from os.path import join
-        point_file = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.normalized.bitscore')
+        point_file = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(point_file)
 
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.cluster')
@@ -75,7 +75,7 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_run_evaluate(self):
         from os.path import join
-        path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.refined.cluster')
+        path = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.labelSpreading.refined.cluster')
         clusters = utils.get.get_name_clusters(path)
         names = [
             rec.name
@@ -89,6 +89,13 @@ class ParameterSearchTest(unittest.TestCase):
         self.assertAlmostEqual(average['sensitivity'], 1.0)
         self.assertAlmostEqual(average['precision'], 1.0)
         self.assertGreater(average['max_in_cluster'], 0.8)
+
+    def test_get_all_arguments(self):
+        args = get_all_arguments()
+        self.assertListEqual(args,
+                             ['query', 'unformatted', 'cripple', 'nn_seed', 'inc_centroids', 'components', 'length_norm',
+                              'alg', 'kernel', 'gamma', 'alpha', 'multilabel', 'c', 'merge']
+                             )
 
     def test_save(self):
         args = ['a', 'b', 'c']
@@ -105,7 +112,7 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_load_search_space_file(self):
         from os.path import join
-        file = join(utils.path.src_path(), 'search_space_paper.json')
+        file = join(utils.path.tests_supplies_path(), 'search_space.json')
         search_space = load_search_space_file(file)
         print(search_space)
         self.assertDictEqual(search_space, {u'kernel': [u'rbf'], u'c': [1.0, 1.1, 1.2, 1.3, 1.4, 1.5],

@@ -44,6 +44,16 @@ def cm_path():
     return join(root_path(), 'models', 'rfam_cms')
 
 
+def tests_path():
+    from os.path import join
+    return join(src_path(), 'tests')
+
+
+def tests_supplies_path():
+    from os.path import join
+    return join(tests_path(), 'supplies')
+
+
 def make_path(path):
     from os.path import exists
     from os import makedirs
