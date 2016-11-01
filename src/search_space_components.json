@@ -10,16 +10,19 @@
     7
   ],
   "components": [
+    50,
+    75,
     100,
-    300,
-    500,
-    1000
+    125,
+    150,
+    175,
+    200
   ],
   "inc_centroids": [
     false
   ],
   "length_norm": [
-    false
+    false, true
   ],
   "alg": [
     "labelSpreading"
@@ -34,7 +37,7 @@
     1.0
   ],
   "multilabel": [
-    true, false
+    true
   ],
   "c": [
     1.0,
@@ -43,6 +46,6 @@
     1.3
   ],
   "merge": [
-    true, false
+    false
   ]
 }

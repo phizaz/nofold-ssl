@@ -101,8 +101,8 @@ def param_search(search_space):
     job_no = itertools.count(1)
     results = {}
     from itertools import product
-    for A in search_space['query']:
-        query, unformatted, cripple = A['query'], A['unformatted'], A['cripple']
+    for each in search_space['query']:
+        query, unformatted, cripple = A = each['query'], each['unformatted'], each['cripple']
 
         for B in product(search_space['nn_seed'], search_space['inc_centroids']):
             nn_seed, inc_centroids = B
