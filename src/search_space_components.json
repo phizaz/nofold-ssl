@@ -15,6 +15,9 @@
     500,
     1000
   ],
+  "inc_centroids": [
+    false
+  ],
   "length_norm": [
     false
   ],
