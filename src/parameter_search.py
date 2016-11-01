@@ -88,11 +88,13 @@ def param_search(search_space):
     # search space validation
     for arg in search_arguments:
         assert arg in search_space, 'missing arg `{}`'.format(arg)
-    for arg in query_arguments:
-        assert arg in search_space['query'], 'missing arg `{}` in query section'.format(arg)
+    for query in search_space['query']:
+        for arg in query_arguments:
+            assert arg in query, 'missing arg `{}` in query section'.format(arg)
 
-    import numpy
-    total_job_cnt = numpy.product(len(search_space[a]) for a in search_arguments)
+    total_job_cnt = reduce(lambda a, b: a * b,
+                           (len(search_space[a]) for a in search_arguments),
+                           1)
     print('total jobs cnt: {}'.format(total_job_cnt))
 
     import itertools
