@@ -127,11 +127,9 @@ def open_file_get_only(file, args, vals):
     return rows[0]
 
 
-def main():
+def analyse(file):
     from os.path import join
     from src import utils
-    file = join(utils.path.results_path(),
-                'parameter_search.2016-11-01 10:57:54.220566.csv')
 
     rows = open_result(file)
     scores = list(map(row_score, rows))
@@ -156,18 +154,28 @@ def main():
         print('arg `{}` best : {}'.format(arg, best))
         print('scores: ', scores)
 
+    return args, best_vals
+
+def apply(args, best_vals, files):
+    import utils
+    from os.path import join
+    for name, file_name in files:
+        full_name = join(utils.path.results_path(), file_name)
+        row = open_file_get_only(full_name, args, best_vals)
+        print('{}: ', get_cols(['sensitivity', 'precision', 'max_in_cluster'], row))
+
+if __name__ == '__main__':
+    import utils
+    from os.path import join
+
+    file = join(utils.path.results_path(),
+                'parameter_search.2016-11-01 10:57:54.220566.csv')
+    args, best_vals = analyse(file)
+
     target_files = [
         ('bg_file', 'parameter_search.2016-09-10 17:36:24.557450.csv'),
         ('embed_file', 'parameter_search.2016-09-11 12:59:46.078175.csv'),
         ('plain_file', 'parameter_search.2016-09-11 13:00:08.845259.csv'),
         ('synthetic_file', 'parameter_search.2016-09-11 09:53:50.909419.csv')
     ]
-
-    for name, file_name in target_files:
-        full_name = join(utils.path.results_path(), file_name)
-        row = open_file_get_only(full_name, args, best_vals)
-        print('{}: ', get_cols(['sensitivity', 'precision', 'max_in_cluster'], row))
-
-
-if __name__ == '__main__':
-    main()
+    apply(args, best_vals, target_files)
