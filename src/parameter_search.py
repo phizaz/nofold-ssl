@@ -144,7 +144,7 @@ def param_search(search_space):
                             for l in (A, B, C, D, E)
                             for item in l
                         )
-                        assert len(idx) == len(search_arguments)
+                        assert len(idx) == len(get_all_arguments())
 
                         results[idx] = avg
 
