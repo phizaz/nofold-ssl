@@ -1,5 +1,5 @@
 from __future__ import print_function
-
+import logging
 
 def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
     import combine_rfam_bitscore
@@ -108,13 +108,13 @@ def param_search(search_space):
             nn_seed, inc_centroids = B
 
             print('combining query:{} cripple:{} nn_seed:{}'.format(query, cripple, nn_seed))
-            names, points, header = run_combine(query, unformatted, cripple, nn_seed, inc_centroids)
+            c_names, c_points, c_header = run_combine(query, unformatted, cripple, nn_seed, inc_centroids)
 
             for C in product(search_space['components'], search_space['length_norm']):
                 components, length_norm = C
 
                 print('normalizing query: {} length_norm: {}'.format(query, length_norm))
-                names, points, header = run_normalize(names, points, header, query, components, length_norm)
+                n_names, n_points, n_header = run_normalize(c_names, c_points, c_header, query, components, length_norm)
 
                 for D in product(
                         search_space['alg'],
@@ -131,13 +131,13 @@ def param_search(search_space):
                                                                                                             gamma,
                                                                                                             alpha,
                                                                                                             multilabel))
-                    clusters = run_clustering(names, points, header, alg, kernel, gamma, alpha, multilabel)
+                    clusters = run_clustering(n_names, n_points, n_header, alg, kernel, gamma, alpha, multilabel)
 
                     for E in product(search_space['c'], search_space['merge']):
                         c, merge = E
 
                         print('refining query: {} c: {} merg: {} and evaluating ...'.format(query, c, merge))
-                        avg = run_refinement_and_evaluate(clusters, names, points, header, c, merge)
+                        avg = run_refinement_and_evaluate(clusters, n_names, n_points, n_header, c, merge)
 
                         idx = tuple(
                             item

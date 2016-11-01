@@ -11,12 +11,13 @@ class PCANormalizeBitscoreTest(unittest.TestCase):
 
     def test_pca(self):
         names, points, header = utils.get.get_query_bitscores('novel-1-2-3hp')
-        _points, _header = pca(100, points)
+        components = 150
+        _points, _header = pca(components, points)
         self.assertEqual(len(points), len(_points))
-        self.assertEqual(len(_header), 100)
+        self.assertEqual(len(_header), components)
 
         for each in _points:
-            self.assertEqual(len(each), 100)
+            self.assertEqual(len(each), components)
 
     def test_znormalize(self):
         points = [
