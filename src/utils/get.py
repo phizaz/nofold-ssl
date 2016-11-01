@@ -250,7 +250,7 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
         for all, local in zip(results, each):
             all += local
 
-        if i % 2 * cpu == 0:
+        if i % (2 * cpu) == 0 and i != 0:
             print('cleaning up ...')
             clean_up()
 
