@@ -155,6 +155,26 @@ def get_knearest_seed_in_family_given_query(k, query_header, query_points, famil
     return get_knearest_points(k, query_points, seed_names, seed_points)
 
 
+def get_knearest_seed_in_families_given_query(k, query_header, query_points, families):
+    from .modify import retain_bitscore_cols
+    seed_names = []
+    seed_points = []
+    seed_header = None
+
+    for family in families:
+        names, points, header = get_family_bitscores(family)
+        seed_names += names
+        seed_points += points
+        if not seed_header:
+            seed_header = header
+        else:
+            assert len(seed_header) == len(header), 'seed_header size doesnt equal to header, {} != {}'.format(
+                len(seed_header), len(header))
+
+    seed_points, seed_header = retain_bitscore_cols(query_header, seed_points, seed_header)
+    return get_knearest_points(k, query_points, seed_names, seed_points)
+
+
 def get_knearest_seed_given_query(k, query_header, query_points, families=None, cpu=None):
     if not families:
         print('retriving calculated families...')
@@ -168,7 +188,6 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
         cpu = cpu_count()
 
     pool = Pool(cpu)  # observing that cpu = cpu_count() doesn't do its utmost
-
     results = [[] for i in range(len(query_points))]
 
     def clean_up():
@@ -185,6 +204,53 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
             all += local
 
         if i % 100 == 0:
+            print('cleaning up ...')
+            clean_up()
+
+    clean_up()
+    pool.close()
+
+    return results
+
+
+def get_knearest_seed_given_query_chunking(k, query_header, query_points, families=None, cpu=None, chunk_size=50):
+    if not families:
+        print('retriving calculated families...')
+        families = get_calculated_families()
+
+    from sklearn.neighbors import BallTree
+    from multiprocessing import Pool, cpu_count
+    from functools import partial
+    from src import utils
+
+    if not cpu:
+        cpu = cpu_count()
+
+    pool = Pool(cpu)  # observing that cpu = cpu_count() doesn't do its utmost
+
+    results = [[] for i in range(len(query_points))]
+
+    def clean_up():
+        from operator import itemgetter
+        for each in results:
+            each.sort(key=itemgetter(0))
+            del each[k:]
+
+    fn = partial(get_knearest_seed_in_families_given_query, k, query_header, query_points)
+
+    # make each chunk equal
+    fams = list(families)
+    import random
+    random.shuffle(fams)
+    family_groups = list(utils.short.chunks(fams, chunk_size))
+
+    for i, each in enumerate(pool.imap_unordered(fn, family_groups)):
+        print('family:', i * chunk_size, 'of', len(families))
+
+        for all, local in zip(results, each):
+            all += local
+
+        if i % 2 * cpu == 0:
             print('cleaning up ...')
             clean_up()
 

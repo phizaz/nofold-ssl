@@ -100,3 +100,8 @@ class ShortTest(unittest.TestCase):
     def test_unique_name(self):
         r = utils.short.unique_name()
         print(r)
+
+    def test_chunks(self):
+        l = [1,2,3,4,5,6,7,8,9]
+        self.assertListEqual(list(utils.short.chunks(l, 2)), [[1, 2], [3, 4], [5, 6], [7, 8], [9]])
+

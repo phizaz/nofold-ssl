@@ -140,6 +140,26 @@ class GetTest(unittest.TestCase):
         for each in results:
             self.assertEqual(len(each), 3)
 
+    def test_get_knearest_seed_given_query_chunking(self):
+        query_names, query_points, query_header = utils.get.get_query_bitscores('test_rna')
+        results = utils.get.get_knearest_seed_given_query_chunking(3, query_header, query_points)
+
+        print(results)
+
+        self.assertEqual(len(results), 2)
+        for each in results:
+            self.assertEqual(len(each), 3)
+
+    def test_get_knearest_seed_given_query_chunking_large(self):
+        query_names, query_points, query_header = utils.get.get_query_bitscores('rfam75id-rename')
+        results = utils.get.get_knearest_seed_given_query_chunking(3, query_header, query_points)
+
+        print(results)
+
+        self.assertEqual(len(results), 2)
+        for each in results:
+            self.assertEqual(len(each), 3)
+
     def test_get_family_lengths(self):
         lengths = utils.get.get_family_lengths('RF00014')
         print(lengths)
@@ -186,7 +206,7 @@ class GetTest(unittest.TestCase):
         for key, val in _lengths.items():
             self.assertEqual(lengths[key], val)
 
-    def tets_get_mixed_bitscore_plain(self):
+    def test_get_mixed_bitscore_plain(self):
         raise NotImplementedError
 
     def test_get_mixed_bitscore(self):
