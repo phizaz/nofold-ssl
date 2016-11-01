@@ -141,8 +141,8 @@ def param_search(search_space):
 
                         idx = tuple(
                             item
-                            for item in l
                             for l in (A, B, C, D, E)
+                            for item in l
                         )
                         assert len(idx) == len(search_arguments)
 
