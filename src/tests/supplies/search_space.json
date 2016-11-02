@@ -1,0 +1,62 @@
+{
+  "query": [
+    "rfam75id-rename",
+    "rfam75id_embed-rename",
+    "rfam75id_dinuc3000-rename",
+    "fam40_typedistributed_embed+bg_weak",
+    "fam40_typedistributed_plain+bg_weak"
+  ],
+  "unformatted": [
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "cripple": [
+    0,
+    0,
+    1,
+    6,
+    6
+  ],
+  "nn_seed": [
+    1,
+    7,
+    13,
+    19
+  ],
+  "inc_centroids": [
+    true,
+    false
+  ],
+  "length_norm": [
+    true,
+    false
+  ],
+  "alg": [
+    "labelSpreading",
+    "labelPropagation"
+  ],
+  "kernel": [
+    "rbf"
+  ],
+  "gamma": [
+    0.5
+  ],
+  "alpha": [
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "c": [
+    1.0,
+    1.1,
+    1.2,
+    1.3,
+    1.4,
+    1.5
+  ]
+}
