@@ -26,6 +26,7 @@ def row_score(row):
         sense = float(row['sensitivity'])
         prec = float(row['precision'])
         max_in = float(row['max_in_cluster'])
+        # return sense + prec + max_in
         return 1.0 / (l1_score(sense) + l1_score(prec) + l1_score(max_in))
         # return (1.0 / ((l2_score(sense) + l2_score(prec) + l2_score(max_in)) ** 0.5))
 
@@ -162,20 +163,21 @@ def apply(args, best_vals, files):
     for name, file_name in files:
         full_name = join(utils.path.results_path(), file_name)
         row = open_file_get_only(full_name, args, best_vals)
-        print('{}: ', get_cols(['sensitivity', 'precision', 'max_in_cluster'], row))
+        print('{}: {}'.format(name, get_cols(['sensitivity', 'precision', 'max_in_cluster'], row)))
 
 if __name__ == '__main__':
     import utils
     from os.path import join
 
-    file = join(utils.path.results_path(),
-                'parameter_search.2016-11-01 10:57:54.220566.csv')
-    args, best_vals = analyse(file)
+    file = 'parameter_search.2016-11-02 15:01:21.810874.csv'
+    args, best_vals = analyse(join(utils.path.results_path(),
+                                   file))
 
     target_files = [
-        ('bg_file', 'parameter_search.2016-09-10 17:36:24.557450.csv'),
-        ('embed_file', 'parameter_search.2016-09-11 12:59:46.078175.csv'),
-        ('plain_file', 'parameter_search.2016-09-11 13:00:08.845259.csv'),
-        ('synthetic_file', 'parameter_search.2016-09-11 09:53:50.909419.csv')
+        ('itself', file),
+        # ('bg_file', 'parameter_search.2016-09-10 17:36:24.557450.csv'),
+        # ('embed_file', 'parameter_search.2016-09-11 12:59:46.078175.csv'),
+        # ('plain_file', 'parameter_search.2016-09-11 13:00:08.845259.csv'),
+        # ('synthetic_file', 'parameter_search.2016-09-11 09:53:50.909419.csv')
     ]
     apply(args, best_vals, target_files)
