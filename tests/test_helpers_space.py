@@ -37,6 +37,42 @@ class SpaceTest(unittest.TestCase):
         ]
         self.assertAlmostEqual(space.dist_cluster_avg(a, b), 1.41421356)
 
+    def test_dist_cluster_avg_fast(self):
+        a = [
+            [1, 1], [2, 2]
+        ]
+        b = [
+            [2, 2], [3, 3]
+        ]
+        self.assertAlmostEqual(space.dist_cluster_avg_fast(a, b), 1.41421356)
+
+    def test_dist_cluster_avg_speed(self):
+        a = np.random.rand(500, 100)
+        b = np.random.rand(500, 100)
+
+        def time_it(fn):
+            def wrapper():
+                import time
+                start = time.time()
+                res = fn()
+                end = time.time()
+                print('time elapsed:', end - start)
+                return res
+
+            return wrapper
+
+        @time_it
+        def run_normal():
+            return space.dist_cluster_avg(a, b)
+
+        @time_it
+        def run_fast():
+            return space.dist_cluster_avg_fast(a, b)
+
+        aa = run_normal()
+        bb = run_fast()
+        self.assertAlmostEqual(aa, bb)
+
     def test_dist_cluster_centroid(self):
         a = [
             [0,0],[0,2]

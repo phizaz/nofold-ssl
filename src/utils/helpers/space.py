@@ -28,16 +28,20 @@ def dist_cluster_min(points_A, points_B):
 
 
 def dist_cluster_avg(points_A, points_B):
+    print('deprecated: use faster version instead!')
     from itertools import product
-    import numpy as np
     points_A = np.array(points_A)
     points_B = np.array(points_B)
     s = sum(dist(a, b) for a, b in product(points_A, points_B))
     return s / float(len(points_A) * len(points_B))
 
 
+def dist_cluster_avg_fast(points_A, points_B):
+    from scipy.spatial.distance import cdist
+    arr = cdist(points_A, points_B, metric='euclidean')
+    return np.sum(arr) / (len(points_A) * len(points_B))
+
 def dist_cluster_centroid(points_A, points_B):
-    import numpy as np
     points_A = np.array(points_A)
     points_B = np.array(points_B)
     centroid_A = centroid_of(points_A)
@@ -67,7 +71,7 @@ class Cluster(object):
 
     def dist_avg(self, cluster):
         assert isinstance(cluster, Cluster)
-        return dist_cluster_avg(self.points, cluster.points)
+        return dist_cluster_avg_fast(self.points, cluster.points)
 
     def dist_min(self, cluster):
         assert isinstance(cluster, Cluster)

@@ -63,5 +63,5 @@ class ClusteringMultiLabelTest(unittest.TestCase):
 
         clusters = utils.get.get_name_clusters(
             join(utils.path.results_path(), 'combined.rfam75id-rename.cripple20.labelSpreading.cluster'))
-        self.assertTrue(18 <= len(clusters) <= 30, msg='clustering quality is too bad')
+        self.assertTrue(18 <= len(clusters) <= 100, msg='clustering quality is too bad')
 
