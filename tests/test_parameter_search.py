@@ -150,6 +150,15 @@ class ParameterLevelSearchTest(unittest.TestCase):
         normalize_level = search_level_normalize(combine_level, self.components, self.length_norm)
         clustering_level = search_level_clustering(normalize_level, self.alg, self.kernel, self.gamma, self.alpha, self.multilabel)
         eval_level = search_level_refine_eval(clustering_level, self.c, self.merge)
-        for args, avg in eval_level:
-            print(args, avg)
+        for i, (conf, avg) in enumerate(eval_level, 1):
+            idx = conf.values()
+            print(len(idx), len(get_all_arguments()))
+            assert len(idx) == len(get_all_arguments())
+
+            print('({}/{}) done! results sense: {} prec: {} max_in: {}'.format(
+                i, 1,
+                avg['sensitivity'],
+                avg['precision'],
+                avg['max_in_cluster']
+            ))
 

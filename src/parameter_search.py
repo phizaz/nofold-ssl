@@ -95,7 +95,9 @@ def search_level_combine(space_query, space_nn_seed, space_inc_centroids):
             conf = OrderedDict([
                 ('query', each['query']),
                 ('unformatted', each['unformatted']),
-                ('cripple', each['cripple'])
+                ('cripple', each['cripple']),
+                ('nn_seed', nn_seed),
+                ('inc_centroids', inc_centroids),
             ])
             yield (conf, (names, points, header))
 
@@ -128,6 +130,7 @@ def search_level_clustering(normalize_level, space_alg, space_kernel, space_gamm
             conf['alg'] = alg
             conf['kernel'] = kernel
             conf['gamma'] = gamma
+            conf['alpha'] = alpha
             conf['multilabel'] = multilabel
             yield (conf, (names, points, header, clusters))
 
@@ -158,7 +161,6 @@ def param_search(search_space):
                            1)
     print('total jobs cnt: {}'.format(total_job_cnt))
 
-    results = {}
 
     combine_level = search_level_combine(search_space['query'], search_space['nn_seed'], search_space['inc_centroids'])
     normalize_level = search_level_normalize(combine_level, search_space['components'], search_space['length_norm'])
@@ -167,6 +169,7 @@ def param_search(search_space):
                                                search_space['alpha'], search_space['multilabel'])
     eval_level = search_level_refine_eval(clustering_level, search_space['c'], search_space['merge'])
 
+    results = {}
     for i, (conf, avg) in enumerate(eval_level, 1):
         idx = conf.keys()
         assert len(idx) == len(get_all_arguments())
