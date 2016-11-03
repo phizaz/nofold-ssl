@@ -35,7 +35,6 @@ def row_error(row):
         max_in = float(row['max_in_cluster'])
         return dist_fn(errors_of([sense, prec, max_in]))
 
-
 def row_error_znormalized(row, mean, sd):
     return (row_error(row) - mean) / sd
 

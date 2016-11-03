@@ -213,7 +213,7 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
     return results
 
 
-def get_knearest_seed_given_query_chunking(k, query_header, query_points, families=None, cpu=None, chunk_size=100):
+def get_knearest_seed_given_query_chunking(k, query_header, query_points, families=None, cpu=None, chunk_size=50):
     if not families:
         print('retriving calculated families...')
         families = get_calculated_families()
