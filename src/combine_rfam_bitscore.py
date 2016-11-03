@@ -10,6 +10,8 @@ def run(query, unformatted, cripple, nn, inc_centroids, cpu=None):
     import utils
     import sys
 
+    utils.short.collect_garbage()
+
     # get scores from the query
     query_names, query_points, query_header = utils.get.get_query_bitscores(query)
 

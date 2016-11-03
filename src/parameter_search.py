@@ -100,6 +100,10 @@ def search_level_combine(space_query, space_nn_seed, space_inc_centroids):
                 ('inc_centroids', inc_centroids),
             ])
             yield (conf, (names, points, header))
+            del names, points, header
+
+            from src import utils
+            utils.short.collect_garbage()
 
 
 def search_level_normalize(combine_level, space_components, space_length_norm):
@@ -112,6 +116,7 @@ def search_level_normalize(combine_level, space_components, space_length_norm):
             conf['components'] = components
             conf['length_norm'] = length_norm
             yield (conf, (_names, _points, _header))
+            del _names, _points, _header
 
 
 def search_level_clustering(normalize_level, space_alg, space_kernel, space_gamma, space_alpha, space_multilabel):
@@ -133,6 +138,7 @@ def search_level_clustering(normalize_level, space_alg, space_kernel, space_gamm
             conf['alpha'] = alpha
             conf['multilabel'] = multilabel
             yield (conf, (names, points, header, clusters))
+            del names, points, header, clusters
 
 
 def search_level_refine_eval(clustering_level, space_c, space_merge):
@@ -145,6 +151,7 @@ def search_level_refine_eval(clustering_level, space_c, space_merge):
             conf['c'] = c
             conf['merge'] = merge
             yield (conf, (avg))
+            del avg
 
 
 def param_search(search_space):
@@ -160,7 +167,6 @@ def param_search(search_space):
                            (len(search_space[a]) for a in search_arguments),
                            1)
     print('total jobs cnt: {}'.format(total_job_cnt))
-
 
     combine_level = search_level_combine(search_space['query'], search_space['nn_seed'], search_space['inc_centroids'])
     normalize_level = search_level_normalize(combine_level, search_space['components'], search_space['length_norm'])

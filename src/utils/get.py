@@ -19,6 +19,7 @@ def get_calculated_families():
     pool = Pool()
     check_results = pool.map(check_family, families)
     pool.close()
+
     available_families = sorted(map(lambda fr: fr[0], filter(lambda fr: fr[1], zip(families, check_results))))
     return available_families
 
@@ -232,15 +233,15 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     if not cpu:
         cpu = cpu_count()
 
-    pool = Pool(cpu)  # observing that cpu = cpu_count() doesn't do its utmost
-
     results = [[] for i in range(len(query_points))]
 
     def clean_up():
         from operator import itemgetter
+        print('cleaning up ...')
         for each in results:
             each.sort(key=itemgetter(0))
             del each[k:]
+        utils.short.collect_garbage()
 
     fn = partial(get_knearest_seed_in_families_given_query, k, query_header, query_points)
 
@@ -250,6 +251,7 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     random.shuffle(fams)
     family_groups = list(utils.short.chunks(fams, chunk_size))
 
+    pool = Pool(cpu)
     for i, each in enumerate(pool.imap_unordered(fn, family_groups)):
         print('family:', i * chunk_size, 'of', len(families))
 
@@ -257,16 +259,13 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
             all += local
 
         if i % (2 * cpu) == 0 and i != 0:
-            print('cleaning up ...')
             clean_up()
-            # force garbage collection, there is a known accumulative use of memory overtime
-            # so, run this for every round of parameter search
-            utils.short.collect_garbage()
-
-    print('cleaning up ...')
-    clean_up()
 
     pool.close()
+    del pool
+
+    clean_up()
+
     return results
 
 
