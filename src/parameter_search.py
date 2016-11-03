@@ -1,6 +1,7 @@
 from __future__ import print_function
 import logging
 
+
 def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
     import combine_rfam_bitscore
     from multiprocessing import cpu_count
@@ -80,7 +81,7 @@ def get_search_arguments():
 
 def get_all_arguments():
     search_args, query_args = get_search_arguments()
-    return query_args + search_args[1:] # omit the 'query' argument
+    return query_args + search_args[1:]  # omit the 'query' argument
 
 
 def param_search(search_space):

@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 def is_name(name):
     return name[:2] in {'QR', 'RF'}
 
@@ -93,3 +95,7 @@ def unique_name():
 def chunks(l, n):
     for i in range(0, len(l), n):
         yield l[i: i + n]
+
+def collect_garbage():
+    import gc
+    gc.collect()

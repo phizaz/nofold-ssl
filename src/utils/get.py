@@ -156,6 +156,11 @@ def get_knearest_seed_in_family_given_query(k, query_header, query_points, famil
 
 
 def get_knearest_seed_in_families_given_query(k, query_header, query_points, families):
+    # force garbage collection, there is a known accumulative use of memory overtime
+    # so, run this for every round of parameter search
+    from src import utils
+    utils.short.collect_garbage()
+
     from .modify import retain_bitscore_cols
     seed_names = []
     seed_points = []
@@ -176,6 +181,7 @@ def get_knearest_seed_in_families_given_query(k, query_header, query_points, fam
 
 
 def get_knearest_seed_given_query(k, query_header, query_points, families=None, cpu=None):
+    print('deprecated')
     if not families:
         print('retriving calculated families...')
         families = get_calculated_families()
@@ -213,7 +219,7 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
     return results
 
 
-def get_knearest_seed_given_query_chunking(k, query_header, query_points, families=None, cpu=None, chunk_size=50):
+def get_knearest_seed_given_query_chunking(k, query_header, query_points, families=None, cpu=None, chunk_size=100):
     if not families:
         print('retriving calculated families...')
         families = get_calculated_families()
@@ -253,10 +259,14 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
         if i % (2 * cpu) == 0 and i != 0:
             print('cleaning up ...')
             clean_up()
+            # force garbage collection, there is a known accumulative use of memory overtime
+            # so, run this for every round of parameter search
+            utils.short.collect_garbage()
 
+    print('cleaning up ...')
     clean_up()
+   
     pool.close()
-
     return results
 
 
