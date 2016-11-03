@@ -54,7 +54,8 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_run_clustering(self):
         from os.path import join
-        path = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.normalized.bitscore')
+        path = join(utils.path.tests_supplies_path(), 'results',
+                    'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(path)
         clusters = run_clustering(names, points, header, 'labelSpreading', 'rbf', 0.5, 1.0, True)
         from src.utils.helpers import space
@@ -64,7 +65,8 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_run_cluster_refinement(self):
         from os.path import join
-        point_file = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.normalized.bitscore')
+        point_file = join(utils.path.tests_supplies_path(), 'results',
+                          'combined.rfam75id-rename.cripple0.normalized.bitscore')
         names, points, header = utils.get.get_bitscores(point_file)
 
         path = join(utils.path.results_path(), 'combined.rfam75id-rename.cripple0.labelSpreading.cluster')
@@ -75,7 +77,8 @@ class ParameterSearchTest(unittest.TestCase):
 
     def test_run_evaluate(self):
         from os.path import join
-        path = join(utils.path.tests_supplies_path(), 'results', 'combined.rfam75id-rename.cripple0.labelSpreading.refined.cluster')
+        path = join(utils.path.tests_supplies_path(), 'results',
+                    'combined.rfam75id-rename.cripple0.labelSpreading.refined.cluster')
         clusters = utils.get.get_name_clusters(path)
         names = [
             rec.name
@@ -93,7 +96,8 @@ class ParameterSearchTest(unittest.TestCase):
     def test_get_all_arguments(self):
         args = get_all_arguments()
         self.assertListEqual(args,
-                             ['query', 'unformatted', 'cripple', 'nn_seed', 'inc_centroids', 'components', 'length_norm',
+                             ['query', 'unformatted', 'cripple', 'nn_seed', 'inc_centroids', 'components',
+                              'length_norm',
                               'alg', 'kernel', 'gamma', 'alpha', 'multilabel', 'c', 'merge']
                              )
 
@@ -127,6 +131,7 @@ class ParameterSearchTest(unittest.TestCase):
                                                        u'fam40_typedistributed_plain+bg_weak'], u'gamma': [0.5],
                                             u'nn_seed': [1, 7, 13, 19]})
 
+
 class ParameterLevelSearchTest(unittest.TestCase):
     query = [{
         'query': 'novel-1-2-3hp',
@@ -148,12 +153,16 @@ class ParameterLevelSearchTest(unittest.TestCase):
     def test_search(self):
         combine_level = search_level_combine(self.query, self.nn_seed, self.inc_centreids)
         normalize_level = search_level_normalize(combine_level, self.components, self.length_norm)
-        clustering_level = search_level_clustering(normalize_level, self.alg, self.kernel, self.gamma, self.alpha, self.multilabel)
+        clustering_level = search_level_clustering(normalize_level, self.alg, self.kernel, self.gamma, self.alpha,
+                                                   self.multilabel)
         eval_level = search_level_refine_eval(clustering_level, self.c, self.merge)
+        results = {}
         for i, (conf, avg) in enumerate(eval_level, 1):
-            idx = conf.values()
+            idx = tuple(conf.values())
             print(len(idx), len(get_all_arguments()))
             assert len(idx) == len(get_all_arguments())
+
+            results[idx] = avg
 
             print('({}/{}) done! results sense: {} prec: {} max_in: {}'.format(
                 i, 1,
@@ -161,4 +170,3 @@ class ParameterLevelSearchTest(unittest.TestCase):
                 avg['precision'],
                 avg['max_in_cluster']
             ))
-
