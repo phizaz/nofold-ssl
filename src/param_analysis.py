@@ -1,4 +1,5 @@
 from __future__ import print_function
+import numpy as np
 
 
 def open_result(file):
@@ -11,28 +12,32 @@ def open_result(file):
     return rows
 
 
-def l1_score(float):
-    return 1 - float
+def dist_l1(errors):
+    return np.sum(errors)
 
 
-def l2_score(float):
-    return (1 - float) ** 2
+def dist_l2(errors):
+    return np.linalg.norm(errors)
 
 
-def row_score(row):
+def errors_of(arr):
+    arr = np.array(arr)
+    return np.ones(len(arr)) - arr
+
+
+def row_error(row):
+    dist_fn = dist_l2 # hoping that the dist_l2 function will favor more equal score
     if float(row['sensitivity']) < 0.7 or float(row['precision']) < 0.7 or float(row['max_in_cluster']) < 0.7:
-        return 0
+        return dist_fn(errors_of([0, 0, 0]))
     else:
         sense = float(row['sensitivity'])
         prec = float(row['precision'])
         max_in = float(row['max_in_cluster'])
-        # return sense + prec + max_in
-        return 1.0 / (l1_score(sense) + l1_score(prec) + l1_score(max_in))
-        # return (1.0 / ((l2_score(sense) + l2_score(prec) + l2_score(max_in)) ** 0.5))
+        return dist_fn(errors_of([sense, prec, max_in]))
 
 
-def row_normalized(row, mean, sd):
-    return (row_score(row) - mean) / sd
+def row_error_znormalized(row, mean, sd):
+    return (row_error(row) - mean) / sd
 
 
 def sd(scores):
@@ -45,11 +50,6 @@ def mean(scores):
     return np.mean(scores)
 
 
-def normalize_array(array):
-    import scipy.stats
-    return scipy.stats.mstats.zscore(array)
-
-
 def is_close(thing, target, exact=False):
     if exact:
         return thing == target
@@ -57,22 +57,13 @@ def is_close(thing, target, exact=False):
         return abs(float(thing) - target) < 0.01
 
 
-def sum_score_filter(filter, rows):
+def avg_normalized_filter(filter, rows, mean, sd):
+    l = [row for row in rows if filter(row)]
     s = sum(
-        row_score(row)
-        for row in rows
-        if filter(row)
+        row_error_znormalized(row, mean, sd)
+        for row in l
     )
-    return s
-
-
-def sum_normalized_filter(filter, rows, mean, sd):
-    s = sum(
-        row_normalized(row, mean, sd)
-        for row in rows
-        if filter(row)
-    )
-    return s
+    return s / len(l)
 
 
 def get_filter(col, val, exact=False):
@@ -81,35 +72,29 @@ def get_filter(col, val, exact=False):
     return lambda x: fn(x[col], val)
 
 
-def intelligient_filter(col, val):
-    exacts = ['inc_centroids', 'length_norm', 'alg', 'multilabel', 'merge']
-    if col in exacts:
-        return get_filter(col, val, True)
-    else:
-        return get_filter(col, val, False)
+def avg(items):
+    return sum(items) / len(items)
 
 
-def sorted_score_col(col, vals, rows, exact=False):
+def round_zero(item):
+    return 0.0 if abs(item - 0) < 1e-10 else item
+
+
+def col_all_scores(col, vals, rows, mean, sd, exact=False):
     scores = [
-        (val, sum_score_filter(get_filter(col, val, exact=exact), rows))
+        (val,
+         round_zero(
+             avg_normalized_filter(
+                 get_filter(col, val, exact=exact),
+                 rows, mean, sd)))
         for val in vals
         ]
-    scores.sort(key=lambda x: -x[1])
+    scores.sort(key=lambda x: x[1])
     return scores
 
 
-def sorted_normalized_col(col, vals, rows, mean, sd, exact=False):
-    scores = [
-        (val, sum_normalized_filter(get_filter(col, val, exact=exact), rows, mean, sd))
-        for val in vals
-        ]
-    scores.sort(key=lambda x: -x[1])
-    return scores
-
-
-def many_filters(cols, vals, rows):
+def get_rows_filtered(cols, vals, rows):
     for col, val in zip(cols, vals):
-        # rows = filter(intelligient_filter(col, val), rows)
         rows = filter(get_filter(col, val, True), rows)
 
     return list(rows)
@@ -120,20 +105,15 @@ def get_cols(cols, row):
 
 
 def open_file_get_only(file, args, vals):
-    from os.path import join
-    from src import utils
     rows = open_result(file)
-    rows = many_filters(args, vals, rows)
+    rows = get_rows_filtered(args, vals, rows)
     assert len(rows) == 1, 'row `{}` not found'.format(vals)
     return rows[0]
 
 
 def analyse(file):
-    from os.path import join
-    from src import utils
-
     rows = open_result(file)
-    scores = list(map(row_score, rows))
+    scores = list(map(row_error, rows))
     _mean = mean(scores)
     _std = sd(scores)
 
@@ -149,13 +129,14 @@ def analyse(file):
 
     best_vals = []
     for arg in args:
-        scores = sorted_normalized_col(arg, possible_vals[arg], rows, _mean, _std, exact=True)
+        scores = col_all_scores(arg, possible_vals[arg], rows, _mean, _std, exact=True)
         best = scores[0][0]
         best_vals.append(best)
         print('arg `{}` best : {}'.format(arg, best))
         print('scores: ', scores)
 
     return args, best_vals
+
 
 def apply(args, best_vals, files):
     import utils
@@ -165,11 +146,13 @@ def apply(args, best_vals, files):
         row = open_file_get_only(full_name, args, best_vals)
         print('{}: {}'.format(name, get_cols(['sensitivity', 'precision', 'max_in_cluster'], row)))
 
+
 if __name__ == '__main__':
     import utils
     from os.path import join
 
-    file = 'parameter_search.2016-11-02 15:01:21.810874.csv'
+    # file = 'parameter_search.2016-11-02 15:01:21.810874.csv'
+    file = 'parameter_search.2016-11-02 19:16:50.315429.csv'
     args, best_vals = analyse(join(utils.path.results_path(),
                                    file))
 

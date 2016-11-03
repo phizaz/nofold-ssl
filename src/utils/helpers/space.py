@@ -41,6 +41,7 @@ def dist_cluster_avg_fast(points_A, points_B):
     arr = cdist(points_A, points_B, metric='euclidean')
     return np.sum(arr) / (len(points_A) * len(points_B))
 
+
 def dist_cluster_centroid(points_A, points_B):
     points_A = np.array(points_A)
     points_B = np.array(points_B)
