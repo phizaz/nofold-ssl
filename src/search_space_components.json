@@ -4,6 +4,21 @@
       "query": "fam40_typedistributed_plain+bg_weak",
       "unformatted": false,
       "cripple": 6
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 40
+    },
+    {
+      "query": "fam40_typedistributed_embed+bg_weak",
+      "unformatted": false,
+      "cripple": 6
+    },
+    {
+      "query": "fam40_typedistributed_embed+bg_weak",
+      "unformatted": false,
+      "cripple": 40
     }
   ],
   "nn_seed": [
@@ -22,7 +37,7 @@
     false
   ],
   "length_norm": [
-    false, true
+    false
   ],
   "alg": [
     "labelSpreading"
