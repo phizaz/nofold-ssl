@@ -126,3 +126,30 @@ class ParameterSearchTest(unittest.TestCase):
                                                        u'fam40_typedistributed_embed+bg_weak',
                                                        u'fam40_typedistributed_plain+bg_weak'], u'gamma': [0.5],
                                             u'nn_seed': [1, 7, 13, 19]})
+
+class ParameterLevelSearchTest(unittest.TestCase):
+    query = [{
+        'query': 'novel-1-2-3hp',
+        'unformatted': True,
+        'cripple': 0
+    }]
+    nn_seed = [1]
+    inc_centreids = [False]
+    components = [100]
+    length_norm = [False]
+    alg = ['labelSpreading']
+    kernel = ['rbf']
+    gamma = [0.5]
+    alpha = [1.0]
+    multilabel = [False]
+    c = [1.2]
+    merge = [False]
+
+    def test_search(self):
+        combine_level = search_level_combine(self.query, self.nn_seed, self.inc_centreids)
+        normalize_level = search_level_normalize(combine_level, self.components, self.length_norm)
+        clustering_level = search_level_clustering(normalize_level, self.alg, self.kernel, self.gamma, self.alpha, self.multilabel)
+        eval_level = search_level_refine_eval(clustering_level, self.c, self.merge)
+        for args, avg in eval_level:
+            print(args, avg)
+

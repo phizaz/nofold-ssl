@@ -12,6 +12,9 @@ def split_cluster(cluster, clusters, C):
     assert isinstance(cluster, space.Cluster)
     assert all(isinstance(cluster, space.Cluster) for cluster in clusters)
 
+    if len(clusters) <= 1:
+        return [cluster] # just can't split
+
     clust_dist = [
         cluster.dist_avg(oth_clust)
         for oth_clust in clusters

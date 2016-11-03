@@ -265,7 +265,7 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
 
     print('cleaning up ...')
     clean_up()
-   
+
     pool.close()
     return results
 
