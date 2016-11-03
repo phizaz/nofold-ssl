@@ -8,6 +8,11 @@
     {
       "query": "fam40_typedistributed_plain+bg_weak",
       "unformatted": false,
+      "cripple": 20
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
       "cripple": 40
     },
     {
@@ -18,11 +23,16 @@
     {
       "query": "fam40_typedistributed_embed+bg_weak",
       "unformatted": false,
+      "cripple": 20
+    },
+    {
+      "query": "fam40_typedistributed_embed+bg_weak",
+      "unformatted": false,
       "cripple": 40
     }
   ],
   "nn_seed": [
-    7
+    19
   ],
   "components": [
     100

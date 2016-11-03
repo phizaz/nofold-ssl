@@ -58,7 +58,7 @@ def run(query, unformatted, cripple, nn, inc_centroids, cpu=None):
     seed_points_closest = utils.get.get_knearest_seed_given_query_chunking(nn, query_header, query_points,
                                                                            seed_families,
                                                                            cpu=cpu,
-                                                                           chunk_size=50)
+                                                                           chunk_size=100)
     selected_seed = {}
     from collections import Counter
     seed_cnt_by_fam = Counter()

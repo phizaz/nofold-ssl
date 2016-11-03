@@ -1,0 +1,130 @@
+{
+  "query": [
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 6
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 7
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 8
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 9
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 10
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 12
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 14
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 16
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 18
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 20
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 24
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 28
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 32
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 36
+    },
+    {
+      "query": "fam40_typedistributed_plain+bg_weak",
+      "unformatted": false,
+      "cripple": 40
+    }
+  ],
+  "nn_seed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "components": [
+    100
+  ],
+  "inc_centroids": [
+    false
+  ],
+  "length_norm": [
+    false
+  ],
+  "alg": [
+    "labelSpreading"
+  ],
+  "kernel": [
+    "rbf"
+  ],
+  "gamma": [
+    0.5
+  ],
+  "alpha": [
+    1.0
+  ],
+  "multilabel": [
+    false
+  ],
+  "c": [
+    1.2
+  ],
+  "merge": [
+    false
+  ]
+}

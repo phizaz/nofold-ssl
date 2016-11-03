@@ -111,8 +111,7 @@ def open_file_get_only(file, args, vals):
     return rows[0]
 
 
-def analyse(file):
-    rows = open_result(file)
+def analyse(rows):
     scores = list(map(row_error, rows))
     _mean = mean(scores)
     _std = sd(scores)
@@ -152,9 +151,9 @@ if __name__ == '__main__':
     from os.path import join
 
     # file = 'parameter_search.2016-11-02 15:01:21.810874.csv'
-    file = 'parameter_search.2016-11-02 19:16:50.315429.csv'
-    args, best_vals = analyse(join(utils.path.results_path(),
-                                   file))
+    file = 'parameter_search.2016-11-03 08:09:28.895299.csv'
+    rows = open_result(join(utils.path.results_path(), file))
+    args, best_vals = analyse(rows)
 
     target_files = [
         ('itself', file),
