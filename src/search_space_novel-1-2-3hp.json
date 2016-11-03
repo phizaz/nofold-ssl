@@ -1,18 +1,19 @@
 {
   "query": [
-    "novel-1-2-3hp"
-  ],
-  "unformatted": [
-    true
-  ],
-  "cripple": [
-    null
+    {
+      "query": "novel-1-2-3hp",
+      "unformatted": true,
+      "cripple": 0
+    }
   ],
   "nn_seed": [
     1,
     7,
     13,
     19
+  ],
+  "components": [
+    100
   ],
   "inc_centroids": [
     true,
@@ -23,8 +24,7 @@
     false
   ],
   "alg": [
-    "labelSpreading",
-    "labelPropagation"
+    "labelSpreading"
   ],
   "kernel": [
     "rbf"
@@ -39,12 +39,16 @@
     0.9,
     1.0
   ],
+  "multilabel": [
+    true, false
+  ],
   "c": [
     1.0,
     1.1,
     1.2,
-    1.3,
-    1.4,
-    1.5
+    1.3
+  ],
+  "merge": [
+    true, false
   ]
 }
