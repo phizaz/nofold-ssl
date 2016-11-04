@@ -177,7 +177,7 @@ def param_search(search_space):
 
     results = {}
     for i, (conf, avg) in enumerate(eval_level, 1):
-        idx = tuple(conf.keys())
+        idx = tuple(conf.values())
         assert len(idx) == len(get_all_arguments())
 
         results[idx] = avg

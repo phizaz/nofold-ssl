@@ -139,7 +139,7 @@ class ParameterLevelSearchTest(unittest.TestCase):
         'cripple': 0
     }]
     nn_seed = [1]
-    inc_centreids = [False]
+    inc_centroids = [False]
     components = [100]
     length_norm = [False]
     alg = ['labelSpreading']
@@ -151,22 +151,26 @@ class ParameterLevelSearchTest(unittest.TestCase):
     merge = [False]
 
     def test_search(self):
-        combine_level = search_level_combine(self.query, self.nn_seed, self.inc_centreids)
-        normalize_level = search_level_normalize(combine_level, self.components, self.length_norm)
-        clustering_level = search_level_clustering(normalize_level, self.alg, self.kernel, self.gamma, self.alpha,
-                                                   self.multilabel)
-        eval_level = search_level_refine_eval(clustering_level, self.c, self.merge)
-        results = {}
-        for i, (conf, avg) in enumerate(eval_level, 1):
-            idx = tuple(conf.values())
-            print(len(idx), len(get_all_arguments()))
-            assert len(idx) == len(get_all_arguments())
+        search_space = {
+            'query': self.query,
+            'nn_seed': self.nn_seed,
+            'inc_centroids': self.inc_centroids,
+            'components': self.components,
+            'length_norm': self.length_norm,
+            'alg': self.alg,
+            'kernel': self.kernel,
+            'gamma': self.gamma,
+            'alpha': self.alpha,
+            'multilabel': self.multilabel,
+            'c': self.c,
+            'merge': self.merge
+        }
 
-            results[idx] = avg
-
-            print('({}/{}) done! results sense: {} prec: {} max_in: {}'.format(
-                i, 1,
-                avg['sensitivity'],
-                avg['precision'],
-                avg['max_in_cluster']
-            ))
+        results = param_search(search_space)
+        print(results)
+        idx = ('novel-1-2-3hp', True, 0, 1, False, 100, False, 'labelSpreading', 'rbf', 0.5, 1.0, False, 1.2, False)
+        self.assertListEqual(results.keys(), idx)
+        row = results[idx]
+        self.assertAlmostEqual(row['sensitivity'], 0.33333333333333331)
+        self.assertAlmostEqual(row['precision'], 0.11111111111111109)
+        self.assertAlmostEqual(row['max_in_cluster'], 1.0)
