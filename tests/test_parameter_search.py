@@ -169,7 +169,7 @@ class ParameterLevelSearchTest(unittest.TestCase):
         results = param_search(search_space)
         print(results)
         idx = ('novel-1-2-3hp', True, 0, 1, False, 100, False, 'labelSpreading', 'rbf', 0.5, 1.0, False, 1.2, False)
-        self.assertListEqual(results.keys(), idx)
+        self.assertListEqual(results.keys(), [idx])
         row = results[idx]
         self.assertAlmostEqual(row['sensitivity'], 0.33333333333333331)
         self.assertAlmostEqual(row['precision'], 0.11111111111111109)
