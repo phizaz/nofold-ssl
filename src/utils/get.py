@@ -1,4 +1,5 @@
 from __future__ import print_function
+from sklearn.neighbors import BallTree
 
 
 def get_all_families():
@@ -19,6 +20,7 @@ def get_calculated_families():
     pool = Pool()
     check_results = pool.map(check_family, families)
     pool.close()
+    pool.join()
 
     available_families = sorted(map(lambda fr: fr[0], filter(lambda fr: fr[1], zip(families, check_results))))
     return available_families
@@ -104,6 +106,21 @@ def get_family_bitscores(family):
     return get_bitscores(join(db_path(), family, family + '.bitscore'))
 
 
+def get_families_bitscores(families):
+    all_names, all_points, all_header = [], [], None
+    for family in families:
+        names, points, header = get_family_bitscores(family)
+        all_names += names
+        all_points += points
+        if not all_header:
+            all_header = header
+        else:
+            assert len(all_header) == len(header), 'seed_header size doesnt equal to header, {} != {}'.format(
+                len(all_header), len(header))
+
+    return all_names, all_points, all_header
+
+
 def get_family_records(family):
     from os.path import join
     from .path import db_path
@@ -157,26 +174,8 @@ def get_knearest_seed_in_family_given_query(k, query_header, query_points, famil
 
 
 def get_knearest_seed_in_families_given_query(k, query_header, query_points, families):
-    # force garbage collection, there is a known accumulative use of memory overtime
-    # so, run this for every round of parameter search
-    from src import utils
-    utils.short.collect_garbage()
-
     from .modify import retain_bitscore_cols
-    seed_names = []
-    seed_points = []
-    seed_header = None
-
-    for family in families:
-        names, points, header = get_family_bitscores(family)
-        seed_names += names
-        seed_points += points
-        if not seed_header:
-            seed_header = header
-        else:
-            assert len(seed_header) == len(header), 'seed_header size doesnt equal to header, {} != {}'.format(
-                len(seed_header), len(header))
-
+    seed_names, seed_points, seed_header = get_families_bitscores(families)
     seed_points, seed_header = retain_bitscore_cols(query_header, seed_points, seed_header)
     return get_knearest_points(k, query_points, seed_names, seed_points)
 
@@ -224,8 +223,8 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     if not families:
         print('retriving calculated families...')
         families = get_calculated_families()
+        print('retrieved calculated families')
 
-    from sklearn.neighbors import BallTree
     from multiprocessing import Pool, cpu_count
     from functools import partial
     from src import utils
@@ -239,9 +238,8 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
         from operator import itemgetter
         print('cleaning up ...')
         for each in results:
-            each.sort(key=itemgetter(0))
+            each.sort(key=itemgetter(0))  # sort according to the distance, closer comes first
             del each[k:]
-        utils.short.collect_garbage()
 
     fn = partial(get_knearest_seed_in_families_given_query, k, query_header, query_points)
 
@@ -252,18 +250,18 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     family_groups = list(utils.short.chunks(fams, chunk_size))
 
     pool = Pool(cpu)
-    for i, each in enumerate(pool.imap_unordered(fn, family_groups)):
+    print('start working on the first family...')
+    for i, each in enumerate(pool.imap_unordered(fn, family_groups), 1):
         print('family:', i * chunk_size, 'of', len(families))
 
         for all, local in zip(results, each):
             all += local
 
-        if i % (2 * cpu) == 0 and i != 0:
+        if i % cpu == 0 and i != 0:
             clean_up()
 
     pool.close()
-    del pool
-
+    pool.join()
     clean_up()
 
     return results

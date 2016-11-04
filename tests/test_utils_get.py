@@ -101,6 +101,12 @@ class GetTest(unittest.TestCase):
         self.assertEqual(len(points), 5)
         self.assertEqual(len(header), 1973)
 
+    def test_get_families_bitscores(self):
+        names, points, header = utils.get.get_families_bitscores(['RF00014', 'RF00015'])
+        self.assertGreater(len(names), 5)
+        self.assertGreater(len(points), 5)
+        self.assertEqual(len(header), 1973)
+
     def test_get_family_header_string(self):
         header = utils.get.get_family_header_string('RF00001')
         self.assertEqual(len(header.split()), 1973)
