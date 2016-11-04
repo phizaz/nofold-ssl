@@ -6,7 +6,7 @@ if __name__ == '__main__':
     from src.param_analysis import analyse, open_result
     print('Param search on pca\' components results:')
     file = join(utils.path.results_path(),
-                'parameter_search.2016-11-03 19:29:19.428079.csv')
+                'parameter_search.2016-11-04 04:12:58.732633.csv')
     rows = open_result(file)
     args, best_vals = analyse(rows)
 
