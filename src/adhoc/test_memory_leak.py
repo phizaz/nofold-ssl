@@ -224,9 +224,8 @@ if __name__ == '__main__':
                 'RF02025', 'RF02026', 'RF02027', 'RF02028', 'RF02029', 'RF02030']
     for i in range(10):
         print('round {}'.format(i + 1))
-        results = utils.get.get_knearest_seed_given_query_chunking(19, header, points, families, None, 100)
-        import sys
-
-        print('size of results:', sys.getsizeof(results))
+        utils.get.get_knearest_seed_given_query_chunking(19, header, points, families, None, 100)
+        # import sys
+        # print('size of results:', sys.getsizeof(results))
 
     print('done!')

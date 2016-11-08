@@ -1,6 +1,4 @@
 from __future__ import print_function
-from sklearn.neighbors import BallTree
-
 
 def get_all_families():
     from .path import db_path
@@ -250,7 +248,11 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     random.shuffle(fams)
     family_groups = list(utils.short.chunks(fams, chunk_size))
 
-    pool = Pool(cpu, maxtasksperchild=1)
+    def pool_init():
+        import gc
+        gc.collect()
+
+    pool = Pool(cpu, initializer=pool_init())
     print('start working on the first family...')
     for i, each in enumerate(pool.imap_unordered(fn, family_groups), 1):
         print('family:', i * chunk_size, 'of', len(families))
