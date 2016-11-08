@@ -17,6 +17,7 @@ def dist_l1(errors):
 
 
 def dist_l2(errors):
+    # l2 regularizer
     return np.linalg.norm(errors)
 
 
@@ -25,18 +26,17 @@ def errors_of(arr):
     return np.ones(len(arr)) - arr
 
 
-def row_error(row):
-    dist_fn = dist_l2 # hoping that the dist_l2 function will favor more equal score
+def row_error(row, dist_fn):
     if float(row['sensitivity']) < 0.7 or float(row['precision']) < 0.7 or float(row['max_in_cluster']) < 0.7:
-        return dist_fn(errors_of([0, 0, 0]))
+        return dist_fn(errors_of([0, 0, 0])) # equals to dist_fn([1,1,1])
     else:
         sense = float(row['sensitivity'])
         prec = float(row['precision'])
         max_in = float(row['max_in_cluster'])
         return dist_fn(errors_of([sense, prec, max_in]))
 
-def row_error_znormalized(row, mean, sd):
-    return (row_error(row) - mean) / sd
+def row_error_znormalized(row, mean, sd, dist_fn):
+    return (row_error(row, dist_fn=dist_fn) - mean) / sd
 
 
 def sd(scores):
@@ -56,10 +56,10 @@ def is_close(thing, target, exact=False):
         return abs(float(thing) - target) < 0.01
 
 
-def avg_normalized_filter(filter, rows, mean, sd):
+def avg_normalized_filter(filter, rows, mean, sd, dist_fn):
     l = [row for row in rows if filter(row)]
     s = sum(
-        row_error_znormalized(row, mean, sd)
+        row_error_znormalized(row, mean, sd, dist_fn=dist_fn)
         for row in l
     )
     return s / len(l)
@@ -79,13 +79,13 @@ def round_zero(item):
     return 0.0 if abs(item - 0) < 1e-10 else item
 
 
-def col_all_scores(col, vals, rows, mean, sd, exact=False):
+def col_all_scores(col, vals, rows, mean, sd, dist_fn, exact=False):
     scores = [
         (val,
          round_zero(
              avg_normalized_filter(
                  get_filter(col, val, exact=exact),
-                 rows, mean, sd)))
+                 rows, mean, sd, dist_fn=dist_fn)))
         for val in vals
         ]
     scores.sort(key=lambda x: x[1])
@@ -110,8 +110,10 @@ def open_file_get_only(file, args, vals):
     return rows[0]
 
 
-def analyse(rows):
-    scores = list(map(row_error, rows))
+def analyse(rows, dist_fn):
+    from functools import partial
+    row_error_partial = partial(row_error, dist_fn=dist_fn)
+    scores = list(map(row_error_partial, rows))
     _mean = mean(scores)
     _std = sd(scores)
 
@@ -127,7 +129,7 @@ def analyse(rows):
 
     best_vals = []
     for arg in args:
-        scores = col_all_scores(arg, possible_vals[arg], rows, _mean, _std, exact=True)
+        scores = col_all_scores(arg, possible_vals[arg], rows, _mean, _std, dist_fn=dist_fn, exact=True)
         best = scores[0][0]
         best_vals.append(best)
         print('arg `{}` best : {}'.format(arg, best))
@@ -150,9 +152,9 @@ if __name__ == '__main__':
     from os.path import join
 
     # file = 'parameter_search.2016-11-02 15:01:21.810874.csv'
-    file = 'parameter_search.2016-11-03 08:09:28.895299.csv'
+    file = 'parameter_search.2016-11-07 17:36:39.911944.csv'
     rows = open_result(join(utils.path.results_path(), file))
-    args, best_vals = analyse(rows)
+    args, best_vals = analyse(rows, dist_l2)
 
     target_files = [
         ('itself', file),

@@ -161,7 +161,7 @@ def get_knearest_points(k, query_points, target_names, target_points):
     results = [[] for i in range(len(query_points))]
     for idx, (_dists, _idxs) in enumerate(zip(dists, idxs)):
         names = list(map(lambda idx: target_names[idx], _idxs))
-        points = list(map(lambda idx: target_points[idx], _idxs))
+        points = list(map(lambda idx: target_points[idx], _idxs)) #
         results[idx] += list(zip(_dists, names, points))
     return results
 
@@ -215,6 +215,7 @@ def get_knearest_seed_given_query(k, query_header, query_points, families=None, 
 
     clean_up()
     pool.close()
+    pool.join()
 
     return results
 
@@ -249,7 +250,7 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     random.shuffle(fams)
     family_groups = list(utils.short.chunks(fams, chunk_size))
 
-    pool = Pool(cpu)
+    pool = Pool(cpu, maxtasksperchild=1)
     print('start working on the first family...')
     for i, each in enumerate(pool.imap_unordered(fn, family_groups), 1):
         print('family:', i * chunk_size, 'of', len(families))
