@@ -248,11 +248,11 @@ def get_knearest_seed_given_query_chunking(k, query_header, query_points, famili
     random.shuffle(fams)
     family_groups = list(utils.short.chunks(fams, chunk_size))
 
-    def pool_init():
-        import gc
-        gc.collect()
+    # solves memory leak
+    import gc
+    gc.collect()
 
-    pool = Pool(cpu, initializer=pool_init())
+    pool = Pool(cpu)
     print('start working on the first family...')
     for i, each in enumerate(pool.imap_unordered(fn, family_groups), 1):
         print('family:', i * chunk_size, 'of', len(families))
