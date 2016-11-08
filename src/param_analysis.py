@@ -28,12 +28,13 @@ def errors_of(arr):
 
 def row_error(row, dist_fn):
     if float(row['sensitivity']) < 0.7 or float(row['precision']) < 0.7 or float(row['max_in_cluster']) < 0.7:
-        return dist_fn(errors_of([0, 0, 0])) # equals to dist_fn([1,1,1])
+        return dist_fn(errors_of([0, 0, 0]))  # equals to dist_fn([1,1,1])
     else:
         sense = float(row['sensitivity'])
         prec = float(row['precision'])
         max_in = float(row['max_in_cluster'])
         return dist_fn(errors_of([sense, prec, max_in]))
+
 
 def row_error_znormalized(row, mean, sd, dist_fn):
     return (row_error(row, dist_fn=dist_fn) - mean) / sd
