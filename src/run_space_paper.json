@@ -1,0 +1,60 @@
+{
+  "query": [
+    {
+      "query": "rfam75id_dinuc3000-rename",
+      "unformatted": false,
+      "cripple": 0
+    },
+    {
+      "query": "rfam75id_embed-rename",
+      "unformatted": false,
+      "cripple": 0
+    },
+    {
+      "query": "rfam75id-rename",
+      "unformatted": false,
+      "cripple": 0
+    },
+    {
+      "query": "novel-1-2-3hp",
+      "unformatted": true,
+      "cripple": 0
+    }
+  ],
+  "nn_seed": [
+    19
+  ],
+  "components": [
+    100
+  ],
+  "inc_centroids": [
+    true
+  ],
+  "length_norm": [
+    true
+  ],
+  "alg": [
+    "labelSpreading"
+  ],
+  "kernel": [
+    "rbf"
+  ],
+  "gamma": [
+    0.3, 0.4, 0.5
+  ],
+  "alpha": [
+    0.6,
+    0.7,
+    1.0
+  ],
+  "multilabel": [
+    true
+  ],
+  "c": [
+    1.1,
+    1.2
+  ],
+  "merge": [
+    true
+  ]
+}
