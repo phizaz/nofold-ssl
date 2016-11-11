@@ -1,0 +1,247 @@
+{
+  "query": [
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 0
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 1
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 2
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 3
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 4
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 5
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 6
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 7
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 8
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 9
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 10
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 11
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 12
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 13
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 14
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 15
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 16
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 17
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 18
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 19
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 20
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 21
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 22
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 23
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 24
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 25
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 26
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 27
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 28
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 29
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 30
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 31
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 32
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 33
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 34
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 35
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 36
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 37
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 38
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 39
+    },
+    {
+      "unformatted": false,
+      "query": "rfam75id-rename",
+      "cripple": 40
+    }
+  ],
+  "nn_seed": [
+    19
+  ],
+  "components": [
+    100
+  ],
+  "inc_centroids": [
+    true
+  ],
+  "length_norm": [
+    true
+  ],
+  "alg": [
+    "labelSpreading"
+  ],
+  "kernel": [
+    "rbf"
+  ],
+  "gamma": [
+    0.3,
+    0.4,
+    0.5
+  ],
+  "alpha": [
+    0.6,
+    0.7,
+    1.0
+  ],
+  "multilabel": [
+    true
+  ],
+  "c": [
+    1.1,
+    1.2
+  ],
+  "merge": [
+    true
+  ]
+}

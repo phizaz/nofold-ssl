@@ -1,5 +1,8 @@
 from __future__ import print_function
 
+'''
+Showing the scores varying on gamma and alpha for fam40-plain dataset
+'''
 
 def plot_multibars(data, title):
     import numpy as np
@@ -34,27 +37,13 @@ if __name__ == '__main__':
     from src.param_analysis import *
     from src import utils
 
-    file = 'parameter_search.2016-11-07 17:36:39.911944.csv'
+    file = 'nofold-ssl-fam40plain-extensive.csv'
     rows = open_result(join(utils.path.results_path(), file))
 
     # filter rows
     # itself: ('0.83899999999999997', '0.89809323104468297', '0.88')
     # rows = get_rows_filtered(['nn_seed', 'cripple', 'gamma', 'alpha', 'multilabel', 'c', 'inc_centroids', 'length_norm'],
     #                          ['19', '40', '0.5', '1.0', 'True', '1.1', 'False', 'False'],
-    #                          rows)  # 0.4 is overall not bad
-
-    # itself: ('0.93100000000000005', '0.96421520146520157', '0.82099999999999995')
-    # rows = get_rows_filtered(['nn_seed', 'cripple', 'gamma', 'alpha', 'multilabel', 'c', 'inc_centroids', 'length_norm'],
-    #                          ['19', '20', '0.5', '1.0', 'True', '1.1', 'False', 'False'],
-    #                          rows)  # 0.4 is overall not bad
-
-    # itself: ('0.81100000000000005', '0.90633923368298375', '0.86599999999999999')
-    # rows = get_rows_filtered(['nn_seed', 'cripple', 'inc_centroids', 'c'],
-    #                          ['19', '40', 'True', '1.1'],
-    #                          rows)  # 0.4 is overall not bad
-
-    # rows = get_rows_filtered(['nn_seed', 'cripple', 'gamma', 'alpha', 'multilabel', 'c', 'inc_centroids'],
-    #                          ['19', '40', '0.3', '0.8', 'True', '1.1', 'True'],
     #                          rows)  # 0.4 is overall not bad
 
     space = {
@@ -85,6 +74,7 @@ if __name__ == '__main__':
                 _, gammas, As, Bs, Cs = row = (alpha, [], [], [], [])
                 dat.append(row)
                 for gamma in space['gamma']:
+                    # some prefixed parameters
                     d = {
                         'nn_seed': '19',
                         'cripple': cripple,
@@ -103,6 +93,7 @@ if __name__ == '__main__':
                     Bs.append(B)
                     Cs.append(C)
 
+        # plot to file
         plot_multibars(data,
                        ', '.join([
                            '{} = {}'.format(a, b)
@@ -112,10 +103,3 @@ if __name__ == '__main__':
                            )
                        ]))
 
-    # args, best_vals = analyse(rows, dist_l2)
-    # print('best_vals:', best_vals)
-    #
-    # target_files = [
-    #     ('itself', file),
-    # ]
-    # apply(args, best_vals, target_files)

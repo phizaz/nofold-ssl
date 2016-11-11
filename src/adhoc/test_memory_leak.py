@@ -1,6 +1,8 @@
 '''
 To see if the memory leakage happens in get_knearest or not ?
 it seems so... we manually provide the families names to keep the get_calculated_families out of the loop
+
+progress: we can now solve the memory leak of the get_query_bitscores
 '''
 if __name__ == '__main__':
     from src import utils

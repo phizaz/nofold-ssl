@@ -1,5 +1,9 @@
 from src import utils
 
+'''
+Sampling shorter lncRNAs from Gencode RNA, selecting 2000 records of which lengths are shorter than 1,000 bases
+'''
+
 if __name__ == '__main__':
     query = 'gencode.v25.lncRNA-rename'
     records = utils.get.get_query_records(query)
