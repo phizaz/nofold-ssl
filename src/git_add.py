@@ -8,6 +8,8 @@ import sys
 add successfully computed family
 '''
 
+raise NotImplemented # need refactoring needed
+
 path = '../Rfam-seed/db'
 
 def get_family_record_cnt(family):

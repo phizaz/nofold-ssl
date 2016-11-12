@@ -34,7 +34,7 @@ def run(start, end, cpu):
         ))
 
 
-if __name__ == '__main__':
+def main():
     from argparse import ArgumentParser
 
     parser = ArgumentParser()
@@ -44,3 +44,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     run(args.start, args.end, args.cpu)
+
+
+if __name__ == '__main__':
+    main()

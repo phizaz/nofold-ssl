@@ -12,9 +12,9 @@ from itertools import product
 import numpy as np
 import sys
 
+raise NotImplemented # need refactoring needed
 
 # record = (fam, name, sequence)
-
 def fam_of(record):
     return record[0]
 
@@ -77,6 +77,8 @@ all_sampled_records = []
 all_embed_records = []
 all_embed_sampled_records = []
 
+from src.utils.helpers import bio
+
 # create name map database
 name_map = dict()
 for fam in selected_fams:
@@ -89,15 +91,15 @@ for fam in selected_fams:
     all_raw_records += raw_records
 
     sampled_records = sample(raw_records, seq_per_fam)
-    embed_records = embed(raw_records, (10, 50))
+    embed_records = bio.embed(raw_records, (10, 50))
     embed_sampled_records = sample(embed_records, seq_per_fam)
 
     all_sampled_records += sampled_records
     all_embed_records += embed_records
     all_embed_sampled_records += embed_sampled_records
 
-all_bg_records = generate_background(all_raw_records, 3 * len(all_sampled_records), 'bg')
-all_embed_bg_records = generate_background(all_embed_records, 3 * len(all_embed_sampled_records), 'bg_embed')
+all_bg_records = bio.generate_background(all_raw_records, 3 * len(all_sampled_records), 'bg')
+all_embed_bg_records = bio.generate_background(all_embed_records, 3 * len(all_embed_sampled_records), 'bg_embed')
 
 print('saving..')
 save_records(join('../queries', query, query + '.db'), all_sampled_records)

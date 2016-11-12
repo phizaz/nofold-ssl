@@ -5,6 +5,8 @@ import numpy as np
 from itertools import product, combinations
 from sklearn.neighbors import BallTree
 
+raise NotImplemented # need refactoring
+
 def family_of(name):
     first, rest = name.split('_')
     if first[0] == 'Q':

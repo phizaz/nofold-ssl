@@ -3,6 +3,8 @@ from os import makedirs
 from Bio import SeqIO
 from argparse import ArgumentParser
 
+raise NotImplemented # need refactoring
+
 parser = ArgumentParser(description='rename rna database')
 parser.add_argument('--query', action='store', required=True)
 args = parser.parse_args()

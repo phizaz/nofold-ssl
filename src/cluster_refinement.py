@@ -13,7 +13,7 @@ def split_cluster(cluster, clusters, C):
     assert all(isinstance(cluster, space.Cluster) for cluster in clusters)
 
     if len(clusters) <= 1:
-        return [cluster] # just can't split
+        return [cluster]  # just can't split
 
     clust_dist = [
         cluster.dist_avg(oth_clust)
@@ -113,6 +113,7 @@ def identical_clusters(A, B):
 
     return AA == BB
 
+
 def run(clusters, seed_names, seed_points, c, merge):
     import utils
     # get seed clusters
@@ -128,7 +129,7 @@ def run(clusters, seed_names, seed_points, c, merge):
 
     splitted_clusters = split_clusters(clusters, C=c)
 
-    if merge: # whether to do the merging loop
+    if merge:  # whether to do the merging loop
         for round in range(10):
             print('round:', round + 1)
 
@@ -148,7 +149,8 @@ def run(clusters, seed_names, seed_points, c, merge):
 
     return splitted_clusters
 
-if __name__ == '__main__':
+
+def main():
     import utils
     import argparse
     from os.path import join
@@ -177,3 +179,7 @@ if __name__ == '__main__':
     outfile = join(utils.path.results_path(), 'combined.{}.{}.refined.cluster'.format(args.tag, args.alg))
     utils.save.save_clusters(outfile, final_clusters)
     print('saved!')
+
+
+if __name__ == '__main__':
+    main()

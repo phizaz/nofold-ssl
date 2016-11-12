@@ -148,7 +148,7 @@ def apply(args, best_vals, files):
         print('{}: {}'.format(name, get_cols(['sensitivity', 'precision', 'max_in_cluster'], row)))
 
 
-if __name__ == '__main__':
+def main():
     import utils
     from os.path import join
 
@@ -165,3 +165,7 @@ if __name__ == '__main__':
         # ('synthetic_file', 'parameter_search.2016-09-11 09:53:50.909419.csv')
     ]
     apply(args, best_vals, target_files)
+
+
+if __name__ == '__main__':
+    main()

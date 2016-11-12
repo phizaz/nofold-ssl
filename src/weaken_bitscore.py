@@ -7,6 +7,8 @@ from normalizer_length import LengthNormalizer
 from argparse import ArgumentParser
 import sys
 
+raise NotImplemented # need refactoring
+
 parser = ArgumentParser(description='rename rna bitscore')
 parser.add_argument('--query', action='store', required=True)
 parser.add_argument('--output', action='store', required=True)

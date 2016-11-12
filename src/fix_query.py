@@ -7,9 +7,13 @@ from Bio.Seq import Seq
 from Bio.Alphabet import SingleLetterAlphabet, RNAAlphabet, DNAAlphabet
 from Bio.SeqRecord import SeqRecord
 
+
+
 '''
 Rename the duplicate sequences
 '''
+
+raise NotImplemented # need refactoring needed
 
 query = 'fam40_typedistributed_bg'
 path = join('../queries', query, query + '.db')

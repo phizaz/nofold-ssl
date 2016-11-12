@@ -2,6 +2,8 @@ from os.path import join, isdir
 from os import listdir
 from Bio import SeqIO
 
+raise NotImplemented # need refactoring
+
 def rename_db(db_file):
     with open(db_file, 'r') as handle:
         records = SeqIO.parse(handle, 'fasta')

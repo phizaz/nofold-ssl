@@ -120,7 +120,7 @@ def run_cmscore(query, cpu):
     return cmscores
 
 
-def main(query, cpu, should_rename, formatted):
+def run(query, cpu, should_rename, formatted):
     if should_rename:
         _, _, query = run_rename(query, formatted)
 
@@ -128,7 +128,7 @@ def main(query, cpu, should_rename, formatted):
     return cmscores
 
 
-if __name__ == '__main__':
+def main():
     from argparse import ArgumentParser
 
     parser = ArgumentParser()
@@ -138,4 +138,8 @@ if __name__ == '__main__':
     parser.add_argument('--formatted', default=False, action='store_true')
     args = parser.parse_args()
 
-    main(args.query, args.cpu, args.rename, args.formatted)
+    run(args.query, args.cpu, args.rename, args.formatted)
+
+
+if __name__ == '__main__':
+    main()

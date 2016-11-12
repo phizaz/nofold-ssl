@@ -2,6 +2,8 @@ from os.path import join, isdir
 from os import listdir
 from Bio import SeqIO
 
+raise NotImplemented # need refactoring
+
 path = '../Rfam-seed/db'
 families = [f for f in listdir(path) if isdir(join(path, f))]
 

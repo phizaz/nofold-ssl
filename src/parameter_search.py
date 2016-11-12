@@ -1,5 +1,4 @@
 from __future__ import print_function
-import logging
 
 
 def run_combine(query, unformatted, cripple, nn_seed, inc_centroids):
@@ -185,7 +184,7 @@ def param_search(search_space):
     return results
 
 
-if __name__ == '__main__':
+def main():
     from argparse import ArgumentParser
 
     parser = ArgumentParser(usage='cluster using semi-supervised label propagation algorithm')
@@ -196,3 +195,7 @@ if __name__ == '__main__':
     results = param_search(search_space)
 
     save(get_all_arguments(), results)
+
+
+if __name__ == '__main__':
+    main()

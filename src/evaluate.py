@@ -7,9 +7,11 @@ Evaluate the clustering quality using three benchmarks
 3. Max in cluster - how good the sequences of a family are distributed in one big cluster.
 '''
 
+
 def is_not_bg(name):
     from src import utils
     return not utils.short.is_bg(name)
+
 
 def dominator_of(cluster):
     from collections import Counter
@@ -60,6 +62,7 @@ def max_in_cluster_of(family, clusters, names_by_family):
     all_cnt = len(names_by_family[family])
     return cnt / all_cnt
 
+
 def remove_bg_from_clusters(name_clusters):
     name_clusters = [
         remove_bg(names)
@@ -67,6 +70,7 @@ def remove_bg_from_clusters(name_clusters):
         ]
     name_clusters = list(filter(lambda x: len(x) > 0, name_clusters))
     return name_clusters
+
 
 def remove_bg(l):
     return list(filter(is_not_bg, l))
@@ -121,7 +125,7 @@ def nofold_get_name_clusters(cluster_file):
     return clusters
 
 
-if __name__ == '__main__':
+def main():
     import argparse
     import utils
 
@@ -157,3 +161,7 @@ if __name__ == '__main__':
         handle.write('\t'.join(map(str, average.values())) + '\n')
 
     print('done!')
+
+
+if __name__ == '__main__':
+    main()

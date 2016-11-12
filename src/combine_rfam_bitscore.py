@@ -93,7 +93,7 @@ def run(query, unformatted, cripple, nn, inc_centroids, cpu=None):
     return all_names, all_points, all_header
 
 
-if __name__ == '__main__':
+def main():
     import argparse
     import sys
     import utils
@@ -128,3 +128,7 @@ if __name__ == '__main__':
     utils.save.save_bitscores(outfile, names, points, header)
 
     print('total database size:', len(points))
+
+
+if __name__ == '__main__':
+    main()

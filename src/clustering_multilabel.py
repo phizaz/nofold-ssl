@@ -82,7 +82,7 @@ def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, 
     return clusters
 
 
-if __name__ == '__main__':
+def main():
     import argparse
     from os.path import join
     import utils
@@ -107,3 +107,7 @@ if __name__ == '__main__':
     outfile = join(utils.path.results_path(), 'combined.{}.{}.cluster'.format(args.tag, args.alg))
     utils.save.save_clusters(outfile, clusters)
     print('saving done!', len(clusters), 'clusters')
+
+
+if __name__ == '__main__':
+    main()

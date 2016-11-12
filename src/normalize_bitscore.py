@@ -45,7 +45,7 @@ def run(names, points, header, query, components, lengthnorm):
     return names, points, header
 
 
-if __name__ == '__main__':
+def main():
     import utils
     import argparse
     from os.path import join
@@ -69,3 +69,7 @@ if __name__ == '__main__':
     outfile = join(utils.path.results_path(), 'combined.{}.normalized.bitscore'.format(args.tag))
     utils.save.save_bitscores(outfile, names, points, header)
     print('Saving done !')
+
+
+if __name__ == '__main__':
+    main()

@@ -2,6 +2,8 @@ from os.path import join, basename, dirname, exists
 from os import makedirs
 from argparse import ArgumentParser
 
+raise NotImplemented # need refactoring
+
 parser = ArgumentParser(description='rename rna bitscore')
 parser.add_argument('--query', action='store', required=True)
 args = parser.parse_args()
