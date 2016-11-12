@@ -100,6 +100,10 @@ def search_level_combine(space_query, space_nn_seed, space_inc_centroids):
             ])
             yield (conf, (names, points, header))
 
+            names, points, header = None, None, None
+            import gc
+            gc.collect()
+
 
 def search_level_normalize(combine_level, space_components, space_length_norm):
     from itertools import product
@@ -107,10 +111,19 @@ def search_level_normalize(combine_level, space_components, space_length_norm):
         for components, length_norm in product(space_components, space_length_norm):
             print('normalizing query: {} length_norm: {}'.format(conf['query'], length_norm))
             _names, _points, _header = run_normalize(names, points, header, conf['query'], components, length_norm)
+
+            names, points, header = None, None, None
+            import gc
+            gc.collect()
+
             conf = conf.copy()
             conf['components'] = components
             conf['length_norm'] = length_norm
             yield (conf, (_names, _points, _header))
+
+            _names, _points, _header = None, None, None
+            import gc
+            gc.collect()
 
 
 def search_level_clustering(normalize_level, space_alg, space_kernel, space_gamma, space_alpha, space_multilabel):
@@ -133,6 +146,10 @@ def search_level_clustering(normalize_level, space_alg, space_kernel, space_gamm
             conf['multilabel'] = multilabel
             yield (conf, (names, points, header, clusters))
 
+        names, points, header = None, None, None
+        import gc
+        gc.collect()
+
 
 def search_level_refine_eval(clustering_level, space_c, space_merge):
     from itertools import product
@@ -144,6 +161,10 @@ def search_level_refine_eval(clustering_level, space_c, space_merge):
             conf['c'] = c
             conf['merge'] = merge
             yield (conf, (avg))
+
+        names, points, header, clusters = None, None, None, None
+        import gc
+        gc.collect()
 
 
 def param_search(search_space):
