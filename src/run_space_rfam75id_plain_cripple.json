@@ -104,106 +104,6 @@
       "unformatted": false,
       "query": "rfam75id-rename",
       "cripple": 20
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 21
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 22
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 23
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 24
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 25
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 26
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 27
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 28
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 29
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 30
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 31
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 32
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 33
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 34
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 35
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 36
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 37
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 38
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 39
-    },
-    {
-      "unformatted": false,
-      "query": "rfam75id-rename",
-      "cripple": 40
     }
   ],
   "nn_seed": [
@@ -225,21 +125,16 @@
     "rbf"
   ],
   "gamma": [
-    0.3,
-    0.4,
-    0.5
+    0.3
   ],
   "alpha": [
-    0.6,
-    0.7,
-    1.0
+    0.7
   ],
   "multilabel": [
     true
   ],
   "c": [
-    1.1,
-    1.2
+    1.1
   ],
   "merge": [
     true

@@ -27,4 +27,4 @@ if __name__ == '__main__':
 
         prec, sense, max_in = get_cols(['precision', 'sensitivity', 'max_in_cluster'], _rows[0])
 
-        print('{} : {}, {}, {}'.format(query, prec, sense, max_in))
+        print('{} : {}, {}, {}'.format(query, sense, prec, max_in))

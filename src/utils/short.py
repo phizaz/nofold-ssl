@@ -99,3 +99,8 @@ def chunks(l, n):
 def collect_garbage():
     import gc
     gc.collect()
+
+def cardinality(itr):
+    c = 0
+    for _ in itr: c += 1
+    return c

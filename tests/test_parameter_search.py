@@ -4,6 +4,35 @@ from src import utils
 
 
 class ParameterSearchTest(unittest.TestCase):
+    def test_avg_cripple_itr(self):
+        cnt = 0
+        for _ in avg_cripple_itr(0):
+            cnt += 1
+        self.assertEqual(cnt, 1)
+
+        cnt = 0
+        for _ in avg_cripple_itr(10):
+            cnt += 1
+        self.assertEqual(cnt, 10)
+
+    def test_avg_results(self):
+        def d(sense, prec, max_in):
+            return {'sensitivity': sense, 'precision': prec, 'max_in_cluster': max_in}
+
+        raw = {
+            'a': [
+                d(1, 1, 1),
+                d(0, 0, 0)
+            ],
+            'b': [
+                d(0.2, 0.2, 0.2)
+            ]
+        }
+        results = avg_results(raw)
+        self.assertDictEqual(results, {'a': {'max_in_cluster': 0.5, 'sensitivity': 0.5, 'precision': 0.5},
+                                       'b': {'max_in_cluster': 0.2, 'sensitivity': 0.2, 'precision': 0.2}}
+                             )
+
     def test_run_combine(self):
         query = 'rfam75id-rename'
         cripple = 0
@@ -150,23 +179,44 @@ class ParameterLevelSearchTest(unittest.TestCase):
     c = [1.2]
     merge = [False]
 
-    def test_search(self):
-        search_space = {
-            'query': self.query,
-            'nn_seed': self.nn_seed,
-            'inc_centroids': self.inc_centroids,
-            'components': self.components,
-            'length_norm': self.length_norm,
-            'alg': self.alg,
-            'kernel': self.kernel,
-            'gamma': self.gamma,
-            'alpha': self.alpha,
-            'multilabel': self.multilabel,
-            'c': self.c,
-            'merge': self.merge
-        }
+    search_space = {
+        'query': query,
+        'nn_seed': nn_seed,
+        'inc_centroids': inc_centroids,
+        'components': components,
+        'length_norm': length_norm,
+        'alg': alg,
+        'kernel': kernel,
+        'gamma': gamma,
+        'alpha': alpha,
+        'multilabel': multilabel,
+        'c': c,
+        'merge': merge
+    }
 
-        results = param_search(search_space)
+    def test_get_job_cnt(self):
+        search_space = self.search_space.copy()
+        search_space['query'] = [
+            {
+                "unformatted": False,
+                "query": "rfam75id-rename",
+                "cripple": 0
+            },
+            {
+                "unformatted": False,
+                "query": "rfam75id-rename",
+                "cripple": 1
+            },
+            {
+                "unformatted": False,
+                "query": "rfam75id-rename",
+                "cripple": 2
+            }
+        ]
+        self.assertEqual(get_job_cnt(search_space), 21)
+
+    def test_search(self):
+        results = param_search(self.search_space)
         print(results)
         idx = ('novel-1-2-3hp', True, 0, 1, False, 100, False, 'labelSpreading', 'rbf', 0.5, 1.0, False, 1.2, False)
         self.assertListEqual(results.keys(), [idx])

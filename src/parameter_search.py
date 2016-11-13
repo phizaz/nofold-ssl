@@ -83,26 +83,38 @@ def get_all_arguments():
     return query_args + search_args[1:]  # omit the 'query' argument
 
 
+def avg_cripple_itr(cripple):
+    times = 10
+    if cripple == 0:
+        yield True
+    else:
+        for i in range(times):
+            yield True
+
+
 def search_level_combine(space_query, space_nn_seed, space_inc_centroids):
     from itertools import product
     from collections import OrderedDict
-    for each in space_query:
-        for nn_seed, inc_centroids in product(space_nn_seed, space_inc_centroids):
-            print('combining query:{} cripple:{} nn_seed:{}'.format(each['query'], each['cripple'], nn_seed))
-            names, points, header = run_combine(each['query'], each['unformatted'], each['cripple'], nn_seed,
-                                                inc_centroids)
-            conf = OrderedDict([
-                ('query', each['query']),
-                ('unformatted', each['unformatted']),
-                ('cripple', each['cripple']),
-                ('nn_seed', nn_seed),
-                ('inc_centroids', inc_centroids),
-            ])
-            yield (conf, (names, points, header))
 
-            names, points, header = None, None, None
-            import gc
-            gc.collect()
+    for each in space_query:
+        for _ in avg_cripple_itr(
+                each['cripple']):  # to run those with 'crippled' many times (and be averaged out afterwards)
+            for nn_seed, inc_centroids in product(space_nn_seed, space_inc_centroids):
+                print('combining query:{} cripple:{} nn_seed:{}'.format(each['query'], each['cripple'], nn_seed))
+                names, points, header = run_combine(each['query'], each['unformatted'], each['cripple'], nn_seed,
+                                                    inc_centroids)
+                conf = OrderedDict([
+                    ('query', each['query']),
+                    ('unformatted', each['unformatted']),
+                    ('cripple', each['cripple']),
+                    ('nn_seed', nn_seed),
+                    ('inc_centroids', inc_centroids),
+                ])
+                yield (conf, (names, points, header))
+
+                names, points, header = None, None, None
+                import gc
+                gc.collect()
 
 
 def search_level_normalize(combine_level, space_components, space_length_norm):
@@ -167,6 +179,40 @@ def search_level_refine_eval(clustering_level, space_c, space_merge):
         gc.collect()
 
 
+def avg_results(raw_results):
+    # average out results with the same 'idx'
+    results = {}
+    from operator import itemgetter
+    for idx, result_list in raw_results.items():
+        keys = ['sensitivity', 'precision', 'max_in_cluster']
+        avg_sense, avg_prec, avg_max_in = [
+            float(sum(map(itemgetter(key), result_list))) / len(result_list)
+            for key in keys
+            ]
+        results[idx] = dict(zip(keys, (avg_sense, avg_prec, avg_max_in)))
+
+    return results
+
+
+def get_job_cnt(search_space):
+    from src import utils
+    search_arguments, query_arguments = get_search_arguments()
+
+    def cnt(search_arg):
+        if search_arg == 'query':
+            s = 0
+            for query in search_space['query']:
+                s += utils.short.cardinality(avg_cripple_itr(query['cripple']))
+            return s
+        else:
+            return len(search_space[search_arg])
+
+    total_job_cnt = reduce(lambda a, b: a * b,
+                           (cnt(a) for a in search_arguments),
+                           1)
+    return total_job_cnt
+
+
 def param_search(search_space):
     search_arguments, query_arguments = get_search_arguments()
     # search space validation
@@ -176,9 +222,7 @@ def param_search(search_space):
         for arg in query_arguments:
             assert arg in query, 'missing arg `{}` in query section'.format(arg)
 
-    total_job_cnt = reduce(lambda a, b: a * b,
-                           (len(search_space[a]) for a in search_arguments),
-                           1)
+    total_job_cnt = get_job_cnt(search_space)
     print('total jobs cnt: {}'.format(total_job_cnt))
 
     combine_level = search_level_combine(search_space['query'], search_space['nn_seed'], search_space['inc_centroids'])
@@ -188,12 +232,13 @@ def param_search(search_space):
                                                search_space['alpha'], search_space['multilabel'])
     eval_level = search_level_refine_eval(clustering_level, search_space['c'], search_space['merge'])
 
-    results = {}
+    from collections import defaultdict
+    raw_results = defaultdict(list)
     for i, (conf, avg) in enumerate(eval_level, 1):
         idx = tuple(conf.values())
         assert len(idx) == len(get_all_arguments())
 
-        results[idx] = avg
+        raw_results[idx].append(avg)
 
         print('({}/{}) done! results sense: {} prec: {} max_in: {}'.format(
             i, total_job_cnt,
@@ -202,7 +247,7 @@ def param_search(search_space):
             avg['max_in_cluster']
         ))
 
-    return results
+    return avg_results(raw_results)
 
 
 def main():
