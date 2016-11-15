@@ -428,7 +428,8 @@ def get_families_center_points(families, retain_cols=None):
     fn = partial(get_family_center_point, retain_cols=retain_cols)
     results = []
     for i, (fam, (name, point)) in enumerate(zip(families, p.imap(fn, families)), 1):
-        print('job {} of {} fam: {}'.format(i, len(families), fam))
+        if i % 100 == 0:
+            print('job {} of {} fam: {}'.format(i, len(families), fam))
         results.append((name, point))
     p.close()
     print('done')

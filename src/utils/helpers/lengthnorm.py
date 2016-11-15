@@ -19,8 +19,7 @@ class Lengther:
             except Exception as e:
                 pass
 
-        print('required families:', required_families)
-        print('count:', len(required_families))
+        print('required families count:', len(required_families))
 
         for fam in required_families:
             self.length_name.update(utils.get.get_family_lengths(fam))

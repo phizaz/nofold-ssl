@@ -54,9 +54,7 @@ def run(query, unformatted, cripple, nn, inc_centroids, cpu=None):
         print('taking from:', len(seed_families), '/', len(available_families))
 
     # taking seeds
-    print('always include centroids...')
     print('only closest:', nn, 'neighbors seeds to queries will be taken...')
-
     seed_points_closest = utils.get.get_knearest_seed_given_query_chunking(nn, query_header, query_points,
                                                                            seed_families,
                                                                            cpu=cpu,
