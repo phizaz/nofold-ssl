@@ -1,0 +1,17 @@
+query,unformatted,cripple,nn_seed,inc_centroids,components,length_norm,alg,kernel,gamma,alpha,multilabel,c,merge,sensitivity,precision,max_in_cluster
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.05,True,0.25419222903885486,0.6191155060146346,0.9423312883435584
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.05,False,0.7226993865030675,0.789690291010582,0.7930470347648263
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.0,False,0.7792433537832311,0.836804439965331,0.7344580777096115
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.05,True,0.833435582822086,0.8552030831724325,0.6515337423312884
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.05,True,0.665644171779141,0.7269227202813304,0.5672801635991821
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.0,True,0.7701431492842536,0.8298899178505991,0.5165644171779142
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.0,False,0.48496932515337415,0.7231563714306344,0.6515337423312884
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.05,True,0.7285276073619632,0.8076347654210219,0.8235173824130879
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.0,True,0.9038854805725972,0.9136557522309678,0.5511247443762781
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.0,True,0.8308793456032719,0.885194744508096,0.7558282208588956
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.0,True,0.4473415132924335,0.7882251320495465,0.881799591002045
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.05,False,0.9381390593047035,0.9448858811321559,0.5192229038854805
+rfam75id-rename,False,10,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.0,False,0.9659509202453987,0.9681361181264059,0.4203476482617587
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,True,1.05,False,0.3115541922290389,0.49226413428269594,0.7050102249488753
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.05,False,0.8715746421267893,0.8869035747027173,0.37014314928425357
+rfam75id-rename,False,20,19,True,100,True,labelSpreading,rbf,0.7,0.7,False,1.0,False,0.9020449897750511,0.9175065314762371,0.318200408997955
