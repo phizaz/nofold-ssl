@@ -5,7 +5,6 @@ Semi-supervised clustering using label propagation
 This will definitely give lesser-than-actual number of clusters, becasue of the insufficient 'seed' families.
 '''
 
-
 def run(seed_names, seed_points, query_names, query_points, alg, kernel, alpha, nn, gamma, multilabel):
     import utils.helpers.namemap
 

@@ -1,7 +1,7 @@
 {
   "query": [
     {
-      "query": "fam40_typedistributed_plain+bg_weak",
+      "query": "fam40_typedistributed_embed+bg_weak",
       "unformatted": false,
       "cripple": 20
     }
@@ -39,6 +39,9 @@
   ],
   "c": [
     1.0,
+    1.02,
+    1.05,
+    1.08,
     1.1,
     1.2,
     1.3

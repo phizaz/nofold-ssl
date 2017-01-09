@@ -27,7 +27,8 @@ def errors_of(arr):
 
 
 def row_error(row, dist_fn):
-    if float(row['sensitivity']) < 0.7 or float(row['precision']) < 0.7 or float(row['max_in_cluster']) < 0.7:
+    thresh = 0.6
+    if float(row['sensitivity']) < thresh or float(row['precision']) < thresh or float(row['max_in_cluster']) < thresh:
         return dist_fn(errors_of([0, 0, 0]))  # equals to dist_fn([1,1,1])
     else:
         sense = float(row['sensitivity'])
